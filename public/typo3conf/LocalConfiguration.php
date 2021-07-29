@@ -126,6 +126,7 @@ return [
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'TYPO3 testing site',
+        'systemLocale' => 'de_DE.UTF-8',
         'systemLogLevel' => 2,
         'systemMaintainers' => [
             1,
