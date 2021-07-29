@@ -14,4 +14,4 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 - [tea](https://github.com/TYPO3-Documentation/tea)
 - [site package](https://github.com/oliverklee/typo3-devsite)
 
-This distribution uses [ddev](https://github.com/drud/ddev). 
+This distribution uses [ddev](https://github.com/drud/ddev).
