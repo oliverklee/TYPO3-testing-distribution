@@ -100,7 +100,7 @@ return [
                     'writerConfiguration' => [
                         5 => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
-                                'disabled' => true,
+                                'disabled' => false,
                             ],
                         ],
                     ],
@@ -117,17 +117,17 @@ return [
         'transport_smtp_username' => '',
     ],
     'SYS' => [
-        'devIPmask' => '',
-        'displayErrors' => 0,
+        'devIPmask' => '*',
+        'displayErrors' => 1,
         'encryptionKey' => '52a4aa6dfdd2da877dc765d4651d3b161e91b26cc543eb8ce62e53fe5cc0bcfb304f43edb8d898cb8340a6310d7dbade',
-        'exceptionalErrors' => 4096,
+        'exceptionalErrors' => 12290,
         'features' => [
             'newTranslationServer' => true,
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'TYPO3 testing site',
         'systemLocale' => 'de_DE.UTF-8',
-        'systemLogLevel' => 2,
+        'systemLogLevel' => 0,
         'systemMaintainers' => [
             1,
         ],

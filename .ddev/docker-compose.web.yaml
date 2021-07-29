@@ -1,7 +1,12 @@
 version: "3.6"
+
 services:
   web:
     environment:
+      # Use "Development" to avoid TYPO3 caching and verbose error output
+      # Use "Production" for maximum performance and no error output
+      - TYPO3_CONTEXT=Development
+
       - TZ=Europe/Berlin
 
       - TYPO3_INSTALL_DB_DRIVER=mysqli
