@@ -15,7 +15,7 @@
 		"issues": "https://github.com/oliverklee/TYPO3-testing-distribution/issues"
 	},
 	"require": {
-		"php": ">= 7.2.0",
+		"php": ">= 7.2.34",
 		"helhum/typo3-console": "^5.8.6",
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/onetimeaccount": "dev-main",
@@ -41,7 +41,7 @@
 	"prefer-stable": true,
 	"config": {
 		"platform": {
-			"php": "7.2"
+			"php": "7.2.34"
 		},
 		"preferred-install": {
 			"*": "dist"
