@@ -1,0 +1,57 @@
+---
+name: CI
+on:
+  push:
+jobs:
+  php-lint:
+    name: "PHP linter"
+    runs-on: ubuntu-20.04
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Install PHP"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "${{ matrix.php-version }}"
+          coverage: none
+          tools: composer:v2
+      - name: "Run PHP lint"
+        run: "composer ci:php:lint"
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - 7.2
+          - 7.3
+          - 7.4
+  code-quality:
+    name: "Code quality checks"
+    runs-on: ubuntu-20.04
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Install PHP"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "${{ matrix.php-version }}"
+          coverage: none
+          tools: composer:v2
+      - name: "Show Composer version"
+        run: composer --version
+      - name: "Cache dependencies installed with composer"
+        uses: actions/cache@v1
+        with:
+          key: "php${{ matrix.php-version }}-composer-${{ hashFiles('**/composer.json') }}"
+          path: ~/.cache/composer
+          restore-keys: "php${{ matrix.php-version }}-composer-\n"
+      - name: "Install Composer dependencies"
+        run: "composer install --no-progress"
+      - name: "Run command"
+        run: "composer ci:${{ matrix.command }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        command:
+          - "yaml:lint"
+        php-version:
+          - 7.4

@@ -53,9 +53,11 @@
 			"@ci:static"
 		],
 		"ci:static": [
-			"@ci:php:lint"
+			"@ci:php:lint",
+			"@ci:yaml:lint"
 		],
 		"ci:php:lint": "php -l public/typo3conf/LocalConfiguration.php",
+		"ci:yaml:lint": "find .ddev .github -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
 		"typo3-cms-scripts": [
 			"typo3cms install:generatepackagestates",
 			"typo3cms install:fixfolderstructure"
@@ -63,5 +65,8 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
+	},
+	"require-dev": {
+		"j13k/yaml-lint": "^1.1"
 	}
 }
