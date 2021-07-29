@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d2790c2092f25f64525912fc0d3e9e2",
+    "content-hash": "e1c97ab0d398cfd1c359d13473b31f74",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -60,6 +60,199 @@
                 "source": "https://github.com/cogpowered/FineDiff/tree/master"
             },
             "time": "2014-05-19T10:25:02+00:00"
+        },
+        {
+            "name": "digedag/rn-base",
+            "version": "v1.13.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digedag/rn_base.git",
+                "reference": "110d60f7f82d38d4ffd75cf521118cf24efd5972"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digedag/rn_base/zipball/110d60f7f82d38d4ffd75cf521118cf24efd5972",
+                "reference": "110d60f7f82d38d4ffd75cf521118cf24efd5972",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-iconv": "*",
+                "ext-json": "*",
+                "ext-simplexml": "*",
+                "ext-zip": "*",
+                "php": ">=7.1.0",
+                "typo3/cms-core": "^7.6 || ^8.7 || ^9.5 || ^10.4"
+            },
+            "replace": {
+                "digedag/rn-base": "self.version",
+                "typo3-ter/rn-base": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "mikey179/vfsstream": "^1.4 || ^1.6",
+                "namelesscoder/typo3-repository-client": "^1.2",
+                "nimut/testing-framework": "^1.1 || ^2.0 || ^4.0 || ^5.0",
+                "phpunit/phpunit": "^4.7|| ^7.0"
+            },
+            "suggest": {
+                "ext-mcrypt": "*",
+                "ext-mssql": "*",
+                "ext-mysql": "*",
+                "ext-mysqli": "*"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "extension-key": "rn_base",
+                    "web-dir": ".Build/Web"
+                },
+                "branch-alias": {
+                    "dev-master": "1.13.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "cache/",
+                    "Classes/",
+                    "Legacy/",
+                    "exception/",
+                    "maps/",
+                    "mod/",
+                    "model/",
+                    "util/",
+                    "class.tx_rnbase.php",
+                    "class.tx_rnbase_controller.php",
+                    "tests/class.tx_rnbase_tests_BaseTestCase.php",
+                    "tests/class.tx_rnbase_tests_Utility.php"
+                ],
+                "files": [
+                    "Classes/Constants.php"
+                ],
+                "psr-4": {
+                    "Sys25\\RnBase\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "René Nitzsche",
+                    "email": "nitzsche@dmk-ebusiness.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A base library for extensions. Uses MVC design principles and domain driven development for TYPO3 extension development.",
+            "homepage": "http://www.system25.de/",
+            "keywords": [
+                "TYPO3 CMS",
+                "mvc"
+            ],
+            "support": {
+                "email": "rene@system25.de",
+                "issues": "https://github.com/digedag/rn_base/issues",
+                "source": "https://github.com/digedag/rn_base"
+            },
+            "time": "2021-07-29T07:53:15+00:00"
+        },
+        {
+            "name": "dmk/mkforms",
+            "version": "v9.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DMKEBUSINESSGMBH/typo3-mkforms.git",
+                "reference": "c4da8aef56a54272977e8550480b3aa9a233461e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DMKEBUSINESSGMBH/typo3-mkforms/zipball/c4da8aef56a54272977e8550480b3aa9a233461e",
+                "reference": "c4da8aef56a54272977e8550480b3aa9a233461e",
+                "shasum": ""
+            },
+            "require": {
+                "digedag/rn-base": ">=1.10.5",
+                "php": ">=5.6.0",
+                "typo3/cms-core": "^7.6 || ^8.7 || ^9.5"
+            },
+            "replace": {
+                "typo3-ter/mkforms": "self.version"
+            },
+            "require-dev": {
+                "dmk/mklib": ">=3.0.8",
+                "friendsofphp/php-cs-fixer": "^2.15",
+                "nimut/testing-framework": "^4.0"
+            },
+            "suggest": {
+                "dmk/mksanitizedparameters": "keeps your parameters clean and safe"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "extension-key": "mkforms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "action/",
+                    "api/",
+                    "Classes/",
+                    "dh/",
+                    "ds/",
+                    "exception/",
+                    "forms/",
+                    "hooks/",
+                    "js/",
+                    "remote/",
+                    "renderer/",
+                    "session/",
+                    "tests/",
+                    "util/",
+                    "validator/",
+                    "view/",
+                    "widgets/"
+                ],
+                "psr-4": {
+                    "DMK\\MkForms\\": "Classes"
+                },
+                "files": [
+                    "Classes/Constants.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Wagner",
+                    "email": "michael.wagner@dmk-ebusiness.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "René Nitzsche",
+                    "email": "nitzsche@dmk-ebusiness.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Making HTML forms for TYPO3",
+            "homepage": "http://www.dmk-ebusiness.de/",
+            "keywords": [
+                "Forms",
+                "TYPO3 CMS",
+                "formidable"
+            ],
+            "support": {
+                "email": "dev@dmk-ebusiness.de",
+                "issues": "https://github.com/DMKEBUSINESSGMBH/typo3-mkforms",
+                "source": "https://github.com/DMKEBUSINESSGMBH/typo3-mkforms"
+            },
+            "time": "2020-03-27T11:39:29+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1114,6 +1307,419 @@
             "time": "2021-07-21T10:44:31+00:00"
         },
         {
+            "name": "oliverklee/oelib",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oliverklee/ext-oelib.git",
+                "reference": "05ca1913835c2210e1321e2318aedd65b667a7dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oliverklee/ext-oelib/zipball/05ca1913835c2210e1321e2318aedd65b667a7dc",
+                "reference": "05ca1913835c2210e1321e2318aedd65b667a7dc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-zip": "*",
+                "pelago/emogrifier": "^4.0",
+                "php": "~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0",
+                "psr/log": "^1.0",
+                "swiftmailer/swiftmailer": "^5.4",
+                "typo3/cms-core": "^8.7.9 || ^9.5.7",
+                "typo3/cms-extbase": "^8.7 || ^9.5",
+                "typo3/cms-fluid": "^8.7 || ^9.5",
+                "typo3/cms-frontend": "^8.7 || ^9.5",
+                "typo3/cms-lang": "^8.7 || ^9.5"
+            },
+            "conflict": {
+                "sjbr/static-info-tables": "6.7.1",
+                "typo3/cms-composer-installers": "<1.4.6"
+            },
+            "replace": {
+                "typo3-ter/oelib": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16.6",
+                "mikey179/vfsstream": "^1.6.8",
+                "nimut/testing-framework": "^5.1.0",
+                "oliverklee/user-oelibtest": "@dev",
+                "oliverklee/user-oelibtest2": "@dev",
+                "phpunit/phpunit": "^6.5.14 || ^7.5.20",
+                "sjbr/static-info-tables": "^6.8.0",
+                "squizlabs/php_codesniffer": "^3.5.8"
+            },
+            "suggest": {
+                "sjbr/static-info-tables": "^6.7"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.3.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "oelib",
+                    "web-dir": ".Build/public"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OliverKlee\\Oelib\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Klee",
+                    "email": "typo3-coding@oliverklee.de",
+                    "homepage": "https://www.oliverklee.de",
+                    "role": "developer"
+                }
+            ],
+            "description": "Useful stuff for TYPO3 extension development: helper functions for unit testing, templating and automatic configuration checks.",
+            "homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions/",
+            "keywords": [
+                "extension",
+                "library",
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/oliverklee/ext-oelib/issues",
+                "source": "https://github.com/oliverklee/ext-oelib"
+            },
+            "time": "2021-06-18T15:50:15+00:00"
+        },
+        {
+            "name": "oliverklee/onetimeaccount",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oliverklee/ext-onetimeaccount.git",
+                "reference": "2fbc7e17fc14ce1f910795fcf126cad439d0d300"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oliverklee/ext-onetimeaccount/zipball/2fbc7e17fc14ce1f910795fcf126cad439d0d300",
+                "reference": "2fbc7e17fc14ce1f910795fcf126cad439d0d300",
+                "shasum": ""
+            },
+            "require": {
+                "digedag/rn-base": "^1.11.4",
+                "dmk/mkforms": "^9.5.2",
+                "oliverklee/oelib": "^3.3.0",
+                "php": "~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0",
+                "sjbr/static-info-tables": "^6.7.0",
+                "typo3/cms-core": "^8.7.9 || ^9.5.7",
+                "typo3/cms-felogin": "^8.7 || ^9.5",
+                "typo3/cms-frontend": "^8.7 || ^9.5",
+                "typo3/cms-lang": "^8.7 || ^9.5"
+            },
+            "replace": {
+                "typo3-ter/onetimeaccount": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16.6",
+                "helmich/typo3-typoscript-lint": "^1.5.0",
+                "nimut/testing-framework": "^5.1.0",
+                "phpunit/phpunit": "^6.5.14 || ^7.5.20",
+                "squizlabs/php_codesniffer": "^3.5.8"
+            },
+            "suggest": {
+                "in2code/femanager": "^5.4 || ^6.0",
+                "sjbr/sr-feuser-register": "^5.1 || ^6.0 || 7.0"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "4.1.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "onetimeaccount",
+                    "web-dir": ".Build/public"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OliverKlee\\OneTimeAccount\\": "Classes/"
+                },
+                "classmap": [
+                    "pi1"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Klee",
+                    "email": "typo3-coding@oliverklee.de",
+                    "homepage": "https://www.oliverklee.de",
+                    "role": "developer"
+                }
+            ],
+            "description": "Allow users to create a one-time FE account to which they will be automatically logged in (without having to enter a user name or password).",
+            "homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions.html",
+            "keywords": [
+                "account",
+                "login",
+                "onetime"
+            ],
+            "support": {
+                "issues": "https://github.com/oliverklee/ext-onetimeaccount/issues",
+                "source": "https://github.com/oliverklee/ext-onetimeaccount"
+            },
+            "time": "2021-05-09T22:03:46+00:00"
+        },
+        {
+            "name": "oliverklee/seminars",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oliverklee/ext-seminars.git",
+                "reference": "03a5b9798504dab458c0744181eb532a69644df1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oliverklee/ext-seminars/zipball/03a5b9798504dab458c0744181eb532a69644df1",
+                "reference": "03a5b9798504dab458c0744181eb532a69644df1",
+                "shasum": ""
+            },
+            "require": {
+                "digedag/rn-base": "^1.11.4",
+                "dmk/mkforms": "^9.5.2",
+                "ext-json": "*",
+                "oliverklee/oelib": "^3.3.0",
+                "php": "~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0",
+                "psr/http-message": "^1.0",
+                "sjbr/static-info-tables": "^6.7.0",
+                "typo3/cms-backend": "^8.7 || ^9.5",
+                "typo3/cms-core": "^8.7.9 || ^9.5.7",
+                "typo3/cms-extbase": "^8.7 || ^9.5",
+                "typo3/cms-fluid": "^8.7 || ^9.5",
+                "typo3/cms-frontend": "^8.7 || ^9.5",
+                "typo3/cms-lang": "^8.7 || ^9.5"
+            },
+            "replace": {
+                "typo3-ter/seminars": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16.6",
+                "helhum/typo3-console": "^5.8.6",
+                "helmich/typo3-typoscript-lint": "^1.5.0 || ^2.3.0",
+                "mikey179/vfsstream": "^1.6.8",
+                "nimut/testing-framework": "^5.1.0",
+                "oliverklee/phpunit": "^6.5.16",
+                "phpspec/prophecy": "^1.10.3",
+                "phpunit/phpunit": "^6.5.14",
+                "squizlabs/php_codesniffer": "^3.5.8",
+                "typo3/cms-scheduler": "^8.7 || ^9.5"
+            },
+            "suggest": {
+                "in2code/femanager": "^4.2 || ^5.4",
+                "oliverklee/onetimeaccount": "^4.2",
+                "sjbr/sr-feuser-register": "^5.1 || ^6.0 || ^7.0"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.3.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "seminars",
+                    "web-dir": ".Build/public"
+                },
+                "helhum/typo3-console": {
+                    "install-extension-dummy": "0"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "Classes"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Klee",
+                    "email": "typo3-coding@oliverklee.de",
+                    "homepage": "https://www.oliverklee.de",
+                    "role": "developer"
+                }
+            ],
+            "description": "TYPO3 extension that allows you to create and manage a list of seminars, workshops, lectures, theater performances and other events, allowing front-end users to sign up. FE users also can create and edit events.",
+            "homepage": "https://www.oliverklee.de/typo3-services/seminarmanager/",
+            "keywords": [
+                "education",
+                "event",
+                "registration",
+                "seminars",
+                "talks",
+                "workshops"
+            ],
+            "support": {
+                "issues": "https://github.com/oliverklee/ext-seminars/issues",
+                "source": "https://github.com/oliverklee/ext-seminars"
+            },
+            "time": "2021-06-02T19:22:17+00:00"
+        },
+        {
+            "name": "oliverklee/typo3-devsite",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oliverklee/typo3-devsite.git",
+                "reference": "6c4a4d42a8af27965bca1460c65894011b064a93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oliverklee/typo3-devsite/zipball/6c4a4d42a8af27965bca1460c65894011b064a93",
+                "reference": "6c4a4d42a8af27965bca1460c65894011b064a93",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ~8.0",
+                "typo3/cms-core": "^8.7.9 || ^9.5.0",
+                "typo3/cms-fluid": "^8.7 || ^9.5",
+                "typo3/cms-fluid-styled-content": "^8.7 || ^9.5",
+                "typo3/cms-frontend": "^8.7 || ^9.5"
+            },
+            "replace": {
+                "typo3-ter/typo3-devsite": "self.version"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "4.0.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "typo3_devsite",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/public"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Klee",
+                    "email": "typo3-coding@oliverklee.de",
+                    "homepage": "https://www.oliverklee.de/",
+                    "role": "developer"
+                }
+            ],
+            "description": "TYPO3 extension that contains the basics of a site which Oliver Klee uses for developing in TYPO3.",
+            "homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions/",
+            "keywords": [
+                "sitepackage"
+            ],
+            "support": {
+                "issues": "https://github.com/oliverklee/typo3-devsite/issues",
+                "source": "https://github.com/oliverklee/typo3-devsite"
+            },
+            "time": "2021-05-13T16:56:50+00:00"
+        },
+        {
+            "name": "pelago/emogrifier",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MyIntervals/emogrifier.git",
+                "reference": "f6fd679303c6e6861b5ff29af221f684729d8fd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MyIntervals/emogrifier/zipball/f6fd679303c6e6861b5ff29af221f684729d8fd9",
+                "reference": "f6fd679303c6e6861b5ff29af221f684729d8fd9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "~7.0 || ~7.1 || ~7.2 || ~7.3 || ~7.4",
+                "symfony/css-selector": "^3.4.32 || ^4.3.5 || ^5.0"
+            },
+            "require-dev": {
+                "grogy/php-parallel-lint": "^1.1.0",
+                "phpunit/phpunit": "^6.5.14",
+                "psalm/plugin-phpunit": "^0.5.8",
+                "slevomat/coding-standard": "^4.0.0",
+                "squizlabs/php_codesniffer": "^3.5.1",
+                "vimeo/psalm": "^3.2.12"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pelago\\Emogrifier\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Klee",
+                    "email": "github@oliverklee.de"
+                },
+                {
+                    "name": "Zoli Szabó",
+                    "email": "zoli.szabo+github@gmail.com"
+                },
+                {
+                    "name": "John Reeve",
+                    "email": "jreeve@pelagodesign.com"
+                },
+                {
+                    "name": "Jake Hotson",
+                    "email": "jake@qzdesign.co.uk"
+                },
+                {
+                    "name": "Cameron Brooks"
+                },
+                {
+                    "name": "Jaime Prado"
+                }
+            ],
+            "description": "Converts CSS styles into inline style attributes in your HTML code",
+            "homepage": "https://www.myintervals.com/emogrifier.php",
+            "keywords": [
+                "css",
+                "email",
+                "pre-processing"
+            ],
+            "support": {
+                "issues": "https://github.com/MyIntervals/emogrifier/issues",
+                "source": "https://github.com/MyIntervals/emogrifier"
+            },
+            "time": "2020-06-12T12:55:03+00:00"
+        },
+        {
             "name": "psr/cache",
             "version": "1.0.1",
             "source": {
@@ -1472,6 +2078,52 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+            "name": "sjbr/static-info-tables",
+            "version": "v6.9.5",
+            "source": {
+                "type": "git",
+                "url": "https://codeberg.org/sjbr/static-info-tables",
+                "reference": "7fccdefabdeeca5e1769474393ed7d734d120b92"
+            },
+            "require": {
+                "php": "^7.0",
+                "typo3/cms-core": ">=9.5, <11.0"
+            },
+            "replace": {
+                "typo3-ter/static-info-tables": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "SJBR\\StaticInfoTables\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Stanislas Rolland",
+                    "homepage": "https://www.sjbr.ca",
+                    "role": "Developer"
+                },
+                {
+                    "name": "René Fritz",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Data and API for countries, languages and currencies for use in TYPO3 CMS.",
+            "homepage": "https://forge.typo3.org/projects/extension-static_info_tables",
+            "keywords": [
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://forge.typo3.org/projects/extension-static_info_tables/issues"
+            },
+            "time": "2020-11-24T16:39:17+00:00"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.12",
             "source": {
@@ -1791,6 +2443,72 @@
                 }
             ],
             "time": "2021-07-27T19:04:53+00:00"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v4.4.27",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "5194f18bd80d106f11efa8f7cd0fbdcc3af96ce6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/5194f18bd80d106f11efa8f7cd0fbdcc3af96ce6",
+                "reference": "5194f18bd80d106f11efa8f7cd0fbdcc3af96ce6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Converts CSS selectors to XPath expressions",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/css-selector/tree/v4.4.27"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-21T12:19:41+00:00"
         },
         {
             "name": "symfony/expression-language",
@@ -3090,6 +3808,86 @@
                 }
             ],
             "time": "2021-07-27T16:19:30+00:00"
+        },
+        {
+            "name": "ttn/tea",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-Documentation/tea.git",
+                "reference": "3be8d3a91a3d35a8d88360b996e1ba3ef6799d64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-Documentation/tea/zipball/3be8d3a91a3d35a8d88360b996e1ba3ef6799d64",
+                "reference": "3be8d3a91a3d35a8d88360b996e1ba3ef6799d64",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.2.0 || ~7.3.0 || ~7.4.0",
+                "typo3/cms-core": "^9.5 || ^10.4",
+                "typo3/cms-extbase": "^9.5 || ^10.4",
+                "typo3/cms-fluid": "^9.5 || ^10.4",
+                "typo3/cms-frontend": "^9.5 || ^10.4"
+            },
+            "conflict": {
+                "doctrine/dbal": "2.13.1",
+                "typo3/class-alias-loader": "< 1.1.0"
+            },
+            "replace": {
+                "typo3-ter/tea": "self.version"
+            },
+            "require-dev": {
+                "codeception/codeception": "^4.1.5",
+                "helhum/typo3-composer-setup": "^0.5.7",
+                "nimut/testing-framework": "^5.0.3",
+                "phpunit/phpunit": "^7.5.20",
+                "seld/jsonlint": "^1.8",
+                "typo3/cms-fluid-styled-content": "^9.5 || ^10.4"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.0.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "tea",
+                    "web-dir": ".Build/public"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TTN\\Tea\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Klee",
+                    "email": "typo3-coding@oliverklee.de",
+                    "homepage": "https://www.oliverklee.de",
+                    "role": "developer"
+                }
+            ],
+            "description": "TYPO3 example extension for unit testing and best practices",
+            "keywords": [
+                "TDD",
+                "best practices",
+                "example",
+                "extension",
+                "phpunit",
+                "typo3",
+                "unit testing"
+            ],
+            "support": {
+                "issues": "https://github.com/TYPO3-Documentation/tea/issues",
+                "source": "https://github.com/TYPO3-Documentation/tea"
+            },
+            "time": "2021-07-21T11:16:46+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -4779,7 +5577,13 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "oliverklee/oelib": 20,
+        "oliverklee/onetimeaccount": 20,
+        "oliverklee/seminars": 20,
+        "oliverklee/typo3-devsite": 20,
+        "ttn/tea": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

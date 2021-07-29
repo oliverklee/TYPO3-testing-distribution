@@ -17,6 +17,11 @@
 	"require": {
 		"php": ">= 7.2.0",
 		"helhum/typo3-console": "^5.5.5",
+		"oliverklee/oelib": "dev-main",
+		"oliverklee/onetimeaccount": "dev-main",
+		"oliverklee/seminars": "dev-main",
+		"oliverklee/typo3-devsite": "dev-main",
+		"ttn/tea": "dev-main",
 		"typo3/cms-about": "^9.5",
 		"typo3/cms-adminpanel": "^9.5",
 		"typo3/cms-belog": "^9.5",
