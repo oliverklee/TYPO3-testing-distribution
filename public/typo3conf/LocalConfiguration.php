@@ -30,6 +30,13 @@ return [
             'static_info_tables' => 'a:1:{s:13:"enableManager";s:1:"0";}',
         ],
     ],
+    'EXTCONF' => [
+        'lang' => [
+            'availableLanguages' => [
+                'de',
+            ],
+        ],
+    ],
     'EXTENSIONS' => [
         'backend' => [
             'backendFavicon' => '',

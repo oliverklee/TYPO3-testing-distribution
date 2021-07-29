@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-02-21T01:52:55Z" product-name="static_info_tables" target-language="de">
+		<header/>
+		<body>
+			<trans-unit id="m_default" xml:space="preserve" approved="yes">
+				<source>default</source>
+			<target state="translated">Standard</target></trans-unit>
+			<trans-unit id="m_ext" xml:space="preserve" approved="yes">
+				<source>extended</source>
+			<target state="translated">Erweitert</target></trans-unit>
+			<trans-unit id="m_country" xml:space="preserve" approved="yes">
+				<source>country</source>
+			<target state="translated">Land</target></trans-unit>
+			<trans-unit id="m_other" xml:space="preserve" approved="yes">
+				<source>other</source>
+			<target state="translated">Andere</target></trans-unit>
+		</body>
+	</file>
+</xliff>

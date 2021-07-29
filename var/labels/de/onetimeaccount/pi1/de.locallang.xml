@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="flexforms_pi1.sheet_general">Allgemein</label>
+      <label index="flexforms_pi1.feUserFieldsToDisplay">FE-Benutzer-Felder im Formular:</label>
+      <label index="flexforms_pi1.feUserFieldsToDisplay.name">Vollständiger Name:</label>
+      <label index="flexforms_pi1.feUserFieldsToDisplay.static_info_country">Land als Alpha3-Code:</label>
+      <label index="flexforms_pi1.systemFolderForNewFeUserRecords">Systemordner für die Datensätze der neuen FE-Benutzer:</label>
+      <label index="flexforms_pi1.groupForNewFeUsers">Gruppen für die neuen FE-Benutzer:</label>
+      <label index="flexforms_pi1.sheet_template">Vorlagen und CSS</label>
+      <label index="flexforms_pi1.templateFile">HTML-Vorlagendatei:</label>
+      <label index="flexforms_pi1.requiredFeUserFields">Pflichtfelder:</label>
+      <label index="flexforms_pi1.userNameSource">Benutzernamen erzeugen aus:</label>
+      <label index="flexforms_pi1.userNameSource.fromTsSetup">(wie im TS-Setup eingestellt)</label>
+      <label index="flexforms_pi1.userNameSource.email">der E-Mail-Adresse</label>
+      <label index="flexforms_pi1.userNameSource.name">dem echten Namen des Benutzers</label>
+      <label index="label_your_data_formal">Ihre Daten</label>
+      <label index="label_your_data_informal">Deine Daten</label>
+      <label index="label_company">Firma:</label>
+      <label index="label_gender.I.0">Herr</label>
+      <label index="label_gender.I.1">Frau</label>
+      <label index="label_title">Abteilung/Funktion:</label>
+      <label index="label_name">Name:</label>
+      <label index="label_first_name">Vorname:</label>
+      <label index="label_last_name">Nachname:</label>
+      <label index="label_address">Straße:</label>
+      <label index="label_zip">PLZ:</label>
+      <label index="label_city">Ort:</label>
+      <label index="label_zone">Bundesland/Provinz:</label>
+      <label index="label_country">Land:</label>
+      <label index="label_email">E-Mail:</label>
+      <label index="label_www">Website:</label>
+      <label index="label_telephone">Telefon:</label>
+      <label index="label_fax">Fax:</label>
+      <label index="label_date_of_birth">Geburtsdatum:</label>
+      <label index="label_status">Status:</label>
+      <label index="label_status.I.1">Student</label>
+      <label index="label_status.I.2">Arbeitssuchend</label>
+      <label index="label_status.I.3">Angestellt</label>
+      <label index="label_status.I.4">im Ruhestand</label>
+      <label index="label_usergroup">Benutzergruppe:</label>
+      <label index="label_module_sys_dmail_newsletter">Unseren Newsletter abonnieren</label>
+      <label index="label_module_sys_dmail_html">E-Mails im HTML-Format empfangen</label>
+      <label index="label_comments">Kommentare:</label>
+      <label index="label_submit">Weiter</label>
+      <label index="message_company">Bitte geben Sie den Namen Ihrer Firma an.</label>
+      <label index="message_name">Bitte geben Sie Ihren Namen an.</label>
+      <label index="message_title">Bitte geben Sie Ihre Abteilung/Funktion an.</label>
+      <label index="message_first_name">Bitte geben Sie Ihren Vornamen an.</label>
+      <label index="message_last_name">Bitte geben Sie Ihren Nachnamen an.</label>
+      <label index="message_address">Bitte geben Sie Ihre Straße an.</label>
+      <label index="message_zip">Bitte geben Sie Ihre Postleitzahl an.</label>
+      <label index="message_city">Bitte geben Sie Ihren Wohnort an.</label>
+      <label index="message_zone">Bitte geben Sie Ihr Bundesland/Ihre Provinz an.</label>
+      <label index="message_country">Bitte geben Sie Ihr Land an.</label>
+      <label index="message_email">Bitte geben Sie Ihre E-Mail-Adresse an.</label>
+      <label index="message_www">Bitte geben Sie Ihre Webseite an.</label>
+      <label index="message_telephone">Bitte geben Sie Ihre Telefonnummer an.</label>
+      <label index="message_fax">Bitte geben Sie Ihre Faxnummer an.</label>
+      <label index="message_date_of_birth">Bitte geben Sie Ihr Geburtsdatum an.</label>
+      <label index="message_status">Bitte geben Sie Ihren Status an.</label>
+      <label index="message_choose_usergroup">Bitte wählen Sie eine Benutzergruppe.</label>
+      <label index="message_comments">Bitte geben Sie einige Kommentare ein.</label>
+      <label index="message_malformed_telephone">Bitte geben Sie eine gültige Telefonnummer an.</label>
+      <label index="message_malformed_fax">Bitte geben Sie eine gültige Faxnummer an.</label>
+      <label index="message_malformed_email">Bitte geben Sie eine gültige E-Mail Adresse an.</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="EN" datatype="plaintext" original="messages" date="2015-03-16T08:50:18Z" product-name="onetimeaccount" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="flexforms_pi1.sheet_general" xml:space="preserve" approved="yes">
+        <source>General</source>
+      <target state="translated">Allgemein</target></trans-unit>
+      <trans-unit id="flexforms_pi1.feUserFieldsToDisplay" xml:space="preserve" approved="yes">
+        <source>FE user fields in the form:</source>
+      <target state="translated">FE-Benutzer-Felder im Formular:</target></trans-unit>
+      <trans-unit id="flexforms_pi1.feUserFieldsToDisplay.name" xml:space="preserve" approved="yes">
+        <source>Full name:</source>
+      <target state="translated">Vollständiger Name:</target></trans-unit>
+      <trans-unit id="flexforms_pi1.feUserFieldsToDisplay.static_info_country" xml:space="preserve" approved="yes">
+        <source>Country name as alpha3 code:</source>
+      <target state="translated">Land als Alpha3-Code:</target></trans-unit>
+      <trans-unit id="flexforms_pi1.systemFolderForNewFeUserRecords" xml:space="preserve" approved="yes">
+        <source>System folder for the new FE user records:</source>
+      <target state="translated">Systemordner für die Datensätze der neuen FE-Benutzer:</target></trans-unit>
+      <trans-unit id="flexforms_pi1.groupForNewFeUsers" xml:space="preserve" approved="yes">
+        <source>Groups for the new FE users:</source>
+      <target state="translated">Gruppen für die neuen FE-Benutzer:</target></trans-unit>
+      <trans-unit id="flexforms_pi1.sheet_template" xml:space="preserve" approved="yes">
+        <source>Templates and CSS</source>
+      <target state="translated">Vorlagen und CSS</target></trans-unit>
+      <trans-unit id="flexforms_pi1.templateFile" xml:space="preserve" approved="yes">
+        <source>HTML template file:</source>
+      <target state="translated">HTML-Vorlagendatei:</target></trans-unit>
+      <trans-unit id="flexforms_pi1.requiredFeUserFields" xml:space="preserve" approved="yes">
+        <source>Required fields:</source>
+      <target state="translated">Pflichtfelder:</target></trans-unit>
+      <trans-unit id="flexforms_pi1.userNameSource" xml:space="preserve" approved="yes">
+        <source>Generate user login name from:</source>
+      <target state="translated">Benutzernamen erzeugen aus:</target></trans-unit>
+      <trans-unit id="flexforms_pi1.userNameSource.fromTsSetup" xml:space="preserve" approved="yes">
+        <source>(as configured via TS setup)</source>
+      <target state="translated">(wie im TS-Setup eingestellt)</target></trans-unit>
+      <trans-unit id="flexforms_pi1.userNameSource.email" xml:space="preserve" approved="yes">
+        <source>the e-mail address</source>
+      <target state="translated">der E-Mail-Adresse</target></trans-unit>
+      <trans-unit id="flexforms_pi1.userNameSource.name" xml:space="preserve" approved="yes">
+        <source>the user's real name</source>
+      <target state="translated">dem echten Namen des Benutzers</target></trans-unit>
+      <trans-unit id="label_your_data_formal" xml:space="preserve" approved="yes">
+        <source>Your data</source>
+      <target state="translated">Ihre Daten</target></trans-unit>
+      <trans-unit id="label_your_data_informal" xml:space="preserve" approved="yes">
+        <source>Your data</source>
+      <target state="translated">Deine Daten</target></trans-unit>
+      <trans-unit id="label_company" xml:space="preserve" approved="yes">
+        <source>Company:</source>
+      <target state="translated">Firma:</target></trans-unit>
+      <trans-unit id="label_gender.I.0" xml:space="preserve" approved="yes">
+        <source>Mr.</source>
+      <target state="translated">Herr</target></trans-unit>
+      <trans-unit id="label_gender.I.1" xml:space="preserve" approved="yes">
+        <source>Ms.</source>
+      <target state="translated">Frau</target></trans-unit>
+      <trans-unit id="label_title" xml:space="preserve" approved="yes">
+        <source>Department/Title:</source>
+      <target state="translated">Abteilung/Funktion:</target></trans-unit>
+      <trans-unit id="label_name" xml:space="preserve" approved="yes">
+        <source>Name:</source>
+      <target state="translated">Name:</target></trans-unit>
+      <trans-unit id="label_first_name" xml:space="preserve" approved="yes">
+        <source>First name:</source>
+      <target state="translated">Vorname:</target></trans-unit>
+      <trans-unit id="label_last_name" xml:space="preserve" approved="yes">
+        <source>Last name:</source>
+      <target state="translated">Nachname:</target></trans-unit>
+      <trans-unit id="label_address" xml:space="preserve" approved="yes">
+        <source>Street:</source>
+      <target state="translated">Straße:</target></trans-unit>
+      <trans-unit id="label_zip" xml:space="preserve" approved="yes">
+        <source>ZIP:</source>
+      <target state="translated">PLZ:</target></trans-unit>
+      <trans-unit id="label_city" xml:space="preserve" approved="yes">
+        <source>City:</source>
+      <target state="translated">Ort:</target></trans-unit>
+      <trans-unit id="label_zone" xml:space="preserve" approved="yes">
+        <source>County/Region:</source>
+      <target state="translated">Bundesland/Provinz:</target></trans-unit>
+      <trans-unit id="label_country" xml:space="preserve" approved="yes">
+        <source>Country:</source>
+      <target state="translated">Land:</target></trans-unit>
+      <trans-unit id="label_email" xml:space="preserve" approved="yes">
+        <source>E-mail address:</source>
+      <target state="translated">E-Mail:</target></trans-unit>
+      <trans-unit id="label_www" xml:space="preserve" approved="yes">
+        <source>Website:</source>
+      <target state="translated">Website:</target></trans-unit>
+      <trans-unit id="label_telephone" xml:space="preserve" approved="yes">
+        <source>Phone number:</source>
+      <target state="translated">Telefon:</target></trans-unit>
+      <trans-unit id="label_fax" xml:space="preserve" approved="yes">
+        <source>Fax number:</source>
+      <target state="translated">Fax:</target></trans-unit>
+      <trans-unit id="label_date_of_birth" xml:space="preserve" approved="yes">
+        <source>Date of birth:</source>
+      <target state="translated">Geburtsdatum:</target></trans-unit>
+      <trans-unit id="label_status" xml:space="preserve" approved="yes">
+        <source>Status:</source>
+      <target state="translated">Status:</target></trans-unit>
+      <trans-unit id="label_status.I.1" xml:space="preserve" approved="yes">
+        <source>Student</source>
+      <target state="translated">Student</target></trans-unit>
+      <trans-unit id="label_status.I.2" xml:space="preserve" approved="yes">
+        <source>Job seeking</source>
+      <target state="translated">Arbeitssuchend</target></trans-unit>
+      <trans-unit id="label_status.I.3" xml:space="preserve" approved="yes">
+        <source>Working</source>
+      <target state="translated">Angestellt</target></trans-unit>
+      <trans-unit id="label_status.I.4" xml:space="preserve" approved="yes">
+        <source>Retired</source>
+      <target state="translated">im Ruhestand</target></trans-unit>
+      <trans-unit id="label_usergroup" xml:space="preserve" approved="yes">
+        <source>User group:</source>
+      <target state="translated">Benutzergruppe:</target></trans-unit>
+      <trans-unit id="label_module_sys_dmail_newsletter" xml:space="preserve" approved="yes">
+        <source>Subscribe to our newsletter</source>
+      <target state="translated">Unseren Newsletter abonnieren</target></trans-unit>
+      <trans-unit id="label_module_sys_dmail_html" xml:space="preserve" approved="yes">
+        <source>Receive e-mails as HTML</source>
+      <target state="translated">E-Mails im HTML-Format empfangen</target></trans-unit>
+      <trans-unit id="label_comments" xml:space="preserve" approved="yes">
+        <source>Comments:</source>
+      <target state="translated">Kommentare:</target></trans-unit>
+      <trans-unit id="label_submit" xml:space="preserve" approved="yes">
+        <source>Proceed</source>
+      <target state="translated">Weiter</target></trans-unit>
+      <trans-unit id="message_company" xml:space="preserve" approved="yes">
+        <source>Please enter your company.</source>
+      <target state="translated">Bitte geben Sie den Namen Ihrer Firma an.</target></trans-unit>
+      <trans-unit id="message_name" xml:space="preserve" approved="yes">
+        <source>Please enter your name.</source>
+      <target state="translated">Bitte geben Sie Ihren Namen an.</target></trans-unit>
+      <trans-unit id="message_title" xml:space="preserve" approved="yes">
+        <source>Please enter your department/title.</source>
+      <target state="translated">Bitte geben Sie Ihre Abteilung/Funktion an.</target></trans-unit>
+      <trans-unit id="message_first_name" xml:space="preserve" approved="yes">
+        <source>Please enter your first name.</source>
+      <target state="translated">Bitte geben Sie Ihren Vornamen an.</target></trans-unit>
+      <trans-unit id="message_last_name" xml:space="preserve" approved="yes">
+        <source>Please enter your last name.</source>
+      <target state="translated">Bitte geben Sie Ihren Nachnamen an.</target></trans-unit>
+      <trans-unit id="message_address" xml:space="preserve" approved="yes">
+        <source>Please enter your street.</source>
+      <target state="translated">Bitte geben Sie Ihre Straße an.</target></trans-unit>
+      <trans-unit id="message_zip" xml:space="preserve" approved="yes">
+        <source>Please enter your ZIP code.</source>
+      <target state="translated">Bitte geben Sie Ihre Postleitzahl an.</target></trans-unit>
+      <trans-unit id="message_city" xml:space="preserve" approved="yes">
+        <source>Please enter your city.</source>
+      <target state="translated">Bitte geben Sie Ihren Wohnort an.</target></trans-unit>
+      <trans-unit id="message_zone" xml:space="preserve" approved="yes">
+        <source>Please enter your county/region.</source>
+      <target state="translated">Bitte geben Sie Ihr Bundesland/Ihre Provinz an.</target></trans-unit>
+      <trans-unit id="message_country" xml:space="preserve" approved="yes">
+        <source>Please enter your country.</source>
+      <target state="translated">Bitte geben Sie Ihr Land an.</target></trans-unit>
+      <trans-unit id="message_email" xml:space="preserve" approved="yes">
+        <source>Please enter your e-mail address.</source>
+      <target state="translated">Bitte geben Sie Ihre E-Mail-Adresse an.</target></trans-unit>
+      <trans-unit id="message_www" xml:space="preserve" approved="yes">
+        <source>Please enter your website.</source>
+      <target state="translated">Bitte geben Sie Ihre Webseite an.</target></trans-unit>
+      <trans-unit id="message_telephone" xml:space="preserve" approved="yes">
+        <source>Please enter your telephone number.</source>
+      <target state="translated">Bitte geben Sie Ihre Telefonnummer an.</target></trans-unit>
+      <trans-unit id="message_fax" xml:space="preserve" approved="yes">
+        <source>Please enter your fax number.</source>
+      <target state="translated">Bitte geben Sie Ihre Faxnummer an.</target></trans-unit>
+      <trans-unit id="message_date_of_birth" xml:space="preserve" approved="yes">
+        <source>Please enter your date of birth.</source>
+      <target state="translated">Bitte geben Sie Ihr Geburtsdatum an.</target></trans-unit>
+      <trans-unit id="message_status" xml:space="preserve" approved="yes">
+        <source>Please enter your status.</source>
+      <target state="translated">Bitte geben Sie Ihren Status an.</target></trans-unit>
+      <trans-unit id="message_choose_usergroup" xml:space="preserve" approved="yes">
+        <source>Please choose a user group.</source>
+      <target state="translated">Bitte wählen Sie eine Benutzergruppe.</target></trans-unit>
+      <trans-unit id="message_comments" xml:space="preserve" approved="yes">
+        <source>Please enter some comments.</source>
+      <target state="translated">Bitte geben Sie einige Kommentare ein.</target></trans-unit>
+      <trans-unit id="message_malformed_telephone" xml:space="preserve" approved="yes">
+        <source>Please enter a valid telephone number.</source>
+      <target state="translated">Bitte geben Sie eine gültige Telefonnummer an.</target></trans-unit>
+      <trans-unit id="message_malformed_fax" xml:space="preserve" approved="yes">
+        <source>Please enter a valid fax number.</source>
+      <target state="translated">Bitte geben Sie eine gültige Faxnummer an.</target></trans-unit>
+      <trans-unit id="message_malformed_email" xml:space="preserve" approved="yes">
+        <source>Please enter a valid e-mail address.</source>
+      <target state="translated">Bitte geben Sie eine gültige E-Mail Adresse an.</target></trans-unit>
+    </body>
+  </file>
+</xliff>

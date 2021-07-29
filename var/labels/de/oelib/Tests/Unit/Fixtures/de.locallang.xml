@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+			<label index="empty_string_in_default"/>
+			<label index="only_in_default"/>
+			<label index="default_not_fallback"/>
+			<label index="in_both"/>
+			<label index="formal_string_only_formal"/>
+			<label index="informal_string_only_informal"/>
+			<label index="formal_string_with_normal"/>
+			<label index="formal_string_with_normal_formal"/>
+			<label index="informal_string_with_normal"/>
+			<label index="informal_string_with_normal_informal"/>
+			<label index="both_without_normal"/>
+			<label index="both_without_normal_formal"/>
+			<label index="both_without_normal_informal"/>
+			<label index="de_formal_string_only_formal"/>
+			<label index="de_informal_string_only_informal"/>
+			<label index="de_formal_string_with_normal"/>
+			<label index="de_formal_string_with_normal_formal"/>
+			<label index="de_informal_string_with_normal"/>
+			<label index="de_informal_string_with_normal_informal"/>
+			<label index="de_both_without_normal_formal"/>
+			<label index="de_both_without_normal_informal"/>
+			<label index="only_in_french"/>
+			<label index="htmlspecialchars"/>
+			<label index="label_foo"/>
+			<label index="label_foo2"/>
+			<label index="label_bar"/>
+			<label index="label_bar_formal"/>
+			<label index="label_bar_informal"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

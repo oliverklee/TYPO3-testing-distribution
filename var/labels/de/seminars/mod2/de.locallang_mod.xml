@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="mlang_tabs_tab">Veranstaltungen</label>
+			<label index="mlang_labels_tabdescr">Mit diesem Modul kann man Veranstaltungen, Anmeldungen, Veranstaltungsorte und ReferentInnen verwalten.</label>
+			<label index="mlang_labels_tablabel">Veranstaltungen</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="mlang_tabs_tab" type="integer">142581619</label>
+			<label index="mlang_labels_tabdescr" type="integer">260990945</label>
+			<label index="mlang_labels_tablabel" type="integer">142581619</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="mlang_tabs_tab">Events</label>
+			<label index="mlang_labels_tabdescr">This module allows you to manage events, registrations, event sites and speakers.</label>
+			<label index="mlang_labels_tablabel">Events</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

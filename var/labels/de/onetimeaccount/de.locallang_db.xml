@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="tt_content.list_type_pi1">Erweiterung zum Erstellen von Einmal-FE-Kontos</label>
+      <label index="fe_users.company"/>
+      <label index="fe_users.gender"/>
+      <label index="fe_users.title"/>
+      <label index="fe_users.name"/>
+      <label index="fe_users.first_name"/>
+      <label index="fe_users.last_name"/>
+      <label index="fe_users.address"/>
+      <label index="fe_users.zip"/>
+      <label index="fe_users.city"/>
+      <label index="fe_users.zone"/>
+      <label index="fe_users.country"/>
+      <label index="fe_users.static_info_country"/>
+      <label index="fe_users.email"/>
+      <label index="fe_users.www"/>
+      <label index="fe_users.telephone"/>
+      <label index="fe_users.fax"/>
+      <label index="fe_users.date_of_birth"/>
+      <label index="fe_users.status"/>
+      <label index="fe_users.module_sys_dmail_newsletter"/>
+      <label index="fe_users.module_sys_dmail_html"/>
+      <label index="fe_users.usergroup"/>
+      <label index="fe_users.comments"/>
+    </languageKey>
+  </data>
+</T3locallangExt>

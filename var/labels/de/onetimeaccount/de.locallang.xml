@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="pi1_title">Einmal-FE-Konto</label>
+      <label index="pi1_description">Einmal FE-Account Generator</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

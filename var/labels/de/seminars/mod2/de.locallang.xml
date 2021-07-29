@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="title">Veranstaltungen</label>
+			<label index="subModuleTitle_registrations">Anmeldungen</label>
+			<label index="subModuleTitle_events">Veranstaltungen</label>
+			<label index="subModuleTitle_speakers">ReferentInnen</label>
+			<label index="subModuleTitle_organizers">Veranstalter</label>
+			<label index="eventlist.accreditation_number">Akkreditierungs-Nummer</label>
+			<label index="eventlist.date">Datum</label>
+			<label index="eventlist.title">Titel</label>
+			<label index="eventlist.attendees">Akt.</label>
+			<label index="eventlist.attendeesOnRegistrationQueue">Auf Warteliste</label>
+			<label index="eventlist.attendees_min">Min.</label>
+			<label index="eventlist.attendees_max">Max.</label>
+			<label index="eventlist.enough_attendees">Genug</label>
+			<label index="eventlist.is_full">Voll</label>
+			<label index="speakerlist.title">Name</label>
+			<label index="speakerlist.skills">Fähigkeiten</label>
+			<label index="organizerlist.title">Name</label>
+			<label index="registrationlist.feuser.name">Name</label>
+			<label index="registrationlist.deleted">(gelöscht)</label>
+			<label index="registrationlist.seminar.accreditation_number">Akkreditierungs-Nummer</label>
+			<label index="registrationlist.seminar.title">Veranstaltung</label>
+			<label index="registrationlist.seminar.date">Veranstaltungsdatum</label>
+			<label index="registrationlist.label_regularRegistrations">Reguläre Anmeldungen</label>
+			<label index="registrationlist.label_queueRegistrations">Anmeldungen auf der Warteliste</label>
+			<label index="referencesWarning">(Es gibt %s Verbindung(en) zu diesem Datensatz!)</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="title" type="integer">142581619</label>
+			<label index="subModuleTitle_registrations" type="integer">170423130</label>
+			<label index="subModuleTitle_events" type="integer">142581619</label>
+			<label index="subModuleTitle_speakers" type="integer">258305227</label>
+			<label index="subModuleTitle_organizers" type="integer">68798680</label>
+			<label index="eventlist.date" type="integer">71780721</label>
+			<label index="eventlist.title" type="integer">192455458</label>
+			<label index="eventlist.attendees" type="integer">95736411</label>
+			<label index="eventlist.attendeesOnRegistrationQueue" type="integer">117662364</label>
+			<label index="eventlist.attendees_min" type="integer">51517544</label>
+			<label index="eventlist.attendees_max" type="integer">244016059</label>
+			<label index="eventlist.enough_attendees" type="integer">30455057</label>
+			<label index="eventlist.is_full" type="integer">196953872</label>
+			<label index="speakerlist.title" type="integer">77521672</label>
+			<label index="speakerlist.skills" type="integer">178756701</label>
+			<label index="organizerlist.title" type="integer">77521672</label>
+			<label index="registrationlist.feuser.name" type="integer">77521672</label>
+			<label index="registrationlist.seminar.title" type="integer">172937159</label>
+			<label index="registrationlist.seminar.date" type="integer">56229706</label>
+			<label index="registrationlist.label_regularRegistrations" type="integer">52997146</label>
+			<label index="registrationlist.label_queueRegistrations" type="integer">122173419</label>
+			<label index="referencesWarning" type="integer">94848684</label>
+			<label index="eventlist.accreditation_number" type="integer">251981191</label>
+			<label index="registrationlist.deleted" type="integer">244968423</label>
+			<label index="registrationlist.seminar.accreditation_number" type="integer">251981191</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="title">Events</label>
+			<label index="subModuleTitle_registrations">Registrations</label>
+			<label index="subModuleTitle_events">Events</label>
+			<label index="eventlist.date">Date</label>
+			<label index="eventlist.title">Title</label>
+			<label index="eventlist.attendees">Cur.</label>
+			<label index="eventlist.attendeesOnRegistrationQueue">On queue</label>
+			<label index="eventlist.attendees_min">Min.</label>
+			<label index="eventlist.attendees_max">Max.</label>
+			<label index="eventlist.enough_attendees">Enough</label>
+			<label index="eventlist.is_full">Full</label>
+			<label index="subModuleTitle_speakers">Speakers</label>
+			<label index="subModuleTitle_organizers">Organizers</label>
+			<label index="speakerlist.title">Name</label>
+			<label index="speakerlist.skills">Skills</label>
+			<label index="organizerlist.title">Name</label>
+			<label index="registrationlist.feuser.name">Name</label>
+			<label index="registrationlist.seminar.title">Event</label>
+			<label index="registrationlist.seminar.date">Event date</label>
+			<label index="registrationlist.label_regularRegistrations">Regular attendances</label>
+			<label index="registrationlist.label_queueRegistrations">Attendances on the registration queue</label>
+			<label index="referencesWarning">(There are %s reference(s) to this record!)</label>
+			<label index="eventlist.accreditation_number">Accreditation number</label>
+			<label index="registrationlist.deleted">(deleted)</label>
+			<label index="registrationlist.seminar.accreditation_number">Accreditation number</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-07-18T15:52:30Z" product-name="oelib" target-language="de">
+		<header/>
+		<body>
+			<trans-unit id="empty_string_in_default" xml:space="preserve">
+				<source/>
+			</trans-unit>
+			<trans-unit id="only_in_default" xml:space="preserve">
+				<source>only in default</source>
+			<target></target></trans-unit>
+			<trans-unit id="default_not_fallback" xml:space="preserve">
+				<source>default_not_fallback default</source>
+			<target></target></trans-unit>
+			<trans-unit id="in_both" xml:space="preserve">
+				<source>in both languages</source>
+			<target></target></trans-unit>
+			<trans-unit id="formal_string_only_formal" xml:space="preserve">
+				<source>only formal</source>
+			<target></target></trans-unit>
+			<trans-unit id="informal_string_only_informal" xml:space="preserve">
+				<source>only informal</source>
+			<target></target></trans-unit>
+			<trans-unit id="formal_string_with_normal" xml:space="preserve">
+				<source>formal with normal, normal</source>
+			<target></target></trans-unit>
+			<trans-unit id="formal_string_with_normal_formal" xml:space="preserve">
+				<source>formal with normal, formal</source>
+			<target></target></trans-unit>
+			<trans-unit id="informal_string_with_normal" xml:space="preserve">
+				<source>informal with normal, normal</source>
+			<target></target></trans-unit>
+			<trans-unit id="informal_string_with_normal_informal" xml:space="preserve">
+				<source>informal with normal, informal</source>
+			<target></target></trans-unit>
+			<trans-unit id="both_without_normal" xml:space="preserve">
+				<source>both without normal</source>
+			<target></target></trans-unit>
+			<trans-unit id="both_without_normal_formal" xml:space="preserve">
+				<source>both without normal, formal</source>
+			<target></target></trans-unit>
+			<trans-unit id="both_without_normal_informal" xml:space="preserve">
+				<source>both without normal, informal</source>
+			<target></target></trans-unit>
+			<trans-unit id="de_formal_string_only_formal" xml:space="preserve">
+				<source>only formal</source>
+			<target></target></trans-unit>
+			<trans-unit id="de_informal_string_only_informal" xml:space="preserve">
+				<source>only informal</source>
+			<target></target></trans-unit>
+			<trans-unit id="de_formal_string_with_normal" xml:space="preserve">
+				<source>formal with normal, normal</source>
+			<target></target></trans-unit>
+			<trans-unit id="de_formal_string_with_normal_formal" xml:space="preserve">
+				<source>formal with normal, formal</source>
+			<target></target></trans-unit>
+			<trans-unit id="de_informal_string_with_normal" xml:space="preserve">
+				<source>informal with normal, normal</source>
+			<target></target></trans-unit>
+			<trans-unit id="de_informal_string_with_normal_informal" xml:space="preserve">
+				<source>informal with normal, informal</source>
+			<target></target></trans-unit>
+			<trans-unit id="de_both_without_normal_formal" xml:space="preserve">
+				<source>both without normal, formal</source>
+			<target></target></trans-unit>
+			<trans-unit id="de_both_without_normal_informal" xml:space="preserve">
+				<source>both without normal, informal</source>
+			<target></target></trans-unit>
+			<trans-unit id="only_in_french" xml:space="preserve">
+				<source>only in french</source>
+			<target></target></trans-unit>
+			<trans-unit id="htmlspecialchars" xml:space="preserve">
+				<source>a&amp;o</source>
+			<target></target></trans-unit>
+			<trans-unit id="label_foo" xml:space="preserve">
+				<source>foo</source>
+			<target></target></trans-unit>
+			<trans-unit id="label_foo2" xml:space="preserve">
+				<source>foo two</source>
+			<target></target></trans-unit>
+			<trans-unit id="label_bar" xml:space="preserve">
+				<source>bar (no salutation)</source>
+			<target></target></trans-unit>
+			<trans-unit id="label_bar_formal" xml:space="preserve">
+				<source>bar (formal)</source>
+			<target></target></trans-unit>
+			<trans-unit id="label_bar_informal" xml:space="preserve">
+				<source>bar (informal)</source>
+			<target></target></trans-unit>
+		</body>
+	</file>
+</xliff>

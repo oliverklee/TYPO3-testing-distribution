@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="pi1_title">Seminar-Manager</label>
+			<label index="label_title">Titel</label>
+			<label index="label_uid">Nummer</label>
+			<label index="label_registration_uid">Ticket-ID</label>
+			<label index="label_event_type">Veranstaltungsart</label>
+			<label index="label_accreditation_number">Akkreditierungsnummer</label>
+			<label index="label_credit_points">Leistungspunkte</label>
+			<label index="label_date">Datum</label>
+			<label index="label_time">Zeit</label>
+			<label index="label_place">Ort</label>
+			<label index="label_room">Raum</label>
+			<label index="label_additional_times_places">Zeiten und Orte</label>
+			<label index="label_seats">Plätze</label>
+			<label index="label_total_price">Gesamtpreis</label>
+			<label index="label_attendees_names">Zusätzlich angemeldete Personen</label>
+			<label index="label_lodgings">Gewählte Unterbringungsmöglichkeiten</label>
+			<label index="label_foods">Gewählte Verpflegungsmöglichkeiten</label>
+			<label index="label_kids">Anzahl Kinder</label>
+			<label index="label_referrer">Vermittler</label>
+			<label index="label_price">Preis</label>
+			<label index="label_price_general">Preis</label>
+			<label index="label_price_regular">Standardpreis</label>
+			<label index="label_price_regular_early">Frühbucherpreis</label>
+			<label index="label_price_earlybird_regular">Frühbucherpreis</label>
+			<label index="label_price_board_regular">Standardpreis inklusive Vollpension</label>
+			<label index="label_price_special">Spezialpreis</label>
+			<label index="label_price_special_early">Frühbucher-Spezialpreis</label>
+			<label index="label_price_earlybird_special">Frühbucher-Spezialpreis</label>
+			<label index="label_price_board_special">Spezialpreis inklusive Vollpension</label>
+			<label index="label_method_of_payment">Zahlungsmethode</label>
+			<label index="label_gender">Geschlecht</label>
+			<label index="label_username">Benutzername</label>
+			<label index="label_name">Name</label>
+			<label index="label_address">Adresse</label>
+			<label index="label_zip">PLZ</label>
+			<label index="label_city">Ort</label>
+			<label index="label_country">Land</label>
+			<label index="label_attendees">Teilnehmer</label>
+			<label index="label_vacancies">Freie Plätze</label>
+			<label index="label_enough_attendees">Genug Teilnehmer</label>
+			<label index="label_is_full">Ist ausgebucht</label>
+			<label index="label_paymentmethod">Gewählte Zahlungsart</label>
+			<label index="label_billing_address">Rechnungsadresse</label>
+			<label index="label_telephone">Telefon</label>
+			<label index="label_fax">Fax</label>
+			<label index="label_email">E-Mail-Adresse</label>
+			<label index="label_interests">Interessen</label>
+			<label index="label_expectations">Erwartungen</label>
+			<label index="label_background_knowledge">Vorkenntnisse</label>
+			<label index="label_known_from">Bekannt von</label>
+			<label index="label_notes">Notizen</label>
+			<label index="label_url">Mehr Informationen</label>
+			<label index="label_seminardata">Daten des Seminars</label>
+			<label index="label_feuserdata">Daten des Accounts</label>
+			<label index="label_attendancedata">Daten, die bei der Anmeldung angegeben wurden</label>
+			<label index="label_gender.I.0">Herr</label>
+			<label index="label_gender.I.1">Frau</label>
+			<label index="label_status.I.1">Student</label>
+			<label index="label_status.I.2">Schüler</label>
+			<label index="label_status.I.3">Angestellt</label>
+			<label index="label_status.I.4">Selbstständig</label>
+			<label index="label_regular">regulär</label>
+			<label index="label_waiting_list">Warteliste</label>
+			<label index="label_yes">ja</label>
+			<label index="label_no">nein</label>
+			<label index="message_notLoggedIn_formal">Bitte loggen Sie sich zuerst ein.</label>
+			<label index="message_notLoggedIn_informal">Bitte logge dich zuerst ein.</label>
+			<label index="message_alreadyRegistered_formal">Sie sind für diese Veranstaltung bereits angemeldet.</label>
+			<label index="message_alreadyRegistered_informal">Du bist für diese Veranstaltung bereits angemeldet.</label>
+			<label index="message_userIsBlocked_formal">Sie sind schon für eine Veranstaltung angemeldet, deren Zeiten mit dieser Veranstaltung kollidieren.</label>
+			<label index="message_userIsBlocked_informal">Du bist schon für eine Veranstaltung angemeldet, deren Zeiten mit dieser Veranstaltung kollidieren.</label>
+			<label index="message_wrongSeminarNumber_formal">Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank!</label>
+			<label index="message_wrongSeminarNumber_informal">Ein Veranstaltung mit dieser Nummer existiert nicht. Wenn du diese Fehlermeldung durch einen Link auf unserer Seite bekommen hast, benachrichtige bitte den Webmaster. Vielen Dank!</label>
+			<label index="message_noRegistrationNecessary">Für diese Veranstaltung ist keine Anmeldung erforderlich.</label>
+			<label index="message_seminarCancelled">Diese Veranstaltung wurde leider abgesagt.</label>
+			<label index="message_noDate">Diese Veranstaltung hat noch keinen fixen Termin.</label>
+			<label index="message_seminarRegistrationIsClosed">Die Anmeldefrist für diese Veranstaltung ist leider schon vorbei.</label>
+			<label index="message_noVacancies">Es sind leider keine Plätze mehr frei.</label>
+			<label index="message_invalidNumberOfSeats_formal">Diese Anzahl Plätze lässt sich leider nicht reservieren. Bitte reservieren Sie maximal %s Plätze.</label>
+			<label index="message_invalidNumberOfSeats_informal">Diese Anzahl Plätze lässt sich leider nicht reservieren. Bitte reserviere maximal %s Plätze.</label>
+			<label index="message_willBeAnnounced">wird noch bekannt gegeben</label>
+			<label index="message_forFree">kostenlos</label>
+			<label index="message_enough">genug</label>
+			<label index="message_fullyBooked">ausgebucht</label>
+			<label index="message_accessDenied_formal">Zu diesem Teil der Site haben Sie leider keine Zugangsberechtigung.</label>
+			<label index="message_accessDenied_informal">Zu diesem Teil der Site hast du leider keine Zugangsberechtigung.</label>
+			<label index="email_confirmationSubject">Anmeldebestätigung</label>
+			<label index="email_confirmationHello_formal">Guten Tag %s,
+
+vielen Dank für Ihre Anmeldung zu dieser Veranstaltung:</label>
+			<label index="email_confirmationHello_informal">Hallo %s,
+
+vielen Dank für deine Anmeldung zu dieser Veranstaltung:</label>
+			<label index="email_confirmationOnUnregistrationSubject">Abmeldebestätigung</label>
+			<label index="email_confirmationOnUnregistrationHello_formal">Guten Tag %s,
+
+Sie haben sich gerade von dieser Veranstaltung abgemeldet:</label>
+			<label index="email_confirmationOnUnregistrationHello_informal">Hallo %s,
+
+du hast dich gerade von dieser Veranstaltung abgemeldet:</label>
+			<label index="email_confirmationOnRegistrationForQueueSubject">Anmeldebestätigung für die Warteliste</label>
+			<label index="email_confirmationOnRegistrationForQueueHello_formal">Guten Tag %s,
+
+vielen Dank für Ihre Anmeldung für die Warteliste von dieser Veranstaltung:</label>
+			<label index="email_confirmationOnRegistrationForQueueHello_informal">Hallo %s,
+
+vielen Dank für deine Anmeldung für die Warteliste von dieser Veranstaltung:</label>
+			<label index="email_confirmationOnQueueUpdateSubject">Bestätigung: Anmeldung wurde zu regulärer Anmeldung</label>
+			<label index="email_confirmationOnQueueUpdateHello_formal">Guten Tag %s,
+
+Ihre Anmeldung wurde gerade zu einer regulären Anmeldung von dieser Veranstaltung:</label>
+			<label index="email_confirmationOnQueueUpdateHello_informal">Hallo %s,
+
+deine Anmeldung wurde gerade zu einer regulären Anmeldung von dieser Veranstaltung:</label>
+			<label index="email_additionalNotificationEnoughRegistrations">Folgende Veranstaltung hat nun genug Anmeldungen, um durchgeführt zu werden.</label>
+			<label index="email_additionalNotificationEnoughRegistrationsSubject">Veranstaltung hat genug Anmeldungen: %d - %s</label>
+			<label index="email_additionalNotificationIsFull">Folgende Veranstaltung ist nun komplett ausgebucht (keine freien Plätze mehr).</label>
+			<label index="email_additionalNotificationIsFullSubject">Veranstaltung ist ausgebucht: %d - %s</label>
+			<label index="email_notificationSubject">Anmeldebenachrichtigung</label>
+			<label index="email_notificationHello">Hallo,
+
+jemand hat sich gerade für eine Veranstaltung angemeldet:</label>
+			<label index="email_notificationOnUnregistrationSubject">Abmeldebenachrichtigung</label>
+			<label index="email_notificationOnUnregistrationHello">Hallo,
+
+jemand hat sich gerade von einer Veranstaltung abgemeldet:</label>
+			<label index="email_notificationOnRegistrationForQueueSubject">Anmeldebenachrichtigung für die Warteliste</label>
+			<label index="email_notificationOnRegistrationForQueueHello">Hallo,
+
+jemand hat sich gerade für die Warteliste von einer Veranstaltung angemeldet:</label>
+			<label index="email_notificationOnQueueUpdateSubject">Anmeldung wurde zu regulärer Anmeldung Benachrichtigung</label>
+			<label index="email_notificationOnQueueUpdateHello">Hallo,
+
+die Anmeldung von jemandem wurde gerade zu einer regulären Anmeldung von einer Veranstaltung:</label>
+			<label index="label_tx_seminars_phone_mobile">Mobiltelefonnummer</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="pi1_title" type="integer">144163361</label>
+			<label index="label_uid" type="integer">187623698</label>
+			<label index="label_registration_uid" type="integer">262691347</label>
+			<label index="label_accreditation_number" type="integer">251981191</label>
+			<label index="label_credit_points" type="integer">267941596</label>
+			<label index="label_date" type="integer">71780721</label>
+			<label index="label_time" type="integer">175559919</label>
+			<label index="label_place" type="integer">129617664</label>
+			<label index="label_room" type="integer">214150095</label>
+			<label index="label_additional_times_places" type="integer">178250458</label>
+			<label index="label_seats" type="integer">187299883</label>
+			<label index="label_total_price" type="integer">15654485</label>
+			<label index="label_attendees_names" type="integer">168936155</label>
+			<label index="label_lodgings" type="integer">119452104</label>
+			<label index="label_foods" type="integer">48275051</label>
+			<label index="label_kids" type="integer">18594081</label>
+			<label index="label_price_general" type="integer">56627526</label>
+			<label index="label_price_regular" type="integer">81309183</label>
+			<label index="label_price_earlybird_regular" type="integer">236870027</label>
+			<label index="label_price_board_regular" type="integer">122636477</label>
+			<label index="label_price_special" type="integer">35819210</label>
+			<label index="label_price_earlybird_special" type="integer">255242535</label>
+			<label index="label_price_board_special" type="integer">56248635</label>
+			<label index="label_paymentmethod" type="integer">145013843</label>
+			<label index="label_billing_address" type="integer">33277925</label>
+			<label index="label_telephone" type="integer">197928267</label>
+			<label index="label_fax" type="integer">159451810</label>
+			<label index="label_email" type="integer">146136420</label>
+			<label index="label_url" type="integer">179332787</label>
+			<label index="label_seminardata" type="integer">202303574</label>
+			<label index="label_feuserdata" type="integer">104853840</label>
+			<label index="label_attendancedata" type="integer">196013839</label>
+			<label index="label_gender.I.0" type="integer">19351194</label>
+			<label index="label_gender.I.1" type="integer">43922038</label>
+			<label index="label_status.I.1" type="integer">257690140</label>
+			<label index="label_status.I.2" type="integer">138303616</label>
+			<label index="label_status.I.3" type="integer">136964828</label>
+			<label index="label_status.I.4" type="integer">219192007</label>
+			<label index="label_regular" type="integer">183729416</label>
+			<label index="label_waiting_list" type="integer">128272059</label>
+			<label index="label_yes" type="integer">174130624</label>
+			<label index="label_no" type="integer">133839734</label>
+			<label index="message_notLoggedIn_formal" type="integer">264485426</label>
+			<label index="message_notLoggedIn_informal" type="integer">264485426</label>
+			<label index="message_alreadyRegistered_formal" type="integer">72254150</label>
+			<label index="message_alreadyRegistered_informal" type="integer">72254150</label>
+			<label index="message_userIsBlocked_formal" type="integer">82463404</label>
+			<label index="message_userIsBlocked_informal" type="integer">82463404</label>
+			<label index="message_wrongSeminarNumber_formal" type="integer">103788042</label>
+			<label index="message_wrongSeminarNumber_informal" type="integer">103788042</label>
+			<label index="message_noRegistrationNecessary" type="integer">59870455</label>
+			<label index="message_seminarCancelled" type="integer">154447024</label>
+			<label index="message_noDate" type="integer">11811061</label>
+			<label index="message_seminarRegistrationIsClosed" type="integer">157436583</label>
+			<label index="message_noVacancies" type="integer">139364947</label>
+			<label index="message_invalidNumberOfSeats_formal" type="integer">85122580</label>
+			<label index="message_invalidNumberOfSeats_informal" type="integer">85122580</label>
+			<label index="message_willBeAnnounced" type="integer">181096808</label>
+			<label index="message_forFree" type="integer">178444004</label>
+			<label index="message_enough" type="integer">249306686</label>
+			<label index="message_accessDenied_formal" type="integer">68141847</label>
+			<label index="message_accessDenied_informal" type="integer">68141847</label>
+			<label index="email_confirmationSubject" type="integer">69825439</label>
+			<label index="email_confirmationHello" type="integer">88233580</label>
+			<label index="email_confirmationHello_informal" type="integer">88233580</label>
+			<label index="email_notificationSubject" type="integer">239440327</label>
+			<label index="email_notificationHello" type="integer">108930896</label>
+			<label index="email_confirmationHello_formal" type="integer">88233580</label>
+			<label index="email_confirmationOnUnregistrationSubject" type="integer">71851432</label>
+			<label index="email_confirmationOnUnregistrationHello_formal" type="integer">197103273</label>
+			<label index="email_confirmationOnUnregistrationHello_informal" type="integer">197103273</label>
+			<label index="email_confirmationOnRegistrationForQueueSubject" type="integer">245357554</label>
+			<label index="email_confirmationOnRegistrationForQueueHello_formal" type="integer">49182706</label>
+			<label index="email_confirmationOnRegistrationForQueueHello_informal" type="integer">49182706</label>
+			<label index="email_confirmationOnQueueUpdateSubject" type="integer">141930955</label>
+			<label index="email_confirmationOnQueueUpdateHello_formal" type="integer">262513865</label>
+			<label index="email_confirmationOnQueueUpdateHello_informal" type="integer">262513865</label>
+			<label index="email_additionalNotificationSubject" type="integer">75541883</label>
+			<label index="email_additionalNotificationEnoughRegistrations" type="integer">40292240</label>
+			<label index="email_additionalNotificationIsFull" type="integer">125053794</label>
+			<label index="email_additionalNotificationEnoughRegistrationsSubject" type="integer">106627365</label>
+			<label index="email_additionalNotificationIsFullSubject" type="integer">73270895</label>
+			<label index="email_notificationOnUnregistrationSubject" type="integer">22055172</label>
+			<label index="email_notificationOnUnregistrationHello" type="integer">199821822</label>
+			<label index="email_notificationOnRegistrationForQueueSubject" type="integer">262800061</label>
+			<label index="email_notificationOnRegistrationForQueueHello" type="integer">252080490</label>
+			<label index="email_notificationOnQueueUpdateSubject" type="integer">50452167</label>
+			<label index="email_notificationOnQueueUpdateHello" type="integer">167179722</label>
+			<label index="label_title" type="integer">192455458</label>
+			<label index="label_event_type" type="integer">99114704</label>
+			<label index="label_price" type="integer">56627526</label>
+			<label index="label_price_regular_early" type="integer">236870027</label>
+			<label index="label_price_special_early" type="integer">255242535</label>
+			<label index="label_method_of_payment" type="integer">138981420</label>
+			<label index="label_gender" type="integer">1698865</label>
+			<label index="label_username" type="integer">159898854</label>
+			<label index="label_name" type="integer">77521672</label>
+			<label index="label_address" type="integer">232242979</label>
+			<label index="label_zip" type="integer">164100864</label>
+			<label index="label_city" type="integer">92079470</label>
+			<label index="label_country" type="integer">93787849</label>
+			<label index="label_attendees" type="integer">12580046</label>
+			<label index="label_vacancies" type="integer">99017107</label>
+			<label index="label_enough_attendees" type="integer">124413256</label>
+			<label index="label_is_full" type="integer">13790082</label>
+			<label index="label_interests" type="integer">163357902</label>
+			<label index="label_expectations" type="integer">114809365</label>
+			<label index="label_background_knowledge" type="integer">123294752</label>
+			<label index="label_known_from" type="integer">129140510</label>
+			<label index="label_notes" type="integer">256667525</label>
+			<label index="label_tx_seminars_phone_mobile" type="integer">108060785</label>
+			<label index="message_fullyBooked" type="integer">65406827</label>
+			<label index="label_referrer" type="integer">191825381</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="pi1_title">Seminar Manager</label>
+			<label index="label_uid">Number</label>
+			<label index="label_registration_uid">Ticket ID</label>
+			<label index="label_accreditation_number">Accreditation number</label>
+			<label index="label_credit_points">Credit points</label>
+			<label index="label_date">Date</label>
+			<label index="label_time">Time</label>
+			<label index="label_place">Place</label>
+			<label index="label_room">Room</label>
+			<label index="label_additional_times_places">Times and places</label>
+			<label index="label_seats">Seats</label>
+			<label index="label_total_price">Total price</label>
+			<label index="label_attendees_names">Additional attendees</label>
+			<label index="label_lodgings">Selected lodging options</label>
+			<label index="label_foods">Selected food options</label>
+			<label index="label_kids">Number of kids</label>
+			<label index="label_price_general">Price</label>
+			<label index="label_price_regular">Regular price</label>
+			<label index="label_price_earlybird_regular">Early-bird price</label>
+			<label index="label_price_board_regular">Regular price including full board</label>
+			<label index="label_price_special">Special price</label>
+			<label index="label_price_earlybird_special">Early-bird special price</label>
+			<label index="label_price_board_special">Special price including full board</label>
+			<label index="label_paymentmethod">Selected method of payment</label>
+			<label index="label_billing_address">Billing address</label>
+			<label index="label_telephone">Phone</label>
+			<label index="label_fax">Fax</label>
+			<label index="label_email">E-mail address</label>
+			<label index="label_url">More information</label>
+			<label index="label_seminardata">Seminar data</label>
+			<label index="label_feuserdata">Account data</label>
+			<label index="label_attendancedata">Data that has been entered on registration</label>
+			<label index="label_gender.I.0">Mr.</label>
+			<label index="label_gender.I.1">Ms.</label>
+			<label index="label_status.I.1">Student</label>
+			<label index="label_status.I.2">Job seeking</label>
+			<label index="label_status.I.3">Working</label>
+			<label index="label_status.I.4">Retired</label>
+			<label index="label_regular">regular</label>
+			<label index="label_waiting_list">waiting list</label>
+			<label index="label_yes">yes</label>
+			<label index="label_no">no</label>
+			<label index="message_notLoggedIn_formal">Please log in first.</label>
+			<label index="message_notLoggedIn_informal">Please log in first.</label>
+			<label index="message_alreadyRegistered_formal">You already have registered for this event.</label>
+			<label index="message_alreadyRegistered_informal">You already have registered for this event.</label>
+			<label index="message_userIsBlocked_formal">You are already registered for an event that collides with this event.</label>
+			<label index="message_userIsBlocked_informal">You are already registered for an event that collides with this event.</label>
+			<label index="message_wrongSeminarNumber_formal">There is no event with this number. If you get this error message using a link on this page, please notify the webmaster. Thank you!</label>
+			<label index="message_wrongSeminarNumber_informal">There is no event with this number. If you get this error message using a link on this page, please notify the webmaster. Thank you!</label>
+			<label index="message_noRegistrationNecessary">For this event, no registration is necessary.</label>
+			<label index="message_seminarCancelled">Alas, this event has been canceled.</label>
+			<label index="message_noDate">This event has no date yet.</label>
+			<label index="message_seminarRegistrationIsClosed">Sorry, the registration period for this event is over.</label>
+			<label index="message_noVacancies">Sorry, there are no more vancacies.</label>
+			<label index="message_invalidNumberOfSeats_formal">Sorry, this number of seats cannot be reserved. Please reserve at most %s seats.</label>
+			<label index="message_invalidNumberOfSeats_informal">Sorry, this number of seats cannot be reserved. Please reserve at most %s seats.</label>
+			<label index="message_willBeAnnounced">will be announced</label>
+			<label index="message_forFree">free</label>
+			<label index="message_enough">enough</label>
+			<label index="message_accessDenied_formal">Sorry, you don't have access to this part of the site.</label>
+			<label index="message_accessDenied_informal">Sorry, you don't have access to this part of the site.</label>
+			<label index="email_confirmationSubject">Registration confirmation</label>
+			<label index="email_confirmationHello_formal">Hello %s,
+
+thank you for registering for this event:</label>
+			<label index="email_confirmationHello_informal">Hello %s,
+
+thank you for registering for this event:</label>
+			<label index="email_confirmationOnUnregistrationSubject">Unregistration confirmation</label>
+			<label index="email_confirmationOnUnregistrationHello_formal">Hello %s,
+
+you just have unregistered from this event:</label>
+			<label index="email_confirmationOnUnregistrationHello_informal">Hello %s,
+
+you just have unregistered from this event:</label>
+			<label index="email_confirmationOnRegistrationForQueueSubject">Registration for the waiting list confirmation</label>
+			<label index="email_confirmationOnRegistrationForQueueHello_formal">Hello %s,
+
+thank you for registering for the waiting list of this event:</label>
+			<label index="email_confirmationOnRegistrationForQueueHello_informal">Hello %s,
+
+thank you for registering for the waiting list of this event:</label>
+			<label index="email_confirmationOnQueueUpdateSubject">Registration became a regular registration confirmation</label>
+			<label index="email_confirmationOnQueueUpdateHello_formal">Hello %s,
+
+your registration just has become a regular registration of this event:</label>
+			<label index="email_confirmationOnQueueUpdateHello_informal">Hello %s,
+
+your registration just has become a regular registration of this event:</label>
+			<label index="email_additionalNotificationEnoughRegistrations">Your event has now enough registrations to be held.</label>
+			<label index="email_additionalNotificationEnoughRegistrationsSubject">Event has enough registrations: %d - %s</label>
+			<label index="email_additionalNotificationIsFull">Your event is full, there are no empty seats left.</label>
+			<label index="email_additionalNotificationIsFullSubject">Event is full: %d - %s</label>
+			<label index="email_notificationSubject">Registration notification</label>
+			<label index="email_notificationHello">Hello,
+
+someone just has registered for an event:</label>
+			<label index="email_notificationOnUnregistrationSubject">Unregistration notification</label>
+			<label index="email_notificationOnUnregistrationHello">Hello,
+
+someone just has unregistered from an event:</label>
+			<label index="email_notificationOnRegistrationForQueueSubject">Registration for waiting list notification</label>
+			<label index="email_notificationOnRegistrationForQueueHello">Hello,
+
+someone just has registered for the waiting list of an event:</label>
+			<label index="email_notificationOnQueueUpdateSubject">Registration became a regular registration notification</label>
+			<label index="email_notificationOnQueueUpdateHello">Hello,
+
+someone's registration just has become a regular registration of an event:</label>
+			<label index="label_title">Title</label>
+			<label index="label_event_type">Event type</label>
+			<label index="label_price">Price</label>
+			<label index="label_price_regular_early">Early-bird price</label>
+			<label index="label_price_special_early">Early-bird special price</label>
+			<label index="label_method_of_payment">Method of payment</label>
+			<label index="label_gender">Gender</label>
+			<label index="label_username">User name</label>
+			<label index="label_name">Name</label>
+			<label index="label_address">Address</label>
+			<label index="label_zip">ZIP code</label>
+			<label index="label_city">City</label>
+			<label index="label_country">Country</label>
+			<label index="label_attendees">Attendees</label>
+			<label index="label_vacancies">Vacancies</label>
+			<label index="label_enough_attendees">Enough attendees</label>
+			<label index="label_is_full">Is full</label>
+			<label index="label_interests">Special interests</label>
+			<label index="label_expectations">Expectations</label>
+			<label index="label_background_knowledge">Background knowledge</label>
+			<label index="label_known_from">Known from</label>
+			<label index="label_notes">Notes</label>
+			<label index="label_tx_seminars_phone_mobile">Mobile phone number</label>
+			<label index="message_fullyBooked">fully booked</label>
+			<label index="label_referrer">Referrer</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>
