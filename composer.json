@@ -49,6 +49,13 @@
 		"sort-packages": true
 	},
 	"scripts": {
+		"ci": [
+			"@ci:static"
+		],
+		"ci:static": [
+			"@ci:php:lint"
+		],
+		"ci:php:lint": "php -l public/typo3conf/LocalConfiguration.php",
 		"typo3-cms-scripts": [
 			"typo3cms install:generatepackagestates",
 			"typo3cms install:fixfolderstructure"
