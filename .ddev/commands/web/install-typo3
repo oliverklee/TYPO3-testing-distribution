@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd /var/www/html
+
+vendor/bin/typo3cms install:setup -n --skip-integrity-check --database-name $TYPO3_INSTALL_DB_HOST
+vendor/bin/typo3cms configuration:set 'BE/debug' 1
+vendor/bin/typo3cms configuration:set 'FE/debug' 1
+
+vendor/bin/typo3cms install:generatepackagestates
+
+vendor/bin/typo3cms cache:flush

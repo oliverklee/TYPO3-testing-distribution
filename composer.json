@@ -15,6 +15,7 @@
 		"issues": "https://github.com/oliverklee/TYPO3-testing-distribution/issues"
 	},
 	"require": {
+		"php": ">= 7.2.0",
 		"helhum/typo3-console": "^5.5.5",
 		"typo3/cms-about": "^9.5",
 		"typo3/cms-adminpanel": "^9.5",

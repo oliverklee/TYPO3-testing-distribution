@@ -14,4 +14,23 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 - [tea](https://github.com/TYPO3-Documentation/tea)
 - [site package](https://github.com/oliverklee/typo3-devsite)
 
+## Usage
+
 This distribution uses [ddev](https://github.com/drud/ddev).
+
+### Initializing the project
+
+```bash
+ddev start
+ddev install-typo3
+```
+
+### Relevant URLs
+
+- Backend: https://typo3-testing-distribution.ddev.site:8081/typo3/
+- Frontend (DE): https://typo3-testing.ddev.site:8081/
+- Frontend (EN): https://typo3-testing-en.ddev.site:8081/
+- MailHog: https://typo3-testing.ddev.site:8026/
+
+Backend credentials: `admin` / `password`
+Install tool password: `password`
