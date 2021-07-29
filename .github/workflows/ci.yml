@@ -24,9 +24,31 @@ jobs:
           - 7.2
           - 7.3
           - 7.4
+  composer-validate:
+    name: "Composer validate"
+    runs-on: ubuntu-20.04
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Install PHP"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "${{ matrix.php-version }}"
+          coverage: none
+          tools: composer:v2
+      - name: "Validate the composer.json"
+        run: "composer validate"
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - 7.2
+          - 7.3
+          - 7.4
   code-quality:
     name: "Code quality checks"
     runs-on: ubuntu-20.04
+    needs: composer-validate
     steps:
       - name: "Checkout"
         uses: actions/checkout@v2
