@@ -52,24 +52,29 @@
 			"@typo3-cms-scripts"
 		],
 		"ci": [
-			"@ci:static"
-		],
-		"ci:composer:normalize": "@composer normalize --dry-run",
-		"ci:php:lint": "@php -l public/typo3conf/LocalConfiguration.php",
-		"ci:static": [
 			"@ci:composer:normalize",
 			"@ci:php:lint",
 			"@ci:yaml:lint"
 		],
+		"ci:composer:normalize": "@composer normalize --dry-run",
+		"ci:php:lint": "@php -l public/typo3conf/LocalConfiguration.php",
 		"ci:yaml:lint": "find .ddev .github -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
+		"composer:normalize": "@composer normalize",
 		"fix": [
-			"@fix:composer:normalize"
+			"@composer:normalize"
 		],
-		"fix:composer:normalize": "@composer normalize",
 		"typo3-cms-scripts": [
 			"typo3cms install:generatepackagestates",
 			"typo3cms install:fixfolderstructure"
 		]
+	},
+	"scripts-descriptions": {
+		"ci": "Runs all code checks.",
+		"ci:composer:normalize": "Checks the formatting and structure of the composer.json.",
+		"ci:php:lint": "Lints the PHP files for syntax errors.",
+		"ci:yaml:lint": "Lints the YAML files for syntax errors.",
+		"composer:normalize": "Reformats and sorts the composer.json file.",
+		"fix": "Reformats the code."
 	},
 	"support": {
 		"issues": "https://github.com/oliverklee/TYPO3-testing-distribution/issues",
