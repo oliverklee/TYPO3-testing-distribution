@@ -1,0 +1,24 @@
+#!/bin/bash
+
+vendor/bin/typo3cms database:updateschema
+vendor/bin/typo3cms database:export \
+    --exclude be_* \
+    --exclude cache_* \
+    --exclude cf_* \
+    --exclude fe_sessions \
+    --exclude static_* \
+    --exclude sys_be_shortcuts \
+    --exclude sys_category* \
+    --exclude sys_collection* \
+    --exclude sys_file_processedfile \
+    --exclude sys_history \
+    --exclude sys_lockedrecords \
+    --exclude sys_log \
+    --exclude sys_news \
+    --exclude sys_refindex \
+    --exclude sys_registry \
+    --exclude tx_extensionmanager_* \
+    --exclude tx_oelib_* \
+    --exclude tx_scheduler_* \
+    --exclude tx_seminars_test* \
+    > dump.sql

@@ -27,6 +27,16 @@ ddev start
 ddev install-typo3
 ```
 
+## Database dump and import
+
+There are two commands available for dumping the database and for importing the
+dump to and from the file `dump.sql`:
+
+```bash
+ddev db-dump
+ddev db-import
+```
+
 ### Relevant URLs
 
 - Backend: https://typo3-testing-distribution.ddev.site:8081/typo3/
