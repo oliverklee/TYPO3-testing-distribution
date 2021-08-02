@@ -36,13 +36,20 @@ dump to and from the file `dump.sql`:
 ddev db-dump
 ddev db-import
 ```
+## Relevant URLs and launch options
 
-### Relevant URLs
-
-- Backend: https://typo3-testing-distribution.ddev.site:8081/typo3/
-- Frontend (DE): https://typo3-testing.ddev.site:8081/
+- Backend:
+  - https://typo3-testing-distribution.ddev.site:8081/typo3/
+  - `ddev launch /typo3`
+- Frontend (DE):
+  - https://typo3-testing.ddev.site:8081/
+  - `ddev launch`
 - Frontend (EN): https://typo3-testing-en.ddev.site:8081/
-- MailHog: https://typo3-testing.ddev.site:8026/
+- MailHog:
+  - https://typo3-testing.ddev.site:8026/
+  - `ddev launch -m`
 
-Backend credentials: `admin` / `password`
+## Credentials
+
+Backend admin: `admin` / `password`
 Install tool password: `password`
