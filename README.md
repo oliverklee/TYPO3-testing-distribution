@@ -36,6 +36,11 @@ dump to and from the file `dump.sql`:
 ddev db-dump
 ddev db-import
 ```
+
+The dump includes (and hence overwrite on import) FE users and FE user groups,
+but not BE users or BE user groups. (So it is safe to add BE users and then
+run the import.)
+
 ## Relevant URLs and launch options
 
 - Backend:
@@ -53,3 +58,8 @@ ddev db-import
 
 Backend admin: `admin` / `password`
 Install tool password: `password`
+
+Frontend users:
+- `attendee` / `attendee`
+- `editor` / `editor`
+- `manager` / `manager`
