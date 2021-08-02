@@ -74,6 +74,7 @@ jobs:
       fail-fast: false
       matrix:
         command:
+          - "composer:normalize"
           - "yaml:lint"
         php-version:
           - 7.4

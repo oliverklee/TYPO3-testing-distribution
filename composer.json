@@ -1,19 +1,15 @@
 {
 	"name": "oliverklee/typo3-testing-distribution",
-	"description": "TYPO3 CMS distribution for testing extensions",
 	"type": "project",
+	"description": "TYPO3 CMS distribution for testing extensions",
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "Oliver Klee",
-			"role": "Developer",
-			"homepage": "https://www.oliverklee.de"
+			"homepage": "https://www.oliverklee.de",
+			"role": "Developer"
 		}
 	],
-	"support": {
-		"source": "https://github.com/oliverklee/TYPO3-testing-distribution",
-		"issues": "https://github.com/oliverklee/TYPO3-testing-distribution/issues"
-	},
 	"require": {
 		"php": ">= 7.2.34",
 		"helhum/typo3-console": "^5.8.6",
@@ -38,9 +34,9 @@
 		"typo3/minimal": "^9.5"
 	},
 	"require-dev": {
+		"ergebnis/composer-normalize": "^2.15",
 		"j13k/yaml-lint": "^1.1"
 	},
-	"prefer-stable": true,
 	"config": {
 		"platform": {
 			"php": "7.2.34"
@@ -50,22 +46,33 @@
 		},
 		"sort-packages": true
 	},
+	"prefer-stable": true,
 	"scripts": {
+		"post-autoload-dump": [
+			"@typo3-cms-scripts"
+		],
 		"ci": [
 			"@ci:static"
 		],
+		"ci:composer:normalize": "@composer normalize --dry-run",
+		"ci:php:lint": "@php -l public/typo3conf/LocalConfiguration.php",
 		"ci:static": [
+			"@ci:composer:normalize",
 			"@ci:php:lint",
 			"@ci:yaml:lint"
 		],
-		"ci:php:lint": "php -l public/typo3conf/LocalConfiguration.php",
 		"ci:yaml:lint": "find .ddev .github -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
+		"fix": [
+			"@fix:composer:normalize"
+		],
+		"fix:composer:normalize": "@composer normalize",
 		"typo3-cms-scripts": [
 			"typo3cms install:generatepackagestates",
 			"typo3cms install:fixfolderstructure"
-		],
-		"post-autoload-dump": [
-			"@typo3-cms-scripts"
 		]
+	},
+	"support": {
+		"issues": "https://github.com/oliverklee/TYPO3-testing-distribution/issues",
+		"source": "https://github.com/oliverklee/TYPO3-testing-distribution"
 	}
 }
