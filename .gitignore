@@ -1,5 +1,9 @@
 .DS_Store
 .idea
+/.ddev/docker-compose.packages.yaml
+/composer.lock
+/packages/*
+!/packages/.gitkeep
 /public/*
 !/public/.htaccess
 !/public/typo3conf

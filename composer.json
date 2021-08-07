@@ -46,6 +46,12 @@
 		},
 		"sort-packages": true
 	},
+	"repositories": [
+		{
+			"type": "path",
+			"url": "packages/*"
+		}
+	],
 	"prefer-stable": true,
 	"scripts": {
 		"post-autoload-dump": [
