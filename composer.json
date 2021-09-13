@@ -64,7 +64,7 @@
 		],
 		"ci:composer:normalize": "@composer normalize --dry-run",
 		"ci:php:lint": "@php -l public/typo3conf/LocalConfiguration.php",
-		"ci:yaml:lint": "find .ddev .github -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
+		"ci:yaml:lint": "find .ddev .github config -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
 		"composer:normalize": "@composer normalize",
 		"fix": [
 			"@composer:normalize"
