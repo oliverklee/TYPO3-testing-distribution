@@ -14,7 +14,6 @@
 		"php": ">= 7.2.34",
 		"helhum/typo3-console": "^5.8.6",
 		"oliverklee/oelib": "dev-main",
-		"oliverklee/onetimeaccount": "dev-main",
 		"oliverklee/seminars": "dev-main",
 		"oliverklee/typo3-devsite": "dev-main",
 		"ttn/tea": "dev-main",
