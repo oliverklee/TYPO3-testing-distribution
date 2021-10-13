@@ -1,10 +1,10 @@
 
 -- Dump of TYPO3 Connection "Default"
--- MySQL dump 10.19  Distrib 10.3.29-MariaDB, for debian-linux-gnu (x86_64)
+-- MariaDB dump 10.19  Distrib 10.5.11-MariaDB, for debian-linux-gnu (x86_64)
 --
--- Host: db    Database: db
+-- Host: ddev-typo3-testing-db    Database: db
 -- ------------------------------------------------------
--- Server version	10.5.11-MariaDB-1:10.5.11+maria~focal-log
+-- Server version	10.6.4-MariaDB-1:10.6.4+maria~focal-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -33,24 +33,24 @@ CREATE TABLE `backend_layout` (
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `sorting` int(11) NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `t3_origuid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `t3ver_label` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
   `t3ver_stage` int(11) NOT NULL DEFAULT 0,
   `t3ver_count` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_move_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `config` text COLLATE utf8_unicode_ci NOT NULL,
-  `icon` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `config` text COLLATE utf8mb3_unicode_ci NOT NULL,
+  `icon` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,13 +77,13 @@ CREATE TABLE `fe_groups` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `tx_extbase_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
-  `title` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `lockToDomain` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `subgroup` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `TSconfig` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `felogin_redirectPid` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `tx_extbase_type` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '0',
+  `title` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `lockToDomain` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `subgroup` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `TSconfig` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `felogin_redirectPid` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tx_seminars_publish_events` smallint(6) NOT NULL DEFAULT 0,
   `tx_seminars_events_pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -94,7 +94,7 @@ CREATE TABLE `fe_groups` (
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,33 +124,33 @@ CREATE TABLE `fe_users` (
   `disable` smallint(5) unsigned NOT NULL DEFAULT 0,
   `starttime` int(10) unsigned NOT NULL DEFAULT 0,
   `endtime` int(10) unsigned NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `tx_extbase_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
-  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `password` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `usergroup` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `name` varchar(160) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `first_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `middle_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `last_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `address` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `telephone` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `fax` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `lockToDomain` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `tx_extbase_type` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '0',
+  `username` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `password` varchar(100) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `usergroup` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `name` varchar(160) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `first_name` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `middle_name` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `last_name` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `address` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `telephone` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `fax` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `email` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `lockToDomain` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `uc` blob DEFAULT NULL,
-  `title` varchar(40) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `zip` varchar(10) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `city` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `country` varchar(40) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `www` varchar(80) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `company` varchar(80) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `image` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `TSconfig` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` varchar(40) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `zip` varchar(10) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `city` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `country` varchar(40) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `www` varchar(80) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `company` varchar(80) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `image` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `TSconfig` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `lastlogin` int(10) unsigned NOT NULL DEFAULT 0,
   `is_online` int(10) unsigned NOT NULL DEFAULT 0,
-  `felogin_redirectPid` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `felogin_forgotHash` varchar(80) COLLATE utf8_unicode_ci DEFAULT '',
+  `felogin_redirectPid` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `felogin_forgotHash` varchar(80) COLLATE utf8mb3_unicode_ci DEFAULT '',
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tx_seminars_registration` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
@@ -158,7 +158,7 @@ CREATE TABLE `fe_users` (
   KEY `username` (`username`(100)),
   KEY `is_online` (`is_online`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,19 +188,19 @@ CREATE TABLE `pages` (
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `starttime` int(10) unsigned NOT NULL DEFAULT 0,
   `endtime` int(10) unsigned NOT NULL DEFAULT 0,
-  `fe_group` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `fe_group` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '0',
   `sorting` int(11) NOT NULL DEFAULT 0,
-  `rowDescription` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `rowDescription` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `editlock` smallint(5) unsigned NOT NULL DEFAULT 0,
   `sys_language_uid` int(11) NOT NULL DEFAULT 0,
   `l10n_parent` int(10) unsigned NOT NULL DEFAULT 0,
   `l10n_source` int(10) unsigned NOT NULL DEFAULT 0,
-  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `l10n_state` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `t3_origuid` int(10) unsigned NOT NULL DEFAULT 0,
   `l10n_diffsource` mediumblob DEFAULT NULL,
   `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `t3ver_label` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
   `t3ver_stage` int(11) NOT NULL DEFAULT 0,
@@ -212,43 +212,43 @@ CREATE TABLE `pages` (
   `perms_user` smallint(5) unsigned NOT NULL DEFAULT 0,
   `perms_group` smallint(5) unsigned NOT NULL DEFAULT 0,
   `perms_everybody` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `slug` varchar(2048) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `slug` varchar(2048) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `doktype` int(10) unsigned NOT NULL DEFAULT 0,
-  `TSconfig` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `TSconfig` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `is_siteroot` smallint(6) NOT NULL DEFAULT 0,
   `php_tree_stop` smallint(6) NOT NULL DEFAULT 0,
-  `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `url` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `shortcut` int(10) unsigned NOT NULL DEFAULT 0,
   `shortcut_mode` int(10) unsigned NOT NULL DEFAULT 0,
-  `subtitle` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `subtitle` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `layout` int(10) unsigned NOT NULL DEFAULT 0,
-  `target` varchar(80) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `target` varchar(80) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `media` int(10) unsigned NOT NULL DEFAULT 0,
   `lastUpdated` int(10) unsigned NOT NULL DEFAULT 0,
-  `keywords` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `keywords` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `cache_timeout` int(10) unsigned NOT NULL DEFAULT 0,
-  `cache_tags` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `cache_tags` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `newUntil` int(10) unsigned NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `no_search` smallint(5) unsigned NOT NULL DEFAULT 0,
   `SYS_LASTCHANGED` int(10) unsigned NOT NULL DEFAULT 0,
-  `abstract` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `module` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `abstract` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `module` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `extendToSubpages` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `author` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `author_email` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `nav_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `author` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `author_email` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `nav_title` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `nav_hide` smallint(6) NOT NULL DEFAULT 0,
   `content_from_pid` int(10) unsigned NOT NULL DEFAULT 0,
   `mount_pid` int(10) unsigned NOT NULL DEFAULT 0,
   `mount_pid_ol` smallint(6) NOT NULL DEFAULT 0,
-  `alias` varchar(32) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `alias` varchar(32) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `l18n_cfg` smallint(6) NOT NULL DEFAULT 0,
   `fe_login_mode` smallint(6) NOT NULL DEFAULT 0,
-  `backend_layout` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `backend_layout_next_level` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `tsconfig_includes` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `backend_layout` varchar(64) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `backend_layout_next_level` varchar(64) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `tsconfig_includes` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `legacy_overlay_uid` int(10) unsigned NOT NULL DEFAULT 0,
   `categories` int(11) NOT NULL DEFAULT 0,
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
@@ -261,7 +261,7 @@ CREATE TABLE `pages` (
   KEY `translation_source` (`l10n_source`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -289,12 +289,12 @@ CREATE TABLE `sys_domain` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `sorting` int(11) NOT NULL DEFAULT 0,
-  `domainName` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `domainName` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`uid`),
   KEY `getSysDomain` (`hidden`),
   KEY `getDomainStartPage` (`pid`,`hidden`,`domainName`(100)),
   KEY `parent` (`pid`,`hidden`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -320,15 +320,15 @@ CREATE TABLE `sys_file` (
   `last_indexed` int(11) NOT NULL DEFAULT 0,
   `missing` smallint(6) NOT NULL DEFAULT 0,
   `storage` int(11) NOT NULL DEFAULT 0,
-  `type` varchar(10) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `type` varchar(10) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `metadata` int(11) NOT NULL DEFAULT 0,
-  `identifier` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `identifier_hash` varchar(40) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `folder_hash` varchar(40) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `extension` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `mime_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `name` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `sha1` varchar(40) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `identifier` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `identifier_hash` varchar(40) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `folder_hash` varchar(40) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `extension` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `mime_type` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `name` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `sha1` varchar(40) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `size` bigint(20) unsigned NOT NULL DEFAULT 0,
   `creation_date` int(11) NOT NULL DEFAULT 0,
   `modification_date` int(11) NOT NULL DEFAULT 0,
@@ -341,7 +341,7 @@ CREATE TABLE `sys_file` (
   KEY `sha1` (`sha1`),
   KEY `parent` (`pid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -370,26 +370,26 @@ CREATE TABLE `sys_file_collection` (
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `starttime` int(10) unsigned NOT NULL DEFAULT 0,
   `endtime` int(10) unsigned NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `sys_language_uid` int(11) NOT NULL DEFAULT 0,
   `l10n_parent` int(10) unsigned NOT NULL DEFAULT 0,
-  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `l10n_state` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `t3_origuid` int(10) unsigned NOT NULL DEFAULT 0,
   `l10n_diffsource` mediumblob DEFAULT NULL,
   `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `t3ver_label` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
   `t3ver_stage` int(11) NOT NULL DEFAULT 0,
   `t3ver_count` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_move_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `type` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'static',
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `type` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT 'static',
   `files` int(11) NOT NULL DEFAULT 0,
   `storage` int(11) NOT NULL DEFAULT 0,
-  `folder` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `folder` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `recursive` smallint(6) NOT NULL DEFAULT 0,
   `category` int(11) NOT NULL DEFAULT 0,
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
@@ -397,7 +397,7 @@ CREATE TABLE `sys_file_collection` (
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -424,12 +424,12 @@ CREATE TABLE `sys_file_metadata` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `sys_language_uid` int(11) NOT NULL DEFAULT 0,
   `l10n_parent` int(10) unsigned NOT NULL DEFAULT 0,
-  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `l10n_state` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `t3_origuid` int(10) unsigned NOT NULL DEFAULT 0,
   `l10n_diffsource` mediumblob DEFAULT NULL,
   `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `t3ver_label` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
   `t3ver_stage` int(11) NOT NULL DEFAULT 0,
@@ -437,18 +437,18 @@ CREATE TABLE `sys_file_metadata` (
   `t3ver_tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_move_id` int(10) unsigned NOT NULL DEFAULT 0,
   `file` int(11) NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `width` int(11) NOT NULL DEFAULT 0,
   `height` int(11) NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `alternative` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `alternative` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `categories` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `file` (`file`),
   KEY `fal_filelist` (`l10n_parent`,`sys_language_uid`),
   KEY `parent` (`pid`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -477,11 +477,11 @@ CREATE TABLE `sys_file_reference` (
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `sys_language_uid` int(11) NOT NULL DEFAULT 0,
   `l10n_parent` int(10) unsigned NOT NULL DEFAULT 0,
-  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `l10n_state` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `l10n_diffsource` mediumblob DEFAULT NULL,
   `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `t3ver_label` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
   `t3ver_stage` int(11) NOT NULL DEFAULT 0,
@@ -490,15 +490,15 @@ CREATE TABLE `sys_file_reference` (
   `t3ver_move_id` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_local` int(11) NOT NULL DEFAULT 0,
   `uid_foreign` int(11) NOT NULL DEFAULT 0,
-  `tablenames` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `fieldname` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(64) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `fieldname` varchar(64) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting_foreign` int(11) NOT NULL DEFAULT 0,
-  `table_local` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `alternative` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `link` varchar(1024) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `crop` varchar(4000) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `table_local` varchar(64) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `alternative` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `link` varchar(1024) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `crop` varchar(4000) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `autoplay` smallint(6) NOT NULL DEFAULT 0,
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
@@ -510,7 +510,7 @@ CREATE TABLE `sys_file_reference` (
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -536,20 +536,20 @@ CREATE TABLE `sys_file_storage` (
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `driver` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `configuration` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `driver` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `configuration` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `is_default` smallint(6) NOT NULL DEFAULT 0,
   `is_browsable` smallint(6) NOT NULL DEFAULT 0,
   `is_public` smallint(6) NOT NULL DEFAULT 0,
   `is_writable` smallint(6) NOT NULL DEFAULT 0,
   `is_online` smallint(6) NOT NULL DEFAULT 1,
   `auto_extract_metadata` smallint(6) NOT NULL DEFAULT 1,
-  `processingfolder` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `processingfolder` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -576,14 +576,14 @@ CREATE TABLE `sys_filemounts` (
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `sorting` int(11) NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `path` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `path` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `base` int(10) unsigned NOT NULL DEFAULT 0,
   `read_only` smallint(5) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -608,13 +608,13 @@ CREATE TABLE `sys_language` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `sorting` int(11) NOT NULL DEFAULT 0,
-  `title` varchar(80) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `flag` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `language_isocode` varchar(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `title` varchar(80) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `flag` varchar(20) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `language_isocode` varchar(2) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `static_lang_isocode` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`hidden`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -645,26 +645,26 @@ CREATE TABLE `sys_template` (
   `starttime` int(10) unsigned NOT NULL DEFAULT 0,
   `endtime` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting` int(11) NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `t3_origuid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `t3ver_label` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
   `t3ver_stage` int(11) NOT NULL DEFAULT 0,
   `t3ver_count` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_move_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `sitetitle` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `title` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `sitetitle` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `root` smallint(5) unsigned NOT NULL DEFAULT 0,
   `clear` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `include_static_file` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `constants` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `config` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `nextLevel` varchar(5) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `basedOn` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `include_static_file` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `constants` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `config` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `nextLevel` varchar(5) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `basedOn` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `includeStaticAfterBasedOn` smallint(5) unsigned NOT NULL DEFAULT 0,
   `static_file_mode` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
@@ -673,7 +673,7 @@ CREATE TABLE `sys_template` (
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -682,7 +682,7 @@ CREATE TABLE `sys_template` (
 
 LOCK TABLES `sys_template` WRITE;
 /*!40000 ALTER TABLE `sys_template` DISABLE KEYS */;
-INSERT INTO `sys_template` VALUES (1,1,1627921897,1627915562,1,0,0,0,0,256,NULL,0,0,0,'',0,0,0,0,0,0,'Root','',1,3,'EXT:fluid_styled_content/Configuration/TypoScript/,EXT:fluid_styled_content/Configuration/TypoScript/Styling/,EXT:typo3_devsite/Configuration/TypoScript,EXT:static_info_tables/Configuration/TypoScript/Static,EXT:mkforms/static/ts/,EXT:onetimeaccount/Configuration/TypoScript/',NULL,'','','2,3',0,0,0),(2,6,1627916442,1627916344,1,0,0,0,0,256,'',0,0,0,'',0,0,0,0,0,0,'tea','',0,0,'EXT:tea/Configuration/TypoScript','plugin.tx_tea {\r\n  persistence {\r\n    storagePid = 3\r\n    newRecordStoragePid = 3\r\n  }\r\n\r\n  settings {\r\n    singleViewPageUid = 10\r\n  }\r\n}\r\n','','','',0,0,0),(3,6,1631550339,1627921845,1,0,0,0,0,128,'',0,0,0,'',0,0,0,0,0,0,'seminars','',0,0,'EXT:seminars/Configuration/TypoScript','','plugin.tx_seminars {\r\n  # PID of the sysfolder where event registrations (attendances) will be stored\r\n  attendancesPID = 12\r\n}\r\n\r\n# localizations for strings in e-mails and some FE parts go here (the example is for German)\r\nplugin.tx_seminars._LOCAL_LANG.de {\r\n}\r\n\r\nplugin.tx_seminars_pi1 {\r\n  # comma-separated list of field names that shouldn\'t be displayed in the detail view, e.g. organizers,price_special\r\n  hideFields =\r\n\r\n  # list of comma-separated names of event fields that should be displayed on the registration page (the order doesn\'t matter)\r\n  eventFieldsOnRegistrationPage = uid, title, price_regular, price_special, vacancies\r\n\r\n  # list of tx_seminars_attendances DB fields to show for the online registration (must not be empty)\r\n  showRegistrationFields = step_counter, price, method_of_payment, account_number, bank_code, bank_name, account_owner, billing_address, company, gender, name, first_name, last_name, address, zip, city, country, telephone, email, interests, expectations, background_knowledge, accommodation, food, known_from, seats, registered_themselves, attendees_names, kids, lodgings, foods, checkboxes, notes, total_price, feuser_data, registration_data, terms, terms_2\r\n\r\n  # PID of the sysfolder that contains all the event records (e.g., the starting point)\r\n  pages = 11\r\n\r\n  # number of levels to recurse when accessing the starting point\r\n  recursive = 1\r\n    \r\n  # PID of the FE page that contains the event list\r\n  listPID = 16\r\n\r\n  # PID of the FE page that contains the single view\r\n  detailPID = 17\r\n\r\n  # PID of the FE page that contains the \"my events\" list\r\n  myEventsPID = 19\r\n\r\n  # PID of the FE page that contains the seminar registration plug-in\r\n  registerPID = 18\r\n\r\n  # PID of the FE page that contains the login form or onetimeaccount\r\n  loginPID = 7\r\n\r\n  # PID of the page that contains the registrations list for participants\r\n  registrationsListPID = 23\r\n\r\n  # PID of the page that contains the registrations list for event managers\r\n  registrationsVipListPID = 24\r\n\r\n  # PID of the thank-you page that will be displayed after a FE user has registered for an event\r\n  thankYouAfterRegistrationPID = 22\r\n\r\n  # PID of the page that will be displayed after a FE user has unregistered from an event\r\n  pageToShowAfterUnregistrationPID = 29\r\n\r\n  # UID of the FE user group that is allowed to enter and edit event records in the FE\r\n  eventEditorFeGroupID = 4\r\n\r\n  # UID of the FE user group for event managers\r\n  defaultEventVipsFeGroupID = 3\r\n\r\n  # PID of the page where the plug-in for editing events is located\r\n  eventEditorPID = 25\r\n\r\n  # PID of the folder where FE-created events will be stored\r\n  createEventsPID = 30\r\n\r\n  # PID of the folder where FE-created auxiliary records will be stored\r\n  createAuxiliaryRecordsPID = 15\r\n\r\n  # PID of the page that will be shown when an event has been successfully entered on the FE\r\n  eventSuccessfullySavedPID = 21\r\n}\r\n\r\n# localizations for FE-only parts go here (the example is for German)\r\nplugin.tx_seminars_pi1._LOCAL_LANG.de {\r\n}\r\n\r\n# here you can change stuff like the number of items per page etc.\r\nplugin.tx_seminars_pi1.listView {\r\n}','','',0,0,0),(4,5,1627921886,1627921886,1,0,0,0,0,256,'',0,0,0,'',0,0,0,0,0,0,'seminars (for the BE module)','',0,0,'','','','','3',0,0,0);
+INSERT INTO `sys_template` VALUES (1,1,1627921897,1627915562,1,0,0,0,0,256,NULL,0,0,0,'',0,0,0,0,0,0,'Root','',1,3,'EXT:fluid_styled_content/Configuration/TypoScript/,EXT:fluid_styled_content/Configuration/TypoScript/Styling/,EXT:typo3_devsite/Configuration/TypoScript,EXT:static_info_tables/Configuration/TypoScript/Static,EXT:mkforms/static/ts/,EXT:onetimeaccount/Configuration/TypoScript/',NULL,'','','2,3',0,0,0),(2,6,1627916442,1627916344,1,0,0,0,0,256,'',0,0,0,'',0,0,0,0,0,0,'tea','',0,0,'EXT:tea/Configuration/TypoScript','plugin.tx_tea {\r\n  persistence {\r\n    storagePid = 3\r\n    newRecordStoragePid = 3\r\n  }\r\n\r\n  settings {\r\n    singleViewPageUid = 10\r\n  }\r\n}\r\n','','','',0,0,0),(3,6,1634124513,1627921845,1,0,0,0,0,128,'',0,0,0,'',0,0,0,0,0,0,'seminars','',0,0,'EXT:seminars/Configuration/TypoScript','','plugin.tx_seminars {\r\n  # PID of the sysfolder where event registrations (attendances) will be stored\r\n  attendancesPID = 12\r\n}\r\n\r\n# localizations for strings in e-mails and some FE parts go here (the example is for German)\r\nplugin.tx_seminars._LOCAL_LANG.de {\r\n}\r\n\r\nplugin.tx_seminars_pi1 {\r\n  # comma-separated list of field names that shouldn\'t be displayed in the detail view, e.g. organizers,price_special\r\n  hideFields =\r\n\r\n  # list of comma-separated names of event fields that should be displayed on the registration page (the order doesn\'t matter)\r\n  eventFieldsOnRegistrationPage = uid, title, price_regular, price_special, vacancies\r\n\r\n  # list of tx_seminars_attendances DB fields to show for the online registration (must not be empty)\r\n  showRegistrationFields = step_counter, price, method_of_payment, account_number, bank_code, bank_name, account_owner, billing_address, company, gender, name, first_name, last_name, address, zip, city, country, telephone, email, interests, expectations, background_knowledge, accommodation, food, known_from, seats, registered_themselves, attendees_names, kids, lodgings, foods, checkboxes, notes, total_price, feuser_data, registration_data, terms, terms_2\r\n\r\n  # whether file downloads are limited to attendees only\r\n  limitFileDownloadToAttendees = 0\r\n\r\n  # PID of the sysfolder that contains all the event records (e.g., the starting point)\r\n  pages = 11\r\n\r\n  # number of levels to recurse when accessing the starting point\r\n  recursive = 1\r\n    \r\n  # PID of the FE page that contains the event list\r\n  listPID = 16\r\n\r\n  # PID of the FE page that contains the single view\r\n  detailPID = 17\r\n\r\n  # PID of the FE page that contains the \"my events\" list\r\n  myEventsPID = 19\r\n\r\n  # PID of the FE page that contains the seminar registration plug-in\r\n  registerPID = 18\r\n\r\n  # PID of the FE page that contains the login form or onetimeaccount\r\n  loginPID = 7\r\n\r\n  # PID of the page that contains the registrations list for participants\r\n  registrationsListPID = 23\r\n\r\n  # PID of the page that contains the registrations list for event managers\r\n  registrationsVipListPID = 24\r\n\r\n  # PID of the thank-you page that will be displayed after a FE user has registered for an event\r\n  thankYouAfterRegistrationPID = 22\r\n\r\n  # PID of the page that will be displayed after a FE user has unregistered from an event\r\n  pageToShowAfterUnregistrationPID = 29\r\n\r\n  # UID of the FE user group that is allowed to enter and edit event records in the FE\r\n  eventEditorFeGroupID = 4\r\n\r\n  # UID of the FE user group for event managers\r\n  defaultEventVipsFeGroupID = 3\r\n\r\n  # PID of the page where the plug-in for editing events is located\r\n  eventEditorPID = 25\r\n\r\n  # PID of the folder where FE-created events will be stored\r\n  createEventsPID = 30\r\n\r\n  # PID of the folder where FE-created auxiliary records will be stored\r\n  createAuxiliaryRecordsPID = 15\r\n\r\n  # PID of the page that will be shown when an event has been successfully entered on the FE\r\n  eventSuccessfullySavedPID = 21\r\n}\r\n\r\n# localizations for FE-only parts go here (the example is for German)\r\nplugin.tx_seminars_pi1._LOCAL_LANG.de {\r\n}\r\n\r\n# here you can change stuff like the number of items per page etc.\r\nplugin.tx_seminars_pi1.listView {\r\n}','','',0,0,0),(4,5,1627921886,1627921886,1,0,0,0,0,256,'',0,0,0,'',0,0,0,0,0,0,'seminars (for the BE module)','',0,0,'','','','','3',0,0,0);
 /*!40000 ALTER TABLE `sys_template` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -695,7 +695,7 @@ DROP TABLE IF EXISTS `tt_content`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tt_content` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `rowDescription` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `rowDescription` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `pid` int(11) NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
@@ -704,28 +704,28 @@ CREATE TABLE `tt_content` (
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `starttime` int(10) unsigned NOT NULL DEFAULT 0,
   `endtime` int(10) unsigned NOT NULL DEFAULT 0,
-  `fe_group` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `fe_group` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '0',
   `sorting` int(11) NOT NULL DEFAULT 0,
   `editlock` smallint(5) unsigned NOT NULL DEFAULT 0,
   `sys_language_uid` int(11) NOT NULL DEFAULT 0,
   `l18n_parent` int(10) unsigned NOT NULL DEFAULT 0,
   `l10n_source` int(10) unsigned NOT NULL DEFAULT 0,
-  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `l10n_state` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `t3_origuid` int(10) unsigned NOT NULL DEFAULT 0,
   `l18n_diffsource` mediumblob DEFAULT NULL,
   `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `t3ver_label` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
   `t3ver_stage` int(11) NOT NULL DEFAULT 0,
   `t3ver_count` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_move_id` int(10) unsigned NOT NULL DEFAULT 0,
-  `CType` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `header` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `header_position` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `bodytext` mediumtext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `CType` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `header` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `header_position` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `bodytext` mediumtext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `bullets_type` smallint(5) unsigned NOT NULL DEFAULT 0,
   `uploads_description` smallint(5) unsigned NOT NULL DEFAULT 0,
   `uploads_type` smallint(5) unsigned NOT NULL DEFAULT 0,
@@ -737,38 +737,38 @@ CREATE TABLE `tt_content` (
   `imageborder` smallint(5) unsigned NOT NULL DEFAULT 0,
   `media` int(10) unsigned NOT NULL DEFAULT 0,
   `layout` int(10) unsigned NOT NULL DEFAULT 0,
-  `frame_class` varchar(60) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default',
+  `frame_class` varchar(60) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT 'default',
   `cols` int(10) unsigned NOT NULL DEFAULT 0,
   `spaceBefore` smallint(5) unsigned NOT NULL DEFAULT 0,
   `spaceAfter` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `space_before_class` varchar(60) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `space_after_class` varchar(60) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `records` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `pages` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `space_before_class` varchar(60) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `space_after_class` varchar(60) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `records` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `pages` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `colPos` int(10) unsigned NOT NULL DEFAULT 0,
-  `subheader` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `header_link` varchar(1024) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `subheader` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `header_link` varchar(1024) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `image_zoom` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `header_layout` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
-  `list_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `header_layout` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '0',
+  `list_type` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sectionIndex` smallint(5) unsigned NOT NULL DEFAULT 0,
   `linkToTop` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `file_collections` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `file_collections` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `filelink_size` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `filelink_sorting` varchar(17) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `filelink_sorting_direction` varchar(4) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `target` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `filelink_sorting` varchar(17) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `filelink_sorting_direction` varchar(4) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `target` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `date` int(10) unsigned NOT NULL DEFAULT 0,
   `recursive` smallint(5) unsigned NOT NULL DEFAULT 0,
   `imageheight` int(10) unsigned NOT NULL DEFAULT 0,
-  `pi_flexform` mediumtext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `accessibility_title` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `pi_flexform` mediumtext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `accessibility_title` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `accessibility_bypass` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `accessibility_bypass_text` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `selected_categories` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `category_field` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `table_class` varchar(60) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `table_caption` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `accessibility_bypass_text` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `selected_categories` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `category_field` varchar(64) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `table_class` varchar(60) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `table_caption` varchar(255) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `table_delimiter` smallint(5) unsigned NOT NULL DEFAULT 0,
   `table_enclosure` smallint(5) unsigned NOT NULL DEFAULT 0,
   `table_header_position` smallint(5) unsigned NOT NULL DEFAULT 0,
@@ -781,7 +781,7 @@ CREATE TABLE `tt_content` (
   KEY `language` (`l18n_parent`,`sys_language_uid`),
   KEY `translation_source` (`l10n_source`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -810,51 +810,51 @@ CREATE TABLE `tx_seminars_attendances` (
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `user` int(10) unsigned NOT NULL DEFAULT 0,
   `seminar` int(10) unsigned NOT NULL DEFAULT 0,
   `registration_queue` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `price` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `price` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `seats` int(10) unsigned NOT NULL DEFAULT 0,
   `registered_themselves` smallint(5) unsigned NOT NULL DEFAULT 0,
   `total_price` decimal(10,2) NOT NULL DEFAULT 0.00,
   `currency` int(10) unsigned NOT NULL DEFAULT 0,
   `including_tax` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `attendees_names` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `attendees_names` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `additional_persons` int(10) unsigned NOT NULL DEFAULT 0,
   `datepaid` int(10) unsigned NOT NULL DEFAULT 0,
   `method_of_payment` int(10) unsigned NOT NULL DEFAULT 0,
-  `account_number` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `bank_code` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `bank_name` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `account_owner` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `company` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `name` varchar(80) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `account_number` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `bank_code` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `bank_name` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `account_owner` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `company` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `name` varchar(80) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `gender` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `address` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `zip` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `city` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `country` varchar(60) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `telephone` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `email` varchar(80) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `address` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `zip` varchar(20) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `city` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `country` varchar(60) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `telephone` varchar(20) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `email` varchar(80) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `been_there` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `interests` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `expectations` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `background_knowledge` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `accommodation` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `interests` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `expectations` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `background_knowledge` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `accommodation` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `lodgings` int(10) unsigned NOT NULL DEFAULT 0,
-  `food` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `food` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `foods` int(10) unsigned NOT NULL DEFAULT 0,
-  `known_from` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `notes` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `known_from` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `notes` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `kids` int(10) unsigned NOT NULL DEFAULT 0,
   `checkboxes` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `seminar` (`seminar`),
-  KEY `user` (`user`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  KEY `user` (`user`),
+  KEY `parent` (`pid`,`deleted`,`hidden`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -878,12 +878,12 @@ CREATE TABLE `tx_seminars_attendances_checkboxes_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -906,12 +906,12 @@ CREATE TABLE `tx_seminars_attendances_foods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -934,12 +934,12 @@ CREATE TABLE `tx_seminars_attendances_lodgings_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -966,14 +966,14 @@ CREATE TABLE `tx_seminars_categories` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `icon` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `icon` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `single_view_page` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
   KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -982,7 +982,7 @@ CREATE TABLE `tx_seminars_categories` (
 
 LOCK TABLES `tx_seminars_categories` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_categories` DISABLE KEYS */;
-INSERT INTO `tx_seminars_categories` VALUES (1,15,1628000755,1628000755,1,0,0,'Methodentraining','',0),(2,15,1628000766,1628000766,1,0,0,'Politik','',0),(3,15,1628000777,1628000777,1,0,0,'Softwareentwicklung','',0);
+INSERT INTO `tx_seminars_categories` VALUES (1,15,1634124425,1628000755,1,0,0,'Methodentraining','0',0),(2,15,1634124425,1628000766,1,0,0,'Politik','0',0),(3,15,1634124425,1628000777,1,0,0,'Softwareentwicklung','0',0);
 /*!40000 ALTER TABLE `tx_seminars_categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1002,12 +1002,12 @@ CREATE TABLE `tx_seminars_checkboxes` (
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `owner` int(10) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
-  KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1035,13 +1035,13 @@ CREATE TABLE `tx_seminars_event_types` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `single_view_page` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
   KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1069,11 +1069,11 @@ CREATE TABLE `tx_seminars_foods` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
-  KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1101,11 +1101,11 @@ CREATE TABLE `tx_seminars_lodgings` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
-  KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1133,16 +1133,16 @@ CREATE TABLE `tx_seminars_organizers` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `homepage` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `email` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `email_footer` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `homepage` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `email` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `email_footer` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `attendances_pid` int(10) unsigned NOT NULL DEFAULT 0,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
-  KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1170,12 +1170,12 @@ CREATE TABLE `tx_seminars_payment_methods` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
-  KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1207,41 +1207,41 @@ CREATE TABLE `tx_seminars_seminars` (
   `endtime` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `object_type` int(10) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `topic` int(10) unsigned NOT NULL DEFAULT 0,
-  `subtitle` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `subtitle` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `categories` int(10) unsigned NOT NULL DEFAULT 0,
-  `teaser` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `teaser` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `event_type` int(10) unsigned NOT NULL DEFAULT 0,
-  `accreditation_number` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `accreditation_number` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `credit_points` int(10) unsigned NOT NULL DEFAULT 0,
   `begin_date` int(10) unsigned NOT NULL DEFAULT 0,
   `end_date` int(10) unsigned NOT NULL DEFAULT 0,
-  `time_zone` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `time_zone` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `timeslots` int(10) unsigned NOT NULL DEFAULT 0,
   `begin_date_registration` int(10) unsigned NOT NULL DEFAULT 0,
   `deadline_registration` int(10) unsigned NOT NULL DEFAULT 0,
   `deadline_early_bird` int(10) unsigned NOT NULL DEFAULT 0,
   `deadline_unregistration` int(10) unsigned NOT NULL DEFAULT 0,
   `expiry` int(10) unsigned NOT NULL DEFAULT 0,
-  `details_page` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `details_page` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `place` int(10) unsigned NOT NULL DEFAULT 0,
-  `room` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `room` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `lodgings` int(10) unsigned NOT NULL DEFAULT 0,
   `foods` int(10) unsigned NOT NULL DEFAULT 0,
   `speakers` int(10) unsigned NOT NULL DEFAULT 0,
   `partners` int(10) unsigned NOT NULL DEFAULT 0,
   `tutors` int(10) unsigned NOT NULL DEFAULT 0,
   `leaders` int(10) unsigned NOT NULL DEFAULT 0,
-  `language` varchar(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `language` varchar(2) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `price_regular` decimal(10,2) NOT NULL DEFAULT 0.00,
   `price_regular_early` decimal(10,2) NOT NULL DEFAULT 0.00,
   `price_regular_board` decimal(10,2) NOT NULL DEFAULT 0.00,
   `price_special` decimal(10,2) NOT NULL DEFAULT 0.00,
   `price_special_early` decimal(10,2) NOT NULL DEFAULT 0.00,
   `price_special_board` decimal(10,2) NOT NULL DEFAULT 0.00,
-  `additional_information` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `additional_information` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `payment_methods` int(10) unsigned NOT NULL DEFAULT 0,
   `organizers` int(10) unsigned NOT NULL DEFAULT 0,
   `organizing_partners` int(10) unsigned NOT NULL DEFAULT 0,
@@ -1261,27 +1261,27 @@ CREATE TABLE `tx_seminars_seminars` (
   `vips` int(10) unsigned NOT NULL DEFAULT 0,
   `checkboxes` int(10) unsigned NOT NULL DEFAULT 0,
   `uses_terms_2` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `notes` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `attached_files` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `image` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `notes` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `attached_files` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `image` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `requirements` int(10) unsigned NOT NULL DEFAULT 0,
   `dependencies` int(10) unsigned NOT NULL DEFAULT 0,
-  `publication_hash` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `publication_hash` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `organizers_notified_about_minimum_reached` smallint(5) unsigned NOT NULL DEFAULT 0,
   `mute_notification_emails` smallint(5) unsigned NOT NULL DEFAULT 0,
   `automatic_confirmation_cancelation` smallint(5) unsigned NOT NULL DEFAULT 0,
   `price_on_request` smallint(5) unsigned NOT NULL DEFAULT 0,
   `date_of_last_registration_digest` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `object_type` (`object_type`),
   KEY `topic` (`topic`),
   KEY `event_takes_place_reminder_sent` (`event_takes_place_reminder_sent`),
   KEY `cancelation_deadline_reminder_sent` (`cancelation_deadline_reminder_sent`),
+  KEY `parent` (`pid`,`deleted`,`hidden`),
   FULLTEXT KEY `index_event_searchfields` (`accreditation_number`),
   FULLTEXT KEY `index_topic_searchfields` (`title`,`subtitle`,`description`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1290,7 +1290,7 @@ CREATE TABLE `tx_seminars_seminars` (
 
 LOCK TABLES `tx_seminars_seminars` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars` DISABLE KEYS */;
-INSERT INTO `tx_seminars_seminars` VALUES (1,13,1628002277,1628002174,1,0,0,0,0,0,1,'TCCD',0,'TYPO3 CMS Certified Developer',1,'TCCD-Training de luxe!','<p>I\'m baby leggings artisan tbh enamel pin art party raclette hot chicken intelligentsia readymade, cardigan XOXO. Cray sriracha normcore organic. Fixie live-edge quinoa cred four loko poke tumeric art party whatever air plant. Hella asymmetrical locavore direct trade shaman. Actually green juice waistcoat succulents.</p>',1,'',0,0,0,'',0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',500.00,450.00,800.00,400.00,375.00,700.00,'',1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'','','',0,0,NULL,0,0,0,0,0),(2,13,1628002347,1628002285,1,0,0,0,0,0,1,'TCCI',0,'TYPO3 CMS Certified Integrator',1,'TCCI - so einfach geht TYPO3!','<p>Farm-to-table adaptogen vice YOLO four dollar toast bespoke. Hammock helvetica asymmetrical next level. Deep v hoodie ramps fam lo-fi unicorn paleo hot chicken fanny pack affogato trust fund chartreuse twee offal iceland. Photo booth godard everyday carry heirloom chillwave 90\'s craft beer, direct trade kogi skateboard dreamcatcher butcher.</p>',0,'',0,0,0,'',0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',650.00,0.00,0.00,0.00,0.00,0.00,'',0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'','','',0,1,NULL,0,0,0,0,0),(3,14,1628002505,1628002505,1,0,0,0,0,0,0,'Einzelveranstaltung mit Anmeldeopotionen',0,'',0,'','',0,'',0,1648800000,1648828800,'',0,0,1647334800,0,1647334800,0,'',1,'Raum \"Brandenburg\"',3,6,1,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',1,1,0,0,0,1,0,4,12,0,0,2,0,0,0,0,0,0,0,'','','',0,0,NULL,0,0,0,0,0),(4,14,1628002655,1628002652,1,0,0,0,0,0,0,'Einzelveranstaltung mit Zeitslots',0,'',0,'','<p>Mustache direct trade master cleanse, fashion axe aesthetic farm-to-table vexillologist drinking vinegar austin 90\'s ramps 8-bit biodiesel snackwave taxidermy. Whatever banh mi chartreuse chicharrones. Unicorn bespoke sriracha pabst, art party typewriter messenger bag vexillologist banh mi intelligentsia. Bicycle rights four dollar toast kickstarter sustainable vegan tumblr, quinoa tumeric fingerstache. Artisan tilde sartorial, quinoa raw denim banh mi pitchfork offal bitters dreamcatcher actually keffiyeh. Palo santo air plant XOXO pug woke shaman.</p>',0,'',0,1648886400,1648987200,'',2,0,0,0,0,0,'',2,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'','','',0,0,NULL,0,0,0,0,0),(5,14,1628002690,1628002667,1,0,0,0,0,0,2,'TCCD-Termin',1,'',0,'','',0,'',0,0,0,'',0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,0,'','','',0,0,NULL,0,0,0,0,0),(6,14,1628002722,1628002703,1,0,0,0,0,0,2,'TCCI-Termin',0,'',0,'','',0,'',0,1628866680,1639843080,'',0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'','','',0,0,NULL,0,0,0,0,0),(7,14,1628003260,1628002743,1,0,0,0,0,0,2,'TCCD-Termin mit Datum',1,'',0,'','',0,'',0,1637423940,1637683140,'',0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,'','','',0,0,NULL,0,0,0,0,0),(8,30,1628014468,1628014468,0,0,0,0,0,0,0,'Frontend-created event',0,'',0,'','',0,'',0,0,0,NULL,0,0,0,0,0,0,NULL,0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,'','',NULL,0,0,NULL,0,0,0,0,0);
+INSERT INTO `tx_seminars_seminars` VALUES (1,13,1634124323,1628002174,1,0,0,0,0,0,1,'TCCD',0,'TYPO3 CMS Certified Developer',1,'TCCD-Training de luxe!','<p>I\'m baby leggings artisan tbh enamel pin art party raclette hot chicken intelligentsia readymade, cardigan XOXO. Cray sriracha normcore organic. Fixie live-edge quinoa cred four loko poke tumeric art party whatever air plant. Hella asymmetrical locavore direct trade shaman. Actually green juice waistcoat succulents.</p>',1,'',0,0,0,'',0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',500.00,450.00,800.00,400.00,375.00,700.00,'',1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'','0','0',1,0,NULL,0,0,0,0,0),(2,13,1634124328,1628002285,1,0,0,0,0,0,1,'TCCI',0,'TYPO3 CMS Certified Integrator',1,'TCCI - so einfach geht TYPO3!','<p>Farm-to-table adaptogen vice YOLO four dollar toast bespoke. Hammock helvetica asymmetrical next level. Deep v hoodie ramps fam lo-fi unicorn paleo hot chicken fanny pack affogato trust fund chartreuse twee offal iceland. Photo booth godard everyday carry heirloom chillwave 90\'s craft beer, direct trade kogi skateboard dreamcatcher butcher.</p>',0,'',0,0,0,'',0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',650.00,0.00,0.00,0.00,0.00,0.00,'',0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'','0','0',0,1,NULL,0,0,0,0,0),(3,14,1634124396,1628002505,1,0,0,0,0,0,0,'Einzelveranstaltung mit Anmeldeopotionen',0,'',0,'','',0,'',0,1648800000,1648828800,'',0,0,1647334800,0,1647334800,0,'',1,'Raum \"Brandenburg\"',3,6,1,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',1,1,0,0,0,1,0,4,12,0,0,2,0,0,0,0,0,0,0,'','0','0',0,0,NULL,0,0,0,0,0),(4,14,1634124396,1628002652,1,0,0,0,0,0,0,'Einzelveranstaltung mit Zeitslots',0,'',0,'','<p>Mustache direct trade master cleanse, fashion axe aesthetic farm-to-table vexillologist drinking vinegar austin 90\'s ramps 8-bit biodiesel snackwave taxidermy. Whatever banh mi chartreuse chicharrones. Unicorn bespoke sriracha pabst, art party typewriter messenger bag vexillologist banh mi intelligentsia. Bicycle rights four dollar toast kickstarter sustainable vegan tumblr, quinoa tumeric fingerstache. Artisan tilde sartorial, quinoa raw denim banh mi pitchfork offal bitters dreamcatcher actually keffiyeh. Palo santo air plant XOXO pug woke shaman.</p>',0,'',0,1648886400,1648987200,'',2,0,0,0,0,0,'',2,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'','0','0',0,0,NULL,0,0,0,0,0),(5,14,1634124392,1628002667,1,0,0,0,0,0,2,'TCCD-Termin',1,'',0,'','',0,'',0,0,0,'',0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,0,'','0','',0,0,NULL,0,0,0,0,0),(6,14,1634124392,1628002703,1,0,0,0,0,0,2,'TCCI-Termin',0,'',0,'','',0,'',0,1628866680,1639843080,'',0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'','0','',0,0,NULL,0,0,0,0,0),(7,14,1634124392,1628002743,1,0,0,0,0,0,2,'TCCD-Termin mit Datum',1,'',0,'','',0,'',0,1637423940,1637683140,'',0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,'','0','',0,0,NULL,0,0,0,0,0),(8,30,1634124413,1628014468,0,0,0,0,0,0,0,'Frontend-created event',0,'',0,'','',0,'',0,0,0,NULL,0,0,0,0,0,0,NULL,0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,0.00,0.00,'',0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,'','0','0',0,0,NULL,0,0,0,0,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1305,12 +1305,12 @@ CREATE TABLE `tx_seminars_seminars_categories_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1334,12 +1334,12 @@ CREATE TABLE `tx_seminars_seminars_checkboxes_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1363,12 +1363,12 @@ CREATE TABLE `tx_seminars_seminars_feusers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1391,12 +1391,12 @@ CREATE TABLE `tx_seminars_seminars_foods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1420,12 +1420,12 @@ CREATE TABLE `tx_seminars_seminars_lodgings_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1449,12 +1449,12 @@ CREATE TABLE `tx_seminars_seminars_organizers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1463,7 +1463,7 @@ CREATE TABLE `tx_seminars_seminars_organizers_mm` (
 
 LOCK TABLES `tx_seminars_seminars_organizers_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_organizers_mm` DISABLE KEYS */;
-INSERT INTO `tx_seminars_seminars_organizers_mm` VALUES (3,2,0,'',1),(4,1,0,'',1),(5,3,0,'',1),(6,1,0,'',1),(7,1,0,'',1);
+INSERT INTO `tx_seminars_seminars_organizers_mm` VALUES (3,2,0,'',1),(4,1,0,'',1),(5,3,0,'',1),(6,1,0,'',1),(7,1,0,'',1),(8,3,0,'',1);
 /*!40000 ALTER TABLE `tx_seminars_seminars_organizers_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1478,12 +1478,12 @@ CREATE TABLE `tx_seminars_seminars_organizing_partners_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1506,12 +1506,12 @@ CREATE TABLE `tx_seminars_seminars_payment_methods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1535,12 +1535,12 @@ CREATE TABLE `tx_seminars_seminars_place_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1549,7 +1549,7 @@ CREATE TABLE `tx_seminars_seminars_place_mm` (
 
 LOCK TABLES `tx_seminars_seminars_place_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_place_mm` DISABLE KEYS */;
-INSERT INTO `tx_seminars_seminars_place_mm` VALUES (3,1,0,'',1),(4,4,0,'',0),(4,4,0,'',0),(7,1,0,'',1);
+INSERT INTO `tx_seminars_seminars_place_mm` VALUES (3,1,0,'',1),(7,1,0,'',1),(4,4,0,'',0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_place_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1564,13 +1564,13 @@ CREATE TABLE `tx_seminars_seminars_requirements_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1579,7 +1579,7 @@ CREATE TABLE `tx_seminars_seminars_requirements_mm` (
 
 LOCK TABLES `tx_seminars_seminars_requirements_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_requirements_mm` DISABLE KEYS */;
-INSERT INTO `tx_seminars_seminars_requirements_mm` VALUES (1,2,0,'',0,1);
+INSERT INTO `tx_seminars_seminars_requirements_mm` VALUES (1,2,0,'',1,1);
 /*!40000 ALTER TABLE `tx_seminars_seminars_requirements_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1594,12 +1594,12 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1623,12 +1623,12 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm_leaders` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1651,12 +1651,12 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm_partners` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1679,12 +1679,12 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm_tutors` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1707,12 +1707,12 @@ CREATE TABLE `tx_seminars_seminars_target_groups_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1741,19 +1741,19 @@ CREATE TABLE `tx_seminars_sites` (
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `owner` int(10) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `address` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `zip` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `city` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `country` varchar(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `homepage` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `directions` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `notes` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `address` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `zip` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `city` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `country` varchar(2) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `homepage` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `directions` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `notes` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
   KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`,`city`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1781,11 +1781,11 @@ CREATE TABLE `tx_seminars_skills` (
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
-  KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1815,26 +1815,26 @@ CREATE TABLE `tx_seminars_speakers` (
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `owner` int(10) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `organization` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `homepage` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `organization` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `homepage` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `image` int(10) unsigned NOT NULL DEFAULT 0,
   `skills` int(10) unsigned NOT NULL DEFAULT 0,
-  `notes` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `address` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `phone_work` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `phone_home` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `phone_mobile` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `fax` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `email` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `notes` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `address` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `phone_work` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `phone_home` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `phone_mobile` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `fax` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `email` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `gender` smallint(5) unsigned NOT NULL DEFAULT 0,
   `cancelation_period` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
   KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`,`hidden`),
   FULLTEXT KEY `index_searchfields` (`title`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1858,12 +1858,12 @@ CREATE TABLE `tx_seminars_speakers_skills_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1891,14 +1891,14 @@ CREATE TABLE `tx_seminars_target_groups` (
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `owner` int(10) unsigned NOT NULL DEFAULT 0,
-  `title` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` tinytext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `minimum_age` smallint(5) unsigned NOT NULL DEFAULT 0,
   `maximum_age` smallint(5) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
   KEY `dummy` (`is_dummy_record`),
+  KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1932,12 +1932,12 @@ CREATE TABLE `tx_seminars_timeslots` (
   `entry_date` int(10) unsigned NOT NULL DEFAULT 0,
   `speakers` int(10) unsigned NOT NULL DEFAULT 0,
   `place` int(10) unsigned NOT NULL DEFAULT 0,
-  `room` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `room` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`),
   KEY `dummy` (`is_dummy_record`),
-  KEY `seminar` (`seminar`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  KEY `seminar` (`seminar`),
+  KEY `parent` (`pid`,`deleted`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1961,12 +1961,12 @@ CREATE TABLE `tx_seminars_timeslots_speakers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1990,12 +1990,12 @@ CREATE TABLE `tx_seminars_usergroups_categories_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tablenames` varchar(30) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2021,12 +2021,12 @@ CREATE TABLE `tx_tea_domain_model_product_tea` (
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `description` varchar(2000) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `title` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `description` varchar(2000) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
   `image` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2048,4 +2048,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-09-13 18:27:17
+-- Dump completed on 2021-10-13 13:28:55
