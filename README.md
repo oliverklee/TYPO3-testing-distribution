@@ -54,14 +54,11 @@ the following (or a combination):
 ## Relevant URLs and launch options
 
 - Backend:
-  - https://typo3-testing-distribution.ddev.site:8081/typo3/
-  - `ddev launch /typo3`
+  - `ddev launch typo3`
 - Frontend (DE):
-  - https://typo3-testing.ddev.site:8081/
   - `ddev launch`
-- Frontend (EN): https://typo3-testing-en.ddev.site:8081/
+- Frontend (EN): https://typo3-testing-9-5-en.ddev.site:8081/
 - MailHog:
-  - https://typo3-testing.ddev.site:8026/
   - `ddev launch -m`
 
 ## Credentials

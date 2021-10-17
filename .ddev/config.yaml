@@ -1,4 +1,4 @@
-name: typo3-testing
+name: typo3-testing-9-5
 type: typo3
 docroot: public
 php_version: "7.2"
@@ -7,7 +7,7 @@ router_http_port: "8080"
 router_https_port: "8081"
 xdebug_enabled: false
 additional_hostnames:
-  - "typo3-testing-en"
+  - "typo3-testing-9-5-en"
 additional_fqdns: [ ]
 mariadb_version: "10.6"
 mysql_version: ""
