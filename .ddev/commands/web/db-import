@@ -2,4 +2,4 @@
 
 vendor/bin/typo3cms database:updateschema
 vendor/bin/typo3cms database:import < dump.sql
-vendor/bin/typo3cms cleanup:updatereferenceindex
+vendor/bin/typo3cms referenceindex:update

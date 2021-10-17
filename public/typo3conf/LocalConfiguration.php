@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$ODBrVkI1UTlMUHZZSWdNMw$hl81aMVkP4rgF58bATWqA7to9UwCAkNhQ/B5TqTwxJs',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$S1VkUVVnNy5Yd1B5dnBBMA$qfGLhZv5TJliSffWsjJisWPZ9bI18jwfxcpWxnddVC0',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -18,18 +18,7 @@ return [
             ],
         ],
     ],
-    'EXT' => [
-        'extConf' => [
-            'backend' => 'a:6:{s:9:"loginLogo";s:0:"";s:19:"loginHighlightColor";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:11:"backendLogo";s:0:"";s:14:"backendFavicon";s:0:"";}',
-            'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
-            'mkforms' => 'a:2:{s:13:"activateCache";s:1:"0";s:12:"listerNameId";s:1:"0";}',
-            'onetimeaccount' => 'a:2:{s:17:"enableConfigCheck";s:1:"1";s:13:"enableLogging";s:1:"0";}',
-            'rn_base' => 'a:11:{s:13:"verboseMayday";s:1:"0";s:11:"dieOnMayday";s:1:"1";s:21:"forceException4Mayday";s:1:"1";s:16:"exceptionHandler";s:0:"";s:20:"sendEmailOnException";s:0:"";s:9:"fromEmail";s:0:"";s:24:"send503HeaderOnException";s:1:"1";s:17:"loadHiddenObjects";s:1:"0";s:13:"activateCache";s:1:"0";s:18:"activateSubstCache";s:1:"0";s:8:"debugKey";s:0:"";}',
-            'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
-            'seminars' => 'a:2:{s:17:"enableConfigCheck";s:1:"1";s:23:"eMailFormatForAttendees";s:1:"0";}',
-            'static_info_tables' => 'a:1:{s:13:"enableManager";s:1:"0";}',
-        ],
-    ],
+    'EXT' => [],
     'EXTCONF' => [
         'helhum-typo3-console' => [
             'initialUpgradeDone' => '9.5',
@@ -57,10 +46,6 @@ return [
             'activateCache' => '0',
             'listerNameId' => '0',
         ],
-        'onetimeaccount' => [
-            'enableConfigCheck' => '1',
-            'enableLogging' => '0',
-        ],
         'rn_base' => [
             'activateCache' => '0',
             'activateSubstCache' => '0',
@@ -73,10 +58,6 @@ return [
             'send503HeaderOnException' => '1',
             'sendEmailOnException' => '',
             'verboseMayday' => '0',
-        ],
-        'scheduler' => [
-            'maxLifetime' => '1440',
-            'showSampleTasks' => '1',
         ],
         'seminars' => [
             'eMailFormatForAttendees' => '0',
@@ -108,6 +89,11 @@ return [
             'CMS' => [
                 'deprecations' => [
                     'writerConfiguration' => [
+                        'notice' => [
+                            'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
+                                'disabled' => false,
+                            ],
+                        ],
                         5 => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                                 'disabled' => false,
@@ -127,6 +113,37 @@ return [
         'transport_smtp_username' => '',
     ],
     'SYS' => [
+        'caching' => [
+            'cacheConfigurations' => [
+                'hash' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                ],
+                'imagesizes' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'options' => [
+                        'compression' => true,
+                    ],
+                ],
+                'pages' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'options' => [
+                        'compression' => true,
+                    ],
+                ],
+                'pagesection' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'options' => [
+                        'compression' => true,
+                    ],
+                ],
+                'rootline' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'options' => [
+                        'compression' => true,
+                    ],
+                ],
+            ],
+        ],
         'devIPmask' => '*',
         'displayErrors' => 1,
         'encryptionKey' => '52a4aa6dfdd2da877dc765d4651d3b161e91b26cc543eb8ce62e53fe5cc0bcfb304f43edb8d898cb8340a6310d7dbade',
@@ -137,7 +154,6 @@ return [
         ],
         'sitename' => 'TYPO3 testing site',
         'systemLocale' => 'de_DE.UTF-8',
-        'systemLogLevel' => 0,
         'systemMaintainers' => [
             1,
         ],
