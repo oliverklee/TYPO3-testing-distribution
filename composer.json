@@ -1,8 +1,8 @@
 {
 	"name": "oliverklee/typo3-testing-distribution",
-	"type": "project",
 	"description": "TYPO3 CMS distribution for testing extensions",
 	"license": "GPL-2.0-or-later",
+	"type": "project",
 	"authors": [
 		{
 			"name": "Oliver Klee",
@@ -10,6 +10,10 @@
 			"role": "Developer"
 		}
 	],
+	"support": {
+		"issues": "https://github.com/oliverklee/TYPO3-testing-distribution/issues",
+		"source": "https://github.com/oliverklee/TYPO3-testing-distribution"
+	},
 	"require": {
 		"php": ">= 7.2.34",
 		"helhum/typo3-console": "^6.6.0",
@@ -33,9 +37,16 @@
 		"typo3/minimal": "^10.4"
 	},
 	"require-dev": {
-		"ergebnis/composer-normalize": "^2.15",
-		"j13k/yaml-lint": "^1.1"
+		"ergebnis/composer-normalize": "^2.19.0",
+		"j13k/yaml-lint": "^1.1.4"
 	},
+	"repositories": [
+		{
+			"type": "path",
+			"url": "packages/*"
+		}
+	],
+	"prefer-stable": true,
 	"config": {
 		"platform": {
 			"php": "7.2.34"
@@ -45,13 +56,6 @@
 		},
 		"sort-packages": true
 	},
-	"repositories": [
-		{
-			"type": "path",
-			"url": "packages/*"
-		}
-	],
-	"prefer-stable": true,
 	"scripts": {
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
@@ -80,9 +84,5 @@
 		"ci:yaml:lint": "Lints the YAML files for syntax errors.",
 		"composer:normalize": "Reformats and sorts the composer.json file.",
 		"fix": "Reformats the code."
-	},
-	"support": {
-		"issues": "https://github.com/oliverklee/TYPO3-testing-distribution/issues",
-		"source": "https://github.com/oliverklee/TYPO3-testing-distribution"
 	}
 }
