@@ -37,18 +37,18 @@
 		"j13k/yaml-lint": "^1.1"
 	},
 	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true,
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		},
 		"platform": {
 			"php": "7.2.34"
 		},
 		"preferred-install": {
 			"*": "dist"
 		},
-		"sort-packages": true,
-		"allow-plugins": {
-			"typo3/class-alias-loader": true,
-			"typo3/cms-composer-installers": true,
-			"ergebnis/composer-normalize": true
-		}
+		"sort-packages": true
 	},
 	"repositories": [
 		{
