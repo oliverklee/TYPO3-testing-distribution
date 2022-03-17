@@ -16,7 +16,7 @@
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/seminars": "dev-main",
 		"oliverklee/typo3-devsite": "dev-main",
-		"ttn/tea": "dev-main",
+		"ttn/tea": "^1.1.0",
 		"typo3/cms-about": "^9.5",
 		"typo3/cms-adminpanel": "^9.5",
 		"typo3/cms-belog": "^9.5",
