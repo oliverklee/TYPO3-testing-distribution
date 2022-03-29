@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$S1VkUVVnNy5Yd1B5dnBBMA$qfGLhZv5TJliSffWsjJisWPZ9bI18jwfxcpWxnddVC0',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$dXBmSUYva2EzT2hZZEVEUA$1JtKq8v7WusoVuZ9z8BuIPP0tw03gV9CwySkaZE+DX0',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -76,10 +76,10 @@ return [
         ],
     ],
     'GFX' => [
-        'processor' => 'ImageMagick',
+        'processor' => 'GraphicsMagick',
         'processor_allowTemporaryMasksAsPng' => false,
-        'processor_colorspace' => 'sRGB',
-        'processor_effects' => true,
+        'processor_colorspace' => 'RGB',
+        'processor_effects' => false,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
         'processor_path_lzw' => '/usr/bin/',
