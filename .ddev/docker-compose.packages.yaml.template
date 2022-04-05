@@ -5,6 +5,7 @@ version: "3.6"
 services:
   web:
     volumes:
+      - "$HOME/src/typo3/ext/feuserextrafields:/var/www/html/packages/feuserextrafields:ro"
       - "$HOME/src/typo3/ext/oelib:/var/www/html/packages/oelib:ro"
       - "$HOME/src/typo3/ext/onetimeaccount:/var/www/html/packages/onetimeaccount:ro"
       - "$HOME/src/typo3/ext/seminars:/var/www/html/packages/seminars:ro"

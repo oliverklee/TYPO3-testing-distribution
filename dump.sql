@@ -1,10 +1,10 @@
 
 -- Dump of TYPO3 Connection "Default"
--- MariaDB dump 10.19  Distrib 10.5.11-MariaDB, for debian-linux-gnu (x86_64)
+-- MariaDB dump 10.19  Distrib 10.5.12-MariaDB, for debian-linux-gnu (x86_64)
 --
--- Host: ddev-typo3-testing-10-4-db    Database: db
+-- Host: db    Database: db
 -- ------------------------------------------------------
--- Server version	10.6.4-MariaDB-1:10.6.4+maria~focal-log
+-- Server version	10.6.7-MariaDB-1:10.6.7+maria~focal-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -151,6 +151,14 @@ CREATE TABLE `fe_users` (
   `felogin_forgotHash` varchar(80) COLLATE utf8mb3_unicode_ci DEFAULT '',
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tx_seminars_registration` int(10) unsigned NOT NULL DEFAULT 0,
+  `gender` int(10) unsigned NOT NULL DEFAULT 0,
+  `date_of_birth` int(11) NOT NULL DEFAULT 0,
+  `zone` varchar(45) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `status` int(10) unsigned NOT NULL DEFAULT 0,
+  `comments` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `full_salutation` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `static_info_country` varchar(3) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `privacy` smallint(5) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`username`(100)),
   KEY `username` (`username`(100)),
@@ -166,7 +174,7 @@ CREATE TABLE `fe_users` (
 
 LOCK TABLES `fe_users` WRITE;
 /*!40000 ALTER TABLE `fe_users` DISABLE KEYS */;
-INSERT INTO `fe_users` VALUES (1,4,1627922814,1627917285,1,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna Attendee','Anna','','Attendee','','','','attendee@example.com','','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53173','Bonn','','','','0','',1634481267,1634481267,'','',0,0),(2,4,1627922794,1627922794,1,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com','',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0),(3,4,1627922848,1627922848,1,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com','',NULL,'','','','','','',NULL,'',1628014446,1628014677,'','',0,0),(4,4,1628002830,1628002830,1,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com','',NULL,'','','','','','',NULL,'',0,0,'','',0,0),(5,4,1628002865,1628002862,1,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com','',NULL,'','','','','','','0','',0,0,'','',0,0);
+INSERT INTO `fe_users` VALUES (1,4,1627922814,1627917285,1,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna Attendee','Anna','','Attendee','','','','attendee@example.com','','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53173','Bonn','','','','0','',1634481267,1634481267,'','',0,0,0,0,'',0,NULL,'','',0),(2,4,1627922794,1627922794,1,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com','',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0,0,0,'',0,NULL,'','',0),(3,4,1627922848,1627922848,1,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com','',NULL,'','','','','','',NULL,'',1628014446,1628014677,'','',0,0,0,0,'',0,NULL,'','',0),(4,4,1628002830,1628002830,1,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com','',NULL,'','','','','','',NULL,'',0,0,'','',0,0,0,0,'',0,NULL,'','',0),(5,4,1628002865,1628002862,1,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com','',NULL,'','','','','','','0','',0,0,'','',0,0,0,0,'',0,NULL,'','',0);
 /*!40000 ALTER TABLE `fe_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1997,4 +2005,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-17 16:35:48
+-- Dump completed on 2022-04-07 16:29:32

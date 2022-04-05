@@ -17,6 +17,7 @@
 	"require": {
 		"php": ">= 7.2.34",
 		"helhum/typo3-console": "^6.6.0",
+		"oliverklee/feuserextrafields": "dev-main",
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/seminars": "dev-main",
 		"oliverklee/typo3-devsite": "dev-main",
