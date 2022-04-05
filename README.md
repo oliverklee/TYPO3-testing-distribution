@@ -7,7 +7,6 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 - [csv_to_openimmo](https://github.com/oliverklee/ext-csv_to_openimmo)
   (once it supports TYPO3 9LTS)
 - [feuserextrafields](https://github.com/oliverklee/ext-feuserextrafields)
-  (once I have rewritten it)
 - [oelib](https://github.com/oliverklee/ext-oelib)
 - [onetimeaccount](https://github.com/oliverklee/ext-onetimeaccount)
 - [realty](https://github.com/oliverklee/ext-realty)
