@@ -13,7 +13,7 @@ mariadb_version: "10.6"
 mysql_version: ""
 use_dns_when_possible: true
 timezone: Europe/Berlin
-composer_version: "1.10.25"
+composer_version: "1.10.26"
 web_environment: [ ]
 
 # This config.yaml was created with ddev version v1.17.7
