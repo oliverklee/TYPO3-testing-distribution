@@ -89,6 +89,29 @@ EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_7.png</target><
 				<source>The "Cache and Age" view.
 Here you see the "TSconfig" column. The overview exposes that these two pages include some Page TSconfig code!</source>
 			<target state="final">Die Ansicht "Cache und Alter". Hier sehen Sie die Spalte "TSconfig". Die Übersicht zeigt, dass diese beiden Seiten TSconfig-Code enhalten!</target></trans-unit>
+      <trans-unit id="lang.details" resname="lang.details" xml:space="preserve" approved="yes">
+				<source>The overview uses colors to signal the availability and fall back situation for a given page. Here is a description for each color code:
+&lt;b&gt;Green background:&lt;/b&gt; Page is translated and viewable in this language. For translations it means that an active page overlay record is present.
+&lt;b&gt;Red background:&lt;/b&gt; Page &lt;em&gt;cannot&lt;/em&gt; be viewed in this language and you will see an error message if you try. Menus should automatically filter out links to pages with this translation.
+&lt;b&gt;Gray background (not available for default language):&lt;/b&gt; Page will fall back to the specified fallback mode for content. Depends on configuration. (sys_language_mode = content_fallback is recommended for most flexible fallback, sys_language_mode = strict will prevent this and issue an error instead!)
+
+&lt;b&gt;The pages "Localization settings:"&lt;/b&gt;
+It is the "Localization settings" of the page record that determines the modes above. In the column of the default language each of these settings are represented by a "N" (Hide page if no translation for current language exists) or a "D" (Hide default language of page).
+As you can see the page "Startpage" has the N flag set and therefore any access to the german version of that page will be blocked with an error message because there is no translation in german. By default "german access" to a non-translated page will just show the english content.
+There is also a page with the D flag ("[Dummy]"). The D flag means that the page is only available in one of the translations, in this case Danish. So any attempt to access the page in the default language or german will show an error message.
+
+So, when the "Localization settings" checkboxes for a page are used, you will get an error message when you try to request a page which has been blocked. This is a feature. The trick is not to create links to those pages.
+
+Menus generated from HMENU objects will always take "sys_language" into account and display only pages which can be accessed for that language. But combined with the "localization settings" of pages which may block page access this becomes a problem with pages which are &lt;em&gt;not&lt;/em&gt; translated (has gray background); You might get menu items which links to non-accessible pages.
+The problem basically is that "&amp;L=xx" is different from internal "sys_language". You would like to avoid that and to do so you should configure "sys_language_mode" to "content_fallback". If you do that sys_language will &lt;em&gt;always&lt;/em&gt; follow what "&amp;L=" instructs it to and your menus will be right. At the same time you will get the default content displayed if no translation exists (because content selection falls back).
+
+Finally, the number found in each column tells you how many content elements are found in the specified language.</source>
+			<target state="final">Die Übersicht verwendet Farben um die Verfügbarkeit und Fallback-Einstellungen einer Seite dazustellen. Die Farben bedeuten folgendes:
+&lt;b&gt;Grüner Hintergrund:&lt;/b&gt; Die Seite ist übersetzt und in der Sprache verfügbar. Für Übersetzungen bedeutet dies, dass ein Overlay existiert.
+&lt;b&gt;Roter Hintergrund:&lt;/b&gt; Die Seite kann nicht in der Sprache betrachtet werden und ein Fehler wird angezeigt sofern es versucht wird. Menüs sollten Links zu diesen Seiten automatisch filtern.
+&lt;b&gt;Grauer Hintergrund (nicht verfügbar für die Standardsprache):&lt;/b&gt; Die Seite benutzt einen Fallback mit dem konfigurierten Fallbackmodus.
+
+Die Nummer in jeder Spalte zeigt an wieviele Inhaltselemente in dieser Sprache existieren.</target></trans-unit>
       <trans-unit id="_lang.image" resname="_lang.image" xml:space="preserve" approved="yes">
 				<source>EXT:frontend/Resources/Public/Images/cshimages/localizationoverview.png,
 EXT:frontend/Resources/Public/Images/cshimages/localizationoverview1.png</source>
