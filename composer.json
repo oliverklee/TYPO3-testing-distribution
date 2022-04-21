@@ -23,6 +23,7 @@
 		"typo3/cms-adminpanel": "^9.5",
 		"typo3/cms-belog": "^9.5",
 		"typo3/cms-beuser": "^9.5",
+		"typo3/cms-core": "^9.5.31",
 		"typo3/cms-felogin": "^9.5",
 		"typo3/cms-fluid-styled-content": "^9.5",
 		"typo3/cms-form": "^9.5",
