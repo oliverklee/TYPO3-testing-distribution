@@ -18,6 +18,9 @@
       <trans-unit id="formManager.form_template" resname="formManager.form_template" xml:space="preserve" approved="yes">
                 <source>Start template</source>
             <target state="final">Ausgangsvorlage</target></trans-unit>
+      <trans-unit id="formManager.form_copied" xml:space="preserve" approved="yes">
+                <source>Copied form</source>
+            <target state="final">Kopiertes Formular</target></trans-unit>
       <trans-unit id="formManager.cancel" resname="formManager.cancel" xml:space="preserve" approved="yes">
                 <source>Cancel</source>
             <target state="final">Abbrechen</target></trans-unit>
@@ -36,18 +39,18 @@
       <trans-unit id="formManager.newFormWizard.step1.noStorages" resname="formManager.newFormWizard.step1.noStorages" xml:space="preserve" approved="yes">
                 <source>No accessible form storage folders</source>
             <target state="final">Keine zugänglichen Formularspeicherordner</target></trans-unit>
-      <trans-unit id="formManager.newFormWizard.step1.advanced" resname="formManager.newFormWizard.step1.advanced" xml:space="preserve" approved="yes">
-                <source>Advanced settings</source>
-            <target state="final">Fortgeschrittene Einstellungen</target></trans-unit>
       <trans-unit id="formManager.newFormWizard.step2.title" resname="formManager.newFormWizard.step2.title" xml:space="preserve" approved="yes">
-                <source>Advanced settings</source>
-            <target state="final">Fortgeschrittene Einstellungen</target></trans-unit>
+                <source>Settings</source>
+            <target state="final">Einstellungen</target></trans-unit>
       <trans-unit id="formManager.newFormWizard.step3.title" resname="formManager.newFormWizard.step3.title" xml:space="preserve" approved="yes">
                 <source>Ready</source>
             <target state="final">Fertig</target></trans-unit>
       <trans-unit id="formManager.newFormWizard.step3.message" resname="formManager.newFormWizard.step3.message" xml:space="preserve" approved="yes">
                 <source>Now you are ready to create your new form.</source>
             <target state="final">Sie sind nun bereit, Ihr neues Formular zu erstellen.</target></trans-unit>
+      <trans-unit id="formManager.newFormWizard.step3.check" xml:space="preserve" approved="yes">
+                <source>Please check and confirm your entered settings</source>
+            <target state="final">Bitte überprüfen und bestätigen Sie Ihre eingegebenen Einstellungen</target></trans-unit>
       <trans-unit id="formManager.newFormWizard.step4.errorTitle" resname="formManager.newFormWizard.step4.errorTitle" xml:space="preserve" approved="yes">
                 <source>Create</source>
             <target state="final">Anlegen</target></trans-unit>
@@ -78,6 +81,12 @@
       <trans-unit id="formManager.references.headline" resname="formManager.references.headline" xml:space="preserve" approved="yes">
                 <source>References for "{0}"</source>
             <target state="final">Referenzen für "{0}"</target></trans-unit>
+      <trans-unit id="formManager.blankForm.label" xml:space="preserve" approved="yes">
+                <source>Blank form</source>
+            <target state="final">Leeres Formular</target></trans-unit>
+      <trans-unit id="formManager.predefinedForm.label" xml:space="preserve" approved="yes">
+                <source>Predefined form</source>
+            <target state="final">Vordefiniertes Formular</target></trans-unit>
     </body>
   </file>
 </xliff>

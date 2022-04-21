@@ -495,58 +495,6 @@
         <source>Infinite</source>
         <target state="final">Unendlich</target>
       </trans-unit>
-      <trans-unit id="menu_type" resname="menu_type" approved="yes">
-        <source>Menu Type</source>
-        <target state="final">Menütyp</target>
-      </trans-unit>
-      <trans-unit id="menu_type_formlabel" resname="menu_type_formlabel" approved="yes">
-        <source>Menu Type</source>
-        <target state="final">Menütyp</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.0" resname="menu_type.I.0" approved="yes">
-        <source>Menu of selected pages</source>
-        <target state="final">Menü ausgewählter Seiten</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.1" resname="menu_type.I.1" approved="yes">
-        <source>Menu of subpages of selected pages</source>
-        <target state="final">Menü der Unterseiten der ausgewählten Seiten</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.2" resname="menu_type.I.2" approved="yes">
-        <source>Menu of subpages of selected pages including abstracts</source>
-        <target state="final">Menü der Unterseiten der ausgewählten Seiten inklusive Inhaltsangabe</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.3" resname="menu_type.I.3" approved="yes">
-        <source>Menu of subpages of selected pages including sections</source>
-        <target state="final">Menü der Unterseiten der ausgewählten Seiten inklusive Seiteninhalt</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.4" resname="menu_type.I.4" approved="yes">
-        <source>Sitemap</source>
-        <target state="final">Sitemap</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.5" resname="menu_type.I.5" approved="yes">
-        <source>Section index (page content marked for section menus)</source>
-        <target state="final">Abschnittsübersicht (mit Seiteninhalt)</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.6" resname="menu_type.I.6" approved="yes">
-        <source>Recently updated pages</source>
-        <target state="final">Kürzlich aktualisierte Seiten</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.7" resname="menu_type.I.7" approved="yes">
-        <source>Related pages (based on keywords)</source>
-        <target state="final">Verwandte Seiten (nach Stichworten)</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.8" resname="menu_type.I.8" approved="yes">
-        <source>Sitemaps of selected pages</source>
-        <target state="final">Sitemap der ausgewählten Seiten.</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.categorized_pages" resname="menu_type.I.categorized_pages" approved="yes">
-        <source>Pages for selected categories</source>
-        <target state="final">Seiten für die ausgewählten Kategorien</target>
-      </trans-unit>
-      <trans-unit id="menu_type.I.categorized_content" resname="menu_type.I.categorized_content" approved="yes">
-        <source>Content elements for selected categories</source>
-        <target state="final">Inhaltselemente für die ausgewählten Kategorien</target>
-      </trans-unit>
       <trans-unit id="list_type" resname="list_type" approved="yes">
         <source>Plugin</source>
         <target state="final">Plug-In:</target>
@@ -631,6 +579,10 @@
         <source>by file modification date</source>
         <target state="final">nach Dateiänderungsdatum</target>
       </trans-unit>
+      <trans-unit id="filelink_sorting.title" resname="filelink_sorting.title" approved="yes">
+        <source>by file metadata title</source>
+        <target state="final">nach Datei-Metadaten-Titel</target>
+      </trans-unit>
       <trans-unit id="filelink_sorting_direction" resname="filelink_sorting_direction" approved="yes">
         <source>Sorting direction</source>
         <target state="final">Sortierrichtung</target>
@@ -662,22 +614,6 @@
       <trans-unit id="records_formlabel" resname="records_formlabel" approved="yes">
         <source>Records</source>
         <target state="final">Datensätze</target>
-      </trans-unit>
-      <trans-unit id="spaceBefore" resname="spaceBefore" approved="yes">
-        <source>Before</source>
-        <target state="final">Vor</target>
-      </trans-unit>
-      <trans-unit id="spaceBefore_formlabel" resname="spaceBefore_formlabel" approved="yes">
-        <source>Top Margin</source>
-        <target state="final">Oberer Abstand</target>
-      </trans-unit>
-      <trans-unit id="spaceAfter" resname="spaceAfter" approved="yes">
-        <source>After</source>
-        <target state="final">Nach</target>
-      </trans-unit>
-      <trans-unit id="spaceAfter_formlabel" resname="spaceAfter_formlabel" approved="yes">
-        <source>Bottom Margin</source>
-        <target state="final">Unterer Abstand</target>
       </trans-unit>
       <trans-unit id="space_before_class" resname="space_before_class" approved="yes">
         <source>Space Before</source>

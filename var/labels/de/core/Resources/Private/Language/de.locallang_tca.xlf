@@ -27,6 +27,10 @@
         <source>Modules</source>
         <target state="final">Module</target>
       </trans-unit>
+      <trans-unit id="availableWidgets" resname="userMods" approved="yes">
+        <source>Dashboard widgets</source>
+        <target state="final">Dashboard-Widgets</target>
+      </trans-unit>
       <trans-unit id="allowed_languages" resname="allowed_languages" approved="yes">
         <source>Limit to languages</source>
         <target state="final">Auf Sprachen einschränken</target>
@@ -381,7 +385,7 @@
       </trans-unit>
       <trans-unit id="sys_filemounts.base_absolute" resname="sys_filemounts.base_absolute" approved="yes">
         <source>absolute (root) / </source>
-        <target state="final">absolut (Wurzel) / </target>
+        <target state="final">absolut (root) / </target>
       </trans-unit>
       <trans-unit id="sys_filemounts.base_relative" resname="sys_filemounts.base_relative" approved="yes">
         <source>relative ../fileadmin/</source>
@@ -411,17 +415,9 @@
         <source>Members</source>
         <target state="final">Mitglieder</target>
       </trans-unit>
-      <trans-unit id="sys_workspace.reviewers" resname="sys_workspace.reviewers" approved="yes">
-        <source>Reviewers</source>
-        <target state="final">Gutachter</target>
-      </trans-unit>
       <trans-unit id="sys_workspace.publish_time" resname="sys_workspace.publish_time" approved="yes">
         <source>Publish</source>
         <target state="final">Veröffentlichen</target>
-      </trans-unit>
-      <trans-unit id="sys_workspace.unpublish_time" resname="sys_workspace.unpublish_time" approved="yes">
-        <source>Un-Publish</source>
-        <target state="final">Zurückziehen</target>
       </trans-unit>
       <trans-unit id="sys_workspace.freeze" resname="sys_workspace.freeze" approved="yes">
         <source>Freeze Editing</source>
@@ -442,10 +438,6 @@
       <trans-unit id="sys_workspace.swap_modes" resname="sys_workspace.swap_modes" approved="yes">
         <source>Swap modes</source>
         <target state="final">Tauschmodus</target>
-      </trans-unit>
-      <trans-unit id="sys_workspace.vtypes" resname="sys_workspace.vtypes" approved="yes">
-        <source>Disable Versioning Types for members and reviewers</source>
-        <target state="final">Versionierungstypen für Mitglieder und Redakteure deaktivieren</target>
       </trans-unit>
       <trans-unit id="sys_workspace.publish_access" resname="sys_workspace.publish_access" approved="yes">
         <source>Publish access</source>
@@ -690,6 +682,10 @@
       <trans-unit id="sys_file.alternative" resname="sys_file.alternative" approved="yes">
         <source>Alternative Text</source>
         <target state="final">Alternativer Text</target>
+      </trans-unit>
+      <trans-unit id="sys_file.alternative.description" resname="sys_file.alternative.description" approved="yes">
+        <source>Images must have text alternatives that describe the information or function represented by them. This should only be empty for purely decorative images.</source>
+        <target state="final">Bilder müssen Textalternativen haben, die die Informationen oder Funktionen des Bildes beschreiben. Diese Feld sollte nur für rein dekorative Bilder leer sein.</target>
       </trans-unit>
       <trans-unit id="sys_file.missing" resname="sys_file.missing" approved="yes">
         <source>Marked as missing</source>

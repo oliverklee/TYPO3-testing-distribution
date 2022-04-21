@@ -55,9 +55,21 @@
         <source>Never</source>
         <target state="final">Nie</target>
       </trans-unit>
+      <trans-unit id="edit" resname="edit" approved="yes">
+        <source>Edit</source>
+        <target state="final">Bearbeiten</target>
+      </trans-unit>
       <trans-unit id="delete" resname="delete" approved="yes">
         <source>Delete backend user (!)</source>
         <target state="final">Backend-Benutzer löschen(!)</target>
+      </trans-unit>
+      <trans-unit id="details" resname="details" approved="yes">
+        <source>Show details</source>
+        <target state="final">Details anzeigen</target>
+      </trans-unit>
+      <trans-unit id="info" resname="info" approved="yes">
+        <source>Display information</source>
+        <target state="final">Informationen anzeigen</target>
       </trans-unit>
       <trans-unit id="disable" resname="disable" approved="yes">
         <source>Disable</source>
@@ -102,6 +114,14 @@
       <trans-unit id="compareUserList" resname="compareUserList" approved="yes">
         <source>Compare user list</source>
         <target state="final">Benutzerliste vergleichen</target>
+      </trans-unit>
+      <trans-unit id="compareBackendUsersGroups" resname="compareBackendUsersGroups" approved="yes">
+        <source>Compare backend usergroups</source>
+        <target state="final">Backend-Benutzergruppen vergleichen</target>
+      </trans-unit>
+      <trans-unit id="clearCompareList" resname="clearCompareList" approved="yes">
+        <source>Clear compare list</source>
+        <target state="final">Vergleichsliste löschen</target>
       </trans-unit>
       <trans-unit id="status" resname="status" approved="yes">
         <source>Status</source>
@@ -169,7 +189,7 @@
       </trans-unit>
       <trans-unit id="backendUserAdministration" resname="backendUserAdministration" approved="yes">
         <source>Backend User Administration</source>
-        <target state="final">Backend-Benutzer-Verwaltung</target>
+        <target state="final">Backend-Benutzerverwaltung</target>
       </trans-unit>
       <trans-unit id="backendUserGroup" resname="backendUserGroup" approved="yes">
         <source>User group</source>
@@ -195,9 +215,17 @@
         <source>Compare</source>
         <target state="final">Vergleich</target>
       </trans-unit>
+      <trans-unit id="section.allUserGroups" resname="section.allUserGroups" approved="yes">
+        <source>All User Groups</source>
+        <target state="final">Alle Benutzergruppen</target>
+      </trans-unit>
       <trans-unit id="compare" resname="compare" approved="yes">
         <source>Compare</source>
         <target state="final">Vergleich</target>
+      </trans-unit>
+      <trans-unit id="remove" resname="remove" approved="yes">
+        <source>Remove</source>
+        <target state="final">Entfernen</target>
       </trans-unit>
       <trans-unit id="terminateSessionSuccess" resname="terminateSessionSuccess" approved="yes">
         <source>Session successfully terminated.</source>
@@ -212,12 +240,112 @@
         <target state="final">online</target>
       </trans-unit>
       <trans-unit id="visibility.hide" resname="visibility.hide" approved="yes">
-        <source>hide</source>
-        <target state="final">verbergen</target>
+        <source>Hide</source>
+        <target state="final">Verbergen</target>
       </trans-unit>
       <trans-unit id="visibility.unhide" resname="visibility.unhide" approved="yes">
-        <source>unhide</source>
-        <target state="final">einblenden</target>
+        <source>Un-hide</source>
+        <target state="final">Sichtbar machen</target>
+      </trans-unit>
+      <trans-unit id="information.defaultLanguage" resname="information.defaultLanguage" approved="yes">
+        <source>Default</source>
+        <target state="final">Standard</target>
+      </trans-unit>
+      <trans-unit id="groups" resname="groups" approved="yes">
+        <source>Groups</source>
+        <target state="final">Benutzergruppen</target>
+      </trans-unit>
+      <trans-unit id="information.groups.direct" resname="information.groups.direct" approved="yes">
+        <source>Directly assigned</source>
+        <target state="final">Direkt zugewiesen</target>
+      </trans-unit>
+      <trans-unit id="information.groups.inheritance" resname="information.groups.inheritance" approved="yes">
+        <source>Assigned through inheritance</source>
+        <target state="final">Zugewiesen durch Vererbung</target>
+      </trans-unit>
+      <trans-unit id="languages" resname="languages" approved="yes">
+        <source>Languages</source>
+        <target state="final">Sprachen</target>
+      </trans-unit>
+      <trans-unit id="dbMounts" resname="dbMounts" approved="yes">
+        <source>DB Mounts</source>
+        <target state="final">Datenbankfreigaben</target>
+      </trans-unit>
+      <trans-unit id="fileMounts" resname="fileMounts" approved="yes">
+        <source>File Mounts</source>
+        <target state="final">Datei-Freigabepunkte</target>
+      </trans-unit>
+      <trans-unit id="categories" resname="categories" approved="yes">
+        <source>Categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
+      <trans-unit id="permissions" resname="permissions" approved="yes">
+        <source>Permissions</source>
+        <target state="final">Berechtigungen</target>
+      </trans-unit>
+      <trans-unit id="modules" resname="modules" approved="yes">
+        <source>Modules</source>
+        <target state="final">Module</target>
+      </trans-unit>
+      <trans-unit id="tableModes" resname="tableModes" approved="yes">
+        <source>Table select/modify</source>
+        <target state="final">Tabelle auswählen/ändern</target>
+      </trans-unit>
+      <trans-unit id="tableModes.select" resname="tableModes.select" approved="yes">
+        <source>Select</source>
+        <target state="final">Auswählen</target>
+      </trans-unit>
+      <trans-unit id="tableModes.modify" resname="tableModes.modify" approved="yes">
+        <source>Modify</source>
+        <target state="final">Ändern</target>
+      </trans-unit>
+      <trans-unit id="information.defaultWorkspace" resname="information.defaultWorkspace" approved="yes">
+        <source>Default workspace</source>
+        <target state="final">Standard-Arbeitsumgebung</target>
+      </trans-unit>
+      <trans-unit id="backendUser" resname="backendUser" approved="yes">
+        <source>Backend User</source>
+        <target state="final">Backend-Benutzer</target>
+      </trans-unit>
+      <trans-unit id="flashMessage.resetPassword.error.title" resname="flashMessage.resetPassword.error.title" approved="yes">
+        <source>Password reset not triggered</source>
+        <target state="final">Passwortzurücksetzung nicht angestoßen</target>
+      </trans-unit>
+      <trans-unit id="flashMessage.resetPassword.error.text" resname="flashMessage.resetPassword.error.text" approved="yes">
+        <source>Sorry, the password of this user cannot be reset.</source>
+        <target state="final">Das Passwort dieses Benutzers kann leider nicht zurückgesetzt werden.</target>
+      </trans-unit>
+      <trans-unit id="flashMessage.resetPassword.success.title" resname="flashMessage.resetPassword.success.title" approved="yes">
+        <source>Password reset triggered</source>
+        <target state="final">Passwortzurücksetzung angestoßen</target>
+      </trans-unit>
+      <trans-unit id="flashMessage.resetPassword.success.text" resname="flashMessage.resetPassword.success.text" approved="yes">
+        <source>Password reset for email address %s initiated.</source>
+        <target state="final">Passwort zurücksetzen für die E-Mail-Adresse %s initiiert.</target>
+      </trans-unit>
+      <trans-unit id="resetPassword.label" resname="resetPassword.label" approved="yes">
+        <source>Reset Password</source>
+        <target state="final">Passwort zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="resetPassword.confirmation.header" resname="resetPassword.confirmation.header" approved="yes">
+        <source>Reset Password</source>
+        <target state="final">Passwort zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="resetPassword.confirmation.text" resname="resetPassword.confirmation.text" approved="yes">
+        <source>Are you sure you want to reset the password for %s?</source>
+        <target state="final">Möchten Sie das Passwort für %s wirklich zurücksetzen?</target>
+      </trans-unit>
+      <trans-unit id="compare.tables" resname="compare.tables" approved="yes">
+        <source>Table permissions</source>
+        <target state="final">Tabellenberechtigungen</target>
+      </trans-unit>
+      <trans-unit id="compare.direct.inherit" resname="compare.direct.inherit" approved="yes">
+        <source>Inherit</source>
+        <target state="final">Vererben</target>
+      </trans-unit>
+      <trans-unit id="compare.direct.direct" resname="compare.direct.direct" approved="yes">
+        <source>Direct</source>
+        <target state="final">Direkt</target>
       </trans-unit>
     </body>
   </file>

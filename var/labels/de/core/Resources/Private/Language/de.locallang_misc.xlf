@@ -311,6 +311,18 @@
         <source>New content element</source>
         <target state="final">Neues Inhaltselement</target>
       </trans-unit>
+      <trans-unit id="newContentElement.filter.label" resname="newContentElement.filter.label" approved="yes">
+        <source>Filter by:</source>
+        <target state="final">Filtern nach:</target>
+      </trans-unit>
+      <trans-unit id="newContentElement.filter.placeholder" resname="newContentElement.filter.placeholder" approved="yes">
+        <source>Search for any content type</source>
+        <target state="final">Suche nach einem beliebigen Inhaltstyp</target>
+      </trans-unit>
+      <trans-unit id="newContentElement.filter.noResults" resname="newContentElement.filter.noResults" approved="yes">
+        <source>Unfortunately no content type matches your query, please try a different one.</source>
+        <target state="final">Leider stimmt kein Inhaltstyp mit Ihrer Anfrage überein, bitte versuchen Sie einen anderen.</target>
+      </trans-unit>
       <trans-unit id="system_records" resname="system_records" approved="yes">
         <source>System Records</source>
         <target state="final">Systemdatensätze</target>
@@ -326,6 +338,14 @@
       <trans-unit id="CM_history" resname="CM_history" approved="yes">
         <source>History/Undo</source>
         <target state="final">Verlauf/Rückgängig</target>
+      </trans-unit>
+      <trans-unit id="CM_hideInMenus" resname="CM_hideInMenus" approved="yes">
+        <source>Hide in menu</source>
+        <target state="final">In Menüs verbergen</target>
+      </trans-unit>
+      <trans-unit id="CM_showInMenus" resname="CM_showInMenus" approved="yes">
+        <source>Show in menu</source>
+        <target state="final">Im Menü anzeigen</target>
       </trans-unit>
       <trans-unit id="CM_perms" resname="CM_perms" approved="yes">
         <source>Access</source>

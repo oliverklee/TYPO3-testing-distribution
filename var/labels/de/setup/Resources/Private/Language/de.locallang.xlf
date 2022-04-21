@@ -11,6 +11,18 @@
         <source>Language</source>
         <target state="final">Sprache</target>
       </trans-unit>
+      <trans-unit id="languageUnavailable" resname="languageUnavailable" approved="yes">
+        <source>The selected language "%s" is not available before the language files are installed.</source>
+        <target state="final">Die ausgewählte Sprache "%s" ist nicht verfügbar, bevor die Sprachdateien installiert sind.</target>
+      </trans-unit>
+      <trans-unit id="languageUnavailable.admin" resname="languageUnavailable.admin" approved="yes">
+        <source>You can use "Manage Language Packs" in the Maintenance module to easily download new language files.</source>
+        <target state="final">Sie können "Sprachpakete verwalten" im Wartungsmodul verwenden, um neue Sprachdateien herunterzuladen.</target>
+      </trans-unit>
+      <trans-unit id="languageUnavailable.user" resname="languageUnavailable.user" approved="yes">
+        <source>Please ask your system administrator to do this.</source>
+        <target state="final">Bitten Sie Ihren Systemadministrator, dies zu tun.</target>
+      </trans-unit>
       <trans-unit id="lang_default" resname="lang_default" approved="yes">
         <source>English</source>
         <target state="final">Englisch</target>
@@ -490,6 +502,14 @@
       <trans-unit id="startModule.firstInMenu" resname="startModule.firstInMenu" approved="yes">
         <source>- First module in menu -</source>
         <target state="final">- Erstes Modul im Menü -</target>
+      </trans-unit>
+      <trans-unit id="avatar.clear" resname="avatar.clear" approved="yes">
+        <source>Remove selected avatar image</source>
+        <target state="final">Ausgewähltes Avatar-Bild entfernen</target>
+      </trans-unit>
+      <trans-unit id="avatar.openFileBrowser" resname="avatar.openFileBrowser" approved="yes">
+        <source>Open file browser to select avatar image</source>
+        <target state="final">Dateibrowser öffnen, um ein Avatar-Bild auszuwählen</target>
       </trans-unit>
     </body>
   </file>

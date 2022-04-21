@@ -39,6 +39,10 @@
         <source>Email</source>
         <target state="final">E-Mail</target>
       </trans-unit>
+      <trans-unit id="telephone" resname="telephone" approved="yes">
+        <source>Telephone</source>
+        <target state="final">Telefon</target>
+      </trans-unit>
       <trans-unit id="special" resname="special" approved="yes">
         <source>Special</source>
         <target state="final">Spezial</target>
@@ -111,6 +115,10 @@
         <source>Email address</source>
         <target state="final">E-Mail-Adresse</target>
       </trans-unit>
+      <trans-unit id="telephoneNumber" resname="telephoneNumber" approved="yes">
+        <source>Telephone number</source>
+        <target state="final">Telefonnummer</target>
+      </trans-unit>
       <trans-unit id="setLink" resname="setLink" approved="yes">
         <source>Set Link</source>
         <target state="final">Link setzen</target>
@@ -162,6 +170,10 @@
       <trans-unit id="page_id" resname="page_id" approved="yes">
         <source>Page ID</source>
         <target state="final">Seiten-ID</target>
+      </trans-unit>
+      <trans-unit id="displayThumbs" resname="displayThumbs" approved="yes">
+        <source>Display thumbnails</source>
+        <target state="final">Zeige Vorschaubilder</target>
       </trans-unit>
     </body>
   </file>

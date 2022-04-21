@@ -19,6 +19,10 @@
         <source>Entry Point</source>
         <target state="final">Einstiegspunkt</target>
       </trans-unit>
+      <trans-unit id="site.websiteTitle" resname="site.websiteTitle" approved="yes">
+        <source>Website title</source>
+        <target state="final">Titel der Website</target>
+      </trans-unit>
       <trans-unit id="site.baseVariants" resname="site.baseVariants" approved="yes">
         <source>Variants for the Entry Point</source>
         <target state="final">Varianten für den Einstiegspunkt</target>
@@ -74,6 +78,10 @@
       <trans-unit id="site_language.title" resname="site_language.title" approved="yes">
         <source>Title</source>
         <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="site_language.websiteTitle" resname="site_language.websiteTitle" approved="yes">
+        <source>Website title</source>
+        <target state="final">Titel der Website</target>
       </trans-unit>
       <trans-unit id="site_language.navigationTitle" resname="site_language.navigationTitle" approved="yes">
         <source>Navigation Title</source>

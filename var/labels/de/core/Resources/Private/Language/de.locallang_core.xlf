@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814851" source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_core.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_core.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
     <header/>
     <body>
       <trans-unit id="labels.openInNewWindow" resname="labels.openInNewWindow" approved="yes">
@@ -21,19 +21,19 @@
       </trans-unit>
       <trans-unit id="labels.lockedRecord" resname="labels.lockedRecord" approved="yes">
         <source>The user '%s' began to edit this record %s ago.</source>
-        <target state="final">Der Benutzer '%s' hat mit der Bearbeitung dieses Datensatzes vor %s begonnen.</target>
+        <target state="final">Der Benutzer "%s" hat mit der Bearbeitung dieses Datensatzes vor %s begonnen.</target>
       </trans-unit>
       <trans-unit id="labels.lockedRecord_content" resname="labels.lockedRecord_content" approved="yes">
         <source>The user '%s' began to edit content on this page %s ago.</source>
-        <target state="final">Der Benutzer '%s' hat mit der Bearbeitung dieser Seite vor %s begonnen.</target>
+        <target state="final">Der Benutzer "%s" hat mit der Bearbeitung dieser Seite vor %s begonnen.</target>
       </trans-unit>
       <trans-unit id="labels.lockedRecordUser" resname="labels.lockedRecordUser" approved="yes">
         <source>The %s '%s' began to edit this record %s ago.</source>
-        <target state="final">Der %s '%s' hat mit der Bearbeitung dieses Datensatzes vor %s begonnen.</target>
+        <target state="final">Der %s "%s" hat mit der Bearbeitung dieses Datensatzes vor %s begonnen.</target>
       </trans-unit>
       <trans-unit id="labels.lockedRecordUser_content" resname="labels.lockedRecordUser_content" approved="yes">
         <source>The %s '%s' began to edit content on this page %s ago.</source>
-        <target state="final">Der %s '%s' hat mit der Bearbeitung dieser Seite vor %s begonnen.</target>
+        <target state="final">Der %s "%s" hat mit der Bearbeitung dieser Seite vor %s begonnen.</target>
       </trans-unit>
       <trans-unit id="labels.user" resname="labels.user" approved="yes">
         <source>User</source>
@@ -155,6 +155,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels._LOCALIZATION_" resname="labels._LOCALIZATION_" approved="yes">
         <source>Localization</source>
         <target state="final">Lokalisierung</target>
+      </trans-unit>
+      <trans-unit id="labels._REF_" resname="labels._REF_" approved="yes">
+        <source>Ref</source>
+        <target state="final">Ref</target>
       </trans-unit>
       <trans-unit id="labels.setFields" resname="labels.setFields" approved="yes">
         <source>Set fields</source>
@@ -700,10 +704,6 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Upload files</source>
         <target state="final">Dateien hochladen</target>
       </trans-unit>
-      <trans-unit id="file_upload.php.files" resname="file_upload.php.files" approved="yes">
-        <source>files</source>
-        <target state="final">Dateien</target>
-      </trans-unit>
       <trans-unit id="file_upload.dropzonehint.title" resname="file_upload.dropzonehint.title" approved="yes">
         <source>Drag &amp; drop to upload files</source>
         <target state="final">Ziehen und ablegen zum Hochladen von Dateien</target>
@@ -711,6 +711,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="file_upload.dropzonehint.message" resname="file_upload.dropzonehint.message" approved="yes">
         <source>Drop your files here, or &lt;u&gt;click, browse &amp; choose files&lt;/u&gt;</source>
         <target state="final">Legen Sie Ihre Dateien hier ab, oder &lt;u&gt;klicken Sie, durchsuchen Sie Ihren PC und wählen Sie Dateien aus&lt;/u&gt;</target>
+      </trans-unit>
+      <trans-unit id="file_upload.dropzone.close" resname="file_upload.dropzone.close" approved="yes">
+        <source>Close file upload area</source>
+        <target state="final">Dateiupload schließen</target>
       </trans-unit>
       <trans-unit id="file_upload.select-and-submit" resname="file_upload.select-and-submit" approved="yes">
         <source>Select &amp; upload files</source>
@@ -815,127 +819,6 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="file_upload.button.continue" resname="file_upload.button.continue" approved="yes">
         <source>Continue with selected actions</source>
         <target state="final">Mit ausgewählten Aktionen fortfahren</target>
-      </trans-unit>
-      <trans-unit id="file_upload.php.number_of_files" resname="file_upload.php.number_of_files" approved="yes">
-        <source>Number of files</source>
-        <target state="final">Anzahl Dateien</target>
-      </trans-unit>
-      <trans-unit id="file_rename.exists.title" resname="file_rename.exists.title" approved="yes">
-        <source>File exists already</source>
-        <target state="final">Datei existiert bereits</target>
-      </trans-unit>
-      <trans-unit id="file_rename.exists.description" resname="file_rename.exists.description" approved="yes">
-        <source>You want to rename the file "{0}" to "{1}", but such a file already exists. How do you want to proceed?</source>
-        <target state="final">Sie wollen die Datei "{0}" umbenennen zu "{1}", aber eine solche Datei existiert bereits. Wie möchten Sie fortfahren?</target>
-      </trans-unit>
-      <trans-unit id="file_rename.actions.cancel" resname="file_rename.actions.cancel" approved="yes">
-        <source>Cancel</source>
-        <target state="final">Abbruch</target>
-      </trans-unit>
-      <trans-unit id="file_rename.actions.rename" resname="file_rename.actions.rename" approved="yes">
-        <source>Rename with unique name</source>
-        <target state="final">Mit eindeutigem Namen umbenennen</target>
-      </trans-unit>
-      <trans-unit id="file_rename.actions.override" resname="file_rename.actions.override" approved="yes">
-        <source>Overwrite</source>
-        <target state="final">Überschreiben</target>
-      </trans-unit>
-      <trans-unit id="file_rename.php.pagetitle" resname="file_rename.php.pagetitle" approved="yes">
-        <source>Rename</source>
-        <target state="final">Umbenennen</target>
-      </trans-unit>
-      <trans-unit id="file_rename.php.submit" resname="file_rename.php.submit" approved="yes">
-        <source>Rename</source>
-        <note from="developer">This label is not used since TYPO3 v9.</note>
-        <target state="final">Umbenennen</target>
-      </trans-unit>
-      <trans-unit id="file_rename.php.label.target.file" resname="file_rename.php.label.target.file" approved="yes">
-        <source>New file name</source>
-        <target state="final">Neuer Dateiname</target>
-      </trans-unit>
-      <trans-unit id="file_rename.php.label.target.folder" resname="file_rename.php.label.target.folder" approved="yes">
-        <source>New folder name</source>
-        <target state="final">Neuer Ordnername</target>
-      </trans-unit>
-      <trans-unit id="file_replace.php.pagetitle" resname="file_replace.php.pagetitle" approved="yes">
-        <source>Replace</source>
-        <target state="final">Ersetzen</target>
-      </trans-unit>
-      <trans-unit id="file_replace.php.selectfile" resname="file_replace.php.selectfile" approved="yes">
-        <source>Select new file</source>
-        <target state="final">Neue Datei auswählen</target>
-      </trans-unit>
-      <trans-unit id="file_replace.php.keepfiletitle" resname="file_replace.php.keepfiletitle" approved="yes">
-        <source>Keep the current filename?</source>
-        <target state="final">Aktuellen Dateinamen beibehalten?</target>
-      </trans-unit>
-      <trans-unit id="file_replace.php.browse" resname="file_replace.php.browse" approved="yes">
-        <source>Browse</source>
-        <target state="final">Durchsuchen</target>
-      </trans-unit>
-      <trans-unit id="file_replace.php.submit" resname="file_replace.php.submit" approved="yes">
-        <source>Replace</source>
-        <target state="final">Ersetzen</target>
-      </trans-unit>
-      <trans-unit id="file_edit.php.pagetitle" resname="file_edit.php.pagetitle" approved="yes">
-        <source>Edit</source>
-        <target state="final">Bearbeiten</target>
-      </trans-unit>
-      <trans-unit id="file_edit.php.submit" resname="file_edit.php.submit" approved="yes">
-        <source>Save</source>
-        <target state="final">Speichern</target>
-      </trans-unit>
-      <trans-unit id="file_edit.php.saveAndClose" resname="file_edit.php.saveAndClose" approved="yes">
-        <source>Save and Close</source>
-        <target state="final">Speichern und schließen</target>
-      </trans-unit>
-      <trans-unit id="file_edit.php.coundNot" resname="file_edit.php.coundNot" approved="yes">
-        <source>This filetype cannot be edited.&lt;br /&gt;The file must have an extension like:&lt;br /&gt;&lt;br /&gt; &lt;b&gt;%s&lt;/b&gt;</source>
-        <target state="final">Dieser Dateityp kann nicht bearbeitet werden. Folgende Dateitypen werden unterstützt: %s</target>
-      </trans-unit>
-      <trans-unit id="file_newfolder.php.pagetitle" resname="file_newfolder.php.pagetitle" approved="yes">
-        <source>New file or folder</source>
-        <target state="final">Neue Datei oder Ordner</target>
-      </trans-unit>
-      <trans-unit id="file_newfolder.php.newfolders" resname="file_newfolder.php.newfolders" approved="yes">
-        <source>Create new folders</source>
-        <target state="final">Neuen Ordner erstellen</target>
-      </trans-unit>
-      <trans-unit id="file_newfolder.php.label_newfolder" resname="file_newfolder.php.label_newfolder" approved="yes">
-        <source>Folder</source>
-        <target state="final">Ordner</target>
-      </trans-unit>
-      <trans-unit id="file_newfolder.php.submit" resname="file_newfolder.php.submit" approved="yes">
-        <source>Create folders</source>
-        <target state="final">Ordner anlegen</target>
-      </trans-unit>
-      <trans-unit id="create_folder.title" resname="create_folder.title" approved="yes">
-        <source>Create new folder</source>
-        <target state="final">Neuen Ordner erstellen</target>
-      </trans-unit>
-      <trans-unit id="create_folder.submit" resname="create_folder.submit" approved="yes">
-        <source>Create folder</source>
-        <target state="final">Ordner anlegen</target>
-      </trans-unit>
-      <trans-unit id="file_newfolder.php.folders" resname="file_newfolder.php.folders" approved="yes">
-        <source>folders</source>
-        <target state="final">Ordner</target>
-      </trans-unit>
-      <trans-unit id="file_newfolder.php.newfile_submit" resname="file_newfolder.php.newfile_submit" approved="yes">
-        <source>Create file</source>
-        <target state="final">Datei erstellen</target>
-      </trans-unit>
-      <trans-unit id="file_newfolder.php.newfile" resname="file_newfolder.php.newfile" approved="yes">
-        <source>Create new textfile</source>
-        <target state="final">Neue Textdatei erstellen</target>
-      </trans-unit>
-      <trans-unit id="file_newfolder.php.label_newfile" resname="file_newfolder.php.label_newfile" approved="yes">
-        <source>File name</source>
-        <target state="final">Dateiname</target>
-      </trans-unit>
-      <trans-unit id="file_newfolder.php.number_of_folders" resname="file_newfolder.php.number_of_folders" approved="yes">
-        <source>Number of folders</source>
-        <target state="final">Anzahl Ordner</target>
       </trans-unit>
       <trans-unit id="online_media.new_media" resname="online_media.new_media" approved="yes">
         <source>Add new media asset</source>
@@ -1217,6 +1100,14 @@ Do you want to refresh it now?</source>
         <source>Clear all system-related caches, including localization, extension configuration, file caches and opcode caches. Rebuilding this cache may take some time.</source>
         <target state="final">Alle systembezogenen Caches löschen, inklusive des Lokalisierungs-, Erweiterungs-Konfigurations-, Datei und Opcode-Caches. Diese Caches wieder aufzubauen, kann einige Zeit in Anspruch nehmen.</target>
       </trans-unit>
+      <trans-unit id="flushCaches.error" resname="flushCaches.error" approved="yes">
+        <source>An error occurred</source>
+        <target state="final">Es ist ein Fehler aufgetreten</target>
+      </trans-unit>
+      <trans-unit id="flushCaches.error.description" resname="flushCaches.error.description" approved="yes">
+        <source>An error occurred while clearing the cache. It is likely not all caches were cleared as expected.</source>
+        <target state="final">Beim Leeren des Caches ist ein Fehler aufgetreten. Wahrscheinlich wurden nicht alle Caches wie erwartet gelöscht.</target>
+      </trans-unit>
       <trans-unit id="rm.adminFunctions" resname="rm.adminFunctions" approved="yes">
         <source>Admin functions</source>
         <target state="final">Admin-Funktionen</target>
@@ -1365,6 +1256,10 @@ Do you want to refresh it now?</source>
         <source>New</source>
         <target state="final">Neu</target>
       </trans-unit>
+      <trans-unit id="cm.newSubpage" resname="cm.newSubpage" approved="yes">
+        <source>New subpage</source>
+        <target state="final">Neue Unterseite</target>
+      </trans-unit>
       <trans-unit id="cm.pasteinto" resname="cm.pasteinto" approved="yes">
         <source>Paste into</source>
         <target state="final">Einfügen in</target>
@@ -1512,6 +1407,10 @@ Do you want to refresh it now?</source>
       <trans-unit id="cm.allowedRelations" resname="cm.allowedRelations" approved="yes">
         <source>Allowed relations</source>
         <target state="final">Zugelassene Relationen</target>
+      </trans-unit>
+      <trans-unit id="cm.history" resname="CM_history" approved="yes">
+        <source>History/Undo</source>
+        <target state="final">Verlauf/Rückgängig</target>
       </trans-unit>
       <trans-unit id="sortable.dragmove" resname="sortable.dragmove" approved="yes">
         <source>Drag to move</source>
@@ -1705,6 +1604,10 @@ Do you want to refresh it now?</source>
         <source>Database</source>
         <target state="final">Datenbank</target>
       </trans-unit>
+      <trans-unit id="toolbarItems.sysinfo.database.offline" resname="toolbarItems.sysinfo.database.offline" approved="yes">
+        <source>Offline</source>
+        <target state="final">Offline</target>
+      </trans-unit>
       <trans-unit id="toolbarItems.sysinfo.applicationcontext" resname="toolbarItems.sysinfo.applicationcontext" approved="yes">
         <source>Application Context</source>
         <target state="final">Anwendungskontext</target>
@@ -1804,6 +1707,14 @@ Do you want to refresh it now?</source>
       <trans-unit id="filestorage.invalidpathexception.message" resname="filestorage.invalidpathexception.message" approved="yes">
         <source>You entered an invalid path for this File Storage. Note that "../" and "//" are not allowed when using an absolute path.</source>
         <target state="final">Der Pfad für diesen Speicher ist ungültig. Beachten Sie, dass bei absoluten Pfaden "../" und "//" nicht erlaubt sind.</target>
+      </trans-unit>
+      <trans-unit id="iframe.navFrame" resname="iframe.navFrame" approved="yes">
+        <source>Navigation frame to browse through and select folders</source>
+        <target state="final">Navigation zur Suche und Auswahl von Ordnern</target>
+      </trans-unit>
+      <trans-unit id="iframe.listFrame" resname="iframe.listFrame" approved="yes">
+        <source>List frame (content area) to create and modify pages, content and records</source>
+        <target state="final">Liste (Inhaltsbereich) zum Erstellen und Bearbeiten von Seiten, Inhalten und Datensätzen</target>
       </trans-unit>
     </body>
   </file>

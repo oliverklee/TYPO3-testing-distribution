@@ -7,6 +7,14 @@
         <source>Website User Login</source>
         <target state="final">FE-Benutzeranmeldung</target>
       </trans-unit>
+      <trans-unit id="tt_content.CType.felogin_login.title" resname="tt_content.CType.felogin_login.title" approved="yes">
+        <source>Login Form</source>
+        <target state="final">Anmeldeformular</target>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.felogin_login.description" resname="tt_content.CType.felogin_login.description" approved="yes">
+        <source>Login/logout form used to password protect pages allowing only authorised website users and groups access.</source>
+        <target state="final">Ein An-/Abmeldeformular, um passwortgeschützte Seiten nur für authorisierte Benutzer und Gruppen zugänglich zu machen.</target>
+      </trans-unit>
       <trans-unit id="felogin_redirectPid" resname="felogin_redirectPid" approved="yes">
         <source>Redirect at Login to Page (felogin)</source>
         <target state="final">Bei Anmeldung zur folgenden Seite weiterleiten (felogin)</target>

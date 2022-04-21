@@ -76,8 +76,8 @@
         <target state="final">Allgemeine Datensatzsammlung</target>
       </trans-unit>
       <trans-unit id="pages.palettes.config" resname="pages.palettes.config" approved="yes">
-        <source>TypoScript Configuration</source>
-        <target state="final">TypoScript-Konfiguration</target>
+        <source>Page TSconfig</source>
+        <target state="final">Page TSconfig</target>
       </trans-unit>
       <trans-unit id="pages.doktype_formlabel" resname="pages.doktype_formlabel" approved="yes">
         <source>Type</source>
@@ -211,14 +211,6 @@
         <source>Link Target</source>
         <target state="final">Linkziel</target>
       </trans-unit>
-      <trans-unit id="pages.alias" resname="pages.alias" approved="yes">
-        <source>Alias</source>
-        <target state="final">Alias</target>
-      </trans-unit>
-      <trans-unit id="pages.alias_formlabel" resname="pages.alias_formlabel" approved="yes">
-        <source>URL Alias</source>
-        <target state="final">URL-Alias</target>
-      </trans-unit>
       <trans-unit id="pages.url" resname="pages.url" approved="yes">
         <source>URL</source>
         <target state="final">URL:</target>
@@ -344,8 +336,8 @@
         <target state="final">Verhalten</target>
       </trans-unit>
       <trans-unit id="pages.no_search" resname="pages.no_search" approved="yes">
-        <source>No Search</source>
-        <target state="final">Nicht suchen:</target>
+        <source>Include in Search</source>
+        <target state="final">In Suche einbeziehen</target>
       </trans-unit>
       <trans-unit id="pages.no_search_formlabel" resname="pages.no_search_formlabel" approved="yes">
         <source>Include in Search</source>
@@ -544,7 +536,7 @@
         <target state="final">Seite</target>
       </trans-unit>
       <trans-unit id="pages.TSconfig_formlabel" resname="pages.TSconfig_formlabel" approved="yes">
-        <source>Page TSConfig</source>
+        <source>Page TSconfig</source>
         <target state="final">Seiten-TSconfig</target>
       </trans-unit>
       <trans-unit id="pages.backend_layout_formlabel" resname="pages.backend_layout_formlabel" approved="yes">
@@ -564,8 +556,8 @@
         <target state="final">Standard</target>
       </trans-unit>
       <trans-unit id="pages.tsconfig_includes" resname="pages.tsconfig_includes" approved="yes">
-        <source>Include Page TSConfig (from extensions)</source>
-        <target state="final">Seiten-TSconfig einbinden (aus Erweiterungen)</target>
+        <source>Include static Page TSconfig (from extensions)</source>
+        <target state="final">Statisches Page TSconfig (von Extensions) einbinden</target>
       </trans-unit>
       <trans-unit id="tt_content" resname="tt_content" approved="yes">
         <source>Page Content</source>
@@ -631,14 +623,6 @@
         <source>Extended</source>
         <target state="final">Erweitert</target>
       </trans-unit>
-      <trans-unit id="sys_domain" resname="sys_domain" approved="yes">
-        <source>Domain</source>
-        <target state="final">Domain</target>
-      </trans-unit>
-      <trans-unit id="sys_domain.domainName" resname="sys_domain.domainName" approved="yes">
-        <source>Domain</source>
-        <target state="final">Domain</target>
-      </trans-unit>
       <trans-unit id="sys_template" resname="sys_template" approved="yes">
         <source>Template</source>
         <target state="final">Template</target>
@@ -666,10 +650,6 @@
       <trans-unit id="sys_template.resources" resname="sys_template.resources" approved="yes">
         <source>Resources</source>
         <target state="final">Ressourcen</target>
-      </trans-unit>
-      <trans-unit id="sys_template.nextLevel" resname="sys_template.nextLevel" approved="yes">
-        <source>Template on Next Level</source>
-        <target state="final">Template auf nächster Ebene</target>
       </trans-unit>
       <trans-unit id="sys_template.include_static_file" resname="sys_template.include_static_file" approved="yes">
         <source>Include static (from extensions)</source>
@@ -738,10 +718,6 @@
       <trans-unit id="sys_template.tabs.access" resname="sys_template.tabs.access" approved="yes">
         <source>Access</source>
         <target state="final">Zugriff</target>
-      </trans-unit>
-      <trans-unit id="pages_language_overlay" resname="pages_language_overlay" approved="yes">
-        <source>Alternative Page Language</source>
-        <target state="final">Alternative Seitensprache</target>
       </trans-unit>
       <trans-unit id="backend_layout" resname="backend_layout" approved="yes">
         <source>Backend Layout</source>

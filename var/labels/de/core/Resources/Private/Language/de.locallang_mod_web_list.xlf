@@ -123,10 +123,6 @@
         <source>Delete record (!)</source>
         <target state="final">Datensatz löschen(!)</target>
       </trans-unit>
-      <trans-unit id="restore" resname="restore" approved="yes">
-        <source>Restore record</source>
-        <target state="final">Datensatz wiederherstellen</target>
-      </trans-unit>
       <trans-unit id="history" resname="history" approved="yes">
         <source>Display change history / Un-do</source>
         <target state="final">Änderungsverlauf anzeigen/Rückgängig</target>
@@ -166,10 +162,6 @@
       <trans-unit id="deleteWarning" resname="deleteWarning" approved="yes">
         <source>Are you sure you want to delete this record?</source>
         <target state="final">Diesen Datensatz tatsächlich löschen?</target>
-      </trans-unit>
-      <trans-unit id="restoreWarning" resname="restoreWarning" approved="yes">
-        <source>Are you sure you want to restore this record by reverting the delete status?</source>
-        <target state="final">Diesen Datensatz tatsächlich wiederherstellen, indem der Löschstatus zurückgesetzt wird?</target>
       </trans-unit>
       <trans-unit id="localization" resname="localization" approved="yes">
         <source>Localization view</source>

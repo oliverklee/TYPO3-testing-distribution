@@ -24,6 +24,9 @@
       <trans-unit id="tt_content.pi_flexform.formframework.overrideFinishers" resname="tt_content.pi_flexform.formframework.overrideFinishers" xml:space="preserve" approved="yes">
                 <source>Override finisher settings</source>
             <target state="final">Finisher-Einstellungen überschreiben</target></trans-unit>
+      <trans-unit id="tt_content.pi_flexform.formframework.overrideFinishers.empty" resname="tt_content.pi_flexform.formframework.overrideFinishers.empty" xml:space="preserve" approved="yes">
+                <source>There are no finishers or finisher options in the current form definition.</source>
+            <target state="final">Es gibt keine Finisher oder Finisheroptionen in der aktuellen Formulardefinition.</target></trans-unit>
       <trans-unit id="tt_content.preview.noPersistenceIdentifier" resname="tt_content.preview.noPersistenceIdentifier" xml:space="preserve" approved="yes">
                 <source>No form selected.</source>
             <target state="final">Kein Formular ausgewählt.</target></trans-unit>
@@ -34,7 +37,7 @@
                 <source>"%s" (no read access).</source>
             <target state="final">"%s" (kein Lesezugriff)</target></trans-unit>
       <trans-unit id="tt_content.preview.notExistingdPersistenceIdentifier" resname="tt_content.preview.notExistingdPersistenceIdentifier" xml:space="preserve" approved="yes">
-                <source>The form "%s" does not exists.</source>
+                <source>The form "%s" does not exist.</source>
             <target state="final">Das Formular "%s" existiert nicht.</target></trans-unit>
       <trans-unit id="tt_content.preview.invalidFrameworkConfiguration" resname="tt_content.preview.invalidFrameworkConfiguration" xml:space="preserve" approved="yes">
                 <source>"%s" (Invalid ext:form configuration).</source>
@@ -60,78 +63,90 @@
       <trans-unit id="tt_content.finishersDefinition.EmailToSender.subject.label" resname="tt_content.finishersDefinition.EmailToSender.subject.label" xml:space="preserve" approved="yes">
                 <source>Subject of the email</source>
             <target state="final">Betreff der E-Mail</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToSender.recipientAddress.label" resname="tt_content.finishersDefinition.EmailToSender.recipientAddress.label" xml:space="preserve" approved="yes">
-                <source>Email address of the recipient</source>
-            <target state="final">E-Mail-Adresse des Empfängers</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToSender.recipientName.label" resname="tt_content.finishersDefinition.EmailToSender.recipientName.label" xml:space="preserve" approved="yes">
-                <source>Human-readable name of the recipient</source>
-            <target state="final">Menschenlesbarer Name des Empfängers</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.recipients.label" resname="tt_content.finishersDefinition.EmailToSender.recipients.label" xml:space="preserve" approved="yes">
+                <source>Recipients</source>
+            <target state="final">Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.recipients.item.label" resname="tt_content.finishersDefinition.EmailToSender.recipients.item.label" xml:space="preserve" approved="yes">
+                <source>Recipient</source>
+            <target state="final">Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.recipients.email.label" resname="tt_content.finishersDefinition.EmailToSender.recipients.email.label" xml:space="preserve" approved="yes">
+                <source>Email Address</source>
+            <target state="final">E-Mail Adresse</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.recipients.name.label" resname="tt_content.finishersDefinition.EmailToSender.recipients.name.label" xml:space="preserve" approved="yes">
+                <source>Name</source>
+            <target state="final">Name</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToSender.senderAddress.label" resname="tt_content.finishersDefinition.EmailToSender.senderAddress.label" xml:space="preserve" approved="yes">
                 <source>Email address of the sender</source>
             <target state="final">E-Mail-Adresse des Absenders</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToSender.senderName.label" resname="tt_content.finishersDefinition.EmailToSender.senderName.label" xml:space="preserve" approved="yes">
                 <source>Human-readable name of the sender</source>
             <target state="final">Menschenlesbarer Name des Absenders</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToSender.replyToAddress.label" resname="tt_content.finishersDefinition.EmailToSender.replyToAddress.label" xml:space="preserve" approved="yes">
-                <source>Email address of to be used as reply-to email</source>
-            <target state="final">E-Mail-Adresse, die bei Reply-to angegeben wird</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToSender.carbonCopyAddress.label" resname="tt_content.finishersDefinition.EmailToSender.carbonCopyAddress.label" xml:space="preserve" approved="yes">
-                <source>Email address of the copy recipient</source>
-            <target state="final">E-Mail-Adresse des CC-Empfängers</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToSender.blindCarbonCopyAddress.label" resname="tt_content.finishersDefinition.EmailToSender.blindCarbonCopyAddress.label" xml:space="preserve" approved="yes">
-                <source>Email address of the blind copy recipient</source>
-            <target state="final">E-Mail-Adresse des BCC-Empfängers</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToSender.format.label" resname="tt_content.finishersDefinition.EmailToSender.format.label" xml:space="preserve" approved="yes">
-                <source>The format of the email</source>
-            <target state="final">Das Format der E-Mail</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToSender.format.1" resname="tt_content.finishersDefinition.EmailToSender.format.1" xml:space="preserve" approved="yes">
-                <source>HTML</source>
-            <target state="final">HTML</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToSender.format.2" resname="tt_content.finishersDefinition.EmailToSender.format.2" xml:space="preserve" approved="yes">
-                <source>Plain text</source>
-            <target state="final">Nur-Text</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.replyToRecipients.label" resname="tt_content.finishersDefinition.EmailToSender.replyToRecipients.label" xml:space="preserve" approved="yes">
+                <source>Reply-To Recipients</source>
+            <target state="final">Reply-To Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.replyToRecipients.item.label" resname="tt_content.finishersDefinition.EmailToSender.replyToRecipients.item.label" xml:space="preserve" approved="yes">
+                <source>Reply-To Recipient</source>
+            <target state="final">Reply-To Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.carbonCopyRecipients.label" resname="tt_content.finishersDefinition.EmailToSender.carbonCopyRecipients.label" xml:space="preserve" approved="yes">
+                <source>CC Recipients</source>
+            <target state="final">CC Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.carbonCopyRecipients.item.label" resname="tt_content.finishersDefinition.EmailToSender.carbonCopyRecipients.item.label" xml:space="preserve" approved="yes">
+                <source>CC Recipient</source>
+            <target state="final">CC Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.blindCarbonCopyRecipients.label" resname="tt_content.finishersDefinition.EmailToSender.blindCarbonCopyRecipients.label" xml:space="preserve" approved="yes">
+                <source>BCC Recipients</source>
+            <target state="final">BCC Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.blindCarbonCopyRecipients.item.label" resname="tt_content.finishersDefinition.EmailToSender.blindCarbonCopyRecipients.item.label" xml:space="preserve" approved="yes">
+                <source>BCC Recipient</source>
+            <target state="final">BCC Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.addHtmlPart.label" resname="tt_content.finishersDefinition.EmailToSender.addHtmlPart.label" xml:space="preserve" approved="yes">
+                <source>Add HTML mail part</source>
+            <target state="final">HTML E-Mail Teil hinzufügen</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.language.label" resname="tt_content.finishersDefinition.EmailToSender.language.label" xml:space="preserve" approved="yes">
+                <source>Translation language</source>
+            <target state="final">Sprache der Übersetzung</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.language.1" resname="tt_content.finishersDefinition.EmailToSender.language.1" xml:space="preserve" approved="yes">
+                <source>Default</source>
+            <target state="final">Standard</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToSender.title.label" resname="tt_content.finishersDefinition.EmailToSender.title.label" xml:space="preserve" approved="yes">
+                <source>Title</source>
+            <target state="final">Titel</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.label" resname="tt_content.finishersDefinition.EmailToReceiver.label" xml:space="preserve" approved="yes">
                 <source>Email to receiver (you)</source>
             <target state="final">E-Mail an Empfänger (Sie)</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.subject.label" resname="tt_content.finishersDefinition.EmailToReceiver.subject.label" xml:space="preserve" approved="yes">
                 <source>Subject of the email</source>
             <target state="final">Betreff der E-Mail</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.recipientAddress.label" resname="tt_content.finishersDefinition.EmailToReceiver.recipientAddress.label" xml:space="preserve" approved="yes">
-                <source>Email address of the recipient</source>
-            <target state="final">E-Mail-Adresse des Empfängers</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.recipientName.label" resname="tt_content.finishersDefinition.EmailToReceiver.recipientName.label" xml:space="preserve" approved="yes">
-                <source>Human-readable name of the recipient</source>
-            <target state="final">Menschenlesbarer Name des Empfängers</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.recipients.label" resname="tt_content.finishersDefinition.EmailToReceiver.recipients.label" xml:space="preserve" approved="yes">
+                <source>Email addresses and human-readable names of the recipients</source>
+            <target state="final">E-Mail Adressen und Namen der Empfänger</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.senderAddress.label" resname="tt_content.finishersDefinition.EmailToReceiver.senderAddress.label" xml:space="preserve" approved="yes">
                 <source>Email address of the sender</source>
             <target state="final">E-Mail-Adresse des Absenders</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.senderName.label" resname="tt_content.finishersDefinition.EmailToReceiver.senderName.label" xml:space="preserve" approved="yes">
                 <source>Human-readable name of the sender</source>
             <target state="final">Menschenlesbarer Name des Absenders</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.replyToAddress.label" resname="tt_content.finishersDefinition.EmailToReceiver.replyToAddress.label" xml:space="preserve" approved="yes">
-                <source>Email address of to be used as reply-to email</source>
-            <target state="final">E-Mail Adresse, die als Antwortadresse benutzt werden soll</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.carbonCopyAddress.label" resname="tt_content.finishersDefinition.EmailToReceiver.carbonCopyAddress.label" xml:space="preserve" approved="yes">
-                <source>Email address of the copy recipient</source>
-            <target state="final">E-Mail-Adresse des CC-Empfängers</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.blindCarbonCopyAddress.label" resname="tt_content.finishersDefinition.EmailToReceiver.blindCarbonCopyAddress.label" xml:space="preserve" approved="yes">
-                <source>Email address of the blind copy recipient</source>
-            <target state="final">E-Mail-Adresse des BCC-Empfängers</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.format.label" resname="tt_content.finishersDefinition.EmailToReceiver.format.label" xml:space="preserve" approved="yes">
-                <source>Format of the email</source>
-            <target state="final">Format der E-Mail</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.format.1" resname="tt_content.finishersDefinition.EmailToReceiver.format.1" xml:space="preserve" approved="yes">
-                <source>HTML</source>
-            <target state="final">HTML</target></trans-unit>
-      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.format.2" resname="tt_content.finishersDefinition.EmailToReceiver.format.2" xml:space="preserve" approved="yes">
-                <source>Plain text</source>
-            <target state="final">Nur-Text</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.replyToRecipients.label" resname="tt_content.finishersDefinition.EmailToReceiver.replyToRecipients.label" xml:space="preserve" approved="yes">
+                <source>Reply-To Recipients</source>
+            <target state="final">Reply-To Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.carbonCopyRecipients.label" resname="tt_content.finishersDefinition.EmailToReceiver.carbonCopyRecipients.label" xml:space="preserve" approved="yes">
+                <source>CC Recipients</source>
+            <target state="final">CC Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.blindCarbonCopyRecipients.label" resname="tt_content.finishersDefinition.EmailToReceiver.blindCarbonCopyRecipients.label" xml:space="preserve" approved="yes">
+                <source>BCC Recipients</source>
+            <target state="final">BCC Empfänger</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.addHtmlPart.label" resname="tt_content.finishersDefinition.EmailToReceiver.addHtmlPart.label" xml:space="preserve" approved="yes">
+                <source>Add HTML part</source>
+            <target state="final">HTML E-Mail Teil hinzufügen</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.language.label" resname="tt_content.finishersDefinition.EmailToReceiver.language.label" xml:space="preserve" approved="yes">
                 <source>Translation language</source>
             <target state="final">Sprache der Übersetzung</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.language.1" resname="tt_content.finishersDefinition.EmailToReceiver.language.1" xml:space="preserve" approved="yes">
                 <source>Default</source>
             <target state="final">Standard</target></trans-unit>
+      <trans-unit id="tt_content.finishersDefinition.EmailToReceiver.title.label" resname="tt_content.finishersDefinition.EmailToReceiver.title.label" xml:space="preserve" approved="yes">
+                <source>Title</source>
+            <target state="final">Titel</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.Redirect.label" resname="tt_content.finishersDefinition.Redirect.label" xml:space="preserve" approved="yes">
                 <source>Redirect</source>
             <target state="final">Weiterleitung</target></trans-unit>
@@ -201,9 +216,6 @@
       <trans-unit id="formManager.duplicate_identifier" resname="formManager.duplicate_identifier" xml:space="preserve" approved="yes">
                 <source>Duplicate identifier!</source>
             <target state="final">Doppelter Bezeichner!</target></trans-unit>
-      <trans-unit id="formManager.deprecated_file_extension" resname="formManager.deprecated_file_extension" xml:space="preserve" approved="yes">
-                <source>Unsupported file extension!</source>
-            <target state="final">Nicht unterstützte Dateierweiterung!</target></trans-unit>
       <trans-unit id="formManager.selectablePrototypesConfiguration.standard.label" resname="formManager.selectablePrototypesConfiguration.standard.label" xml:space="preserve" approved="yes">
                 <source>Standard</source>
             <target state="final">Standard</target></trans-unit>
@@ -237,6 +249,18 @@
       <trans-unit id="formEditor.new_page_button" resname="formEditor.new_page_button" xml:space="preserve" approved="yes">
                 <source>Create new step</source>
             <target state="final">Neuen Schritt erstellen</target></trans-unit>
+      <trans-unit id="formEditor.previous_step_button" resname="formEditor.edit_mode_button" xml:space="preserve" approved="yes">
+                <source>Previous step</source>
+            <target state="final">Voriger Schritt</target></trans-unit>
+      <trans-unit id="formEditor.next_step_button" resname="formEditor.edit_mode_button" xml:space="preserve" approved="yes">
+                <source>Next step</source>
+            <target state="final">Nächster Schritt</target></trans-unit>
+      <trans-unit id="formEditor.preview_mode_button" resname="formEditor.preview_mode_button" xml:space="preserve" approved="yes">
+                <source>Preview mode</source>
+            <target state="final">Vorschaumodus</target></trans-unit>
+      <trans-unit id="formEditor.edit_mode_button" resname="formEditor.edit_mode_button" xml:space="preserve" approved="yes">
+                <source>Edit mode</source>
+            <target state="final">Bearbeitenmodus</target></trans-unit>
       <trans-unit id="formEditor.structure" resname="formEditor.structure" xml:space="preserve" approved="yes">
                 <source>Structure</source>
             <target state="final">Struktur</target></trans-unit>
@@ -498,12 +522,6 @@
       <trans-unit id="formEditor.elements.SelectionMixin.editor.options.label" resname="formEditor.elements.SelectionMixin.editor.options.label" xml:space="preserve" approved="yes">
                 <source>Choices</source>
             <target state="final">Optionen</target></trans-unit>
-      <trans-unit id="formEditor.elements.SelectionMixin.editor.options.removeLastAvailableRowFlashMessageTitle" resname="formEditor.elements.SelectionMixin.editor.options.removeLastAvailableRowFlashMessageTitle" xml:space="preserve" approved="yes">
-                <source>Error</source>
-            <target state="final">Fehler</target></trans-unit>
-      <trans-unit id="formEditor.elements.SelectionMixin.editor.options.removeLastAvailableRowFlashMessageMessage" resname="formEditor.elements.SelectionMixin.editor.options.removeLastAvailableRowFlashMessageMessage" xml:space="preserve" approved="yes">
-                <source>There must be at least one row within your options.</source>
-            <target state="final">Es muss mindestens eine Reihe in Ihren Optionen existieren.</target></trans-unit>
       <trans-unit id="formEditor.elements.MultiSelectionMixin.editor.validators.label" resname="formEditor.elements.MultiSelectionMixin.editor.validators.label" xml:space="preserve" approved="yes">
                 <source>Validators</source>
             <target state="final">Validatoren</target></trans-unit>
@@ -558,18 +576,18 @@
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.subject.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.subject.label" xml:space="preserve" approved="yes">
                 <source>Subject</source>
             <target state="final">Betreff</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipientAddress.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipientAddress.label" xml:space="preserve" approved="yes">
-                <source>Recipient address</source>
-            <target state="final">Empfängeradresse</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipientAddress.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipientAddress.fieldExplanationText" xml:space="preserve" approved="yes">
-                <source>The email address of the website visitor to whom the email should be sent. You can use the "insert formelement identifier" dropdown to choose a form element which holds the website visitors email address.</source>
-            <target state="final">Die E-Mail Adresse des Websitenbesuchers so wie er im E-Mail Client erscheint. Wenn Sie wollen, können Sie das "insert formelement identifier" Dropdown verwenden um ein oder mehrere Formularfelder zu wählen, welche die E-Mail Adresse des Websitenbesuchers enthalten.</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipientName.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipientName.label" xml:space="preserve" approved="yes">
-                <source>Recipient name</source>
-            <target state="final">Empfängername</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipientName.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipientName.fieldExplanationText" xml:space="preserve" approved="yes">
-                <source>The name of the website visitor which appears in the website visitor email client. You can use the "insert formelement identifier" dropdown to choose one or more form elements which holds the website visitors name.</source>
-            <target state="final">Der Name des Website-Besuchers, der im E-Mail-Client der Website erscheint. Sie können das Auswahlmenü "Fügen Sie Formularelement-Identifikator" verwenden, um ein oder mehrere Formularelemente auszuwählen, die den Namen des Besuchers der Website enthalten.</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.label" xml:space="preserve" approved="yes">
+                <source>Recipients</source>
+            <target state="final">Empfänger</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.fieldExplanationText" xml:space="preserve" approved="yes">
+                <source>The email addresses and names of the website visitors to which the email should be sent.</source>
+            <target state="final">Die E-Mail Adressen und Namen der Websitebesucher an die die E-Mail gesendet werden soll.</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.gridColumns.value.title" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.gridColumns.value.title" xml:space="preserve" approved="yes">
+                <source>Email Address</source>
+            <target state="final">E-Mail Adresse</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.gridColumns.label.title" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.gridColumns.label.title" xml:space="preserve" approved="yes">
+                <source>Name</source>
+            <target state="final">Name</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.senderAddress.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.senderAddress.label" xml:space="preserve" approved="yes">
                 <source>Sender address</source>
             <target state="final">Adresse des Absenders</target></trans-unit>
@@ -582,45 +600,54 @@
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.senderName.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.senderName.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>The name of the sender (e.g. your company's name) which appears in the website visitor email client.</source>
             <target state="final">Der Name des Absenders (z.B. der Name Ihrer Firma), welche als Absender im E-Mail Programm des Webseitenbesuchers erscheint.</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.replyToAddress.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.replyToAddress.label" xml:space="preserve" approved="yes">
-                <source>Reply-to address</source>
-            <target state="final">Reply-to Adresse</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.carbonCopyAddress.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.carbonCopyAddress.label" xml:space="preserve" approved="yes">
-                <source>CC address</source>
-            <target state="final">CC-Adresse</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.blindCarbonCopyAddress.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.blindCarbonCopyAddress.label" xml:space="preserve" approved="yes">
-                <source>BCC address</source>
-            <target state="final">BCC-Adresse</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.format.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.format.label" xml:space="preserve" approved="yes">
-                <source>Format</source>
-            <target state="final">Format</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.format.1" resname="formEditor.elements.Form.finisher.EmailToSender.editor.format.1" xml:space="preserve" approved="yes">
-                <source>Plain text</source>
-            <target state="final">Nur-Text</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.format.2" resname="formEditor.elements.Form.finisher.EmailToSender.editor.format.2" xml:space="preserve" approved="yes">
-                <source>HTML</source>
-            <target state="final">HTML</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.replyToRecipients.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.replyToRecipients.label" xml:space="preserve" approved="yes">
+                <source>Reply-To Recipients</source>
+            <target state="final">Replay-To Empfänger</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.carbonCopyRecipients.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.carbonCopyRecipients.label" xml:space="preserve" approved="yes">
+                <source>CC Recipients</source>
+            <target state="final">CC Empfänger</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.blindCarbonCopyRecipients.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.blindCarbonCopyRecipients.label" xml:space="preserve" approved="yes">
+                <source>BCC Recipients</source>
+            <target state="final">BCC Empfänger</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.addHtmlPart.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.addHtmlPart.label" xml:space="preserve" approved="yes">
+                <source>Add HTML part</source>
+            <target state="final">HTML E-Mail Teil hinzufügen</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.addHtmlPart.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.addHtmlPart.fieldExplanationText" xml:space="preserve" approved="yes">
+                <source>If enabled, the email will contain a plaintext and an HTML part, otherwise only a plaintext part.</source>
+            <target state="final">Wenn aktiviert, dann enthält die E-Mail einen plaintext und einen HTML-Teil, sonst nur einen plaintext Teil.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.attachUploads.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.attachUploads.label" xml:space="preserve" approved="yes">
                 <source>Attach uploads</source>
             <target state="final">Uploads hinzufügen</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.language.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.language.label" xml:space="preserve" approved="yes">
+                <source>Translation language</source>
+            <target state="final">Sprache der Übersetzung</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.language.1" resname="formEditor.elements.Form.finisher.EmailToSender.editor.language.1" xml:space="preserve" approved="yes">
+                <source>EN</source>
+            <target state="final">EN</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.useFluidEmail.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.useFluidEmail.label" xml:space="preserve" approved="yes">
+                <source>Use FluidEmail</source>
+            <target state="final">FluidEmail verwenden</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.useFluidEmail.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.useFluidEmail.fieldExplanationText" xml:space="preserve" approved="yes">
+                <source>If enabled, the email will be sent using the new FluidEmail rendering.</source>
+            <target state="final">Wenn aktiviert, wird die E-Mail mit der neuen FluidE-Mail-Darstellung versendet.</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.title.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.useFluidEmail.label" xml:space="preserve" approved="yes">
+                <source>Title</source>
+            <target state="final">Titel</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.title.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.useFluidEmail.fieldExplanationText" xml:space="preserve" approved="yes">
+                <source>Only used if FluidEmail is enabled.</source>
+            <target state="final">Wird nur verwendet, wenn FluidEmail aktiviert ist.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.header.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Email to receiver (you)</source>
             <target state="final">E-Mail an Empfänger (Sie)</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.subject.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.subject.label" xml:space="preserve" approved="yes">
                 <source>Subject</source>
             <target state="final">Betreff</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipientAddress.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipientAddress.label" xml:space="preserve" approved="yes">
-                <source>Recipient address</source>
-            <target state="final">Empfängeradresse</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipientAddress.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipientAddress.fieldExplanationText" xml:space="preserve" approved="yes">
-                <source>The email address of the recipient to whom the email should be sent (e.g. your company's email address).</source>
-            <target state="final">Die E-Mail Adresse des Empfängers an den die E-Mail versandt werden soll (z.B. die E-Mail Adresse Ihrer Firma).</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipientName.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipientName.label" xml:space="preserve" approved="yes">
-                <source>Recipient name</source>
-            <target state="final">Empfängername</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipientName.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipientName.fieldExplanationText" xml:space="preserve" approved="yes">
-                <source>The name of the recipient which appears in your email client (e.g. your company's name).</source>
-            <target state="final">Der Name des Empfängers, welcher in Ihrem E-Mail Programm erscheint (z.B. der Name Ihrer Firma).</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipients.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipients.label" xml:space="preserve" approved="yes">
+                <source>Recipients</source>
+            <target state="final">Empfänger</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipients.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipients.fieldExplanationText" xml:space="preserve" approved="yes">
+                <source>The email addresses and names of the recipients to which the email should be sent (e.g. your company's email addresses).</source>
+            <target state="final">Die E-Mail Adresse und die Namen der Empfänger, an welche die E-Mail gesendet werden soll (z.B. die E-Mail Adressen Ihrer Firma).</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.senderAddress.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.senderAddress.label" xml:space="preserve" approved="yes">
                 <source>Sender address</source>
             <target state="final">Adresse des Absenders</target></trans-unit>
@@ -633,24 +660,21 @@
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.senderName.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.senderName.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>The name of the sender which appears in your email client. If you want, you can use the "insert formelement identifier" dropdown to choose one or more form elements which holds the website visitors name.</source>
             <target state="final">Der Name des Absenders so wie er im E-Mail Client erscheint. Wenn Sie wollen, können Sie das "insert formelement identifier" Dropdown verwenden um ein oder mehrere Formularfelder zu wählen, welche den Namen des Websitenbesuchers enthalten.</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.replyToAddress.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.replyToAddress.label" xml:space="preserve" approved="yes">
-                <source>Reply-to address</source>
-            <target state="final">Antwortadresse</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.carbonCopyAddress.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.carbonCopyAddress.label" xml:space="preserve" approved="yes">
-                <source>CC address</source>
-            <target state="final">CC-Adresse</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.blindCarbonCopyAddress.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.blindCarbonCopyAddress.label" xml:space="preserve" approved="yes">
-                <source>BCC address</source>
-            <target state="final">BCC-Adresse</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.format.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.format.label" xml:space="preserve" approved="yes">
-                <source>Format</source>
-            <target state="final">Format</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.format.1" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.format.1" xml:space="preserve" approved="yes">
-                <source>Plain text</source>
-            <target state="final">Nur-Text</target></trans-unit>
-      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.format.2" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.format.2" xml:space="preserve" approved="yes">
-                <source>HTML</source>
-            <target state="final">HTML</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.replyToRecipients.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.replyToRecipients.label" xml:space="preserve" approved="yes">
+                <source>Reply-To Recipients</source>
+            <target state="final">Reply-To Empfänger</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.carbonCopyRecipients.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.carbonCopyRecipients.label" xml:space="preserve" approved="yes">
+                <source>CC Recipients</source>
+            <target state="final">CC Empfänger</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.blindCarbonCopyRecipients.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.blindCarbonCopyRecipients.label" xml:space="preserve" approved="yes">
+                <source>BCC Recipients</source>
+            <target state="final">BCC Empfänger</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.addHtmlPart.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.addHtmlPart.label" xml:space="preserve" approved="yes">
+                <source>Add HTML part</source>
+            <target state="final">HTML-Teil hinzufügen</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.addHtmlPart.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.addHtmlPart.fieldExplanationText" xml:space="preserve" approved="yes">
+                <source>If enabled, the email will contain a plaintext and an HTML part, otherwise only a plaintext part.</source>
+            <target state="final">Wenn aktiviert, dann enthält die E-Mail einen plaintext und einen HTML-Teil, sonst nur einen plaintext Teil.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.attachUploads.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.attachUploads.label" xml:space="preserve" approved="yes">
                 <source>Attach uploads</source>
             <target state="final">Uploads hinzufügen</target></trans-unit>
@@ -660,6 +684,18 @@
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.language.1" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.language.1" xml:space="preserve" approved="yes">
                 <source>EN</source>
             <target state="final">EN</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.useFluidEmail.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.useFluidEmail.label" xml:space="preserve" approved="yes">
+                <source>Use FluidEmail</source>
+            <target state="final">FluidEmail verwenden</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.useFluidEmail.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.useFluidEmail.fieldExplanationText" xml:space="preserve" approved="yes">
+                <source>If enabled, the email will be sent using the new FluidEmail rendering.</source>
+            <target state="final">Wenn aktiviert, wird die E-Mail mit der neuen FluidE-Mail-Darstellung versendet.</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.title.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.useFluidEmail.label" xml:space="preserve" approved="yes">
+                <source>Title</source>
+            <target state="final">Titel</target></trans-unit>
+      <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.title.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.useFluidEmail.fieldExplanationText" xml:space="preserve" approved="yes">
+                <source>Only used if FluidEmail is enabled.</source>
+            <target state="final">Wird nur verwendet, wenn FluidEmail aktiviert ist.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.Redirect.editor.header.label" resname="formEditor.elements.Form.finisher.Redirect.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Redirect to a page</source>
             <target state="final">Weiterleitung zu einer Seite</target></trans-unit>
@@ -783,12 +819,6 @@
       <trans-unit id="formEditor.elements.Fieldset.editor.label.label" resname="formEditor.elements.Fieldset.editor.label.label" xml:space="preserve" approved="yes">
                 <source>Fieldset name</source>
             <target state="final">Name der Feldgruppe</target></trans-unit>
-      <trans-unit id="formEditor.elements.GridContainer.label" resname="formEditor.elements.GridContainer.label" xml:space="preserve" approved="yes">
-                <source>Grid: Container</source>
-            <target state="final">Grid: Container</target></trans-unit>
-      <trans-unit id="formEditor.elements.GridContainer.editor.label.label" resname="formEditor.elements.GridContainer.editor.label.label" xml:space="preserve" approved="yes">
-                <source>Container name (not visible within Frontend)</source>
-            <target state="final">Container Name (nicht sichtbar im Frontend)</target></trans-unit>
       <trans-unit id="formEditor.elements.GridRow.label" resname="formEditor.elements.GridRow.label" xml:space="preserve" approved="yes">
                 <source>Grid: Row</source>
             <target state="final">Grid: Zeile</target></trans-unit>
@@ -936,6 +966,14 @@
       <trans-unit id="formEditor.elements.FileUpload.editor.allowedMimeTypes.label" resname="formEditor.elements.FileUpload.editor.allowedMimeTypes.label" xml:space="preserve" approved="yes">
                 <source>Allowed file mime types</source>
             <target state="final">Zulässige Mime-Typen</target></trans-unit>
+      <trans-unit id="formEditor.elements.FileUpload.editor.maximumFileSize.label" resname="formEditor.elements.FileUpload.editor.maximumFileSize.label" xml:space="preserve" approved="yes">
+                <source>
+                    Your servers' maximum upload file size is {0}. Be aware setting higher values can result in errors when submitting the form.
+                    If you need higher values contact your administrator for help.
+                </source>
+            <target state="final">
+Die maximale Dateigröße ist beim Server auf {0} eingestellt. Bitte beachten Sie, dass höhere Werte beim Absenden des Formulars Fehler verursachen können.
+ Wenn Sie höhere Werte benötigen, kontaktieren Sie bitte ihren Administrator für Hilfe.</target></trans-unit>
       <trans-unit id="formEditor.elements.FileUpload.editor.allowedMimeTypes.doc" resname="formEditor.elements.FileUpload.editor.allowedMimeTypes.doc" xml:space="preserve" approved="yes">
                 <source>Documents (doc)</source>
             <target state="final">Dokumente (doc)</target></trans-unit>

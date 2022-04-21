@@ -73,8 +73,8 @@
         <target state="final">Fügen Sie ein Bild des Benutzers ein.</target>
       </trans-unit>
       <trans-unit id="disable.description" resname="disable.description" approved="yes">
-        <source>This option will temporarily disable the user from logging in.</source>
-        <target state="final">Mit dieser Option können Sie dem Benutzer zeitweise das Anmelderecht entziehen, er kann sich dann also nicht mehr an der Website anmelden.</target>
+        <source>Unchecking this option will temporarily disable the user from logging in.</source>
+        <target state="final">Deaktivieren dieser Option deaktiviert vorübergehend die Anmeldung des Benutzers.</target>
       </trans-unit>
       <trans-unit id="_disable.seeAlso" resname="_disable.seeAlso" approved="yes">
         <source>fe_users:starttime,fe_users:endtime</source>

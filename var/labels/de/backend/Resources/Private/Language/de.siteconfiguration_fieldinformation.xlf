@@ -12,9 +12,12 @@
         <target state="final">Dieser Name wird für die Erzeugung des Konfigurationsverzeichnisses verwendet. Beachten Sie die Empfehlungen für Verzeichnisnamen (nur a-z,0-9,_,-), und wählen Sie sie eindeutig.</target>
       </trans-unit>
       <trans-unit id="site.base" resname="site.base" approved="yes">
-        <source>Main URL to call the frontend in default language. Can be https://www.example.com/ or just /, if it is just a / you cannot rely on TYPO3 creating
-					full URLs</source>
-        <target state="final">Haupt-URL zum Aufruf des Frontends in der Standardsprache. Kann https://www.example.com/ sein oder nur /. Wenn es nur ein / ist, können Sie sich nicht darauf verlassen, dass TYPO3 die vollen URLs erzeugt</target>
+        <source>Main URL to call the frontend in default language. Can be https://www.example.com/ or just /, if it is just a / you cannot rely on TYPO3 creating full URLs</source>
+        <target state="final">Haupt-URL, um das Frontend in der Standardsprache aufzurufen. Kann https://www.example.com/ oder einfach / sein. Wenn es nur ein / ist, können Sie sich nicht darauf verlassen, dass TYPO3 vollständige URLs erstellt</target>
+      </trans-unit>
+      <trans-unit id="site.websiteTitle" resname="site.websiteTitle" approved="yes">
+        <source>The title of the website is used for the title tag in the frontend</source>
+        <target state="final">Der Titel der Webseite wird für den Titeltag im Frontend verwendet</target>
       </trans-unit>
       <trans-unit id="site.baseVariants" resname="site.baseVariants" approved="yes">
         <source>This allows you to specify variants of the site's base. Can be used, for example, if you have a different domain for your staging environment.</source>
@@ -35,6 +38,10 @@
       <trans-unit id="site_language.hreflang" resname="site_language.hreflang" approved="yes">
         <source>Used within for "lang" and "hreflang" attributes</source>
         <target state="final">Wird für Attribute "lang" und "hreflang" verwendet</target>
+      </trans-unit>
+      <trans-unit id="site_language.websiteTitle" resname="site_language.websiteTitle" approved="yes">
+        <source>With this language based Website title, you can override the Website title for this language</source>
+        <target state="final">Dieser sprachabhängige Website-Titel überschreibt den Titel der Website für diese Sprache</target>
       </trans-unit>
       <trans-unit id="site_language.navigationTitle" resname="site_language.navigationTitle" approved="yes">
         <source>Used within language-related menus</source>

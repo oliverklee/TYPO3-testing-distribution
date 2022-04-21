@@ -63,6 +63,10 @@
         <source>Total parsetime</source>
         <target state="final">Insgesamte Parsezeit</target>
       </trans-unit>
+      <trans-unit id="noUserInt" resname="noUserInt" approved="yes">
+        <source>There are no USER_INT objects on this page.</source>
+        <target state="final">Auf dieser Seite befinden sich keine USER_INT Objekte.</target>
+      </trans-unit>
       <trans-unit id="key" resname="key" approved="yes">
         <source>Key</source>
         <target state="final">Schlüssel</target>
@@ -82,6 +86,10 @@
       <trans-unit id="sub.request.label" resname="sub.request.label" approved="yes">
         <source>REQUEST</source>
         <target state="final">REQUEST</target>
+      </trans-unit>
+      <trans-unit id="sub.userint.label" resname="sub.userint.label" approved="yes">
+        <source>USER_INT</source>
+        <target state="final">USER_INT</target>
       </trans-unit>
     </body>
   </file>

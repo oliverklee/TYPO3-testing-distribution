@@ -218,8 +218,13 @@ If you click the folder title in the Folder Tree you will see the sub-module loa
 The Web&gt;List module might not be the best "view" of the content on a page for any situation. For instance if you want to manage website content on a page (Content Elements) you should rather use the "Web&gt;Page" module which is designed to display content elements more optimized. But the List module will always give you access to whatever is on the page in a basic way if no better module is available for management.
 
 &lt;b&gt;Single-table mode&lt;/b&gt;
-If you click the tabel title in the listing you will enter single-table mode. In this mode you can select additional fields from the table to show in the listing. Also you will get additional editing facilities, for instance you will be able to edit multiple records at a time and even only certain fields from those records. See the screenshot for more details.</source>
-			<target state="final">Das Modul "Web &gt; Liste" ist vergleichbar mit dem Dateimanager eines Dateisystems; es erlaubt den Zugriff auf alle "Elemente" im System. Fast alle Informationen in TYPO3 sind in einer Datenbank gespeichert und werden intern immer nach den gleichen Prinzipien gehandhabt. So sind z.B. Inhaltselemente, der lesbare Inhalt einer Seite, genauso Datensätze wie Backend-Benutzer Datensätze sind. Das Modul "Web &gt; Liste" erlaubt es, beide Arten von Datensätzen nach dem gleichen Verfahren zu erzeugen, zu ändern oder zu löschen. Das Modul "Web &gt; Liste" ist nicht in jeder Situation die beste Sicht auf den Inhalt von Seiten. Will man etwa Seiteninhalte (Inhaltselemente) bearbeiten, dann ist in der Regel das Modul "Web &gt; Seite" besser geeignet, das dafür ausgelegt ist, die Inhalte übersichtlich zu präsentieren und zur Bearbeitung anzubieten. Aber das Modul "Web &gt; Liste" erlaubt immer den Zugriff auf &lt;em&gt;alle&lt;/em&gt; Arten von Datensätzen, zumindest in rudimentärer Form, und kann immer benutzt werden, wenn es kein spezialisierteres Modul zur Bearbeitung gibt. &lt;strong&gt;Modus "einzelne Tabelle"&lt;/strong&gt; Klickt man den Titel der Tabelle in der Liste an, gelangt man in den Modus "einzelne Tabelle". In diesem Modus kann ausgewählt werden, welche Felder der Tabelle in der Liste gezeigt werden sollen. Zusätzlich erhält man weitere Bearbeitungsmöglichkeiten, z.B. lassen sich mehrere Datensätze auf einmal bearbeiten oder sogar nur ganz bestimmte Felder dieser Datensätze. Siehe die Abbildungen unten.</target></trans-unit>
+If you click the table title in the listing you will enter single-table mode. In this mode you can select additional fields from the table to show in the listing. Also you will get additional editing facilities, for instance you will be able to edit multiple records at a time and even only certain fields from those records. See the screenshot for more details.</source>
+			<target state="final">Das Listenmodul ist wie der Dateimanager in einem Betriebssystem; es bietet grundlegenden Zugriff auf alle im System verfügbaren "Elemente". In TYPO3 werden fast alle Informationen in der Datenbank gespeichert und intern nach den gleichen Grundsätzen verwaltet. Zum Beispiel sind Inhaltselemente, die den Seiteninhalt repräsentieren, ebenso Datenbankeinträge wie Backend-Benutzer. Mit dem Modul Web&gt;Liste können wir beide Arten von Datensätzen nach den gleichen Grundsätzen erstellen, ändern und löschen.
+
+Das Modul Web&gt;Liste ist möglicherweise nicht die beste "Ansicht" des Inhalts einer Seite in jeder Situation. Wenn Sie zum Beispiel den Inhalt einer Seite (Inhaltselemente) verwalten wollen, sollten Sie lieber das Modul "Web&gt;Seite" verwenden, das darauf ausgelegt ist, Inhaltselemente optimal darzustellen. Aber das Modul "Liste" wird Ihnen immer Zugang auf eine einfachen Weise zu dem gewähren, was sich auf der Seite befindet, wenn kein besseres Modul zur Verwaltung zur Verfügung steht.
+
+Einzeltabellen-Modus
+Wenn Sie auf den Tabellentitel in der Liste klicken, gelangen Sie in den Einzeltabellenmodus. In diesem Modus können Sie zusätzliche Felder aus der Tabelle auswählen, die in der Auflistung angezeigt werden sollen. Außerdem erhalten Sie zusätzliche Bearbeitungsmöglichkeiten, z.B. können Sie mehrere Datensätze auf einmal und sogar nur bestimmte Felder aus diesen Datensätzen bearbeiten. Weitere Einzelheiten finden Sie im Screenshot.</target></trans-unit>
       <trans-unit id="_list_module.seeAlso" resname="_list_module.seeAlso" xml:space="preserve" approved="yes">
 				<source>xMOD_csh_corebe:pagetree,
 xMOD_csh_corebe:list_module_root,
@@ -552,11 +557,11 @@ If you want to extend the number of history states to above the default 20 you c
       <trans-unit id="_history_log.seeAlso" resname="_history_log.seeAlso" xml:space="preserve" approved="yes">
 				<source>xMOD_csh_corebe:history_sum,
 Configuring History using Page TSconfig | https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Mod/
-Undo/History article | http://typo3.org/documentation/tips-tricks/the-undohistory-feature/</source>
+Undo/History article | https://typo3.org/documentation/tips-tricks/the-undohistory-feature/</source>
 				<note from="developer">A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note>
 			<target state="final">xMOD_csh_corebe:history_sum,
-Konfiguration des Verlaufs mit Seiten-TSconfig | https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Mod/
-Artikel zum Rückgängigmachen/Verlauf | http://typo3.org/documentation/tips-tricks/the-undohistory-feature/</target></trans-unit>
+Konfigurieren der Historie mit Page TSconfig | https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Mod/
+Undo/History Artikel | https://typo3.org/documentation/tips-tricks/the-undohistory-feature/</target></trans-unit>
       <trans-unit id="_history_log.image" resname="_history_log.image" xml:space="preserve" approved="yes">
 				<source>EXT:core/Resources/Public/Images/cshimages/core_37.png,
 EXT:core/Resources/Public/Images/cshimages/core_38.png</source>
@@ -583,9 +588,10 @@ Finally you can revert either the whole record to this state in history by the r
 			<target state="final">Mit Hilfe der Pfeilschaltflächen links oben kann man sich innerhalb des Verlaufs vor und zurück bewegen. Darüber hinaus kann mit dem kleinen Diskettensymbol ein Stand innerhalb des Verlaufes gespeichert werden. Schließlich lässt sich entweder der gesamte Datensatz auf den entsprechenden Stand durch Auswahl des Symbols "Zurücksetzen" ganz oben zurücksetzen, oder auch nur ein einzelnes Feld durch Auswahl des Symbols für das Feld. &lt;b&gt;Hinweis:&lt;/b&gt; Sind keine roten und grünen Werte zu sehen, unterstützt der Server, auf dem TYPO3 betrieben wird, nicht die Erstellung von Unterschiedsansichten oder er wurde nicht ordnungsgemäß eingerichtet.</target></trans-unit>
       <trans-unit id="_history_sum.seeAlso" resname="_history_sum.seeAlso" xml:space="preserve" approved="yes">
 				<source>xMOD_csh_corebe:history_entry,
-Undo/History article | http://typo3.org/documentation/tips-tricks/the-undohistory-feature/</source>
+Undo/History article | https://typo3.org/documentation/tips-tricks/the-undohistory-feature/</source>
 				<note from="developer">A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note>
-			<target state="final">xMOD_csh_corebe:history_entry, Artikel zum Rückgängigmachen/Verlauf | http://typo3.org/documentation/tips-tricks/the-undohistory-feature/</target></trans-unit>
+			<target state="final">xMOD_csh_corebe:history_entry,
+Undo/History Artikel | https://typo3.org/documentation/tips-tricks/the-undohistory-feature/</target></trans-unit>
       <trans-unit id="_history_sum.image" resname="_history_sum.image" approved="yes">
         <source>EXT:core/Resources/Public/Images/cshimages/core_39.png</source>
         <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
@@ -784,9 +790,16 @@ If you click the icon of a file you will see a menu pop up with menu items relat
 
 &lt;b&gt;The "TEMP" folder&lt;/b&gt;
 There is a special folder, the "TEMP" folder. This is meant to be used for temporary uploads of files that are going to be attached to TYPO3 records later. Content in the TEMP folder should be possible to flush once in a while when the folder becomes too crowded with files. So don't store persistent data in there!
-The actual folder name is actually "_temp_". The interface will just interprete this with "TEMP" in bold.
+The actual folder name is actually "_temp_". The interface will just interpret this with "TEMP" in bold.
 The same applies to folders named "_recycler_" - they will be trash cans in the folder tree.</source>
-			<target state="final">Das Modul "Datei &gt; Dateiliste" stellt die Oberfläche für Web-basierte FTP-Funktionen in TYPO3 zur Verfügung. Nach einem Klick auf einen Ordner im Ordnerbaum wird der Inhalt zur Rechten angezeigt. Wenn Sie auf das Symbol einer Datei oder eines Ordners klicken, erscheint ein Kontextmenü, mit dem Sie sie/ihn bearbeiten, umbenennen und kopieren können. &lt;b&gt;Der "TEMP"-Ordner&lt;/b&gt; Der "TEMP-Ordner" ist ein besonderer Ordner: Sie können ihn benutzen, um Dateien temporär zu speichern, bevor Sie sie später in einem Datensatz verlinken. Der Inhalt des TEMP-Ordners sollte gelöscht werden können, wenn der Ordner zu voll wird. Speichern Sie deshalb keine Dateien dort, die Sie verlinkt haben! Der tatsächliche Name des Ordners ist eigentlich "_temp_". Die Oberfläche von TYPO3 zeigt Ihnen dies als "TEMP" in Fettdruck an. Dasselbe gilt für Ordner mit dem Namen "_recycler_" - sie werden als Papierkorb im Ordnerbaum angezeigt.</target></trans-unit>
+			<target state="final">Das Modul Datei &gt; Dateiliste stellt die Hauptschnittstelle zu den webbasierten "FTP-Funktionen" in TYPO3 dar. Wenn Sie auf einen Ordner im Navigationsrahmen klicken, werden die Dateien in diesem Ordner im Listenrahmen rechts angezeigt.
+
+Wenn Sie auf das Symbol einer Datei klicken, erscheint ein Menü mit Menüpunkten, die mit der Datei oder dem Ordner in Zusammenhang stehen. Dies ermöglicht Ihnen, Dateien zu bearbeiten, umzubenennen und zu kopieren, um nur einige zu nennen.
+
+Der "TEMP"-Ordner
+Es gibt einen speziellen Ordner, den "TEMP"-Ordner. Dieser ist für temporäre Uploads von Dateien gedacht, die später an TYPO3-Datensätze angehängt werden sollen. Der Inhalt des TEMP-Ordners sollte ab und zu geleert werden können, wenn der Ordner zu voll mit Dateien wird. Speichern Sie dort also keine permanenten Daten!
+Der tatsächliche Name des Ordners lautet eigentlich "_temp_". Die Schnittstelle interpretiert dies nur mit "TEMP" in Fettschrift.
+Dasselbe gilt für Ordner mit dem Namen "_recycler_" - sie werden zu Mülleimern im Ordnerbaum.</target></trans-unit>
       <trans-unit id="_filelist_module.seeAlso" resname="_filelist_module.seeAlso" xml:space="preserve" approved="yes">
 				<source>xMOD_csh_corebe:list_module,
 xMOD_csh_corebe:filetree,

@@ -7,6 +7,10 @@
         <source>Next</source>
         <target state="final">Weiter</target>
       </trans-unit>
+      <trans-unit id="wizard.button.prev" approved="yes">
+        <source>Previous</source>
+        <target state="final">Zurück</target>
+      </trans-unit>
       <trans-unit id="wizard.button.cancel" resname="wizard.button.cancel" approved="yes">
         <source>Cancel</source>
         <target state="final">Abbrechen</target>
@@ -14,6 +18,22 @@
       <trans-unit id="wizard.progress" resname="wizard.progress" approved="yes">
         <source>Step {0} of {1}</source>
         <target state="final">Schritt {0} von {1}</target>
+      </trans-unit>
+      <trans-unit id="wizard.progressStep" approved="yes">
+        <source>Step-</source>
+        <target state="final">Schritt-</target>
+      </trans-unit>
+      <trans-unit id="wizard.progressStep.start" approved="yes">
+        <source>Start</source>
+        <target state="final">Start</target>
+      </trans-unit>
+      <trans-unit id="wizard.progressStep.configure" approved="yes">
+        <source>Configure</source>
+        <target state="final">Konfigurieren</target>
+      </trans-unit>
+      <trans-unit id="wizard.progressStep.finish" approved="yes">
+        <source>Finish!	</source>
+        <target state="final">Fertig!</target>
       </trans-unit>
       <trans-unit id="wizard.processing.title" resname="wizard.processing.title" approved="yes">
         <source>Processing...</source>

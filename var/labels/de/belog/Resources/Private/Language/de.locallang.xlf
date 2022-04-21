@@ -319,6 +319,10 @@
         <source>Copying file '%s' failed!: The destination path (%s) may be write protected. Please make it write enabled!. (%s)</source>
         <target state="final">Kopieren der Datei '%s' fehlgeschlagen: Der Zielpfad (%s) ist eventuell schreibgeschützt. Bitte deaktivieren Sie den Schreibschutz! (%s)</target>
       </trans-unit>
+      <trans-unit id="msg_1_5_4" resname="msg_1_5_4" approved="yes">
+        <source>The value of the field "%s" has been changed from "%s" to "%s" as it is required to be unique.</source>
+        <target state="final">Der Wert des Feldes "%s" wurde von "%s" zu "%s" geändert, da er eindeutig sein muss.</target>
+      </trans-unit>
       <trans-unit id="type_2" resname="type_2" approved="yes">
         <source>FILE</source>
         <target state="final">DATEI</target>

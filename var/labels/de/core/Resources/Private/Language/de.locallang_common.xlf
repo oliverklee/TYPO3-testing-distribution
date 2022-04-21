@@ -267,6 +267,10 @@
         <source>Yes</source>
         <target state="final">Ja</target>
       </trans-unit>
+      <trans-unit id="notAvailableAbbreviation" resname="notAvailableAbbreviation" approved="yes">
+        <source>N/A</source>
+        <target state="final">-/-</target>
+      </trans-unit>
       <trans-unit id="pleaseConfirm" resname="pleaseConfirm" approved="yes">
         <source>Please confirm</source>
         <target state="final">Bitte bestätigen</target>

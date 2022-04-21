@@ -59,6 +59,14 @@
         <source>Please select a page with a valid page type in the page tree on the left to preview the selected page in different screen resolutions.</source>
         <target state="final">Bitte wählen Sie im Seitenbaum auf der linken Seite eine Seite mit einem gültigen Seitentyp aus, um eine Vorschau der ausgewählten Seiten in unterschiedlichen Bildschirmauflösungen zu sehen.</target>
       </trans-unit>
+      <trans-unit id="noSiteConfiguration" resname="noSiteConfiguration" approved="yes">
+        <source>The requested page is missing a valid site configuration.</source>
+        <target state="final">Auf der angefragten Seite fehlt eine gültige Seitenkonfiguration.</target>
+      </trans-unit>
+      <trans-unit id="iframe.title" resname="iframe.title" approved="yes">
+        <source>View selected page in different screen resolutions</source>
+        <target state="final">Ansicht ausgewählter Seiten in unterschiedlichen Bildschirm-Auflösungen</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

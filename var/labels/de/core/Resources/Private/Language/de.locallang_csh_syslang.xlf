@@ -8,8 +8,8 @@
         <target state="final">Geben Sie den den Namen dieser zusätzlichen systemweiten Spracherweiterung an.</target>
       </trans-unit>
       <trans-unit id="hidden.description" resname="hidden.description" approved="yes">
-        <source>This option will hide the system language from being available in the backend.</source>
-        <target state="final">Diese Option versteckt die systemweite Spracherweiterung innerhalb des Backend. Backend-Benutzern steht somit diese Systemsprache nicht zur Verfügung.</target>
+        <source>Unchecking this option will hide the system language from being available in the backend.</source>
+        <target state="final">Deaktivieren Sie diese Option, um die Systemsprache im Backend zu deaktivieren.</target>
       </trans-unit>
       <trans-unit id=".description" resname=".description" approved="yes">
         <source>Defines which languages are alternatively available on each webpage.</source>

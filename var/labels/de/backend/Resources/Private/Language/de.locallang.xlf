@@ -76,6 +76,10 @@ Einen schönen Tag noch!</target></trans-unit>
         <source>Password</source>
         <target state="final">Passwort</target>
       </trans-unit>
+      <trans-unit id="login.password_forget" resname="login.password_forget" approved="yes">
+        <source>Forgot your password?</source>
+        <target state="final">Passwort vergessen?</target>
+      </trans-unit>
       <trans-unit id="login.error.capslock" resname="login.error.capslock" approved="yes">
         <source>Attention: Caps lock enabled!</source>
         <target state="final">Achtung: Feststelltaste aktiviert!</target>
@@ -141,12 +145,11 @@ Einen schönen Tag noch!</target></trans-unit>
         <target state="final">Seiten-TSconfig verbergen</target>
       </trans-unit>
       <trans-unit id="formEngine.databaseRecordErrorInlineChildChild" resname="formEngine.databaseRecordErrorInlineChildChild" approved="yes">
-        <source>The record with uid %2$s from table %1$s could not be retrieved from the database. This data incosistency can occur if
+        <source>The record with uid %2$s from table %1$s could not be retrieved from the database. This data inconsistency can occur if
 				a base record has been deleted but the intermediate record from table %3$s with uid %4$s still points to it. To fix
 				this situation, either delete the intermediate record, or recover the deleted record using the recycler module.
 				</source>
-        <target state="final">Der Datensatz mit UID %2$s aus Tabelle %1$s konnte nicht aus der Datenbank abgerufen werden. Diese Inkonsistenz kann auftreten, wenn ein Basis-Datensatz gelöscht worden ist, während noch der Datensatz aus Tabelle %3$s mit UID %4$s auf ihn verweist. Um dieses Problem zu beheben, löschen Sie entweder den verweisenden Datensatz oder stellen Sie den gelöschten Datensatz mit dem Papierkorb wieder her.
-				</target>
+        <target state="final">Der Datensatz mit Uid %2$s aus Tabelle %1$s konnte nicht aus der Datenbank abgerufen werden. Diese Inkonsistenz kann auftreten, wenn ein Basis-Datensatz gelöscht worden ist, während noch der Datensatz aus Tabelle %3$s mit Uid %4$s auf ihn verweist. Um dieses Problem zu beheben, löschen Sie entweder den verweisenden Datensatz oder stellen Sie den gelöschten Datensatz mit dem Papierkorb wieder her.</target>
       </trans-unit>
     </body>
   </file>

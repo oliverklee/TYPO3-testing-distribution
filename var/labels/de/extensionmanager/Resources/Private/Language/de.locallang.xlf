@@ -187,6 +187,10 @@
         <source>Author</source>
         <target state="final">Autor</target>
       </trans-unit>
+      <trans-unit id="extensionList.header.manual" resname="extensionList.header.manual" approved="yes">
+        <source>Manual</source>
+        <target state="final">Dokumentation</target>
+      </trans-unit>
       <trans-unit id="searchTemplate.searchExtensions" resname="searchTemplate.searchExtensions" approved="yes">
         <source>Search extensions</source>
         <target state="final">Erweiterungen suchen</target>
@@ -194,6 +198,18 @@
       <trans-unit id="extensionList.search" resname="extensionList.search" approved="yes">
         <source>Search</source>
         <target state="final">Suche:</target>
+      </trans-unit>
+      <trans-unit id="extensionList.filter.showAll" resname="extensionList.filter.showAll" approved="yes">
+        <source>All</source>
+        <target state="final">Alle</target>
+      </trans-unit>
+      <trans-unit id="extensionList.filter.showSystemExtensions" resname="extensionList.filter.showSystemExtensions" approved="yes">
+        <source>System</source>
+        <target state="final">System</target>
+      </trans-unit>
+      <trans-unit id="extensionList.filter.showLocalExtensions" resname="extensionList.filter.showLocalExtensions" approved="yes">
+        <source>Local</source>
+        <target state="final">Lokal</target>
       </trans-unit>
       <trans-unit id="searchTemplate.submitButton" resname="searchTemplate.submitButton" approved="yes">
         <source>Go</source>
@@ -276,7 +292,14 @@
 					</strong>
 				]]></source>
         <target state="final"><![CDATA[
-					Wenn Sie mit der Installation dieser Erweiterung fortfahren, werden alle Abhängigkeitsprüfungen deaktiviert. &lt;ul&gt; &lt;li&gt;Es wird versucht, benötigte Erweiterungen vom TER zu holen (falls sie noch nicht im System existieren)&lt;/li&gt; &lt;li&gt;Die Überprüfung von Versionsabhängigkeiten wird übersprungen&lt;/li&gt; &lt;/ul&gt; &lt;strong&gt; Beachten Sie, dass eine Installation ohne Abhängigkeitsprüfung Ihre Installation unbenutzbar machen kann.&lt;br /&gt; In diesem Fall ist manuelle Intervention nötig. &lt;/strong&gt;
+					Wenn Sie mit der Installation dieser Erweiterung fortfahren, werden alle Abhängigkeitsprüfungen deaktiviert
+					<ul>
+						<li>Es wird versucht, benötigte Erweiterungen vom TER zu installieren (falls sie noch nicht installiert sind)</li>
+						<li>Überprüfungen zur Versionsabhängigkeiten werden übersprungen</li>
+					</ul>
+					<strong>
+						Beachten Sie, dass eine Installation ohne Abhängigkeitsprüfung Ihre TYPO3-Installation unbenutzbar machen kann.
+					</strong>
 				]]></target>
       </trans-unit>
       <trans-unit id="dependencyCheck.unresolvedDependencies.question" resname="dependencyCheck.unresolvedDependencies.question" approved="yes">
@@ -300,10 +323,7 @@
 
 
 				</source>
-        <target state="final">Die folgenden Abhängigkeiten müssen vor der Installation aufgelöst werden:
-
-
-				</target>
+        <target state="final">Die nachfolgenden Abhängigkeiten müssen vor der Installation gelöst werden:</target>
       </trans-unit>
       <trans-unit id="downloadExtension.dependencies.extensionWithVersion" resname="downloadExtension.dependencies.extensionWithVersion" approved="yes">
         <source>%1$s (new version %2$s)</source>
@@ -514,7 +534,7 @@
       </trans-unit>
       <trans-unit id="extensionList.updateFromTer.lastUpdate.timeOfLastUpdate" resname="extensionList.updateFromTer.lastUpdate.timeOfLastUpdate" approved="yes">
         <source>Time of last update: </source>
-        <target state="final">Zeit der letzten Aktualisierung: </target>
+        <target state="final">Datum des letzten Updates: </target>
       </trans-unit>
       <trans-unit id="extensionList.updateFromTer.lastUpdate.noTimeOfLastUpdate" resname="extensionList.updateFromTer.lastUpdate.noTimeOfLastUpdate" approved="yes">
         <source>No last update time known.</source>

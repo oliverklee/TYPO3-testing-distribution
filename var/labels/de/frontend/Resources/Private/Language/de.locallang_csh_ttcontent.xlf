@@ -73,7 +73,7 @@ Displays a login box for website users. This is only useful if you have already 
 Offers a selection of menus and a sitemap you can insert on a page.
 
 &lt;strong&gt;Insert records&lt;/strong&gt;
-This acts as placeholder for other records. With this Content Element, you can resuse multiple content elements from other pages.
+This acts as placeholder for other records. With this content element, you can reuse multiple content elements from other pages.
 
 &lt;strong&gt;Insert plugin&lt;/strong&gt;
 This will allows you to insert news, forums, guestbooks, lists of addresses, and other functionality. Plugins are typically provided by TYPO3 extensions. The available fields and required configuration depend on the extension.
@@ -83,7 +83,55 @@ This inserts a simple horizontal rule on a page.
 
 &lt;strong&gt;HTML&lt;/strong&gt;
 This is plain HTML content. Anything added in the HTML Code of this Content Element will be displayed directly on the page without any preprocessing.</source>
-			<target state="final">Der "Typ" des Inhalts-Elements, den Sie auswählen, entscheidet darüber, welche Optionen Ihnen im Formular angezeigt werden. Stellen Sie sicher, dass Sie einen Datensatz sichern, nachdem Sie den Typ geändert haben und bevor Sie weitere Änderungen vornehmen. Dies ist eine Beschreibung der verschiedenen Typen: &lt;strong&gt;Überschrift&lt;/strong&gt; Dieser Typ erlaubt Ihnen ausschließlich, eine Überschrift einzufügen. Fast alle anderen Typen erlauben es ebenfalls, eine Überschrift mit genau den selben Optionen anzugeben. Der Typ "Überschrift" bietet also die Möglichkeit, eine Überschrift &lt;em&gt;ohne&lt;/em&gt; irgendetwas anderes einzufügen. &lt;strong&gt;Text&lt;/strong&gt; Der Text Typ ermöglicht die Eingabe von normalen Seiteninhalten. &lt;strong&gt;Text und Bilder&lt;/strong&gt; Dies entspricht dem Typ "Text" (normale Seiteninhalte) mit der zusätzlichen Option, Bilder anzuhängen. &lt;strong&gt;Bild&lt;/strong&gt; Das gleiche wie "Text und Bilder", aber ohne Textfeld (also nur Bilder). &lt;strong&gt;Aufzählung&lt;/strong&gt; Damit können Sie eine Aufzählung erstellen. Jede Zeile des Textfeldes erscheint als ein Punkt in einer Liste. &lt;strong&gt;Tabelle&lt;/strong&gt; Bietet die Möglichkeit, &lt;em&gt;einfache&lt;/em&gt; Tabellen zu erstellen. Jede Zeile stellt eine Tabellenzeile dar und vertikale Striche ('|') trennen die Spalten. &lt;strong&gt;Dateilinks&lt;/strong&gt; Präsentiert eine Liste von Dateien zum Herunterladen. Sie können Vorschausymbole zuordnen und die Dateigröße anzeigen lassen. &lt;strong&gt;Multimedia&lt;/strong&gt; Damit können Sie Multimediaelemente einfügen, wie z.B. Sound, Video, Java-Applets und Flash-Animationen. &lt;strong&gt;Formular&lt;/strong&gt; Lässt Sie Mail-Formulare erstellen. Für die Erstellung von Formular-Feldern gibt es eine spezielle Syntax (siehe Dokumentation). &lt;strong&gt;Suche&lt;/strong&gt; Dies fügt ein Suchfeld ein und zeigt auch das Ergebnis der Suche an, wenn diese Seite als Ziel der Suchergebnisse angegeben wird. &lt;strong&gt;Anmeldeformular&lt;/strong&gt; Zeigt eine Anmeldemaske für Website-Benutzer an. Sie müssen mindestens einen Website-Benutzer und eine Benutzergruppe anlegen, damit dieser Typ Sinn hat. &lt;strong&gt;Textbox&lt;/strong&gt; Dieser Typ ist vorgesehen für maßgeschneiderte Designs, die typisch einigen Text und ein Bild enthalten. In anderen Worten, dieser Typ ist nicht immer verfügbar. Benutzen Sie diesen Typ also nur, wenn Sie dazu angewiesen werden. Es existieren andere Typen zur Anzeige von Text und Bildern. &lt;strong&gt;Menü/Sitemap&lt;/strong&gt; Bietet eine Auswahl von verschiedenen Link-Menüs und eine Sitemap, die Sie auf einer Seite einfügen können. &lt;strong&gt;Datensatz einfügen&lt;/strong&gt; Dies ist ein Platzhalter für andere Datensätze. Mit anderen Worten: Mit diesem Element können Sie andere Datensätze von anderen Seiten anhängen und damit in diese Seite integrieren. &lt;strong&gt;Plug-In einfügen&lt;/strong&gt; Dies erlaubt es Ihnen, ein Forum, ein Gästebuch, eine Adressliste, einen Einkaufskorb etc. einzubinden. Die verschiedenen Möglichkeiten sind &lt;em&gt;nur&lt;/em&gt; dann verfügbar, wenn sie in der Vorlage richtig konfiguriert wurden. Vergewissern Sie sich also, welche Plug-Ins in Ihrer Website verfügbar sind. &lt;strong&gt;Skript&lt;/strong&gt; Dies ist reserviert für benutzerdefinierte Zwecke, womit es Ihnen der Vorlagenprogrammierer erlauben kann, spezialisierte Inhalte einzufügen. &lt;strong&gt;Trenner&lt;/strong&gt; Damit fügen Sie eine Trennlinie ein. &lt;strong&gt;HTML&lt;/strong&gt; Dies ist reiner HTML-Inhalt. Alles, was hier eingegeben wird, wird ohne weitere Verarbeitung auf der Seite angezeigt.</target></trans-unit>
+			<target state="final">Der ausgewählte Inhaltstyp bestimmt, welche Optionen im Bearbeitungsformular verfügbar sind. Speichern Sie daher den Datensatz, bevor Sie weitere Änderungen vornehmen.
+
+Dies ist eine Beschreibung der verschiedenen Typen:
+
+&lt;strong&gt;Überschrift&lt;/strong&gt;
+Mit diesem Typ können Sie eine Überschrift einfügen, mehr nicht.
+Fast alle anderen im Folgenden beschriebenen Typen beinhalten auch die Überschrift und seine Optionen. Der Überschrift-Typ bietet eine Möglichkeit, eine Überschrift ohne weiteren Inhalt einzufügen.
+
+&lt;strong&gt;Text&lt;/strong&gt;
+Mit dem Typ Text können Sie regulären Seiteninhalt einfügen. Es wird im Allgemeinen für reinen Textinhalt verwendet.
+
+&lt;strong&gt;Text &amp; Bilder&lt;/strong&gt;
+Dies entspricht dem Typ Text (normaler Seiteninhalt), jedoch mit der Möglichkeit, Bilder einzufügen.
+
+&lt;strong&gt;Bilder&lt;/strong&gt;
+Der Typ Bilder ermöglicht das Einfügen von Seiteninhalten, die nur aus Bildern bestehen.
+
+&lt;strong&gt;Aufzählung&lt;/strong&gt;
+Ermöglicht das Erstellen einer Aufzählungsliste. Jede Zeile im Textfeld wird als einzelnes Aufzählungselement angezeigt.
+
+&lt;strong&gt;Tabelle&lt;/strong&gt;
+Ermöglicht das Erstellen von &lt;em&gt;einfachen&lt;/em&gt; Tabellen. Jede Zeile stellt eine Zeile in der Tabelle dar und vertikale Striche ('|') trennen jede Spalte. Ein Popup-Assistent ist ebenfalls verfügbar.
+
+&lt;strong&gt;Dateilinks&lt;/strong&gt;
+Ermöglicht Ihnen, eine Liste von Dateien zum Herunterladen anzuzeigen. Miniaturansichten können dazugefügt werden und Sie können sich auch die Dateigröße anzeigen lassen.
+
+&lt;strong&gt;Form&lt;/strong&gt;
+Ermöglicht das Erstellen von Mailformularen mit einer speziellen Syntax oder einem Popup-Assistenten.
+
+&lt;strong&gt;Suche&lt;/strong&gt;
+Dadurch wird ein Suchfeld eingefügt und auch die Suchergebnisse angezeigt, wenn eine Suche auf der Seite durchgeführt wird.
+
+&lt;strong&gt;Anmeldung&lt;/strong&gt;
+Zeigt ein Anmeldefeld (Login) für Website-Benutzer an. Dies ist nur sinnvoll, wenn Sie bereits Website-Benutzer und Benutzergruppen angelegt haben.
+
+&lt;strong&gt;Menü/Sitemap&lt;/strong&gt;
+Bietet eine Auswahl an Menüs und eine Sitemap, die Sie auf einer Seite einfügen können.
+
+&lt;strong&gt;Datensatz einfügen&lt;/strong&gt;
+Dies dient als Platzhalter für andere Datensätze. Mit diesem Inhaltselement können Sie mehrere Inhaltselemente von anderen Seiten wiederverwenden.
+
+&lt;strong&gt;Plug-In einfügen&lt;/strong&gt;
+Auf diese Weise können Sie Nachrichten, Foren, Gästebücher, Adresslisten und andere Funktionen einfügen. Plug-Ins werden normalerweise von TYPO3-Erweiterungen bereitgestellt. Die verfügbaren Felder und die erforderliche Konfiguration hängen von der Erweiterung ab.
+
+&lt;strong&gt;Trenner&lt;/strong&gt;
+Dadurch wird eine einfache horizontale Linie auf einer Seite eingefügt.
+
+&lt;strong&gt;HTML&lt;/strong&gt;
+Dies ist einfacher HTML-Inhalt. Alles, was im HTML-Code dieses Inhaltselements hinzugefügt wird, wird ohne Vorverarbeitung direkt auf der Seite angezeigt.</target></trans-unit>
       <trans-unit id="_CType.seeAlso" resname="_CType.seeAlso" xml:space="preserve" approved="yes">
 				<source>tt_content:colPos,
 tt_content:sys_language_uid,
@@ -98,8 +146,8 @@ tt_content:sys_language_uid,
         <target state="final">EXT:frontend/Resources/Public/Images/cshimages/ttcontent_4.png</target>
       </trans-unit>
       <trans-unit id="hidden.description" resname="hidden.description" approved="yes">
-        <source>Check this box if you wish to disable the Content Element and keep it from being displayed on the website.</source>
-        <target state="final">Wählen Sie diese Box um das Inhaltselement zu deaktivieren und zu verhindern, dass es auf der Website erscheint.</target>
+        <source>Uncheck this box if you wish to disable the Content Element and keep it from being displayed on the website.</source>
+        <target state="final">Deaktivieren um das Content Element auf der Website auszublenden.</target>
       </trans-unit>
       <trans-unit id="_hidden.seeAlso" resname="_hidden.seeAlso" xml:space="preserve" approved="yes">
 				<source>tt_content:starttime,
@@ -336,9 +384,13 @@ xMOD_csh_corebe:wizard_table_wiz</target></trans-unit>
 				<source>You can attach multiple images to the Content Element.
 Depending on the configuration of TYPO3, you can attach images in many formats without worrying about size and compression. TYPO3's graphics processing handles these details for you.
 
-When you use the "Text &amp; Images" type, it's important to select a proper position for images. For this purpose, use the Position and Aligment selector. See link to "Page Content / Position" below.
+When you use the "Text &amp; Images" type, it's important to select a proper position for images. For this purpose, use the Position and Alignment selector. See link to "Page Content / Position" below.
 You can also display images in multiple columns and even enable an option that opens full size images when thumbnails are clicked.</source>
-			<target state="final">Sie können dem Element Bilder in fast beliebiger Anzahl hinzufügen. Abhängig von Ihrer TYPO3-Konfiguration können Sie Bilder in fast jedem Format anfügen. Sie müssen sich insbesondere keine Gedanken über Größe oder Kompression machen, da diese Faktoren normalerweise TYPO3-intern gehandhabt werden. Wenn Sie "Text und Bilder" verwenden, ist es wichtig, die richtige Position des Bildblocks auszuwählen. Für diesen Zweck nutzen Sie die Positionsauswahl, die unterhalb des Textfelds gezeigt wird. Siehe Link zu Seiteninhalt&gt;Position unten. Sie können Bilder auch in mehreren Spalten anordnen und eine Option aktivieren, mit der Sie durch Anklicken des kleinen Bildes eine größere Version des Bildes ansehen können. Um nur ein paar Optionen zu nennen. Sehr wahrscheinlich stehen Ihnen gar nicht alle Optionen zur Verfügung. Dies hängt von Ihren Berechtigungen im System ab.</target></trans-unit>
+			<target state="final">Sie können dem Inhaltselement mehrere Bilder hinzufügen.
+Abhängig von der Konfiguration von TYPO3 können Sie Bilder in vielen Formaten anhängen, ohne sich um Größe und Kompression Sorgen zu machen. Die Grafikverarbeitung von TYPO3 behandelt diese Details für Sie.
+
+Wenn Sie den Typ "Text &amp; Bilder" verwenden, ist es wichtig, eine richtige Position für Bilder zu wählen. Verwenden Sie dazu die Auswahl Position und Ausrichtung. Siehe Link zu "Seiteninhalt / Position" unten.
+Sie können auch Bilder in mehreren Spalten anzeigen und sogar eine Option aktivieren, die Bilder in voller Größe öffnet, wenn Sie auf Thumbnails klicken.</target></trans-unit>
       <trans-unit id="_image.seeAlso" resname="_image.seeAlso" xml:space="preserve" approved="yes">
 				<source>tt_content:imagewidth,
 tt_content:imageheight,
@@ -584,22 +636,6 @@ tt_content:sectionIndex</source>
         <source>Insert records to be displayed on this page.</source>
         <target state="final">Fügen Sie Verweise auf Datensätze ein.</target>
       </trans-unit>
-      <trans-unit id="spaceBefore.description" resname="spaceBefore.description" approved="yes">
-        <source>Top Margin (in pixels) inserts whitespace &lt;em&gt;before&lt;/em&gt; this Content Element.</source>
-        <target state="final">Geben Sie den Abstand (in Pixeln) ein, der vor diesem Inhalt eingefügt werden soll.</target>
-      </trans-unit>
-      <trans-unit id="_spaceBefore.seeAlso" resname="_spaceBefore.seeAlso" xml:space="preserve" approved="yes">
-				<source>tt_content:spaceAfter</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">tt_content:spaceAfter</target></trans-unit>
-      <trans-unit id="spaceAfter.description" resname="spaceAfter.description" approved="yes">
-        <source>Bottom Margin (in pixels) inserts whitespace &lt;em&gt;after&lt;/em&gt; this Content Element.</source>
-        <target state="final">Geben Sie den Abstand (in Pixeln) ein, der nach diesem Inhalt eingefügt werden soll.</target>
-      </trans-unit>
-      <trans-unit id="_spaceAfter.seeAlso" resname="_spaceAfter.seeAlso" xml:space="preserve" approved="yes">
-				<source>tt_content:spaceBefore</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">tt_content:spaceBefore</target></trans-unit>
       <trans-unit id="sectionIndex.description" resname="sectionIndex.description" approved="yes">
         <source>If set, the Content Element will appear in Section Menus.</source>
         <target state="final">Falls markiert, taucht der Seiteninhalt in Menüs auf.</target>
@@ -607,11 +643,6 @@ tt_content:sectionIndex</source>
       <trans-unit id="sectionIndex.details" resname="sectionIndex.details" approved="yes">
         <source>See more details about Section Menus by clicking below.</source>
         <target state="final">Siehe Details zum Menütyp (unten klicken).</target>
-      </trans-unit>
-      <trans-unit id="_sectionIndex.seeAlso" resname="_sectionIndex.seeAlso" approved="yes">
-        <source>tt_content:menu_type</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-        <target state="final">tt_content:menu_type</target>
       </trans-unit>
       <trans-unit id="linkToTop.description" resname="linkToTop.description" approved="yes">
         <source>If checked, a small  "To Top" link will be added after the Content Element, linking back to the top of the page.</source>

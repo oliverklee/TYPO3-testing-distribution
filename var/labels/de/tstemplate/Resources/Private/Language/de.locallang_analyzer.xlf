@@ -31,10 +31,6 @@
         <source>Rootline</source>
         <target state="final">Rootline</target>
       </trans-unit>
-      <trans-unit id="nextLevel" resname="nextLevel" approved="yes">
-        <source>Next Level</source>
-        <target state="final">Nächste Ebene</target>
-      </trans-unit>
       <trans-unit id="templateHierarchy" resname="templateHierarchy" approved="yes">
         <source>Template hierarchy</source>
         <target state="final">Template-Hierarchie</target>

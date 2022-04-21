@@ -27,18 +27,6 @@
         <source>Tx_Extbase_Domain_Model_FrontendUserGroup</source>
         <target state="final">Tx_Extbase_Domain_Model_FrontendUserGroup</target>
       </trans-unit>
-      <trans-unit id="task.action" resname="task.action" approved="yes">
-        <source>CommandController Command</source>
-        <target state="final">CommandController-Befehl</target>
-      </trans-unit>
-      <trans-unit id="task.name" resname="task.name" approved="yes">
-        <source>Extbase CommandController Task</source>
-        <target state="final">Extbase-CommandController-Task</target>
-      </trans-unit>
-      <trans-unit id="task.description" resname="task.description" approved="yes">
-        <source>Allows Extbase CommandController commands to be configured and executed through the scheduler framework.</source>
-        <target state="final">Ermöglicht es, Extbase-CommandController-Kommandos über das Scheduler-Framework zu konfigurieren und auszuführen.</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>

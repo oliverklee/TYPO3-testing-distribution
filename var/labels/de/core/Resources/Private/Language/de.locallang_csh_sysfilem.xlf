@@ -72,8 +72,8 @@ EXT:core/Resources/Public/Images/cshimages/be_groups_7.png</target></trans-unit>
 The directory structure of "fileadmin/" where you can see the "user_upload" folder in the bottom of the list.</source>
 			<target state="final">Dies ist eine Verzeichnisfreigabe relativ zum Ordner "fileadmin/". Weil als Pfad "user_upload" eingegeben wurde, ist der freigegebene Ordner "fileadmin/user_upload". Dies ist die Ordnerstruktur von "fileadmin/". Sie finden den Ordner "user_upload" am Ende der Liste.</target></trans-unit>
       <trans-unit id="hidden.description" resname="hidden.description" approved="yes">
-        <source>Use this option to temporarily disable the filemount.</source>
-        <target state="final">Verwenden Sie diese Option, um die Verzeichnisfreigabe zeitweilig aufzuheben.</target>
+        <source>Unchecking this option temporarily disables the filemount.</source>
+        <target state="final">Deaktivieren Sie diese Option vorübergehend deaktiviert das Filemount.</target>
       </trans-unit>
       <trans-unit id="hidden.details" resname="hidden.details" approved="yes">
         <source>All backend users using the mount will not have access anymore. This includes 'Admin'-users.</source>

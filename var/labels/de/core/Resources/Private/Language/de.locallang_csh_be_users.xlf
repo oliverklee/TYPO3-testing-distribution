@@ -182,8 +182,8 @@ _MOD_user_setup:option_newPassword</source>
 				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
 			<target state="final">be_users:email, _MOD_user_setup:option_newPassword</target></trans-unit>
       <trans-unit id="disable.description" resname="disable.description" approved="yes">
-        <source>This option will temporarily disable the user from logging in.</source>
-        <target state="final">Mit dieser Option können Sie dem Benutzer den Systemzugang verwehren.</target>
+        <source>Unchecking this option will temporarily disable the user from logging in.</source>
+        <target state="final">Deaktivieren dieser Option deaktiviert vorübergehend die Anmeldung des Benutzers.</target>
       </trans-unit>
       <trans-unit id="_disable.seeAlso" resname="_disable.seeAlso" xml:space="preserve" approved="yes">
 				<source>be_users:starttime,

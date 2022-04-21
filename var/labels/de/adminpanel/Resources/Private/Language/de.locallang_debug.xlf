@@ -43,6 +43,10 @@
         <source>No log entries.</source>
         <target state="final">Keine Protokoll-Einträge.</target>
       </trans-unit>
+      <trans-unit id="submodule.events.label" resname="submodule.events.label" approved="yes">
+        <source>Events</source>
+        <target state="final">Ereignisse</target>
+      </trans-unit>
       <trans-unit id="submodule.queryInformation.label" resname="submodule.queryInformation.label" approved="yes">
         <source>Query Information</source>
         <target state="final">Abfrage-Informationen</target>
@@ -74,6 +78,42 @@
       <trans-unit id="submodule.queryInformation.queryTime" resname="submodule.queryInformation.queryTime" approved="yes">
         <source>Total Time [ms]</source>
         <target state="final">Gesamtzeit [ms]</target>
+      </trans-unit>
+      <trans-unit id="submodule.pageTitle.label" approved="yes">
+        <source>Page title</source>
+        <target state="final">Seitentitel</target>
+      </trans-unit>
+      <trans-unit id="submodule.pageTitle.usedProvider" approved="yes">
+        <source>Used provider</source>
+        <target state="final">Verwendeter Anbieter</target>
+      </trans-unit>
+      <trans-unit id="submodule.pageTitle.title" approved="yes">
+        <source>Title</source>
+        <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="submodule.pageTitle.provider" approved="yes">
+        <source>Provider</source>
+        <target state="final">Provider</target>
+      </trans-unit>
+      <trans-unit id="submodule.pageTitle.skippedProviders" approved="yes">
+        <source>Skipped providers (provided no title)</source>
+        <target state="final">Übersprungene Anbieter (ohne Titel)</target>
+      </trans-unit>
+      <trans-unit id="submodule.pageTitle.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Name</target>
+      </trans-unit>
+      <trans-unit id="submodule.pageTitle.allProviders" approved="yes">
+        <source>All providers checked in order</source>
+        <target state="final">Alle Provider in Reihenfolge</target>
+      </trans-unit>
+      <trans-unit id="submodule.pageTitle.cacheEnabled" approved="yes">
+        <source>It's not possible to retrieve the page title (providers) information when the page is cached.</source>
+        <target state="final">Es ist nicht möglich, die Provider für den Seitentitel zu ermitteln wenn die Seite gecached wird.</target>
+      </trans-unit>
+      <trans-unit id="submodule.pageTitle.cacheEnabled.extraInfo" approved="yes">
+        <source>Visit this page uncached, or disable the cache through this admin panel.</source>
+        <target state="final">Besuchen Sie diese Seite uncached, oder deaktivieren Sie den Cache über das Admin-Panel.</target>
       </trans-unit>
     </body>
   </file>

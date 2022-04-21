@@ -63,10 +63,6 @@
         <source>RW</source>
         <target state="final">LS</target>
       </trans-unit>
-      <trans-unit id="c__REF_" resname="c__REF_" approved="yes">
-        <source>Ref</source>
-        <target state="final">Ref</target>
-      </trans-unit>
       <trans-unit id="files" resname="files" approved="yes">
         <source>files</source>
         <target state="final">Dateien</target>
@@ -74,14 +70,6 @@
       <trans-unit id="temp" resname="temp" approved="yes">
         <source>Temporary files</source>
         <target state="final">Temporäre Dateien</target>
-      </trans-unit>
-      <trans-unit id="role_folder_temporary" resname="role_folder_temporary" approved="yes">
-        <source>Temporary files</source>
-        <target state="final">Temporäre Dateien</target>
-      </trans-unit>
-      <trans-unit id="role_folder_recycler" resname="role_folder_recycler" approved="yes">
-        <source>Recycler</source>
-        <target state="final">Papierkorb</target>
       </trans-unit>
       <trans-unit id="read" resname="read" approved="yes">
         <source>R</source>
@@ -106,38 +94,6 @@
       <trans-unit id="write" resname="write" approved="yes">
         <source>W</source>
         <target state="final">S</target>
-      </trans-unit>
-      <trans-unit id="paramError" resname="paramError" approved="yes">
-        <source>Parameter Error</source>
-        <target state="final">Parameterfehler</target>
-      </trans-unit>
-      <trans-unit id="targetNoDir" resname="targetNoDir" approved="yes">
-        <source>Target was not a directory!</source>
-        <target state="final">Ziel war kein Verzeichnis!</target>
-      </trans-unit>
-      <trans-unit id="localDriverFlexform_basePath" resname="localDriverFlexform_basePath" approved="yes">
-        <source>Base path</source>
-        <target state="final">Basispfad</target>
-      </trans-unit>
-      <trans-unit id="localDriverFlexform_basePath_placeholder" resname="localDriverFlexform_basePath_placeholder" approved="yes">
-        <source>Add storage path here. For example: myPath/folder/</source>
-        <target state="final">Füge hiern einen Speicherpfad hinzu. Zum Beispiel: meinPfad/Ordner/</target>
-      </trans-unit>
-      <trans-unit id="localDriverFlexform_pathType" resname="localDriverFlexform_pathType" approved="yes">
-        <source>Path type</source>
-        <target state="final">Pfadtyp</target>
-      </trans-unit>
-      <trans-unit id="localDriverFlexform_pathType_relative" resname="localDriverFlexform_pathType_relative" approved="yes">
-        <source>relative</source>
-        <target state="final">relativ</target>
-      </trans-unit>
-      <trans-unit id="localDriverFlexform_pathType_absolute" resname="localDriverFlexform_pathType_absolute" approved="yes">
-        <source>absolute</source>
-        <target state="final">absolut</target>
-      </trans-unit>
-      <trans-unit id="localDriverFlexform_caseSensitive" resname="localDriverFlexform_caseSensitive" approved="yes">
-        <source>Uses case sensitive identifiers</source>
-        <target state="final">Benutzt groß-/kleinschreibungsabhängige Bezeichner</target>
       </trans-unit>
       <trans-unit id="storageNotBrowsableTitle" resname="storageNotBrowsableTitle" approved="yes">
         <source>Access denied.</source>
@@ -174,6 +130,14 @@
       <trans-unit id="editMetadataForLanguage" resname="editMetadataForLanguage" approved="yes">
         <source>Edit metadata of this file for %s</source>
         <target state="final">Metadaten dieser Datei bearbeiten für %s</target>
+      </trans-unit>
+      <trans-unit id="paramError" resname="paramError" approved="yes">
+        <source>Parameter Error</source>
+        <target state="final">Parameterfehler</target>
+      </trans-unit>
+      <trans-unit id="targetNoDir" resname="targetNoDir" approved="yes">
+        <source>Target was not a directory!</source>
+        <target state="final">Ziel war kein Verzeichnis!</target>
       </trans-unit>
     </body>
   </file>

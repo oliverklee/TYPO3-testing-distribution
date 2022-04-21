@@ -231,10 +231,6 @@
         <source>[All]</source>
         <target state="final">[Alle]</target>
       </trans-unit>
-      <trans-unit id="LGL.versionLabel" resname="LGL.versionLabel" approved="yes">
-        <source>Versioning Label</source>
-        <target state="final">Versionierungsbezeichnung</target>
-      </trans-unit>
       <trans-unit id="LGL.error" resname="LGL.error" approved="yes">
         <source>Error!</source>
         <target state="final">Fehler!</target>

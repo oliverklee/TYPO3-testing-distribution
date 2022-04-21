@@ -27,23 +27,23 @@
 &lt;b&gt;Special&lt;/b&gt;
 'Folder' is a page type which is not shown as a webpage but is instead stores records of your choice.
 'Recycler' is a garbage can. Pages and records in the Recycler are not visible in the Frontend.
-'Menu Separator' is only useful if your Frontend memus are programmed to use it. It does not represent a page with content but is intended to be an unclickable placeholder in the menu.
+'Menu Separator' is only useful if your Frontend menus are programmed to use it. It does not represent a page with content but is intended to be an unclickable placeholder in the menu.
 
-&lt;b&gt;Notice&lt;/b&gt; Each Page Type is represented by a unique icon. The available page types can be restricted for users so all of the options described above may not be visible. Finally, particuilar record typoes may only be allowed on certain page types, but any record can be placed in a 'Folder.'</source>
-			<target state="final">'Standard' ist der am häufigsten verwendete Seitentyp und wird für normale Webseiten verwendet.
-'Backend-Benutzerbereich' ist eine Option, die Seiten erstellt, welche nur im Frontend für Backend-Benutzer sichtbar sind wenn sie angemeldet sind.
+&lt;b&gt;Notice&lt;/b&gt; Each Page Type is represented by a unique icon. The available page types can be restricted for users so all of the options described above may not be visible. Finally, particular record types may only be allowed on certain page types, but any record can be placed in a 'Folder.'</source>
+			<target state="final">'Standard' ist der gebräuchlichste Seitentyp und wird für normale Webseiten verwendet.
+'Backend-Benutzerbereich' ist eine Option, die Seiten erstellt, die auf der Website nur für angemeldete Backend-Benutzer sichtbar sind.
 
 &lt;b&gt;Link&lt;/b&gt;
-Seiten des Typs 'Verweis' verlinken auf eine andere Seite im Seitenbaum.
-Seiten des Typs 'Einstiegspunkt' bringen Inhalt aus einem anderen Teilbereich in den aktuellen Teilbereich.
-'Link zu externer URL' ist ähnlich wie 'Verweis', zeigt aber auf externe URLs anstatt auf TYPO3-Seiten.
+'Verweis'-Seiten wechseln zu einer anderen Seite im Seitenbaum.
+'Einstiegspunkt'-Seiten bringen Inhalte aus einem anderen Bereich des Seitenbaums in den aktuellen Bereich.
+'Link zu externer URL' ist ähnlich wie 'Verweis', zeigt aber auf externe URLs statt auf TYPO3-Seiten.
 
 &lt;b&gt;Spezial&lt;/b&gt;
-'Ordner' ist ein Seitentyp, der nicht als Webseite angezeigt wird, sondern Datensätze Ihrer Wahl beinhaltet.
-'Papierkorb' ist ein Mülleimer. Seiten und Datensätze im Papierkorb sind nicht im Frontend sichtbar.
-'Trennzeichen für Menü' ist nur sinnvoll, wenn ihre Frontend-Menüs so programmiert sind, dass diese verwendet werden können. Es stellt keine Seite mit Inhalt dar, sondern ist als nicht klickbarer Platzhalter in dem Menü gedacht.
+'Ordner ist ein Seitentyp, der nicht als Webseite angezeigt wird, sondern Datensätze Ihrer Wahl speichert.
+'Papierkorb' ist ein Mülleimer. Seiten und Datensätze im Papierkorb sind auf der Website nicht sichtbar.
+Das 'Trennzeichen für Menü' ist nur dann nützlich, wenn Ihre Website-Menüs so programmiert sind, dass es verwendet wird. Es stellt keine Seite mit Inhalt dar, sondern soll ein nicht anklickbarer Platzhalter im Menü sein.
 
-&lt;b&gt;Anmerkung&lt;/b&gt; Jeder Seitentyp wird durch ein spezielles Symbol dargestellt. Die verfügbaren Seitentypen können für Benutzer eingeschränkt werden, so dass nicht alle oben genannten Optionen sichtbar sein könnten. Letztlich können bestimmte Datensatztypen nur in Verbindung mit bestimmten Seitentypen erlaubt sein, aber alle Datensätze können in einem 'Ordner' platziert werden.</target></trans-unit>
+&lt;b&gt;Anmerkung&lt;/b&gt; Jeder Seitentyp wird durch ein einzigartiges Symbol dargestellt. Die verfügbaren Seitentypen können für Benutzer eingeschränkt werden, so dass möglicherweise nicht alle oben beschriebenen Optionen sichtbar sind. Schließlich können bestimmte Datensatztypen nur auf bestimmten Seitentypen erlaubt sein, aber jeder Datensatz kann in einem "Ordner" platziert werden.</target></trans-unit>
       <trans-unit id="_doktype.seeAlso" resname="_doktype.seeAlso" xml:space="preserve" approved="yes">
 				<source>pages:shortcut,
 pages:url</source>
@@ -51,8 +51,8 @@ pages:url</source>
 			<target state="final">pages:shortcut,
 pages:url</target></trans-unit>
       <trans-unit id="hidden.description" resname="hidden.description" approved="yes">
-        <source>If this is checked, the page will be disabled on the website.</source>
-        <target state="final">Wenn dieses Feld markiert ist, wird die Seite in der Webseite deaktiviert.</target>
+        <source>If this is checked, the page will be visible on the website.</source>
+        <target state="final">Wenn diese Option aktiviert ist, wird die Seite auf der Webseite angezeigt.</target>
       </trans-unit>
       <trans-unit id="hidden.details" resname="hidden.details" xml:space="preserve" approved="yes">
 				<source>The 'Disable,' 'Start,' 'Stop,' and 'Access' options are all about limiting access to pages and are thus related in functionality. When a page is not visible due to one of these options, the page will not show up in the site navigation.
@@ -148,21 +148,6 @@ pages:fe_group</target></trans-unit>
         <source>This page has access restricted to a certain group and has "Extend to Subpages" set as well. This is reflected in the way the page icon has changed.</source>
         <target state="final">Für diese Seite ist der Zugriff auf eine bestimmte Gruppe beschränkt und die Option 'Auf Unterseiten ausdehnen' ist zusätzlich gesetzt. Dies wird durch das geänderte Seitensymbol verdeutlicht.</target>
       </trans-unit>
-      <trans-unit id="alias.description" resname="alias.description" approved="yes">
-        <source>A URL Alias is a unique identification string for a page. You can use this string instead of the ID number to refer to the page.</source>
-        <target state="final">Ein 'URL-Alias' ist ein eindeutiger Name für eine Seite. Dieser Name kann anstelle der numerischen ID verwendet werden, um auf die Seite zu verweisen.</target>
-      </trans-unit>
-      <trans-unit id="alias.details" resname="alias.details" xml:space="preserve" approved="yes">
-				<source>Ultimately a page is identified by its ID number. For example, you may access a page in TYPO3 at '.../?id=123'. If the page with ID '123' has the URL Alias 'one_two_three', then the URL '.../?id=one_two_three' would display exactly the same page, because 'one_two_three' is a URL Alias for the ID '123'.
-URL Aliases are normally assigned to only the most frequently used pages rather than all pages. In most TYPO3 configurations you would be able to use the syntax '.. &amp;lt;link one_two_three&amp;gt;go to the page&amp;lt;/link&amp;gt; ..' to create a link to the page. This is easier to remember.
-Another use is if you need to change which page a commonly used link points to. In this case you can delete the URL Alias for the original page and re-add it on the new page. All links using the URL Alias would now refer to the new page and its ID number.</source>
-			<target state="final">Letztlich wird eine Seite anhand seiner ID-Nummer identifiziert. Zum Beispiel können sie eine Seite in TYPO3 mit '.../?id=123' aufrufen. Wenn die Seite mit der ID '123' das URL-Alias 'eins_zwei_drei' hat, dann würde die URL '.../?id=eins_zwei_drei' exakt die selbe Seite anzeigen, weil 'eins_zwei_drei' ein URL-Alias für die ID '123' ist.
-URL-Aliase werden normalerweise nur den meistbesuchten Seiten zugewiesen, nicht allen. Bei den meisten TYPO3-Konfigurationen können Sie den Syntax '... &amp;lt;link eins_zwei_drei&amp;gt;gehe zur Seite&amp;lt;/link&amp;gt; ...' um einen Link zu einer Seite zu erstellen. Das ist besser merkbar.
-Ein weiterer Anwendungsfall ist, wenn man die Seite ändern will, auf die ein üblicherweise verwendeter Link zeigt. In diesem Fall können sie das URL-Alias auf der Originalseite löschen und es auf der neuen Seite wieder einsetzen. Alle Links, die das URL-Alias verwenden, würden nun auf die neue Seite und seine ID-Nummer verweisen.</target></trans-unit>
-      <trans-unit id="alias.syntax" resname="alias.syntax" xml:space="preserve" approved="yes">
-				<source>A URL Alias can contain only lowercase alphanumeric characters and must be unique.
-Please note: If the URL Alias already exists in the site, it will have a number added to the end of it.</source>
-			<target state="final">Ein URL-Alias darf nur Kleinbuchstaben und Ziffern enthalten und muss eindeutig sein. Bitte beachten Sie: Wenn ein gleichnamiger URL-Alias bereits existiert, wird am Ende eine Nummer angehängt werden.</target></trans-unit>
       <trans-unit id="target.description" resname="target.description" approved="yes">
         <source>This sets the default Link Target for menu items linking to this page. Can also used to open the page as a popup window.</source>
         <target state="final">Dies setzt das standardmäßige Linkziel für die auf diese Seite verweisende Menüelemente. Es kann auch dazu verwendet werden um die Seite als Popup-Fenster zu öffnen.</target>
@@ -203,8 +188,8 @@ Kombinationen:
 When specific pages need a longer or shorter cache lifetime than the default, this option can be used.</source>
 			<target state="final">Standardmäßig werden Seiten für 24 Stunden zwischengespeichert. Nach 24 Stunden wird die Seite neu erzeugt und neu in den Zwischenspeicher geschrieben. Abhängig von der Konfiguration wird der Zwischenspeicher möglicherweise um Mitternacht gelöscht. Wenn bestimmte Seiten eine längere oder kürzere Lebensdauer im Zwischenspeicher benötigen, kann diese Option vewendet werden.</target></trans-unit>
       <trans-unit id="no_search.description" resname="no_search.description" approved="yes">
-        <source>If enabled, this option excludes the page from searching operations on the website.</source>
-        <target state="final">Falls aktiviert verhindert diese Einstellung, dass die Seite bei einer Suche berücksichtigt wird.</target>
+        <source>If enabled, this option includes the page in searching operations on the website.</source>
+        <target state="final">Wenn aktiviert, enthält diese Option die Seite bei der Suche auf der Website.</target>
       </trans-unit>
       <trans-unit id="php_tree_stop.description" resname="php_tree_stop.description" approved="yes">
         <source>If enabled, this option excludes the subtree from rendering in the backend.</source>
@@ -417,8 +402,8 @@ If you insert a 'd' the current time and date is inserted. You can also append a
 			<target state="final">Abhängig von Ihrer TYPO3 Konfiguration ist das Format HH:MM DD-MM-YYYY oder HH:MM MM-DD-YYYY. 
 Wenn Sie ein 'd' einfügen, werden die aktuelle Zeit und Datum eingesetzt. Sie können auch jedem Wert in dem Feld ein Zahl wie '+10' hinzufügen, was 10 Tage zu dem aktuellen Wert hinzu addiert.</target></trans-unit>
       <trans-unit id="nav_hide.description" resname="nav_hide.description" approved="yes">
-        <source>With this option the page will be not appear in menus in the Frontend. The page can still be viewed if linked by going directly to its URL.</source>
-        <target state="final">Mit dieser Option wird die Seite nicht in den Menüs im Frontend angezeigt. Die Seite wird trotzdem noch angezeigt, wenn die URL direkt verlinkt ist.</target>
+        <source>With this option the page will appear in menus in the Frontend. If unchecked, the page can still be viewed if linked by going directly to its URL.</source>
+        <target state="final">Mit dieser Option wird die Seite in den Menüs im Frontend angezeigt. Wenn diese Option nicht aktiviert ist, kann die Seite immer noch angesehen werden, wenn sie direkt mit der URL verlinkt wird.</target>
       </trans-unit>
       <trans-unit id="_nav_hide.seeAlso" resname="_nav_hide.seeAlso" approved="yes">
         <source>pages:nav_title</source>

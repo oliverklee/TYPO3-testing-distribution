@@ -8,8 +8,8 @@
         <target state="final">Verwaltungs- und Pflegewerkzeuge</target>
       </trans-unit>
       <trans-unit id="mlang_tabs_tab" resname="mlang_tabs_tab" approved="yes">
-        <source>Admin tools</source>
-        <target state="final">Adminwerkzeuge</target>
+        <source>Admin Tools</source>
+        <target state="final">Verwaltungswerkzeuge</target>
       </trans-unit>
     </body>
   </file>

@@ -30,8 +30,8 @@ EXT:frontend/Resources/Public/Images/cshimages/systemplate1.png</target></trans-
 The Web&gt;Template module contains tools which will help you to edit and validate TypoScript structures.</source>
 			<target state="final">Ein Template-Datensatz mit Konstanten- und Setup-Code. Das Modul Web &gt; Template enthält Werkzeuge, die beim Erstellen und Testen von Template hilfreich sein können.</target></trans-unit>
       <trans-unit id="hidden.description" resname="hidden.description" approved="yes">
-        <source>Hiding the template will deactivate the template record.</source>
-        <target state="final">Mit dieser Option können Sie den Template-Datensatz verbergen bzw. deaktivieren.</target>
+        <source>Unchecking this option will deactivate the template record.</source>
+        <target state="final">Deaktivieren dieser Option deaktiviert den Template-Datensatz.</target>
       </trans-unit>
       <trans-unit id="hidden.details" resname="hidden.details" approved="yes">
         <source>If the Template Record was the first record on a page hiding it will expose the second record on the page instead.</source>

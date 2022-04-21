@@ -35,10 +35,6 @@
         <source>Module: Web&gt;Info</source>
         <target state="final">Modul: Web &gt; Info</target>
       </trans-unit>
-      <trans-unit id="tsconf_parts_1f" resname="tsconf_parts_1f" approved="yes">
-        <source>Module: Web&gt;Func</source>
-        <target state="final">Modul: Web &gt; Funktionen</target>
-      </trans-unit>
       <trans-unit id="tsconf_parts_1g" resname="tsconf_parts_1g" approved="yes">
         <source>Module: Web&gt;Template</source>
         <target state="final">Modul: Web &gt; Template</target>
@@ -46,10 +42,6 @@
       <trans-unit id="tsconf_configFields" resname="tsconf_configFields" approved="yes">
         <source>View TSconfig fields content</source>
         <target state="final">Inhalt des TSconfig-Felds anzeigen</target>
-      </trans-unit>
-      <trans-unit id="editThisColumn" resname="editThisColumn" approved="yes">
-        <source>Edit the field '%s' for all listed pages</source>
-        <target state="final">Feld "%s" für alle aufgelisteten Seiten bearbeiten</target>
       </trans-unit>
       <trans-unit id="editTSconfig" resname="editTSconfig" approved="yes">
         <source>Edit TSconfig for this page</source>

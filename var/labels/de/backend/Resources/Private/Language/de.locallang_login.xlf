@@ -56,8 +56,8 @@
         <target state="final">Sie verwenden eine nicht unterstützte Browser-Version.</target>
       </trans-unit>
       <trans-unit id="warning.incompatibleBrowserInternetExplorer" resname="warning.incompatibleBrowserInternetExplorer" approved="yes">
-        <source>Please install &lt;a href="http://www.microsoft.com/internetexplorer/" target="_blank" rel="noopener noreferrer" /&gt;a more modern browser version&lt;/a&gt;.</source>
-        <target state="final">Bitte installieren Sie &lt;a href="http://www.microsoft.com/internetexplorer/" target="_blank" rel="noopener noreferrer" /&gt;eine aktuellere Browser-Version&lt;/a&gt;.</target>
+        <source>Please install &lt;a href="http://www.microsoft.com/internetexplorer/" target="_blank" rel="noreferrer" /&gt;a more modern browser version&lt;/a&gt;.</source>
+        <target state="final">Bitte installieren Sie &lt;a href="http://www.microsoft.com/internetexplorer/" target="_blank" rel="noreferrer" /&gt;eine aktuellere Browser-Version&lt;/a&gt;.</target>
       </trans-unit>
       <trans-unit id="newsheadline" resname="newsheadline" approved="yes">
         <source>Important Messages</source>

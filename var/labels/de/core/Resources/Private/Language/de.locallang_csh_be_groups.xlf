@@ -247,8 +247,8 @@ Beispiele aus "Getting Started" | https://docs.typo3.org/typo3cms/GettingStarted
         <target state="final">EXT:core/Resources/Public/Images/cshimages/be_groups_14.png</target>
       </trans-unit>
       <trans-unit id="hidden.description" resname="hidden.description" approved="yes">
-        <source>Disables a user group.</source>
-        <target state="final">Deaktiviert eine Benutzergruppe.</target>
+        <source>Enables a user group.</source>
+        <target state="final">Aktiviert eine Benutzergruppe.</target>
       </trans-unit>
       <trans-unit id="hidden.details" resname="hidden.details" approved="yes">
         <source>If you disable a user group all users which are members of the group will in effect not inherit any properties this group may have given them.</source>
