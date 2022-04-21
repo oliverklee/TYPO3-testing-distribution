@@ -16,7 +16,7 @@
 	},
 	"require": {
 		"php": ">= 7.2.34",
-		"helhum/typo3-console": "^6.6.0",
+		"helhum/typo3-console": "^6.7.2",
 		"oliverklee/feuserextrafields": "dev-main",
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/seminars": "dev-main",
@@ -26,6 +26,7 @@
 		"typo3/cms-adminpanel": "^10.4",
 		"typo3/cms-belog": "^10.4",
 		"typo3/cms-beuser": "^10.4",
+		"typo3/cms-core": "^10.4.27",
 		"typo3/cms-felogin": "^10.4",
 		"typo3/cms-fluid-styled-content": "^10.4",
 		"typo3/cms-form": "^10.4",
