@@ -17,7 +17,7 @@
 		"oliverklee/oelib": "^3.6.4",
 		"oliverklee/onetimeaccount": "^5.0.0",
 		"oliverklee/seminars": "^4.0.3",
-		"oliverklee/typo3-devsite": "dev-main",
+		"oliverklee/typo3-devsite": "^4.0.0",
 		"ttn/tea": "^1.1.0",
 		"typo3/cms-about": "^9.5",
 		"typo3/cms-adminpanel": "^9.5",
