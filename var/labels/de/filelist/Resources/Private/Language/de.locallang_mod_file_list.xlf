@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814869" source-language="en" datatype="plaintext" original="EXT:filelist/Resources/Private/Language/locallang_mod_file_list.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:filelist/Resources/Private/Language/locallang_mod_file_list.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
     <header/>
     <body>
-      <trans-unit id="bigControlPanel" resname="bigControlPanel" approved="yes">
-        <source>Extended view</source>
-        <target state="final">Erweiterte Ansicht</target>
-      </trans-unit>
       <trans-unit id="clipBoard" resname="clipBoard" approved="yes">
         <source>Show clipboard</source>
         <target state="final">Zwischenablage anzeigen</target>
@@ -19,17 +15,9 @@
         <source>Paste into: Clipboard content is inserted into this folder</source>
         <target state="final">Einfügen in: Inhalt der Zwischenablage wird in diesen Ordner eingefügt</target>
       </trans-unit>
-      <trans-unit id="clip_markRecords" resname="clip_markRecords" approved="yes">
-        <source>Mark All/Mark none</source>
-        <target state="final">Alles/nichts markieren</target>
-      </trans-unit>
-      <trans-unit id="clip_selectMarked" resname="clip_selectMarked" approved="yes">
-        <source>Transfer the selection of files to clipboard</source>
-        <target state="final">Auswahl der Dateien in die Zwischenablage übertragen</target>
-      </trans-unit>
-      <trans-unit id="clip_deleteMarked" resname="clip_deleteMarked" approved="yes">
-        <source>Delete marked</source>
-        <target state="final">Markierte löschen</target>
+      <trans-unit id="editMarked" resname="editMarked" approved="yes">
+        <source>Edit Metadata</source>
+        <target state="final">Metadaten bearbeiten</target>
       </trans-unit>
       <trans-unit id="clip_deleteMarkedWarning" resname="clip_deleteMarkedWarning" approved="yes">
         <source>Are you sure you want to delete all marked files from this folder?</source>
@@ -39,25 +27,13 @@
         <source>Display thumbnails</source>
         <target state="final">Vorschaubilder anzeigen</target>
       </trans-unit>
-      <trans-unit id="c_file" resname="c_file" approved="yes">
-        <source>File Name</source>
-        <target state="final">Dateiname</target>
-      </trans-unit>
-      <trans-unit id="c_filepath" resname="c_filepath" approved="yes">
-        <source>File Path</source>
-        <target state="final">Dateipfad</target>
-      </trans-unit>
       <trans-unit id="c_size" resname="c_size" approved="yes">
         <source>Size</source>
         <target state="final">Größe</target>
       </trans-unit>
-      <trans-unit id="c_fileext" resname="c_fileext" approved="yes">
+      <trans-unit id="c_record_type" resname="c_record_type" approved="yes">
         <source>Type</source>
         <target state="final">Typ</target>
-      </trans-unit>
-      <trans-unit id="c_tstamp" resname="c_tstamp" approved="yes">
-        <source>Last Modified</source>
-        <target state="final">Datum</target>
       </trans-unit>
       <trans-unit id="c_rw" resname="c_rw" approved="yes">
         <source>RW</source>

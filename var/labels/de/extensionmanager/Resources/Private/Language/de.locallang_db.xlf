@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1435679883" source-language="en" datatype="plaintext" original="EXT:extensionmanager/Resources/Private/Language/locallang_db.xlf" date="2015-06-30T15:55:11Z" product-name="" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:extensionmanager/Resources/Private/Language/locallang_db.xlf" date="2015-06-30T15:55:11Z" product-name="" target-language="de">
     <header/>
     <body>
       <trans-unit id="tx_extensionmanager_domain_model_extension" resname="tx_extensionmanager_domain_model_extension" approved="yes">
@@ -67,33 +67,9 @@
         <source>Serialized dependencies</source>
         <target state="final">Serialisierte Abhängigkeiten</target>
       </trans-unit>
-      <trans-unit id="tx_extensionmanager_domain_model_repository" resname="tx_extensionmanager_domain_model_repository" approved="yes">
-        <source>Repository</source>
-        <target state="final">Repository</target>
-      </trans-unit>
-      <trans-unit id="tx_extensionmanager_domain_model_repository.title" resname="tx_extensionmanager_domain_model_repository.title" approved="yes">
-        <source>Title</source>
-        <target state="final">Titel</target>
-      </trans-unit>
-      <trans-unit id="tx_extensionmanager_domain_model_repository.description" resname="tx_extensionmanager_domain_model_repository.description" approved="yes">
-        <source>Description</source>
-        <target state="final">Beschreibung</target>
-      </trans-unit>
-      <trans-unit id="tx_extensionmanager_domain_model_repository.wsdlUrl" resname="tx_extensionmanager_domain_model_repository.wsdlUrl" approved="yes">
-        <source>WSDL URL</source>
-        <target state="final">WSDL-URL</target>
-      </trans-unit>
-      <trans-unit id="tx_extensionmanager_domain_model_repository.mirrorListUrl" resname="tx_extensionmanager_domain_model_repository.mirrorListUrl" approved="yes">
-        <source>Mirror list URL</source>
-        <target state="final">URL der Liste mit alternativen Servern</target>
-      </trans-unit>
-      <trans-unit id="tx_extensionmanager_domain_model_repository.lastUpdate" resname="tx_extensionmanager_domain_model_repository.lastUpdate" approved="yes">
-        <source>Last update</source>
-        <target state="final">letzte Aktualisierung</target>
-      </trans-unit>
-      <trans-unit id="tx_extensionmanager_domain_model_repository.extensionCount" resname="tx_extensionmanager_domain_model_repository.extensionCount" approved="yes">
-        <source>Extension count</source>
-        <target state="final">Erweiterungsanzahl</target>
+      <trans-unit id="tx_extensionmanager_domain_model_extension.remote" resname="tx_extensionmanager_domain_model_extension.remote" approved="yes">
+        <source>Remote</source>
+        <target state="final">Remote</target>
       </trans-unit>
     </body>
   </file>

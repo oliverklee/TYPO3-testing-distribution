@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814849" source-language="en" datatype="plaintext" original="EXT:recordlist/Resources/Private/Language/locallang_browse_links.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:recordlist/Resources/Private/Language/locallang_browse_links.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
     <header/>
     <body>
       <trans-unit id="removeLink" resname="removeLink" approved="yes">
@@ -174,6 +174,10 @@
       <trans-unit id="displayThumbs" resname="displayThumbs" approved="yes">
         <source>Display thumbnails</source>
         <target state="final">Zeige Vorschaubilder</target>
+      </trans-unit>
+      <trans-unit id="no_files" resname="no_files" approved="yes">
+        <source>No files found in %s</source>
+        <target state="final">Keine Dateien in %s gefunden</target>
       </trans-unit>
     </body>
   </file>

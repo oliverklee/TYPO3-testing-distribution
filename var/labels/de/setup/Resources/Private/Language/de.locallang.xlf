@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814990" source-language="en" datatype="plaintext" original="EXT:setup/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="setup" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:setup/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="setup" target-language="de">
     <header/>
     <body>
       <trans-unit id="UserSettings" resname="UserSettings" approved="yes">
@@ -315,10 +315,6 @@
         <source>Personal data</source>
         <target state="final">Persönliche Daten</target>
       </trans-unit>
-      <trans-unit id="showThumbs" resname="showThumbs" approved="yes">
-        <source>Show Thumbnails by default</source>
-        <target state="final">Vorschaubilder standardmäßig anzeigen</target>
-      </trans-unit>
       <trans-unit id="startModule" resname="startModule" approved="yes">
         <source>Start up in the following module</source>
         <target state="final">Beim Start folgendes Modul aufrufen</target>
@@ -347,21 +343,9 @@
         <source>Show hidden files and folders in the filelist</source>
         <target state="final">Versteckte Dateien und Ordner in der Dateiliste anzeigen</target>
       </trans-unit>
-      <trans-unit id="resizeTextareas" resname="resizeTextareas" approved="yes">
-        <source>Make Textareas resizable</source>
-        <target state="final">Größe von mehrzeiligen Textfeldern anpassbar machen</target>
-      </trans-unit>
-      <trans-unit id="resizeTextareas_MaxHeight" resname="resizeTextareas_MaxHeight" approved="yes">
-        <source>Maximal Height of resizable Textarea in Pixel</source>
-        <target state="final">Maximale Höhe in der Größe anpassbarer, mehrzeiliger Textfelder in Pixel</target>
-      </trans-unit>
       <trans-unit id="flexibleTextareas_MaxHeight" resname="flexibleTextareas_MaxHeight" approved="yes">
-        <source>Maximal Height of flexible Textareas in Pixel</source>
-        <target state="final">Maximale Höhe flexibler Textfelder in Pixel</target>
-      </trans-unit>
-      <trans-unit id="resizeTextareas_Flexible" resname="resizeTextareas_Flexible" approved="yes">
-        <source>Make Textareas flexible</source>
-        <target state="final">Textfelder flexibel machen</target>
+        <source>Maximum height of text areas in pixels</source>
+        <target state="final">Maximale Höhe der Textbereiche in Pixel</target>
       </trans-unit>
       <trans-unit id="editFunctionsTab" resname="editFunctionsTab" approved="yes">
         <source>Edit and Advanced functions</source>
@@ -398,10 +382,6 @@
       <trans-unit id="copyLevels" resname="copyLevels" approved="yes">
         <source>Recursive Copy: Enter the number of page sublevels to include, when a page is copied</source>
         <target state="final">Rekursives Kopieren: Geben Sie die Anzahl der zu kopierenden Unterebenen an</target>
-      </trans-unit>
-      <trans-unit id="recursiveDelete" resname="recursiveDelete" approved="yes">
-        <source>Recursive Delete(!): Allow ALL subpages to be deleted when deleting a page</source>
-        <target state="final">Rekursives Löschen(!): Erlaube das Löschen ALLER Unterseiten einer zu löschenden Seite</target>
       </trans-unit>
       <trans-unit id="activateChanges" resname="activateChanges" approved="yes">
         <source>Notice! In order to activate most of these changes, please reload the backend (eg. logout and login again).</source>
@@ -443,9 +423,37 @@
         <source>Current password</source>
         <target state="final">Aktuelles Passwort</target>
       </trans-unit>
-      <trans-unit id="passwordHeader" resname="passwordHeader" approved="yes">
-        <source>Password</source>
-        <target state="final">Passwort</target>
+      <trans-unit id="accountSecurity" resname="accountSecurity" approved="yes">
+        <source>Account security</source>
+        <target state="final">Account-Sicherheit</target>
+      </trans-unit>
+      <trans-unit id="mfaProviders" resname="mfaProviders" approved="yes">
+        <source>Multi-factor authentication</source>
+        <target state="final">Mehrfaktor Authentifizierung</target>
+      </trans-unit>
+      <trans-unit id="mfaProviders.notAvailable" resname="mfaProviders.notAvailable" approved="yes">
+        <source>Multi-factor authentication is currently not available.</source>
+        <target state="final">Mehrfaktor-Authentifizierung ist derzeit nicht verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="mfaProviders.description" resname="mfaProviders.description" approved="yes">
+        <source>Use multi-factor authentication to secure your account by providing another factor next to your password.</source>
+        <target state="final">Nutzen Sie mehrfaktor Authentifizierung um Ihren Account zu schützen, indem sie einen weiteren Faktor neben dem Passwort festlegen.</target>
+      </trans-unit>
+      <trans-unit id="mfaProviders.lockedMfaProviders" resname="mfaProviders.lockedMfaProviders" approved="yes">
+        <source>Some providers are currently locked!</source>
+        <target state="final">Einige Anbieter sind derzeit gesperrt!</target>
+      </trans-unit>
+      <trans-unit id="mfaProviders.enabled" resname="mfaProviders.enabled" approved="yes">
+        <source>Enabled</source>
+        <target state="final">Aktiviert</target>
+      </trans-unit>
+      <trans-unit id="mfaProviders.setupLinkTitle" resname="mfaProviders.setupLinkTitle" approved="yes">
+        <source>Setup multi-factor authentication</source>
+        <target state="final">Multi-Faktor-Authentifizierung aktivieren</target>
+      </trans-unit>
+      <trans-unit id="mfaProviders.manageLinkTitle" resname="mfaProviders.manageLinkTitle" approved="yes">
+        <source>Manage multi-factor authentication</source>
+        <target state="final">Multi-Faktor-Authentifizierung verwalten</target>
       </trans-unit>
       <trans-unit id="setupWasUpdated" resname="setupWasUpdated" approved="yes">
         <source>User settings were updated.</source>

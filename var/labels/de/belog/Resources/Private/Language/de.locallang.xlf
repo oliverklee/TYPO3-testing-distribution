@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814781" source-language="en" datatype="plaintext" original="EXT:belog/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:32Z" product-name="belog" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:belog/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:32Z" product-name="belog" target-language="de">
     <header/>
     <body>
       <trans-unit id="adminLog" resname="adminLog" approved="yes">
@@ -35,45 +35,17 @@
         <source>Group</source>
         <target state="final">Gruppe:</target>
       </trans-unit>
-      <trans-unit id="thisWeek" resname="thisWeek" approved="yes">
-        <source>This week</source>
-        <target state="final">Diese Woche</target>
-      </trans-unit>
-      <trans-unit id="lastWeek" resname="lastWeek" approved="yes">
-        <source>Last week</source>
-        <target state="final">Letzte Woche</target>
-      </trans-unit>
-      <trans-unit id="last7Days" resname="last7Days" approved="yes">
-        <source>Last 7 days</source>
-        <target state="final">Letzte 7 Tage</target>
-      </trans-unit>
-      <trans-unit id="thisMonth" resname="thisMonth" approved="yes">
-        <source>This month</source>
-        <target state="final">Dieser Monat</target>
-      </trans-unit>
-      <trans-unit id="lastMonth" resname="lastMonth" approved="yes">
-        <source>Last month</source>
-        <target state="final">Letzter Monat</target>
-      </trans-unit>
-      <trans-unit id="last31Days" resname="last31Days" approved="yes">
-        <source>Last 31 days</source>
-        <target state="final">Letzte 31 Tage</target>
-      </trans-unit>
-      <trans-unit id="noLimit" resname="noLimit" approved="yes">
-        <source>No limit</source>
-        <target state="final">Keine Begrenzung</target>
-      </trans-unit>
-      <trans-unit id="userDefined" resname="userDefined" approved="yes">
-        <source>User defined</source>
-        <target state="final">Benutzerdefiniert</target>
-      </trans-unit>
       <trans-unit id="set" resname="set" approved="yes">
-        <source>Set</source>
-        <target state="final">Festlegen</target>
+        <source>Filter</source>
+        <target state="final">Filter</target>
       </trans-unit>
-      <trans-unit id="20" resname="20" translate="no" approved="yes">
-        <source>20</source>
-        <target state="final">20</target>
+      <trans-unit id="reset" resname="reset" approved="yes">
+        <source>Reset</source>
+        <target state="final">Zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="all" resname="all" approved="yes">
+        <source>[all]</source>
+        <target state="final">[Alle]</target>
       </trans-unit>
       <trans-unit id="50" resname="50" translate="no" approved="yes">
         <source>50</source>
@@ -143,10 +115,6 @@
         <source>Max</source>
         <target state="final">Max:</target>
       </trans-unit>
-      <trans-unit id="changesInFields" resname="changesInFields" approved="yes">
-        <source>Changes in fields: %s.</source>
-        <target state="final">Änderungen in Feldern: %s.</target>
-      </trans-unit>
       <trans-unit id="showHistory" resname="showHistory" approved="yes">
         <source>Show History</source>
         <target state="final">Verlauf anzeigen</target>
@@ -155,37 +123,21 @@
         <source>Action</source>
         <target state="final">Aktion:</target>
       </trans-unit>
+      <trans-unit id="channel" resname="channel" approved="yes">
+        <source>Channel</source>
+        <target state="final">Kanal</target>
+      </trans-unit>
+      <trans-unit id="levels" resname="levels" approved="yes">
+        <source>Levels</source>
+        <target state="final">Tiefe</target>
+      </trans-unit>
       <trans-unit id="workspace" resname="workspace" approved="yes">
         <source>Workspace</source>
         <target state="final">Arbeitsumgebung:</target>
       </trans-unit>
-      <trans-unit id="groupByPage" resname="groupByPage" approved="yes">
-        <source>Group by page</source>
-        <target state="final">Nach Seite anordnen:</target>
-      </trans-unit>
-      <trans-unit id="pagenameWithUID" resname="pagenameWithUID" approved="yes">
-        <source>%s" [UID: %s]</source>
-        <target state="final">%s" [UID: %s]</target>
-      </trans-unit>
       <trans-unit id="overview" resname="overview" approved="yes">
         <source>Overview</source>
         <target state="final">Übersicht</target>
-      </trans-unit>
-      <trans-unit id="timeInfo" resname="timeInfo" approved="yes">
-        <source>These pages have log messages from %s to %s</source>
-        <target state="final">Diese Seiten haben Protokoll-Meldungen von %s bis %s</target>
-      </trans-unit>
-      <trans-unit id="forNonPageRelatedActions" resname="forNonPageRelatedActions" approved="yes">
-        <source>for NON-PAGE related actions</source>
-        <target state="final">für nicht-seitenbezogene Aktionen</target>
-      </trans-unit>
-      <trans-unit id="forRootLevel" resname="forRootLevel" approved="yes">
-        <source>for ROOT LEVEL</source>
-        <target state="final">für WURZELEBENE</target>
-      </trans-unit>
-      <trans-unit id="forPage" resname="forPage" approved="yes">
-        <source>for PAGE "%s" (UID: %s)</source>
-        <target state="final">für Seite "%s" (UID: %s)</target>
       </trans-unit>
       <trans-unit id="logForNonPageRelatedActionsOrRootLevelOrPage" resname="logForNonPageRelatedActionsOrRootLevelOrPage" approved="yes">
         <source>Log %s from %s to %s</source>
@@ -466,6 +418,10 @@
       <trans-unit id="chLog_l_action" resname="chLog_l_action" approved="yes">
         <source>Action</source>
         <target state="final">Aktion:</target>
+      </trans-unit>
+      <trans-unit id="chLog_l_channel" resname="chLog_l_channel" approved="yes">
+        <source>Channel</source>
+        <target state="final">Kanal</target>
       </trans-unit>
       <trans-unit id="chLog_l_types" resname="chLog_l_types" approved="yes">
         <source>Type</source>

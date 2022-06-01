@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814881" source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_mod_web_list.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_mod_web_list.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
     <header/>
     <body>
       <trans-unit id="mlang_labels_tablabel" resname="mlang_labels_tablabel" approved="yes">
@@ -147,6 +147,10 @@
         <source>List only this table</source>
         <target state="final">Nur diese Tabelle anzeigen</target>
       </trans-unit>
+      <trans-unit id="collapseExpandTable" resname="collapseExpandTable" approved="yes">
+        <source>Collapse and expand records of table "%s"</source>
+        <target state="final">Datensätze der Tabelle "%s" ein-/ausklappen</target>
+      </trans-unit>
       <trans-unit id="showClipBoard" resname="showClipBoard" approved="yes">
         <source>Show clipboard</source>
         <target state="final">Zwischenablage anzeigen</target>
@@ -222,22 +226,6 @@
       <trans-unit id="button.delete" resname="button.delete" approved="yes">
         <source>Delete</source>
         <target state="final">Löschen</target>
-      </trans-unit>
-      <trans-unit id="button.yes" resname="button.yes" approved="yes">
-        <source>Yes</source>
-        <target state="final">Ja</target>
-      </trans-unit>
-      <trans-unit id="button.no" resname="button.no" approved="yes">
-        <source>No</source>
-        <target state="final">Nein</target>
-      </trans-unit>
-      <trans-unit id="notification.request.title" resname="notification.request.title" approved="yes">
-        <source>Allow notifications?</source>
-        <target state="final">Benachrichtigungen erlauben?</target>
-      </trans-unit>
-      <trans-unit id="notification.request.description" resname="notification.request.description" approved="yes">
-        <source>TYPO3 can send important notifications, e.g. when your login expires. To enable notifications, please click "Yes" and confirm your browser's notification request. If you choose "no", we will not ask again.</source>
-        <target state="final">TYPO3 kann wichtige Benachrichtigungen verschicken, z.B. wenn Ihr Login abläuft. Um Benachrichtigungen zu aktivieren, klicken Sie bitte auf "Ja" und bestätigen Sie die Benachrichtigungsanfrage Ihres Browsers. Wenn Sie "Nein" wählen, werden wir nicht erneut fragen.</target>
       </trans-unit>
     </body>
   </file>

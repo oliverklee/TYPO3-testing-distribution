@@ -160,6 +160,18 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Ref</source>
         <target state="final">Ref</target>
       </trans-unit>
+      <trans-unit id="labels.crdate" resname="labels.crdate" approved="yes">
+        <source>Creation date</source>
+        <target state="final">Erstelldatum</target>
+      </trans-unit>
+      <trans-unit id="labels.cruser_id" resname="labels.cruser_id" approved="yes">
+        <source>Created by</source>
+        <target state="final">Erstellt von</target>
+      </trans-unit>
+      <trans-unit id="labels.sorting" resname="labels.sorting" approved="yes">
+        <source>Sorting</source>
+        <target state="final">Sortierung</target>
+      </trans-unit>
       <trans-unit id="labels.setFields" resname="labels.setFields" approved="yes">
         <source>Set fields</source>
         <target state="final">Felder setzen</target>
@@ -184,6 +196,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Reload</source>
         <target state="final">Neu laden</target>
       </trans-unit>
+      <trans-unit id="labels.share" resname="labels.share" approved="yes">
+        <source>Share</source>
+        <target state="final">Teilen</target>
+      </trans-unit>
       <trans-unit id="labels.csv" resname="labels.csv" approved="yes">
         <source>Download CSV file</source>
         <target state="final">CSV-Datei herunterladen</target>
@@ -199,6 +215,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.cancel" resname="labels.cancel" approved="yes">
         <source>Cancel</source>
         <target state="final">Abbruch</target>
+      </trans-unit>
+      <trans-unit id="labels.deactivate" resname="labels.deactivate" approved="yes">
+        <source>Deactivate</source>
+        <target state="final">Deaktivieren</target>
       </trans-unit>
       <trans-unit id="labels.hidden" resname="labels.hidden" approved="yes">
         <source>Hidden</source>
@@ -359,6 +379,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.toggleall" resname="labels.toggleall" approved="yes">
         <source>Toggle all</source>
         <target state="final">Alle umschalten</target>
+      </trans-unit>
+      <trans-unit id="labels.toggleSelection" resname="labels.toggleSelection" approved="yes">
+        <source>Toggle selection</source>
+        <target state="final">Auswahl umkehren</target>
       </trans-unit>
       <trans-unit id="labels.selected" resname="labels.selected" approved="yes">
         <source>Selected Items</source>
@@ -551,6 +575,22 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.label.search_levels" resname="labels.label.search_levels" approved="yes">
         <source>Search levels</source>
         <target state="final">Suchebenen</target>
+      </trans-unit>
+      <trans-unit id="labels.active" resname="labels.active" approved="yes">
+        <source>Active</source>
+        <target state="final">Aktiv</target>
+      </trans-unit>
+      <trans-unit id="labels.locked" resname="labels.locked" approved="yes">
+        <source>Locked</source>
+        <target state="final">Gesperrt</target>
+      </trans-unit>
+      <trans-unit id="labels.mfa.enabled" resname="labels.mfa.enabled" approved="yes">
+        <source>MFA enabled</source>
+        <target state="final">MFA aktiviert</target>
+      </trans-unit>
+      <trans-unit id="labels.mfa.disabled" resname="labels.mfa.disabled" approved="yes">
+        <source>MFA disabled</source>
+        <target state="final">MFA deaktiviert</target>
       </trans-unit>
       <trans-unit id="labels.recordReadonly" resname="labels.recordReadonly" approved="yes">
         <source>The table is defined as readonly and can't be edited.</source>
@@ -819,6 +859,14 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="file_upload.button.continue" resname="file_upload.button.continue" approved="yes">
         <source>Continue with selected actions</source>
         <target state="final">Mit ausgewählten Aktionen fortfahren</target>
+      </trans-unit>
+      <trans-unit id="file_upload.reload.filelist.actions.dismiss" resname="file_upload.reload.filelist.actions.dismiss" approved="yes">
+        <source>Dismiss</source>
+        <target state="final">Verwerfen</target>
+      </trans-unit>
+      <trans-unit id="file_upload.reload.filelist.actions.reload" resname="file_upload.reload.filelist.actions.reload" approved="yes">
+        <source>Reload</source>
+        <target state="final">Neu laden</target>
       </trans-unit>
       <trans-unit id="online_media.new_media" resname="online_media.new_media" approved="yes">
         <source>Add new media asset</source>
@@ -1212,6 +1260,22 @@ Do you want to refresh it now?</source>
         <source>Recalculate URL segment from page title</source>
         <target state="final">Neuberechnen des URL-Segments aus dem Seitentitel</target>
       </trans-unit>
+      <trans-unit id="buttons.deactivateMfa" resname="buttons.deactivateMfa" approved="yes">
+        <source>Deactivate multi-factor authentication</source>
+        <target state="final">Multi-Faktor-Authentifizierung deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="buttons.deactivateMfaProvider" resname="buttons.deactivateMfaProvider" approved="yes">
+        <source>Deactivate %s</source>
+        <target state="final">%s deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="buttons.deactivateMfa.confirmation.text" resname="deactivateMfa.confirmation.text" approved="yes">
+        <source>Are you sure you want to deactivate all active providers? This action can not be undone and will be applied immediately!</source>
+        <target state="final">Sind Sie sicher, dass Sie alle aktiven Anbieter deaktivieren möchten? Diese Aktion kann nicht rückgängig gemacht werden und wird sofort angewandt!</target>
+      </trans-unit>
+      <trans-unit id="buttons.deactivateMfaProvider.confirmation.text" resname="deactivateMfaProvider.confirmation.text" approved="yes">
+        <source>Are you sure you want to deactivate %s? This action can not be undone and will be applied immediately!</source>
+        <target state="final">Sind Sie sicher, dass Sie %s deaktivieren möchten? Diese Aktion kann nicht rückgängig gemacht werden und wird sofort angewandt!</target>
+      </trans-unit>
       <trans-unit id="slugCreation.success.page" resname="slugCreation.success.page" approved="yes">
         <source>This page will be reachable via %s</source>
         <target state="final">Diese Seite wird über %s erreichbar sein</target>
@@ -1255,10 +1319,6 @@ Do you want to refresh it now?</source>
       <trans-unit id="cm.new" resname="cm.new" approved="yes">
         <source>New</source>
         <target state="final">Neu</target>
-      </trans-unit>
-      <trans-unit id="cm.newSubpage" resname="cm.newSubpage" approved="yes">
-        <source>New subpage</source>
-        <target state="final">Neue Unterseite</target>
       </trans-unit>
       <trans-unit id="cm.pasteinto" resname="cm.pasteinto" approved="yes">
         <source>Paste into</source>
@@ -1587,6 +1647,18 @@ Do you want to refresh it now?</source>
       <trans-unit id="toolbarItems.search" resname="toolbarItems.search" approved="yes">
         <source>Search</source>
         <target state="final">Suchen</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.searchLabel" resname="toolbarItems.searchLabel" approved="yes">
+        <source>Search the contents</source>
+        <target state="final">Inhalte durchsuchen</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.toolbarOpenClose" resname="toolbarItems.toolbarOpenClose" approved="yes">
+        <source>Open/Close toolbar</source>
+        <target state="final">Symbolleiste öffnen/schließen</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.searchbarOpenClose" resname="toolbarItems.searchbarOpenClose" approved="yes">
+        <source>Open/Close searchbar</source>
+        <target state="final">Suchleiste öffnen/schließen</target>
       </trans-unit>
       <trans-unit id="toolbarItems.workspace" resname="toolbarItems.workspace" approved="yes">
         <source>Workspace</source>

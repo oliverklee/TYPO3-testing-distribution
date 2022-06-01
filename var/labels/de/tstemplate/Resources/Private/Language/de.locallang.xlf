@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415815007" source-language="en" datatype="plaintext" original="EXT:tstemplate/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="tstemplate" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:tstemplate/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="tstemplate" target-language="de">
     <header/>
     <body>
       <trans-unit id="moduleTitle" resname="moduleTitle" approved="yes">
@@ -70,10 +70,6 @@
       <trans-unit id="newWebsite" resname="newWebsite" approved="yes">
         <source>Create new website</source>
         <target state="final">Neue Website erstellen</target>
-      </trans-unit>
-      <trans-unit id="newWebsiteDescription" resname="newWebsiteDescription" approved="yes">
-        <source>If you want this page to be the root of a new website, optionally based on one of the standard templates, then press the button below</source>
-        <target state="final">Wenn diese Seite die Wurzel einer neuen Website sein soll, klicken Sie auf die Schaltfläche unten. Sie können optional ein Standard-Template als Grundlage auswählen:</target>
       </trans-unit>
       <trans-unit id="newWebsiteAction" resname="newWebsiteAction" approved="yes">
         <source>Create template for a new site</source>

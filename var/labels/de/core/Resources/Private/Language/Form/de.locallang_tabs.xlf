@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1477231202" source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf" date="2016-10-23T20:22:33Z" product-name="tabs" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf" date="2016-10-23T20:22:33Z" product-name="tabs" target-language="de">
     <header/>
     <body>
       <trans-unit id="general" resname="general" approved="yes">

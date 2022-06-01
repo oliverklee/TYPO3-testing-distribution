@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814791" source-language="en" datatype="plaintext" original="EXT:frontend/Resources/Private/Language/locallang_ttc.xlf" date="2011-10-17T20:22:32Z" product-name="cms" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:frontend/Resources/Private/Language/locallang_ttc.xlf" date="2011-10-17T20:22:32Z" product-name="cms" target-language="de">
     <header/>
     <body>
       <trans-unit id="CType_formlabel" resname="CType_formlabel" approved="yes">
@@ -346,10 +346,6 @@
       <trans-unit id="imageorient.I.7" resname="imageorient.I.7" approved="yes">
         <source>In text, left</source>
         <target state="final">Im Text links</target>
-      </trans-unit>
-      <trans-unit id="imageorient.I.8" resname="imageorient.I.8" approved="yes">
-        <source>__No wrap:__</source>
-        <target state="final">__Kein Umbruch:__</target>
       </trans-unit>
       <trans-unit id="imageorient.I.9" resname="imageorient.I.9" approved="yes">
         <source>Beside Text, Right</source>

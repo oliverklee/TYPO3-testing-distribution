@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814863" source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_general.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_general.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
     <header/>
     <body>
       <trans-unit id="LGL.endtime" resname="LGL.endtime" approved="yes">
@@ -54,10 +54,6 @@
       <trans-unit id="LGL.prependAtCopy" resname="LGL.prependAtCopy" approved="yes">
         <source>(copy %s)</source>
         <target state="final">(Kopie %s)</target>
-      </trans-unit>
-      <trans-unit id="LGL.layout" resname="LGL.layout" approved="yes">
-        <source>Layout</source>
-        <target state="final">Layout</target>
       </trans-unit>
       <trans-unit id="LGL.default_value" resname="LGL.default_value" approved="yes">
         <source>Default</source>
@@ -226,6 +222,14 @@
       <trans-unit id="LGL.l18n_parent" resname="LGL.l18n_parent" approved="yes">
         <source>Transl.Orig</source>
         <target state="final">Ursprungstext</target>
+      </trans-unit>
+      <trans-unit id="LGL.siteLanguages" resname="LGL.siteLanguages" approved="yes">
+        <source>Site languages</source>
+        <target state="final">Sprachen der Seite</target>
+      </trans-unit>
+      <trans-unit id="LGL.specialLanguages" resname="LGL.specialLanguages" approved="yes">
+        <source>Special languages</source>
+        <target state="final">Sondersprachen</target>
       </trans-unit>
       <trans-unit id="LGL.allLanguages" resname="LGL.allLanguages" approved="yes">
         <source>[All]</source>

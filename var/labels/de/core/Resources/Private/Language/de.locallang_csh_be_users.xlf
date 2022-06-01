@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814853" source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_csh_be_users.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_csh_be_users.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
     <header/>
     <body>
       <trans-unit id=".description" resname=".description" approved="yes">
@@ -89,28 +89,6 @@ The first (top) group in the list is the group which will, by default, be the ow
 be_groups</source>
 				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
 			<target state="final">be_users:TSconfig, be_groups</target></trans-unit>
-      <trans-unit id="lockToDomain.description" resname="lockToDomain.description" approved="yes">
-        <source>Enter the host name from which the user is forced to login. NOTICE: this is not a security feature and can be circumvented by faking HTTP_HOST.</source>
-        <target state="final">Geben Sie den Rechnernamen oder die Netzwerkadresse an, von welcher sich der Benutzer anmelden muss. HINWEIS: Das ist keine Sicherheitsfunktion und kann umgangen werden, wenn der HTTP_HOST gefälscht wird.</target>
-      </trans-unit>
-      <trans-unit id="lockToDomain.details" resname="lockToDomain.details" approved="yes">
-        <source>A TYPO3 system may have multiple domains pointing to it. Therefore this option secures that users can login only from a certain host name.</source>
-        <target state="final">Ein TYPO3-System kann unter Umständen über mehrere verschiedene Domänennamen erreichbar sein. Deshalb kann mit dieser Einstellung sichergestellt werden, dass sich Benutzer nur von einer bestimmten Domäne aus anmelden können.</target>
-      </trans-unit>
-      <trans-unit id="_lockToDomain.seeAlso" resname="_lockToDomain.seeAlso" xml:space="preserve" approved="yes">
-				<source>be_groups:lockToDomain,
-fe_users:lockToDomain,
-fe_groups:lockToDomain</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_groups:lockToDomain, fe_users:lockToDomain, fe_groups:lockToDomain</target></trans-unit>
-      <trans-unit id="disableIPlock.description" resname="disableIPlock.description" approved="yes">
-        <source>Disable the lock of the backend users session to the remote IP number.</source>
-        <target state="final">Mit dieser Option können bestehende Anmeldebeschränkungen (IP-Adressen) für diesen Benutzer deaktiviert werden.</target>
-      </trans-unit>
-      <trans-unit id="disableIPlock.details" resname="disableIPlock.details" approved="yes">
-        <source>You will have to disable this lock if backend users are accessing TYPO3 from ISDN or modem connections which may shutdown and reconnect with a new IP. The same would be true for DHCP assignment of IP numbers where new IP numbers are frequently assigned.</source>
-        <target state="final">Sie müssen diese Option für Benutzer wählen, die über eine Internet-Wählverbindung (Modem, ISDN, DSL) auf TYPO3 zugreifen. Solche Benutzer erhalten bei jeder Internet-Einwahl eine andere IP-Adresse zugewiesen. Gleiches gilt auch für Benutzer, die per DHCP am Netzwerk angemeldet sind. Auch hier ändern sich die IP-Adressen ständig, so dass Sie in diesem Fall keine IP-basierte Anmeldebeschränkung vornehmen sollten.</target>
-      </trans-unit>
       <trans-unit id="db_mountpoints.description" resname="db_mountpoints.description" approved="yes">
         <source>Assign startpoints for the users page tree.</source>
         <target state="final">Definieren Sie den Seitenbaum des Benutzers.</target>

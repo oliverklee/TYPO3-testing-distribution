@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814865" source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_misc.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_misc.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
     <header/>
     <body>
       <trans-unit id="shortcutDescription" resname="shortcutDescription" approved="yes">
@@ -463,6 +463,14 @@
         <source>Got unexpected response from the server. Please check logs for details.</source>
         <target state="final">Unerwartete Antwort vom Server erhalten. Bitte überprüfen Sie die Protokolle für mehr Details.</target>
       </trans-unit>
+      <trans-unit id="tree_networkError" resname="tree_networkError" approved="yes">
+        <source>Navigation loading error</source>
+        <target state="final">Fehler beim Laden der Navigation</target>
+      </trans-unit>
+      <trans-unit id="tree_networkErrorDescription" resname="tree_networkErrorDescription" approved="yes">
+        <source>Got unexpected response from the server. Please check logs for details.</source>
+        <target state="final">Unerwartete Antwort vom Server erhalten. Bitte überprüfen Sie die Protokolle für mehr Details.</target>
+      </trans-unit>
       <trans-unit id="fileUpload_errorQueueLimitExceeded" resname="fileUpload_errorQueueLimitExceeded" approved="yes">
         <source>Too many files selected</source>
         <target state="final">Zu viele Dateien ausgewählt</target>
@@ -539,6 +547,10 @@
         <source>An input/output error occurred (Error #2038). This i.e. happens with servers using a self-signed SSL certificate, which is a limitation of your browser's Flash plugin.</source>
         <target state="final">Ein Lese-/Schreibfehler ist aufgetreten (Fehler #2038). Dies ist häufig auf ein selbstsigniertes SSL-Zertifikat zurückzuführen. Leider wird dies von dem von Ihnen verwendeten Flash-Plug-In nicht unterstützt.</target>
       </trans-unit>
+      <trans-unit id="synchronizeFolderRelations.afterFolderRenamed" resname="synchronizeRelations.afterFolderRenamed" approved="yes">
+        <source>%d %s records referencing the renamed directory were updated.</source>
+        <target state="final">%d %s Datensätze, die das umbenannte Verzeichnis referenzieren, wurden aktualisiert.</target>
+      </trans-unit>
       <trans-unit id="liveSearch_title" resname="liveSearch_title" approved="yes">
         <source>Short result list</source>
         <target state="final">Kurze Liste der Ergebnisse</target>
@@ -586,6 +598,14 @@
       <trans-unit id="viewPort_tooltipDebugPanelSplitDrag" resname="viewPort_tooltipDebugPanelSplitDrag" approved="yes">
         <source>Drag to resize or click to collapse the Debug Panel.</source>
         <target state="final">Ziehen Sie hier, um die Größe zu ändern oder klicken Sie, um das Debug-Panel zuzuklappen</target>
+      </trans-unit>
+      <trans-unit id="viewport_navigation_show" resname="viewport_navigation_show" approved="yes">
+        <source>Show Navigation</source>
+        <target state="final">Navigation anzeigen</target>
+      </trans-unit>
+      <trans-unit id="viewport_navigation_hide" resname="viewport_navigation_hide" approved="yes">
+        <source>Hide Navigation</source>
+        <target state="final">Navigation verbergen</target>
       </trans-unit>
     </body>
   </file>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1520862804" source-language="en" datatype="plaintext" original="EXT:adminpanel/Resources/Private/Language/locallang_cache.xlf" date="2018-03-12T13:52:00Z" product-name="adminpanel" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:adminpanel/Resources/Private/Language/locallang_cache.xlf" date="2018-03-12T13:52:00Z" product-name="adminpanel" target-language="de">
     <header/>
     <body>
       <trans-unit id="module.label" resname="module.label" approved="yes">

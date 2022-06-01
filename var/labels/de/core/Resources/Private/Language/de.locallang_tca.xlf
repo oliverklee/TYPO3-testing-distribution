@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814885" source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_tca.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_tca.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
     <header/>
     <body>
       <trans-unit id="file_mountpoints" resname="file_mountpoints" approved="yes">
@@ -30,6 +30,10 @@
       <trans-unit id="availableWidgets" resname="userMods" approved="yes">
         <source>Dashboard widgets</source>
         <target state="final">Dashboard-Widgets</target>
+      </trans-unit>
+      <trans-unit id="mfa_providers" resname="mfa_providers" approved="yes">
+        <source>Allowed multi-factor authentication providers</source>
+        <target state="final">Erlaubte Multi-Faktor-Authentifizierungsanbieter</target>
       </trans-unit>
       <trans-unit id="allowed_languages" resname="allowed_languages" approved="yes">
         <source>Limit to languages</source>
@@ -63,10 +67,6 @@
         <source>TSconfig QuickReference</source>
         <target state="final">TSconfig-Kurzreferenz</target>
       </trans-unit>
-      <trans-unit id="lockToDomain" resname="lockToDomain" approved="yes">
-        <source>Lock to domain</source>
-        <target state="final">Auf Domäne beschränken</target>
-      </trans-unit>
       <trans-unit id="be_users.username" resname="be_users.username" approved="yes">
         <source>Username</source>
         <target state="final">Benutzername</target>
@@ -74,6 +74,10 @@
       <trans-unit id="be_users.password" resname="be_users.password" approved="yes">
         <source>Password</source>
         <target state="final">Passwort</target>
+      </trans-unit>
+      <trans-unit id="be_users.mfa" resname="be_users.mfa" approved="yes">
+        <source>Multi-factor authentication</source>
+        <target state="final">Multi-Factor Authentifizierung</target>
       </trans-unit>
       <trans-unit id="be_users.avatar" resname="be_users.avatar" approved="yes">
         <source>Avatar</source>
@@ -94,14 +98,6 @@
       <trans-unit id="be_users.usergroup_list_title" resname="be_users.usergroup_list_title" approved="yes">
         <source>List groups</source>
         <target state="final">Gruppen anzeigen</target>
-      </trans-unit>
-      <trans-unit id="be_users.disableIPlock" resname="be_users.disableIPlock" approved="yes">
-        <source>Disable IP lock for user</source>
-        <target state="final">IP-Einschränkung für Benutzer deaktivieren</target>
-      </trans-unit>
-      <trans-unit id="be_users.IPlockState" resname="be_users.IPlockState" approved="yes">
-        <source>IP lock for user</source>
-        <target state="final">IP-Einschränkung für Benutzer</target>
       </trans-unit>
       <trans-unit id="be_users.admin" resname="be_users.admin" approved="yes">
         <source>Admin (!)</source>
@@ -180,8 +176,20 @@
         <target state="final">Verzeichnis: Rekursiv löschen</target>
       </trans-unit>
       <trans-unit id="be_users.lang" resname="be_users.lang" approved="yes">
-        <source>Default Language</source>
-        <target state="final">Standardsprache</target>
+        <source>User Interface Language</source>
+        <target state="final">Sprache der Benutzeroberfläche</target>
+      </trans-unit>
+      <trans-unit id="be_users.languageItemGroups.default" resname="be_users.languageItemGroups.default" approved="yes">
+        <source>Default</source>
+        <target state="final">Standard</target>
+      </trans-unit>
+      <trans-unit id="be_users.languageItemGroups.installed" resname="be_users.languageItemGroups.installed" approved="yes">
+        <source>Installed Languages</source>
+        <target state="final">Installierte Sprachen</target>
+      </trans-unit>
+      <trans-unit id="be_users.languageItemGroups.unavailable" resname="be_users.languageItemGroups.unavailable" approved="yes">
+        <source>Unavailable Languages</source>
+        <target state="final">Nicht verfügbare Sprachen</target>
       </trans-unit>
       <trans-unit id="be_users.tabs.rights" resname="be_users.tabs.rights" approved="yes">
         <source>Access Rights</source>
@@ -385,7 +393,7 @@
       </trans-unit>
       <trans-unit id="sys_filemounts.base_absolute" resname="sys_filemounts.base_absolute" approved="yes">
         <source>absolute (root) / </source>
-        <target state="final">absolut (root) / </target>
+        <target state="final">absolut (Wurzel) / </target>
       </trans-unit>
       <trans-unit id="sys_filemounts.base_relative" resname="sys_filemounts.base_relative" approved="yes">
         <source>relative ../fileadmin/</source>
@@ -434,10 +442,6 @@
       <trans-unit id="sys_workspace.disable_autocreate" resname="sys_workspace.disable_autocreate" approved="yes">
         <source>Disable auto-versioning when editing</source>
         <target state="final">Automatische Versionierung beim Bearbeiten deaktivieren</target>
-      </trans-unit>
-      <trans-unit id="sys_workspace.swap_modes" resname="sys_workspace.swap_modes" approved="yes">
-        <source>Swap modes</source>
-        <target state="final">Tauschmodus</target>
       </trans-unit>
       <trans-unit id="sys_workspace.publish_access" resname="sys_workspace.publish_access" approved="yes">
         <source>Publish access</source>
@@ -514,34 +518,6 @@
       <trans-unit id="sys_filemounts" resname="sys_filemounts" approved="yes">
         <source>Filemount</source>
         <target state="final">Verzeichnisfreigaben</target>
-      </trans-unit>
-      <trans-unit id="sys_collection" resname="sys_collection" approved="yes">
-        <source>Record Collection</source>
-        <target state="final">Datensatz-Sammlung</target>
-      </trans-unit>
-      <trans-unit id="sys_collection.title" resname="sys_collection.title" approved="yes">
-        <source>Collection-Name</source>
-        <target state="final">Sammlungsname</target>
-      </trans-unit>
-      <trans-unit id="sys_collection.description" resname="sys_collection.description" approved="yes">
-        <source>Description</source>
-        <target state="final">Beschreibung</target>
-      </trans-unit>
-      <trans-unit id="sys_collection.table_name" resname="sys_collection.table_name" approved="yes">
-        <source>Record Type of Collection</source>
-        <target state="final">Datensatztyp der Sammlung</target>
-      </trans-unit>
-      <trans-unit id="sys_collection.items" resname="sys_collection.items" approved="yes">
-        <source>Items</source>
-        <target state="final">Elemente</target>
-      </trans-unit>
-      <trans-unit id="sys_collection.type" resname="sys_collection.type" approved="yes">
-        <source>Type of collection</source>
-        <target state="final">Typ der Sammlung</target>
-      </trans-unit>
-      <trans-unit id="sys_collection.type.static" resname="sys_collection.type.static" approved="yes">
-        <source>static record composition</source>
-        <target state="final">Zusammenstellung statischer Datensätze</target>
       </trans-unit>
       <trans-unit id="sys_file_storage" resname="sys_file_storage" approved="yes">
         <source>File Storage</source>

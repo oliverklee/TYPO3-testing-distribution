@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814802" source-language="en" datatype="plaintext" original="EXT:frontend/Resources/Private/Language/locallang_csh_systmpl.xlf" date="2011-10-17T20:22:32Z" product-name="context_help" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:frontend/Resources/Private/Language/locallang_csh_systmpl.xlf" date="2011-10-17T20:22:32Z" product-name="context_help" target-language="de">
     <header/>
     <body>
       <trans-unit id=".description" resname=".description" approved="yes">
@@ -48,10 +48,6 @@ The Web&gt;Template module contains tools which will help you to edit and valida
       <trans-unit id="title.description" resname="title.description" approved="yes">
         <source>The title of the template record is only an internal label and does not have any effect on the output in the frontend.</source>
         <target state="final">Der Titel des Template-Datensatzes wird lediglich intern verwendet und erscheint zu keiner Zeit innerhalb der Website.</target>
-      </trans-unit>
-      <trans-unit id="sitetitle.description" resname="sitetitle.description" approved="yes">
-        <source>Website title. Typically this will automatically be prefixed all page titles in the &lt;title&gt; tag of the frontend pages.</source>
-        <target state="final">Website-Titel. Entspricht dem HTML-Tag &lt;title&gt; und wird normalerweise innerhalb der Titelleiste des Browsers auf jeder Seite angezeigt.</target>
       </trans-unit>
       <trans-unit id="constants.description" resname="constants.description" approved="yes">
         <source>TypoScript Constants.</source>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814796" source-language="en" datatype="plaintext" original="EXT:frontend/Resources/Private/Language/locallang_csh_fe_users.xlf" date="2011-10-17T20:22:32Z" product-name="context_help" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:frontend/Resources/Private/Language/locallang_csh_fe_users.xlf" date="2011-10-17T20:22:32Z" product-name="context_help" target-language="de">
     <header/>
     <body>
       <trans-unit id="username.description" resname="username.description" approved="yes">
@@ -30,23 +30,6 @@
       <trans-unit id="usergroup.details" resname="usergroup.details" approved="yes">
         <source>When a user logs in he is able to view all content which is access restricted to the user &lt;em&gt;group(s)&lt;/em&gt; the user is a member of. Therefore the user login primarily makes sense with regard to the member groups.</source>
         <target state="final">Sobald sich ein Benutzer innerhalb der Website anmeldet, erhält er Zugang zu allen Bereichen, deren &lt;em&gt;Gruppen&lt;/em&gt;mitglied er ist. Mit Benutzergruppen lassen sich also geschützte, gruppenspezifische Website-Bereiche erstellen.</target>
-      </trans-unit>
-      <trans-unit id="lockToDomain.description" resname="lockToDomain.description" approved="yes">
-        <source>Enter the host name from which the user is forced to login. NOTICE: this is not a security feature and can be circumvented by faking HTTP_HOST.</source>
-        <target state="final">Geben Sie den Rechnernamen oder die Netzwerkadresse an, von welchem sich der Benutzer einloggen muss. HINWEIS: Dies ist keine Sicherheitsfunktion und kann umgangen werden, wenn HTTP_HOST gefälscht wird.</target>
-      </trans-unit>
-      <trans-unit id="lockToDomain.details" resname="lockToDomain.details" approved="yes">
-        <source>A TYPO3 system may have multiple domains pointing to it. Therefore this option secures that users can login only from a certain host name.</source>
-        <target state="final">Ein TYPO3-System kann unter Umständen über mehrere verschiedene Domänennamen erreichbar sein. Deshalb kann mit dieser Einstellung sicher gestellt werden, dass sich Benutzer nur von einer bestimmten Domain aus anmelden können.</target>
-      </trans-unit>
-      <trans-unit id="lockToDomain.syntax" resname="lockToDomain.syntax" approved="yes">
-        <source>Either a domain name, "www.typo3.org" or an IP address, "10.34.222.83"</source>
-        <target state="final">Entweder ein Domänenname wie "www.typo3.com" oder eine IP-Adresse wie "10.20.7.70".</target>
-      </trans-unit>
-      <trans-unit id="_lockToDomain.seeAlso" resname="_lockToDomain.seeAlso" approved="yes">
-        <source>fe_groups:lockToDomain</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-        <target state="final">fe_groups:lockToDomain</target>
       </trans-unit>
       <trans-unit id="name.description" resname="name.description" approved="yes">
         <source>Enter the regular name of the user, both first- and surname.</source>

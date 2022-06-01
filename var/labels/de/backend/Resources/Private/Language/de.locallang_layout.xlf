@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814785" source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_layout.xlf" date="2011-10-17T20:22:32Z" product-name="cms" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_layout.xlf" date="2011-10-17T20:22:32Z" product-name="cms" target-language="de">
     <header/>
     <body>
       <trans-unit id="title" resname="title" approved="yes">
@@ -51,6 +51,10 @@
         <source>Move page</source>
         <target state="final">Seite verschieben</target>
       </trans-unit>
+      <trans-unit id="move_folder" resname="move_folder" approved="yes">
+        <source>Move folder</source>
+        <target state="final">Ordner verschieben</target>
+      </trans-unit>
       <trans-unit id="deleteItem" resname="deleteItem" approved="yes">
         <source>Delete</source>
         <target state="final">Löschen</target>
@@ -58,10 +62,6 @@
       <trans-unit id="deleteWarning" resname="deleteWarning" approved="yes">
         <source>Are you sure you want to delete this record?</source>
         <target state="final">Diesen Datensatz tatsächlich löschen?</target>
-      </trans-unit>
-      <trans-unit id="recursiveDeleteWarning" resname="recursiveDeleteWarning" approved="yes">
-        <source>You can recover pages with subpages only with the recycler. Are you sure you want to delete these pages?</source>
-        <target state="final">Seiten mit Unterseiten können Sie nur mit dem Papierkorb wiederherstellen. Diese Seiten tatsächlich löschen?</target>
       </trans-unit>
       <trans-unit id="pasteIntoColumn" resname="pasteIntoColumn" approved="yes">
         <source>Paste into this column</source>
@@ -162,6 +162,10 @@
       <trans-unit id="editPageProperties" resname="editPageProperties" approved="yes">
         <source>Edit page properties</source>
         <target state="final">Seiteneigenschaften bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="editPageTitle" resname="editPageTitle" approved="yes">
+        <source>Edit the page title</source>
+        <target state="final">Seitentitel bearbeiten</target>
       </trans-unit>
       <trans-unit id="editPageLanguageOverlayProperties" resname="editPageLanguageOverlayProperties" approved="yes">
         <source>Edit page language overlay properties</source>
@@ -447,6 +451,10 @@
         <source>Localize page &quot;{0}&quot; into {1}</source>
         <target state="final">Seite "{0}" nach {1} lokalisieren</target>
       </trans-unit>
+      <trans-unit id="localize.wizard.button.copy" resname="localize.wizard.button.copy" approved="yes">
+        <source>Copy</source>
+        <target state="final">Kopieren</target>
+      </trans-unit>
       <trans-unit id="localize.wizard.button.cancel" resname="localize.wizard.button.cancel" approved="yes">
         <source>Cancel</source>
         <target state="final">Abbrechen</target>
@@ -475,29 +483,21 @@
         <source>Step {0} of {1}</source>
         <target state="final">Schritt {0} von {1}</target>
       </trans-unit>
-      <trans-unit id="localize.educate.translate" resname="localize.educate.translate" xml:space="preserve" approved="yes">
-				<source>Translating content will create a direct connection between the original language and the language you translate to.&lt;br&gt;
-					This means that moving and element or setting meta information like start- or endtime will be taken from the original content and you will not be able to set these values on a translated content element.&lt;br&gt;
-					&lt;strong&gt;Use this when your workflow demands a strict translation workflow.&lt;/strong&gt;
-				</source>
-			<target state="final">Das Übersetzen von Inhalten schafft eine direkte Verbindung zwischen der Originalsprache und der Sprache, in die Sie übersetzen.&lt;br&gt;
-					Das bedeutet, dass das Verschieben eines Elements oder das Setzen von Metainformationen wie Start- oder Endzeit vom ursprünglichen Inhalt übernommen werden und Sie diese Werte im übersetzten Inhaltselement nicht separat setzen können.&lt;br&gt;
-					&lt;strong&gt;Verwenden Sie dies, wenn Ihr Workflow einen strikten Übersetzungsprozess erfordert.&lt;/strong&gt;
-				</target></trans-unit>
       <trans-unit id="localize.educate.copy" resname="localize.educate.copy" xml:space="preserve" approved="yes">
 				<source>Copying content will take the content elements from the source language and create copies in a different language.&lt;br&gt;
 					This means that you will be able to move content elements around freely, but you will not have the benefit of being able to compare changes made in the source language later on.&lt;br&gt;
 					&lt;strong&gt;Use this when you want to have freedom in designing your translated website.&lt;/strong&gt;
 				</source>
-			<target state="final">Beim Kopieren von Inhalten werden Kopien der Inhaltselemente der Originalsprache in einer anderen Sprache erstellt.&lt;br&gt;
-					Sie werden Inhaltselemente frei bewegen können, aber Sie werden nicht die Möglichkeit haben, das Element mit Änderungen zu vergleichen, die in der Originalsprache gemacht wurden.&lt;br&gt;
-					&lt;strong&gt;Benutzen Sie diese Möglichkeit, wenn Sie Freiheit beim Entwurf Ihrer übersetzten Website wünschen.&lt;/strong&gt;</target></trans-unit>
+			<target state="final">Inhalt zu kopieren wird die Inhaltselemente der Ausgangssprache benutzen und Kopien von ihnen in einer anderen Sprache erstellen.&lt;br&gt;
+					Sie werden Inhaltselemente frei bewegen können, aber Sie werden nicht die Möglichkeit haben, das Element mit Änderungen zu vergleichen, die in der Ausgangssprache gemacht wurden.&lt;br&gt;
+					&lt;strong&gt;Benutzen Sie diese Möglichkeit, wenn Sie Freiheit beim Entwurf Ihrer übersetzten Website wünschen.&lt;/strong&gt;
+				</target></trans-unit>
       <trans-unit id="localize.educate.noTranslate" resname="localize.educate.noTranslate" xml:space="preserve" approved="yes">
 				<source>Using the translation wizard is not possible, because either translation is disabled or the translated page is in "mixed mode". Being in "mixed mode" means that both translated records that have a source language and "free mode" records without a parent, are present.&lt;br&gt;
 					We highlighted the problematic records for you in this case.
 				</source>
-			<target state="final">Die Verwendung des Übersetzungsassistenten ist nicht möglich, da entweder die Übersetzung deaktiviert ist oder die übersetzte Seite im "gemischten Modus" ist. "Gemischter Modus" bedeutet, dass sowohl übersetzte Datensätze mit einer Ausgangssprache als auch solche im "freien Modus", also ohne Bezug zu einem Element in der Ausgangssprache, vorhanden sind.&lt;br&gt;
-					Wir haben in diesem Fall die problematischen Datensätze für Sie hervorgehoben.
+			<target state="final">Die Verwendung des Übersetzungsassistenten ist nicht möglich, da entweder die Übersetzung deaktiviert ist oder sich die übersetzte Seite im "gemischten Modus" befindet. Im "gemischten Modus" zu sein bedeutet, dass sowohl übersetzte Datensätze, die eine Ausgangssprache haben, als auch Datensätze im "freien Modus" ohne einen Verknüpfung zum übergeordneten Datensatz vorhanden sind.&lt;br&gt;
+					Wir haben die problematischen Datensätze für Sie in diesem Fall hervorgehoben.
 				</target></trans-unit>
       <trans-unit id="error.invalidBackendLayout" resname="error.invalidBackendLayout" approved="yes">
         <source>The selected page layout is mis-configured, no columns are specified to be editable. Please update your backend layout to have at least one parameter "colPos" set.</source>

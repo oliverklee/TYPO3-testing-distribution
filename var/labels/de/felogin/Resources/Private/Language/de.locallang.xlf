@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814821" source-language="en" datatype="plaintext" original="EXT:felogin/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:32Z" product-name="felogin" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:felogin/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:32Z" product-name="felogin" target-language="de">
     <header/>
     <body>
       <trans-unit id="login_user_info" resname="login_user_info" approved="yes">
@@ -198,6 +198,10 @@ Aus Sicherheitsgründen ist dieser Link nur gültig bis %s. Wenn Sie den Link ni
         <source>Your new password</source>
         <target state="final">Ihr neues Passwort</target>
       </trans-unit>
+      <trans-unit id="password_recovery_link" resname="password_recovery_link" approved="yes">
+        <source>Password recovery link</source>
+        <target state="final">Passwort-Wiederherstellungslink</target>
+      </trans-unit>
       <trans-unit id="password_recovery_link_expired" resname="password_recovery_link_expired" approved="yes">
         <source>Your password recovery link is expired.</source>
         <target state="final">Ihr Link zum Passwort zurücksetzen ist abgelaufen.</target>
@@ -219,7 +223,8 @@ Aus Sicherheitsgründen ist dieser Link nur gültig bis %s. Wenn Sie den Link ni
 			<target state="final">&lt;p&gt;Hallo %s,&lt;/p&gt;
 &lt;p&gt;Diese E-Mail wurde als Antwort auf Ihre Anfrage gesendet, Ihr Passwort zurückzusetzen. Bitte klicken Sie auf den Link unten.&lt;/p&gt;
 &lt;p&gt;%s&lt;/p&gt;
-&lt;p&gt;Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Wenn Sie den Link vorher nicht aufrufen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.&lt;/p&gt;</target></trans-unit>
+&lt;p&gt;Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Wenn Sie den Link vorher nicht aufrufen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.&lt;/p&gt;
+				</target></trans-unit>
       <trans-unit id="forgot_validate_reset_password_plaintext" resname="forgot_validate_reset_password" xml:space="preserve" approved="yes">
 				<source>Dear %s,
 

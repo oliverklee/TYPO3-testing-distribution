@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1522785604" source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_siteconfiguration_tca.xlf" date="2018-02-27T22:22:32Z" product-name="backend" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_siteconfiguration_tca.xlf" date="2018-02-27T22:22:32Z" product-name="backend" target-language="de">
     <header/>
     <body>
       <trans-unit id="site.ctrl.title" resname="site.ctrl.title" approved="yes">
@@ -30,6 +30,14 @@
       <trans-unit id="site.languages" resname="site.languages" approved="yes">
         <source>Available Languages for this Site</source>
         <target state="final">Verfügbare Sprachen für diese Seite</target>
+      </trans-unit>
+      <trans-unit id="site.languages.new" resname="site.languages.new" approved="yes">
+        <source>New language</source>
+        <target state="final">Neue Sprache</target>
+      </trans-unit>
+      <trans-unit id="site.languages.createNew" resname="site.languages.createNew" approved="yes">
+        <source>Create new language</source>
+        <target state="final">Neue Sprache anlegen</target>
       </trans-unit>
       <trans-unit id="site.errorHandling" resname="site.errorHandling" approved="yes">
         <source>Error Handling</source>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814790" source-language="en" datatype="plaintext" original="EXT:frontend/Resources/Private/Language/locallang_tca.xlf" date="2011-10-17T20:22:32Z" product-name="cms" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:frontend/Resources/Private/Language/locallang_tca.xlf" date="2011-10-17T20:22:32Z" product-name="cms" target-language="de">
     <header/>
     <body>
       <trans-unit id="mod_tx_cms_webinfo_page" resname="mod_tx_cms_webinfo_page" approved="yes">
@@ -150,10 +150,6 @@
       <trans-unit id="pages.hidden_checkbox_1_formlabel" resname="pages.hidden_checkbox_1_formlabel" approved="yes">
         <source>Disable</source>
         <target state="final">Deaktivieren</target>
-      </trans-unit>
-      <trans-unit id="pages.layout_formlabel" resname="pages.layout_formlabel" approved="yes">
-        <source>Frontend Layout</source>
-        <target state="final">Frontend-Layout</target>
       </trans-unit>
       <trans-unit id="pages.layout.I.1" resname="pages.layout.I.1" approved="yes">
         <source>Layout 1</source>
@@ -579,10 +575,6 @@
         <source>Groups</source>
         <target state="final">Benutzergruppen:</target>
       </trans-unit>
-      <trans-unit id="fe_users.lockToDomain" resname="fe_users.lockToDomain" approved="yes">
-        <source>Lock to Domain</source>
-        <target state="final">An Domäne binden:</target>
-      </trans-unit>
       <trans-unit id="fe_users.tabs.personelData" resname="fe_users.tabs.personelData" approved="yes">
         <source>Personal Data</source>
         <target state="final">Persönliche Daten</target>
@@ -606,10 +598,6 @@
       <trans-unit id="fe_groups.title" resname="fe_groups.title" approved="yes">
         <source>Group Title</source>
         <target state="final">Gruppenname:</target>
-      </trans-unit>
-      <trans-unit id="fe_groups.lockToDomain" resname="fe_groups.lockToDomain" approved="yes">
-        <source>Lock to Domain</source>
-        <target state="final">An Domäne binden:</target>
       </trans-unit>
       <trans-unit id="fe_groups.subgroup" resname="fe_groups.subgroup" approved="yes">
         <source>Subgroups</source>
@@ -638,10 +626,6 @@
       <trans-unit id="sys_template.clear" resname="sys_template.clear" approved="yes">
         <source>Clear</source>
         <target state="final">Löschen:</target>
-      </trans-unit>
-      <trans-unit id="sys_template.sitetitle" resname="sys_template.sitetitle" approved="yes">
-        <source>Website Title</source>
-        <target state="final">Website-Titel:</target>
       </trans-unit>
       <trans-unit id="sys_template.constants" resname="sys_template.constants" approved="yes">
         <source>Constants</source>

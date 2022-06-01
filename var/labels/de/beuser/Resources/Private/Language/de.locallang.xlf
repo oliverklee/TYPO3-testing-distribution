@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814783" source-language="en" datatype="plaintext" original="EXT:beuser/Resources/Private/Language/locallang.xlf" date="2012-07-16T10:11:32Z" product-name="beuser" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:beuser/Resources/Private/Language/locallang.xlf" date="2012-07-16T10:11:32Z" product-name="beuser" target-language="de">
     <header/>
     <body>
       <trans-unit id="activeSessions" resname="activeSessions" approved="yes">
@@ -103,10 +103,6 @@
         <source>File mountpoints</source>
         <target state="final">Datei-Freigabepunkte</target>
       </trans-unit>
-      <trans-unit id="disableIpLock" resname="disableIpLock" approved="yes">
-        <source>Disable IP lock</source>
-        <target state="final">IP-Einschränkung deaktivieren</target>
-      </trans-unit>
       <trans-unit id="compareBackendUsers" resname="compareBackendUsers" approved="yes">
         <source>Compare backend users</source>
         <target state="final">Backend-Benutzer vergleichen</target>
@@ -163,6 +159,10 @@
         <source>Filter</source>
         <target state="final">Filtern</target>
       </trans-unit>
+      <trans-unit id="reset" resname="reset" approved="yes">
+        <source>Reset</source>
+        <target state="final">Zurücksetzen</target>
+      </trans-unit>
       <trans-unit id="reallyLogout" resname="reallyLogout" approved="yes">
         <source>Really logout</source>
         <target state="final">Wirklich abmelden</target>
@@ -189,7 +189,7 @@
       </trans-unit>
       <trans-unit id="backendUserAdministration" resname="backendUserAdministration" approved="yes">
         <source>Backend User Administration</source>
-        <target state="final">Backend-Benutzerverwaltung</target>
+        <target state="final">Backend-Benutzer-Verwaltung</target>
       </trans-unit>
       <trans-unit id="backendUserGroup" resname="backendUserGroup" approved="yes">
         <source>User group</source>
@@ -238,6 +238,14 @@
       <trans-unit id="online" resname="online" approved="yes">
         <source>online</source>
         <target state="final">online</target>
+      </trans-unit>
+      <trans-unit id="lockedMfaProviders" resname="lockedMfaProviders" approved="yes">
+        <source>Locked MFA providers</source>
+        <target state="final">Gesperrte MFA-Anbieter</target>
+      </trans-unit>
+      <trans-unit id="mfaEnabled" resname="mfaEnabled" approved="yes">
+        <source>MFA enabled</source>
+        <target state="final">MFA aktiviert</target>
       </trans-unit>
       <trans-unit id="visibility.hide" resname="visibility.hide" approved="yes">
         <source>Hide</source>
@@ -346,6 +354,34 @@
       <trans-unit id="compare.direct.direct" resname="compare.direct.direct" approved="yes">
         <source>Direct</source>
         <target state="final">Direkt</target>
+      </trans-unit>
+      <trans-unit id="pagination.previous" resname="pagination.previous" approved="yes">
+        <source>previous</source>
+        <target state="final">zurück</target>
+      </trans-unit>
+      <trans-unit id="pagination.next" resname="pagination.next" approved="yes">
+        <source>next</source>
+        <target state="final">weiter</target>
+      </trans-unit>
+      <trans-unit id="pagination.first" resname="pagination.first" approved="yes">
+        <source>first</source>
+        <target state="final">Anfang</target>
+      </trans-unit>
+      <trans-unit id="pagination.last" resname="pagination.last" approved="yes">
+        <source>last</source>
+        <target state="final">Ende</target>
+      </trans-unit>
+      <trans-unit id="pagination.records" resname="pagination.records" approved="yes">
+        <source>Records</source>
+        <target state="final">Einträge</target>
+      </trans-unit>
+      <trans-unit id="pagination.page" resname="pagination.page" approved="yes">
+        <source>Page</source>
+        <target state="final">Seite</target>
+      </trans-unit>
+      <trans-unit id="pagination.refresh" resname="pagination.refresh" approved="yes">
+        <source>Refresh</source>
+        <target state="final">Aktualisieren</target>
       </trans-unit>
     </body>
   </file>

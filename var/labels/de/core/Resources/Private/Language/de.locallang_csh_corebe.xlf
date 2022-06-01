@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814854" source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_csh_corebe.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_csh_corebe.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
     <header/>
     <body>
       <trans-unit id=".alttitle" resname=".alttitle" approved="yes">
@@ -850,11 +850,9 @@ When the numeric clipboard pads are enabled you will be able to place multiple i
         <target state="final">Sie können für Bilder die Anzeige von Vorschaubildern aktivieren und die Zwischenablage anzeigen, wenn Sie mehrere Dateien oder Ordner gleichzeitig kopieren, ausschneiden oder einfügen möchten.</target>
       </trans-unit>
       <trans-unit id="_filelist_options.seeAlso" resname="_filelist_options.seeAlso" xml:space="preserve" approved="yes">
-				<source>xMOD_csh_corebe:list_options,
-_MOD_user_setup:option_showThumbs,
-xMOD_csh_corebe:filelist_clipboard</source>
+				<source>xMOD_csh_corebe:list_options, xMOD_csh_corebe:filelist_clipboard</source>
 				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">xMOD_csh_corebe:list_options, _MOD_user_setup:option_showThumbs, xMOD_csh_corebe:filelist_clipboard</target></trans-unit>
+			<target state="final">xMOD_csh_corebe:list_options, xMOD_csh_corebe:filelist_Zwischenablage</target></trans-unit>
       <trans-unit id="_filelist_options.image" resname="_filelist_options.image" approved="yes">
         <source>EXT:core/Resources/Public/Images/cshimages/core_48.png</source>
         <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
