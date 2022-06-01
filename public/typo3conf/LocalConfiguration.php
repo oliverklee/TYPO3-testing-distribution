@@ -4,7 +4,6 @@ return [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$dXBmSUYva2EzT2hZZEVEUA$1JtKq8v7WusoVuZ9z8BuIPP0tw03gV9CwySkaZE+DX0',
-        'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -22,7 +21,7 @@ return [
     'EXT' => [],
     'EXTCONF' => [
         'helhum-typo3-console' => [
-            'initialUpgradeDone' => '10.4',
+            'initialUpgradeDone' => '11.5',
         ],
         'lang' => [
             'availableLanguages' => [
@@ -38,39 +37,15 @@ return [
             'loginFootnote' => '',
             'loginHighlightColor' => '',
             'loginLogo' => '',
+            'loginLogoAlt' => '',
         ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
-        'mkforms' => [
-            'activateCache' => '0',
-            'listerNameId' => '0',
-        ],
-        'rn_base' => [
-            'activateCache' => '0',
-            'activateSubstCache' => '0',
-            'debugKey' => '',
-            'dieOnMayday' => '1',
-            'exceptionHandler' => '',
-            'forceException4Mayday' => '1',
-            'fromEmail' => '',
-            'loadHiddenObjects' => '0',
-            'send503HeaderOnException' => '1',
-            'sendEmailOnException' => '',
-            'verboseMayday' => '0',
-        ],
-        'seminars' => [
-            'eMailFormatForAttendees' => '0',
-            'enableConfigCheck' => '1',
-        ],
-        'static_info_tables' => [
-            'enableManager' => '0',
-        ],
     ],
     'FE' => [
         'debug' => true,
-        'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
