@@ -24,7 +24,6 @@ return [
             'backend' => 'a:6:{s:9:"loginLogo";s:0:"";s:19:"loginHighlightColor";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:11:"backendLogo";s:0:"";s:14:"backendFavicon";s:0:"";}',
             'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
             'mkforms' => 'a:2:{s:13:"activateCache";s:1:"0";s:12:"listerNameId";s:1:"0";}',
-            'onetimeaccount' => 'a:2:{s:17:"enableConfigCheck";s:1:"1";s:13:"enableLogging";s:1:"0";}',
             'rn_base' => 'a:11:{s:13:"verboseMayday";s:1:"0";s:11:"dieOnMayday";s:1:"1";s:21:"forceException4Mayday";s:1:"1";s:16:"exceptionHandler";s:0:"";s:20:"sendEmailOnException";s:0:"";s:9:"fromEmail";s:0:"";s:24:"send503HeaderOnException";s:1:"1";s:17:"loadHiddenObjects";s:1:"0";s:13:"activateCache";s:1:"0";s:18:"activateSubstCache";s:1:"0";s:8:"debugKey";s:0:"";}',
             'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
             'seminars' => 'a:2:{s:17:"enableConfigCheck";s:1:"1";s:23:"eMailFormatForAttendees";s:1:"0";}',
@@ -57,10 +56,6 @@ return [
         'mkforms' => [
             'activateCache' => '0',
             'listerNameId' => '0',
-        ],
-        'onetimeaccount' => [
-            'enableConfigCheck' => '1',
-            'enableLogging' => '0',
         ],
         'rn_base' => [
             'activateCache' => '0',
