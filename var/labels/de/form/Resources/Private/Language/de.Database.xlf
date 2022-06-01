@@ -869,7 +869,7 @@
             <target state="final">Enddatum</target></trans-unit>
       <trans-unit id="formEditor.elements.DatePicker.validators.DateRange.editor.minimum.placeholder" resname="formEditor.elements.DatePicker.validators.DateRange.editor.minimum.placeholder" xml:space="preserve" approved="yes">
                 <source>A date in format Y-m-d (e.g 2018-03-17)</source>
-            <target state="final">Ein Datum im Format d.m.Y (17.3.2018)</target></trans-unit>
+            <target state="final">Ein Datum im Format Y-m-d (z.B. 2018-03-17)</target></trans-unit>
       <trans-unit id="formEditor.elements.DatePicker.validators.DateRange.editor.maximum.placeholder" resname="formEditor.elements.DatePicker.validators.DateRange.editor.maximum.placeholder" xml:space="preserve" approved="yes">
                 <source>A date in format Y-m-d (e.g 2018-03-17)</source>
             <target state="final">Ein Datum im Format d.m.Y (17.3.2018)</target></trans-unit>
