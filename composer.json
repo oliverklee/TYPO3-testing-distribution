@@ -13,7 +13,7 @@
 	"require": {
 		"php": ">= 7.2.34",
 		"helhum/typo3-console": "^5.8.6",
-		"oliverklee/feuserextrafields": "^3.0.0",
+		"oliverklee/feuserextrafields": "^3.1.0",
 		"oliverklee/oelib": "^3.6.4",
 		"oliverklee/onetimeaccount": "^4.2.2",
 		"oliverklee/seminars": "^4.0.2",
