@@ -15,7 +15,7 @@
 		"source": "https://github.com/oliverklee/TYPO3-testing-distribution"
 	},
 	"require": {
-		"php": ">= 7.2.34",
+		"php": ">= 7.4.29",
 		"helhum/typo3-console": "^6.7.4",
 		"oliverklee/feuserextrafields": "dev-main",
 		"oliverklee/oelib": "dev-main",
@@ -59,7 +59,7 @@
 			"typo3/cms-composer-installers": true
 		},
 		"platform": {
-			"php": "7.2.34"
+			"php": "7.4.29"
 		},
 		"preferred-install": {
 			"*": "dist"
