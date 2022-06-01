@@ -4,8 +4,6 @@ vendor/bin/typo3cms install:setup -n --skip-integrity-check --database-name $TYP
 vendor/bin/typo3cms configuration:set 'BE/debug' 1
 vendor/bin/typo3cms configuration:set 'FE/debug' 1
 
-vendor/bin/typo3cms install:generatepackagestates
-vendor/bin/typo3cms extension:setupactive
 vendor/bin/typo3cms database:updateschema
 
 vendor/bin/typo3cms cache:flush
