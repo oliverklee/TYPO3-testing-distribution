@@ -9,7 +9,6 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 - [feuserextrafields](https://github.com/oliverklee/ext-feuserextrafields)
 - [oelib](https://github.com/oliverklee/ext-oelib)
 - [onetimeaccount](https://github.com/oliverklee/ext-onetimeaccount)
-  (once I have rewritten it)
 - [realty](https://github.com/oliverklee/ext-realty)
   (once it supports TYPO3 10LTS)
 - [seminars](https://github.com/oliverklee/ext-seminars)
