@@ -16,33 +16,29 @@
 	},
 	"require": {
 		"php": ">= 7.4.29",
-		"helhum/typo3-console": "^6.7.4",
-		"oliverklee/feuserextrafields": "dev-main",
-		"oliverklee/oelib": "dev-main",
-		"oliverklee/onetimeaccount": "dev-main",
-		"oliverklee/seminars": "dev-main",
+		"helhum/typo3-console": "^7.1.2",
 		"oliverklee/typo3-devsite": "dev-main",
 		"ttn/tea": "dev-main",
-		"typo3/cms-about": "^10.4",
-		"typo3/cms-adminpanel": "^10.4",
-		"typo3/cms-belog": "^10.4",
-		"typo3/cms-beuser": "^10.4",
-		"typo3/cms-core": "^10.4.28",
-		"typo3/cms-felogin": "^10.4",
-		"typo3/cms-fluid-styled-content": "^10.4",
-		"typo3/cms-form": "^10.4",
-		"typo3/cms-info": "^10.4",
-		"typo3/cms-lowlevel": "^10.4",
-		"typo3/cms-recycler": "^10.4",
-		"typo3/cms-reports": "^10.4",
-		"typo3/cms-rte-ckeditor": "^10.4",
-		"typo3/cms-setup": "^10.4",
-		"typo3/cms-tstemplate": "^10.4",
-		"typo3/cms-viewpage": "^10.4",
-		"typo3/minimal": "^10.4"
+		"typo3/cms-about": "^11.5",
+		"typo3/cms-adminpanel": "^11.5",
+		"typo3/cms-belog": "^11.5",
+		"typo3/cms-beuser": "^11.5",
+		"typo3/cms-core": "^11.5.10",
+		"typo3/cms-felogin": "^11.5",
+		"typo3/cms-fluid-styled-content": "^11.5",
+		"typo3/cms-form": "^11.5",
+		"typo3/cms-info": "^11.5",
+		"typo3/cms-lowlevel": "^11.5",
+		"typo3/cms-recycler": "^11.5",
+		"typo3/cms-reports": "^11.5",
+		"typo3/cms-rte-ckeditor": "^11.5",
+		"typo3/cms-setup": "^11.5",
+		"typo3/cms-tstemplate": "^11.5",
+		"typo3/cms-viewpage": "^11.5",
+		"typo3/minimal": "^11.5"
 	},
 	"require-dev": {
-		"ergebnis/composer-normalize": "^2.19.0",
+		"ergebnis/composer-normalize": "2.19.0",
 		"j13k/yaml-lint": "^1.1.4"
 	},
 	"repositories": [
@@ -83,7 +79,6 @@
 			"@composer:normalize"
 		],
 		"typo3-cms-scripts": [
-			"typo3cms install:generatepackagestates",
 			"typo3cms install:fixfolderstructure"
 		]
 	},
