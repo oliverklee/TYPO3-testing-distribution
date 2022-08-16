@@ -21,9 +21,9 @@ jobs:
       fail-fast: false
       matrix:
         php-version:
-          - 7.2
-          - 7.3
-          - 7.4
+          - '7.2'
+          - '7.3'
+          - '7.4'
   composer-validate:
     name: "Composer validate"
     runs-on: ubuntu-22.04
@@ -42,9 +42,9 @@ jobs:
       fail-fast: false
       matrix:
         php-version:
-          - 7.2
-          - 7.3
-          - 7.4
+          - '7.2'
+          - '7.3'
+          - '7.4'
   code-quality:
     name: "Code quality checks"
     runs-on: ubuntu-22.04
@@ -77,4 +77,4 @@ jobs:
           - "composer:normalize"
           - "yaml:lint"
         php-version:
-          - 7.4
+          - '7.4'
