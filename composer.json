@@ -43,7 +43,7 @@
 	},
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.19.0",
-		"symfony/yaml": "^5.4.3 || ^6.1.0"
+		"symfony/yaml": "^5.4.11"
 	},
 	"repositories": [
 		{
