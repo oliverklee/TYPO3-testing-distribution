@@ -47,6 +47,9 @@ return [
             'activateCache' => '0',
             'listerNameId' => '0',
         ],
+        'onetimeaccount' => [
+            'enableConfigCheck' => '1',
+        ],
         'rn_base' => [
             'activateCache' => '0',
             'activateSubstCache' => '0',
