@@ -846,8 +846,8 @@ Ohne Speichern fortfahren?</target></trans-unit>
       </trans-unit>
       <trans-unit id="file_rename.php.submit" resname="file_rename.php.submit" approved="yes">
         <source>Rename</source>
-        <note from="developer">This label is not used since TYPO3 v9.</note>
         <target state="final">Umbenennen</target>
+        <note>This label is not used since TYPO3 v9.</note>
       </trans-unit>
       <trans-unit id="file_rename.php.label.target.file" resname="file_rename.php.label.target.file" approved="yes">
         <source>New file name</source>

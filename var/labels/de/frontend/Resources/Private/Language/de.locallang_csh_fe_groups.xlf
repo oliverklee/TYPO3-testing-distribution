@@ -13,8 +13,8 @@ For instance if a page or content element was assigned access only by this group
 			<target state="final">Wenn Sie eine Benutzergruppe deaktivieren, wird die Vererbung der Eigenschaften dieser Gruppe an ihre Mitglieder unterbunden! Wenn beispielsweise eine Seite oder ein Inhaltselement so konfiguriert wurde, dass darauf nur diese Gruppe Zugriff hat, kann bei Deaktivierung dieser Gruppe niemand mehr darauf zugreifen.</target></trans-unit>
       <trans-unit id="_hidden.seeAlso" resname="_hidden.seeAlso" approved="yes">
         <source>fe_users:disable</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">fe_users:disable</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="title.description" resname="title.description" approved="yes">
         <source>Name of the group.</source>
@@ -37,8 +37,8 @@ For instance if a page or content element was assigned access only by this group
 &lt;b&gt;Hinweis:&lt;/b&gt; Der Einsatz dieser Option ist unkritisch, wenn Sie mehrere Speicherorte für Website-Benutzer definiert haben (also etwa für jede Website einen Benutzerordner).</target></trans-unit>
       <trans-unit id="_lockToDomain.seeAlso" resname="_lockToDomain.seeAlso" approved="yes">
         <source>fe_users:lockToDomain</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">fe_users:lockToDomain</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="subgroup.description" resname="subgroup.description" approved="yes">
         <source>Member of other groups.</source>
@@ -70,8 +70,8 @@ The configuration is subject to being overridden in other groups and by the TSco
       </trans-unit>
       <trans-unit id="_TSconfig.seeAlso" resname="_TSconfig.seeAlso" approved="yes">
         <source>fe_users:TSconfig</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">fe_users:TSconfig</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id=".description" resname=".description" approved="yes">
         <source>Usergroups for Website users.</source>
@@ -89,9 +89,9 @@ About access restricting pages | https://docs.typo3.org/typo3cms/GettingStartedT
       <trans-unit id="_.image" resname="_.image" xml:space="preserve" approved="yes">
 				<source>EXT:frontend/Resources/Public/Images/cshimages/fegroups_3.png,
 EXT:frontend/Resources/Public/Images/cshimages/fegroups_4.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:frontend/Resources/Public/Images/cshimages/fegroups_3.png,
-EXT:frontend/Resources/Public/Images/cshimages/fegroups_4.png</target></trans-unit>
+EXT:frontend/Resources/Public/Images/cshimages/fegroups_4.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id=".image_descr" resname=".image_descr" xml:space="preserve" approved="yes">
 				<source>The form for editing frontend users groups.
 Pages, Content Elements and other records for frontend display often have a selector box where you can define access restriction by selecting access for a certain group only.</source>

@@ -34,10 +34,10 @@ Bentzer und Gruppen [Technisch] | https://docs.typo3.org/typo3cms/InsideTypo3Ref
 				<source>EXT:core/Resources/Public/Images/cshimages/beuser_2.png,
 EXT:core/Resources/Public/Images/cshimages/beuser_1.png,
 EXT:core/Resources/Public/Images/cshimages/beuser_3.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:core/Resources/Public/Images/cshimages/beuser_2.png,
 EXT:core/Resources/Public/Images/cshimages/beuser_1.png,
-EXT:core/Resources/Public/Images/cshimages/beuser_3.png</target></trans-unit>
+EXT:core/Resources/Public/Images/cshimages/beuser_3.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id=".image_descr" resname=".image_descr" xml:space="preserve" approved="yes">
 				<source>Backend users are found in the root of the page tree. "Admin" backend users can always be recognized on their icon being red while normal users have a blue icon.
 The editing form of a backend users record.
@@ -53,8 +53,8 @@ The "Tools &gt; User Admin" module where you can get an overview of the users on
       </trans-unit>
       <trans-unit id="_username.seeAlso" resname="_username.seeAlso" approved="yes">
         <source>be_users:password</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">be_users:password</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="password.description" resname="password.description" approved="yes">
         <source>Enter the password for the backend username above (Notice the value you enter &lt;i&gt;will&lt;/i&gt; be readable in the field!).</source>
@@ -73,8 +73,8 @@ Users can change their password from the User &gt; Setup module</source>
 			<target state="final">Das Feld für das Passwort ist - ebenso wie das für den Benutzernamen - ein Pflichtfeld und muss ausgefüllt werden. Passwörter werden verschlüsselt (als MD5-Hash), sobald Sie dieses Eingabefeld verlassen. Damit wird sicher gestellt, dass keinerlei Klartextpasswörter über das Internet gesendet werden. Dieser Vorgang findet auch bei der Anmeldung am System statt. Auch wenn mit dieser Methode prinzipiell sichergestellt wird, dass keine Passwörter im Klartext übertragen werden, entspricht dies &lt;i&gt;nicht&lt;/i&gt; einer verschlüsselten Kommunikation! Die größtmögliche Sicherheit für Ihr System erreichen Sie, wenn Sie TYPO3 auf einem sicheren Server (mit SSL und HTTPS) installieren. Das Passwort wird in der Datenbank als sogenannter MD5-Hash-Wert gespeichert und kann deshalb nicht rückübersetzt werden. Aus diesem Grund müssen verloren gegangene oder vergessene Benutzerpasswörter durch neue ersetzt werden. &lt;b&gt;Hinweis&lt;/b&gt; Bei der Eingabe erscheint im Eingabefeld das Passwort zunächst im Klartext (unverschlüsselt). Beim Verlassen des Feldes erscheinen dann die gewohnten "Passwortpunkte". &lt;b&gt;Passwortänderung durch Benutzer&lt;/b&gt; Benutzer können ihr Passwort innerhalb ihres Benutzerprofils auch selbst ändern.</target></trans-unit>
       <trans-unit id="_password.seeAlso" resname="_password.seeAlso" approved="yes">
         <source>_MOD_user_setup:option_newPassword</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">_MOD_user_setup:option_newPassword</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="usergroup.description" resname="usergroup.description" approved="yes">
         <source>Assign backend user groups to the user.</source>
@@ -87,8 +87,8 @@ The first (top) group in the list is the group which will, by default, be the ow
       <trans-unit id="_usergroup.seeAlso" resname="_usergroup.seeAlso" xml:space="preserve" approved="yes">
 				<source>be_users:TSconfig,
 be_groups</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_users:TSconfig, be_groups</target></trans-unit>
+				
+			<target state="final">be_users:TSconfig, be_groups</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="lockToDomain.description" resname="lockToDomain.description" approved="yes">
         <source>Enter the host name from which the user is forced to login. NOTICE: this is not a security feature and can be circumvented by faking HTTP_HOST.</source>
         <target state="final">Geben Sie den Rechnernamen oder die Netzwerkadresse an, von welcher sich der Benutzer anmelden muss. HINWEIS: Das ist keine Sicherheitsfunktion und kann umgangen werden, wenn der HTTP_HOST gefälscht wird.</target>
@@ -101,8 +101,8 @@ be_groups</source>
 				<source>be_groups:lockToDomain,
 fe_users:lockToDomain,
 fe_groups:lockToDomain</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_groups:lockToDomain, fe_users:lockToDomain, fe_groups:lockToDomain</target></trans-unit>
+				
+			<target state="final">be_groups:lockToDomain, fe_users:lockToDomain, fe_groups:lockToDomain</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="disableIPlock.description" resname="disableIPlock.description" approved="yes">
         <source>Disable the lock of the backend users session to the remote IP number.</source>
         <target state="final">Mit dieser Option können bestehende Anmeldebeschränkungen (IP-Adressen) für diesen Benutzer deaktiviert werden.</target>
@@ -126,14 +126,14 @@ be_users:file_mountpoints,
 be_users:options,
 xMOD_csh_corebe:perm_module,
 xMOD_csh_corebe:pagetree</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_groups:db_mountpoints, be_users:file_mountpoints, be_users:options, xMOD_csh_corebe:perm_module, xMOD_csh_corebe:pagetree</target></trans-unit>
+				
+			<target state="final">be_groups:db_mountpoints, be_users:file_mountpoints, be_users:options, xMOD_csh_corebe:perm_module, xMOD_csh_corebe:pagetree</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="_db_mountpoints.image" resname="_db_mountpoints.image" xml:space="preserve" approved="yes">
 				<source>EXT:core/Resources/Public/Images/cshimages/be_groups_3.png,
 EXT:core/Resources/Public/Images/cshimages/be_groups_4.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:core/Resources/Public/Images/cshimages/be_groups_3.png,
-EXT:core/Resources/Public/Images/cshimages/be_groups_4.png</target></trans-unit>
+EXT:core/Resources/Public/Images/cshimages/be_groups_4.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="db_mountpoints.image_descr" resname="db_mountpoints.image_descr" xml:space="preserve" approved="yes">
 				<source>A DB mount is assigned to the user. Users can only operate on pages and records which are inside their DB mounts!
 When a page is mounted for a user it will become the root of their page tree. The user must have access to the page through the regular page permissions set in the Web &gt; Access module.</source>
@@ -153,8 +153,8 @@ be_users:db_mountpoints,
 be_users:options,
 xMOD_csh_corebe:filetree,
 sys_filemounts</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_groups:file_mountpoints, be_users:db_mountpoints, be_users:options, xMOD_csh_corebe:filetree, sys_filemounts</target></trans-unit>
+				
+			<target state="final">be_groups:file_mountpoints, be_users:db_mountpoints, be_users:options, xMOD_csh_corebe:filetree, sys_filemounts</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="email.description" resname="email.description" approved="yes">
         <source>Enter the email address of the user.</source>
         <target state="final">Geben Sie die E-Mail-Adresse des Benutzers an.</target>
@@ -166,8 +166,8 @@ sys_filemounts</source>
       <trans-unit id="_email.seeAlso" resname="_email.seeAlso" xml:space="preserve" approved="yes">
 				<source>be_users:realName,
 _MOD_user_setup:option_newPassword</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_users:realName, _MOD_user_setup:option_newPassword</target></trans-unit>
+				
+			<target state="final">be_users:realName, _MOD_user_setup:option_newPassword</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="realName.description" resname="realName.description" approved="yes">
         <source>Enter the ordinary name of the user, eg. John Doe.</source>
         <target state="final">Geben Sie den vollständigen Namen des Benutzers an (z.B. Petra Mustermann).</target>
@@ -179,8 +179,8 @@ _MOD_user_setup:option_newPassword</source>
       <trans-unit id="_realName.seeAlso" resname="_realName.seeAlso" xml:space="preserve" approved="yes">
 				<source>be_users:email,
 _MOD_user_setup:option_newPassword</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_users:email, _MOD_user_setup:option_newPassword</target></trans-unit>
+				
+			<target state="final">be_users:email, _MOD_user_setup:option_newPassword</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="disable.description" resname="disable.description" approved="yes">
         <source>This option will temporarily disable the user from logging in.</source>
         <target state="final">Mit dieser Option können Sie dem Benutzer den Systemzugang verwehren.</target>
@@ -188,8 +188,8 @@ _MOD_user_setup:option_newPassword</source>
       <trans-unit id="_disable.seeAlso" resname="_disable.seeAlso" xml:space="preserve" approved="yes">
 				<source>be_users:starttime,
 be_users:endtime</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_users:starttime, be_users:endtime</target></trans-unit>
+				
+			<target state="final">be_users:starttime, be_users:endtime</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="admin.description" resname="admin.description" approved="yes">
         <source>'Admin' users have TOTAL access to the system!</source>
         <target state="final">"Admin"-Benutzer haben VOLLSTÄNDIGEN Zugang zum System!</target>
@@ -203,8 +203,8 @@ You should probably not assign any other users than yourself as an 'Admin' user.
 			<target state="final">"Admin"-Benutzer können alle Funktionen nutzen, die TYPO3 bietet. Deshalb sollten solche Benutzer nur für administrative Aufgaben verwendet werden. Alle täglich anfallenden Aufgaben können auch mit normalen oder speziell angepassten Benutzern und Benutzergruppen durchgeführt werden. Admin-Benutzer müssen nicht Mitglied einer Benutzergruppe sein. Man sollte sich aber darüber im Klaren sein, dass Aufgrund dieser Tatsache neu von solchen Admins angelegte Seiten deshalb auch keine Besitzergruppe haben und somit für andere Benutzer unter Umständen unsichtbar sind. Wenn das ein Problem darstellt, so kann man Admin-Benutzer einer Benutzergruppe zuweisen. Natürlich werden die Bearbeitungs- und Zugriffsrechte dadurch nicht berührt, denn Admin-Benutzer haben nach wie vor uneingeschränkte Rechte. Neue Seiten werden dadurch jedoch mit den entsprechenden Gruppenrechten angelegt. Admin-Benutzer sind an dem blauen Benutzersymbol zu erkennen, normale Benutzer werden mit einem grünen Symbol dargestellt. Außer sich selbst sollten Sie keinem anderen Benutzer Admin-Rechte einräumen.</target></trans-unit>
       <trans-unit id="_admin.image" resname="_admin.image" approved="yes">
         <source>EXT:core/Resources/Public/Images/cshimages/beuser_4.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:core/Resources/Public/Images/cshimages/beuser_4.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="options.description" resname="options.description" approved="yes">
         <source>Select if the user should inherit page tree or folder tree mountpoints from member groups.</source>
@@ -217,8 +217,8 @@ If you don't check these options, you must make sure the mount points for the pa
       <trans-unit id="_options.seeAlso" resname="_options.seeAlso" xml:space="preserve" approved="yes">
 				<source>be_users:db_mountpoints,
 be_users:file_mountpoints</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_users:db_mountpoints, be_users:file_mountpoints</target></trans-unit>
+				
+			<target state="final">be_users:db_mountpoints, be_users:file_mountpoints</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="file_permissions.description" resname="file_permissions.description" approved="yes">
         <source>Select file operation permissions for the user.</source>
         <target state="final">Legen Sie die Dateibearbeitungsrechte des Benutzers fest.</target>
@@ -233,9 +233,9 @@ be_users:file_mountpoints</source>
       <trans-unit id="file_permissions.seeAlso" resname="file_permissions.seeAlso" xml:space="preserve" approved="yes">
 				<source>be_users:file_mountpoints,
 be_group:file_permissions</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">be_users:file_mountpoints,
-be_group:file_permissions</target></trans-unit>
+be_group:file_permissions</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="fileoper_perms.description" resname="fileoper_perms.description" approved="yes">
         <source>Select file operation permissions for the user.</source>
         <target state="final">Legen Sie die Dateibearbeitungsrechte des Benutzers fest.</target>
@@ -250,9 +250,9 @@ be_group:file_permissions</target></trans-unit>
       <trans-unit id="_fileoper_perms.seeAlso" resname="_fileoper_perms.seeAlso" xml:space="preserve" approved="yes">
 				<source>be_users:file_mountpoints,
 be_group:file_permissions</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">be_users:file_mountpoints,
-be_group:file_permissions</target></trans-unit>
+be_group:file_permissions</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="starttime.description" resname="starttime.description" approved="yes">
         <source>Enter the date from which the account is active.</source>
         <target state="final">Geben Sie das Datum an, ab dem der Benutzername gültig sein soll.</target>
@@ -261,8 +261,8 @@ be_group:file_permissions</target></trans-unit>
 				<source>be_users:disable,
 be_users:endtime,
 pages:starttime</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_users:disable, be_users:endtime, pages:starttime</target></trans-unit>
+				
+			<target state="final">be_users:disable, be_users:endtime, pages:starttime</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="endtime.description" resname="endtime.description" approved="yes">
         <source>Enter the date from which the account is disabled.</source>
         <target state="final">Geben Sie das Datum an, ab dem der Benutzername ungültig sein soll.</target>
@@ -271,8 +271,8 @@ pages:starttime</source>
 				<source>be_users:disable,
 be_users:starttime,
 pages:starttime</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">be_users:disable, be_users:starttime, pages:starttime</target></trans-unit>
+				
+			<target state="final">be_users:disable, be_users:starttime, pages:starttime</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="lastlogin.description" resname="lastlogin.description" approved="yes">
         <source>This field shows the user's last log in date.</source>
         <target state="final">Zeigt an, wann sich der Benutzer zuletzt angemeldet hat.</target>
@@ -289,8 +289,8 @@ pages:starttime</source>
 			<target state="final">Hier legen Sie die Sprache für das Backend fest. Alle Hauptmenüpunkte normaler Benutzer wurden in die hier gewählte Sprache übersetzt. Admin-Benutzer werden jedoch feststellen, dass die speziellen Admin-Menüs lediglich in Englisch verfügbar sind. Das betrifft zum Beispiel alle Module innerhalb von "Werkzeuge" und im Modul "Web &gt; Template". &lt;b&gt;Hinweis:&lt;/b&gt; Die hier gewählte Sprache legt lediglich den Standardwert fest. Nach erfolgreicher Anmeldung kann jeder Benutzer seine persönlichen (Sprach-)Einstellungen im Modul "Benutzerwerkzeuge &gt; Einstellungen" vornehmen. Für jede gewünschte Systemsprache muss der Administrator aber zunächst das entsprechende Sprachpaket installieren. Diese Sprachpakete können im Menü "Admin &gt; Erw-Manager" unter "Übersetzungen" von TYPO3.org heruntergeladen werden.</target></trans-unit>
       <trans-unit id="_lang.seeAlso" resname="_lang.seeAlso" approved="yes">
         <source>_MOD_user_setup:language</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">_MOD_user_setup:language</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="userMods.description" resname="userMods.description" approved="yes">
         <source>Select available backend modules for the user.</source>
@@ -303,8 +303,8 @@ Notice that the same list of modules may be configured for the backend user grou
 			<target state="final">Mit dieser Option wird das Aussehen und der Funktionsumfang des Benutzermenüs festgelegt. Bitte beachten Sie, dass die gleichen Module evtl. schon innerhalb einer Benutzergruppe festgelegt wurden und diese an den Benutzer vererbt werden. Es empfiehlt sich, alle allgemeinen Module innerhalb der Benutzergruppe zu definieren und dem Benutzer hier lediglich einzelne, ganz spezielle Module zuzuweisen.</target></trans-unit>
       <trans-unit id="_userMods.seeAlso" resname="_userMods.seeAlso" approved="yes">
         <source>be_groups:groupMods</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">be_groups:groupMods</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="TSconfig.description" resname="TSconfig.description" approved="yes">
         <source>Enter additional TSconfig for the user (advanced).</source>
@@ -319,11 +319,11 @@ Notice that the same list of modules may be configured for the backend user grou
 fe_users:TSconfig,
 be_groups:TSconfig,
 User TSconfig | https://docs.typo3.org/typo3cms/TSconfigReference/UserTsconfig/</source>
-				<note from="developer">A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">pages:TSconfig,
 fe_users:TSconfig,
 be_groups:TSconfig,
-Benutzer-TSconfig | https://docs.typo3.org/typo3cms/TSconfigReference/UserTsconfig/</target></trans-unit>
+Benutzer-TSconfig | https://docs.typo3.org/typo3cms/TSconfigReference/UserTsconfig/</target><note>A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="allowed_languages.description" resname="allowed_languages.description" approved="yes">
         <source>Select which record languages the group members are limited to edit.</source>
         <target state="final">Legt fest, in welchen Sprachen der Benutzer Inhaltselemente bearbeiten darf.</target>
@@ -334,13 +334,13 @@ Benutzer-TSconfig | https://docs.typo3.org/typo3cms/TSconfigReference/UserTsconf
       </trans-unit>
       <trans-unit id="_allowed_languages.seeAlso" resname="_allowed_languages.seeAlso" approved="yes">
         <source>be_groups:allowed_languages</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">be_groups:allowed_languages</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="_allowed_languages.image" resname="_allowed_languages.image" approved="yes">
         <source>EXT:core/Resources/Public/Images/cshimages/be_groups_18.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:core/Resources/Public/Images/cshimages/be_groups_18.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
     </body>
   </file>
