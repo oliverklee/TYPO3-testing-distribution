@@ -55,6 +55,10 @@
         <source>MFA providers</source>
         <target state="final">MFA Anbieter</target>
       </trans-unit>
+      <trans-unit id="softReferenceParsers" resname="softReferenceParsers" approved="yes">
+        <source>Soft Reference Parsers</source>
+        <target state="final">Soft-Referenz-Parser</target>
+      </trans-unit>
       <trans-unit id="formYamlConfiguration" resname="formYamlConfiguration" approved="yes">
         <source>Form: YAML Configuration</source>
         <target state="final">Formular: YAML-Konfiguration</target>

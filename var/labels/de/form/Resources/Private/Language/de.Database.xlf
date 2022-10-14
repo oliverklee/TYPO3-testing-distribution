@@ -189,6 +189,9 @@
       <trans-unit id="formManager.duplicate_this_form" resname="formManager.duplicate_this_form" xml:space="preserve" approved="yes">
                 <source>Duplicate this form</source>
             <target state="final">Dieses Formular duplizieren</target></trans-unit>
+      <trans-unit id="formManager.delete_form" resname="formManager.delete_form" xml:space="preserve" approved="yes">
+                <source>Delete this form</source>
+            <target state="final">Dieses Formular löschen</target></trans-unit>
       <trans-unit id="formManager.forms_not_found.title" resname="formManager.forms_not_found.title" xml:space="preserve" approved="yes">
                 <source>No forms found!</source>
             <target state="final">Keine Formulare gefunden!</target></trans-unit>
@@ -762,6 +765,12 @@
       <trans-unit id="formEditor.elements.FormElement.editor.gridColumnViewPortConfiguration.lg.label" resname="formEditor.elements.FormElement.editor.gridColumnViewPortConfiguration.lg.label" xml:space="preserve" approved="yes">
                 <source>Large</source>
             <target state="final">Groß</target></trans-unit>
+      <trans-unit id="formEditor.elements.FormElement.editor.gridColumnViewPortConfiguration.xl.label" resname="formEditor.elements.FormElement.editor.gridColumnViewPortConfiguration.xl.label" xml:space="preserve" approved="yes">
+                <source>Extra large</source>
+            <target state="final">Sehr groß</target></trans-unit>
+      <trans-unit id="formEditor.elements.FormElement.editor.gridColumnViewPortConfiguration.xxl.label" resname="formEditor.elements.FormElement.editor.gridColumnViewPortConfiguration.xxl.label" xml:space="preserve" approved="yes">
+                <source>Extra extra large</source>
+            <target state="final">Super groß</target></trans-unit>
       <trans-unit id="formEditor.elements.FormElement.editor.gridColumnViewPortConfiguration.numbersOfColumnsToUse.label" resname="formEditor.elements.FormElement.editor.gridColumnViewPortConfiguration.numbersOfColumnsToUse.label" xml:space="preserve" approved="yes">
                 <source>Numbers of columns for viewport "{@viewPortLabel}"</source>
             <target state="final">Anzahl Spalten für Grid-Bereich "{@viewPortLabel}"</target></trans-unit>
@@ -860,7 +869,7 @@
             <target state="final">Enddatum</target></trans-unit>
       <trans-unit id="formEditor.elements.DatePicker.validators.DateRange.editor.minimum.placeholder" resname="formEditor.elements.DatePicker.validators.DateRange.editor.minimum.placeholder" xml:space="preserve" approved="yes">
                 <source>A date in format Y-m-d (e.g 2018-03-17)</source>
-            <target state="final">Ein Datum im Format d.m.Y (17.3.2018)</target></trans-unit>
+            <target state="final">Ein Datum im Format Y-m-d (z.B. 2018-03-17)</target></trans-unit>
       <trans-unit id="formEditor.elements.DatePicker.validators.DateRange.editor.maximum.placeholder" resname="formEditor.elements.DatePicker.validators.DateRange.editor.maximum.placeholder" xml:space="preserve" approved="yes">
                 <source>A date in format Y-m-d (e.g 2018-03-17)</source>
             <target state="final">Ein Datum im Format d.m.Y (17.3.2018)</target></trans-unit>
@@ -963,9 +972,8 @@
                     If you need higher values contact your administrator for help.
                 </source>
             <target state="final">
-                    Die maximale Dateigrösse ist beim Server auf {0} eingestellt. Bitte beachten Sie, dass höhere Werte beim Absenden des Formulars Fehler verursachen können.
- Wenn Sie höhere Werte benötigen, kontaktieren Sie bitte ihren Administrator für Hilfe.
-                </target></trans-unit>
+Die maximale Dateigröße ist beim Server auf {0} eingestellt. Bitte beachten Sie, dass höhere Werte beim Absenden des Formulars Fehler verursachen können.
+ Wenn Sie höhere Werte benötigen, kontaktieren Sie bitte ihren Administrator für Hilfe.</target></trans-unit>
       <trans-unit id="formEditor.elements.FileUpload.editor.allowedMimeTypes.doc" resname="formEditor.elements.FileUpload.editor.allowedMimeTypes.doc" xml:space="preserve" approved="yes">
                 <source>Documents (doc)</source>
             <target state="final">Dokumente (doc)</target></trans-unit>

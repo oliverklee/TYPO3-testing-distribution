@@ -19,6 +19,14 @@
         <source>Create a bookmark to this page</source>
         <target state="final">Ein Lesezeichen für diese Seite erzeugen</target>
       </trans-unit>
+      <trans-unit id="labels.alreadyBookmarked" resname="labels.alreadyBookmarked" approved="yes">
+        <source>This page is already bookmarked</source>
+        <target state="final">Diese Seite ist bereits mit einem Lesezeichen versehen</target>
+      </trans-unit>
+      <trans-unit id="labels.copyCurrentUrl" resname="labels.copyCurrentUrl" approved="yes">
+        <source>Copy URL of this page</source>
+        <target state="final">URL dieser Seite kopieren</target>
+      </trans-unit>
       <trans-unit id="labels.lockedRecord" resname="labels.lockedRecord" approved="yes">
         <source>The user '%s' began to edit this record %s ago.</source>
         <target state="final">Der Benutzer "%s" hat mit der Bearbeitung dieses Datensatzes vor %s begonnen.</target>
@@ -160,6 +168,18 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Ref</source>
         <target state="final">Ref</target>
       </trans-unit>
+      <trans-unit id="labels.uid" resname="labels.uid" approved="yes">
+        <source>Unique ID</source>
+        <target state="final">Eindeutige ID</target>
+      </trans-unit>
+      <trans-unit id="labels.pid" resname="labels.pid" approved="yes">
+        <source>Parent page ID</source>
+        <target state="final">ID der übergeordneten Seite</target>
+      </trans-unit>
+      <trans-unit id="labels.tstamp" resname="labels.tstamp" approved="yes">
+        <source>Last modified</source>
+        <target state="final">Zuletzt geändert</target>
+      </trans-unit>
       <trans-unit id="labels.crdate" resname="labels.crdate" approved="yes">
         <source>Creation date</source>
         <target state="final">Erstelldatum</target>
@@ -171,6 +191,18 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.sorting" resname="labels.sorting" approved="yes">
         <source>Sorting</source>
         <target state="final">Sortierung</target>
+      </trans-unit>
+      <trans-unit id="labels.t3ver_state" resname="labels.t3ver_state" approved="yes">
+        <source>Workspace status</source>
+        <target state="final">Status der Arbeitsumgebung</target>
+      </trans-unit>
+      <trans-unit id="labels.t3ver_wsid" resname="labels.t3ver_wsid" approved="yes">
+        <source>Workspace ID</source>
+        <target state="final">ID der Arbeitsumgebung</target>
+      </trans-unit>
+      <trans-unit id="labels.t3ver_oid" resname="labels.t3ver_oid" approved="yes">
+        <source>Live record ID</source>
+        <target state="final">ID des Live-Datensatzes</target>
       </trans-unit>
       <trans-unit id="labels.setFields" resname="labels.setFields" approved="yes">
         <source>Set fields</source>
@@ -303,6 +335,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.refresh" resname="labels.refresh" approved="yes">
         <source>Reload the tree from server</source>
         <target state="final">Baumansicht aktualisieren</target>
+      </trans-unit>
+      <trans-unit id="labels.collapse" resname="labels.collapse" approved="yes">
+        <source>Collapse all tree items</source>
+        <target state="final">Alle Baumelemente einklappen</target>
       </trans-unit>
       <trans-unit id="labels.temporaryDBmount" resname="labels.temporaryDBmount" approved="yes">
         <source>Cancel temporary DB mount</source>
@@ -507,6 +543,14 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.uncheckAll" resname="labels.uncheckAll" approved="yes">
         <source>Uncheck all</source>
         <target state="final">Keine auswählen</target>
+      </trans-unit>
+      <trans-unit id="labels.selection" resname="labels.selection" approved="yes">
+        <source>Selection:</source>
+        <target state="final">Auswahl:</target>
+      </trans-unit>
+      <trans-unit id="labels.noActionAvailable" resname="labels.noActionAvailable" approved="yes">
+        <source>No action available</source>
+        <target state="final">Keine Aktion verfügbar</target>
       </trans-unit>
       <trans-unit id="labels.placeholder.override" resname="labels.placeholder.override" approved="yes">
         <source>Set element specific value (Default: "%s")</source>
@@ -860,6 +904,14 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Continue with selected actions</source>
         <target state="final">Mit ausgewählten Aktionen fortfahren</target>
       </trans-unit>
+      <trans-unit id="file_upload.reload.filelist" resname="file_upload.reload.filelist" approved="yes">
+        <source>Reload filelist</source>
+        <target state="final">Dateiliste neu laden</target>
+      </trans-unit>
+      <trans-unit id="file_upload.reload.filelist.message" resname="file_upload.reload.filelist.message" approved="yes">
+        <source>To enable the controls, the filelist has to be reloaded.</source>
+        <target state="final">Um die Steuerelemente zu aktivieren, muss die Dateiliste neu geladen werden.</target>
+      </trans-unit>
       <trans-unit id="file_upload.reload.filelist.actions.dismiss" resname="file_upload.reload.filelist.actions.dismiss" approved="yes">
         <source>Dismiss</source>
         <target state="final">Verwerfen</target>
@@ -867,6 +919,26 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="file_upload.reload.filelist.actions.reload" resname="file_upload.reload.filelist.actions.reload" approved="yes">
         <source>Reload</source>
         <target state="final">Neu laden</target>
+      </trans-unit>
+      <trans-unit id="file_download.prepare" resname="file_download.prepare" approved="yes">
+        <source>File download is being prepared</source>
+        <target state="final">Dateidownload wird vorbereitet</target>
+      </trans-unit>
+      <trans-unit id="file_download.invalidSelection" resname="file_download.invalidSelection" approved="yes">
+        <source>The selected elements can not be downloaded</source>
+        <target state="final">Die ausgewählten Elemente können nicht heruntergeladen werden</target>
+      </trans-unit>
+      <trans-unit id="file_download.success" resname="file_download.success" approved="yes">
+        <source>File download successfully prepared</source>
+        <target state="final">Dateidownload erfolgreich vorbereitet</target>
+      </trans-unit>
+      <trans-unit id="file_download.error" resname="file_download.error" approved="yes">
+        <source>Could not prepare files for download</source>
+        <target state="final">Dateien konnten nicht für den Download vorbereitet werden</target>
+      </trans-unit>
+      <trans-unit id="file_download.noFiles.message" resname="file_download.noFiles" approved="yes">
+        <source>Please check your selection, since there might be file extension limitations, defined by your administrator.</source>
+        <target state="final">Bitte überprüfen Sie Ihre Auswahl, da es möglicherweise Einschränkungen bei den Dateierweiterungen gibt, die von Ihrem Administrator festgelegt wurden.</target>
       </trans-unit>
       <trans-unit id="online_media.new_media" resname="online_media.new_media" approved="yes">
         <source>Add new media asset</source>
@@ -919,6 +991,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="mess.delete" resname="mess.delete" approved="yes">
         <source>Are you sure you want to delete '%s'?</source>
         <target state="final">Sind Sie sicher, dass Sie "%s" tatsächlich löschen wollen?</target>
+      </trans-unit>
+      <trans-unit id="mess.delete.title" resname="mess.delete" approved="yes">
+        <source>Delete this record?</source>
+        <target state="final">Diesen Datensatz löschen?</target>
       </trans-unit>
       <trans-unit id="mess.deleteClip" resname="mess.deleteClip" approved="yes">
         <source>Are you sure you want to delete ALL referenced elements (%s) on the clipboard?</source>
@@ -1236,6 +1312,10 @@ Do you want to refresh it now?</source>
         <source>Exit</source>
         <target state="final">Verlassen</target>
       </trans-unit>
+      <trans-unit id="buttons.exitSwitchUser" resname="buttons.exitSwitchUser" approved="yes">
+        <source>Exit switch user mode</source>
+        <target state="final">Benutzerwechsel-Modus verlassen</target>
+      </trans-unit>
       <trans-unit id="buttons.selMenu_modules" resname="buttons.selMenu_modules" approved="yes">
         <source>MODULES</source>
         <target state="final">MODULE</target>
@@ -1247,6 +1327,10 @@ Do you want to refresh it now?</source>
       <trans-unit id="buttons.clipboard" resname="buttons.clipboard" approved="yes">
         <source>Clipboard</source>
         <target state="final">Zwischenablage</target>
+      </trans-unit>
+      <trans-unit id="buttons.removeAll" resname="buttons.removeAll" approved="yes">
+        <source>Remove all</source>
+        <target state="final">Alle entfernen</target>
       </trans-unit>
       <trans-unit id="buttons.toggleLinkExplanation" resname="buttons.toggleLinkExplanation" approved="yes">
         <source>Toggle link explanation</source>
@@ -1292,6 +1376,10 @@ Do you want to refresh it now?</source>
         <source>Copy</source>
         <target state="final">Kopieren</target>
       </trans-unit>
+      <trans-unit id="cm.copyrelease" resname="cm.copyrelease" approved="yes">
+        <source>Copy release</source>
+        <target state="final">Freigabe kopieren</target>
+      </trans-unit>
       <trans-unit id="cm.cut" resname="cm.cut" approved="yes">
         <source>Cut</source>
         <target state="final">Ausschneiden</target>
@@ -1319,6 +1407,14 @@ Do you want to refresh it now?</source>
       <trans-unit id="cm.new" resname="cm.new" approved="yes">
         <source>New</source>
         <target state="final">Neu</target>
+      </trans-unit>
+      <trans-unit id="cm.newSubpage" resname="cm.newSubpage" approved="yes">
+        <source>New subpage</source>
+        <target state="final">Neue Unterseite</target>
+      </trans-unit>
+      <trans-unit id="cm.newFilemount" resname="cm.newFilemount" approved="yes">
+        <source>New Filemount</source>
+        <target state="final">Neue Verzeichnisfreigabe</target>
       </trans-unit>
       <trans-unit id="cm.pasteinto" resname="cm.pasteinto" approved="yes">
         <source>Paste into</source>
@@ -1471,6 +1567,14 @@ Do you want to refresh it now?</source>
       <trans-unit id="cm.history" resname="CM_history" approved="yes">
         <source>History/Undo</source>
         <target state="final">Verlauf/Rückgängig</target>
+      </trans-unit>
+      <trans-unit id="cm.transferToClipboard" resname="cm.transferToClipboard" approved="yes">
+        <source>Transfer to clipboard</source>
+        <target state="final">In die Zwischenablage übertragen</target>
+      </trans-unit>
+      <trans-unit id="cm.removeFromClipboard" resname="cm.removeFromClipboard" approved="yes">
+        <source>Remove from clipboard</source>
+        <target state="final">Aus der Zwischenablage entfernen</target>
       </trans-unit>
       <trans-unit id="sortable.dragmove" resname="sortable.dragmove" approved="yes">
         <source>Drag to move</source>
@@ -1648,10 +1752,6 @@ Do you want to refresh it now?</source>
         <source>Search</source>
         <target state="final">Suchen</target>
       </trans-unit>
-      <trans-unit id="toolbarItems.searchLabel" resname="toolbarItems.searchLabel" approved="yes">
-        <source>Search the contents</source>
-        <target state="final">Inhalte durchsuchen</target>
-      </trans-unit>
       <trans-unit id="toolbarItems.toolbarOpenClose" resname="toolbarItems.toolbarOpenClose" approved="yes">
         <source>Open/Close toolbar</source>
         <target state="final">Symbolleiste öffnen/schließen</target>
@@ -1671,6 +1771,10 @@ Do you want to refresh it now?</source>
       <trans-unit id="toolbarItems.sysinfo.phpversion" resname="toolbarItems.sysinfo.phpversion" approved="yes">
         <source>PHP Version</source>
         <target state="final">PHP-Version</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.sysinfo.debugger" resname="toolbarItems.sysinfo.debugger" approved="yes">
+        <source>Debugger</source>
+        <target state="final">Debugger</target>
       </trans-unit>
       <trans-unit id="toolbarItems.sysinfo.database" resname="toolbarItems.sysinfo.database" approved="yes">
         <source>Database</source>
@@ -1747,6 +1851,14 @@ Do you want to refresh it now?</source>
       <trans-unit id="formEngine.beUser.admin.information.userAdminAndPasswordChangeNotAllowed" resname="formEngine.beUser.admin.information.userAdminAndPasswordChangeNotAllowed" approved="yes">
         <source>This user is a system maintainer. Changing the admin flag and changing password is denied.</source>
         <target state="final">Dieser Benutzer ist ein Systemverantwortlicher. Ändern des Administrator-Flags und des Passwortes ist nicht möglich.</target>
+      </trans-unit>
+      <trans-unit id="formEngine.pages.backendLayout.information.inheritFromParentPage" resname="formEngine.pages.backendLayout.information.inheritedFromParentPage" approved="yes">
+        <source>This page will most likely use backend layout "%s", inherited from a parent page.</source>
+        <target state="final">Diese Seite wird sehr wahrscheinlich das Backend-Layout "%s" verwenden, das von einer übergeordneten Seite geerbt wurde.</target>
+      </trans-unit>
+      <trans-unit id="formEngine.pages.backendLayout.information.inheritedFromParentPage" resname="formEngine.pages.backendLayout.information.inheritFromParentPage" approved="yes">
+        <source>This page is currently using backend layout "%s", inherited from a parent page.</source>
+        <target state="final">Diese Seite verwendet derzeit das Backend-Layout "%s", das von einer übergeordneten Seite geerbt wurde.</target>
       </trans-unit>
       <trans-unit id="error.backendUserGroupListTypeError.header" resname="error.backendUserGroupListTypeError.header" approved="yes">
         <source>Possible misconfiguration detected</source>

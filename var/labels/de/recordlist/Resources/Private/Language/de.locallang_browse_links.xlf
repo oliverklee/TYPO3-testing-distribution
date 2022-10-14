@@ -123,6 +123,10 @@
         <source>Set Link</source>
         <target state="final">Link setzen</target>
       </trans-unit>
+      <trans-unit id="linkTo" resname="linkTo" approved="yes">
+        <source>Link to %s</source>
+        <target state="final">Link zu %s</target>
+      </trans-unit>
       <trans-unit id="urlPlaceholder" resname="urlPlaceholder" translate="no" approved="yes">
         <source>https://...</source>
         <target state="final">https://...</target>

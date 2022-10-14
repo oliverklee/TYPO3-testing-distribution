@@ -427,6 +427,10 @@
         <source>Type</source>
         <target state="final">Typ</target>
       </trans-unit>
+      <trans-unit id="chLog_l_level" resname="chLog_l_level" approved="yes">
+        <source>Level</source>
+        <target state="final">Ebene</target>
+      </trans-unit>
       <trans-unit id="chLog_l_table" resname="chLog_l_table" approved="yes">
         <source>Table</source>
         <target state="final">Tabelle</target>

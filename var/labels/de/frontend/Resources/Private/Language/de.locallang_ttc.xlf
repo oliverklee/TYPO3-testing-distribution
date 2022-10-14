@@ -215,6 +215,10 @@
         <source>Name (not visible in frontend)</source>
         <target state="final">Name (in der Webseite nicht sichtbar)</target>
       </trans-unit>
+      <trans-unit id="header.description.ALT" resname="header.description.ALT" approved="yes">
+        <source>The name won't be displayed as header above the element, but will be used as reference in menus.</source>
+        <target state="final">Der Name wird nicht als Überschrift über dem Element angezeigt, sondern als Referenz in Menüs verwendet.</target>
+      </trans-unit>
       <trans-unit id="header_position" resname="header_position" approved="yes">
         <source>Align</source>
         <target state="final">Ausrichtung:</target>
@@ -778,22 +782,6 @@
       <trans-unit id="ALT.imgDimensions" resname="ALT.imgDimensions" approved="yes">
         <source>Image Dimensions</source>
         <target state="final">Bildmaße</target>
-      </trans-unit>
-      <trans-unit id="select_key_formlabel" resname="select_key_formlabel" approved="yes">
-        <source>Plugin Mode</source>
-        <target state="final">Plug-In-Modus</target>
-      </trans-unit>
-      <trans-unit id="select_key.ALT.uploads" resname="select_key.ALT.uploads" approved="yes">
-        <source>Read from Path</source>
-        <target state="final">Dateipfad:</target>
-      </trans-unit>
-      <trans-unit id="select_key.ALT.uploads_formlabel" resname="select_key.ALT.uploads_formlabel" approved="yes">
-        <source>Path</source>
-        <target state="final">Pfad</target>
-      </trans-unit>
-      <trans-unit id="select_key.ALT.script_formlabel" resname="select_key.ALT.script_formlabel" approved="yes">
-        <source>PHP Code</source>
-        <target state="final">PHP-Code</target>
       </trans-unit>
       <trans-unit id="imagecaption.ALT.uploads" resname="imagecaption.ALT.uploads" approved="yes">
         <source>Descriptions</source>

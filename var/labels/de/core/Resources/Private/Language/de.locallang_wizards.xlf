@@ -107,6 +107,30 @@
         <source>No table,field or uid given</source>
         <target state="final">Kein(e) Tabelle, Feld oder UID angegeben</target>
       </trans-unit>
+      <trans-unit id="table_setCount" resname="table_setCount" approved="yes">
+        <source>Set row and column count</source>
+        <target state="final">Anzahl der Zeilen und Spalten festlegen</target>
+      </trans-unit>
+      <trans-unit id="table_colCount" resname="table_colCount" approved="yes">
+        <source>Column count</source>
+        <target state="final">Anzahl der Spalten</target>
+      </trans-unit>
+      <trans-unit id="table_rowCount" resname="table_rowCount" approved="yes">
+        <source>Row count</source>
+        <target state="final">Anzahl der Zeilen</target>
+      </trans-unit>
+      <trans-unit id="table_setCountHeadline" resname="table_setCountHeadline" approved="yes">
+        <source>Change table size</source>
+        <target state="final">Größe der Tabelle ändern</target>
+      </trans-unit>
+      <trans-unit id="table_buttonApply" resname="table_buttonApply" approved="yes">
+        <source>Apply</source>
+        <target state="final">Anwenden</target>
+      </trans-unit>
+      <trans-unit id="table_showCode" resname="table_buttonApply" approved="yes">
+        <source>Show table code</source>
+        <target state="final">Zeige Quelltext der Tabelle</target>
+      </trans-unit>
       <trans-unit id="forms_title" resname="forms_title" approved="yes">
         <source>Forms wizard</source>
         <target state="final">Formularassistent</target>

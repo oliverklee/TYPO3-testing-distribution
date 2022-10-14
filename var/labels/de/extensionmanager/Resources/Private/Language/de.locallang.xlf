@@ -19,9 +19,17 @@
         <source>Composer mode</source>
         <target state="final">Composer-Modus</target>
       </trans-unit>
+      <trans-unit id="composerStrictMode.message" resname="composerMode.message" approved="yes">
+        <source>The system is set to composer mode. Please notice that it is this list is for informational purpose only. To modify which extensions are part of the system, use Composer. To set extensions up, use the TYPO3 cli (extension:setup)</source>
+        <target state="final">Das System ist auf den Composer-Modus eingestellt. Bitte beachten Sie, dass diese Liste nur zu Informationszwecken dient. Um zu ändern, welche Erweiterungen Teil des Systems sind, verwenden Sie Composer. Um Erweiterungen einzurichten, verwenden Sie den TYPO3-Cli (extension:setup)</target>
+      </trans-unit>
       <trans-unit id="installedExtensions" resname="installedExtensions" approved="yes">
         <source>Installed Extensions</source>
         <target state="final">Installierte Erweiterungen</target>
+      </trans-unit>
+      <trans-unit id="extensionComposerStatus" resname="extensionComposerStatus" approved="yes">
+        <source>Composer Support of Extensions</source>
+        <target state="final">Composer-Unterstützung von Erweiterungen</target>
       </trans-unit>
       <trans-unit id="getExtensions" resname="getExtensions" approved="yes">
         <source>Get Extensions</source>
@@ -103,6 +111,26 @@
         <source>Overwrite</source>
         <target state="final">Überschreiben</target>
       </trans-unit>
+      <trans-unit id="extensionList.composerStatus.missingManifest" resname="extensionList.composerStatus.missingManifest" approved="yes">
+        <source>Missing composer.json file</source>
+        <target state="final">Fehlende composer.json-Datei</target>
+      </trans-unit>
+      <trans-unit id="extensionList.composerStatus.additionalInformation" resname="extensionList.composerStatus.additionalInformation" approved="yes">
+        <source>For more information regarding the migration and the upcoming changes, please have a look at</source>
+        <target state="final">Weitere Informationen über die Migration und die bevorstehenden Änderungen finden Sie unter</target>
+      </trans-unit>
+      <trans-unit id="extensionList.showComposerProposal" resname="extensionList.showComposerProposal" approved="yes">
+        <source>Show composer.json proposal</source>
+        <target state="final">composer.json-Vorschlag anzeigen</target>
+      </trans-unit>
+      <trans-unit id="extensionList.fetchComposerProposal" resname="extensionList.fetchComposerProposal" approved="yes">
+        <source>Check TYPO3.org for composer.json proposal</source>
+        <target state="final">Prüfen Sie TYPO3.org für einen composer.json Vorschlag</target>
+      </trans-unit>
+      <trans-unit id="extensionList.fetchComposerProposal.details" resname="extensionList.fetchComposerProposal.details" approved="yes">
+        <source>Send this extensions' ext_emconf.php contents to TYPO3.org for a valid and resolved composer.json proposal</source>
+        <target state="final">Senden Sie den Inhalt der ext_emconf.php dieser Erweiterung an TYPO3.org für einen gültigen composer.json-Vorschlag mit aufgelösten Abhängigkeiten</target>
+      </trans-unit>
       <trans-unit id="extensionList.overwritingDisabled" resname="extensionList.overwritingDisabled" approved="yes">
         <source>Extension is already available and overwriting was not enabled</source>
         <target state="final">Die Erweiterung steht bereits zur Verfügung und Überschreiben war nicht aktiviert</target>
@@ -150,6 +178,10 @@
       <trans-unit id="extensionList.header.extensionState" resname="extensionList.header.extensionState" approved="yes">
         <source>State</source>
         <target state="final">Status</target>
+      </trans-unit>
+      <trans-unit id="extensionList.header.extensionDeficit" resname="extensionList.header.extensionDeficit" approved="yes">
+        <source>Deficit</source>
+        <target state="final">Defizit</target>
       </trans-unit>
       <trans-unit id="extensionList.header.extensionType" resname="extensionList.header.extensionType" approved="yes">
         <source>Type</source>
@@ -276,7 +308,14 @@
 					</strong>
 				]]></source>
         <target state="final"><![CDATA[
-					Wenn Sie mit der Installation dieser Erweiterung fortfahren, werden alle Abhängigkeitsprüfungen deaktiviert. &lt;ul&gt; &lt;li&gt;Es wird versucht, benötigte Erweiterungen vom TER zu holen (falls sie noch nicht im System existieren)&lt;/li&gt; &lt;li&gt;Die Überprüfung von Versionsabhängigkeiten wird übersprungen&lt;/li&gt; &lt;/ul&gt; &lt;strong&gt; Beachten Sie, dass eine Installation ohne Abhängigkeitsprüfung Ihre Installation unbenutzbar machen kann.&lt;br /&gt; In diesem Fall ist manuelle Intervention nötig. &lt;/strong&gt;
+					Wenn Sie mit der Installation dieser Erweiterung fortfahren, werden alle Abhängigkeitsprüfungen deaktiviert
+					<ul>
+						<li>Es wird versucht, benötigte Erweiterungen vom TER zu installieren (falls sie noch nicht installiert sind)</li>
+						<li>Überprüfungen zur Versionsabhängigkeiten werden übersprungen</li>
+					</ul>
+					<strong>
+						Beachten Sie, dass eine Installation ohne Abhängigkeitsprüfung Ihre TYPO3-Installation unbenutzbar machen kann.
+					</strong>
 				]]></target>
       </trans-unit>
       <trans-unit id="dependencyCheck.unresolvedDependencies.question" resname="dependencyCheck.unresolvedDependencies.question" approved="yes">
@@ -300,10 +339,7 @@
 
 
 				</source>
-        <target state="final">Die folgenden Abhängigkeiten müssen vor der Installation aufgelöst werden:
-
-
-				</target>
+        <target state="final">Die nachfolgenden Abhängigkeiten müssen vor der Installation gelöst werden:</target>
       </trans-unit>
       <trans-unit id="downloadExtension.dependencies.extensionWithVersion" resname="downloadExtension.dependencies.extensionWithVersion" approved="yes">
         <source>%1$s (new version %2$s)</source>
@@ -530,7 +566,7 @@
       </trans-unit>
       <trans-unit id="extensionList.updateFromTer.lastUpdate.timeOfLastUpdate" resname="extensionList.updateFromTer.lastUpdate.timeOfLastUpdate" approved="yes">
         <source>Time of last update: </source>
-        <target state="final">Zeit der letzten Aktualisierung: </target>
+        <target state="final">Datum des letzten Updates: </target>
       </trans-unit>
       <trans-unit id="extensionList.updateFromTer.lastUpdate.noTimeOfLastUpdate" resname="extensionList.updateFromTer.lastUpdate.noTimeOfLastUpdate" approved="yes">
         <source>No last update time known.</source>
@@ -696,6 +732,22 @@
         <source>&lt;strong&gt;%1$s&lt;/strong&gt; (version %2$s)&lt;br&gt;</source>
         <target state="final">&lt;strong&gt;%1$s&lt;/strong&gt; (Version %2$s)&lt;br&gt;</target>
       </trans-unit>
+      <trans-unit id="report.status.composerManifest.extensionKeyMissing" resname="report.status.composerManifest.extensionKeyMissing" approved="yes">
+        <source>Extensions missing extension-key in composer.json</source>
+        <target state="final">Erweiterungen mit fehlendem extension-key in composer.json</target>
+      </trans-unit>
+      <trans-unit id="report.status.composerManifest.composerJsonMissing" resname="report.status.composerManifest.composerJsonMissing" approved="yes">
+        <source>Extensions missing composer.json</source>
+        <target state="final">Erweiterungen mit fehlender composer.json</target>
+      </trans-unit>
+      <trans-unit id="report.status.composerManifest.extensionKeyMissing.message" resname="report.status.composerManifest.extensionKeyMissing.message" approved="yes">
+        <source>%d extension(s) do not have an extension-key set in their composer.json file.</source>
+        <target state="final">%d Erweiterung(en) hat (haben) keinen Erweiterungsschlüssel in ihrer composer.json-Datei gesetzt.</target>
+      </trans-unit>
+      <trans-unit id="report.status.composerManifest.composerJsonMissing.message" resname="report.status.composerManifest.composerJsonMissing.message" approved="yes">
+        <source>%d extension(s) do not provide a composer.json file.</source>
+        <target state="final">%d Erweiterung(en) stellt(en) keine composer.json-Datei zur Verfügung.</target>
+      </trans-unit>
       <trans-unit id="report.status.composerManifest.update" resname="report.status.composerManifest.update" approved="yes">
         <source>Update extensions</source>
         <target state="final">Erweiterungen aktualisieren</target>
@@ -760,9 +812,33 @@
         <source>There are no extensions which need to be updated.</source>
         <target state="final">Es gibt keine Erweiterungen, die aktualisiert werden müssen.</target>
       </trans-unit>
+      <trans-unit id="extensionComposerStatus.title" resname="extensionComposerStatus.title" approved="yes">
+        <source>Update composer.json of %s</source>
+        <target state="final">composer.json von %s aktualisieren</target>
+      </trans-unit>
+      <trans-unit id="extensionComposerStatus.deficit.1" resname="extensionComposerStatus.deficit.1" approved="yes">
+        <source>%s does not contain a composer.json</source>
+        <target state="final">%s enthält keine composer.json</target>
+      </trans-unit>
       <trans-unit id="extensionComposerStatus.deficit.1.short" resname="extensionComposerStatus.deficit.1.short" approved="yes">
         <source>composer.json missing</source>
         <target state="final">composer.json fehlt</target>
+      </trans-unit>
+      <trans-unit id="extensionComposerStatus.deficit.2" resname="extensionComposerStatus.deficit.2" approved="yes">
+        <source>%s is missing the extension-key property in the composer.json</source>
+        <target state="final">%s fehlt die Eigenschaft extension-key in der composer.json</target>
+      </trans-unit>
+      <trans-unit id="extensionComposerStatus.deficit.2.short" resname="extensionComposerStatus.deficit.2.short" approved="yes">
+        <source>Extension Key missing</source>
+        <target state="final">Extension Key fehlt</target>
+      </trans-unit>
+      <trans-unit id="extensionComposerStatus.manifest.title" resname="extensionComposerStatus.manifest.title" approved="yes">
+        <source>Auto-generated composer.json</source>
+        <target state="final">Automatisch erzeugte composer.json</target>
+      </trans-unit>
+      <trans-unit id="extensionComposerStatus.manifest.error" resname="extensionComposerStatus.manifest.error" approved="yes">
+        <source>Auto-generation of a composer.json proposal failed</source>
+        <target state="final">Automatische Erzeugung eines composer.json-Vorschlags fehlgeschlagen</target>
       </trans-unit>
     </body>
   </file>

@@ -327,6 +327,18 @@
         <source>System Records</source>
         <target state="final">Systemdatensätze</target>
       </trans-unit>
+      <trans-unit id="recordgroup.content" resname="recordgroup.content" approved="yes">
+        <source>Content</source>
+        <target state="final">Inhalt</target>
+      </trans-unit>
+      <trans-unit id="recordgroup.backendaccess" resname="recordgroup.backendaccess" approved="yes">
+        <source>Backend Access</source>
+        <target state="final">Backend-Zugang</target>
+      </trans-unit>
+      <trans-unit id="recordgroup.frontendaccess" resname="recordgroup.frontendaccess" approved="yes">
+        <source>Frontend Access</source>
+        <target state="final">Frontend-Zugang</target>
+      </trans-unit>
       <trans-unit id="1_selectType" resname="1_selectType" approved="yes">
         <source>First select the type of the new content element</source>
         <target state="final">1: Typ des Inhaltselements auswählen</target>

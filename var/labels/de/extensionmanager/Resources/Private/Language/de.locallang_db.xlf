@@ -67,6 +67,14 @@
         <source>Serialized dependencies</source>
         <target state="final">Serialisierte Abhängigkeiten</target>
       </trans-unit>
+      <trans-unit id="tx_extensionmanager_domain_model_extension.distribution_image" resname="tx_extensionmanager_domain_model_extension.distribution_image" approved="yes">
+        <source>Distribution image URL</source>
+        <target state="final">Bild URL der Distribution</target>
+      </trans-unit>
+      <trans-unit id="tx_extensionmanager_domain_model_extension.distribution_welcome_image" resname="tx_extensionmanager_domain_model_extension.distribution_welcome_image" approved="yes">
+        <source>Distribution welcome image URL</source>
+        <target state="final">URL des Willkommensbild für die Distribution</target>
+      </trans-unit>
       <trans-unit id="tx_extensionmanager_domain_model_extension.remote" resname="tx_extensionmanager_domain_model_extension.remote" approved="yes">
         <source>Remote</source>
         <target state="final">Remote</target>

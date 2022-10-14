@@ -343,10 +343,6 @@
         <source>Show hidden files and folders in the filelist</source>
         <target state="final">Versteckte Dateien und Ordner in der Dateiliste anzeigen</target>
       </trans-unit>
-      <trans-unit id="flexibleTextareas_MaxHeight" resname="flexibleTextareas_MaxHeight" approved="yes">
-        <source>Maximum height of text areas in pixels</source>
-        <target state="final">Maximale Höhe der Textbereiche in Pixel</target>
-      </trans-unit>
       <trans-unit id="editFunctionsTab" resname="editFunctionsTab" approved="yes">
         <source>Edit and Advanced functions</source>
         <target state="final">Bearbeiten und erweiterte Funktionen</target>
@@ -518,6 +514,18 @@
       <trans-unit id="avatar.openFileBrowser" resname="avatar.openFileBrowser" approved="yes">
         <source>Open file browser to select avatar image</source>
         <target state="final">Dateibrowser öffnen, um ein Avatar-Bild auszuwählen</target>
+      </trans-unit>
+      <trans-unit id="backendTitleFormat" resname="backendTitleFormat" approved="yes">
+        <source>Format of window title in backend</source>
+        <target state="final">Format des Fenstertitels im Backend</target>
+      </trans-unit>
+      <trans-unit id="backendTitleFormat.sitenameFirst" resname="backendTitleFormat.sitenameFirst" approved="yes">
+        <source>[sitename] · [title]</source>
+        <target state="final">[sitename] · [title]</target>
+      </trans-unit>
+      <trans-unit id="backendTitleFormat.titleFirst" resname="backendTitleFormat.titleFirst" approved="yes">
+        <source>[title] · [sitename]</source>
+        <target state="final">[title] · [sitename]</target>
       </trans-unit>
     </body>
   </file>

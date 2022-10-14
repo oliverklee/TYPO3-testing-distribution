@@ -223,8 +223,7 @@ Aus Sicherheitsgründen ist dieser Link nur gültig bis %s. Wenn Sie den Link ni
 			<target state="final">&lt;p&gt;Hallo %s,&lt;/p&gt;
 &lt;p&gt;Diese E-Mail wurde als Antwort auf Ihre Anfrage gesendet, Ihr Passwort zurückzusetzen. Bitte klicken Sie auf den Link unten.&lt;/p&gt;
 &lt;p&gt;%s&lt;/p&gt;
-&lt;p&gt;Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Wenn Sie den Link vorher nicht aufrufen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.&lt;/p&gt;
-				</target></trans-unit>
+&lt;p&gt;Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Wenn Sie den Link vorher nicht aufrufen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.&lt;/p&gt;</target></trans-unit>
       <trans-unit id="forgot_validate_reset_password_plaintext" resname="forgot_validate_reset_password" xml:space="preserve" approved="yes">
 				<source>Dear %s,
 

@@ -22,9 +22,9 @@
       <trans-unit id="_.image" resname="_.image" xml:space="preserve" approved="yes">
 				<source>EXT:setup/Resources/Public/Images/cshimages/setup8.png,
 EXT:setup/Resources/Public/Images/cshimages/setup7.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:setup/cshimages/setup8.png,
-EXT:setup/cshimages/setup7.png</target></trans-unit>
+EXT:setup/cshimages/setup7.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id=".image_descr" resname=".image_descr" xml:space="preserve" approved="yes">
 				<source>The Setup module is selected in the left menu.
 This is how the Setup module interface looks like - a list of options to configure.</source>
@@ -44,8 +44,8 @@ The solution clearly is to set the configuration option mentioned above to a val
 Die Lösung für dieses Problem liegt darin, mittels $TYPO3_CONF_VARS['BE']['forceCharset'] einen Wert wie z.B. "utf-8" (also einen Unicode Zeichensatz) einzustellen. Diese Einstellung muss durch den verantwortlichen TYPO3-Administrator vorgenommen werden.</target></trans-unit>
       <trans-unit id="_language.image" resname="_language.image" approved="yes">
         <source>EXT:setup/Resources/Public/Images/cshimages/lang.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:setup/Resources/Public/Images/cshimages/lang.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="language.image_descr" resname="language.image_descr" approved="yes">
         <source>TYPO3 is translated into around 40 languages. English is the default language and all labels must be available in English first and foremost. This screenshot shows translations for Hebrew, Arabic, Russian and Chinese.</source>
@@ -77,8 +77,8 @@ The default module is "About Modules".</source>
       </trans-unit>
       <trans-unit id="_option_maxTitleLen.image" resname="_option_maxTitleLen.image" approved="yes">
         <source>EXT:setup/Resources/Public/Images/cshimages/setup6.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:setup/Resources/Public/Images/cshimages/setup6.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="option_maxTitleLen.image_descr" resname="option_maxTitleLen.image_descr" approved="yes">
         <source>In this case the Maximum Title length is set to 10 - and the result is that titles in the page tree - as well as other places in the backend - will be cropped after 10 characters, then suffixed by "...". The default value is "30".</source>
@@ -106,8 +106,8 @@ The default module is "About Modules".</source>
       </trans-unit>
       <trans-unit id="_option_edit_RTE.image" resname="_option_edit_RTE.image" approved="yes">
         <source>EXT:setup/Resources/Public/Images/cshimages/rte.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:setup/Resources/Public/Images/cshimages/rte.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="option_edit_docModuleUpload.alttitle" resname="option_edit_docModuleUpload.alttitle" approved="yes">
         <source>Enable File Uploads in editing forms</source>
@@ -123,8 +123,8 @@ The default module is "About Modules".</source>
       </trans-unit>
       <trans-unit id="_option_edit_docModuleUpload.image" resname="_option_edit_docModuleUpload.image" approved="yes">
         <source>EXT:setup/Resources/Public/Images/cshimages/setup12.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:setup/Resources/Public/Images/cshimages/setup12.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="option_flexibleTextareas_MaxHeight.alttitle" resname="option_flexibleTextareas_MaxHeight.alttitle" approved="yes">
         <source>Maximum height of text areas</source>
@@ -166,6 +166,14 @@ The default module is "About Modules".</source>
         <source>If you set this option you will receive an email from TYPO3 each time you (or "someone") logs in using your username. You might like to receive such a "warning" as a security measure so you will know if someone else picks up your password and uses your account.</source>
         <target state="final">Mit dieser Option können Sie festlegen, dass jede Anmeldung unter Ihrem Benutzernamen per E-Mail an Sie gemeldet wird. Mit dieser Sicherheitsmaßnahme können Sie überprüfen, ob jemand anderes in Besitz Ihres Passworts gelangt ist und Ihren Benutzernamen missbraucht.</target>
       </trans-unit>
+      <trans-unit id="option_avatar.alttitle" resname="option_avatar.alttitle" approved="yes">
+        <source>Avatar</source>
+        <target state="final">Avatar</target>
+      </trans-unit>
+      <trans-unit id="option_avatar.description" resname="option_avatar.description" approved="yes">
+        <source>You can personalize your TYPO3 user profile by adding an avatar. It will be shown at multiple places in the backend, e.g. in the topbar, next to your username.</source>
+        <target state="final">Sie können Ihr TYPO3 Benutzerprofil personalisieren, indem Sie einen Avatar hinzufügen. Es wird an mehreren Stellen im Backend angezeigt, z.B. in der Topbar neben Ihrem Benutzernamen.</target>
+      </trans-unit>
       <trans-unit id="option_newPassword.alttitle" resname="option_newPassword.alttitle" approved="yes">
         <source>Change password</source>
         <target state="final">Neues Passwort</target>
@@ -185,6 +193,22 @@ The default module is "About Modules".</source>
       <trans-unit id="option_newPasswordAgain.description" resname="option_newPasswordAgain.description" approved="yes">
         <source>Confirm the new password by entering it again, exactly like above. If the two new passwords do not match, the password will not be changed.</source>
         <target state="final">Wiederholen Sie Ihr neues Passwort. Sollten die beiden Passwörter nicht übereinstimmen, so wird Ihr Passwort nicht geändert.</target>
+      </trans-unit>
+      <trans-unit id="option_mfaProviders.alttitle" resname="option_mfaProviders.alttitle" approved="yes">
+        <source>Multi-factor authentication</source>
+        <target state="final">Multi-Factor Authentifizierung</target>
+      </trans-unit>
+      <trans-unit id="option_mfaProviders.description" resname="option_mfaProviders.description" approved="yes">
+        <source>Manage your multi-factor authentication settings. This can be used to secure your account by providing another factor next to your password.</source>
+        <target state="final">Verwalten Sie Ihre Multi-Faktor-Authentifizierungseinstellungen. Dies kann verwendet werden, um Ihr Konto zu sichern, indem Sie einen weiteren Faktor neben Ihrem Passwort angeben.</target>
+      </trans-unit>
+      <trans-unit id="option_backendTitleFormat.alttitle" resname="option_backendTitleFormat.alttitle" approved="yes">
+        <source>Format of window title in backend</source>
+        <target state="final">Format des Fenstertitels im Backend</target>
+      </trans-unit>
+      <trans-unit id="option_backendTitleFormat.description" resname="option_backendTitleFormat.description" approved="yes">
+        <source>Define the order within the TYPO3 backend window title, which is usually displayed in the browser tab. Either the site name followed by the current module name or vice versa.</source>
+        <target state="final">Definieren Sie die Reihenfolge innerhalb des TYPO3 Backend Fenstertitels, der normalerweise im Browser-Tab angezeigt wird. Entweder der Name der Seite, gefolgt vom aktuellen Modulnamen oder umgekehrt.</target>
       </trans-unit>
       <trans-unit id="reset.alttitle" resname="reset.alttitle" approved="yes">
         <source>Reset all Values to default</source>

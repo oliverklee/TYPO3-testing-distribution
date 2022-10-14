@@ -19,6 +19,14 @@
         <source>Edit Metadata</source>
         <target state="final">Metadaten bearbeiten</target>
       </trans-unit>
+      <trans-unit id="clip_selectMarked" resname="clip_selectMarked" approved="yes">
+        <source>Transfer to clipboard</source>
+        <target state="final">In die Zwischenablage übertragen</target>
+      </trans-unit>
+      <trans-unit id="clip_deleteMarked" resname="clip_deleteMarked" approved="yes">
+        <source>Remove from clipboard</source>
+        <target state="final">Aus der Zwischenablage entfernen</target>
+      </trans-unit>
       <trans-unit id="clip_deleteMarkedWarning" resname="clip_deleteMarkedWarning" approved="yes">
         <source>Are you sure you want to delete all marked files from this folder?</source>
         <target state="final">Alle markierten Dateien aus diesem Ordner tatsächlich löschen?</target>
@@ -26,6 +34,10 @@
       <trans-unit id="displayThumbs" resname="displayThumbs" approved="yes">
         <source>Display thumbnails</source>
         <target state="final">Vorschaubilder anzeigen</target>
+      </trans-unit>
+      <trans-unit id="c_name" resname="c_name" approved="yes">
+        <source>Name</source>
+        <target state="final">Name</target>
       </trans-unit>
       <trans-unit id="c_size" resname="c_size" approved="yes">
         <source>Size</source>

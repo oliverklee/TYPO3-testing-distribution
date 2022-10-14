@@ -33,7 +33,7 @@
       </trans-unit>
       <trans-unit id="wizard.progressStep.finish" approved="yes">
         <source>Finish!	</source>
-        <target state="final">Abschließen!	</target>
+        <target state="final">Fertig!</target>
       </trans-unit>
       <trans-unit id="wizard.processing.title" resname="wizard.processing.title" approved="yes">
         <source>Processing...</source>

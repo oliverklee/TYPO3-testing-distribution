@@ -83,6 +83,18 @@ Sie müssen die Multi-Faktor-Authentifizierung einrichten, es sind jedoch keine 
         <source>Selected MFA provider was not found!</source>
         <target state="final">Der ausgewählte Multi-Faktor-Authentifizierungs-Provider wurde nicht gefunden!</target>
       </trans-unit>
+      <trans-unit id="providerNotActive" resname="providerNotActive" approved="yes">
+        <source>Selected MFA provider has to be active to perform this action!</source>
+        <target state="final">Der ausgewählte Multi-Faktor-Authentifizierungs-Provider muss aktiv sein, um diese Aktion durchführen zu können!</target>
+      </trans-unit>
+      <trans-unit id="providerActive" resname="providerActive" approved="yes">
+        <source>Selected MFA provider has to be inactive to perform this action!</source>
+        <target state="final">Der ausgewählte Multi-Faktor-Authentifizierungs-Provider muss inaktiv sein, um diese Aktion ausführen zu können!</target>
+      </trans-unit>
+      <trans-unit id="providerIsLocked" resname="providerNotFound" approved="yes">
+        <source>Selected MFA provider has to be unlocked to perform this action!</source>
+        <target state="final">Der ausgewählte Multi-Faktor-Authentifizierungs-Provider muss entsperrt sein, um diese Aktion ausführen zu können!</target>
+      </trans-unit>
       <trans-unit id="setup.instructions" resname="setup.instructions" approved="yes">
         <source>Setup instructions</source>
         <target state="final">Einrichtungsanleitung</target>
@@ -183,6 +195,60 @@ Sie müssen die Multi-Faktor-Authentifizierung einrichten, es sind jedoch keine 
         <source>Use %s</source>
         <target state="final">Verwende %s</target>
       </trans-unit>
+      <trans-unit id="standalone.setupProvider" resname="standalone.setupProvider" approved="yes">
+        <source>Set up %s</source>
+        <target state="final">%s einrichten</target>
+      </trans-unit>
+      <trans-unit id="standalone.selection.title" resname="standalone.selection.title" approved="yes">
+        <source>Set up MFA</source>
+        <target state="final">MFA einrichten</target>
+      </trans-unit>
+      <trans-unit id="standalone.selection.message" resname="standalone.selection.message" approved="yes">
+        <source>
+					%s requires you setting up MFA to secure your account. Please select one of the
+					available providers below.
+				</source>
+        <target state="final">
+					%s erfordert, dass Sie MFA einrichten, um Ihr Konto zu sichern. Bitte wählen Sie einen der
+					verfügbaren Anbieter unten.
+				</target>
+      </trans-unit>
+      <trans-unit id="standalone.selection.noAvailableProviders" resname="standalone.selection.noAvailableProviders" approved="yes">
+        <source>
+					You are required to set up MFA. However, there are no MFA providers available for you to use.
+					This might be a misconfiguration. Please get in touch with your administrator to find a solution.
+				</source>
+        <target state="final">
+					Sie müssen MFA einrichten, aber es stehen Ihnen keine MFA-Anbieter zur Verfügung.
+					Dies könnte eine Fehlkonfiguration sein. Bitte kontaktieren Sie Ihren Administrator, um eine Lösung zu finden.
+				</target>
+      </trans-unit>
+      <trans-unit id="standalone.selection.goBack" resname="standalone.selection.goBack" approved="yes">
+        <source>Go back</source>
+        <target state="final">Zurück</target>
+      </trans-unit>
+      <trans-unit id="standalone.setup" resname="standalone.setup" approved="yes">
+        <source>Setup</source>
+        <target state="final">Einrichten</target>
+      </trans-unit>
+      <trans-unit id="standalone.setup.cancel" resname="setup.standalone.cancel" approved="yes">
+        <source>Cancel</source>
+        <target state="final">Abbrechen</target>
+      </trans-unit>
+      <trans-unit id="standalone.setup.success.title" resname="activate.success" approved="yes">
+        <source>MFA setup successful</source>
+        <target state="final">MFA-Einrichtung erfolgreich</target>
+      </trans-unit>
+      <trans-unit id="standalone.setup.success.message" resname="activate.success" approved="yes">
+        <source>
+					You have successfully activated MFA provider %s. This provider was also automatically set as your
+					default provider. You can change this at any time in your user settings.
+				</source>
+        <target state="final">
+					Sie haben erfolgreich den MFA-Anbieter %s aktiviert. Dieser Provider wurde auch automatisch als Ihr
+					Standardprovider festgelegt. Sie können dies jederzeit in Ihren Benutzereinstellungen ändern.
+				</target>
+      </trans-unit>
       <trans-unit id="ajax.success" approved="yes">
         <source>Success</source>
         <target state="final">Erfolgreich</target>
@@ -194,6 +260,10 @@ Sie müssen die Multi-Faktor-Authentifizierung einrichten, es sind jedoch keine 
       <trans-unit id="ajax.invalidRequest" approved="yes">
         <source>Invalid request could not be processed</source>
         <target state="final">Ungültige Anfrage konnte nicht verarbeitet werden</target>
+      </trans-unit>
+      <trans-unit id="ajax.insufficientPermissions" approved="yes">
+        <source>Your are not allowed to perform this action</source>
+        <target state="final">Sie sind nicht berechtigt, diese Aktion durchzuführen</target>
       </trans-unit>
       <trans-unit id="ajax.deactivate.providersNotDeactivated" approved="yes">
         <source>No provider has been deactivated</source>

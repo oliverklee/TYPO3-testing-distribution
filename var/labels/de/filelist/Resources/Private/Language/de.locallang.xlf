@@ -15,6 +15,10 @@
         <source>No results found</source>
         <target state="final">Keine Ergebnisse gefunden</target>
       </trans-unit>
+      <trans-unit id="flashmessage.no_results.message" resname="flashmessage.no_results.message" approved="yes">
+        <source>This folder does not contain any files for "%s"</source>
+        <target state="final">In diesem Ordner gibt es keine Datei "%s"</target>
+      </trans-unit>
       <trans-unit id="flashmessage.no_items" resname="flashmessage.no_items" approved="yes">
         <source>This folder is empty</source>
         <target state="final">Dieser Ordner ist leer</target>
@@ -61,8 +65,8 @@
       </trans-unit>
       <trans-unit id="file_rename.php.submit" resname="file_rename.php.submit" approved="yes">
         <source>Rename</source>
-        <note from="developer">This label is not used since TYPO3 v9.</note>
         <target state="final">Umbenennen</target>
+        <note>This label is not used since TYPO3 v9.</note>
       </trans-unit>
       <trans-unit id="file_rename.php.label.target.file" resname="file_rename.php.label.target.file" approved="yes">
         <source>New file name</source>
@@ -108,8 +112,7 @@
         <source>This filetype cannot be edited.&lt;br /&gt;The file must have an extension like:&lt;br /&gt;&lt;br
 					/&gt; &lt;b&gt;%s&lt;/b&gt;
 				</source>
-        <target state="final">Dieser Dateityp kann nicht bearbeitet werden.&lt;br /&gt;Folgende Dateitypen werden unterstützt:&lt;br /&gt;&lt;br /&gt; &lt;b&gt;%s&lt;/b&gt;
-				</target>
+        <target state="final">Dieser Dateityp kann nicht bearbeitet werden.&lt;br /&gt;Die Datei muss eine Erweiterung haben wie:&lt;br /&gt;&lt;br /&gt; &lt;b&gt;%s&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="file_newfolder.php.pagetitle" resname="file_newfolder.php.pagetitle" approved="yes">
         <source>New file or folder</source>

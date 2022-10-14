@@ -211,6 +211,18 @@
         <source>Not assigned</source>
         <target state="final">Nicht zugewiesen</target>
       </trans-unit>
+      <trans-unit id="emptyColPos" resname="emptyColPos" approved="yes">
+        <source>Empty Colpos</source>
+        <target state="final">Leerer Colpos-Wert</target>
+      </trans-unit>
+      <trans-unit id="emptyColPos.message" resname="emptyColPos.message" approved="yes">
+        <source>This column has no "colPos". This is only for display Purposes.</source>
+        <target state="final">Diese Spalte hat keine "colPos". Dies dient nur der Anzeige.</target>
+      </trans-unit>
+      <trans-unit id="unusedColPos" resname="unusedColPos" approved="yes">
+        <source>Unused</source>
+        <target state="final">Unbenutzt</target>
+      </trans-unit>
       <trans-unit id="undoLastChange" resname="undoLastChange" approved="yes">
         <source>Undo/Redo last change (%s ago)</source>
         <target state="final">Letzte Änderung rückgängig/wiederherstellen (%s zurück)</target>
@@ -451,6 +463,10 @@
         <source>Localize page &quot;{0}&quot; into {1}</source>
         <target state="final">Seite "{0}" nach {1} lokalisieren</target>
       </trans-unit>
+      <trans-unit id="localize.wizard.button.translate" resname="localize.wizard.button.translate" approved="yes">
+        <source>Translate</source>
+        <target state="final">Übersetzen</target>
+      </trans-unit>
       <trans-unit id="localize.wizard.button.copy" resname="localize.wizard.button.copy" approved="yes">
         <source>Copy</source>
         <target state="final">Kopieren</target>
@@ -488,16 +504,15 @@
 					This means that you will be able to move content elements around freely, but you will not have the benefit of being able to compare changes made in the source language later on.&lt;br&gt;
 					&lt;strong&gt;Use this when you want to have freedom in designing your translated website.&lt;/strong&gt;
 				</source>
-			<target state="final">Inhalt zu kopieren wird die Inhaltselemente der Ausgangssprache benutzen und Kopien von ihnen in einer anderen Sprache erstellen.&lt;br&gt;
-					Sie werden Inhaltselemente frei bewegen können, aber Sie werden nicht die Möglichkeit haben, das Element mit Änderungen zu vergleichen, die in der Ausgangssprache gemacht wurden.&lt;br&gt;
-					&lt;strong&gt;Benutzen Sie diese Möglichkeit, wenn Sie Freiheit beim Entwurf Ihrer übersetzten Website wünschen.&lt;/strong&gt;
-				</target></trans-unit>
+			<target state="final">Beim Kopieren von Inhalten werden Kopien der Inhaltselemente der Originalsprache in einer anderen Sprache erstellt.&lt;br&gt;
+					Sie werden Inhaltselemente frei bewegen können, aber Sie werden nicht die Möglichkeit haben, das Element mit Änderungen zu vergleichen, die in der Originalsprache gemacht wurden.&lt;br&gt;
+					&lt;strong&gt;Benutzen Sie diese Möglichkeit, wenn Sie Freiheit beim Entwurf Ihrer übersetzten Website wünschen.&lt;/strong&gt;</target></trans-unit>
       <trans-unit id="localize.educate.noTranslate" resname="localize.educate.noTranslate" xml:space="preserve" approved="yes">
 				<source>Using the translation wizard is not possible, because either translation is disabled or the translated page is in "mixed mode". Being in "mixed mode" means that both translated records that have a source language and "free mode" records without a parent, are present.&lt;br&gt;
 					We highlighted the problematic records for you in this case.
 				</source>
-			<target state="final">Die Verwendung des Übersetzungsassistenten ist nicht möglich, da entweder die Übersetzung deaktiviert ist oder sich die übersetzte Seite im "gemischten Modus" befindet. Im "gemischten Modus" zu sein bedeutet, dass sowohl übersetzte Datensätze, die eine Ausgangssprache haben, als auch Datensätze im "freien Modus" ohne einen Verknüpfung zum übergeordneten Datensatz vorhanden sind.&lt;br&gt;
-					Wir haben die problematischen Datensätze für Sie in diesem Fall hervorgehoben.
+			<target state="final">Die Verwendung des Übersetzungsassistenten ist nicht möglich, da entweder die Übersetzung deaktiviert ist oder die übersetzte Seite im "gemischten Modus" ist. "Gemischter Modus" bedeutet, dass sowohl übersetzte Datensätze mit einer Ausgangssprache als auch solche im "freien Modus", also ohne Bezug zu einem Element in der Ausgangssprache, vorhanden sind.&lt;br&gt;
+					Wir haben in diesem Fall die problematischen Datensätze für Sie hervorgehoben.
 				</target></trans-unit>
       <trans-unit id="error.invalidBackendLayout" resname="error.invalidBackendLayout" approved="yes">
         <source>The selected page layout is mis-configured, no columns are specified to be editable. Please update your backend layout to have at least one parameter "colPos" set.</source>

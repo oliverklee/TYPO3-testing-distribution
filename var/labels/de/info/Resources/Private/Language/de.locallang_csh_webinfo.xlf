@@ -22,16 +22,16 @@ If you click the edit icon at the ID numbers of pages you will get straight to t
 				<source>xMOD_csh_corebe:list_module,
 _MOD_web_info:func_2,
 _MOD_web_info:pagetree_overview</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">xMOD_csh_corebe:list_module, _MOD_web_info:func_2, _MOD_web_info:pagetree_overview</target></trans-unit>
+				
+			<target state="final">xMOD_csh_corebe:list_module, _MOD_web_info:func_2, _MOD_web_info:pagetree_overview</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="_func_0.image" resname="_func_0.image" xml:space="preserve" approved="yes">
 				<source>EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_4.png,
 EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_8.png,
 EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_9.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_4.png,
 EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_8.png,
-EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_9.png</target></trans-unit>
+EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_9.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="func_0.image_descr" resname="func_0.image_descr" xml:space="preserve" approved="yes">
 				<source>The Basic Settings view offers a very convenient overview of page urls, start times and access restriction settings in the tree branch.
 If you click an edit-icon in the header you will be able to edit that field for all listed pages.</source>
@@ -54,12 +54,12 @@ Notice the red "+" next to a page in the page tree? This is due to a setting for
       <trans-unit id="_func_1.seeAlso" resname="_func_1.seeAlso" xml:space="preserve" approved="yes">
 				<source>_MOD_web_info:pagetree_overview,
 pages:php_tree_stop</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">_MOD_web_info:pagetree_overview, pages:php_tree_stop</target></trans-unit>
+				
+			<target state="final">_MOD_web_info:pagetree_overview, pages:php_tree_stop</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="_func_1.image" resname="_func_1.image" approved="yes">
         <source>EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_6.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_6.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="func_1.image_descr" resname="func_1.image_descr" approved="yes">
         <source>You can easily see the distribution of Content Elements on a page. You can also see where Template Records - and basically any record! - are located in the page tree!</source>
@@ -77,14 +77,14 @@ pages:php_tree_stop</source>
 				<source>_MOD_web_info:func_0,
 _MOD_web_info:pagetree_overview,
 pages:TSconfig</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">_MOD_web_info:func_0, _MOD_web_info:pagetree_overview, pages:TSconfig</target></trans-unit>
+				
+			<target state="final">_MOD_web_info:func_0, _MOD_web_info:pagetree_overview, pages:TSconfig</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="_func_2.image" resname="_func_2.image" xml:space="preserve" approved="yes">
 				<source>EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_5.png,
 EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_7.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_5.png,
-EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_7.png</target></trans-unit>
+EXT:frontend/Resources/Public/Images/cshimages/pagetree_overview_7.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="func_2.image_descr" resname="func_2.image_descr" xml:space="preserve" approved="yes">
 				<source>The "Cache and Age" view.
 Here you see the "TSconfig" column. The overview exposes that these two pages include some Page TSconfig code!</source>
@@ -115,9 +115,9 @@ Die Nummer in jeder Spalte zeigt an wieviele Inhaltselemente in dieser Sprache e
       <trans-unit id="_lang.image" resname="_lang.image" xml:space="preserve" approved="yes">
 				<source>EXT:frontend/Resources/Public/Images/cshimages/localizationoverview.png,
 EXT:frontend/Resources/Public/Images/cshimages/localizationoverview1.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:frontend/Resources/Public/Images/cshimages/localizationoverview.png,
-EXT:frontend/Resources/Public/Images/cshimages/localizationoverview1.png</target></trans-unit>
+EXT:frontend/Resources/Public/Images/cshimages/localizationoverview1.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="lang.image_descr" resname="lang.image_descr" xml:space="preserve" approved="yes">
 				<source>Localization overview in the Web&gt;Info module. Use the buttons to edit, view and create new page translation headers. Use the regular page module to put localized content on the pages.
 The "Localization settings" that affect availability of pages in the various languages.</source>

@@ -55,6 +55,10 @@
         <source>(copy %s)</source>
         <target state="final">(Kopie %s)</target>
       </trans-unit>
+      <trans-unit id="LGL.layout" resname="LGL.layout" approved="yes">
+        <source>Frontend Layout</source>
+        <target state="final">Frontend-Layout</target>
+      </trans-unit>
       <trans-unit id="LGL.default_value" resname="LGL.default_value" approved="yes">
         <source>Default</source>
         <target state="final">Standard</target>

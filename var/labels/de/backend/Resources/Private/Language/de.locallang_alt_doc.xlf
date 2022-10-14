@@ -55,6 +55,14 @@
         <source>the Web&gt;List module</source>
         <target state="final">das Modul Web&gt;Liste</target>
       </trans-unit>
+      <trans-unit id="noEditForm" resname="noEditForm" approved="yes">
+        <source>Edit form could not be loaded</source>
+        <target state="final">Das Bearbeitungsformular konnte nicht geladen werden</target>
+      </trans-unit>
+      <trans-unit id="noEditForm.message" resname="noEditForm.message" approved="yes">
+        <source>The edit form could not be loaded for the requested records. This might be due to insufficient permissions.</source>
+        <target state="final">Das Bearbeitungsformular konnte für die angeforderten Datensätze nicht geladen werden. Dies könnte auf unzureichende Berechtigungen zurückzuführen sein.</target>
+      </trans-unit>
       <trans-unit id="buttons.confirm.duplicate_record_changed.cancel" resname="buttons.confirm.duplicate_record_changed.cancel" approved="yes">
         <source>Cancel</source>
         <target state="final">Abbrechen</target>
@@ -178,6 +186,10 @@
       <trans-unit id="buttons.reviewFailedValidationFields" resname="buttons.reviewFailedValidationFields" approved="yes">
         <source>Review fields with failed validations</source>
         <target state="final">Felder mit fehlgeschlagenen Validierungen überprüfen</target>
+      </trans-unit>
+      <trans-unit id="buttons.pageTsConfig" resname="buttons.pageTsConfig" approved="yes">
+        <source>PageTS Config</source>
+        <target state="final">PageTS-Konfiguration</target>
       </trans-unit>
     </body>
   </file>

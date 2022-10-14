@@ -11,6 +11,10 @@
         <source>All</source>
         <target state="final">Alle</target>
       </trans-unit>
+      <trans-unit id="tsconf_parts_1" resname="tsconf_parts_1" approved="yes">
+        <source>Module</source>
+        <target state="final">Modul</target>
+      </trans-unit>
       <trans-unit id="tsconf_parts_1a" resname="tsconf_parts_1a" approved="yes">
         <source>Module: Web&gt;Page</source>
         <target state="final">Modul: Web &gt; Seite</target>
@@ -50,6 +54,10 @@
       <trans-unit id="mod_pagetsconfig" resname="mod_pagetsconfig" approved="yes">
         <source>Page TSconfig</source>
         <target state="final">Seiten-TSconfig</target>
+      </trans-unit>
+      <trans-unit id="display_mode" resname="display_mode" approved="yes">
+        <source>Mode</source>
+        <target state="final">Modus</target>
       </trans-unit>
       <trans-unit id="sort_alphabetic" resname="sort_alphabetic" approved="yes">
         <source>Sort alphabetically</source>

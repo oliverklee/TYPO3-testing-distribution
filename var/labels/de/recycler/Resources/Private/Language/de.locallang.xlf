@@ -15,6 +15,18 @@
         <source>All Record Types</source>
         <target state="final">Alle Datensatztypen</target>
       </trans-unit>
+      <trans-unit id="filter.search" approved="yes">
+        <source>Enter search term</source>
+        <target state="final">Suchbegriff eingeben</target>
+      </trans-unit>
+      <trans-unit id="filter.depth" approved="yes">
+        <source>Depth</source>
+        <target state="final">Tiefe</target>
+      </trans-unit>
+      <trans-unit id="filter.type" approved="yes">
+        <source>Type</source>
+        <target state="final">Typ</target>
+      </trans-unit>
       <trans-unit id="button.cancel" resname="button.cancel" approved="yes">
         <source>Cancel</source>
         <target state="final">Abbrechen</target>

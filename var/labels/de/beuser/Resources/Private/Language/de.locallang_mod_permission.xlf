@@ -87,6 +87,14 @@
         <source>User</source>
         <target state="final">Benutzer</target>
       </trans-unit>
+      <trans-unit id="changeOwner" resname="changeOwner" approved="yes">
+        <source>Change owner</source>
+        <target state="final">Besitzer wechseln</target>
+      </trans-unit>
+      <trans-unit id="changeGroup" resname="changeGroup" approved="yes">
+        <source>Change group</source>
+        <target state="final">Gruppe wechseln</target>
+      </trans-unit>
       <trans-unit id="def" resname="def" approved="yes">
         <source>Definition: 'content' is records from all tables on a page - except from records from the table 'pages' (Pages).</source>
         <target state="final">Definition: "Inhalt" sind alle Datensätze auf einer Seite - außer Datensätzen der Tabelle "pages" (Seiten).</target>

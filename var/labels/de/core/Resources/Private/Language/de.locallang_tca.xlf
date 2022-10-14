@@ -393,7 +393,7 @@
       </trans-unit>
       <trans-unit id="sys_filemounts.base_absolute" resname="sys_filemounts.base_absolute" approved="yes">
         <source>absolute (root) / </source>
-        <target state="final">absolut (Wurzel) / </target>
+        <target state="final">absolut (root) / </target>
       </trans-unit>
       <trans-unit id="sys_filemounts.base_relative" resname="sys_filemounts.base_relative" approved="yes">
         <source>relative ../fileadmin/</source>

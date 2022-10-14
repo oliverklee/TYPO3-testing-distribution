@@ -26,10 +26,9 @@
 &lt;p&gt;&lt;strong&gt;Security note: &lt;/strong&gt;When you are finished with your work, please log out of the Install Tool. Otherwise TYPO3 will automatically lock the Install Tool after one hour.&lt;/p&gt;
 				</source>
 			<target state="final">&lt;p&gt;Das Installations-Tool ist aus Sicherheitsgründen standardmäßig gesperrt.&lt;/p&gt;
-&lt;p&gt;Um das Installations-Tool zu entsperren, müssen Sie eine leere Datei mit dem Namen ENABLE_INSTALL_TOOL im Ordner typo3conf/ anlegen.&lt;/p&gt;
+&lt;p&gt;Um das Installations-Tool zu entsperren, müssen Sie eine leere Datei mit dem Namen &lt;strong&gt;ENABLE_INSTALL_TOOL&lt;/strong&gt; im Ordner &lt;strong&gt;typo3conf/&lt;/strong&gt; anlegen.&lt;/p&gt;
 &lt;p&gt;Wenn Sie die nachfolgende Schaltfläche klicken, wird diese Datei für Sie erstellt und das Installations-Tool entsperrt.&lt;/p&gt;
-&lt;p&gt;Wir empfehlen Ihnen, sich nach getaner Arbeit vom Installations-Tool abzumelden. Andernfalls wird das Installations-Tool nach einer Stunde automatisch gesperrt.&lt;/p&gt;
-				</target></trans-unit>
+&lt;p&gt;&lt;strong&gt;Sicherheitshinweis: &lt;/strong&gt;Wenn Sie mit Ihrer Arbeit fertig sind, melden Sie sich bitte vom Installations-Tool ab. Ansonsten wird das Installations-Tool nach einer Stunde automatisch gesperrt.&lt;/p&gt;</target></trans-unit>
       <trans-unit id="confirmUnlockInstallToolButton" resname="confirmUnlockInstallToolButton" approved="yes">
         <source>Unlock the Install&amp;#160;Tool</source>
         <target state="final">Installations-Tool freischalten</target>

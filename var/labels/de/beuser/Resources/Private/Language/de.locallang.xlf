@@ -189,7 +189,7 @@
       </trans-unit>
       <trans-unit id="backendUserAdministration" resname="backendUserAdministration" approved="yes">
         <source>Backend User Administration</source>
-        <target state="final">Backend-Benutzer-Verwaltung</target>
+        <target state="final">Backend-Benutzerverwaltung</target>
       </trans-unit>
       <trans-unit id="backendUserGroup" resname="backendUserGroup" approved="yes">
         <source>User group</source>
@@ -314,6 +314,10 @@
       <trans-unit id="backendUser" resname="backendUser" approved="yes">
         <source>Backend User</source>
         <target state="final">Backend-Benutzer</target>
+      </trans-unit>
+      <trans-unit id="backendUserDetails" resname="backendUserDetails" approved="yes">
+        <source>Backend user details</source>
+        <target state="final">Backend-Benutzerdetails</target>
       </trans-unit>
       <trans-unit id="flashMessage.resetPassword.error.title" resname="flashMessage.resetPassword.error.title" approved="yes">
         <source>Password reset not triggered</source>
