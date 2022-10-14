@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1440157535" source-language="en" datatype="plaintext" original="EXT:filelist/Resources/Private/Language/locallang.xlf" date="2015-08-21T11:45:35Z" product-name="filelist" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:filelist/Resources/Private/Language/locallang.xlf" date="2015-08-21T11:45:35Z" product-name="filelist" target-language="de">
     <header/>
     <body>
       <trans-unit id="search" resname="search" approved="yes">
@@ -49,8 +49,8 @@
       </trans-unit>
       <trans-unit id="file_rename.php.submit" resname="file_rename.php.submit" approved="yes">
         <source>Rename</source>
-        <note from="developer">This label is not used since TYPO3 v9.</note>
         <target state="final">Umbenennen</target>
+        <note>This label is not used since TYPO3 v9.</note>
       </trans-unit>
       <trans-unit id="file_rename.php.label.target.file" resname="file_rename.php.label.target.file" approved="yes">
         <source>New file name</source>

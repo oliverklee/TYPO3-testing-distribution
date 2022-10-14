@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814841" source-language="en" datatype="plaintext" original="EXT:info/Resources/Private/Language/locallang_csh_tsconfigInfo.xlf" date="2011-10-17T20:22:33Z" product-name="info_pagetsconfig" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:info/Resources/Private/Language/locallang_csh_tsconfigInfo.xlf" date="2011-10-17T20:22:33Z" product-name="info_pagetsconfig" target-language="de">
     <header/>
     <body>
       <trans-unit id="tsconfig_hierarchy.alttitle" resname="tsconfig_hierarchy.alttitle" approved="yes">
@@ -21,16 +21,16 @@ See the links for more information about what Page TSconfig is.</source>
 				<source>_MOD_web_info:tsconfig_edit,
 pages:TSconfig,
 Page TSconfig objects | https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Index.html</source>
-				<note from="developer">A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">_MOD_web_info:tsconfig_edit,
 pages:TSconfig,
-Seiten-TSconfig-Objekte | https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Index.html</target></trans-unit>
+Seiten-TSconfig-Objekte | https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Index.html</target><note>A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="_tsconfig_hierarchy.image" resname="_tsconfig_hierarchy.image" xml:space="preserve" approved="yes">
 				<source>EXT:info_pagetsconfig/Resources/Public/Images/cshimages/img_1.png,
 EXT:info_pagetsconfig/Resources/Public/Images/cshimages/img_2.png,</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:info_pagetsconfig/cshimages/img_1.png,
-EXT:info_pagetsconfig/cshimages/img_2.png,</target></trans-unit>
+EXT:info_pagetsconfig/cshimages/img_2.png,</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="tsconfig_hierarchy.image_descr" resname="tsconfig_hierarchy.image_descr" xml:space="preserve" approved="yes">
 				<source>This is how the parsed Page TSconfig tree can look. It contains the "sum" of all the configuration code from the root line and any default settings. This shows the whole tree but you can also select other top level objects (TLO) in the selector box in the top if you want to limit the view to a single branch
 One of the branches in Page TSconfig has the special property that it is overridden with any User TSconfig in the same object path given for the current backend user. When you view only the "mod" TLO any user settings for the current backend user are applied as well. Here it is evident that some additional settings must apply for the user since only "mod.SHARED.colPos_list" was actually found in Page TSconfig (according to the "All" view in the first image).</source>
@@ -49,17 +49,17 @@ You can also click the edit-icons of the various pages to go directly to the TSc
 			<target state="final">Der ausgewertete Seiten-TSconfig-Baum, welchen Sie in der Standardansicht sehen, wird eigentlich aus dem hier angezeigten Seiten-TSconfig-Quelltext und in dieser Reihenfolge gebildet. Somit können Sie ersehen, wie der vollständig ausgewerteten Seiten-TSconfig-Baum zustande kam. Mit einem Mausklick auf das Bearbeitungssymbol gelangen Sie direkt zu den Seiten-TSconfig-Feldern der entsprechenden Seiten.</target></trans-unit>
       <trans-unit id="_tsconfig_edit.seeAlso" resname="_tsconfig_edit.seeAlso" approved="yes">
         <source>_MOD_web_info:tsconfig_hierarchy</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">_MOD_web_info:tsconfig_hierarchy</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="_tsconfig_edit.image" resname="_tsconfig_edit.image" xml:space="preserve" approved="yes">
 				<source>EXT:info_pagetsconfig/Resources/Public/Images/cshimages/img_3.png,
 EXT:info_pagetsconfig/Resources/Public/Images/cshimages/img_4.png,
 EXT:info_pagetsconfig/Resources/Public/Images/cshimages/img_5.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:info_pagetsconfig/cshimages/img_3.png,
 EXT:info_pagetsconfig/cshimages/img_4.png,
-EXT:info_pagetsconfig/cshimages/img_5.png</target></trans-unit>
+EXT:info_pagetsconfig/cshimages/img_5.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="tsconfig_edit.image_descr" resname="tsconfig_edit.image_descr" xml:space="preserve" approved="yes">
 				<source>Shows the raw Page TSconfig code. First you see the default content from TYPO3_CONF_VARS (probably added by extensions), then the content from the "TSconfig" field of the first page in the root line ("Intro") and then for each root line page up to the current page (not shown in screenshot).
 In the bottom of the page you will see a link which will open editing forms for all of the TSconfig fields shown in the list!

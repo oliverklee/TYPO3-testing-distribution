@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814843" source-language="en" datatype="plaintext" original="EXT:install/Resources/Private/Language/Report/locallang.xlf" date="2011-10-17T20:22:33Z" product-name="install" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:install/Resources/Private/Language/Report/locallang.xlf" date="2011-10-17T20:22:33Z" product-name="install" target-language="de">
     <header/>
     <body>
       <trans-unit id="environment.status.title" resname="environment.status.title" approved="yes">
@@ -90,12 +90,24 @@
         <target state="final">Offenbar ist diese TYPO3-Version nie veröffentlicht worden. Daher stehen keine Informationen zu Aktualisierungen bereit.</target>
       </trans-unit>
       <trans-unit id="status_newVersionSecurityRelevant" resname="status_newVersionSecurityRelevant" approved="yes">
-        <source>There is a new version of TYPO3 available, updating is security relevant. Please update to version %s</source>
-        <target state="final">Eine neue Version von TYPO3 ist verfügbar. Diese Aktualisierung ist sicherheitsrelevant. Bitte aktualisieren Sie auf Version %s</target>
+        <source>There is a new version of TYPO3 available, updating is security relevant. Please update to version %s.</source>
+        <target state="final">Eine neue Version von TYPO3 ist verfügbar. Diese Aktualisierung ist sicherheitsrelevant. Aktualisieren Sie auf Version %s.</target>
       </trans-unit>
       <trans-unit id="status_newVersion" resname="status_newVersion" approved="yes">
-        <source>There is a new version of TYPO3 available. You can update to version %s</source>
-        <target state="final">Eine neue Version von TYPO3 ist verfügbar. Aktualisieren Sie auf Version %s</target>
+        <source>There is a new version of TYPO3 available. You can update to version %s.</source>
+        <target state="final">Eine neue Version von TYPO3 ist verfügbar. Aktualisieren Sie auf Version %s.</target>
+      </trans-unit>
+      <trans-unit id="status_elts_information" resname="status_elts_information" approved="yes">
+        <source>The currently installed TYPO3 version %s doesn't receive any community-driven updates anymore, consider subscribing to Extended Long Term Support (ELTS) releases. Get more information at %s.</source>
+        <target state="final">Die derzeit installierte TYPO3-Version %s erhält keine von der TYPO3 Community bereitgestellten Updates mehr. Wir empfehlen, die Extended Long Term Support (ELTS) Versionen zu abonnieren. Weitere Informationen erhalten Sie auf %s.</target>
+      </trans-unit>
+      <trans-unit id="status_elts_download" resname="status_elts_download" approved="yes">
+        <source>Please visit %s to download the release in your ELTS area.</source>
+        <target state="final">Bitte besuchen Sie %s um die Version in Ihrem ELTS Bereich herunterzuladen.</target>
+      </trans-unit>
+      <trans-unit id="status_elts_subscribe" resname="status_elts_subscribe" approved="yes">
+        <source>The currently installed TYPO3 version %s doesn't receive any community-driven updates anymore, consider subscribing to Extended Long Term Support (ELTS) releases. Get more information at %s.</source>
+        <target state="final">Die derzeit installierte TYPO3-Version %s erhält keine von der TYPO3 Community bereitgestellten Updates mehr. Wir empfehlen, die Extended Long Term Support (ELTS) Versionen zu abonnieren. Weitere Informationen erhalten Sie auf %s.</target>
       </trans-unit>
       <trans-unit id="status_versionOutdated" resname="status_versionOutdated" approved="yes">
         <source>The TYPO3 version you're using is not supported anymore. You should update to a supported version.</source>

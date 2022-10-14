@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814989" source-language="en" datatype="plaintext" original="EXT:setup/Resources/Private/Language/locallang_csh_mod.xlf" date="2011-10-17T20:22:37Z" product-name="setup" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:setup/Resources/Private/Language/locallang_csh_mod.xlf" date="2011-10-17T20:22:37Z" product-name="setup" target-language="de">
     <header/>
     <body>
       <trans-unit id=".alttitle" resname=".alttitle" approved="yes">
@@ -22,9 +22,9 @@
       <trans-unit id="_.image" resname="_.image" xml:space="preserve" approved="yes">
 				<source>EXT:setup/Resources/Public/Images/cshimages/setup8.png,
 EXT:setup/Resources/Public/Images/cshimages/setup7.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:setup/cshimages/setup8.png,
-EXT:setup/cshimages/setup7.png</target></trans-unit>
+EXT:setup/cshimages/setup7.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id=".image_descr" resname=".image_descr" xml:space="preserve" approved="yes">
 				<source>The Setup module is selected in the left menu.
 This is how the Setup module interface looks like - a list of options to configure.</source>
@@ -44,8 +44,8 @@ The solution clearly is to set the configuration option mentioned above to a val
 Die Lösung für dieses Problem liegt darin, mittels $TYPO3_CONF_VARS['BE']['forceCharset'] einen Wert wie z.B. "utf-8" (also einen Unicode Zeichensatz) einzustellen. Diese Einstellung muss durch den verantwortlichen TYPO3-Administrator vorgenommen werden.</target></trans-unit>
       <trans-unit id="_language.image" resname="_language.image" approved="yes">
         <source>EXT:setup/Resources/Public/Images/cshimages/lang.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:setup/Resources/Public/Images/cshimages/lang.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="language.image_descr" resname="language.image_descr" approved="yes">
         <source>TYPO3 is translated into around 40 languages. English is the default language and all labels must be available in English first and foremost. This screenshot shows translations for Hebrew, Arabic, Russian and Chinese.</source>
@@ -69,8 +69,8 @@ The default module is "About Modules".</source>
       </trans-unit>
       <trans-unit id="_option_showThumbs.image" resname="_option_showThumbs.image" approved="yes">
         <source>EXT:setup/Resources/Public/Images/cshimages/setup5.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:setup/Resources/Public/Images/cshimages/setup5.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="option_showThumbs.image_descr" resname="option_showThumbs.image_descr" approved="yes">
         <source>When thumbnails display is enabled, files attached to records will be shown in the "Web &gt; List" module like this.</source>
@@ -94,8 +94,8 @@ The default module is "About Modules".</source>
       </trans-unit>
       <trans-unit id="_option_maxTitleLen.image" resname="_option_maxTitleLen.image" approved="yes">
         <source>EXT:setup/Resources/Public/Images/cshimages/setup6.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:setup/Resources/Public/Images/cshimages/setup6.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="option_maxTitleLen.image_descr" resname="option_maxTitleLen.image_descr" approved="yes">
         <source>In this case the Maximum Title length is set to 10 - and the result is that titles in the page tree - as well as other places in the backend - will be cropped after 10 characters, then suffixed by "...". The default value is "30".</source>
@@ -135,8 +135,8 @@ The default module is "About Modules".</source>
       </trans-unit>
       <trans-unit id="_option_edit_RTE.image" resname="_option_edit_RTE.image" approved="yes">
         <source>EXT:setup/Resources/Public/Images/cshimages/rte.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:setup/Resources/Public/Images/cshimages/rte.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="option_edit_docModuleUpload.alttitle" resname="option_edit_docModuleUpload.alttitle" approved="yes">
         <source>Enable File Uploads in editing forms</source>
@@ -152,8 +152,8 @@ The default module is "About Modules".</source>
       </trans-unit>
       <trans-unit id="_option_edit_docModuleUpload.image" resname="_option_edit_docModuleUpload.image" approved="yes">
         <source>EXT:setup/Resources/Public/Images/cshimages/setup12.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:setup/Resources/Public/Images/cshimages/setup12.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="option_resizeTextareas.alttitle" resname="option_resizeTextareas.alttitle" approved="yes">
         <source>Make Textareas Resizable</source>

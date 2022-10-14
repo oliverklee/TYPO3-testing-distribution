@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814857" source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_csh_sysfilem.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_csh_sysfilem.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
     <header/>
     <body>
       <trans-unit id=".description" resname=".description" approved="yes">
@@ -18,14 +18,14 @@ Absolute Pfade für Verzeichnisfreigaben sind nur innerhalb des durch die System
 				<source>be_groups:file_mountpoints,
 be_users:file_mountpoints,
 More about File mounts | https://docs.typo3.org/typo3cms/InsideTypo3Reference/CoreArchitecture/AccessControl/MoreAboutFileMounts/</source>
-				<note from="developer">A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">be_groups:file_mountpoints,
 be_users:file_mountpoints,
-Mehr über Dateifreigaben | https://docs.typo3.org/typo3cms/InsideTypo3Reference/CoreArchitecture/AccessControl/MoreAboutFileMounts/</target></trans-unit>
+Mehr über Dateifreigaben | https://docs.typo3.org/typo3cms/InsideTypo3Reference/CoreArchitecture/AccessControl/MoreAboutFileMounts/</target><note>A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="_.image" resname="_.image" approved="yes">
         <source>EXT:core/Resources/Public/Images/cshimages/filemount_1.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:core/Resources/Public/Images/cshimages/filemount_1.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="title.description" resname="title.description" approved="yes">
         <source>Enter a title for the filemount. The title will appear as the name of the file mount when it is applied to users and groups.</source>
@@ -33,8 +33,8 @@ Mehr über Dateifreigaben | https://docs.typo3.org/typo3cms/InsideTypo3Reference
       </trans-unit>
       <trans-unit id="_title.image" resname="_title.image" approved="yes">
         <source>EXT:core/Resources/Public/Images/cshimages/be_groups_5.png</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">EXT:core/Resources/Public/Images/cshimages/be_groups_5.png</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="path.description" resname="path.description" approved="yes">
         <source>Enter the path of the filemount, relative or absolute depending on the settings of BASE.</source>
@@ -59,14 +59,14 @@ Ihre PHP-Konfiguration kann auch weitere Einschränkungen beinhalten, nämlich w
 				<source>sys_filemounts:base,
 be_groups:file_mountpoints,
 sys_filemounts</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-			<target state="final">sys_filemounts:base, be_groups:file_mountpoints, sys_filemounts</target></trans-unit>
+				
+			<target state="final">sys_filemounts:base, be_groups:file_mountpoints, sys_filemounts</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="_path.image" resname="_path.image" xml:space="preserve" approved="yes">
 				<source>EXT:core/Resources/Public/Images/cshimages/be_groups_6.png,
 EXT:core/Resources/Public/Images/cshimages/be_groups_7.png</source>
-				<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+				
 			<target state="final">EXT:core/Resources/Public/Images/cshimages/be_groups_6.png,
-EXT:core/Resources/Public/Images/cshimages/be_groups_7.png</target></trans-unit>
+EXT:core/Resources/Public/Images/cshimages/be_groups_7.png</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="path.image_descr" resname="path.image_descr" xml:space="preserve" approved="yes">
 				<source>This is a filemount relative to "fileadmin/". The mounted folder is "fileadmin/user_upload/" since "user_upload" is the value of the "Path" field.
 The directory structure of "fileadmin/" where you can see the "user_upload" folder in the bottom of the list.</source>
@@ -85,8 +85,8 @@ The directory structure of "fileadmin/" where you can see the "user_upload" fold
       </trans-unit>
       <trans-unit id="_base.seeAlso" resname="_base.seeAlso" approved="yes">
         <source>sys_filemounts:path</source>
-        <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
         <target state="final">sys_filemounts:path</target>
+        <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       </trans-unit>
       <trans-unit id="read_only.description" resname="read_only.description" approved="yes">
         <source>Display this file mount as read-only.</source>
