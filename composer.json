@@ -17,7 +17,7 @@
 		"oliverklee/feuserextrafields": "^3.2.0",
 		"oliverklee/oelib": "^4.3.1",
 		"oliverklee/onetimeaccount": "^5.1.0",
-		"oliverklee/seminars": "^4.1.6",
+		"oliverklee/seminars": "dev-main",
 		"oliverklee/typo3-devsite": "^4.0.0",
 		"ttn/tea": "^1.1.0",
 		"typo3/cms-about": "^9.5",
