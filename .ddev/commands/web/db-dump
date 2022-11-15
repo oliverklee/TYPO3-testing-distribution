@@ -6,7 +6,6 @@ vendor/bin/typo3cms database:export \
     --exclude cache_* \
     --exclude cf_* \
     --exclude fe_sessions \
-    --exclude static_* \
     --exclude sys_be_shortcuts \
     --exclude sys_category* \
     --exclude sys_collection* \
@@ -18,7 +17,7 @@ vendor/bin/typo3cms database:export \
     --exclude sys_refindex \
     --exclude sys_registry \
     --exclude tx_extensionmanager_* \
-    --exclude tx_oelib_* \
+    --exclude tx_oelib_test* \
     --exclude tx_scheduler_* \
     --exclude tx_seminars_test* \
     > dump.sql
