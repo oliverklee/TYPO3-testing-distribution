@@ -4,7 +4,7 @@
 --
 -- Host: db    Database: db
 -- ------------------------------------------------------
--- Server version	10.6.7-MariaDB-1:10.6.7+maria~focal-log
+-- Server version	10.6.10-MariaDB-1:10.6.10+maria~ubu2004-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -60,6 +60,118 @@ CREATE TABLE `backend_layout` (
 LOCK TABLES `backend_layout` WRITE;
 /*!40000 ALTER TABLE `backend_layout` DISABLE KEYS */;
 /*!40000 ALTER TABLE `backend_layout` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `be_groups`
+--
+
+DROP TABLE IF EXISTS `be_groups`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `be_groups` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
+  `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
+  `crdate` int(10) unsigned NOT NULL DEFAULT 0,
+  `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `title` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `non_exclude_fields` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `explicit_allowdeny` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `allowed_languages` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `custom_options` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `db_mountpoints` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `pagetypes_select` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `tables_select` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `tables_modify` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `groupMods` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `file_mountpoints` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `file_permissions` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `lockToDomain` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `TSconfig` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `subgroup` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `workspace_perms` smallint(6) NOT NULL DEFAULT 1,
+  `category_perms` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `tx_seminars_events_folder` int(10) unsigned NOT NULL DEFAULT 0,
+  `tx_seminars_registrations_folder` int(10) unsigned NOT NULL DEFAULT 0,
+  `tx_seminars_auxiliaries_folder` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`,`deleted`,`hidden`),
+  KEY `dummy` (`tx_oelib_is_dummy_record`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `be_groups`
+--
+
+LOCK TABLES `be_groups` WRITE;
+/*!40000 ALTER TABLE `be_groups` DISABLE KEYS */;
+/*!40000 ALTER TABLE `be_groups` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `be_users`
+--
+
+DROP TABLE IF EXISTS `be_users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `be_users` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
+  `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
+  `crdate` int(10) unsigned NOT NULL DEFAULT 0,
+  `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `disable` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `starttime` int(10) unsigned NOT NULL DEFAULT 0,
+  `endtime` int(10) unsigned NOT NULL DEFAULT 0,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `username` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `avatar` int(10) unsigned NOT NULL DEFAULT 0,
+  `password` varchar(100) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `admin` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `usergroup` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `lang` varchar(6) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `email` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `db_mountpoints` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `options` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `realName` varchar(80) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `userMods` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `allowed_languages` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `uc` mediumblob DEFAULT NULL,
+  `file_mountpoints` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `file_permissions` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `workspace_perms` smallint(6) NOT NULL DEFAULT 1,
+  `lockToDomain` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `disableIPlock` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `TSconfig` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `lastlogin` int(10) unsigned NOT NULL DEFAULT 0,
+  `createdByAction` int(11) NOT NULL DEFAULT 0,
+  `usergroup_cached_list` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `workspace_id` int(11) NOT NULL DEFAULT 0,
+  `category_perms` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `username` (`username`),
+  KEY `parent` (`pid`,`deleted`,`disable`),
+  KEY `dummy` (`tx_oelib_is_dummy_record`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `be_users`
+--
+
+LOCK TABLES `be_users` WRITE;
+/*!40000 ALTER TABLE `be_users` DISABLE KEYS */;
+INSERT INTO `be_users` VALUES (1,0,1668178393,1668178393,0,0,0,0,0,NULL,'_cli_',0,'$argon2i$v=19$m=65536,t=16,p=1$bWp6M3FaSjRacG40bGNrVg$jG+1gAmWJd9wqMTm+6fihLwBTDhhm49TqctJEIbGTWQ',1,'','','',NULL,0,'',NULL,'','a:13:{s:14:\"interfaceSetup\";s:0:\"\";s:10:\"moduleData\";a:0:{}s:19:\"thumbnailsByDefault\";i:1;s:14:\"emailMeAtLogin\";i:0;s:11:\"startModule\";s:15:\"help_AboutAbout\";s:8:\"titleLen\";i:50;s:8:\"edit_RTE\";s:1:\"1\";s:20:\"edit_docModuleUpload\";s:1:\"1\";s:15:\"resizeTextareas\";i:1;s:25:\"resizeTextareas_MaxHeight\";i:500;s:24:\"resizeTextareas_Flexible\";i:0;s:4:\"lang\";s:0:\"\";s:19:\"firstLoginTimeStamp\";i:1668178393;}',NULL,NULL,1,'',0,NULL,0,0,NULL,0,NULL,0),(2,0,1668510595,1668510595,0,0,0,0,0,NULL,'admin',0,'$P$CGRB2WCeorCjqSsd8OdKSG1Hi/YEUm.',1,'','','',NULL,0,'',NULL,'',NULL,NULL,NULL,1,'',0,NULL,0,0,NULL,0,NULL,0);
+/*!40000 ALTER TABLE `be_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -857,6 +969,7 @@ CREATE TABLE `tx_seminars_attendances` (
   `notes` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `kids` int(10) unsigned NOT NULL DEFAULT 0,
   `checkboxes` int(10) unsigned NOT NULL DEFAULT 0,
+  `separate_billing_address` smallint(5) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `seminar` (`seminar`),
@@ -871,7 +984,7 @@ CREATE TABLE `tx_seminars_attendances` (
 
 LOCK TABLES `tx_seminars_attendances` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_attendances` DISABLE KEYS */;
-INSERT INTO `tx_seminars_attendances` VALUES (1,12,1628003260,1628003260,0,0,0,0,'Anna Attendee / TCCD, 20.-23.11.2021',1,7,0,'Standardpreis: € 500,00',1,0,500.00,0,0,NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,'',0,NULL,'','','','','',0,'','','',NULL,0,NULL,0,'','',0,0),(2,12,1628016412,1628016412,1,0,0,0,NULL,4,7,0,'',1,1,0.00,0,0,'',0,0,0,'','','','','','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0),(3,12,1628016433,1628016433,1,0,0,0,NULL,5,7,0,'',1,1,0.00,0,0,'',0,0,0,'','','','','','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0);
+INSERT INTO `tx_seminars_attendances` VALUES (1,12,1628003260,1628003260,0,0,0,0,'Anna Attendee / TCCD, 20.-23.11.2021',1,7,0,'Standardpreis: € 500,00',1,0,500.00,0,0,NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,'',0,NULL,'','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0),(2,12,1628016412,1628016412,1,0,0,0,NULL,4,7,0,'',1,1,0.00,0,0,'',0,0,0,'','','','','','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0),(3,12,1628016433,1628016433,1,0,0,0,NULL,5,7,0,'',1,1,0.00,0,0,'',0,0,0,'','','','','','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0);
 /*!40000 ALTER TABLE `tx_seminars_attendances` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2054,4 +2167,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-02 12:53:12
+-- Dump completed on 2022-11-15 12:13:54
