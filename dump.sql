@@ -58,6 +58,114 @@ LOCK TABLES `backend_layout` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `be_groups`
+--
+
+DROP TABLE IF EXISTS `be_groups`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `be_groups` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
+  `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
+  `crdate` int(10) unsigned NOT NULL DEFAULT 0,
+  `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `title` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `non_exclude_fields` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `explicit_allowdeny` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `allowed_languages` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `custom_options` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `db_mountpoints` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `pagetypes_select` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `tables_select` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `tables_modify` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `groupMods` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `availableWidgets` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `mfa_providers` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `file_mountpoints` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `file_permissions` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `TSconfig` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `subgroup` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `workspace_perms` smallint(6) NOT NULL DEFAULT 1,
+  `category_perms` longtext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`,`deleted`,`hidden`),
+  KEY `dummy` (`tx_oelib_is_dummy_record`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `be_groups`
+--
+
+LOCK TABLES `be_groups` WRITE;
+/*!40000 ALTER TABLE `be_groups` DISABLE KEYS */;
+/*!40000 ALTER TABLE `be_groups` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `be_users`
+--
+
+DROP TABLE IF EXISTS `be_users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `be_users` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
+  `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
+  `crdate` int(10) unsigned NOT NULL DEFAULT 0,
+  `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `disable` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `starttime` int(10) unsigned NOT NULL DEFAULT 0,
+  `endtime` int(10) unsigned NOT NULL DEFAULT 0,
+  `description` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `username` varchar(50) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `avatar` int(10) unsigned NOT NULL DEFAULT 0,
+  `password` varchar(100) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `admin` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `usergroup` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `lang` varchar(10) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT 'default',
+  `email` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `db_mountpoints` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `options` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `realName` varchar(80) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `userMods` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `allowed_languages` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `uc` mediumblob DEFAULT NULL,
+  `file_mountpoints` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `file_permissions` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `workspace_perms` smallint(6) NOT NULL DEFAULT 1,
+  `TSconfig` text COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `lastlogin` int(10) unsigned NOT NULL DEFAULT 0,
+  `workspace_id` int(11) NOT NULL DEFAULT 0,
+  `mfa` mediumblob DEFAULT NULL,
+  `category_perms` longtext COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+  `password_reset_token` varchar(100) COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '',
+  `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `username` (`username`),
+  KEY `parent` (`pid`,`deleted`,`disable`),
+  KEY `dummy` (`tx_oelib_is_dummy_record`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `be_users`
+--
+
+LOCK TABLES `be_users` WRITE;
+/*!40000 ALTER TABLE `be_users` DISABLE KEYS */;
+INSERT INTO `be_users` VALUES (1,0,1668178394,1668178394,0,0,0,0,0,NULL,'_cli_',0,'$argon2i$v=19$m=65536,t=16,p=1$b2M2SWJEVWVURDV3WDhCQw$LSq0SgcSQbFM0dhZvBe8YaDwENRklVKqBeMj32dhLIM',1,NULL,'default','',NULL,0,'',NULL,'','a:9:{s:14:\"interfaceSetup\";s:0:\"\";s:10:\"moduleData\";a:0:{}s:14:\"emailMeAtLogin\";i:0;s:8:\"titleLen\";i:50;s:8:\"edit_RTE\";s:1:\"1\";s:20:\"edit_docModuleUpload\";s:1:\"1\";s:25:\"resizeTextareas_MaxHeight\";i:500;s:4:\"lang\";s:7:\"default\";s:19:\"firstLoginTimeStamp\";i:1668178394;}',NULL,NULL,1,NULL,0,0,NULL,NULL,'',0),(2,0,1668510606,1668510606,0,0,0,0,0,NULL,'admin',0,'$argon2i$v=19$m=65536,t=16,p=1$RjhqTURDOGl3c0pxeUVnYw$7i8HbyTswQdR0HyuRCEOLnIIk54tw5zE1CvLmp/EWnc',1,NULL,'default','',NULL,0,'',NULL,'',NULL,NULL,NULL,1,NULL,0,0,NULL,NULL,'',0);
+/*!40000 ALTER TABLE `be_users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `fe_groups`
 --
 
@@ -1981,4 +2089,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-14 12:19:54
+-- Dump completed on 2022-11-15 12:13:47
