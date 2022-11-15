@@ -2,6 +2,7 @@
 
 vendor/bin/typo3cms database:updateschema
 vendor/bin/typo3cms database:export \
+    --exclude be_sessions \
     --exclude cache_* \
     --exclude cf_* \
     --exclude fe_sessions \
