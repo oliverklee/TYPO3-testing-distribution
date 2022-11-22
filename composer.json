@@ -59,9 +59,6 @@
 			"typo3/class-alias-loader": true,
 			"typo3/cms-composer-installers": true
 		},
-		"platform": {
-			"php": "7.2.34"
-		},
 		"preferred-install": {
 			"*": "dist"
 		},
