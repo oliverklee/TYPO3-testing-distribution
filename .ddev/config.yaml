@@ -1,7 +1,7 @@
 name: typo3-testing-11-5
 type: typo3
 docroot: public
-php_version: "7.4"
+php_version: "8.1"
 webserver_type: apache-fpm
 router_http_port: "8080"
 router_https_port: "8081"
