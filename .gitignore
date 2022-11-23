@@ -6,6 +6,7 @@
 !/packages/.gitkeep
 /public/*
 !/public/.htaccess
+!/public/favicon.ico
 !/public/typo3conf
 /public/typo3conf/*
 !/public/typo3conf/AdditionalConfiguration.php
