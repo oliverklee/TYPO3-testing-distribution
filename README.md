@@ -70,3 +70,4 @@ Frontend users:
 - `attendee` / `attendee`
 - `editor` / `editor`
 - `manager` / `manager`
+- `admin` / `password` (with all three of the above roles combined)
