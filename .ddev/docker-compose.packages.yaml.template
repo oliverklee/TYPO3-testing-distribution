@@ -1,8 +1,0 @@
-# This is a template file for mounting your local extensions into this distribution.
-# Copy this file to docker-compose.packages.yaml and modify it to your needs. (More details in the README.)
-version: "3.6"
-
-services:
-  web:
-    volumes:
-      - "$HOME/src/typo3/ext/seminars:/var/www/html/packages/seminars:cached,ro"
