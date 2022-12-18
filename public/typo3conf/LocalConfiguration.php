@@ -43,6 +43,15 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'onetimeaccount' => [
+            'enableConfigCheck' => '1',
+        ],
+        'seminars' => [
+            'enableConfigCheck' => '1',
+        ],
+        'static_info_tables' => [
+            'enableManager' => '0',
+        ],
     ],
     'FE' => [
         'debug' => true,
