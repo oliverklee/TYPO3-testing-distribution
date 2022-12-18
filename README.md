@@ -12,7 +12,6 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 - [realty](https://github.com/oliverklee/ext-realty)
   (once it supports TYPO3 11LTS)
 - [seminars](https://github.com/oliverklee/ext-seminars)
-  (once it supports TYPO3 11LTS)
 - [tea](https://github.com/TYPO3-Documentation/tea)
 - [site package](https://github.com/oliverklee/typo3-devsite)
 
