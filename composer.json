@@ -17,7 +17,7 @@
 	"require": {
 		"php": ">= 7.2.34",
 		"georgringer/autoswitchtolistview": "^2.0.4",
-		"helhum/typo3-console": "^6.7.4",
+		"helhum/typo3-console": "^6.7.6",
 		"oliverklee/feuserextrafields": "dev-main",
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/onetimeaccount": "dev-main",
