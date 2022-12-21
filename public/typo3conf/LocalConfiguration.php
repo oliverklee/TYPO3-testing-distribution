@@ -43,28 +43,10 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
-        'mkforms' => [
-            'activateCache' => '0',
-            'listerNameId' => '0',
-        ],
         'onetimeaccount' => [
             'enableConfigCheck' => '1',
         ],
-        'rn_base' => [
-            'activateCache' => '0',
-            'activateSubstCache' => '0',
-            'debugKey' => '',
-            'dieOnMayday' => '1',
-            'exceptionHandler' => '',
-            'forceException4Mayday' => '1',
-            'fromEmail' => '',
-            'loadHiddenObjects' => '0',
-            'send503HeaderOnException' => '1',
-            'sendEmailOnException' => '',
-            'verboseMayday' => '0',
-        ],
         'seminars' => [
-            'eMailFormatForAttendees' => '0',
             'enableConfigCheck' => '1',
         ],
         'static_info_tables' => [
