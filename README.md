@@ -23,6 +23,7 @@ This distribution uses [ddev](https://github.com/drud/ddev).
 
 ```bash
 ddev start
+ddev composer install
 ddev install-typo3
 ```
 
