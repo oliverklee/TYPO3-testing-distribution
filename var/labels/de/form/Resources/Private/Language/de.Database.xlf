@@ -602,7 +602,7 @@
             <target state="final">Der Name des Absenders (z.B. der Name Ihrer Firma), welche als Absender im E-Mail Programm des Webseitenbesuchers erscheint.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.replyToRecipients.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.replyToRecipients.label" xml:space="preserve" approved="yes">
                 <source>Reply-To Recipients</source>
-            <target state="final">Replay-To Empfänger</target></trans-unit>
+            <target state="final">Reply-To Empfänger</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.carbonCopyRecipients.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.carbonCopyRecipients.label" xml:space="preserve" approved="yes">
                 <source>CC Recipients</source>
             <target state="final">CC Empfänger</target></trans-unit>
