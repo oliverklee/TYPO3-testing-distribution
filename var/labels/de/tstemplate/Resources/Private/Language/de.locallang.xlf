@@ -109,7 +109,7 @@
       </trans-unit>
       <trans-unit id="titleNewSite" resname="titleNewSite" approved="yes">
         <source>NEW SITE</source>
-        <target state="final">NEUE WEBSITE</target>
+        <target state="final">NEUE SITE</target>
       </trans-unit>
     </body>
   </file>

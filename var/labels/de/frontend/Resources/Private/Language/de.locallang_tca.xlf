@@ -141,7 +141,7 @@
       </trans-unit>
       <trans-unit id="pages.hidden" resname="pages.hidden" approved="yes">
         <source>Hide page</source>
-        <target state="final">Seite verbergen:</target>
+        <target state="final">Seite verbergen</target>
       </trans-unit>
       <trans-unit id="pages.hidden_formlabel" resname="pages.hidden_formlabel" approved="yes">
         <source>Page</source>
@@ -169,7 +169,7 @@
       </trans-unit>
       <trans-unit id="pages.extendToSubpages" resname="pages.extendToSubpages" approved="yes">
         <source>Include Subpages</source>
-        <target state="final">Inklusive Unterseiten:</target>
+        <target state="final">Inklusive Unterseiten</target>
       </trans-unit>
       <trans-unit id="pages.extendToSubpages_formlabel" resname="pages.extendToSubpages_formlabel" approved="yes">
         <source>Extend to Subpages</source>
@@ -177,7 +177,7 @@
       </trans-unit>
       <trans-unit id="pages.nav_title" resname="pages.nav_title" approved="yes">
         <source>Navigation Title</source>
-        <target state="final">Navigationstitel:</target>
+        <target state="final">Navigationstitel</target>
       </trans-unit>
       <trans-unit id="pages.nav_title_formlabel" resname="pages.nav_title_formlabel" approved="yes">
         <source>Alternative Navigation Title</source>
@@ -185,7 +185,7 @@
       </trans-unit>
       <trans-unit id="pages.nav_hide" resname="pages.nav_hide" approved="yes">
         <source>Hide in Menu</source>
-        <target state="final">Im Menü verbergen:</target>
+        <target state="final">Im Menü verbergen</target>
       </trans-unit>
       <trans-unit id="pages.nav_hide_formlabel" resname="pages.nav_hide_formlabel" approved="yes">
         <source>In Menus</source>
@@ -197,11 +197,11 @@
       </trans-unit>
       <trans-unit id="pages.subtitle" resname="pages.subtitle" approved="yes">
         <source>Subtitle</source>
-        <target state="final">Untertitel:</target>
+        <target state="final">Untertitel</target>
       </trans-unit>
       <trans-unit id="pages.subtitle_formlabel" resname="pages.subtitle_formlabel" approved="yes">
         <source>Subtitle</source>
-        <target state="final">Untertitel:</target>
+        <target state="final">Untertitel</target>
       </trans-unit>
       <trans-unit id="pages.target" resname="pages.target" approved="yes">
         <source>Target</source>
@@ -213,15 +213,15 @@
       </trans-unit>
       <trans-unit id="pages.url" resname="pages.url" approved="yes">
         <source>URL</source>
-        <target state="final">URL:</target>
+        <target state="final">URL</target>
       </trans-unit>
       <trans-unit id="pages.url_formlabel" resname="pages.url_formlabel" approved="yes">
         <source>URL</source>
-        <target state="final">URL:</target>
+        <target state="final">URL</target>
       </trans-unit>
       <trans-unit id="pages.lastUpdated" resname="pages.lastUpdated" approved="yes">
         <source>Last Updated</source>
-        <target state="final">Letzte Aktualisierung:</target>
+        <target state="final">Letzte Aktualisierung</target>
       </trans-unit>
       <trans-unit id="pages.lastUpdated_formlabel" resname="pages.lastUpdated_formlabel" approved="yes">
         <source>Last Update</source>
@@ -229,7 +229,7 @@
       </trans-unit>
       <trans-unit id="pages.newUntil" resname="pages.newUntil" approved="yes">
         <source>'New' Until</source>
-        <target state="final">"Neu" bis:</target>
+        <target state="final">"Neu" bis</target>
       </trans-unit>
       <trans-unit id="pages.newUntil_formlabel" resname="pages.newUntil_formlabel" approved="yes">
         <source>Mark as 'New' Until</source>
@@ -237,7 +237,7 @@
       </trans-unit>
       <trans-unit id="pages.cache_timeout" resname="pages.cache_timeout" approved="yes">
         <source>Cache Expires</source>
-        <target state="final">Cache verfällt:</target>
+        <target state="final">Cache verfällt</target>
       </trans-unit>
       <trans-unit id="pages.cache_timeout_formlabel" resname="pages.cache_timeout_formlabel" approved="yes">
         <source>Cache Lifetime</source>
@@ -285,7 +285,7 @@
       </trans-unit>
       <trans-unit id="pages.cache_tags" resname="pages.cache_tags" approved="yes">
         <source>Cache Tags</source>
-        <target state="final">Cache-Tags:</target>
+        <target state="final">Cache-Tags</target>
       </trans-unit>
       <trans-unit id="pages.editlock_formlabel" resname="pages.editlock_formlabel" approved="yes">
         <source>Editable for Admins Only</source>
@@ -321,7 +321,7 @@
       </trans-unit>
       <trans-unit id="pages.tabs.url" resname="pages.tabs.url" approved="yes">
         <source>URL</source>
-        <target state="final">URL:</target>
+        <target state="final">URL</target>
       </trans-unit>
       <trans-unit id="pages.tabs.extended" resname="pages.tabs.extended" approved="yes">
         <source>Extended</source>
@@ -349,11 +349,11 @@
       </trans-unit>
       <trans-unit id="pages.shortcut_mode" resname="pages.shortcut_mode" approved="yes">
         <source>Shortcut Mode</source>
-        <target state="final">Verweismodus:</target>
+        <target state="final">Shortcut-Modus</target>
       </trans-unit>
       <trans-unit id="pages.shortcut_mode_formlabel" resname="pages.shortcut_mode_formlabel" approved="yes">
         <source>Shortcut Mode</source>
-        <target state="final">Verweismodus:</target>
+        <target state="final">Shortcut-Modus</target>
       </trans-unit>
       <trans-unit id="pages.shortcut_mode.I.0" resname="pages.shortcut_mode.I.0" approved="yes">
         <source>Selected page</source>
@@ -633,11 +633,11 @@
       </trans-unit>
       <trans-unit id="sys_template.root" resname="sys_template.root" approved="yes">
         <source>Rootlevel</source>
-        <target state="final">Wurzelebene:</target>
+        <target state="final">Ist Root-Ebene</target>
       </trans-unit>
       <trans-unit id="sys_template.clear" resname="sys_template.clear" approved="yes">
         <source>Clear</source>
-        <target state="final">Löschen:</target>
+        <target state="final">Löschen</target>
       </trans-unit>
       <trans-unit id="sys_template.sitetitle" resname="sys_template.sitetitle" approved="yes">
         <source>Website Title</source>
@@ -645,7 +645,7 @@
       </trans-unit>
       <trans-unit id="sys_template.constants" resname="sys_template.constants" approved="yes">
         <source>Constants</source>
-        <target state="final">Konstanten:</target>
+        <target state="final">Konstanten</target>
       </trans-unit>
       <trans-unit id="sys_template.resources" resname="sys_template.resources" approved="yes">
         <source>Resources</source>
@@ -665,7 +665,7 @@
       </trans-unit>
       <trans-unit id="sys_template.config" resname="sys_template.config" approved="yes">
         <source>Setup</source>
-        <target state="final">Setup:</target>
+        <target state="final">Setup</target>
       </trans-unit>
       <trans-unit id="sys_template.editorcfg" resname="sys_template.editorcfg" approved="yes">
         <source>Backend Editor Configuration</source>

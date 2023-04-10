@@ -125,7 +125,7 @@
       </trans-unit>
       <trans-unit id="history" resname="history" approved="yes">
         <source>Display change history / Un-do</source>
-        <target state="final">Änderungsverlauf anzeigen/Rückgängig</target>
+        <target state="final">Änderungsverlauf anzeigen / Rückgängig machen</target>
       </trans-unit>
       <trans-unit id="displayVersions" resname="displayVersions" approved="yes">
         <source>Display versions</source>
