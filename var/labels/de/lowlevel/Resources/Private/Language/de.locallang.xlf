@@ -133,7 +133,7 @@
       </trans-unit>
       <trans-unit id="rawSearch" resname="rawSearch" approved="yes">
         <source>Raw search in all fields</source>
-        <target state="final">Rohsuche in allen Feldern</target>
+        <target state="final">Suche in allen Feldern</target>
       </trans-unit>
       <trans-unit id="advancedQuery" resname="advancedQuery" approved="yes">
         <source>Advanced query</source>
