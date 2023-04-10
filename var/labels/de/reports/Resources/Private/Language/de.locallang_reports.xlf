@@ -71,6 +71,14 @@
         <source>Update Incomplete</source>
         <target state="final">Aktualisierung nicht vollständig</target>
       </trans-unit>
+      <trans-unit id="status_problemNotification" resname="status_problemNotification" approved="yes">
+        <source>One or more problems were detected with your TYPO3 installation. Please check the %sstatus report%s for more information.</source>
+        <target state="final">Ein oder mehrere Probleme wurden in Ihrer TYPO3-Installation festgestellt. Bitte prüfen Sie den %sStatusbericht%s für mehr Informationen.</target>
+      </trans-unit>
+      <trans-unit id="status_allNotification" resname="status_allNotification" approved="yes">
+        <source>This report contains all System Status Notifications from your TYPO3 installation. Please check the %sstatus report%s for more information.</source>
+        <target state="final">Dieser Bericht umfasst alle Systemstatusbenachrichtigungen Ihrer TYPO3-Installation. Bitte prüfen Sie den %sStatusbericht%s für mehr Informationen.</target>
+      </trans-unit>
       <trans-unit id="status_typo3" resname="status_typo3" approved="yes">
         <source>TYPO3 System</source>
         <target state="final">TYPO3-System</target>
@@ -212,7 +220,7 @@
         <target state="final">Debug Exception Handler aktiviert in Production-Kontext - zeigt volle Fehlermeldungen inklusive Stack-Tracks.</target>
       </trans-unit>
       <trans-unit id="status_exportedFiles_warningMessage" resname="status_exportedFiles_warningMessage" approved="yes">
-        <source>The following exported files where found:</source>
+        <source>The following exported files were found:</source>
         <target state="final">Die folgenden exportierten Dateien wurden gefunden:</target>
       </trans-unit>
       <trans-unit id="status_exportedFiles_warningRecommendation" resname="status_exportedFiles_warningRecommendation" approved="yes">
@@ -384,7 +392,7 @@ Sie können die Stapel-Größe auf 8MB (Standard unter Unix) erhöhen, indem Sie
       </trans-unit>
       <trans-unit id="status_updateTask_email_site" resname="status_updateTask_email_site" approved="yes">
         <source>Site</source>
-        <target state="final">Seite</target>
+        <target state="final">Site</target>
       </trans-unit>
       <trans-unit id="status_updateTask_email_issues" resname="status_updateTask_email_issues" approved="yes">
         <source>Issues</source>

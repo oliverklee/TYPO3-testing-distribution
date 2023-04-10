@@ -936,6 +936,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Could not prepare files for download</source>
         <target state="final">Dateien konnten nicht für den Download vorbereitet werden</target>
       </trans-unit>
+      <trans-unit id="file_download.noFiles" resname="file_download.noFiles" approved="yes">
+        <source>Could not find any allowed file</source>
+        <target state="final">Konnte keine erlaubte Datei finden</target>
+      </trans-unit>
       <trans-unit id="file_download.noFiles.message" resname="file_download.noFiles" approved="yes">
         <source>Please check your selection, since there might be file extension limitations, defined by your administrator.</source>
         <target state="final">Bitte überprüfen Sie Ihre Auswahl, da es möglicherweise Einschränkungen bei den Dateierweiterungen gibt, die von Ihrem Administrator festgelegt wurden.</target>
@@ -1142,7 +1146,7 @@ Do you want to refresh it now?</source>
       </trans-unit>
       <trans-unit id="rm.saveDocShow" resname="rm.saveDocShow" approved="yes">
         <source>Save and view page</source>
-        <target state="final">Seite speichern und anzeigen</target>
+        <target state="final">Speichern und Seite anzeigen</target>
       </trans-unit>
       <trans-unit id="rm.saveCloseDoc" resname="rm.saveCloseDoc" approved="yes">
         <source>Save and close</source>
@@ -1378,7 +1382,7 @@ Do you want to refresh it now?</source>
       </trans-unit>
       <trans-unit id="cm.copyrelease" resname="cm.copyrelease" approved="yes">
         <source>Copy release</source>
-        <target state="final">Freigabe kopieren</target>
+        <target state="final">Aus Zwischenablage entfernen</target>
       </trans-unit>
       <trans-unit id="cm.cut" resname="cm.cut" approved="yes">
         <source>Cut</source>
@@ -1609,8 +1613,8 @@ Do you want to refresh it now?</source>
         <target state="final">Das Install Tool verwendet noch das Standardpasswort "joh316". Aktualisieren Sie es im Abschnitt %sImportant actions%s im Install Tool.</target>
       </trans-unit>
       <trans-unit id="warning.backend_admin" resname="warning.backend_admin" approved="yes">
-        <source>The default backend user "admin" with password "password" is still present. %sEdit this account%s, either deleting it completely or changing the username and password.</source>
-        <target state="final">Der Standardbenutzer "admin" des Backends mit dem Passwort "password" ist noch vorhanden. %sÄndern Sie dieses Konto%s. Entweder indem Sie es vollständig löschen oder indem Sie Benutzername und Passwort ändern.</target>
+        <source>A backend user "admin" with password "password" is still present. %sEdit this account%s, either deleting it completely or changing the username and password.</source>
+        <target state="final">Der Backend-Benutzer "admin" mit dem Passwort "password" ist noch vorhanden. %sÄndern Sie dieses Konto%s durch Änderung des Benutzernamens und Passworts oder löschen Sie den Backend-Benutzer Datensatz vollständig.</target>
       </trans-unit>
       <trans-unit id="warning.file_deny_pattern" resname="warning.file_deny_pattern" approved="yes">
         <source>The value of fileDenyPattern is not set to its default:%s If TYPO3 is running on Apache, a customized value might enable backend or frontend users to execute malicious php scripts.</source>
@@ -1637,8 +1641,8 @@ Do you want to refresh it now?</source>
         <target state="final">Die Überprüfung des Musters für vertrauenswürdige Rechner ist deaktiviert. Bitte legen Sie die erlaubten Rechner im Abschnitt [SYS][trustedHostsPattern] des Install-Tools fest.</target>
       </trans-unit>
       <trans-unit id="warning.install_update" resname="warning.install_update" approved="yes">
-        <source>This installation is not configured for the TYPO3 version it is running. If you did so intentionally, this message can be safely ignored. If you are unsure, visit the Update Wizard section of the %sInstall Tool%s to see how TYPO3 would change.</source>
-        <target state="final">Diese Installation ist nicht für die laufende TYPO3-Version konfiguriert. Haben Sie dies mit Absicht getan, können Sie die Nachricht beruhigt ignorieren. Wenn Sie unsicher sind, rufen Sie den Abschnitt %sAktualisierungsassistent%s des Installationsprogramms auf, um die möglichen Änderungen zu überprüfen.</target>
+        <source>This installation is not configured for the TYPO3 version it is running. If you did so intentionally, this message can be safely ignored. If you are unsure, visit the Upgrade Wizard section of the %sInstall Tool%s to see how TYPO3 would change.</source>
+        <target state="final">Diese Installation ist nicht für die aktuell eingesetzte TYPO3-Version konfiguriert. Haben Sie dies mit Absicht getan, können Sie die Nachricht beruhigt ignorieren. Wenn Sie unsicher sind, rufen Sie das "Upgrade-Wizard" im Modul "Admin Tools&gt;Upgrade" oder über im %sTYPO3 Install Tool%s auf, um mögliche notwendige Änderungen zu überprüfen bzw. auszuführen.</target>
       </trans-unit>
       <trans-unit id="warning.header" resname="warning.header" approved="yes">
         <source>Important Notice!</source>
@@ -1649,8 +1653,8 @@ Do you want to refresh it now?</source>
         <target state="final">Die Referenzindextabelle ist leer. Dies ist wahrscheinlich die Folge einer kürzlich erfolgten TYPO3-Aktualisierung. Bitte den Punkt %sWerkzeuge &gt; DB-Prüfung%s aufrufen und den Referenzindex aktualisieren.</target>
       </trans-unit>
       <trans-unit id="warning.backend_reference_index" resname="warning.backend_reference_index" approved="yes">
-        <source>The Reference Index table is empty which is likely the result of a recent TYPO3 upgrade. The Reference Index was last updated on %3$s. Please go to %sTools&gt;DB Check%s and update the reference index.</source>
-        <target state="final">Die Referenzindextabelle ist leer. Dies ist wahrscheinlich die Folge einer kürzlich erfolgten TYPO3-Aktualisierung. Der Referenzindex wurde zuletzt am %3$s aktualisiert. Bitte rufen Sie das Modul %sWerkzeuge &gt; DB-Prüfung%s auf und aktualisieren Sie den Referenzindex.</target>
+        <source>The Reference Index table is empty which is likely the result of a recent TYPO3 upgrade. The Reference Index was last updated on %3$s. Please go to %sSystem&gt;DB Check%s and update the reference index.</source>
+        <target state="final">Die Referenz-Index Tabelle ist leer. Dies ist wahrscheinlich die Folge eines kürzlich durchgeführten TYPO3 Upgrades. Der Referenz-Index wurde zuletzt am %3$s aktualisiert. Bitte rufen Sie das Modul %sSystem&gt;DB-Überprüfung%s auf und aktualisieren Sie den Referenz-Index.</target>
       </trans-unit>
       <trans-unit id="warning.memcache_not_usable" resname="warning.memcache_not_usable" approved="yes">
         <source>Memcache is configured, but connection to memcached failed with these configuration(s)</source>
@@ -1751,6 +1755,10 @@ Do you want to refresh it now?</source>
       <trans-unit id="toolbarItems.search" resname="toolbarItems.search" approved="yes">
         <source>Search</source>
         <target state="final">Suchen</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.searchLabel" resname="toolbarItems.searchLabel" approved="yes">
+        <source>Search the contents</source>
+        <target state="final">Inhalte durchsuchen</target>
       </trans-unit>
       <trans-unit id="toolbarItems.toolbarOpenClose" resname="toolbarItems.toolbarOpenClose" approved="yes">
         <source>Open/Close toolbar</source>

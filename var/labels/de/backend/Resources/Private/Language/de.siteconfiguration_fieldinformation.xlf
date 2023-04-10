@@ -5,7 +5,7 @@
     <body>
       <trans-unit id="site.rootPageId" resname="site.rootPageId" approved="yes">
         <source>You must create a page with a site root flag.</source>
-        <target state="final">Sie müssen eine Seite erstellen, wo das Wurzelseiten-Merkmal gesetzt ist.</target>
+        <target state="final">Sie müssen eine Seite erstellen, wo die Option "Als Anfang der Website benutzen" aktiviert ist.</target>
       </trans-unit>
       <trans-unit id="site.identifier" resname="site.identifier" approved="yes">
         <source>This name will be used to create the configuration directory. Mind the recommendations for directory names (only a-z,0-9,_,-) and make it unique.</source>

@@ -59,6 +59,10 @@
         <source>Rollback single field</source>
         <target state="final">Feld wiederherstellen</target>
       </trans-unit>
+      <trans-unit id="userNotFound" resname="userNotFound" approved="yes">
+        <source>[Not Found]</source>
+        <target state="final">[Nicht gefunden]</target>
+      </trans-unit>
       <trans-unit id="externalChange" resname="externalChange" approved="yes">
         <source>Intermediate external change!</source>
         <target state="final">Externe Änderung!</target>

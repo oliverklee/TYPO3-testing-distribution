@@ -183,6 +183,10 @@
         <source>No files found in %s</source>
         <target state="final">Keine Dateien in %s gefunden</target>
       </trans-unit>
+      <trans-unit id="no_files_search" resname="no_files_search" approved="yes">
+        <source>No files found in %s for "%s"</source>
+        <target state="final">Keine Dateien in %s für "%s " gefunden</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

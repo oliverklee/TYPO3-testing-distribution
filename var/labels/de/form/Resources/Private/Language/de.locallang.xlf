@@ -93,6 +93,9 @@
       <trans-unit id="validation.error.1505305753" resname="validation.error.1505305753" xml:space="preserve" approved="yes">
                 <source>You must select a file that is no larger than %s.</source>
             <target state="final">Sie müssen eine Datei auswählen, die nicht größer als %s ist.</target></trans-unit>
+      <trans-unit id="validation.error.1521293685" resname="validation.error.1521293685" xml:space="preserve" approved="yes">
+                <source>You must enter an instance of \DateTime.</source>
+            <target state="final">Sie müssen ein Objekt vom Typ \DateTime eingeben.</target></trans-unit>
       <trans-unit id="validation.error.1521293686" resname="validation.error.1521293686" xml:space="preserve" approved="yes">
                 <source>You must select a date before %s.</source>
             <target state="final">Sie müssen ein Datum vor dem %s wählen.</target></trans-unit>
