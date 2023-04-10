@@ -24,7 +24,7 @@
         <target state="final">Tabellen: %s</target>
       </trans-unit>
       <trans-unit id="cleanerTaskDescriptionDays" resname="cleanerTaskDescriptionDays" approved="yes">
-        <source>Older than %d days(s)</source>
+        <source>Older than %d day(s)</source>
         <target state="final">Älter als %d Tag(e)</target>
       </trans-unit>
       <trans-unit id="cleanerTaskErrorPeriod" resname="cleanerTaskErrorPeriod" approved="yes">

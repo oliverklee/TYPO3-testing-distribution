@@ -5,11 +5,11 @@
     <body>
       <trans-unit id="site.ctrl.title" resname="site.ctrl.title" approved="yes">
         <source>Site Configuration</source>
-        <target state="final">Seitenkonfiguration</target>
+        <target state="final">Site-Konfiguration</target>
       </trans-unit>
       <trans-unit id="site.identifier" resname="site.identifier" approved="yes">
         <source>Site Identifier</source>
-        <target state="final">Seitenbezeichner</target>
+        <target state="final">Site Identifier</target>
       </trans-unit>
       <trans-unit id="site.rootPageId" resname="site.rootPageId" approved="yes">
         <source>Root Page ID</source>
@@ -29,7 +29,11 @@
       </trans-unit>
       <trans-unit id="site.languages" resname="site.languages" approved="yes">
         <source>Available Languages for this Site</source>
-        <target state="final">Verfügbare Sprachen für diese Seite</target>
+        <target state="final">Verfügbare Sprachen für diese Site</target>
+      </trans-unit>
+      <trans-unit id="site.languages.description" resname="site.languages.description" approved="yes">
+        <source>Select an already existing language from another site or create a new one.</source>
+        <target state="final">Wählen Sie eine bereits existierende Sprache einer anderen Site oder erstellen Sie eine neue.</target>
       </trans-unit>
       <trans-unit id="site.languages.new" resname="site.languages.new" approved="yes">
         <source>New language</source>
@@ -69,7 +73,7 @@
       </trans-unit>
       <trans-unit id="site_language.palette.frontend" resname="site_language.palette.frontend" approved="yes">
         <source>Frontend related</source>
-        <target state="final">bzgl. Frontend</target>
+        <target state="final">Frontend</target>
       </trans-unit>
       <trans-unit id="site_language.ctrl.title" resname="site_language.ctrl.title" approved="yes">
         <source>Language Configuration for a Site</source>
@@ -119,6 +123,18 @@
         <source>Direction</source>
         <target state="final">Richtung</target>
       </trans-unit>
+      <trans-unit id="site_language.direction.none" resname="site_language.direction.none" approved="yes">
+        <source>None</source>
+        <target state="final">Keine</target>
+      </trans-unit>
+      <trans-unit id="site_language.direction.leftToRight" resname="site_language.direction.leftToRight" approved="yes">
+        <source>Left to Right</source>
+        <target state="final">Links nach rechts</target>
+      </trans-unit>
+      <trans-unit id="site_language.direction.rightToLeft" resname="site_language.direction.rightToLeft" approved="yes">
+        <source>Right to Left</source>
+        <target state="final">Rechts nach links</target>
+      </trans-unit>
       <trans-unit id="site_language.typo3Language" resname="site_language.typo3Language" approved="yes">
         <source>Language Key for XLF Files</source>
         <target state="final">Sprachschlüssel für XLF-Dateien</target>
@@ -130,6 +146,18 @@
       <trans-unit id="site_language.fallbackType" resname="site_language.fallbackType" approved="yes">
         <source>Fallback Type</source>
         <target state="final">Ausweichlösung-Typ</target>
+      </trans-unit>
+      <trans-unit id="site_language.fallbackType.strict" resname="site_language.fallbackType.strict" approved="yes">
+        <source>Strict: Show only translated content, based on overlays</source>
+        <target state="final">Strikt: Nur übersetzte Inhalte anzeigen, basierend auf Overlays</target>
+      </trans-unit>
+      <trans-unit id="site_language.fallbackType.fallback" resname="site_language.fallbackType.fallback" approved="yes">
+        <source>Fallback: Show default language if no translation exists</source>
+        <target state="final">Fallback: Standardsprache anzeigen, wenn keine Übersetzung vorhanden ist</target>
+      </trans-unit>
+      <trans-unit id="site_language.fallbackType.free" resname="site_language.fallbackType.free" approved="yes">
+        <source>Free mode: Ignore translation and overlay concept, only show data from selected language</source>
+        <target state="final">Freier Modus: Übersetzung und Overlay-Konzept ignorieren. Nur Inhalte der ausgewählten Sprache anzeigen</target>
       </trans-unit>
       <trans-unit id="site_language.fallbacks" resname="site_language.fallbacks" approved="yes">
         <source>Fallback to other Language(s) - order is important!</source>

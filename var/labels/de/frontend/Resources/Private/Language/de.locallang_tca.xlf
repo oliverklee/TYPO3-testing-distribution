@@ -141,7 +141,7 @@
       </trans-unit>
       <trans-unit id="pages.hidden" resname="pages.hidden" approved="yes">
         <source>Hide page</source>
-        <target state="final">Seite verbergen:</target>
+        <target state="final">Seite verbergen</target>
       </trans-unit>
       <trans-unit id="pages.hidden_formlabel" resname="pages.hidden_formlabel" approved="yes">
         <source>Page</source>
@@ -165,7 +165,7 @@
       </trans-unit>
       <trans-unit id="pages.extendToSubpages" resname="pages.extendToSubpages" approved="yes">
         <source>Include Subpages</source>
-        <target state="final">Inklusive Unterseiten:</target>
+        <target state="final">Inklusive Unterseiten</target>
       </trans-unit>
       <trans-unit id="pages.extendToSubpages_formlabel" resname="pages.extendToSubpages_formlabel" approved="yes">
         <source>Extend to Subpages</source>
@@ -173,7 +173,7 @@
       </trans-unit>
       <trans-unit id="pages.nav_title" resname="pages.nav_title" approved="yes">
         <source>Navigation Title</source>
-        <target state="final">Navigationstitel:</target>
+        <target state="final">Navigationstitel</target>
       </trans-unit>
       <trans-unit id="pages.nav_title_formlabel" resname="pages.nav_title_formlabel" approved="yes">
         <source>Alternative Navigation Title</source>
@@ -181,7 +181,7 @@
       </trans-unit>
       <trans-unit id="pages.nav_hide" resname="pages.nav_hide" approved="yes">
         <source>Hide in Menu</source>
-        <target state="final">Im Menü verbergen:</target>
+        <target state="final">Im Menü verbergen</target>
       </trans-unit>
       <trans-unit id="pages.nav_hide_formlabel" resname="pages.nav_hide_formlabel" approved="yes">
         <source>In Menus</source>
@@ -193,11 +193,11 @@
       </trans-unit>
       <trans-unit id="pages.subtitle" resname="pages.subtitle" approved="yes">
         <source>Subtitle</source>
-        <target state="final">Untertitel:</target>
+        <target state="final">Untertitel</target>
       </trans-unit>
       <trans-unit id="pages.subtitle_formlabel" resname="pages.subtitle_formlabel" approved="yes">
         <source>Subtitle</source>
-        <target state="final">Untertitel:</target>
+        <target state="final">Untertitel</target>
       </trans-unit>
       <trans-unit id="pages.target" resname="pages.target" approved="yes">
         <source>Target</source>
@@ -209,15 +209,15 @@
       </trans-unit>
       <trans-unit id="pages.url" resname="pages.url" approved="yes">
         <source>URL</source>
-        <target state="final">URL:</target>
+        <target state="final">URL</target>
       </trans-unit>
       <trans-unit id="pages.url_formlabel" resname="pages.url_formlabel" approved="yes">
         <source>URL</source>
-        <target state="final">URL:</target>
+        <target state="final">URL</target>
       </trans-unit>
       <trans-unit id="pages.lastUpdated" resname="pages.lastUpdated" approved="yes">
         <source>Last Updated</source>
-        <target state="final">Letzte Aktualisierung:</target>
+        <target state="final">Letzte Aktualisierung</target>
       </trans-unit>
       <trans-unit id="pages.lastUpdated_formlabel" resname="pages.lastUpdated_formlabel" approved="yes">
         <source>Last Update</source>
@@ -225,7 +225,7 @@
       </trans-unit>
       <trans-unit id="pages.newUntil" resname="pages.newUntil" approved="yes">
         <source>'New' Until</source>
-        <target state="final">"Neu" bis:</target>
+        <target state="final">"Neu" bis</target>
       </trans-unit>
       <trans-unit id="pages.newUntil_formlabel" resname="pages.newUntil_formlabel" approved="yes">
         <source>Mark as 'New' Until</source>
@@ -233,7 +233,7 @@
       </trans-unit>
       <trans-unit id="pages.cache_timeout" resname="pages.cache_timeout" approved="yes">
         <source>Cache Expires</source>
-        <target state="final">Cache verfällt:</target>
+        <target state="final">Cache verfällt</target>
       </trans-unit>
       <trans-unit id="pages.cache_timeout_formlabel" resname="pages.cache_timeout_formlabel" approved="yes">
         <source>Cache Lifetime</source>
@@ -281,7 +281,7 @@
       </trans-unit>
       <trans-unit id="pages.cache_tags" resname="pages.cache_tags" approved="yes">
         <source>Cache Tags</source>
-        <target state="final">Cache-Tags:</target>
+        <target state="final">Cache-Tags</target>
       </trans-unit>
       <trans-unit id="pages.editlock_formlabel" resname="pages.editlock_formlabel" approved="yes">
         <source>Editable for Admins Only</source>
@@ -317,7 +317,7 @@
       </trans-unit>
       <trans-unit id="pages.tabs.url" resname="pages.tabs.url" approved="yes">
         <source>URL</source>
-        <target state="final">URL:</target>
+        <target state="final">URL</target>
       </trans-unit>
       <trans-unit id="pages.tabs.extended" resname="pages.tabs.extended" approved="yes">
         <source>Extended</source>
@@ -345,11 +345,11 @@
       </trans-unit>
       <trans-unit id="pages.shortcut_mode" resname="pages.shortcut_mode" approved="yes">
         <source>Shortcut Mode</source>
-        <target state="final">Verweismodus:</target>
+        <target state="final">Shortcut-Modus</target>
       </trans-unit>
       <trans-unit id="pages.shortcut_mode_formlabel" resname="pages.shortcut_mode_formlabel" approved="yes">
         <source>Shortcut Mode</source>
-        <target state="final">Verweismodus:</target>
+        <target state="final">Shortcut-Modus</target>
       </trans-unit>
       <trans-unit id="pages.shortcut_mode.I.0" resname="pages.shortcut_mode.I.0" approved="yes">
         <source>Selected page</source>
@@ -621,15 +621,26 @@
       </trans-unit>
       <trans-unit id="sys_template.root" resname="sys_template.root" approved="yes">
         <source>Rootlevel</source>
-        <target state="final">Wurzelebene:</target>
+        <target state="final">Ist Root-Ebene</target>
+      </trans-unit>
+      <trans-unit id="sys_template.rootDescription" resname="sys_template.rootDescription" approved="yes">
+        <source>When enabled, the page is marked as "Rootline Root". This is most often set only once for the uppermost TypoScript record.
+				This can be used in frontend to stop at this page when creating for example "breadcrumb" menus, even if there are further parent pages.
+				The flag especially affects these TypoScript "getText" properties: "level", "levelmedia", "leveltitle", "levelfield" and "leveluid".</source>
+        <target state="final">Wenn aktiviert, wird die Seite als "Rootline Root" markiert. Dies wird meist nur einmal für den obersten TypoScript Datensatz gesetzt. Dies kann im Frontend verwendet werden, um auf dieser Seite zu stoppen, wenn zum Beispiel "Breadcrumb"-Menüs erstellt werden, auch wenn es weitere übergeordnete Seiten gibt. Die Option betrifft insbesondere diese TypoScript "getText"-Eigenschaften: "level", "levelmedia", "leveltitle", "levelfield" und "leveluid".</target>
       </trans-unit>
       <trans-unit id="sys_template.clear" resname="sys_template.clear" approved="yes">
         <source>Clear</source>
-        <target state="final">Löschen:</target>
+        <target state="final">Löschen</target>
+      </trans-unit>
+      <trans-unit id="sys_template.clearDescription" resname="sys_template.clearDescription" approved="yes">
+        <source>Remove TypoScript settings from TypoScript records up in rootline. This is most often set only once for the uppermost TypoScript
+				record that is most often located on the same page that has "Use as Root Page" flag set and the "Site" configuration attached in the site module.</source>
+        <target state="final">TypoScript-Einstellungen aus übergeordneten TypoScript Datensätzen in der Rootline entfernen. Dies wird meist nur einmal für den obersten TypoScript Datensatz gesetzt, der sich meist auf der gleichen Seite befindet, die das „Root-Ebene" Flag verwendet und als Root-Seite einer "Site" im Site-Modul zum Einsatz kommt.</target>
       </trans-unit>
       <trans-unit id="sys_template.constants" resname="sys_template.constants" approved="yes">
         <source>Constants</source>
-        <target state="final">Konstanten:</target>
+        <target state="final">Konstanten</target>
       </trans-unit>
       <trans-unit id="sys_template.resources" resname="sys_template.resources" approved="yes">
         <source>Resources</source>
@@ -639,17 +650,34 @@
         <source>Include static (from extensions)</source>
         <target state="final">Statische Templates einschließen (aus Erweiterungen):</target>
       </trans-unit>
+      <trans-unit id="sys_template.include_static_fileDescription" resname="sys_template.include_static_fileDescription" approved="yes">
+        <source>Extensions often deliver default TypoScript to set up basic frontend rendering. These can be loaded here. To keep TypoScript
+				structures clean and tidy, this is often set only for the main TypoScript record located on the same page that has "Use as Root Page" flag set,
+				has a "Site" configuration attached in the site module, and has the above "Clear" and "Rootlevel" flags set.</source>
+        <target state="final">Extension liefern oft Standard-TypoScript zum Einrichten des grundlegenden Frontend-Renderings. Diese können hier geladen werden. Um TypoScript Strukturen sauber und ordentlich zu halten, ist dies oft nur für den Haupt-TypoScript-Eintrag auf der gleichen Seite gesetzt, welche die "Use as Root Page" Option verwendet und in einer "Site" Konfiguration als Root-Seite verwendet wird sowie die oben genannten Optionen „Clear“ und „Rootlevel“ aktiviert haben.</target>
+      </trans-unit>
       <trans-unit id="sys_template.basedOn" resname="sys_template.basedOn" approved="yes">
         <source>Include Basis Template</source>
         <target state="final">Basis-Template einschließen:</target>
+      </trans-unit>
+      <trans-unit id="sys_template.basedOnDescription" resname="sys_template.basedOnDescription" approved="yes">
+        <source>Include additional record located elsewhere in the page tree. This can be used to load the same TypoScript records at multiple
+				places in a page tree. This isn't used very often nowadays and it's often easier to understand and maintain to extract TypoScript to
+				files and to load the full set in a single main TypoScript record.</source>
+        <target state="final">Fügen Sie zusätzliche TypoScript Datensätze hinzu, die sich woanders im Seitenbaum befinden. Dies kann verwendet werden, um die gleichen TypoScript-Einträge an mehreren Stellen in einem Seitenbaum zu laden. Dies wird heutzutage nicht sehr oft verwendet und es ist oft einfacher, die Seite zu verstehen und zu pflegen, indem Sie die TypoScript-Konfiguration in Dateien auslagern und den kompletten Datensatz in einem einzigen Haupt-TypoScript-Datensatz laden.</target>
       </trans-unit>
       <trans-unit id="sys_template.includeStaticAfterBasedOn" resname="sys_template.includeStaticAfterBasedOn" approved="yes">
         <source>Include Static Templates After Basis Templates</source>
         <target state="final">Statische Templates nach Basis-Templates einschließen:</target>
       </trans-unit>
+      <trans-unit id="sys_template.includeStaticAfterBasedOnDescription" resname="sys_template.includeStaticAfterBasedOnDescription" approved="yes">
+        <source>When using both "Include static (from extensions)" and "Include Basis Template" fields in a TypoScript record, this
+				flag allows swapping their load order.</source>
+        <target state="final">Wenn Sie sowohl "Include static (von Extensions)" als auch "Include Basis Template" Felder in einem TypoScript Datensatz verwenden, ermöglicht diese Option das Umkehren der Ladereihenfolge.</target>
+      </trans-unit>
       <trans-unit id="sys_template.config" resname="sys_template.config" approved="yes">
         <source>Setup</source>
-        <target state="final">Setup:</target>
+        <target state="final">Setup</target>
       </trans-unit>
       <trans-unit id="sys_template.editorcfg" resname="sys_template.editorcfg" approved="yes">
         <source>Backend Editor Configuration</source>
@@ -662,6 +690,12 @@
       <trans-unit id="sys_template.static_file_mode" resname="sys_template.static_file_mode" approved="yes">
         <source>Static Template Files from TYPO3 Extensions</source>
         <target state="final">Statische Template-Dateien aus TYPO3-Erweiterungen:</target>
+      </trans-unit>
+      <trans-unit id="sys_template.static_file_modeDescription" resname="sys_template.static_file_modeDescription" approved="yes">
+        <source>This seldom used feature affects if and when TypoScript files from extensions (ext_typoscript_setup.typoscript
+				and ext_typoscript_constants.typoscript) are loaded. There are very few cases where setting this to a different value than
+				the default value "0" is useful.</source>
+        <target state="final">Diese selten verwendete Funktion beeinflusst, ob und wann TypoScript Dateien aus TYPO3 Extensions (ext_typoscript_setup.typoscript und ext_typoscript_constants.typoscript) geladen werden. Es gibt sehr wenige Fälle, in denen eine Einstellung auf einen anderen Wert als den Standardwert „0“ nützlich ist.</target>
       </trans-unit>
       <trans-unit id="sys_template.static_file_mode.0" resname="sys_template.static_file_mode.0" approved="yes">
         <source>Default (include before if root flag is set)</source>

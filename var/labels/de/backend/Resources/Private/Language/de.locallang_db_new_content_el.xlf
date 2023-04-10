@@ -153,7 +153,7 @@
       </trans-unit>
       <trans-unit id="menu_sitemap.description" resname="menu_sitemap.description" approved="yes">
         <source>Expanded menu of all subpages of the current site</source>
-        <target state="final">Menü aller Seiten und Unterseiten der ausgewählten Seiten ausklappen</target>
+        <target state="final">Erweitertes Menü aller Unterseiten der aktuellen Seite</target>
       </trans-unit>
       <trans-unit id="menu_sitemap_pages.title" resname="menu_sitemap_pages.title" approved="yes">
         <source>Sitemaps of selected pages</source>

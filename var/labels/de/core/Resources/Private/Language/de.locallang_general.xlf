@@ -229,7 +229,7 @@
       </trans-unit>
       <trans-unit id="LGL.siteLanguages" resname="LGL.siteLanguages" approved="yes">
         <source>Site languages</source>
-        <target state="final">Sprachen der Seite</target>
+        <target state="final">Sprachen der Site</target>
       </trans-unit>
       <trans-unit id="LGL.specialLanguages" resname="LGL.specialLanguages" approved="yes">
         <source>Special languages</source>

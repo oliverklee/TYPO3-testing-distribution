@@ -596,7 +596,7 @@
             <target state="final">Der Name des Absenders (z.B. der Name Ihrer Firma), welche als Absender im E-Mail Programm des Webseitenbesuchers erscheint.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.replyToRecipients.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.replyToRecipients.label" xml:space="preserve" approved="yes">
                 <source>Reply-To Recipients</source>
-            <target state="final">Replay-To Empfänger</target></trans-unit>
+            <target state="final">Reply-To Empfänger</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.carbonCopyRecipients.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.carbonCopyRecipients.label" xml:space="preserve" approved="yes">
                 <source>CC Recipients</source>
             <target state="final">CC Empfänger</target></trans-unit>
@@ -1031,6 +1031,15 @@ Die maximale Dateigröße ist beim Server auf {0} eingestellt. Bitte beachten Si
       <trans-unit id="formEditor.inspector.editor.formelement_selector.no_elements" resname="formEditor.inspector.editor.formelement_selector.no_elements" xml:space="preserve" approved="yes">
                 <source>No elements available</source>
             <target state="final">Kein Element verfügbar</target></trans-unit>
+      <trans-unit id="formEditor.inspector.editor.formelement.remove" resname="formEditor.inspector.editor.formelement.remove" xml:space="preserve" approved="yes">
+                <source>Remove this Element</source>
+            <target state="final">Dieses Element entfernen</target></trans-unit>
+      <trans-unit id="formEditor.inspector.editor.grid.add" resname="formEditor.inspector.editor.grid.add" xml:space="preserve" approved="yes">
+                <source>Add a new row</source>
+            <target state="final">Neue Zeile hinzufügen</target></trans-unit>
+      <trans-unit id="formEditor.inspector.editor.grid.remove" resname="formEditor.inspector.editor.grid.remove" xml:space="preserve" approved="yes">
+                <source>Remove this row</source>
+            <target state="final">Zeile entfernen</target></trans-unit>
     </body>
   </file>
 </xliff>

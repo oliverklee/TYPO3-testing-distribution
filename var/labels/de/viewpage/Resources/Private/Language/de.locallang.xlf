@@ -61,7 +61,7 @@
       </trans-unit>
       <trans-unit id="noSiteConfiguration" resname="noSiteConfiguration" approved="yes">
         <source>The requested page is missing a valid site configuration.</source>
-        <target state="final">Auf der angefragten Seite fehlt eine gültige Seitenkonfiguration.</target>
+        <target state="final">Auf der angefragten Seite fehlt eine gültige Site-Konfiguration.</target>
       </trans-unit>
       <trans-unit id="iframe.title" resname="iframe.title" approved="yes">
         <source>View selected page in different screen resolutions</source>

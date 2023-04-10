@@ -159,6 +159,10 @@
         <source>Conditions</source>
         <target state="final">Bedingungen</target>
       </trans-unit>
+      <trans-unit id="activeConditions" resname="activeConditions" approved="yes">
+        <source>%s active condition(s)</source>
+        <target state="final">%s aktive Bedingung(en)</target>
+      </trans-unit>
       <trans-unit id="setConditions" resname="setConditions" approved="yes">
         <source>Set conditions</source>
         <target state="final">Bedingungen setzen</target>
@@ -178,6 +182,10 @@
       <trans-unit id="severity.info" resname="severity.info" approved="yes">
         <source>Info</source>
         <target state="final">Info</target>
+      </trans-unit>
+      <trans-unit id="severity.notice" resname="severity.notice" approved="yes">
+        <source>Notice</source>
+        <target state="final">Hinweis</target>
       </trans-unit>
       <trans-unit id="severity.warning" resname="severity.warning" approved="yes">
         <source>Warning</source>

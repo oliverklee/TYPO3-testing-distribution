@@ -79,6 +79,10 @@
         <source>Total Time [ms]</source>
         <target state="final">Gesamtzeit [ms]</target>
       </trans-unit>
+      <trans-unit id="submodule.queryInformation.total" resname="submodule.queryInformation.total" approved="yes">
+        <source>Total</source>
+        <target state="final">Summe</target>
+      </trans-unit>
       <trans-unit id="submodule.pageTitle.label" approved="yes">
         <source>Page title</source>
         <target state="final">Seitentitel</target>
