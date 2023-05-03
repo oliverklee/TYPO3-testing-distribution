@@ -1,9 +1,8 @@
 base: 'https://typo3-testing-10-4.ddev.site:8081/'
-baseVariants: {  }
-errorHandling: {  }
+baseVariants: { }
+errorHandling: { }
 languages:
-  -
-    title: Deutsch
+  - title: Deutsch
     enabled: true
     base: 'https://typo3-testing-10-4.ddev.site:8081'
     typo3Language: de
@@ -14,8 +13,7 @@ languages:
     direction: ''
     flag: de
     languageId: '0'
-  -
-    title: Englisch
+  - title: Englisch
     enabled: true
     base: 'https://typo3-testing-10-4-en.ddev.site:8081'
     typo3Language: default
@@ -29,7 +27,7 @@ languages:
     flag: en-us-gb
     languageId: '1'
 rootPageId: 1
-routes: {  }
+routes: { }
 routeEnhancers:
   PageTypeSuffix:
     type: PageType
