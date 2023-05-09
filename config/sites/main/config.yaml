@@ -35,6 +35,21 @@ routeEnhancers:
     index: ''
     map:
       '/': 0
+  EventSingleView:
+    type: Plugin
+    limitToPages:
+      - 17
+    routePath: '/{slug}'
+    namespace: 'tx_seminars_pi1'
+    _arguments:
+      slug: showUid
+    requirements:
+      slug: '[a-z0-9/\-]+'
+    aspects:
+      slug:
+        type: PersistedAliasMapper
+        tableName: 'tx_seminars_seminars'
+        routeFieldName: 'slug'
   EventRegistration:
     type: Extbase
     limitToPages:
