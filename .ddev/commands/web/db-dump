@@ -15,7 +15,6 @@ vendor/bin/typo3cms database:export \
     --exclude sys_log \
     --exclude sys_news \
     --exclude sys_refindex \
-    --exclude sys_registry \
     --exclude tx_extensionmanager_* \
     --exclude tx_oelib_test* \
     --exclude tx_scheduler_* \
