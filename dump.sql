@@ -912,6 +912,33 @@ INSERT INTO `sys_language` VALUES (1,0,1631545821,0,256,'Englisch','en-us-gb','e
 UNLOCK TABLES;
 
 --
+-- Table structure for table `sys_registry`
+--
+
+DROP TABLE IF EXISTS `sys_registry`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_registry` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_namespace` varchar(128) NOT NULL DEFAULT '',
+  `entry_key` varchar(128) NOT NULL DEFAULT '',
+  `entry_value` mediumblob DEFAULT NULL,
+  PRIMARY KEY (`uid`),
+  UNIQUE KEY `entry_identifier` (`entry_namespace`,`entry_key`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_registry`
+--
+
+LOCK TABLES `sys_registry` WRITE;
+/*!40000 ALTER TABLE `sys_registry` DISABLE KEYS */;
+INSERT INTO `sys_registry` VALUES (1,'extensionDataImport','typo3/sysext/core/ext_tables_static+adt.sql','s:0:\"\";'),(2,'extensionDataImport','typo3/sysext/extbase/ext_tables_static+adt.sql','s:0:\"\";'),(3,'extensionDataImport','typo3/sysext/fluid/ext_tables_static+adt.sql','s:0:\"\";'),(4,'extensionDataImport','typo3/sysext/frontend/ext_tables_static+adt.sql','s:0:\"\";'),(5,'extensionDataImport','typo3/sysext/fluid_styled_content/ext_tables_static+adt.sql','s:0:\"\";'),(6,'extensionDataImport','typo3/sysext/install/ext_tables_static+adt.sql','s:0:\"\";'),(7,'extensionDataImport','typo3/sysext/recordlist/ext_tables_static+adt.sql','s:0:\"\";'),(8,'extensionDataImport','typo3/sysext/backend/ext_tables_static+adt.sql','s:0:\"\";'),(9,'extensionDataImport','typo3/sysext/filelist/ext_tables_static+adt.sql','s:0:\"\";'),(10,'extensionDataImport','typo3/sysext/form/ext_tables_static+adt.sql','s:0:\"\";'),(11,'extensionDataImport','typo3/sysext/setup/ext_tables_static+adt.sql','s:0:\"\";'),(12,'extensionDataImport','typo3/sysext/rte_ckeditor/ext_tables_static+adt.sql','s:0:\"\";'),(13,'extensionDataImport','typo3/sysext/about/ext_tables_static+adt.sql','s:0:\"\";'),(14,'extensionDataImport','typo3/sysext/adminpanel/ext_tables_static+adt.sql','s:0:\"\";'),(15,'extensionDataImport','typo3/sysext/belog/ext_tables_static+adt.sql','s:0:\"\";'),(16,'extensionDataImport','typo3/sysext/beuser/ext_tables_static+adt.sql','s:0:\"\";'),(17,'extensionDataImport','typo3/sysext/dashboard/ext_tables_static+adt.sql','s:0:\"\";'),(18,'extensionDataImport','typo3/sysext/extensionmanager/ext_tables_static+adt.sql','s:32:\"9beb0be917f14fdde2c9cb940a47d38e\";'),(19,'extensionDataImport','typo3/sysext/felogin/ext_tables_static+adt.sql','s:0:\"\";'),(20,'extensionDataImport','typo3/sysext/info/ext_tables_static+adt.sql','s:0:\"\";'),(21,'extensionDataImport','typo3/sysext/lowlevel/ext_tables_static+adt.sql','s:0:\"\";'),(22,'extensionDataImport','typo3/sysext/recycler/ext_tables_static+adt.sql','s:0:\"\";'),(23,'extensionDataImport','typo3/sysext/reports/ext_tables_static+adt.sql','s:0:\"\";'),(24,'extensionDataImport','typo3/sysext/tstemplate/ext_tables_static+adt.sql','s:0:\"\";'),(25,'extensionDataImport','typo3/sysext/viewpage/ext_tables_static+adt.sql','s:0:\"\";'),(26,'extensionDataImport','typo3conf/ext/static_info_tables/ext_tables_static+adt.sql','s:32:\"27a738596e4c606b702f9f8f02ef14e2\";'),(27,'static_info_tables','last_update_status','s:24:\"static_info_tables:6.9.6\";'),(28,'extensionDataImport','typo3conf/ext/feuserextrafields/ext_tables_static+adt.sql','s:0:\"\";'),(29,'extensionDataImport','typo3conf/ext/oelib/ext_tables_static+adt.sql','s:32:\"50712822725de5ac903340841e0aeca6\";'),(30,'extensionDataImport','typo3conf/ext/seminars/ext_tables_static+adt.sql','s:0:\"\";'),(31,'extensionDataImport','typo3conf/ext/onetimeaccount/ext_tables_static+adt.sql','s:0:\"\";'),(32,'extensionDataImport','typo3conf/ext/autoswitchtolistview/ext_tables_static+adt.sql','s:0:\"\";'),(33,'extensionDataImport','typo3conf/ext/tea/ext_tables_static+adt.sql','s:0:\"\";'),(34,'extensionDataImport','typo3conf/ext/typo3_devsite/ext_tables_static+adt.sql','s:0:\"\";');
+/*!40000 ALTER TABLE `sys_registry` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sys_template`
 --
 
@@ -2341,4 +2368,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-24 18:49:55
+-- Dump completed on 2023-05-24 19:39:49
