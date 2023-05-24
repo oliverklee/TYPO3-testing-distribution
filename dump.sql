@@ -1547,7 +1547,7 @@ CREATE TABLE `tx_seminars_seminars` (
   `automatic_confirmation_cancelation` smallint(5) unsigned NOT NULL DEFAULT 0,
   `price_on_request` smallint(5) unsigned NOT NULL DEFAULT 0,
   `date_of_last_registration_digest` int(10) unsigned NOT NULL DEFAULT 0,
-  `slug` varchar(2048) NOT NULL DEFAULT '',
+  `slug` varchar(262) DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `object_type` (`object_type`),
@@ -2343,4 +2343,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-09 17:42:38
+-- Dump completed on 2023-05-24 18:50:14
