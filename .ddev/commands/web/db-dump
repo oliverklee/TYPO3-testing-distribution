@@ -5,6 +5,7 @@ vendor/bin/typo3cms database:export \
     --exclude be_sessions \
     --exclude cache_* \
     --exclude cf_* \
+    --exclude index_* \
     --exclude fe_sessions \
     --exclude sys_be_shortcuts \
     --exclude sys_category* \
