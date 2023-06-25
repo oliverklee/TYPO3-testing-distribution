@@ -51,7 +51,7 @@
 	"repositories": [
 		{
 			"type": "path",
-			"url": "packages/*"
+			"url": "src/extensions/*"
 		}
 	],
 	"prefer-stable": true,

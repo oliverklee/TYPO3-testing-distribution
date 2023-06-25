@@ -1,9 +1,7 @@
 .DS_Store
 .idea
-/.ddev/docker-compose.packages.yaml
+/.ddev/docker-compose.extensions.yaml
 /composer.lock
-/packages/*
-!/packages/.gitkeep
 /public/*
 !/public/.htaccess
 !/public/favicon.ico
@@ -11,6 +9,8 @@
 /public/typo3conf/*
 !/public/typo3conf/AdditionalConfiguration.php
 !/public/typo3conf/LocalConfiguration.php
+/src/extensions/*
+!/src/extensions/.gitkeep
 /var/*
 !/var/labels
 /vendor
