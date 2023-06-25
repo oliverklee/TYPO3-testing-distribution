@@ -1,0 +1,13 @@
+# This is a template file for mounting your local extensions into this distribution.
+# Copy this file to docker-compose.src/extensions.yaml and modify it to your needs. (More details in the README.)
+version: "3.6"
+
+services:
+  web:
+    volumes:
+      - "$HOME/src/typo3/ext/feuserextrafields:/var/www/html/src/extensions/feuserextrafields:cached,ro"
+      - "$HOME/src/typo3/ext/oelib:/var/www/html/src/extensions/oelib:cached,ro"
+      - "$HOME/src/typo3/ext/onetimeaccount:/var/www/html/src/extensions/onetimeaccount:cached,ro"
+      - "$HOME/src/typo3/ext/seminars:/var/www/html/src/extensions/seminars:cached,ro"
+      - "$HOME/src/typo3/ext/tea:/var/www/html/src/extensions/tea:cached,ro"
+      - "$HOME/src/typo3/ext/typo3-devsite:/var/www/html/src/extensions/typo3-devsite:cached,ro"
