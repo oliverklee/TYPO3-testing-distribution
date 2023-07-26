@@ -35,3 +35,43 @@ routeEnhancers:
     index: ''
     map:
       '/': 0
+  EventSingleView:
+    type: Plugin
+    limitToPages:
+      - 17
+    routePath: '/{slug}'
+    namespace: 'tx_seminars_pi1'
+    _arguments:
+      slug: showUid
+    requirements:
+      slug: '[a-z0-9/\-]+'
+    aspects:
+      slug:
+        type: PersistedAliasMapper
+        tableName: 'tx_seminars_seminars'
+        routeFieldName: 'slug'
+  EventRegistration:
+    type: Extbase
+    limitToPages:
+      - 18
+    extension: Seminars
+    plugin: EventRegistration
+    defaultController: 'EventRegistration::checkPrerequisites'
+    routes:
+      - routePath: '/check/{event}'
+        _controller: 'EventRegistration::checkPrerequisites'
+        _arguments:
+          event: event
+      - routePath: '/new/{event}'
+        _controller: 'EventRegistration::new'
+        _arguments:
+          event: event
+    aspects:
+      event:
+        type: PersistedAliasMapper
+        tableName: 'tx_seminars_seminars'
+        routeFieldName: 'uid'
+      registration:
+        type: PersistedAliasMapper
+        tableName: 'tx_seminars_attendances'
+        routeFieldName: 'uid'
