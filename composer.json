@@ -38,6 +38,7 @@
 		"typo3/cms-recycler": "^10.4",
 		"typo3/cms-reports": "^10.4",
 		"typo3/cms-rte-ckeditor": "^10.4",
+		"typo3/cms-seo": "^10.4",
 		"typo3/cms-setup": "^10.4",
 		"typo3/cms-tstemplate": "^10.4",
 		"typo3/cms-viewpage": "^10.4",
