@@ -1,0 +1,4 @@
+mod {
+  SHARED.colPos_list = 0
+  web_layout.hideRestrictedCols = 1
+}

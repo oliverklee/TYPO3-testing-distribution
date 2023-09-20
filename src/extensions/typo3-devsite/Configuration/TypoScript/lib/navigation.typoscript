@@ -1,0 +1,65 @@
+lib {
+  mainNavigation = HMENU
+  mainNavigation {
+    entryLevel = 0
+
+    1 = TMENU
+    1 {
+      expAll = 1
+
+      NO {
+        allWrap = <li class="nav-item"> | </li>
+        stdWrap.htmlSpecialChars = 1
+        ATagParams = class="nav-link"
+      }
+
+      CUR < .NO
+      CUR = 1
+      CUR.allWrap = <li class="nav-item active"> | </li>
+
+      ACT < .CUR
+    }
+  }
+
+  subNavigation = HMENU
+  subNavigation {
+    entryLevel = 1
+
+    1 = TMENU
+    1 {
+      expAll = 1
+
+      NO {
+        allWrap = <li class="nav-item"> | </li>
+        stdWrap.htmlSpecialChars = 1
+        ATagParams = class="nav-link"
+      }
+
+      CUR < .NO
+      CUR = 1
+      CUR.allWrap = <li class="nav-item active"> | </li>
+
+      ACT < .CUR
+    }
+  }
+
+  breadcrumbs = HMENU
+  breadcrumbs {
+    special = rootline
+    special.range = 0|-1
+    includeNotInMenu = 1
+    1 = TMENU
+    1 {
+      NO {
+        allWrap = <li class="breadcrumb-item"> | </li>
+        stdWrap.htmlSpecialChars = 1
+      }
+
+      CUR < .NO
+      CUR = 1
+      CUR {
+        allWrap = <li class="breadcrumb-item active" aria-current="page"> | </li>
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <div class="container-fluid">
+        <div class="row">
+            <f:render partial="Navigation" arguments="{siteName: siteName, navigation: mainNavigation}"/>
+        </div>
+        <hr/>
+
+        <div class="row">
+            <f:render partial="Breadcrumbs" arguments="{breadcrumbs: breadcrumbs}"/>
+        </div>
+        <hr/>
+
+        <div class="row">
+            <div class="col-2">
+                <f:render partial="SubNavigation" arguments="{navigation: subNavigation}"/>
+            </div>
+            <div class="col">
+                <f:render section="Main"/>
+            </div>
+        </div>
+    </div>
+
+</html>
