@@ -1,0 +1,24 @@
+config {
+  admPanel = 1
+  doctype = html5
+  xmlprologue = none
+  xhtml_cleaning = none
+
+  inlineStyle2TempFile = 0
+  removeDefaultJS = 0
+  compressJs = 0
+  concatenateJs = 0
+  compressCss = 0
+  concatenateCss = 0
+
+  absRefPrefix = /
+
+  contentObjectExceptionHandler = 0
+
+  pageTitleProviders {
+    eventTitle {
+      provider = OliverKlee\Seminars\Seo\SingleViewPageTitleProvider
+      before = record
+    }
+  }
+}
