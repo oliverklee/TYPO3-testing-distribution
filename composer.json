@@ -74,16 +74,25 @@
 			"@typo3-cms-scripts"
 		],
 		"ci": [
+			"@ci:static"
+		],
+		"ci:composer:normalize": [
+			"@composer normalize --dry-run --no-check-lock",
+			"@composer normalize --dry-run --no-check-lock src/extensions/typo3-devsite/composer.json"
+		],
+		"ci:php:lint": "@php -l public/typo3conf/LocalConfiguration.php",
+		"ci:static": [
 			"@ci:composer:normalize",
 			"@ci:php:lint",
 			"@ci:yaml:lint"
 		],
-		"ci:composer:normalize": "@composer normalize --dry-run",
-		"ci:php:lint": "@php -l public/typo3conf/LocalConfiguration.php",
 		"ci:yaml:lint": "find .ddev .github config -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
-		"composer:normalize": "@composer normalize",
 		"fix": [
-			"@composer:normalize"
+			"@fix:composer"
+		],
+		"fix:composer": [
+			"@composer normalize --no-check-lock",
+			"@composer normalize --no-check-lock src/extensions/typo3-devsite/composer.json"
 		],
 		"typo3-cms-scripts": [
 			"typo3cms install:fixfolderstructure"
@@ -93,8 +102,9 @@
 		"ci": "Runs all code checks.",
 		"ci:composer:normalize": "Checks the formatting and structure of the composer.json.",
 		"ci:php:lint": "Lints the PHP files for syntax errors.",
+		"ci:static": "Runs all static code checks (syntax, style, types).",
 		"ci:yaml:lint": "Lints the YAML files for syntax errors.",
-		"composer:normalize": "Reformats and sorts the composer.json file.",
-		"fix": "Reformats the code."
+		"fix": "Reformats the code.",
+		"fix:composer": "Reformats and sorts the composer.json files."
 	}
 }
