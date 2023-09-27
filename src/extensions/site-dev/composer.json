@@ -1,6 +1,6 @@
 {
-	"name": "oliverklee/typo3-devsite",
-	"description": "Testing site package",
+	"name": "oliverklee/site-dev",
+	"description": "Development site package",
 	"license": "GPL-2.0-or-later",
 	"type": "typo3-cms-extension",
 	"keywords": [
@@ -14,11 +14,6 @@
 			"role": "developer"
 		}
 	],
-	"homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions/",
-	"support": {
-		"issues": "https://github.com/oliverklee/typo3-devsite/issues",
-		"source": "https://github.com/oliverklee/typo3-devsite"
-	},
 	"require": {
 		"php": ">= 7.4",
 		"typo3/cms-core": "^11.5.2",
@@ -29,7 +24,7 @@
 	"prefer-stable": true,
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "typo3_devsite"
+			"extension-key": "site_dev"
 		}
 	}
 }
