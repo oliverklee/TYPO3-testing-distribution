@@ -86,7 +86,7 @@
 			"@ci:php:lint",
 			"@ci:yaml:lint"
 		],
-		"ci:yaml:lint": "find .ddev .github config -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
+		"ci:yaml:lint": "find .ddev .github config src/extensions/site-dev -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
 		"fix": [
 			"@fix:composer"
 		],
