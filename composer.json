@@ -22,7 +22,7 @@
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/onetimeaccount": "dev-main",
 		"oliverklee/seminars": "dev-main",
-		"oliverklee/typo3-devsite": "@dev",
+		"oliverklee/site-dev": "@dev",
 		"ttn/tea": "dev-main",
 		"typo3/cms-adminpanel": "^11.5",
 		"typo3/cms-belog": "^11.5",
@@ -78,7 +78,7 @@
 		],
 		"ci:composer:normalize": [
 			"@composer normalize --dry-run --no-check-lock",
-			"@composer normalize --dry-run --no-check-lock src/extensions/typo3-devsite/composer.json"
+			"@composer normalize --dry-run --no-check-lock src/extensions/site-dev/composer.json"
 		],
 		"ci:php:lint": "@php -l public/typo3conf/LocalConfiguration.php",
 		"ci:static": [
@@ -92,7 +92,7 @@
 		],
 		"fix:composer": [
 			"@composer normalize --no-check-lock",
-			"@composer normalize --no-check-lock src/extensions/typo3-devsite/composer.json"
+			"@composer normalize --no-check-lock src/extensions/site-dev/composer.json"
 		],
 		"typo3-cms-scripts": [
 			"typo3cms install:fixfolderstructure"

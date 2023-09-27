@@ -1,20 +1,20 @@
 page = PAGE
 page {
   includeCSSLibs {
-    bootstrap = EXT:typo3_devsite/Resources/Public/Css/bootstrap.css
+    bootstrap = EXT:site_dev/Resources/Public/Css/bootstrap.css
   }
 
   # jQuery intentionally does not get included in the footer so extensions like mkforms
   # that require jQuery in the BODY don't break.
   includeJSLibs {
-    jQuery = EXT:typo3_devsite/Resources/Public/JavaScript/jquery-3.7.0.js
+    jQuery = EXT:site_dev/Resources/Public/JavaScript/jquery-3.7.0.js
     jQuery {
       forceOnTop = 1
     }
   }
 
   includeJSFooterlibs {
-    bootstrap = EXT:typo3_devsite/Resources/Public/JavaScript/bootstrap.bundle.js
+    bootstrap = EXT:site_dev/Resources/Public/JavaScript/bootstrap.bundle.js
     bootstrap {
       async = 1
     }
@@ -25,15 +25,15 @@ page {
     templateName = Site
 
     layoutRootPaths {
-      0 = EXT:typo3_devsite/Resources/Private/Layouts/Page
+      0 = EXT:site_dev/Resources/Private/Layouts/Page
     }
 
     templateRootPaths {
-      0 = EXT:typo3_devsite/Resources/Private/Templates/Page
+      0 = EXT:site_dev/Resources/Private/Templates/Page
     }
 
     partialRootPaths {
-      0 = EXT:typo3_devsite/Resources/Private/Partials/Page
+      0 = EXT:site_dev/Resources/Private/Partials/Page
     }
 
     variables {

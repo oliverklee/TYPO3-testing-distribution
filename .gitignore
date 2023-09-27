@@ -10,7 +10,7 @@
 !/public/typo3conf/AdditionalConfiguration.php
 !/public/typo3conf/LocalConfiguration.php
 /src/extensions/*
-!/src/extensions/typo3-devsite
+!/src/extensions/site-dev
 /var/*
 !/var/labels
 /vendor

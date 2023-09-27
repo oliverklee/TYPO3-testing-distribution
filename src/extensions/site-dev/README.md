@@ -13,7 +13,7 @@ This package should only be installed via Composer, not from the TER.
 
 ### Installing the package via Composer
 
-Require the package `"oliverklee/typo3-devsite"`.
+Require the package `"oliverklee/site-dev"`.
 
 ### Within the TYPO3 back end
 
@@ -22,7 +22,7 @@ Require the package `"oliverklee/typo3-devsite"`.
 3. In your TypoScript template, include the following static templates:
     * Content Elements (fluid_styled content)
     * Content Elements CSS (optional) (fluid_styled content)
-    * TYPO3 development site (typo3-devsite)
+    * TYPO3 development site (site-dev)
 
 ### favicon.ico
 
