@@ -15,7 +15,7 @@
 		"source": "https://github.com/oliverklee/TYPO3-testing-distribution"
 	},
 	"require": {
-		"php": ">= 7.4.29",
+		"php": ">= 8.1.23",
 		"georgringer/autoswitchtolistview": "^3.0.0",
 		"helhum/typo3-console": "^8.0.3",
 		"oliverklee/site-dev": "@dev",
