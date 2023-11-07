@@ -1,11 +1,11 @@
 #!/bin/bash
 
-vendor/bin/typo3cms install:setup -n --skip-integrity-check --database-name $TYPO3_INSTALL_DB_HOST
-vendor/bin/typo3cms configuration:set 'BE/debug' 1
-vendor/bin/typo3cms configuration:set 'FE/debug' 1
+vendor/bin/typo3 install:setup -n --skip-integrity-check --database-name $TYPO3_INSTALL_DB_HOST
+vendor/bin/typo3 configuration:set 'BE/debug' 1
+vendor/bin/typo3 configuration:set 'FE/debug' 1
 
-vendor/bin/typo3cms database:updateschema
+vendor/bin/typo3 database:updateschema
 
-vendor/bin/typo3cms cache:flush
+vendor/bin/typo3 cache:flush
 
 ./.ddev/commands/web/db-import

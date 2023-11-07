@@ -1,5 +1,5 @@
 #!/bin/bash
 
-vendor/bin/typo3cms database:updateschema
-vendor/bin/typo3cms database:import < dump.sql
-vendor/bin/typo3cms referenceindex:update
+vendor/bin/typo3 database:updateschema
+vendor/bin/typo3 database:import < dump.sql
+vendor/bin/typo3 referenceindex:update

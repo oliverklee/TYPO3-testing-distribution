@@ -16,10 +16,10 @@
 	],
 	"require": {
 		"php": ">= 7.4",
-		"typo3/cms-core": "^11.5.2",
-		"typo3/cms-fluid": "^11.5.2",
-		"typo3/cms-fluid-styled-content": "^11.5.2",
-		"typo3/cms-frontend": "^11.5.2"
+		"typo3/cms-core": "^12.4.0",
+		"typo3/cms-fluid": "^12.4.0",
+		"typo3/cms-fluid-styled-content": "^12.4.0",
+		"typo3/cms-frontend": "^12.4.0"
 	},
 	"prefer-stable": true,
 	"extra": {

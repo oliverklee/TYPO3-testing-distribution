@@ -157,6 +157,7 @@ return [
         'exceptionalErrors' => 12290,
         'features' => [
             'newTranslationServer' => true,
+            'security.usePasswordPolicyForFrontendUsers' => true,
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'TYPO3 testing site',

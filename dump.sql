@@ -26,7 +26,7 @@ DROP TABLE IF EXISTS `backend_layout`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `backend_layout` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL DEFAULT 0,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
@@ -78,7 +78,8 @@ CREATE TABLE `be_dashboards` (
   `title` varchar(120) NOT NULL DEFAULT '',
   `widgets` text DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `parent` (`pid`,`deleted`,`hidden`)
+  KEY `parent` (`pid`,`deleted`,`hidden`),
+  KEY `identifier` (`identifier`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -162,7 +163,7 @@ CREATE TABLE `be_users` (
   `description` text DEFAULT NULL,
   `username` varchar(50) NOT NULL DEFAULT '',
   `avatar` int(10) unsigned NOT NULL DEFAULT 0,
-  `password` varchar(100) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL DEFAULT '',
   `admin` smallint(5) unsigned NOT NULL DEFAULT 0,
   `usergroup` text DEFAULT NULL,
   `lang` varchar(10) NOT NULL DEFAULT 'default',
@@ -177,7 +178,7 @@ CREATE TABLE `be_users` (
   `file_permissions` text DEFAULT NULL,
   `workspace_perms` smallint(6) NOT NULL DEFAULT 1,
   `TSconfig` text DEFAULT NULL,
-  `lastlogin` int(10) unsigned NOT NULL DEFAULT 0,
+  `lastlogin` int(11) NOT NULL DEFAULT 0,
   `workspace_id` int(11) NOT NULL DEFAULT 0,
   `category_perms` longtext DEFAULT NULL,
   `password_reset_token` varchar(100) NOT NULL DEFAULT '',
@@ -258,7 +259,7 @@ CREATE TABLE `fe_users` (
   `description` text DEFAULT NULL,
   `tx_extbase_type` varchar(255) NOT NULL DEFAULT '0',
   `username` varchar(255) NOT NULL DEFAULT '',
-  `password` varchar(100) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL DEFAULT '',
   `usergroup` text DEFAULT NULL,
   `name` varchar(160) NOT NULL DEFAULT '',
   `first_name` varchar(50) NOT NULL DEFAULT '',
@@ -277,7 +278,7 @@ CREATE TABLE `fe_users` (
   `company` varchar(80) NOT NULL DEFAULT '',
   `image` tinytext DEFAULT NULL,
   `TSconfig` text DEFAULT NULL,
-  `lastlogin` int(10) unsigned NOT NULL DEFAULT 0,
+  `lastlogin` int(11) NOT NULL DEFAULT 0,
   `is_online` int(10) unsigned NOT NULL DEFAULT 0,
   `felogin_redirectPid` tinytext DEFAULT NULL,
   `felogin_forgotHash` varchar(80) DEFAULT '',
@@ -320,7 +321,7 @@ DROP TABLE IF EXISTS `pages`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pages` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL DEFAULT 0,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
@@ -360,11 +361,11 @@ CREATE TABLE `pages` (
   `layout` int(10) unsigned NOT NULL DEFAULT 0,
   `target` varchar(80) NOT NULL DEFAULT '',
   `media` int(10) unsigned NOT NULL DEFAULT 0,
-  `lastUpdated` int(10) unsigned NOT NULL DEFAULT 0,
+  `lastUpdated` int(11) NOT NULL DEFAULT 0,
   `keywords` text DEFAULT NULL,
   `cache_timeout` int(10) unsigned NOT NULL DEFAULT 0,
   `cache_tags` varchar(255) NOT NULL DEFAULT '',
-  `newUntil` int(10) unsigned NOT NULL DEFAULT 0,
+  `newUntil` int(11) NOT NULL DEFAULT 0,
   `description` text DEFAULT NULL,
   `no_search` smallint(5) unsigned NOT NULL DEFAULT 0,
   `SYS_LASTCHANGED` int(10) unsigned NOT NULL DEFAULT 0,
@@ -602,6 +603,34 @@ INSERT INTO `static_territories` VALUES (1,0,0,2,0,0,'Africa'),(2,0,0,9,0,0,'Oce
 UNLOCK TABLES;
 
 --
+-- Table structure for table `sys_csp_resolution`
+--
+
+DROP TABLE IF EXISTS `sys_csp_resolution`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_csp_resolution` (
+  `summary` varchar(40) NOT NULL,
+  `created` int(10) unsigned NOT NULL,
+  `scope` varchar(32) NOT NULL,
+  `mutation_identifier` text DEFAULT NULL,
+  `mutation_collection` mediumtext DEFAULT NULL,
+  `meta` mediumtext DEFAULT NULL,
+  PRIMARY KEY (`summary`),
+  KEY `created` (`created`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_csp_resolution`
+--
+
+LOCK TABLES `sys_csp_resolution` WRITE;
+/*!40000 ALTER TABLE `sys_csp_resolution` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_csp_resolution` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sys_file`
 --
 
@@ -657,7 +686,7 @@ DROP TABLE IF EXISTS `sys_file_collection`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sys_file_collection` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL DEFAULT 0,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
@@ -683,6 +712,7 @@ CREATE TABLE `sys_file_collection` (
   `recursive` smallint(6) NOT NULL DEFAULT 0,
   `category` int(10) unsigned NOT NULL DEFAULT 0,
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `folder_identifier` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`),
@@ -708,7 +738,7 @@ DROP TABLE IF EXISTS `sys_file_metadata`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sys_file_metadata` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL DEFAULT 0,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
@@ -754,7 +784,7 @@ DROP TABLE IF EXISTS `sys_file_reference`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sys_file_reference` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL DEFAULT 0,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
@@ -861,6 +891,7 @@ CREATE TABLE `sys_filemounts` (
   `path` varchar(255) NOT NULL DEFAULT '',
   `base` int(10) unsigned NOT NULL DEFAULT 0,
   `read_only` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `identifier` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
@@ -873,6 +904,41 @@ CREATE TABLE `sys_filemounts` (
 LOCK TABLES `sys_filemounts` WRITE;
 /*!40000 ALTER TABLE `sys_filemounts` DISABLE KEYS */;
 /*!40000 ALTER TABLE `sys_filemounts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_http_report`
+--
+
+DROP TABLE IF EXISTS `sys_http_report`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_http_report` (
+  `uuid` varchar(36) NOT NULL,
+  `status` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `created` int(10) unsigned NOT NULL,
+  `changed` int(10) unsigned NOT NULL,
+  `type` varchar(32) NOT NULL,
+  `scope` varchar(32) NOT NULL,
+  `request_time` bigint(20) unsigned NOT NULL,
+  `meta` mediumtext DEFAULT NULL,
+  `details` mediumtext DEFAULT NULL,
+  `summary` varchar(40) NOT NULL,
+  PRIMARY KEY (`uuid`),
+  KEY `type_scope` (`type`,`scope`),
+  KEY `created` (`created`),
+  KEY `changed` (`changed`),
+  KEY `request_time` (`request_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_http_report`
+--
+
+LOCK TABLES `sys_http_report` WRITE;
+/*!40000 ALTER TABLE `sys_http_report` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_http_report` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -908,6 +974,37 @@ INSERT INTO `sys_language` VALUES (1,0,1631545821,0,256,'Englisch','en-us-gb','e
 UNLOCK TABLES;
 
 --
+-- Table structure for table `sys_messenger_messages`
+--
+
+DROP TABLE IF EXISTS `sys_messenger_messages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_messenger_messages` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `body` longtext NOT NULL,
+  `headers` longtext NOT NULL,
+  `queue_name` varchar(190) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `available_at` datetime NOT NULL,
+  `delivered_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `queue_name` (`queue_name`),
+  KEY `available_at` (`available_at`),
+  KEY `delivered_at` (`delivered_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_messenger_messages`
+--
+
+LOCK TABLES `sys_messenger_messages` WRITE;
+/*!40000 ALTER TABLE `sys_messenger_messages` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_messenger_messages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sys_redirect`
 --
 
@@ -936,6 +1033,8 @@ CREATE TABLE `sys_redirect` (
   `hitcount` int(11) NOT NULL DEFAULT 0,
   `lasthiton` int(11) NOT NULL DEFAULT 0,
   `disable_hitcount` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `description` text DEFAULT NULL,
+  `creation_type` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `index_source` (`source_host`(80),`source_path`(80)),
   KEY `parent` (`pid`,`deleted`,`disabled`)
@@ -965,7 +1064,7 @@ CREATE TABLE `sys_registry` (
   `entry_value` mediumblob DEFAULT NULL,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `entry_identifier` (`entry_namespace`,`entry_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -974,7 +1073,7 @@ CREATE TABLE `sys_registry` (
 
 LOCK TABLES `sys_registry` WRITE;
 /*!40000 ALTER TABLE `sys_registry` DISABLE KEYS */;
-INSERT INTO `sys_registry` VALUES (1,'extensionDataImport','typo3/cms-core/ext_tables_static+adt.sql','s:0:\"\";'),(2,'extensionDataImport','typo3/cms-extbase/ext_tables_static+adt.sql','s:0:\"\";'),(3,'extensionDataImport','typo3/cms-fluid/ext_tables_static+adt.sql','s:0:\"\";'),(4,'extensionDataImport','typo3/cms-install/ext_tables_static+adt.sql','s:0:\"\";'),(5,'extensionDataImport','typo3/cms-recordlist/ext_tables_static+adt.sql','s:0:\"\";'),(6,'extensionDataImport','typo3/cms-backend/ext_tables_static+adt.sql','s:0:\"\";'),(7,'extensionDataImport','typo3/cms-frontend/ext_tables_static+adt.sql','s:0:\"\";'),(8,'extensionDataImport','typo3/cms-adminpanel/ext_tables_static+adt.sql','s:0:\"\";'),(9,'extensionDataImport','typo3/cms-dashboard/ext_tables_static+adt.sql','s:0:\"\";'),(10,'extensionDataImport','typo3/cms-fluid-styled-content/ext_tables_static+adt.sql','s:0:\"\";'),(11,'extensionDataImport','typo3/cms-filelist/ext_tables_static+adt.sql','s:0:\"\";'),(12,'extensionDataImport','typo3/cms-form/ext_tables_static+adt.sql','s:0:\"\";'),(13,'extensionDataImport','typo3/cms-setup/ext_tables_static+adt.sql','s:0:\"\";'),(14,'extensionDataImport','typo3/cms-rte-ckeditor/ext_tables_static+adt.sql','s:0:\"\";'),(15,'extensionDataImport','typo3/cms-belog/ext_tables_static+adt.sql','s:0:\"\";'),(16,'extensionDataImport','typo3/cms-beuser/ext_tables_static+adt.sql','s:0:\"\";'),(17,'extensionDataImport','typo3/cms-extensionmanager/ext_tables_static+adt.sql','s:0:\"\";'),(18,'extensionDataImport','typo3/cms-felogin/ext_tables_static+adt.sql','s:0:\"\";'),(19,'extensionDataImport','typo3/cms-info/ext_tables_static+adt.sql','s:0:\"\";'),(20,'extensionDataImport','typo3/cms-lowlevel/ext_tables_static+adt.sql','s:0:\"\";'),(21,'extensionDataImport','typo3/cms-recycler/ext_tables_static+adt.sql','s:0:\"\";'),(22,'extensionDataImport','typo3/cms-reports/ext_tables_static+adt.sql','s:0:\"\";'),(23,'extensionDataImport','typo3/cms-tstemplate/ext_tables_static+adt.sql','s:0:\"\";'),(24,'extensionDataImport','typo3/cms-viewpage/ext_tables_static+adt.sql','s:0:\"\";'),(25,'extensionDataImport','sjbr/static-info-tables/ext_tables_static+adt.sql','s:32:\"424759792edf733151eed6d7c9512657\";'),(26,'static_info_tables','last_update_status','s:26:\"static_info_tables:v11.5.3\";'),(27,'extensionDataImport','oliverklee/oelib/ext_tables_static+adt.sql','s:32:\"50712822725de5ac903340841e0aeca6\";'),(28,'extensionDataImport','oliverklee/feuserextrafields/ext_tables_static+adt.sql','s:0:\"\";'),(29,'extensionDataImport','oliverklee/seminars/ext_tables_static+adt.sql','s:0:\"\";'),(30,'extensionDataImport','oliverklee/onetimeaccount/ext_tables_static+adt.sql','s:0:\"\";'),(31,'extensionDataImport','georgringer/autoswitchtolistview/ext_tables_static+adt.sql','s:0:\"\";'),(32,'extensionDataImport','helhum/typo3-console/ext_tables_static+adt.sql','s:0:\"\";'),(33,'extensionDataImport','ttn/tea/ext_tables_static+adt.sql','s:0:\"\";'),(34,'extensionDataImport','oliverklee/site-dev/ext_tables_static+adt.sql','s:0:\"\";'),(35,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FeeditExtractionUpdate','i:1;'),(36,'installUpdate','TYPO3\\CMS\\Install\\Updates\\TaskcenterExtractionUpdate','i:1;'),(37,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysActionExtractionUpdate','i:1;'),(38,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SvgFilesSanitization','i:1;'),(40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),(41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),(42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),(43,'core','sys_refindex_lastUpdate','i:1699380402;'),(45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),(46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";');
+INSERT INTO `sys_registry` VALUES (1,'extensionDataImport','typo3/cms-core/ext_tables_static+adt.sql','s:0:\"\";'),(2,'extensionDataImport','typo3/cms-extbase/ext_tables_static+adt.sql','s:0:\"\";'),(3,'extensionDataImport','typo3/cms-fluid/ext_tables_static+adt.sql','s:0:\"\";'),(4,'extensionDataImport','typo3/cms-install/ext_tables_static+adt.sql','s:0:\"\";'),(5,'extensionDataImport','typo3/cms-recordlist/ext_tables_static+adt.sql','s:0:\"\";'),(6,'extensionDataImport','typo3/cms-backend/ext_tables_static+adt.sql','s:0:\"\";'),(7,'extensionDataImport','typo3/cms-frontend/ext_tables_static+adt.sql','s:0:\"\";'),(8,'extensionDataImport','typo3/cms-adminpanel/ext_tables_static+adt.sql','s:0:\"\";'),(9,'extensionDataImport','typo3/cms-dashboard/ext_tables_static+adt.sql','s:0:\"\";'),(10,'extensionDataImport','typo3/cms-fluid-styled-content/ext_tables_static+adt.sql','s:0:\"\";'),(11,'extensionDataImport','typo3/cms-filelist/ext_tables_static+adt.sql','s:0:\"\";'),(12,'extensionDataImport','typo3/cms-form/ext_tables_static+adt.sql','s:0:\"\";'),(13,'extensionDataImport','typo3/cms-setup/ext_tables_static+adt.sql','s:0:\"\";'),(14,'extensionDataImport','typo3/cms-rte-ckeditor/ext_tables_static+adt.sql','s:0:\"\";'),(15,'extensionDataImport','typo3/cms-belog/ext_tables_static+adt.sql','s:0:\"\";'),(16,'extensionDataImport','typo3/cms-beuser/ext_tables_static+adt.sql','s:0:\"\";'),(17,'extensionDataImport','typo3/cms-extensionmanager/ext_tables_static+adt.sql','s:0:\"\";'),(18,'extensionDataImport','typo3/cms-felogin/ext_tables_static+adt.sql','s:0:\"\";'),(19,'extensionDataImport','typo3/cms-info/ext_tables_static+adt.sql','s:0:\"\";'),(20,'extensionDataImport','typo3/cms-lowlevel/ext_tables_static+adt.sql','s:0:\"\";'),(21,'extensionDataImport','typo3/cms-recycler/ext_tables_static+adt.sql','s:0:\"\";'),(22,'extensionDataImport','typo3/cms-reports/ext_tables_static+adt.sql','s:0:\"\";'),(23,'extensionDataImport','typo3/cms-tstemplate/ext_tables_static+adt.sql','s:0:\"\";'),(24,'extensionDataImport','typo3/cms-viewpage/ext_tables_static+adt.sql','s:0:\"\";'),(25,'extensionDataImport','sjbr/static-info-tables/ext_tables_static+adt.sql','s:32:\"424759792edf733151eed6d7c9512657\";'),(26,'static_info_tables','last_update_status','s:26:\"static_info_tables:v11.5.3\";'),(27,'extensionDataImport','oliverklee/oelib/ext_tables_static+adt.sql','s:32:\"50712822725de5ac903340841e0aeca6\";'),(28,'extensionDataImport','oliverklee/feuserextrafields/ext_tables_static+adt.sql','s:0:\"\";'),(29,'extensionDataImport','oliverklee/seminars/ext_tables_static+adt.sql','s:0:\"\";'),(30,'extensionDataImport','oliverklee/onetimeaccount/ext_tables_static+adt.sql','s:0:\"\";'),(31,'extensionDataImport','georgringer/autoswitchtolistview/ext_tables_static+adt.sql','s:0:\"\";'),(32,'extensionDataImport','helhum/typo3-console/ext_tables_static+adt.sql','s:0:\"\";'),(33,'extensionDataImport','ttn/tea/ext_tables_static+adt.sql','s:0:\"\";'),(34,'extensionDataImport','oliverklee/site-dev/ext_tables_static+adt.sql','s:0:\"\";'),(35,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FeeditExtractionUpdate','i:1;'),(36,'installUpdate','TYPO3\\CMS\\Install\\Updates\\TaskcenterExtractionUpdate','i:1;'),(37,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysActionExtractionUpdate','i:1;'),(38,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SvgFilesSanitization','i:1;'),(40,'installUpdateRows','rowUpdatersDone','a:5:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";i:4;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\SysRedirectRootPageMoveMigration\";}'),(41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),(42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),(43,'core','sys_refindex_lastUpdate','i:1699381417;'),(45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),(46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),(48,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendGroupsExplicitAllowDenyMigration','i:1;'),(49,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendModulePermissionMigration','i:1;'),(50,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FeLoginModeExtractionUpdate','i:1;'),(51,'installUpdate','TYPO3\\CMS\\Install\\Updates\\CollectionsExtractionUpdate','i:1;'),(52,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigrateSiteSettingsConfigUpdate','i:1;'),(53,'installUpdate','TYPO3\\CMS\\Install\\Updates\\ShortcutRecordsMigration','i:1;'),(54,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysFileCollectionIdentifierMigration','i:1;'),(55,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysFileMountIdentifierMigration','i:1;'),(56,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogSerializationUpdate','i:1;'),(57,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysTemplateNoWorkspaceMigration','i:1;'),(59,'installUpdate','TYPO3\\CMS\\Install\\Updates\\PasswordPolicyForFrontendUsersUpdate','i:1;');
 /*!40000 ALTER TABLE `sys_registry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -987,7 +1086,7 @@ DROP TABLE IF EXISTS `sys_template`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sys_template` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL DEFAULT 0,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
@@ -1040,7 +1139,7 @@ DROP TABLE IF EXISTS `tt_content`;
 CREATE TABLE `tt_content` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `rowDescription` text DEFAULT NULL,
-  `pid` int(11) NOT NULL DEFAULT 0,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
@@ -1095,7 +1194,7 @@ CREATE TABLE `tt_content` (
   `filelink_sorting` varchar(64) NOT NULL DEFAULT '',
   `filelink_sorting_direction` varchar(4) NOT NULL DEFAULT '',
   `target` varchar(30) NOT NULL DEFAULT '',
-  `date` int(10) unsigned NOT NULL DEFAULT 0,
+  `date` int(11) NOT NULL DEFAULT 0,
   `recursive` smallint(5) unsigned NOT NULL DEFAULT 0,
   `imageheight` int(10) unsigned NOT NULL DEFAULT 0,
   `pi_flexform` mediumtext DEFAULT NULL,
@@ -2429,4 +2528,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-07 19:11:12
+-- Dump completed on 2023-11-07 19:24:35
