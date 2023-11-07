@@ -7,7 +7,7 @@ page {
   # jQuery intentionally does not get included in the footer so extensions like mkforms
   # that require jQuery in the BODY don't break.
   includeJSLibs {
-    jQuery = EXT:site_dev/Resources/Public/JavaScript/jquery-3.7.0.js
+    jQuery = EXT:site_dev/Resources/Public/JavaScript/jquery.js
     jQuery {
       forceOnTop = 1
     }
