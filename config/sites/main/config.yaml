@@ -1,10 +1,10 @@
-base: 'https://typo3-testing-11-5.ddev.site:8081/'
+base: 'https://typo3-testing-12-4.ddev.site:8081/'
 baseVariants: { }
 errorHandling: { }
 languages:
   - title: Deutsch
     enabled: true
-    base: 'https://typo3-testing-11-5.ddev.site:8081'
+    base: 'https://typo3-testing-12-4.ddev.site:8081'
     typo3Language: de
     locale: de_DE.UTF-8
     iso-639-1: de
@@ -15,7 +15,7 @@ languages:
     languageId: '0'
   - title: Englisch
     enabled: true
-    base: 'https://typo3-testing-11-5-en.ddev.site:8081'
+    base: 'https://typo3-testing-12-4-en.ddev.site:8081'
     typo3Language: default
     locale: en_US.UTF-8
     iso-639-1: en
