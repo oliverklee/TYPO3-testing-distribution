@@ -7,7 +7,7 @@ router_http_port: "8080"
 router_https_port: "8081"
 xdebug_enabled: false
 additional_hostnames:
-  - "typo3-testing-11-5-en"
+  - "typo3-testing-12-5-en"
 additional_fqdns: [ ]
 mariadb_version: "10.6"
 mysql_version: ""
