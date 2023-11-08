@@ -2,7 +2,6 @@
 return [
     'BE' => [
         'debug' => true,
-        'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$dXBmSUYva2EzT2hZZEVEUA$1JtKq8v7WusoVuZ9z8BuIPP0tw03gV9CwySkaZE+DX0',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -65,15 +64,6 @@ return [
             'useMysqlFulltext' => '0',
             'xlhtml' => '/usr/bin/',
         ],
-        'onetimeaccount' => [
-            'enableConfigCheck' => '1',
-        ],
-        'seminars' => [
-            'enableConfigCheck' => '1',
-        ],
-        'static_info_tables' => [
-            'enableManager' => '0',
-        ],
     ],
     'FE' => [
         'debug' => true,
@@ -89,7 +79,6 @@ return [
         'processor_effects' => false,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
-        'processor_path_lzw' => '/usr/bin/',
     ],
     'LOG' => [
         'TYPO3' => [
@@ -113,7 +102,7 @@ return [
     ],
     'MAIL' => [
         'transport' => 'sendmail',
-        'transport_sendmail_command' => '/usr/local/bin/mailhog sendmail test@example.org --smtp-addr 127.0.0.1:1025',
+        'transport_sendmail_command' => '/usr/local/bin/mailpit sendmail --smtp-addr 127.0.0.1:1025',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',
@@ -132,12 +121,6 @@ return [
                     ],
                 ],
                 'pages' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
-                    'options' => [
-                        'compression' => true,
-                    ],
-                ],
-                'pagesection' => [
                     'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
                         'compression' => true,
