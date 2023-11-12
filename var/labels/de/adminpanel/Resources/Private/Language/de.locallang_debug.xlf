@@ -7,9 +7,9 @@
         <source>Debug</source>
         <target state="final">Debug</target>
       </trans-unit>
-      <trans-unit id="module.shortinfo" resname="module.shortinfo" approved="yes">
-        <source>(%s Errors/Warnings)</source>
-        <target state="final">(%s Fehler/Warnungen)</target>
+      <trans-unit id="module.shortinfoErrorsAndSQL" resname="module.shortinfoErrorsAndSQL" approved="yes">
+        <source>(%1$u Errors/Warnings, SQL: %2$ux / %3$u ms)</source>
+        <target state="final">(%1$u Fehler/Warnungen, SQL: %2$ux / %3$u ms)</target>
       </trans-unit>
       <trans-unit id="submodule.log.label" resname="submodule.log.label" approved="yes">
         <source>Log</source>

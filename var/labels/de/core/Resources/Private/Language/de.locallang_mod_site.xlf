@@ -4,8 +4,9 @@
     <header/>
     <body>
       <trans-unit id="mlang_labels_tablabel" resname="mlang_labels_tablabel" approved="yes">
-        <source>Site</source>
-        <target state="final">Seite</target>
+        <source>Configuration and management tools for sites</source>
+        <target state="final">Konfigurations- und Verwaltungswerkzeuge für Sites</target>
+        <note>Title attribute of TYPO3 backend main menu group "sites"</note>
       </trans-unit>
       <trans-unit id="mlang_labels_tabdescr" resname="mlang_labels_tabdescr" approved="yes">
         <source>This main module holds all optimization for Site Integrators to manage different websites within one TYPO3 installation, templates, TypoScript and routing options.</source>
@@ -14,6 +15,7 @@
       <trans-unit id="mlang_tabs_tab" resname="mlang_tabs_tab" approved="yes">
         <source>Site Management</source>
         <target state="final">Site Management</target>
+        <note>Label of TYPO3 backend main menu group "sites"</note>
       </trans-unit>
     </body>
   </file>

@@ -31,13 +31,9 @@
         <source>Used for localized date and currency formats. E.g. "de_DE" or "en_US.UTF-8".</source>
         <target state="final">Wird für lokalisierte Datums- und Währungsformate verwendet, z. B. "de_DE" oder "en_US.UTF-8"</target>
       </trans-unit>
-      <trans-unit id="site_language.iso-639-1" resname="site_language.iso-639-1" approved="yes">
-        <source>ISO 639-1 code of the Language</source>
-        <target state="final">ISO 639-1 Code für die Sprache</target>
-      </trans-unit>
       <trans-unit id="site_language.hreflang" resname="site_language.hreflang" approved="yes">
-        <source>Used within for "lang" and "hreflang" attributes</source>
-        <target state="final">Wird für Attribute "lang" und "hreflang" verwendet</target>
+        <source>Optional, used for "hreflang" attributes - if empty, the information is retrieved from the locale</source>
+        <target state="final">Optional, wird für das "hreflang" Attribut verwendet - wenn nicht gesetzt, werden die Informationen aus den Spracheinstellungen geholt</target>
       </trans-unit>
       <trans-unit id="site_language.websiteTitle" resname="site_language.websiteTitle" approved="yes">
         <source>With this language based Website title, you can override the Website title for this language</source>
@@ -46,14 +42,6 @@
       <trans-unit id="site_language.navigationTitle" resname="site_language.navigationTitle" approved="yes">
         <source>Used within language-related menus</source>
         <target state="final">Wird in sprachbezogenen Menüs verwendet</target>
-      </trans-unit>
-      <trans-unit id="site_language.direction" resname="site_language.direction" approved="yes">
-        <source>Language direction for "dir" attribute</source>
-        <target state="final">Sprachrichtung für das "dir"-Attribut</target>
-      </trans-unit>
-      <trans-unit id="site_language.typo3Language" resname="site_language.typo3Language" approved="yes">
-        <source>Select the language to be used from translation files. Keep default if no translation files are available.</source>
-        <target state="final">Die von den Übersetzungsdateien zu verwendende Sprache auswählen. Standard behalten, falls keine Übersetzungsdateien verfügbar sind.</target>
       </trans-unit>
       <trans-unit id="site_errorhandling.errorCode" resname="site_errorhandling.errorCode" approved="yes">
         <source>Make sure to have at least 0 (not defined otherwise) configured in order to serve helpful error messages to your visitors.</source>

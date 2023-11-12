@@ -51,17 +51,29 @@
         <source>Move page</source>
         <target state="final">Seite verschieben</target>
       </trans-unit>
-      <trans-unit id="move_folder" resname="move_folder" approved="yes">
-        <source>Move folder</source>
-        <target state="final">Ordner verschieben</target>
+      <trans-unit id="transfer_multiple" resname="transfer_multiple" approved="yes">
+        <source>Transfer multiple items</source>
+        <target state="final">Mehrere Elemente verschieben</target>
+      </trans-unit>
+      <trans-unit id="mess.transfer_multiple" resname="mess.transfer_multiple" approved="yes">
+        <source>Transfer %d items into "%s"?</source>
+        <target state="final">%d Elemente in Ordner "%s" verschieben?</target>
+      </trans-unit>
+      <trans-unit id="drop.conflict" resname="drop.conflict" approved="yes">
+        <source>Conflict with dropped node</source>
+        <target state="final">Konflikt mit abgelegtem Element</target>
+      </trans-unit>
+      <trans-unit id="mess.drop.conflict" resname="mess.drop.conflict" approved="yes">
+        <source>The node %s is a parent of %s and therefore cannot be moved. Operation cancelled.</source>
+        <target state="final">Der Knoten %s ist ein Eltern-Knoten von %s und kann daher nicht verschoben werden. Vorgang abgebrochen.</target>
       </trans-unit>
       <trans-unit id="deleteItem" resname="deleteItem" approved="yes">
         <source>Delete</source>
         <target state="final">Löschen</target>
       </trans-unit>
       <trans-unit id="deleteWarning" resname="deleteWarning" approved="yes">
-        <source>Are you sure you want to delete this record?</source>
-        <target state="final">Diesen Datensatz tatsächlich löschen?</target>
+        <source>Are you sure you want to delete the record '%s'?</source>
+        <target state="final">Sind Sie sicher, dass Sie den Datensatz '%s ' löschen möchten?</target>
       </trans-unit>
       <trans-unit id="pasteIntoColumn" resname="pasteIntoColumn" approved="yes">
         <source>Paste into this column</source>
@@ -255,18 +267,6 @@
         <source>RE</source>
         <target state="final">AW</target>
       </trans-unit>
-      <trans-unit id="m_function_0" resname="m_function_0" approved="yes">
-        <source>QuickEdit</source>
-        <target state="final">Schnelleingabe</target>
-      </trans-unit>
-      <trans-unit id="m_function_1" resname="m_function_1" approved="yes">
-        <source>Columns</source>
-        <target state="final">Spalten</target>
-      </trans-unit>
-      <trans-unit id="m_function_2" resname="m_function_2" approved="yes">
-        <source>Languages</source>
-        <target state="final">Sprachen</target>
-      </trans-unit>
       <trans-unit id="gridView" resname="gridView" approved="yes">
         <source>Grid-View</source>
         <target state="final">Rasteransicht</target>
@@ -327,13 +327,9 @@
         <source>Default</source>
         <target state="final">Standard</target>
       </trans-unit>
-      <trans-unit id="clickAPage_header" resname="clickAPage_header" approved="yes">
-        <source>Web&gt;Page module</source>
-        <target state="final">Modul Web &gt; Seite</target>
-      </trans-unit>
       <trans-unit id="clickAPage_content" resname="clickAPage_content" approved="yes">
-        <source>Please click the page title in the page tree to the left to edit page content.</source>
-        <target state="final">Wenn Sie den Inhalt dieser Seite bearbeiten wollen, klicken Sie bitte auf den Seitentitel im Seitenbaum zur Linken.</target>
+        <source>Please select a page in the page tree to edit page content.</source>
+        <target state="final">Bitte wählen Sie eine Seite im Seitenbaum aus, um Seiteninhalte zu bearbeiten.</target>
       </trans-unit>
       <trans-unit id="pI_crUser" resname="pI_crUser" approved="yes">
         <source>Created by</source>
@@ -370,6 +366,10 @@
       <trans-unit id="content_from_pid_title" resname="content_from_pid_title" approved="yes">
         <source>Page uses content from this page: %s</source>
         <target state="final">Die Seite benutzt Inhalt von dieser Seite: %s</target>
+      </trans-unit>
+      <trans-unit id="content_from_pid_invalid_title" resname="content_from_pid_invalid_title" approved="yes">
+        <source>Page is defined to use content from PID %s, but this page does not exist or is inaccessible</source>
+        <target state="final">Die Seite ist so konfiguriert, dass sie Inhalte von PID %s verwendet, aber diese Seite existiert nicht oder ist nicht zugänglich</target>
       </trans-unit>
       <trans-unit id="content_on_pid_title" resname="content_on_pid_title" approved="yes">
         <source>This content is also shown on: %s</source>

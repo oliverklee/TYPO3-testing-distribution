@@ -15,6 +15,10 @@
         <source>Update Settings</source>
         <target state="final">Einstellungen aktualisieren</target>
       </trans-unit>
+      <trans-unit id="settings.openBackendUrlLabel" resname="settings.openBackendUrlLabel" approved="yes">
+        <source>Open page in backend</source>
+        <target state="final">Seite im Backend bearbeiten</target>
+      </trans-unit>
       <trans-unit id="button.close" resname="button.close" approved="yes">
         <source>Close</source>
         <target state="final">Schließen</target>

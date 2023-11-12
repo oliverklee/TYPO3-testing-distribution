@@ -118,24 +118,12 @@
         <source>New file or folder</source>
         <target state="final">Neue Datei oder Ordner</target>
       </trans-unit>
-      <trans-unit id="file_newfolder.php.newfolders" resname="file_newfolder.php.newfolders" approved="yes">
-        <source>Create new folders</source>
-        <target state="final">Neue Ordner anlegen</target>
-      </trans-unit>
       <trans-unit id="file_newfolder.php.label_newfolder" resname="file_newfolder.php.label_newfolder" approved="yes">
         <source>Folder</source>
         <target state="final">Ordner</target>
       </trans-unit>
       <trans-unit id="file_newfolder.php.submit" resname="file_newfolder.php.submit" approved="yes">
         <source>Create folders</source>
-        <target state="final">Ordner anlegen</target>
-      </trans-unit>
-      <trans-unit id="create_folder.title" resname="create_folder.title" approved="yes">
-        <source>Create new folder</source>
-        <target state="final">Neuen Ordner erstellen</target>
-      </trans-unit>
-      <trans-unit id="create_folder.submit" resname="create_folder.submit" approved="yes">
-        <source>Create folder</source>
         <target state="final">Ordner anlegen</target>
       </trans-unit>
       <trans-unit id="file_newfolder.php.folders" resname="file_newfolder.php.folders" approved="yes">
@@ -161,6 +149,14 @@
       <trans-unit id="download" resname="download" approved="yes">
         <source>Download</source>
         <target state="final">Herunterladen</target>
+      </trans-unit>
+      <trans-unit id="actions.create_folder" resname="actions.create_folder" approved="yes">
+        <source>Create Folder</source>
+        <target state="final">Ordner erstellen</target>
+      </trans-unit>
+      <trans-unit id="actions.create_file" resname="actions.create_file" approved="yes">
+        <source>Create File</source>
+        <target state="final">Datei erstellen</target>
       </trans-unit>
     </body>
   </file>

@@ -86,13 +86,17 @@ Möglicherweise ist in Ihrem Browser auch das Setzen von Cookies nicht gestattet
         <source>Change your password</source>
         <target state="final">Passwort ändern</target>
       </trans-unit>
-      <trans-unit id="change_password_message" resname="change_password_message" approved="yes">
-        <source>Please enter your new password twice. Password needs a minimum length of %s chars.</source>
-        <target state="final">Bitte geben Sie Ihr neues Passwort zweimal ein. Das Passwort muss mindestens %s Zeichen lang sein.</target>
+      <trans-unit id="change_password_description" resname="change_password_description" approved="yes">
+        <source>Please enter your new password twice.</source>
+        <target state="final">Bitte geben Sie Ihr neues Passwort zweimal ein.</target>
+      </trans-unit>
+      <trans-unit id="password_requirement" resname="password_requirement" approved="yes">
+        <source>Ensure that your new password matches the following requirements:</source>
+        <target state="final">Stellen Sie sicher, dass Ihr neues Passwort den folgenden Anforderungen entspricht:</target>
       </trans-unit>
       <trans-unit id="change_password_nolinkprefix_message" resname="change_password_nolinkprefix_message" approved="yes">
-        <source>Error: there is no prefix for the link. Please set one of the following in your typoscript template: plugin.tx_felogin_pi1.feloginBaseURL = http://yourdomain/, config.baseURL = http://yourdomain/, config.absRefPrefix = /</source>
-        <target state="final">FEHLER: Für diesen Link ist kein Prafix definiert. Bitte setzen Sie eine der folgenden Variablen in Ihrem TypoScript-Template: plugin.tx_felogin_pi1.feloginBaseURL = http://ihredomain/, config.baseURL = http://ihredomain/, config.absRefPrefix = /</target>
+        <source>Error: there is no prefix for the link. Please set one of the following in your typoscript: plugin.tx_felogin_pi1.feloginBaseURL = http://yourdomain/, config.baseURL = http://yourdomain/, config.absRefPrefix = /</source>
+        <target state="final">Fehler: Es gibt keinen Präfix für den Link. Bitte setzen Sie einen der folgenden in Ihrem TypoScript: plugin.tx_felogin_pi1.feloginBaseURL = http://yourdomain/, config.baseURL = http://yourdomain/, config.absRefPrefix = /</target>
       </trans-unit>
       <trans-unit id="change_password_notvalid_message" resname="change_password_notvalid_message" approved="yes">
         <source>The link you clicked is not valid. Please repeat the forgot password procedure.</source>

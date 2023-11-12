@@ -15,6 +15,10 @@
         <source>Show hidden records</source>
         <target state="final">Verborgene Datensätze anzeigen</target>
       </trans-unit>
+      <trans-unit id="showScheduledRecords" resname="showScheduledRecords" approved="yes">
+        <source>Ignore start and end time</source>
+        <target state="final">Start- und Endzeit ignorieren</target>
+      </trans-unit>
       <trans-unit id="showFluidDebug" resname="showFluidDebug" approved="yes">
         <source>Show fluid debug output</source>
         <target state="final">Fluiddebugausgabe anzeigen</target>

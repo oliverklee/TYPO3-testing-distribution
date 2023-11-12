@@ -123,6 +123,18 @@
         <source>Deactivate redirect</source>
         <target state="final">Weiterleitung deaktivieren</target>
       </trans-unit>
+      <trans-unit id="sys_redirect.creation_type" resname="sys_redirect.creation_type" approved="yes">
+        <source>Creation Type</source>
+        <target state="final">Erstellungstyp</target>
+      </trans-unit>
+      <trans-unit id="sys_redirect.creation_type.1" resname="sys_redirect.creation_type.1" approved="yes">
+        <source>manually created</source>
+        <target state="final">manuell erstellt</target>
+      </trans-unit>
+      <trans-unit id="sys_redirect.creation_type.0" resname="sys_redirect.creation_type.0" approved="yes">
+        <source>automatically created</source>
+        <target state="final">automatisch erstellt</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

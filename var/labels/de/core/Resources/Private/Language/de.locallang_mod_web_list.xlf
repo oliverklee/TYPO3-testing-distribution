@@ -4,7 +4,7 @@
     <header/>
     <body>
       <trans-unit id="mlang_labels_tablabel" resname="mlang_labels_tablabel" approved="yes">
-        <source>List of database-records</source>
+        <source>List of database records</source>
         <target state="final">Liste der Datensätze</target>
       </trans-unit>
       <trans-unit id="mlang_labels_tabdescr" resname="mlang_labels_tabdescr" approved="yes">
@@ -164,8 +164,8 @@
         <target state="final">Das Feld "%s" der aufgeführten Datensätze bearbeiten</target>
       </trans-unit>
       <trans-unit id="deleteWarning" resname="deleteWarning" approved="yes">
-        <source>Are you sure you want to delete this record?</source>
-        <target state="final">Diesen Datensatz tatsächlich löschen?</target>
+        <source>Are you sure you want to delete the record '%s'?</source>
+        <target state="final">Sind Sie sicher, dass Sie den Datensatz '%s' löschen möchten?</target>
       </trans-unit>
       <trans-unit id="localization" resname="localization" approved="yes">
         <source>Localization view</source>

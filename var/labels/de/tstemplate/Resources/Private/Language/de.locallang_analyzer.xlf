@@ -3,49 +3,173 @@
   <file source-language="en" datatype="plaintext" original="EXT:tstemplate/Resources/Private/Language/locallang_analyzer.xlf" date="2011-10-17T20:22:37Z" product-name="tstemplate" target-language="de">
     <header/>
     <body>
-      <trans-unit id="currentTemplate" resname="currentTemplate" approved="yes">
-        <source>Current template</source>
-        <target state="final">Aktuelles Template</target>
+      <trans-unit id="submodule.title" resname="submodule.title" approved="yes">
+        <source>Included TypoScript</source>
+        <target state="final">Eingebundenes TypoScript</target>
       </trans-unit>
-      <trans-unit id="title" resname="title" approved="yes">
-        <source>Title</source>
-        <target state="final">Titel</target>
+      <trans-unit id="submodule.titleWithRecord" resname="submodule.titleWithRecord" approved="yes">
+        <source>Included TypoScript for record "%s"</source>
+        <target state="final">Eingebundenes TypoScript für Datensatz "%s"</target>
       </trans-unit>
-      <trans-unit id="rootlevel" resname="rootlevel" approved="yes">
-        <source>Rootlevel</source>
-        <target state="final">Wurzelebene</target>
+      <trans-unit id="submodule.description" resname="submodule.description" approved="yes">
+        <source>Overview of the included TypoScript and include order for the current page.</source>
+        <target state="final">Übersicht inkludierter TypoScript Datensätze sowie dessen Ladereihenfolge für die aktuell ausgewählte Seite.</target>
       </trans-unit>
-      <trans-unit id="clearSetup" resname="clearSetup" approved="yes">
-        <source>Clear Setup</source>
-        <target state="final">Setup löschen</target>
+      <trans-unit id="infobox.message.noTypoScriptFound" resname="infobox.message.noTypoScriptFound" approved="yes">
+        <source>No TypoScript found.</source>
+        <target state="final">Kein TypoScript gefunden.</target>
       </trans-unit>
-      <trans-unit id="clearConstants" resname="clearConstants" approved="yes">
-        <source>Clear Constants</source>
-        <target state="final">Konstanten löschen</target>
+      <trans-unit id="options.selectedRecord" resname="options.selectedRecord" approved="yes">
+        <source>Selected record</source>
+        <target state="final">Ausgewählter Datensatz</target>
       </trans-unit>
-      <trans-unit id="pid" resname="pid" approved="yes">
-        <source>PID</source>
-        <target state="final">PID</target>
-      </trans-unit>
-      <trans-unit id="rootline" resname="rootline" approved="yes">
-        <source>Rootline</source>
-        <target state="final">Rootline</target>
-      </trans-unit>
-      <trans-unit id="templateHierarchy" resname="templateHierarchy" approved="yes">
-        <source>Template hierarchy</source>
-        <target state="final">Template-Hierarchie</target>
-      </trans-unit>
-      <trans-unit id="constants" resname="constants" approved="yes">
+      <trans-unit id="sectionHeadline.constants" resname="sectionHeadline.constants" approved="yes">
         <source>Constants</source>
         <target state="final">Konstanten</target>
       </trans-unit>
-      <trans-unit id="setup" resname="setup" approved="yes">
+      <trans-unit id="sectionHeadline.setup" resname="sectionHeadline.setup" approved="yes">
         <source>Setup</source>
         <target state="final">Setup</target>
       </trans-unit>
-      <trans-unit id="viewCompleteTS" resname="viewCompleteTS" approved="yes">
-        <source>View the complete TS Listing</source>
-        <target state="final">Vollständige TS-Auflistung anzeigen</target>
+      <trans-unit id="panel.header.syntaxErrors" resname="panel.header.syntaxErrors" approved="yes">
+        <source>Syntax scanner warnings</source>
+        <target state="final">Syntax-Scanner Warnungen</target>
+      </trans-unit>
+      <trans-unit id="panel.header.conditions" resname="panel.header.conditions" approved="yes">
+        <source>Conditions</source>
+        <target state="final">Bedingungen</target>
+      </trans-unit>
+      <trans-unit id="panel.header.configuration" resname="panel.header.configuration" approved="yes">
+        <source>Configuration</source>
+        <target state="final">Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="panel.info.syntaxErrorCount.single" resname="panel.info.syntaxErrorCount.single" approved="yes">
+        <source>%s syntax warning</source>
+        <target state="final">%s Syntax-Warnung</target>
+      </trans-unit>
+      <trans-unit id="panel.info.syntaxErrorCount.multiple" resname="panel.info.syntaxErrorCount.multiple" approved="yes">
+        <source>%s syntax warnings</source>
+        <target state="final">%s Syntax-Warnungen</target>
+      </trans-unit>
+      <trans-unit id="panel.info.conditionActiveCount.multiple" resname="panel.info.conditionActiveCount.multiple" approved="yes">
+        <source>%s active conditions</source>
+        <target state="final">%s aktive Bedingungen</target>
+      </trans-unit>
+      <trans-unit id="panel.info.conditionActiveCount.single" resname="panel.info.conditionActiveCount.single" approved="yes">
+        <source>%s active condition</source>
+        <target state="final">%s aktive Bedingung</target>
+      </trans-unit>
+      <trans-unit id="panel.info.conditionWithConstant" resname="panel.info.conditionWithConstant" approved="yes">
+        <source>Constant usage: [%s]</source>
+        <target state="final">Konstanten-Nutzung: [%s]</target>
+      </trans-unit>
+      <trans-unit id="syntaxError.sourceCode" resname="syntaxError.sourceCode" approved="yes">
+        <source>Show affected code snippet</source>
+        <target state="final">Zeige betroffenes Code-Snippet</target>
+      </trans-unit>
+      <trans-unit id="syntaxError.type.line.invalid" resname="syntaxError.type.line.invalid" approved="yes">
+        <source>Invalid line in "%1$s", line number "%2$s"</source>
+        <target state="final">Ungültige Zeile in "%1$s", Zeilennummer "%2$s"</target>
+      </trans-unit>
+      <trans-unit id="syntaxError.type.brace.excess" resname="syntaxError.type.brace.excess" approved="yes">
+        <source>Brace in excess in "%1$s", line number "%2$s"</source>
+        <target state="final">Klammer zu viel in "%1$s", Zeilennummer "%2$s"</target>
+      </trans-unit>
+      <trans-unit id="syntaxError.type.brace.missing" resname="syntaxError.type.brace.missing" approved="yes">
+        <source>Brace missing in "%1$s", line number "%2$s"</source>
+        <target state="final">Klammer fehlt in "%1$s", Zeilennummer "%2$s"</target>
+      </trans-unit>
+      <trans-unit id="tree.child.btn.sourceCode" resname="tree.child.btn.sourceCode" approved="yes">
+        <source>Show code</source>
+        <target state="final">Code anzeigen</target>
+      </trans-unit>
+      <trans-unit id="tree.child.btn.sourceCodeWithResolvedIncludes" resname="tree.child.btn.sourceCodeWithResolvedIncludes" approved="yes">
+        <source>Show code including possible includes/imports</source>
+        <target state="final">Code inklusive möglicher Einbindungen/Importe anzeigen</target>
+      </trans-unit>
+      <trans-unit id="tree.child.conditionVerdict.matched" resname="tree.child.conditionVerdict.matched" approved="yes">
+        <source>Matched</source>
+        <target state="final">Übereinstimmung</target>
+      </trans-unit>
+      <trans-unit id="tree.child.conditionVerdict.notMatched" resname="tree.child.conditionVerdict.notMatched" approved="yes">
+        <source>Not matched</source>
+        <target state="final">Keine Übereinstimmung</target>
+      </trans-unit>
+      <trans-unit id="tree.child.setting.clear" resname="tree.child.setting.clear" approved="yes">
+        <source>Clear</source>
+        <target state="final">Löschen</target>
+      </trans-unit>
+      <trans-unit id="tree.child.setting.root" resname="tree.child.setting.root" approved="yes">
+        <source>Root</source>
+        <target state="final">Root (Ursprung)</target>
+      </trans-unit>
+      <trans-unit id="tree.child.sysTemplateRecord" resname="tree.child.sysTemplateRecord" approved="yes">
+        <source>TypoScript record (page UID %s)</source>
+        <target state="final">TypoScript Datensatz (Seite UID %s)</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.AtImport" resname="tree.child.type.AtImport" approved="yes">
+        <source>Included via "@import"</source>
+        <target state="final">Eingebunden via "@import"</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.Condition" resname="tree.child.type.Condition" approved="yes">
+        <source>Condition (then)</source>
+        <target state="final">Bedingung (then)</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.ConditionElse" resname="tree.child.type.ConditionElse" approved="yes">
+        <source>Condition (else)</source>
+        <target state="final">Bedingung (else)</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.ConditionIncludeTyposcript" resname="tree.child.type.ConditionIncludeTyposcript" approved="yes">
+        <source>Included via "INCLUDE_TYPOSCRIPT" (with condition)</source>
+        <target state="final">Eingebunden via "INCLUDE_TYPOSPOSCRIPT" (mit Bedingung)</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.DefaultTypoScript" resname="tree.child.type.DefaultTypoScript" approved="yes">
+        <source>Included via "$GLOBALS"</source>
+        <target state="final">Eingebunden via "$GLOBALS"</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.DefaultTypoScriptMagicKey" resname="tree.child.type.DefaultTypoScriptMagicKey" approved="yes">
+        <source>Included via "$GLOBALS"</source>
+        <target state="final">Eingebunden via "$GLOBALS"</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.DefaultTypoScriptMagicKey_formlabel" resname="tree.child.type.DefaultTypoScriptMagicKey_formlabel" approved="yes">
+        <source>Default content rendering</source>
+        <target state="final">Standard Inhalts-Rendering</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.ExtensionStatic" resname="tree.child.type.ExtensionStatic" approved="yes">
+        <source>TypoScript set (loaded automatically)</source>
+        <target state="final">TypoScript Set (automatisch geladen)</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.File" resname="tree.child.type.File" approved="yes">
+        <source>Part of a TypoScript set</source>
+        <target state="final">Teil eines TypoScript Set</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.IncludeStaticFileDatabase" resname="tree.child.type.IncludeStaticFileDatabase" approved="yes">
+        <source>TypoScript set</source>
+        <target state="final">TypoScript Set</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.IncludeStaticFileFile" resname="tree.child.type.IncludeStaticFileFile" approved="yes">
+        <source>TypoScript set (included via file)</source>
+        <target state="final">TypoScript Set (eingebunden via Datei)</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.IncludeTyposcript" resname="tree.child.type.IncludeTyposcript" approved="yes">
+        <source>Included via "INCLUDE_TYPOSCRIPT"</source>
+        <target state="final">Eingebunden via "INCLUDE_TYPOSCRIPT"</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.Root" resname="tree.child.type.Root" approved="yes">
+        <source>Root</source>
+        <target state="final">Root (Ursprung)</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.Segment" resname="tree.child.type.Segment" approved="yes">
+        <source>Code segment</source>
+        <target state="final">Code-Segment</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.Site" resname="tree.child.type.Site" approved="yes">
+        <source>Site</source>
+        <target state="final">Site</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.SysTemplate" resname="tree.child.type.SysTemplate" approved="yes">
+        <source>TypoScript record</source>
+        <target state="final">TypoScript Datensatz</target>
       </trans-unit>
     </body>
   </file>

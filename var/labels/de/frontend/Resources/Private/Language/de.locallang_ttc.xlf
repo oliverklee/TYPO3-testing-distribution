@@ -451,17 +451,9 @@
         <source>Titles (one per line)</source>
         <target state="final">Titel (einer pro Zeile)</target>
       </trans-unit>
-      <trans-unit id="image_longdescURL" resname="image_longdescURL" approved="yes">
-        <source>Long Description URL</source>
-        <target state="final">Langbeschreibung URL:</target>
-      </trans-unit>
       <trans-unit id="images.addFileReference" resname="images.addFileReference" approved="yes">
         <source>Add image</source>
         <target state="final">Bild hinzufügen</target>
-      </trans-unit>
-      <trans-unit id="longdescURL_formlabel" resname="longdescURL_formlabel" approved="yes">
-        <source>Long Description URLs (one per line)</source>
-        <target state="final">Langbeschreibung URLs (eine pro Zeile)</target>
       </trans-unit>
       <trans-unit id="cols" resname="cols" approved="yes">
         <source>Columns</source>
@@ -870,10 +862,6 @@
       <trans-unit id="tabs.plugin" resname="tabs.plugin" approved="yes">
         <source>Plugin</source>
         <target state="final">Plug-In:</target>
-      </trans-unit>
-      <trans-unit id="sys_language_uid_formlabel" resname="sys_language_uid_formlabel" approved="yes">
-        <source>Language</source>
-        <target state="final">Sprache</target>
       </trans-unit>
       <trans-unit id="subheader_formlabel" resname="subheader_formlabel" approved="yes">
         <source>Subheader</source>

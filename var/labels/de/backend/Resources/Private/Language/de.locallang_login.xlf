@@ -15,18 +15,6 @@
         <source>Backend,Front End,Traditional Backend</source>
         <target state="final">Backend,Frontend,Traditionelles Backend</target>
       </trans-unit>
-      <trans-unit id="interface.backend" resname="interface.backend" approved="yes">
-        <source>Backend</source>
-        <target state="final">Backend</target>
-      </trans-unit>
-      <trans-unit id="interface.frontend" resname="interface.frontend" approved="yes">
-        <source>Frontend</source>
-        <target state="final">Frontend</target>
-      </trans-unit>
-      <trans-unit id="interface.backend_old" resname="interface.backend_old" approved="yes">
-        <source>Traditional Backend</source>
-        <target state="final">Traditionelles Backend</target>
-      </trans-unit>
       <trans-unit id="headline" resname="headline" approved="yes">
         <source>Login to the TYPO3 CMS Backend on ###SITENAME###</source>
         <target state="final">Anmeldung am Backend von ###SITENAME###</target>

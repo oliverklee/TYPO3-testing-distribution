@@ -143,9 +143,9 @@
         <source>File "%s" was not renamed. (Same name as before)</source>
         <target state="final">Datei "%s" wurde nicht umbenannt. (Selber Name wie zuvor.)</target>
       </trans-unit>
-      <trans-unit id="FileUtility.FileSavedToBytesMd5" resname="FileUtility.FileSavedToBytesMd5" approved="yes">
-        <source>File saved to "%s", bytes: %s, MD5: %s.</source>
-        <target state="final">Datei gespeichert unter "%s", Bytes: %s, MD5: %s.</target>
+      <trans-unit id="FileUtility.FileSavedTo" resname="FileUtility.FileSavedTo" approved="yes">
+        <source>File saved to "%s".</source>
+        <target state="final">Datei gespeichert unter "%s".</target>
       </trans-unit>
       <trans-unit id="FileUtility.FileWasNotCopiedTo" resname="FileUtility.FileWasNotCopiedTo" approved="yes">
         <source>File "%s" WAS NOT copied to "%s"! There might be a problem with write permissions.</source>

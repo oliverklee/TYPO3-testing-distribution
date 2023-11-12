@@ -4,7 +4,7 @@
     <header/>
     <body>
       <trans-unit id="showColumns" resname="showColumns" approved="yes">
-        <source>Show Columns</source>
+        <source>Show columns</source>
         <target state="final">Spalten anzeigen</target>
       </trans-unit>
       <trans-unit id="showColumnsSelection" resname="showColumnsSelection" approved="yes">

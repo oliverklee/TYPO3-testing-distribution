@@ -17,7 +17,7 @@
       </trans-unit>
       <trans-unit id="pdfToolsNotFound" resname="pdfToolsNotFound" approved="yes">
         <source>PDF tools was not found in paths '%1$spdftotext' and/or '%1$spdfinfo'</source>
-        <target state="final">PDF-Tools konnten in den Pfaden '%1$spdftotext' und/oder '%1$spdfinfo' nicht gefunden werden</target>
+        <target state="final">PDF-Dienstprogramme nicht im Pfad '%1$spdftotext' und/oder '%1$spdfinfo' gefunden</target>
       </trans-unit>
       <trans-unit id="pdfToolsDisabled" resname="pdfToolsDisabled" approved="yes">
         <source>PDF tools disabled</source>

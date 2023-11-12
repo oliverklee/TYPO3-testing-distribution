@@ -3,6 +3,10 @@
   <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang.xlf" date="2015-01-02T11:16:11Z" product-name="backend" target-language="de">
     <header/>
     <body>
+      <trans-unit id="onlineDocumentation" resname="onlineDocumentation" approved="yes">
+        <source>TYPO3 Online Documentation</source>
+        <target state="final">TYPO3 Online Dokumentation</target>
+      </trans-unit>
       <trans-unit id="no_modules_registered" resname="no_modules_registered" approved="yes">
         <source>No modules have been registered. Please contact your system administrator.</source>
         <target state="final">Es wurden keine Module registriert. Bitte kontaktieren Sie Ihren Systemadministrator.</target>
@@ -11,13 +15,17 @@
         <source>Show references</source>
         <target state="final">Referenzen anzeigen</target>
       </trans-unit>
-      <trans-unit id="systemmessage.header" resname="systemmessage.header" approved="yes">
-        <source>Application Information</source>
-        <target state="final">Anwendungsinformationen</target>
+      <trans-unit id="systemInformation.header" resname="systemInformation.header" approved="yes">
+        <source>System Information</source>
+        <target state="final">Systeminformationen</target>
       </trans-unit>
-      <trans-unit id="systemmessage.intro" resname="systemmessage.intro" approved="yes">
-        <source><![CDATA[This is a short system overview. For advanced information please head to the <a href="%s">Environment Module</a>.]]></source>
-        <target state="final"><![CDATA[Dies ist ein kurzer Systemüberblick. Für weitergehende Informationen konsultieren Sie bitte das <a href="%s">Install-Tool</a>.]]></target>
+      <trans-unit id="systemmessage.intro.text" resname="systemmessage.intro.text" approved="yes">
+        <source>This is a short system overview. For advanced information please head to: </source>
+        <target state="final">Dies ist ein kurzer Systemüberblick. Für weitergehende Informationen konsultieren Sie bitte: </target>
+      </trans-unit>
+      <trans-unit id="systemmessage.intro.link" resname="systemmessage.intro.link" approved="yes">
+        <source>Environment Module</source>
+        <target state="final">Environment-Modul</target>
       </trans-unit>
       <trans-unit id="systemmessage.allgood" resname="systemmessage.allgood" xml:space="preserve" approved="yes">
 				<source>Your system is fully operational.
@@ -88,6 +96,10 @@ Einen schönen Tag noch!</target></trans-unit>
         <source>Password</source>
         <target state="final">Passwort</target>
       </trans-unit>
+      <trans-unit id="login.togglePassword" resname="login.togglePassword" approved="yes">
+        <source>Toggle password visibility</source>
+        <target state="final">Passwort ein-/ausblenden</target>
+      </trans-unit>
       <trans-unit id="login.password_forget" resname="login.password_forget" approved="yes">
         <source>Forgot your password?</source>
         <target state="final">Passwort vergessen?</target>
@@ -99,10 +111,6 @@ Einen schönen Tag noch!</target></trans-unit>
       <trans-unit id="login.error.capslockStatus" resname="login.error.capslockStatus" approved="yes">
         <source>Caps lock enabled</source>
         <target state="final">Feststelltaste aktiv</target>
-      </trans-unit>
-      <trans-unit id="login.interface" resname="login.interface" approved="yes">
-        <source>Interface</source>
-        <target state="final">Oberfläche</target>
       </trans-unit>
       <trans-unit id="login.news.header" resname="login.news.header" approved="yes">
         <source>System News</source>
@@ -178,6 +186,58 @@ Einen schönen Tag noch!</target></trans-unit>
       <trans-unit id="modulemenu.label" resname="modulemenu.label" approved="yes">
         <source>Module Menu</source>
         <target state="final">Modulmenü</target>
+      </trans-unit>
+      <trans-unit id="clearcache.title" resname="clearcache.title" approved="yes">
+        <source>Page cache</source>
+        <target state="final">Seitencache</target>
+      </trans-unit>
+      <trans-unit id="clearcache.message.success" resname="clearcache.message.success" approved="yes">
+        <source>Successfully cleared page cache</source>
+        <target state="final">Seitencache erfolgreich geleert</target>
+      </trans-unit>
+      <trans-unit id="clearcache.message.error" resname="clearcache.message.error" approved="yes">
+        <source>Page cache could not be cleared</source>
+        <target state="final">Seitencache konnte nicht geleert werden</target>
+      </trans-unit>
+      <trans-unit id="error.linkHandlerTitleMissing" resname="error.linkHandlerTitleMissing" approved="yes">
+        <source>[title missing]</source>
+        <target state="final">[Titel fehlt]</target>
+      </trans-unit>
+      <trans-unit id="create_folder.title" resname="create_folder.title" approved="yes">
+        <source>Create new folder</source>
+        <target state="final">Neuen Ordner erstellen</target>
+      </trans-unit>
+      <trans-unit id="create_folder.placeholder" resname="create_folder.placeholder" approved="yes">
+        <source>Your new folder name</source>
+        <target state="final">Neuer Ordnername</target>
+      </trans-unit>
+      <trans-unit id="create_folder.submit" resname="create_folder.submit" approved="yes">
+        <source>Create folder</source>
+        <target state="final">Ordner erstellen</target>
+      </trans-unit>
+      <trans-unit id="row.deletePlaceholder.title" resname="row.deletePlaceholder.title" approved="yes">
+        <source>The live pendant of this record will be deleted when this workspace record is published.</source>
+        <target state="final">Die Live-Version dieses Datensatzes wird gelöscht, sobald dieser Arbeitsbereichs-Datensatz veröffentlicht wird.</target>
+      </trans-unit>
+      <trans-unit id="shortcut.title" resname="shortcut.title" approved="yes">
+        <source>%s%s on page "%s" [%d]</source>
+        <target state="final">%s%s auf Seite "%s" [%d]</target>
+      </trans-unit>
+      <trans-unit id="liveSearch.databaseRecordProvider.filterLabel" resname="liveSearch.databaseRecordProvider.filterLabel" approved="yes">
+        <source>Database records</source>
+        <target state="final">Datenbankeinträge</target>
+      </trans-unit>
+      <trans-unit id="liveSearch.databaseRecordProvider.typeLabel" resname="liveSearch.databaseRecordProvider.typeLabel" approved="yes">
+        <source>Database record</source>
+        <target state="final">Datenbankeintrag</target>
+      </trans-unit>
+      <trans-unit id="liveSearch.pageRecordProvider.filterLabel" resname="liveSearch.pageRecordProvider.filterLabel" approved="yes">
+        <source>Pages</source>
+        <target state="final">Seiten</target>
+      </trans-unit>
+      <trans-unit id="liveSearch.pageRecordProvider.typeLabel" resname="liveSearch.pageRecordProvider.typeLabel" approved="yes">
+        <source>Page</source>
+        <target state="final">Seite</target>
       </trans-unit>
     </body>
   </file>

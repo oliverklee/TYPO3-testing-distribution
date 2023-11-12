@@ -63,10 +63,6 @@
         <source>TSconfig</source>
         <target state="final">TSconfig</target>
       </trans-unit>
-      <trans-unit id="TSconfig_title" resname="TSconfig_title" approved="yes">
-        <source>TSconfig QuickReference</source>
-        <target state="final">TSconfig-Kurzreferenz</target>
-      </trans-unit>
       <trans-unit id="be_users.username" resname="be_users.username" approved="yes">
         <source>Username</source>
         <target state="final">Benutzername</target>
@@ -211,6 +207,10 @@
         <source>Access</source>
         <target state="final">Zugriff</target>
       </trans-unit>
+      <trans-unit id="be_users.tabs.personal_data" resname="be_users.tabs.personal_data" approved="yes">
+        <source>Personal Data</source>
+        <target state="final">Persönliche Daten</target>
+      </trans-unit>
       <trans-unit id="be_groups.title" resname="be_groups.title" approved="yes">
         <source>Grouptitle</source>
         <target state="final">Gruppenname</target>
@@ -232,8 +232,8 @@
         <target state="final">Erlaubte Ausschlussfelder</target>
       </trans-unit>
       <trans-unit id="be_groups.explicit_allowdeny" resname="be_groups.explicit_allowdeny" approved="yes">
-        <source>Explicitly allow/deny field values</source>
-        <target state="final">Feldwerte explizit erlauben/verbieten</target>
+        <source>Explicitly allow field values</source>
+        <target state="final">Explizit erlaubte Feldwerte</target>
       </trans-unit>
       <trans-unit id="be_groups.custom_options" resname="be_groups.custom_options" approved="yes">
         <source>Custom module options</source>
@@ -375,29 +375,17 @@
         <source>Other</source>
         <target state="final">Andere</target>
       </trans-unit>
+      <trans-unit id="sys_filemounts.identifier" resname="sys_filemounts.identifier" approved="yes">
+        <source>Entry point</source>
+        <target state="final">Einstiegspunkt</target>
+      </trans-unit>
       <trans-unit id="sys_filemounts.title" resname="sys_filemounts.title" approved="yes">
         <source>Label</source>
         <target state="final">Bezeichnung</target>
       </trans-unit>
-      <trans-unit id="sys_filemounts.path" resname="sys_filemounts.path" approved="yes">
-        <source>Path</source>
-        <target state="final">Pfad</target>
-      </trans-unit>
-      <trans-unit id="sys_filemounts.base" resname="sys_filemounts.base" approved="yes">
-        <source>Base</source>
-        <target state="final">Basis</target>
-      </trans-unit>
       <trans-unit id="sys_filemounts.read_only" resname="sys_filemounts.read_only" approved="yes">
         <source>Read-only</source>
         <target state="final">Schreibgeschützt</target>
-      </trans-unit>
-      <trans-unit id="sys_filemounts.base_absolute" resname="sys_filemounts.base_absolute" approved="yes">
-        <source>absolute (root) / </source>
-        <target state="final">absolut (root) / </target>
-      </trans-unit>
-      <trans-unit id="sys_filemounts.base_relative" resname="sys_filemounts.base_relative" approved="yes">
-        <source>relative ../fileadmin/</source>
-        <target state="final">relativ ../fileadmin/</target>
       </trans-unit>
       <trans-unit id="sys_history" resname="sys_history" approved="yes">
         <source>System History</source>
@@ -490,10 +478,6 @@
       <trans-unit id="doktype.I.2" resname="doktype.I.2" approved="yes">
         <source>Recycler</source>
         <target state="final">Papierkorb</target>
-      </trans-unit>
-      <trans-unit id="title" resname="title" approved="yes">
-        <source>Pagetitle</source>
-        <target state="final">Seitentitel</target>
       </trans-unit>
       <trans-unit id="php_tree_stop" resname="php_tree_stop" approved="yes">
         <source>Hide child pages in page tree</source>
@@ -707,10 +691,6 @@
         <source>Sorting foreign</source>
         <target state="final">Fremdsortierung</target>
       </trans-unit>
-      <trans-unit id="sys_file_reference.table_local" resname="sys_file_reference.table_local" approved="yes">
-        <source>Local table</source>
-        <target state="final">Lokale Tabelle</target>
-      </trans-unit>
       <trans-unit id="sys_file_reference.basicoverlayPalette" resname="sys_file_reference.basicoverlayPalette" approved="yes">
         <source>File Metadata</source>
         <target state="final">Datei-Metadaten</target>
@@ -798,22 +778,6 @@
       <trans-unit id="sys_file_collection.category" resname="sys_file_collection.category" approved="yes">
         <source>Category</source>
         <target state="final">Kategorie</target>
-      </trans-unit>
-      <trans-unit id="sys_language" resname="sys_language" approved="yes">
-        <source>Website Language</source>
-        <target state="final">Website-Sprache</target>
-      </trans-unit>
-      <trans-unit id="sys_language.isocode" resname="sys_language.isocode" approved="yes">
-        <source>Select Official Language (ISO code)</source>
-        <target state="final">Offizielle Sprache wählen (ISO-Kennung)</target>
-      </trans-unit>
-      <trans-unit id="sys_language.language_isocode" resname="sys_language.language_isocode" approved="yes">
-        <source>Select language</source>
-        <target state="final">Sprache auswählen</target>
-      </trans-unit>
-      <trans-unit id="sys_language.flag" resname="sys_language.flag" approved="yes">
-        <source>Select flag icon</source>
-        <target state="final">Flaggensymbol wählen</target>
       </trans-unit>
       <trans-unit id="sys_workspace" resname="sys_workspace" approved="yes">
         <source>Workspace</source>

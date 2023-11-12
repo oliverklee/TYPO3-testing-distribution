@@ -31,6 +31,16 @@
         <source>Available Languages for this Site</source>
         <target state="final">Verfügbare Sprachen für diese Site</target>
       </trans-unit>
+      <trans-unit id="site.languages.choosePreset" resname="site.languages.choosePreset" approved="yes">
+        <source>Choose a preset...</source>
+        <target state="final">Voreinstellungen wählen...</target>
+        <note>First select option of site language preset single select drop down</note>
+      </trans-unit>
+      <trans-unit id="site.languages.chooseExistingFromOtherSite" resname="site.languages.chooseExistingFromOtherSite" approved="yes">
+        <source>Use Language from existing site...</source>
+        <target state="final">Sprache von existierender Site verwenden...</target>
+        <note>First select option of site language preset single select drop down</note>
+      </trans-unit>
       <trans-unit id="site.languages.description" resname="site.languages.description" approved="yes">
         <source>Select an already existing language from another site or create a new one.</source>
         <target state="final">Wählen Sie eine bereits existierende Sprache einer anderen Site oder erstellen Sie eine neue.</target>
@@ -66,10 +76,6 @@
       <trans-unit id="site.tab.routes" resname="site.tab.routes" approved="yes">
         <source>Static Routes</source>
         <target state="final">Statische Routen</target>
-      </trans-unit>
-      <trans-unit id="site_language.palette.locales" resname="site_language.palette.locales" approved="yes">
-        <source>Locales</source>
-        <target state="final">Spracheinstellungen</target>
       </trans-unit>
       <trans-unit id="site_language.palette.frontend" resname="site_language.palette.frontend" approved="yes">
         <source>Frontend related</source>
@@ -107,37 +113,13 @@
         <source>Locale</source>
         <target state="final">Spracheinstellung</target>
       </trans-unit>
-      <trans-unit id="site_language.iso-639-1" resname="site_language.iso-639-1" approved="yes">
-        <source>Two Letter ISO Code</source>
-        <target state="final">Zwei-Zeichen-ISO-Code</target>
-      </trans-unit>
       <trans-unit id="site_language.hreflang" resname="site_language.hreflang" approved="yes">
-        <source>Language Tag defined by RFC 1766 / 3066</source>
-        <target state="final">Sprachkürzel nach Definition RFC 1766 / 3066</target>
+        <source>Alternative attribute for "hreflang" tags</source>
+        <target state="final">Alternatives "hreflang" Attribut</target>
       </trans-unit>
       <trans-unit id="site_language.enabled" resname="site_language.enabled" approved="yes">
         <source>Visible in Frontend</source>
         <target state="final">Sichtbar im Frontend</target>
-      </trans-unit>
-      <trans-unit id="site_language.direction" resname="site_language.direction" approved="yes">
-        <source>Direction</source>
-        <target state="final">Richtung</target>
-      </trans-unit>
-      <trans-unit id="site_language.direction.none" resname="site_language.direction.none" approved="yes">
-        <source>None</source>
-        <target state="final">Keine</target>
-      </trans-unit>
-      <trans-unit id="site_language.direction.leftToRight" resname="site_language.direction.leftToRight" approved="yes">
-        <source>Left to Right</source>
-        <target state="final">Links nach rechts</target>
-      </trans-unit>
-      <trans-unit id="site_language.direction.rightToLeft" resname="site_language.direction.rightToLeft" approved="yes">
-        <source>Right to Left</source>
-        <target state="final">Rechts nach links</target>
-      </trans-unit>
-      <trans-unit id="site_language.typo3Language" resname="site_language.typo3Language" approved="yes">
-        <source>Language Key for XLF Files</source>
-        <target state="final">Sprachschlüssel für XLF-Dateien</target>
       </trans-unit>
       <trans-unit id="site_language.flag" resname="site_language.flag" approved="yes">
         <source>Flag icon</source>

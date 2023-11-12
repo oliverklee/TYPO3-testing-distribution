@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_pagetsconfig.xlf" date="2023-01-19T14:41:00Z" product-name="cms" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="module.pagetsconfig.noAccess" resname="module.pagetsconfig.noAccess" approved="yes">
+        <source>Access to this module denied.</source>
+        <target state="final">Zugriff auf dieses Modul verweigert.</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.displayComments" resname="module.pagetsconfig_active.displayComments" approved="yes">
+        <source>Display comments</source>
+        <target state="final">Kommentare anzeigen</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.sortAlphabetically" resname="module.pagetsconfig_active.sortAlphabetically" approved="yes">
+        <source>Sort keys alphabetically</source>
+        <target state="final">Schlüssel alphabetisch sortieren</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.panel.header.conditions" resname="module.pagetsconfig_active.panel.header.conditions" approved="yes">
+        <source>Conditions</source>
+        <target state="final">Bedingungen</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.panel.header.numberOfSearchMatches" resname="module.pagetsconfig_active.panel.header.numberOfSearchMatches" approved="yes">
+        <source>%s search match(es)</source>
+        <target state="final">%s Suchergebnis(se)</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.panel.info.conditionActiveCount.multiple" resname="module.pagetsconfig_active.panel.info.conditionActiveCount.multiple" approved="yes">
+        <source>%s active conditions</source>
+        <target state="final">%s aktive Bedingungen</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.panel.info.conditionActiveCount.single" resname="module.pagetsconfig_active.panel.info.conditionActiveCount.single" approved="yes">
+        <source>%s active condition</source>
+        <target state="final">%s aktive Bedingung</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.panel.info.conditionWithConstant" resname="module.pagetsconfig_active.panel.info.conditionWithConstant" approved="yes">
+        <source>Site settings usage: [%s]</source>
+        <target state="final">Site Settings Nutzung: [%s]</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.panel.header.configuration" resname="module.pagetsconfig_active.panel.header.configuration" approved="yes">
+        <source>Configuration</source>
+        <target state="final">Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.siteSettings" resname="module.pagetsconfig_active.siteSettings" approved="yes">
+        <source>Constants from site settings</source>
+        <target state="final">Konstanten aus der Site-Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.tree.valueWithConstant" resname="module.pagetsconfig_active.tree.valueWithConstant" approved="yes">
+        <source>Constant usage: [%s]</source>
+        <target state="final">Konstanten-Nutzung: [%s]</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.description" resname="module.pagetsconfig_includes.description" approved="yes">
+        <source>Overview of the included TypoScript and include order for the current page.</source>
+        <target state="final">Übersicht eingebundener TypoScript Datensätze sowie deren Ladereihenfolge für die aktuell ausgewählte Seite.</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.siteSettings" resname="module.pagetsconfig_includes.siteSettings" approved="yes">
+        <source>Constants from site settings</source>
+        <target state="final">Konstanten aus Site-Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.panel.header.configuration" resname="module.pagetsconfig_includes.panel.header.configuration" approved="yes">
+        <source>Configuration</source>
+        <target state="final">Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.panel.header.conditions" resname="module.pagetsconfig_includes.panel.header.conditions" approved="yes">
+        <source>Conditions</source>
+        <target state="final">Bedingungen</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.panel.info.conditionActiveCount.multiple" resname="module.pagetsconfig_includes.panel.info.conditionActiveCount.multiple" approved="yes">
+        <source>%s active conditions</source>
+        <target state="final">%s aktive Bedingungen</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.panel.info.conditionActiveCount.single" resname="module.pagetsconfig_includes.panel.info.conditionActiveCount.single" approved="yes">
+        <source>%s active condition</source>
+        <target state="final">%s aktive Bedingung</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.panel.info.conditionWithConstant" resname="module.pagetsconfig_includes.panel.info.conditionWithConstant" approved="yes">
+        <source>Constant usage: [%s]</source>
+        <target state="final">Konstanten-Nutzung: [%s]</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.type.Segment" resname="module.pagetsconfig_includes.tree.child.type.Segment" approved="yes">
+        <source>Code segment</source>
+        <target state="final">Code-Segment</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.type.AtImport" resname="module.pagetsconfig_includes.tree.child.type.AtImport" approved="yes">
+        <source>Included via "@import"</source>
+        <target state="final">Eingebunden via "@import"</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.type.Condition" resname="module.pagetsconfig_includes.tree.child.type.Condition" approved="yes">
+        <source>Condition (then)</source>
+        <target state="final">Bedingung (then)</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.type.ConditionElse" resname="module.pagetsconfig_includes.tree.child.type.ConditionElse" approved="yes">
+        <source>Condition (else)</source>
+        <target state="final">Bedingung (else)</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.type.ConditionIncludeTyposcript" resname="module.pagetsconfig_includes.tree.child.type.ConditionIncludeTyposcript" approved="yes">
+        <source>Included via "INCLUDE_TYPOSCRIPT" (with condition)</source>
+        <target state="final">Eingebunden via "INCLUDE_TYPOSPOSCRIPT" (mit Bedingung)</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.type.IncludeTyposcript" resname="module.pagetsconfig_includes.tree.child.type.IncludeTyposcript" approved="yes">
+        <source>Included via "INCLUDE_TYPOSCRIPT"</source>
+        <target state="final">Eingebunden via "INCLUDE_TYPOSCRIPT"</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.type.Segment" resname="module.pagetsconfig_includes.tree.child.type.Segment" approved="yes">
+        <source>Code segment</source>
+        <target state="final">Code-Segment</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.type.TsConfig" resname="module.pagetsconfig_includes.tree.child.type.TsConfig" approved="yes">
+        <source>TSconfig</source>
+        <target state="final">TsConfig</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.conditionVerdict.matched" resname="module.pagetsconfig_includes.tree.child.conditionVerdict.matched" approved="yes">
+        <source>Matched</source>
+        <target state="final">Übereinstimmung</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.conditionVerdict.notMatched" resname="module.pagetsconfig_includes.tree.child.conditionVerdict.notMatched" approved="yes">
+        <source>Not matched</source>
+        <target state="final">Keine Übereinstimmung</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.btn.sourceCode" resname="module.pagetsconfig_includes.tree.child.btn.sourceCode" approved="yes">
+        <source>Show code</source>
+        <target state="final">Code anzeigen</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.btn.sourceCodeWithResolvedIncludes" resname="module.pagetsconfig_includes.tree.child.btn.sourceCodeWithResolvedIncludes" approved="yes">
+        <source>Show code including possible includes/imports</source>
+        <target state="final">Code inklusive möglicher Einbindungen/Importe anzeigen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
