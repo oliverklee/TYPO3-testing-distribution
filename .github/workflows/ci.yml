@@ -84,5 +84,6 @@ jobs:
           - json:lint
           - yaml:lint
           - php:cs-fixer
+          - php:stan
         php-version:
           - '8.1'
