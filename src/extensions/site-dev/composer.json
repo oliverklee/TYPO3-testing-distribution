@@ -22,6 +22,16 @@
 		"typo3/cms-frontend": "^12.4.0"
 	},
 	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"OliverKlee\\SiteDev\\": "Classes/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"OliverKlee\\SiteDev\\Tests\\": "Tests/"
+		}
+	},
 	"extra": {
 		"typo3/cms": {
 			"extension-key": "site_dev"
