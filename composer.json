@@ -45,6 +45,7 @@
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.28.3",
 		"friendsofphp/php-cs-fixer": "^3.38.0",
+		"helmich/typo3-typoscript-lint": "^3.1.0",
 		"phpstan/extension-installer": "^1.3.1",
 		"phpstan/phpstan": "^1.10.27",
 		"phpstan/phpstan-strict-rules": "^1.5.1",
@@ -93,8 +94,10 @@
 			"@ci:json:lint",
 			"@ci:php:lint",
 			"@ci:php:cs-fixer",
+			"@ci:typoscript:lint",
 			"@ci:yaml:lint"
 		],
+		"ci:typoscript:lint": "typoscript-lint -c config/TypoScriptLint.yaml --ansi -n --fail-on-warnings -vvv src/extensions/site-dev/Configuration/TsConfig src/extensions/site-dev/Configuration/TypoScript",
 		"ci:yaml:lint": "find .ddev .github config src/ -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
 		"fix": [
 			"@fix:composer",
@@ -118,6 +121,7 @@
 		"ci:php:lint": "Lints the PHP files for syntax errors.",
 		"ci:php:stan": "Checks the PHP types using PHPStan.",
 		"ci:static": "Runs all static code checks (syntax, style, types).",
+		"ci:typoscript:lint": "Lints the TypoScript files.",
 		"ci:yaml:lint": "Lints the YAML files for syntax errors.",
 		"fix": "Reformats the code.",
 		"fix:composer": "Reformats and sorts the composer.json files.",
