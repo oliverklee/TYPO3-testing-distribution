@@ -49,10 +49,25 @@ run the import.)
 To test a local copy of an extension in this distribution, you can do one of
 the following (or a combination):
 
-1. Put the extension folders in `packages/`.
+1. Put the extension folders in `src/extensions/`.
 2. Mount the extension directories via Docker. For this, create the file
    `.ddev/docker-compose.packages.yaml` as a copy of
    `.ddev/docker-compose.packages.yaml.template` and modify it to your needs.
+
+### Configuring PHPUnit
+
+The DDEVd documentation provides very good
+[step-by-step instructions for the Docker setup in PhpStorm](https://ddev.readthedocs.io/en/stable/users/topics/phpstorm/).
+
+After that, you need to configure the PhpStorm templates for PHPUnit tests:
+
+- Configuration file: `config/UnitTests.xml`
+- Environment variables:
+  `typo3DatabaseUsername=root;typo3DatabaseHost=db;TYPO3_PATH_WEB=public/;typo3DatabaseName=typo3_test;typo3DatabasePassword=root`
+
+Also, `config/UnitTests.xml` is the configuration file for unit tests,
+while `config/FunctionalTests.xml` is the corresponding file for functional
+tests.
 
 ## Relevant URLs and launch options
 
