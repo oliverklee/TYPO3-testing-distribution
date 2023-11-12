@@ -66,7 +66,7 @@ the following (or a combination):
 
 ## Credentials
 
-Backend admin: `admin` / `Password1!`
+Backend admin: `admin` / `Password1!`<br/>
 Install tool password: `Password1!`
 
 Frontend users:
