@@ -83,5 +83,6 @@ jobs:
           - composer:normalize
           - json:lint
           - yaml:lint
+          - php:cs-fixer
         php-version:
           - '8.1'
