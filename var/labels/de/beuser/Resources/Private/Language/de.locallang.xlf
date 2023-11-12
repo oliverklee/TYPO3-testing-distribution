@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" datatype="plaintext" original="EXT:beuser/Resources/Private/Language/locallang.xlf" date="2012-07-16T10:11:32Z" product-name="beuser" target-language="de">
+  <file source-language="en" datatype="plaintext" original="EXT:beuser/Resources/Private/Language/locallang.xlf" date="2023-02-15T18:03:32Z" product-name="beuser" target-language="de">
     <header/>
     <body>
       <trans-unit id="activeSessions" resname="activeSessions" approved="yes">
@@ -10,6 +10,14 @@
       <trans-unit id="userName" resname="userName" approved="yes">
         <source>Username</source>
         <target state="final">Benutzername</target>
+      </trans-unit>
+      <trans-unit id="userGroupTitle" resname="userGroupTitle" approved="yes">
+        <source>Grouptitle or group ID</source>
+        <target state="final">Gruppentitel oder Gruppen ID</target>
+      </trans-unit>
+      <trans-unit id="avatar" resname="avatar" approved="yes">
+        <source>Avatar</source>
+        <target state="final">Profilbild</target>
       </trans-unit>
       <trans-unit id="realName" resname="realName" approved="yes">
         <source>Real Name</source>
@@ -22,10 +30,6 @@
       <trans-unit id="ipAddress" resname="ipAddress" approved="yes">
         <source>IP address</source>
         <target state="final">IP-Adresse</target>
-      </trans-unit>
-      <trans-unit id="backendUserListing" resname="backendUserListing" approved="yes">
-        <source>Backend User Listing</source>
-        <target state="final">Auflistung der Backend-Benutzer</target>
       </trans-unit>
       <trans-unit id="subGroups" resname="subGroups" approved="yes">
         <source>Sub Groups</source>
@@ -41,6 +45,10 @@
       </trans-unit>
       <trans-unit id="users" resname="users" approved="yes">
         <source>Users</source>
+        <target state="final">Benutzer</target>
+      </trans-unit>
+      <trans-unit id="user" resname="user" approved="yes">
+        <source>User</source>
         <target state="final">Benutzer</target>
       </trans-unit>
       <trans-unit id="yes" resname="yes" approved="yes">
@@ -112,7 +120,7 @@
         <target state="final">Benutzerliste vergleichen</target>
       </trans-unit>
       <trans-unit id="compareBackendUsersGroups" resname="compareBackendUsersGroups" approved="yes">
-        <source>Compare backend usergroups</source>
+        <source>Compare backend user groups</source>
         <target state="final">Backend-Benutzergruppen vergleichen</target>
       </trans-unit>
       <trans-unit id="clearCompareList" resname="clearCompareList" approved="yes">
@@ -175,6 +183,14 @@
         <source>Backend users</source>
         <target state="final">Backend-Benutzer</target>
       </trans-unit>
+      <trans-unit id="backendUser.create" resname="backendUser.create" approved="yes">
+        <source>Create new backend user</source>
+        <target state="final">Neuen Backend-Benutzer anlegen</target>
+      </trans-unit>
+      <trans-unit id="backendUserGroup.create" resname="backendUserGroup.create" approved="yes">
+        <source>Create new backend user group</source>
+        <target state="final">Neue Backend-Benutzergruppe anlegen</target>
+      </trans-unit>
       <trans-unit id="compareUsers" resname="compareUsers" approved="yes">
         <source>Compare backend users</source>
         <target state="final">Backend-Benutzer vergleichen</target>
@@ -208,16 +224,24 @@
         <target state="final">Benutzer wechseln</target>
       </trans-unit>
       <trans-unit id="confirm" resname="confirm" approved="yes">
-        <source>Are you sure you want to delete this backend user %s?</source>
-        <target state="final">Backend-Benutzer %s tatsächlich löschen?</target>
+        <source>Are you sure you want to delete the backend user '%s'?</source>
+        <target state="final">Möchten Sie den Backend-Benutzer "%s" tatsächlich löschen'?</target>
+      </trans-unit>
+      <trans-unit id="backendUserGroup.confirmDelete" resname="backendUserGroup.confirmDelete" approved="yes">
+        <source>Are you sure you want to delete the usergroup '%s'?</source>
+        <target state="final">Möchten Sie die Benutzergruppe "%s" tatsächlich löschen'?</target>
       </trans-unit>
       <trans-unit id="section.compare" resname="section.compare" approved="yes">
         <source>Compare</source>
         <target state="final">Vergleich</target>
       </trans-unit>
       <trans-unit id="section.allUserGroups" resname="section.allUserGroups" approved="yes">
-        <source>All User Groups</source>
-        <target state="final">Alle Benutzergruppen</target>
+        <source>All backend user groups</source>
+        <target state="final">Alle Backend-Benutzergruppen</target>
+      </trans-unit>
+      <trans-unit id="section.allUsers" resname="section.allUsers" approved="yes">
+        <source>All backend users</source>
+        <target state="final">Alle Backend-Benutzer</target>
       </trans-unit>
       <trans-unit id="compare" resname="compare" approved="yes">
         <source>Compare</source>
@@ -262,6 +286,10 @@
       <trans-unit id="groups" resname="groups" approved="yes">
         <source>Groups</source>
         <target state="final">Benutzergruppen</target>
+      </trans-unit>
+      <trans-unit id="group" resname="group" approved="yes">
+        <source>Group</source>
+        <target state="final">Gruppe</target>
       </trans-unit>
       <trans-unit id="information.groups.direct" resname="information.groups.direct" approved="yes">
         <source>Directly assigned</source>
@@ -386,6 +414,54 @@
       <trans-unit id="pagination.refresh" resname="pagination.refresh" approved="yes">
         <source>Refresh</source>
         <target state="final">Aktualisieren</target>
+      </trans-unit>
+      <trans-unit id="backendUser.list.title" resname="backendUser.list.title" approved="yes">
+        <source>Backend users</source>
+        <target state="final">Backend-Benutzer</target>
+      </trans-unit>
+      <trans-unit id="backendUser.online.title" resname="backendUser.online.title" approved="yes">
+        <source>Online backend users</source>
+        <target state="final">Online Backend-Benutzer</target>
+      </trans-unit>
+      <trans-unit id="backendUser.compare.title" resname="backendUser.online.title" approved="yes">
+        <source>Compare backend users</source>
+        <target state="final">Backend-Benutzer vergleichen</target>
+      </trans-unit>
+      <trans-unit id="backendUserGroup.list.title" resname="backendUserGroup.list.title" approved="yes">
+        <source>Backend user groups</source>
+        <target state="final">Backend-Benutzergruppen</target>
+      </trans-unit>
+      <trans-unit id="filemount.list.title" resname="filemount.list.title" approved="yes">
+        <source>Filemounts</source>
+        <target state="final">Verzeichnisfreigaben</target>
+      </trans-unit>
+      <trans-unit id="filemounts" resname="filemounts" approved="yes">
+        <source>Filemounts</source>
+        <target state="final">Verzeichnisfreigaben</target>
+      </trans-unit>
+      <trans-unit id="filemount.confirm.deletion" resname="filemount.confirm.deletion" approved="yes">
+        <source>Are you sure, that you want to delete the filemount "%s"?</source>
+        <target state="final">Möchten Sie diese Verzeichnisfreigabe(n) "%s" wirklich löschen?</target>
+      </trans-unit>
+      <trans-unit id="filemount.create" resname="filemount.create" approved="yes">
+        <source>Create new filemount</source>
+        <target state="final">Neue Verzeichnisfreigabe erstellen</target>
+      </trans-unit>
+      <trans-unit id="filemount.none" resname="filemount.none" approved="yes">
+        <source>There are no filemounts available.</source>
+        <target state="final">Es sind keine Verzeichnisfreigaben verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="filemount.storage" resname="filemount.storage" approved="yes">
+        <source>Storage</source>
+        <target state="final">Speicher</target>
+      </trans-unit>
+      <trans-unit id="filemount.amount.multiple" resname="filemount.amount.multiple" approved="yes">
+        <source>%s Filemounts</source>
+        <target state="final">%s Verzeichnisfreigaben</target>
+      </trans-unit>
+      <trans-unit id="filemount.amount.singular" resname="filemount.amount.singular" approved="yes">
+        <source>1 Filemount</source>
+        <target state="final">1 Verzeichnisfreigabe</target>
       </trans-unit>
     </body>
   </file>

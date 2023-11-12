@@ -20,12 +20,20 @@
         <target state="final">Berichte</target>
       </trans-unit>
       <trans-unit id="reports_overview" resname="reports_overview" approved="yes">
-        <source>Overview</source>
-        <target state="final">Übersicht</target>
+        <source>Reports overview</source>
+        <target state="final">Report-Übersicht</target>
       </trans-unit>
       <trans-unit id="choose_report" resname="choose_report" approved="yes">
         <source>Report</source>
         <target state="final">Bericht:</target>
+      </trans-unit>
+      <trans-unit id="noReportsTitle" resname="noReportsTitle" approved="yes">
+        <source>No registered reports</source>
+        <target state="final">Keine registrierten Berichte</target>
+      </trans-unit>
+      <trans-unit id="noReportsMessage" resname="noReportsMessage" approved="yes">
+        <source>There are no reports registered in the system and default reports have been disabled.</source>
+        <target state="final">Es sind keinerlei Reports im System registriert und Standardreports wurden deaktiviert.</target>
       </trans-unit>
     </body>
   </file>

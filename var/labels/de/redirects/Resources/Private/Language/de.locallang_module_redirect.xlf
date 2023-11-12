@@ -55,13 +55,17 @@
         <source>Show All</source>
         <target state="final">Alle anzeigen</target>
       </trans-unit>
-      <trans-unit id="filter.destination" resname="filter.destination" approved="yes">
-        <source>Destination (Path or Page ID)</source>
-        <target state="final">Ziel (Pfad oder Seiten-ID)</target>
-      </trans-unit>
       <trans-unit id="filter.targetStatusCode" resname="filter.targetStatusCode" approved="yes">
         <source>Status Code</source>
         <target state="final">Statuscode</target>
+      </trans-unit>
+      <trans-unit id="filter.creationType" resname="filter.creationType" approved="yes">
+        <source>Creation type</source>
+        <target state="final">Erstellungstyp</target>
+      </trans-unit>
+      <trans-unit id="filter.creationType.showAll" resname="filter.creationType.showAll" approved="yes">
+        <source>Show All</source>
+        <target state="final">Alle anzeigen</target>
       </trans-unit>
       <trans-unit id="filter.neverHit" resname="filter.neverHit" approved="yes">
         <source>Never hit</source>
@@ -79,21 +83,9 @@
         <source>Redirect is not activated!</source>
         <target state="final">Die Weiterleitung ist nicht aktiviert!</target>
       </trans-unit>
-      <trans-unit id="source_host" resname="source_host" approved="yes">
-        <source>Source Host</source>
-        <target state="final">Quellrechner</target>
-      </trans-unit>
-      <trans-unit id="source_path" resname="source_path" approved="yes">
-        <source>Source Path</source>
-        <target state="final">Quellpfad</target>
-      </trans-unit>
       <trans-unit id="source_path.placeholder" resname="source_path.placeholder" approved="yes">
         <source>/my-path/ or #^/my-path/$# (when regex enabled)</source>
         <target state="final">/mein-pfad/ oder #^/mein-pfad/$# (wenn Regex aktiviert)</target>
-      </trans-unit>
-      <trans-unit id="destination" resname="destination" approved="yes">
-        <source>Destination</source>
-        <target state="final">Ziel</target>
       </trans-unit>
       <trans-unit id="pageID" resname="pageID" approved="yes">
         <source>Page ID</source>
@@ -102,10 +94,6 @@
       <trans-unit id="destination_status_code" resname="destination_status_code" approved="yes">
         <source>Status Code</source>
         <target state="final">Statuscode</target>
-      </trans-unit>
-      <trans-unit id="hits" resname="hits" approved="yes">
-        <source># Hits</source>
-        <target state="final"># Treffer</target>
       </trans-unit>
       <trans-unit id="hit_text" resname="hit_text" approved="yes">
         <source>%s hit</source>
@@ -126,10 +114,6 @@
       <trans-unit id="hit_reset.confirm.content" resname="hit_reset.confirm.content" approved="yes">
         <source>Are you sure you want to reset the hitcounter of this record?</source>
         <target state="final">Trefferzähler für diesen Datensatz tatsächlich zurücksetzen?</target>
-      </trans-unit>
-      <trans-unit id="hit_last" resname="hit_last" approved="yes">
-        <source>Last Hit on</source>
-        <target state="final">Letzter Treffer am</target>
       </trans-unit>
       <trans-unit id="hit_last_never" resname="hit_last_never" approved="yes">
         <source>Never</source>

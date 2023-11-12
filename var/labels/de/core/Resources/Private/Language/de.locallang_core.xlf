@@ -136,6 +136,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Remaining characters: {0}</source>
         <target state="final">Verbleibende Zeichen: {0}</target>
       </trans-unit>
+      <trans-unit id="labels.minCharactersLeft" resname="labels.minCharactersLeft" approved="yes">
+        <source>Characters missing: {0}</source>
+        <target state="final">Zeichen fehlen: {0}</target>
+      </trans-unit>
       <trans-unit id="labels.maxItemsAllowed" resname="labels.maxItemsAllowed" approved="yes">
         <source>A maximum of {0} child records are allowed.</source>
         <target state="final">Es sind höchstens {0} Kinddatensätze erlaubt.</target>
@@ -227,6 +231,46 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.reload" resname="labels.reload" approved="yes">
         <source>Reload</source>
         <target state="final">Neu laden</target>
+      </trans-unit>
+      <trans-unit id="labels.language" resname="labels.language" approved="yes">
+        <source>Language</source>
+        <target state="final">Sprache</target>
+      </trans-unit>
+      <trans-unit id="labels.view" resname="labels.view" approved="yes">
+        <source>View</source>
+        <target state="final">Ansicht</target>
+      </trans-unit>
+      <trans-unit id="labels.view.layout" resname="labels.view.layout" approved="yes">
+        <source>Layout</source>
+        <target state="final">Layout</target>
+      </trans-unit>
+      <trans-unit id="labels.view.language_comparison" resname="labels.view.language_comparison" approved="yes">
+        <source>Language Comparison</source>
+        <target state="final">Sprachenvergleich</target>
+      </trans-unit>
+      <trans-unit id="labels.view.list" resname="labels.view.list" approved="yes">
+        <source>List</source>
+        <target state="final">Liste</target>
+      </trans-unit>
+      <trans-unit id="labels.view.tiles" resname="labels.view.tiles" approved="yes">
+        <source>Tiles</source>
+        <target state="final">Kacheln</target>
+      </trans-unit>
+      <trans-unit id="labels.view.showThumbnails" resname="labels.view.showThumbnails" approved="yes">
+        <source>Show thumbnails</source>
+        <target state="final">Vorschaubilder anzeigen</target>
+      </trans-unit>
+      <trans-unit id="labels.view.showClipboard" resname="labels.view.showClipboard" approved="yes">
+        <source>Show clipboard</source>
+        <target state="final">Zwischenablage anzeigen</target>
+      </trans-unit>
+      <trans-unit id="labels.view.showSearch" resname="labels.view.showSearch" approved="yes">
+        <source>Show search</source>
+        <target state="final">Suche anzeigen</target>
+      </trans-unit>
+      <trans-unit id="labels.view.selectColumns" resname="labels.view.selectColumns" approved="yes">
+        <source>Select columns</source>
+        <target state="final">Spalten auswählen</target>
       </trans-unit>
       <trans-unit id="labels.share" resname="labels.share" approved="yes">
         <source>Share</source>
@@ -404,6 +448,18 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Edit %s "%s" on root level</source>
         <target state="final">%s "%s" auf Wurzelebene bearbeiten</target>
       </trans-unit>
+      <trans-unit id="labels.editMultiplePages" resname="labels.editMultiplePages" approved="yes">
+        <source>Edit multiple pages</source>
+        <target state="final">Mehrere Seiten bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="labels.editMultipleRecords" resname="labels.editMultipleRecords" approved="yes">
+        <source>Edit multiple "%s" records on page "%s"</source>
+        <target state="final">Mehrere "%s" Datensätze auf Seite "%s " bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="labels.editMultipleRecordsRootLevel" resname="labels.editMultipleRecordsRootLevel" approved="yes">
+        <source>Edit multiple "%s" records on root level</source>
+        <target state="final">Mehrere "%s" Datensätze auf Root-Ebene bearbeiten</target>
+      </trans-unit>
       <trans-unit id="labels.rootLevel" resname="labels.rootLevel" approved="yes">
         <source>root level</source>
         <target state="final">Wurzelebene</target>
@@ -452,9 +508,9 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Move this item</source>
         <target state="final">Dieses Objekt verschieben</target>
       </trans-unit>
-      <trans-unit id="labels.browse_file" resname="labels.browse_file" approved="yes">
-        <source>Browse for files</source>
-        <target state="final">Dateien durchblättern</target>
+      <trans-unit id="labels.browse_folder" resname="labels.browse_folder" approved="yes">
+        <source>Browse for folders</source>
+        <target state="final">Nach Ordnern suchen</target>
       </trans-unit>
       <trans-unit id="labels.browse_db" resname="labels.browse_db" approved="yes">
         <source>Browse for records</source>
@@ -521,8 +577,8 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <target state="final">Zwischenablage leeren</target>
       </trans-unit>
       <trans-unit id="labels.removeItem" resname="labels.removeItem" approved="yes">
-        <source>Remove item</source>
-        <target state="final">Objekt löschen</target>
+        <source>Remove element</source>
+        <target state="final">Element entfernen</target>
       </trans-unit>
       <trans-unit id="labels.holdDownCTRL" resname="labels.holdDownCTRL" approved="yes">
         <source>Important: Hold down the CTRL key while toggling elements in this list!</source>
@@ -572,6 +628,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Expand all</source>
         <target state="final">Alle anzeigen</target>
       </trans-unit>
+      <trans-unit id="labels.generatePassword" resname="labels.generatePassword" approved="yes">
+        <source>Generate password</source>
+        <target state="final">Passwort generieren</target>
+      </trans-unit>
       <trans-unit id="labels.new_section" resname="labels.new_section" approved="yes">
         <source>Create new</source>
         <target state="final">Neu anlegen</target>
@@ -579,14 +639,6 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.count" resname="labels.count" approved="yes">
         <source>Quantity</source>
         <target state="final">Menge</target>
-      </trans-unit>
-      <trans-unit id="labels.findRecord" resname="labels.findRecord" approved="yes">
-        <source>Find records</source>
-        <target state="final">Datensätze suchen</target>
-      </trans-unit>
-      <trans-unit id="labels.noRecordFound" resname="labels.noRecordFound" approved="yes">
-        <source>No record found</source>
-        <target state="final">Kein Datensatz gefunden</target>
       </trans-unit>
       <trans-unit id="labels.title.searchIcon" resname="labels.title.searchIcon" approved="yes">
         <source>Toggle search toolbar</source>
@@ -640,6 +692,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>The table is defined as readonly and can't be edited.</source>
         <target state="final">Die Tabelle ist schreibgeschützt und kann nicht bearbeitet werden.</target>
       </trans-unit>
+      <trans-unit id="labels.inconsistentLanguageWarning" resname="labels.inconsistentLanguageWarning" approved="yes">
+        <source>No translation parent assigned</source>
+        <target state="final">Der Übersetzung ist kein Elternelement zugeordnet</target>
+      </trans-unit>
       <trans-unit id="alttext.suggestSearching" resname="alttext.suggestSearching" approved="yes">
         <source>Searching...</source>
         <target state="final">Suche läuft...</target>
@@ -669,20 +725,20 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <target state="final">TYPO3-Element-Browser</target>
       </trans-unit>
       <trans-unit id="labels.referencesToRecord" resname="labels.referencesToRecord" approved="yes">
-        <source>(There are %s reference(s) to this record!)</source>
-        <target state="final">(Auf diesen Datensatz zeigen %s Referenzen!)</target>
+        <source>There are %s reference(s) to this record!</source>
+        <target state="final">Auf diesen Datensatz zeigen %s Referenz(en)!</target>
       </trans-unit>
       <trans-unit id="labels.referencesToFolder" resname="labels.referencesToFolder" approved="yes">
-        <source>(There are %s reference(s) to this folder!)</source>
-        <target state="final">(Auf diesen Ordner zeigen %s Referenzen!)</target>
+        <source>There are %s reference(s) to this folder!</source>
+        <target state="final">Auf diesen Ordner zeigen %s Referenzen!</target>
       </trans-unit>
       <trans-unit id="labels.referencesToFile" resname="labels.referencesToFile" approved="yes">
-        <source>(There are %s reference(s) to this file!)</source>
-        <target state="final">(Auf diese Datei zeigen %s Referenzen!)</target>
+        <source>There are %s reference(s) to this file!</source>
+        <target state="final">Auf diese Datei zeigen %s Referenzen!</target>
       </trans-unit>
       <trans-unit id="labels.translationsOfRecord" resname="labels.translationsOfRecord" approved="yes">
-        <source>(This record has %s translation(s) which will be deleted, too!)</source>
-        <target state="final">(Für diesen Datensatz gibt es %s Übersetzung(en), die ebenfalls gelöscht werden!)</target>
+        <source>This record has %s translation(s) which will be deleted, too!</source>
+        <target state="final">Für diesen Datensatz gibt es %s Übersetzung(en), die ebenfalls gelöscht werden!</target>
       </trans-unit>
       <trans-unit id="show_item.php.viewItem" resname="show_item.php.viewItem" approved="yes">
         <source>View Item</source>
@@ -944,6 +1000,18 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Please check your selection, since there might be file extension limitations, defined by your administrator.</source>
         <target state="final">Bitte überprüfen Sie Ihre Auswahl, da es möglicherweise Einschränkungen bei den Dateierweiterungen gibt, die von Ihrem Administrator festgelegt wurden.</target>
       </trans-unit>
+      <trans-unit id="file_rename.title" resname="file_rename.title" approved="yes">
+        <source>Rename</source>
+        <target state="final">Umbenennen</target>
+      </trans-unit>
+      <trans-unit id="file_rename.button.cancel" resname="file_rename.button.cancel" approved="yes">
+        <source>Cancel</source>
+        <target state="final">Abbrechen</target>
+      </trans-unit>
+      <trans-unit id="file_rename.button.rename" resname="file_rename.button.rename" approved="yes">
+        <source>Rename</source>
+        <target state="final">Umbenennen</target>
+      </trans-unit>
       <trans-unit id="online_media.new_media" resname="online_media.new_media" approved="yes">
         <source>Add new media asset</source>
         <target state="final">Neue Mediendatei hinzufügen</target>
@@ -1146,7 +1214,7 @@ Do you want to refresh it now?</source>
       </trans-unit>
       <trans-unit id="rm.saveDocShow" resname="rm.saveDocShow" approved="yes">
         <source>Save and view page</source>
-        <target state="final">Speichern und Seite anzeigen</target>
+        <target state="final">Seite speichern und anzeigen</target>
       </trans-unit>
       <trans-unit id="rm.saveCloseDoc" resname="rm.saveCloseDoc" approved="yes">
         <source>Save and close</source>
@@ -1556,6 +1624,10 @@ Do you want to refresh it now?</source>
         <source>Allowed file extensions</source>
         <target state="final">Erlaubte Dateierweiterungen</target>
       </trans-unit>
+      <trans-unit id="cm.disallowedFileExtensions" resname="cm.disallowedFileExtensions" approved="yes">
+        <source>Disallowed file extensions</source>
+        <target state="final">Unzulässige Dateiendungen</target>
+      </trans-unit>
       <trans-unit id="cm.allowedEditableTextFileExtensions" resname="cm.allowedEditableTextFileExtensions" approved="yes">
         <source>Allowed editable text file extensions</source>
         <target state="final">Zugelassene bearbeitbare Erweiterungen für Text-Dateien</target>
@@ -1603,14 +1675,6 @@ Do you want to refresh it now?</source>
       <trans-unit id="tree.searchTermInfo" resname="tree.searchTermInfo" approved="yes">
         <source>Enter search term</source>
         <target state="final">Suchbegriff eingeben</target>
-      </trans-unit>
-      <trans-unit id="warning.install_password" resname="warning.install_password" approved="yes">
-        <source>The Install Tool is still using the default password "joh316". Update this within the %sAbout section%s of the Install Tool.</source>
-        <target state="final">Das Installationsprogramm benutzt noch das Standardpasswort "joh316". Bitte ersetzen Sie es %shier%s.</target>
-      </trans-unit>
-      <trans-unit id="warning.installtool_default_password" resname="warning.installtool_default_password" approved="yes">
-        <source>The Install Tool is still using the default password "joh316". Update this within the %sImportant actions section%s of the Install Tool.</source>
-        <target state="final">Das Install Tool verwendet noch das Standardpasswort "joh316". Aktualisieren Sie es im Abschnitt %sImportant actions%s im Install Tool.</target>
       </trans-unit>
       <trans-unit id="warning.backend_admin" resname="warning.backend_admin" approved="yes">
         <source>A backend user "admin" with password "password" is still present. %sEdit this account%s, either deleting it completely or changing the username and password.</source>
@@ -1732,10 +1796,6 @@ Do you want to refresh it now?</source>
         <source>Do you really want to remove this bookmark?</source>
         <target state="final">Möchten Sie dieses Lesezeichen tatsächlich entfernen?</target>
       </trans-unit>
-      <trans-unit id="toolbarItems.createBookmark" resname="toolbarItems.createBookmark" approved="yes">
-        <source>Create bookmark</source>
-        <target state="final">Lesezeichen hinzufügen</target>
-      </trans-unit>
       <trans-unit id="toolbarItems.bookmarkSavedTitle" resname="toolbarItems.bookmarkSavedTitle" approved="yes">
         <source>Bookmark saved</source>
         <target state="final">Lesezeichen gespeichert</target>
@@ -1743,6 +1803,22 @@ Do you want to refresh it now?</source>
       <trans-unit id="toolbarItems.bookmarkSavedMessage" resname="toolbarItems.bookmarkSavedMessage" approved="yes">
         <source>The bookmark was saved.</source>
         <target state="final">Das Lesezeichen wurde gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.bookmarkAlreadyExistsTitle" resname="toolbarItems.bookmarkAlreadyExistsTitle" approved="yes">
+        <source>Bookmark already exists</source>
+        <target state="final">Lesezeichen existiert bereits</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.bookmarkAlreadyExistsMessage" resname="toolbarItems.bookmarkAlreadyExistsMessage" approved="yes">
+        <source>The document is already in your bookmarks.</source>
+        <target state="final">Das Dokument ist bereits in Ihren Lesezeichen.</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.bookmarkFailedTitle" resname="toolbarItems.bookmarkFailedTitle" approved="yes">
+        <source>Bookmark creation failed</source>
+        <target state="final">Erstellung des Lesezeichen fehlgeschlagen</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.bookmarkFailedMessage" resname="toolbarItems.bookmarkFailedMessage" approved="yes">
+        <source>The bookmark couldn't get created</source>
+        <target state="final">Das Lesezeichen konnte nicht erstellt werden</target>
       </trans-unit>
       <trans-unit id="toolbarItems.help" resname="toolbarItems.help" approved="yes">
         <source>Help</source>
@@ -1755,10 +1831,6 @@ Do you want to refresh it now?</source>
       <trans-unit id="toolbarItems.search" resname="toolbarItems.search" approved="yes">
         <source>Search</source>
         <target state="final">Suchen</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.searchLabel" resname="toolbarItems.searchLabel" approved="yes">
-        <source>Search the contents</source>
-        <target state="final">Inhalte durchsuchen</target>
       </trans-unit>
       <trans-unit id="toolbarItems.toolbarOpenClose" resname="toolbarItems.toolbarOpenClose" approved="yes">
         <source>Open/Close toolbar</source>
@@ -1824,10 +1896,6 @@ Do you want to refresh it now?</source>
         <source>Please, do not link to this page.</source>
         <target state="final">Bitte verlinken Sie nicht auf diese Seite.</target>
       </trans-unit>
-      <trans-unit id="csh_tooltip_loading" resname="csh_tooltip_loading" approved="yes">
-        <source>Loading help...</source>
-        <target state="final">Lädt Hilfetext...</target>
-      </trans-unit>
       <trans-unit id="error.database_schema_mismatch" resname="error.database_schema_mismatch" approved="yes">
         <source>A SQL error occurred. This may indicate a schema mismatch between TCA and the database. Try running database compare in the Install Tool.</source>
         <target state="final">Es ist ein SQL-Fehler aufgetreten. Dies kann auf eine Schema-Abweichung zwischen TCA und der Datenbank hindeuten. Versuchen Sie im Install Tool einen Datenbank-Vergleich durchzuführen.</target>
@@ -1880,6 +1948,10 @@ Do you want to refresh it now?</source>
         <source>Missing ISO code for language "%s" (UID %d), please edit the language record and set it.</source>
         <target state="final">Fehlender ISO-Code für Sprache "%s" (UID %d). Bitte bearbeiten Sie den Sprachdatensatz und setzen Sie den ISO-Code.</target>
       </trans-unit>
+      <trans-unit id="error.misconfiguredPasswordRules" resname="error.misconfiguredPasswordRules" approved="yes">
+        <source>No password could be generated due to misconfigured password rules.</source>
+        <target state="final">Aufgrund falsch konfigurierter Passwortregeln konnte kein Passwort generiert werden.</target>
+      </trans-unit>
       <trans-unit id="labels.deleteTitle" resname="labels.deleteTitle" approved="yes">
         <source>Revert to default Constant</source>
         <target state="final">Konstante auf Standardeinstellung zurücksetzen</target>
@@ -1900,13 +1972,17 @@ Do you want to refresh it now?</source>
         <source>You entered an invalid path for this File Storage. Note that "../" and "//" are not allowed when using an absolute path.</source>
         <target state="final">Der Pfad für diesen Speicher ist ungültig. Beachten Sie, dass bei absoluten Pfaden "../" und "//" nicht erlaubt sind.</target>
       </trans-unit>
-      <trans-unit id="iframe.navFrame" resname="iframe.navFrame" approved="yes">
-        <source>Navigation frame to browse through and select folders</source>
-        <target state="final">Navigation zur Suche und Auswahl von Ordnern</target>
-      </trans-unit>
       <trans-unit id="iframe.listFrame" resname="iframe.listFrame" approved="yes">
         <source>List frame (content area) to create and modify pages, content and records</source>
         <target state="final">Liste (Inhaltsbereich) zum Erstellen und Bearbeiten von Seiten, Inhalten und Datensätzen</target>
+      </trans-unit>
+      <trans-unit id="message.confirmation" resname="message.confirmation" approved="yes">
+        <source>Are you sure?</source>
+        <target state="final">Sind Sie sicher?</target>
+      </trans-unit>
+      <trans-unit id="labels.datepicker.today" resname="labels.datepicker.today" approved="yes">
+        <source>Today</source>
+        <target state="final">Heute</target>
       </trans-unit>
     </body>
   </file>

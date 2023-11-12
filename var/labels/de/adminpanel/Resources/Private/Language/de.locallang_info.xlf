@@ -7,9 +7,9 @@
         <source>Info</source>
         <target state="final">Info</target>
       </trans-unit>
-      <trans-unit id="module.shortinfo" resname="module.shortinfo" approved="yes">
-        <source>(Load Time: %s ms)</source>
-        <target state="final">(Ladezeit: %s ms)</target>
+      <trans-unit id="module.shortinfoLoadAndMemory" resname="module.shortinfoLoadAndMemory" approved="yes">
+        <source>(Load Time: %1$u ms, Memory: %2$s)</source>
+        <target state="final">(Ladezeit: %1$u ms, Speicher: %2$s)</target>
       </trans-unit>
       <trans-unit id="imagesOnPage" resname="imagesOnPage" approved="yes">
         <source>Images on this page</source>

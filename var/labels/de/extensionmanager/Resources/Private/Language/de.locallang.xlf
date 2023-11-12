@@ -55,6 +55,10 @@
         <source>Remove extension</source>
         <target state="final">Erweiterung entfernen</target>
       </trans-unit>
+      <trans-unit id="button.reimport" resname="button.reimport" approved="yes">
+        <source>Re-import data</source>
+        <target state="final">Daten erneut importieren</target>
+      </trans-unit>
       <trans-unit id="button.updateExtension" resname="button.updateExtension" approved="yes">
         <source>Update extension</source>
         <target state="final">Erweiterung aktualisieren</target>
@@ -301,6 +305,14 @@ Um Sie beim Erstellen einer validen composer.json Datei für Ihre Extension zu u
       <trans-unit id="extensionList.databaseReload" resname="extensionList.databaseReload" approved="yes">
         <source>Nothing has changed since last import. You might want to reload static database data.</source>
         <target state="final">Seit dem letzten Import gibt es keine Änderungen. Sie können die statischen Datenbankdaten neuladen.</target>
+      </trans-unit>
+      <trans-unit id="extensionList.databaseReload.title" resname="extensionList.databaseReload.title" approved="yes">
+        <source>Re-import of static database data</source>
+        <target state="final">Neu-Import von statischen Datenbankdaten</target>
+      </trans-unit>
+      <trans-unit id="extensionList.databaseReload.message" resname="extensionList.databaseReload.message" approved="yes">
+        <source>This re-import will overwrite any existing static data in the database.</source>
+        <target state="final">Dieser Neuimport wird alle vorhandenen statischen Daten in der Datenbank überschreiben.</target>
       </trans-unit>
       <trans-unit id="extensionList.updateConfirmation.questionVersionComments" resname="extensionList.updateConfirmation.questionVersionComments" approved="yes">
         <source>Version Comments</source>

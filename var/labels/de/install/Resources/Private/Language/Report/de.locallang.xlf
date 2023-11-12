@@ -121,10 +121,6 @@
         <source>Your TYPO3 version is up-to-date.</source>
         <target state="final">Ihre TYPO3-Version ist aktuell.</target>
       </trans-unit>
-      <trans-unit id="status_installToolPassword" resname="status_installToolPassword" approved="yes">
-        <source>Install Tool Password</source>
-        <target state="final">Passwort für das Installations-Tool</target>
-      </trans-unit>
       <trans-unit id="status_installTool" resname="status_installTool" approved="yes">
         <source>Install Tool</source>
         <target state="final">Install-Tool</target>

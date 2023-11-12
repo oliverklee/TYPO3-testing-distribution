@@ -318,17 +318,9 @@ Alle Suchbegriffe werden in Kleinschreibung umgewandelt.
         <source>but not</source>
         <target state="final">aber nicht</target>
       </trans-unit>
-      <trans-unit id="displayResults.previous" resname="displayResults.previous" approved="yes">
-        <source>&lt; Previous</source>
-        <target state="final">&lt; Zurück</target>
-      </trans-unit>
       <trans-unit id="displayResults.page" resname="displayResults.page" approved="yes">
         <source>Page</source>
         <target state="final">Seite</target>
-      </trans-unit>
-      <trans-unit id="displayResults.next" resname="displayResults.next" approved="yes">
-        <source>Next &gt;</source>
-        <target state="final">Nächste &gt;</target>
       </trans-unit>
       <trans-unit id="displayResults" resname="displayResults" approved="yes">
         <source><![CDATA[Displaying results <strong>%1$s to %2$s</strong> out of <strong>%3$s</strong>]]></source>

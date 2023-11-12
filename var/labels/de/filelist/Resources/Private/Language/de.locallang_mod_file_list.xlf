@@ -31,10 +31,6 @@
         <source>Are you sure you want to delete all marked files from this folder?</source>
         <target state="final">Alle markierten Dateien aus diesem Ordner tatsächlich löschen?</target>
       </trans-unit>
-      <trans-unit id="displayThumbs" resname="displayThumbs" approved="yes">
-        <source>Display thumbnails</source>
-        <target state="final">Vorschaubilder anzeigen</target>
-      </trans-unit>
       <trans-unit id="c_name" resname="c_name" approved="yes">
         <source>Name</source>
         <target state="final">Name</target>

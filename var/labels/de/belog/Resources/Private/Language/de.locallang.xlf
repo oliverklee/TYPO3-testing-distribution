@@ -47,26 +47,6 @@
         <source>[all]</source>
         <target state="final">[Alle]</target>
       </trans-unit>
-      <trans-unit id="50" resname="50" translate="no" approved="yes">
-        <source>50</source>
-        <target state="final">50</target>
-      </trans-unit>
-      <trans-unit id="100" resname="100" translate="no" approved="yes">
-        <source>100</source>
-        <target state="final">100</target>
-      </trans-unit>
-      <trans-unit id="200" resname="200" translate="no" approved="yes">
-        <source>200</source>
-        <target state="final">200</target>
-      </trans-unit>
-      <trans-unit id="500" resname="500" translate="no" approved="yes">
-        <source>500</source>
-        <target state="final">500</target>
-      </trans-unit>
-      <trans-unit id="1000" resname="1000" translate="no" approved="yes">
-        <source>1000</source>
-        <target state="final">1000</target>
-      </trans-unit>
       <trans-unit id="actionAll" resname="actionAll" approved="yes">
         <source>All</source>
         <target state="final">Alle</target>
@@ -138,10 +118,6 @@
       <trans-unit id="overview" resname="overview" approved="yes">
         <source>Overview</source>
         <target state="final">Übersicht</target>
-      </trans-unit>
-      <trans-unit id="logForNonPageRelatedActionsOrRootLevelOrPage" resname="logForNonPageRelatedActionsOrRootLevelOrPage" approved="yes">
-        <source>Log %s from %s to %s</source>
-        <target state="final">Protokoll %s vom %s bis %s</target>
       </trans-unit>
       <trans-unit id="type_1" resname="type_1" approved="yes">
         <source>DB</source>
@@ -411,10 +387,6 @@
         <source>User</source>
         <target state="final">Benutzer:</target>
       </trans-unit>
-      <trans-unit id="chLog_l_error" resname="chLog_l_error" approved="yes">
-        <source>E</source>
-        <target state="final">F</target>
-      </trans-unit>
       <trans-unit id="chLog_l_action" resname="chLog_l_action" approved="yes">
         <source>Action</source>
         <target state="final">Aktion:</target>
@@ -443,6 +415,10 @@
         <source>Users</source>
         <target state="final">Benutzer:</target>
       </trans-unit>
+      <trans-unit id="chLog_menuPageId" resname="chLog_menuPageId" approved="yes">
+        <source>Page</source>
+        <target state="final">Seite</target>
+      </trans-unit>
       <trans-unit id="chLog_menuDepth" resname="chLog_menuDepth" approved="yes">
         <source>Depth</source>
         <target state="final">Tiefe:</target>
@@ -452,8 +428,8 @@
         <target state="final">Zeit:</target>
       </trans-unit>
       <trans-unit id="systemmessage.errorsInPeriod" resname="systemmessage.errorsInPeriod" approved="yes">
-        <source><![CDATA[We have found %1$d errors. Please check your <a href="%2$s">system log</a>.]]></source>
-        <target state="final"><![CDATA[%1$d Fehler gefunden. Bitte überprüfen Sie Ihr <a href="%2$s">System-Protokoll</a>.]]></target>
+        <source><![CDATA[We have found %1$d error(s). Please check your <a href="%2$s">system log</a>.]]></source>
+        <target state="final"><![CDATA[%1$d Fehler gefunden. Bitte überprüfen Sie das <a href="%2$s">System-Protokoll</a>.]]></target>
       </trans-unit>
       <trans-unit id="actions" resname="actions" approved="yes">
         <source>Actions</source>
@@ -474,6 +450,22 @@
       <trans-unit id="actions.delete.noRowFound" resname="actions.delete.noRowFound" approved="yes">
         <source>Log entry could not be found.</source>
         <target state="final">Der Eintrag wurde nicht gefunden.</target>
+      </trans-unit>
+      <trans-unit id="info.selectPage.title" resname="info.selectPage.title" approved="yes">
+        <source>No page selected</source>
+        <target state="final">Keine Seite ausgewählt</target>
+      </trans-unit>
+      <trans-unit id="info.selectPage.message" resname="info.selectPage.message" approved="yes">
+        <source>Select a page to display logs for.</source>
+        <target state="final">Wählen Sie eine Seite für die Logs angezeigt werden sollen.</target>
+      </trans-unit>
+      <trans-unit id="error.noAccess.title" resname="error.noAccess.title" approved="yes">
+        <source>No access!</source>
+        <target state="final">Kein Zugriff!</target>
+      </trans-unit>
+      <trans-unit id="error.noAccess.message" resname="error.noAccess.message" approved="yes">
+        <source>You don't have access to the selected page.</source>
+        <target state="final">Sie haben keinen Zugriff auf die ausgewählte Seite.</target>
       </trans-unit>
     </body>
   </file>

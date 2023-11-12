@@ -56,8 +56,8 @@
         <target state="final">Unidentifiziert</target>
       </trans-unit>
       <trans-unit id="noValidPageSelected" resname="noValidPageSelected" approved="yes">
-        <source>Please select a page with a valid page type in the page tree on the left to preview the selected page in different screen resolutions.</source>
-        <target state="final">Bitte wählen Sie im Seitenbaum auf der linken Seite eine Seite mit einem gültigen Seitentyp aus, um eine Vorschau der ausgewählten Seiten in unterschiedlichen Bildschirmauflösungen zu sehen.</target>
+        <source>Please select a page with a valid page type in the page tree to get a preview of it in different screen resolutions.</source>
+        <target state="final">Bitte wählen Sie eine Seite mit einem gültigen Seitentyp im Seitenbaum, um eine Vorschau in verschiedenen Bildschirmauflösungen zu erhalten.</target>
       </trans-unit>
       <trans-unit id="noSiteConfiguration" resname="noSiteConfiguration" approved="yes">
         <source>The requested page is missing a valid site configuration.</source>

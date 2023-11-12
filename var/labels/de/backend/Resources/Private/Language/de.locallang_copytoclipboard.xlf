@@ -3,6 +3,10 @@
   <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_copytoclipboard.xlf" date="2021-06-01T12:43:12Z" product-name="backend" target-language="de">
     <header/>
     <body>
+      <trans-unit id="copyToClipboard.title" resname="copyToClipboard.title" approved="yes">
+        <source>Copy %s to clipboard</source>
+        <target state="final">%s in die Zwischenablage kopieren</target>
+      </trans-unit>
       <trans-unit id="copyToClipboard.success" resname="copyToClipboard.success" approved="yes">
         <source>Copied to clipboard</source>
         <target state="final">In die Zwischenablage kopiert</target>

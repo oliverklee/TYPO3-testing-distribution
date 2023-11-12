@@ -3,9 +3,21 @@
   <file source-language="en" datatype="plaintext" original="EXT:lowlevel/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:34Z" product-name="lowlevel" target-language="de">
     <header/>
     <body>
-      <trans-unit id="configuration" resname="configuration" approved="yes">
+      <trans-unit id="module.configuration.title" resname="module.configuration.title" approved="yes">
         <source>Configuration</source>
         <target state="final">Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="module.configuration.shortDescription" resname="module.configuration.shortDescription" approved="yes">
+        <source>View configuration from localconf.php and tables.php</source>
+        <target state="final">Konfiguration von localconf.php und tables.php anzeigen</target>
+      </trans-unit>
+      <trans-unit id="module.configuration.description" resname="module.configuration.description" approved="yes">
+        <source>Allows you to browse the values of the $TCA array (table configuration) and $TYPO3_CONF_VARS. You cannot set any values, only browse them.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</source>
+        <target state="final">Erlaubt es Ihnen, die Werte des $TCA -Arrays (Tabellenkonfiguration) und $TYPO3_CONF_VARS zu durchsuchen. Sie können keine Werte verändern, nur durchsuchen.&lt;br /&gt;&lt;em&gt;Zugriff nur für Benutzer mit Administrator-Rechten!&lt;/em&gt;</target>
+      </trans-unit>
+      <trans-unit id="module.configuration.numberOfSearchMatches" resname="module.configuration.numberOfSearchMatches" approved="yes">
+        <source>%s search match(es)</source>
+        <target state="final">%s Suchergebnis(se)</target>
       </trans-unit>
       <trans-unit id="typo3ConfVars" resname="typo3ConfVars" approved="yes">
         <source>$GLOBALS['TYPO3_CONF_VARS'] (Global Configuration)</source>
@@ -14,10 +26,6 @@
       <trans-unit id="tca" resname="tca" approved="yes">
         <source>$GLOBALS['TCA'] (Table configuration array)</source>
         <target state="final">$GLOBALS['TCA'] (Array für Tabellenkonfiguration)</target>
-      </trans-unit>
-      <trans-unit id="tcaDescr" resname="tcaDescr" approved="yes">
-        <source>$GLOBALS['TCA_DESCR'] (Table Help Description)</source>
-        <target state="final">$GLOBALS['TCA_DESCR'] (Beschreibungen für Tabellenhilfe)</target>
       </trans-unit>
       <trans-unit id="tbeStyles" resname="tbeStyles" approved="yes">
         <source>$GLOBALS['TBE_STYLES'] (Skinning Styles)</source>
@@ -43,9 +51,13 @@
         <source>HTTP Middlewares (PSR-15)</source>
         <target state="final">HTTP-Middleware (PSR-15)</target>
       </trans-unit>
-      <trans-unit id="siteConfiguration" resname="siteConfiguration" approved="yes">
-        <source>Site Configuration</source>
-        <target state="final">Seitenkonfiguration</target>
+      <trans-unit id="sitesTcaConfiguration" resname="sitesTcaConfiguration" approved="yes">
+        <source>Sites: TCA configuration</source>
+        <target state="final">Sites: TCA-Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="sitesYamlConfiguration" resname="sitesYamlConfiguration" approved="yes">
+        <source>Sites: YAML configuration</source>
+        <target state="final">Sites: YAML-Konfiguration</target>
       </trans-unit>
       <trans-unit id="eventListeners" resname="eventListeners" approved="yes">
         <source>Event Listeners (PSR-14)</source>
@@ -59,6 +71,14 @@
         <source>Soft Reference Parsers</source>
         <target state="final">Soft-Referenz-Parser</target>
       </trans-unit>
+      <trans-unit id="toolbarItems" resname="toolbarItems" approved="yes">
+        <source>Backend Toolbar Items</source>
+        <target state="final">Backend Toolbar Elemente</target>
+      </trans-unit>
+      <trans-unit id="symfonyExpressionLanguage" resname="symfonyExpressionLanguage" approved="yes">
+        <source>Symfony Expression Language Providers</source>
+        <target state="final">Symfony ExpressionLanguage Providers</target>
+      </trans-unit>
       <trans-unit id="formYamlConfiguration" resname="formYamlConfiguration" approved="yes">
         <source>Form: YAML Configuration</source>
         <target state="final">Formular: YAML-Konfiguration</target>
@@ -67,57 +87,29 @@
         <source>$GLOBALS['T3_SERVICES'] (Registered Services)</source>
         <target state="final">$GLOBALS['T3_SERVICES'] (Registrierte Dienste)</target>
       </trans-unit>
-      <trans-unit id="tbemodulesext" resname="tbemodulesext" approved="yes">
-        <source>$GLOBALS['TBE_MODULES_EXT'] (BE Modules Extensions)</source>
-        <target state="final">$GLOBALS['TBE_MODULES_EXT'] (Erweiterungen für BE-Module)</target>
-      </trans-unit>
-      <trans-unit id="tbemodules" resname="tbemodules" approved="yes">
-        <source>$GLOBALS['TBE_MODULES'] (BE Modules)</source>
-        <target state="final">$GLOBALS['TBE_MODULES'] (BE-Module)</target>
+      <trans-unit id="backendModules" resname="backendModules" approved="yes">
+        <source>Backend Modules</source>
+        <target state="final">Backend-Module</target>
       </trans-unit>
       <trans-unit id="pagesTypes" resname="pagesTypes" approved="yes">
-        <source>$GLOBALS['PAGES_TYPES'] (Table permissions by page type)</source>
-        <target state="final">$GLOBALS['PAGES_TYPES'] (Tabellenberechtigungen nach Seitentyp)</target>
+        <source>Table permissions per page type</source>
+        <target state="final">Tabellenberechtigungen pro Seitentyp</target>
       </trans-unit>
-      <trans-unit id="cropLines" resname="cropLines" approved="yes">
-        <source>Crop lines</source>
-        <target state="final">Zeilen kappen</target>
+      <trans-unit id="module.dbint.title" resname="module.dbint.title" approved="yes">
+        <source>DB Check</source>
+        <target state="final">DB Check</target>
       </trans-unit>
-      <trans-unit id="variable" resname="variable" approved="yes">
-        <source>Variable</source>
-        <target state="final">Variable</target>
+      <trans-unit id="module.dbint.shortDescription" resname="module.dbint.shortDescription" approved="yes">
+        <source>Database integrity check</source>
+        <target state="final">Datenbankintegritätsprüfung</target>
       </trans-unit>
-      <trans-unit id="copyPaste" resname="copyPaste" approved="yes">
-        <source>(Now, copy/paste this value into the configuration file where you can set it. This is all you can do from here...)</source>
-        <target state="final">Jetzt können Sie diesen Wert kopieren und in die Konfigurationsdatei einfügen, wo Sie ihn setzen können. Mehr ist hier nicht möglich...</target>
-      </trans-unit>
-      <trans-unit id="enterSearchPhrase" resname="enterSearchPhrase" approved="yes">
-        <source>Enter search phrase</source>
-        <target state="final">Suchbegriff eingeben</target>
+      <trans-unit id="module.dbint.description" resname="module.dbint.description" approved="yes">
+        <source>Here you can check the integrity of the database tables configured by the $TCA. For instance all records must belong to a page record. You can also get a view of the total pagetree including deleted pages. Finally you've got access to a global database search facility.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</source>
+        <target state="final">Hier können Sie die Integrität der Datenbanktabellen überprüfen, welche vom $TCA (Table Configuration Array) konfiguriert sind. Zum Beispiel müssen alle Datensätze eine Relation zu einem Seiten-Datensatz beinhalten. Ebenso haben Sie Zugang zu einer globalen Datenbanksuchfunktion.&lt;br /&gt;&lt;em&gt;Zugriff nur für Administratoren!&lt;/em&gt;</target>
       </trans-unit>
       <trans-unit id="search" resname="search" approved="yes">
         <source>Search</source>
         <target state="final">Suchen</target>
-      </trans-unit>
-      <trans-unit id="useRegExp" resname="useRegExp" approved="yes">
-        <source>Use regular expression (phrase is surrounded by slashes automatically)</source>
-        <target state="final">Regulären Ausdruck verwenden</target>
-      </trans-unit>
-      <trans-unit id="writeValue" resname="writeValue" approved="yes">
-        <source>Write value to configuration file</source>
-        <target state="final">Wert in Konfigurationsdatei schreiben</target>
-      </trans-unit>
-      <trans-unit id="writeMessage" resname="writeMessage" approved="yes">
-        <source>Following line was added to configuration file (%s): %s%s</source>
-        <target state="final">Die folgende Zeile wurde der Konfigurationsdatei (%s) hinzugefügt: %s%s</target>
-      </trans-unit>
-      <trans-unit id="writeMessageFailed" resname="writeMessageFailed" approved="yes">
-        <source>Write to configuration file failed (%s)!</source>
-        <target state="final">Schreiben der Konfigurationsdatei fehlgeschlagen (%s)!</target>
-      </trans-unit>
-      <trans-unit id="menuTitle" resname="menuTitle" approved="yes">
-        <source>Overview</source>
-        <target state="final">Überblick</target>
       </trans-unit>
       <trans-unit id="recordStatistics" resname="recordStatistics" approved="yes">
         <source>Record Statistics</source>
@@ -208,16 +200,16 @@
         <target state="final">Sie können die Prüfung auch in einem Shell-Script mit dem Command Line Interface (CLI) durchführen, wenn die Verarbeitung länger braucht, als die max_execution_time in PHP erlaubt.</target>
       </trans-unit>
       <trans-unit id="checkScript_check_description" resname="checkScript_check_description" approved="yes">
-        <source>To check the reference index use</source>
+        <source>To check the reference index use:</source>
         <target state="final">Um den Referenz-Index zu prüfen, führen Sie folgenden Befehl aus:</target>
       </trans-unit>
       <trans-unit id="checkScript_update_description" resname="checkScript_update_description" approved="yes">
-        <source>To update the reference index use</source>
+        <source>To update the reference index use:</source>
         <target state="final">Um den Referenz-Index zu aktualisieren, führen Sie folgenden Befehl aus:</target>
       </trans-unit>
       <trans-unit id="checkScript_moreDetails" resname="checkScript_moreDetails" approved="yes">
-        <source>For more details see</source>
-        <target state="final">Weitere Informationen unter:</target>
+        <source>For more details see:</source>
+        <target state="final">Für weitere Details siehe:</target>
       </trans-unit>
       <trans-unit id="updateRefIndex" resname="updateRefIndex" approved="yes">
         <source>Update reference index</source>
@@ -359,10 +351,6 @@
         <source>Relations</source>
         <target state="final">Verknüpfungen</target>
       </trans-unit>
-      <trans-unit id="relations_description" resname="relations_description" approved="yes">
-        <source>This will analyze the content of the tables and check if there are 'empty' relations between records or if files are missing from their expected position.</source>
-        <target state="final">Führt eine Analyse der Datenbank-Tabellen durch und prüft, ob Verknüpfungen zwischen Einträgen ungültig sind oder Dateien an der erwarteten Position fehlen.</target>
-      </trans-unit>
       <trans-unit id="select_db" resname="select_db" approved="yes">
         <source>Select fields</source>
         <target state="final">Auswahlfelder:</target>
@@ -403,9 +391,9 @@
         <source>Allows you to maintain the reference index kept by TYPO3.</source>
         <target state="final">Ermöglicht die Pflege des von TYPO3 verwalteten Referenz-Index.</target>
       </trans-unit>
-      <trans-unit id="title" resname="title" approved="yes">
-        <source>Database integrity check</source>
-        <target state="final">Datenbankintegritätsprüfung</target>
+      <trans-unit id="refindex_ok" resname="refindex_ok" approved="yes">
+        <source>Index integrity was perfect!</source>
+        <target state="final">Index-Integrität war perfekt!</target>
       </trans-unit>
     </body>
   </file>

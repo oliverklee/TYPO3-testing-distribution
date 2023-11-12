@@ -499,34 +499,6 @@
         <source>Show page even if no translation exists</source>
         <target state="final">Seite anzeigen, auch wenn keine Übersetzung vorhanden ist</target>
       </trans-unit>
-      <trans-unit id="pages.fe_login_mode" resname="pages.fe_login_mode" approved="yes">
-        <source>Login Mode</source>
-        <target state="final">Anmeldemodus:</target>
-      </trans-unit>
-      <trans-unit id="pages.fe_login_mode_formlabel" resname="pages.fe_login_mode_formlabel" approved="yes">
-        <source>Login Behaviour</source>
-        <target state="final">Anmeldeverhalten</target>
-      </trans-unit>
-      <trans-unit id="pages.fe_login_mode.disable" resname="pages.fe_login_mode.disable" approved="yes">
-        <source>Disable</source>
-        <target state="final">Deaktivieren</target>
-      </trans-unit>
-      <trans-unit id="pages.fe_login_mode.enable" resname="pages.fe_login_mode.enable" approved="yes">
-        <source>Enable login</source>
-        <target state="final">Benutzeranmeldung freigeben</target>
-      </trans-unit>
-      <trans-unit id="pages.fe_login_mode.disableAll" resname="pages.fe_login_mode.disableAll" approved="yes">
-        <source>Disable login</source>
-        <target state="final">Benutzeranmeldung deaktivieren</target>
-      </trans-unit>
-      <trans-unit id="pages.fe_login_mode.disableGroups" resname="pages.fe_login_mode.disableGroups" approved="yes">
-        <source>Enable user login, Disable usergroup login</source>
-        <target state="final">Anmeldung für Benutzer freigeben, aber für Benutzergruppen deaktivieren</target>
-      </trans-unit>
-      <trans-unit id="pages.fe_login_mode.enableAgain" resname="pages.fe_login_mode.enableAgain" approved="yes">
-        <source>Re-Enable login</source>
-        <target state="final">Anmeldung wieder freigeben</target>
-      </trans-unit>
       <trans-unit id="pages.storage_pid_formlabel" resname="pages.storage_pid_formlabel" approved="yes">
         <source>Page</source>
         <target state="final">Seite</target>
@@ -575,7 +547,7 @@
         <source>Groups</source>
         <target state="final">Benutzergruppen:</target>
       </trans-unit>
-      <trans-unit id="fe_users.tabs.personelData" resname="fe_users.tabs.personelData" approved="yes">
+      <trans-unit id="fe_users.tabs.personalData" resname="fe_users.tabs.personalData" approved="yes">
         <source>Personal Data</source>
         <target state="final">Persönliche Daten</target>
       </trans-unit>
@@ -612,12 +584,12 @@
         <target state="final">Erweitert</target>
       </trans-unit>
       <trans-unit id="sys_template" resname="sys_template" approved="yes">
-        <source>Template</source>
-        <target state="final">Template</target>
+        <source>TypoScript record</source>
+        <target state="final">TypoScript Datensatz</target>
       </trans-unit>
       <trans-unit id="sys_template.title" resname="sys_template.title" approved="yes">
-        <source>Template Title</source>
-        <target state="final">Template-Titel:</target>
+        <source>Title</source>
+        <target state="final">Titel</target>
       </trans-unit>
       <trans-unit id="sys_template.root" resname="sys_template.root" approved="yes">
         <source>Rootlevel</source>
@@ -625,8 +597,8 @@
       </trans-unit>
       <trans-unit id="sys_template.rootDescription" resname="sys_template.rootDescription" approved="yes">
         <source>When enabled, the page is marked as "Rootline Root". This is most often set only once for the uppermost TypoScript record.
-				This can be used in frontend to stop at this page when creating for example "breadcrumb" menus, even if there are further parent pages.
-				The flag especially affects these TypoScript "getText" properties: "level", "levelmedia", "leveltitle", "levelfield" and "leveluid".</source>
+				This can be used in frontend to stop at this page when creating for example "breadcrumb" menus, even if there are further parent pages. The flag especially
+				affects these TypoScript "getText" properties: "level", "levelmedia", "leveltitle", "levelfield" and "leveluid".</source>
         <target state="final">Wenn aktiviert, wird die Seite als "Rootline Root" markiert. Dies wird meist nur einmal für den obersten TypoScript Datensatz gesetzt. Dies kann im Frontend verwendet werden, um auf dieser Seite zu stoppen, wenn zum Beispiel "Breadcrumb"-Menüs erstellt werden, auch wenn es weitere übergeordnete Seiten gibt. Die Option betrifft insbesondere diese TypoScript "getText"-Eigenschaften: "level", "levelmedia", "leveltitle", "levelfield" und "leveluid".</target>
       </trans-unit>
       <trans-unit id="sys_template.clear" resname="sys_template.clear" approved="yes">
@@ -634,9 +606,9 @@
         <target state="final">Löschen</target>
       </trans-unit>
       <trans-unit id="sys_template.clearDescription" resname="sys_template.clearDescription" approved="yes">
-        <source>Remove TypoScript settings from TypoScript records up in rootline. This is most often set only once for the uppermost TypoScript
-				record that is most often located on the same page that has "Use as Root Page" flag set and the "Site" configuration attached in the site module.</source>
-        <target state="final">TypoScript-Einstellungen aus übergeordneten TypoScript Datensätzen in der Rootline entfernen. Dies wird meist nur einmal für den obersten TypoScript Datensatz gesetzt, der sich meist auf der gleichen Seite befindet, die das „Root-Ebene" Flag verwendet und als Root-Seite einer "Site" im Site-Modul zum Einsatz kommt.</target>
+        <source>Remove TypoScript settings from TypoScript records up in rootline. This is most often set only once for the uppermost TypoScript record that is most often
+			 	located on the same page that has "Use as Root Page" flag set and the "Site" configuration attached in the site module.</source>
+        <target state="final">TypoScript-Einstellungen aus übergeordneten TypoScript Datensätzen in der Rootline entfernen. Dies wird meist nur einmal für den obersten TypoScript Datensatz gesetzt, der sich meist auf der gleichen Seite befindet, die das „Root-Ebene" Flag verwendet und als Root-Seite einer "Site" (im Site-Modul konfiguriert) zum Einsatz kommt.</target>
       </trans-unit>
       <trans-unit id="sys_template.constants" resname="sys_template.constants" approved="yes">
         <source>Constants</source>
@@ -647,75 +619,71 @@
         <target state="final">Ressourcen</target>
       </trans-unit>
       <trans-unit id="sys_template.include_static_file" resname="sys_template.include_static_file" approved="yes">
-        <source>Include static (from extensions)</source>
-        <target state="final">Statische Templates einschließen (aus Erweiterungen):</target>
+        <source>Include TypoScript sets</source>
+        <target state="final">TypoScript-Dateien einbinden</target>
       </trans-unit>
       <trans-unit id="sys_template.include_static_fileDescription" resname="sys_template.include_static_fileDescription" approved="yes">
-        <source>Extensions often deliver default TypoScript to set up basic frontend rendering. These can be loaded here. To keep TypoScript
-				structures clean and tidy, this is often set only for the main TypoScript record located on the same page that has "Use as Root Page" flag set,
+        <source>Extensions often deliver default TypoScript to set up basic frontend rendering. These can be loaded here.
+				To keep TypoScript structures clean and tidy, this is often set only for the main TypoScript record located on the same page that has "Use as Root Page" flag set,
 				has a "Site" configuration attached in the site module, and has the above "Clear" and "Rootlevel" flags set.</source>
         <target state="final">Extension liefern oft Standard-TypoScript zum Einrichten des grundlegenden Frontend-Renderings. Diese können hier geladen werden. Um TypoScript Strukturen sauber und ordentlich zu halten, ist dies oft nur für den Haupt-TypoScript-Eintrag auf der gleichen Seite gesetzt, welche die "Use as Root Page" Option verwendet und in einer "Site" Konfiguration als Root-Seite verwendet wird sowie die oben genannten Optionen „Clear“ und „Rootlevel“ aktiviert haben.</target>
       </trans-unit>
       <trans-unit id="sys_template.basedOn" resname="sys_template.basedOn" approved="yes">
-        <source>Include Basis Template</source>
-        <target state="final">Basis-Template einschließen:</target>
+        <source>Include TypoScript records</source>
+        <target state="final">TypoScript Datensätze einbinden</target>
       </trans-unit>
       <trans-unit id="sys_template.basedOnDescription" resname="sys_template.basedOnDescription" approved="yes">
-        <source>Include additional record located elsewhere in the page tree. This can be used to load the same TypoScript records at multiple
-				places in a page tree. This isn't used very often nowadays and it's often easier to understand and maintain to extract TypoScript to
-				files and to load the full set in a single main TypoScript record.</source>
-        <target state="final">Fügen Sie zusätzliche TypoScript Datensätze hinzu, die sich woanders im Seitenbaum befinden. Dies kann verwendet werden, um die gleichen TypoScript-Einträge an mehreren Stellen in einem Seitenbaum zu laden. Dies wird heutzutage nicht sehr oft verwendet und es ist oft einfacher, die Seite zu verstehen und zu pflegen, indem Sie die TypoScript-Konfiguration in Dateien auslagern und den kompletten Datensatz in einem einzigen Haupt-TypoScript-Datensatz laden.</target>
+        <source>Include additional TypoScript records located elsewhere in the page tree. This can be used to load the same TypoScript records at multiple places in a page tree.
+			 	This isn't used very often nowadays and it's often easier to understand and maintain the site by extracting TypoScript configuration to files
+				and to load the full set in a single main TypoScript record.
+			</source>
+        <target state="final">Fügen Sie zusätzliche TypoScript-Datensätze hinzu, die sich woanders im Seitenbaum befinden. Dies kann verwendet werden, um die gleichen Datensätze-Einträge an mehreren Stellen in einem Seitenbaum zu laden. Dies wird heutzutage nicht oft verwendet und es ist für das Verständnis und die Pflege des System oft einfacher, die TypoScript-Konfiguration in Dateien auszulagern und den kompletten Datensatz in einem einzigen Haupt-TypoScript-Datensatz zu laden.</target>
       </trans-unit>
       <trans-unit id="sys_template.includeStaticAfterBasedOn" resname="sys_template.includeStaticAfterBasedOn" approved="yes">
-        <source>Include Static Templates After Basis Templates</source>
-        <target state="final">Statische Templates nach Basis-Templates einschließen:</target>
+        <source>Load TypoScript sets after included TypoScript records</source>
+        <target state="final">Eingebundene TypoScript-Dateien nach eingebundenen TypoScript Datensätzen laden</target>
       </trans-unit>
       <trans-unit id="sys_template.includeStaticAfterBasedOnDescription" resname="sys_template.includeStaticAfterBasedOnDescription" approved="yes">
-        <source>When using both "Include static (from extensions)" and "Include Basis Template" fields in a TypoScript record, this
-				flag allows swapping their load order.</source>
-        <target state="final">Wenn Sie sowohl "Include static (von Extensions)" als auch "Include Basis Template" Felder in einem TypoScript Datensatz verwenden, ermöglicht diese Option das Umkehren der Ladereihenfolge.</target>
+        <source>When using both fields "Include TypoScript sets" and "Include TypoScript records" in a TypoScript record, this flag allows swapping their load order.</source>
+        <target state="final">Wenn beide Felder "TypoScript Dateien einbinden" und "TypoScript Datensätze einbinden" in einem TypoScript Datensatz verwendet werden, ermöglicht diese Option die Ladereihenfolge umzukehren.</target>
       </trans-unit>
       <trans-unit id="sys_template.config" resname="sys_template.config" approved="yes">
         <source>Setup</source>
         <target state="final">Setup</target>
-      </trans-unit>
-      <trans-unit id="sys_template.editorcfg" resname="sys_template.editorcfg" approved="yes">
-        <source>Backend Editor Configuration</source>
-        <target state="final">Konfiguration Backend-Editor:</target>
       </trans-unit>
       <trans-unit id="sys_template.description" resname="sys_template.description" approved="yes">
         <source>Description</source>
         <target state="final">Beschreibung</target>
       </trans-unit>
       <trans-unit id="sys_template.static_file_mode" resname="sys_template.static_file_mode" approved="yes">
-        <source>Static Template Files from TYPO3 Extensions</source>
-        <target state="final">Statische Template-Dateien aus TYPO3-Erweiterungen:</target>
+        <source>Loading order of TypoScript sets</source>
+        <target state="final">Ladereihenfolge eingebundener TypoScript Dateien</target>
       </trans-unit>
       <trans-unit id="sys_template.static_file_modeDescription" resname="sys_template.static_file_modeDescription" approved="yes">
-        <source>This seldom used feature affects if and when TypoScript files from extensions (ext_typoscript_setup.typoscript
-				and ext_typoscript_constants.typoscript) are loaded. There are very few cases where setting this to a different value than
-				the default value "0" is useful.</source>
-        <target state="final">Diese selten verwendete Funktion beeinflusst, ob und wann TypoScript Dateien aus TYPO3 Extensions (ext_typoscript_setup.typoscript und ext_typoscript_constants.typoscript) geladen werden. Es gibt sehr wenige Fälle, in denen eine Einstellung auf einen anderen Wert als den Standardwert „0“ nützlich ist.</target>
+        <source>This seldom used feature affects if and when TypoScript sets from extensions (ext_typoscript_setup.typoscript and ext_typoscript_constants.typoscript)
+				are loaded. There are very few cases where setting this to a different value than the default value "0" is useful.</source>
+        <target state="final">Diese selten verwendete Funktion beeinflusst, ob und wann TypoScript Dateien aus TYPO3 Extensions (ext_typoscript_setup.typoscript und ext_typoscript_constants.typoscript)
+				geladen werden. Es gibt sehr wenige Fälle, in denen eine Einstellung auf einen anderen Wert als den Standardwert „0“ nützlich ist.</target>
       </trans-unit>
       <trans-unit id="sys_template.static_file_mode.0" resname="sys_template.static_file_mode.0" approved="yes">
         <source>Default (include before if root flag is set)</source>
         <target state="final">Standard (einschließen vor, wenn Wurzel-Option gesetzt)</target>
       </trans-unit>
       <trans-unit id="sys_template.static_file_mode.1" resname="sys_template.static_file_mode.1" approved="yes">
-        <source>Always include before this template record</source>
-        <target state="final">Stets vor diesem Template-Datensatz einschließen</target>
+        <source>Always include before this typoscript record</source>
+        <target state="final">Immer vor diesem TypoScript-Datensatz einbinden</target>
       </trans-unit>
       <trans-unit id="sys_template.static_file_mode.2" resname="sys_template.static_file_mode.2" approved="yes">
-        <source>Never include before this template record</source>
-        <target state="final">Nie vor diesem Template-Datensatz einbinden</target>
+        <source>Never include before this typoscript record</source>
+        <target state="final">Nie vor diesem TypoScript-Datensatz einbinden</target>
       </trans-unit>
       <trans-unit id="sys_template.static_file_mode.3" resname="sys_template.static_file_mode.3" approved="yes">
-        <source>Include before all static templates if root flag is set</source>
-        <target state="final">Vor allen statischen Templates einfügen, wenn die Root-Option gesetzt ist</target>
+        <source>Include before all static typoscript if root flag is set</source>
+        <target state="final">Vor statischen TypoScript einbinden, wenn die 'Ist Root' Option aktiviert ist</target>
       </trans-unit>
       <trans-unit id="sys_template.basedOn_add" resname="sys_template.basedOn_add" approved="yes">
-        <source>Add New Basis Template</source>
-        <target state="final">Neues Basis-Template hinzufügen</target>
+        <source>Add new TypoScript record</source>
+        <target state="final">Neuen TypoScript Datensatz hinzufügen</target>
       </trans-unit>
       <trans-unit id="sys_template.basedOn_edit" resname="sys_template.basedOn_edit" approved="yes">
         <source>Edit template</source>
@@ -725,13 +693,9 @@
         <source>Resources</source>
         <target state="final">Ressourcen</target>
       </trans-unit>
-      <trans-unit id="sys_template.tabs.include" resname="sys_template.tabs.include" approved="yes">
-        <source>Includes</source>
-        <target state="final">Enthält</target>
-      </trans-unit>
       <trans-unit id="sys_template.tabs.options" resname="sys_template.tabs.options" approved="yes">
-        <source>Options</source>
-        <target state="final">Optionen</target>
+        <source>Advanced Options</source>
+        <target state="final">Erweiterte Optionen</target>
       </trans-unit>
       <trans-unit id="sys_template.tabs.access" resname="sys_template.tabs.access" approved="yes">
         <source>Access</source>

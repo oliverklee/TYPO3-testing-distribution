@@ -27,10 +27,6 @@
         <source>Everybody</source>
         <target state="final">Jeder</target>
       </trans-unit>
-      <trans-unit id="EditLock" resname="EditLock" approved="yes">
-        <source>Lock</source>
-        <target state="final">Sperre</target>
-      </trans-unit>
       <trans-unit id="EditLock_descr" resname="EditLock_descr" approved="yes">
         <source>Disable the »Admin-only« edit lock for this page. Currently this page and all content is locked for editing by all non-Admin users.</source>
         <target state="final">Die Einstellung »Bearbeitbar nur für Administratoren« für diese Seite deaktivieren. Im Moment sind diese Seite und alle Inhaltselemente für die Bearbeitung durch Nicht-Administratoren gesperrt.</target>

@@ -3,10 +3,6 @@
   <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_misc.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
     <header/>
     <body>
-      <trans-unit id="shortcutDescription" resname="shortcutDescription" approved="yes">
-        <source>This is the shortcuts menu. You do not have any shortcuts added yet, you can do so by clicking the shortcut icon %icon%, which you can find on each page in the backend.</source>
-        <target state="final">Dieses Menü zeigt von Ihnen angelegte Verweise an. Sie haben noch keine Verweise hinzugefügt, können das aber mit einem Mausklick auf das Verweissymbol %icon% tun, das auf jeder Seite des Backends vorhanden ist.</target>
-      </trans-unit>
       <trans-unit id="shortcut_edit" resname="shortcut_edit" approved="yes">
         <source>Edit</source>
         <target state="final">Bearbeiten</target>
@@ -116,8 +112,8 @@
         <target state="final">Modul Arbeitsumgebungen aufrufen</target>
       </trans-unit>
       <trans-unit id="bookmark_description" resname="bookmark_description" approved="yes">
-        <source>This is the bookmarks menu. You do not have any bookmarks added yet, you can do so by clicking the bookmark icon %s, which you can find on each page in the backend.</source>
-        <target state="final">Dieses Menü zeigt von Ihnen angelegte Lesezeichen an. Sie haben noch keine Lesezeichen hinzugefügt, können das aber mit einem Mausklick auf das Lesezeichensymbol %s tun, das auf jeder Seite des Backends vorhanden ist.</target>
+        <source>This is the bookmarks menu. You do not have any bookmarks added yet. You can add one by clicking the bookmark icon %s, which you can find on all pages in the backend.</source>
+        <target state="final">Dies ist das Lesezeichen-Menü. Sie haben noch kein Lesezeichen hinzugefügt. Sie können das aber mit einem Klick auf das Lesezeichensymbol %s tun, welches auf jeder Seite des TYPO3-Backend gefunden werden kann.</target>
       </trans-unit>
       <trans-unit id="bookmark_edit" resname="bookmark_edit" approved="yes">
         <source>Edit</source>
@@ -263,14 +259,6 @@
         <source>Create a new page</source>
         <target state="final">Neue Seite erstellen</target>
       </trans-unit>
-      <trans-unit id="createNewContent" resname="createNewContent" approved="yes">
-        <source>Create a new content element</source>
-        <target state="final">Neues Inhaltselement erstellen</target>
-      </trans-unit>
-      <trans-unit id="clickForWizard" resname="clickForWizard" approved="yes">
-        <source>Click here for wizard!</source>
-        <target state="final">Zum Aufrufen des Assistenten hier klicken!</target>
-      </trans-unit>
       <trans-unit id="insertNewPageHere" resname="insertNewPageHere" approved="yes">
         <source>Insert the new page here</source>
         <target state="final">Neue Seite hier einfügen</target>
@@ -282,6 +270,10 @@
       <trans-unit id="movePageToHere" resname="movePageToHere" approved="yes">
         <source>Move page to this position</source>
         <target state="final">Seite an diese Position verschieben</target>
+      </trans-unit>
+      <trans-unit id="moveElementToHere" resname="moveElementToHere" approved="yes">
+        <source>Move element to this position</source>
+        <target state="final">Element an diese Position verschieben</target>
       </trans-unit>
       <trans-unit id="moveElement" resname="moveElement" approved="yes">
         <source>Move element</source>
@@ -378,10 +370,6 @@
       <trans-unit id="CM_editPageProperties" resname="CM_editPageProperties" approved="yes">
         <source>Edit page properties</source>
         <target state="final">Seiteneigenschaften bearbeiten</target>
-      </trans-unit>
-      <trans-unit id="CM_db_list" resname="CM_db_list" approved="yes">
-        <source>Web&gt;List module</source>
-        <target state="final">Web &gt; Liste</target>
       </trans-unit>
       <trans-unit id="noEditPage" resname="noEditPage" approved="yes">
         <source>You asked to edit page "%s" but you cannot edit this page. Now loading backend as usual.</source>
@@ -579,10 +567,6 @@
         <source>No results found.</source>
         <target state="final">Keine Ergebnisse gefunden.</target>
       </trans-unit>
-      <trans-unit id="liveSearch_showAllResults" resname="liveSearch_showAllResults" approved="yes">
-        <source>Show All</source>
-        <target state="final">Alle anzeigen</target>
-      </trans-unit>
       <trans-unit id="liveSearch_helpTitle" resname="liveSearch_helpTitle" approved="yes">
         <source>How to use advanced search tags</source>
         <target state="final">Zur Benutzung von Suchpräfixen</target>
@@ -595,21 +579,13 @@
         <source>#page:Home will search for all pages with the title "Home"</source>
         <target state="final">#page:Home sucht nach allen Seiten mit dem Titel "Home".</target>
       </trans-unit>
-      <trans-unit id="viewPort_tooltipModuleMenuSplit" resname="viewPort_tooltipModuleMenuSplit" approved="yes">
-        <source>Drag to resize the Modules Menu</source>
-        <target state="final">Ziehen Sie hier, um die Größe des Modulmenüs zu ändern</target>
+      <trans-unit id="liveSearch_helpDescriptionContent" resname="liveSearch_helpDescriptionContent" approved="yes">
+        <source>#content:Professional will search for all content elements containing the term "Professional"</source>
+        <target state="final">#content:Professional sucht nach allen Inhaltselementen, die den Begriff "Professional" enthalten</target>
       </trans-unit>
-      <trans-unit id="viewPort_tooltipNavigationContainerSplitDrag" resname="viewPort_tooltipNavigationContainerSplitDrag" approved="yes">
-        <source>Drag to resize or double click to collapse the page tree area</source>
-        <target state="final">Ziehen Sie hier, um die Größe zu ändern oder doppelklicken Sie, um den Seitenbaum einzuklappen</target>
-      </trans-unit>
-      <trans-unit id="viewPort_tooltipNavigationContainerSplitClick" resname="viewPort_tooltipNavigationContainerSplitClick" approved="yes">
-        <source>Click to toggle the page tree area</source>
-        <target state="final">Klicken Sie hier, um den Seitenbaum umzuschalten</target>
-      </trans-unit>
-      <trans-unit id="viewPort_tooltipDebugPanelSplitDrag" resname="viewPort_tooltipDebugPanelSplitDrag" approved="yes">
-        <source>Drag to resize or click to collapse the Debug Panel.</source>
-        <target state="final">Ziehen Sie hier, um die Größe zu ändern oder klicken Sie, um das Debug-Panel zuzuklappen</target>
+      <trans-unit id="liveSearch_help.shortcutOpen" resname="liveSearch_help.shortcutOpen" approved="yes">
+        <source>You can open the live search by pressing the Ctrl+K or Cmd+K keystroke</source>
+        <target state="final">Sie können die Live-Suche mittels der Tastenkombination Ctrl+K oder Cmd+K öffnen</target>
       </trans-unit>
       <trans-unit id="viewport_navigation_show" resname="viewport_navigation_show" approved="yes">
         <source>Show Navigation</source>
