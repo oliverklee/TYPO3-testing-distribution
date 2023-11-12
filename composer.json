@@ -44,6 +44,7 @@
 	},
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.28.3",
+		"seld/jsonlint": "^1.10.0",
 		"ssch/typo3-rector": "^1.4.1",
 		"symfony/yaml": "^5.4.11 || ^6.1.3"
 	},
@@ -76,10 +77,12 @@
 			"@composer normalize --dry-run --no-check-lock",
 			"@composer normalize --dry-run --no-check-lock src/extensions/site-dev/composer.json"
 		],
+		"ci:json:lint": "find . -path '*/public/*' ! -path '*/var/*' ! -path '*/vendor/*' -name '*.json' | xargs -r php vendor/bin/jsonlint -q",
 		"ci:php:lint": "find public/typo3conf/LocalConfiguration.php src/extensions/site-dev -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
 		"ci:static": [
 			"@ci:composer:normalize",
 			"@ci:php:lint",
+			"@ci:json:lint",
 			"@ci:yaml:lint"
 		],
 		"ci:yaml:lint": "find .ddev .github config src/extensions/site-dev -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
@@ -97,6 +100,7 @@
 	"scripts-descriptions": {
 		"ci": "Runs all code checks.",
 		"ci:composer:normalize": "Checks the formatting and structure of the composer.json.",
+		"ci:json:lint": "Lints the JSON files.",
 		"ci:php:lint": "Lints the PHP files for syntax errors.",
 		"ci:static": "Runs all static code checks (syntax, style, types).",
 		"ci:yaml:lint": "Lints the YAML files for syntax errors.",

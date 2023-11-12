@@ -80,7 +80,8 @@ jobs:
       fail-fast: false
       matrix:
         command:
-          - "composer:normalize"
-          - "yaml:lint"
+          - composer:normalize
+          - json:lint
+          - yaml:lint
         php-version:
           - '8.1'
