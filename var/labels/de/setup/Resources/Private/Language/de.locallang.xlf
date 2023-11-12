@@ -429,15 +429,15 @@
       </trans-unit>
       <trans-unit id="mfaProviders" resname="mfaProviders" approved="yes">
         <source>Multi-factor authentication</source>
-        <target state="final">Mehrfaktor Authentifizierung</target>
+        <target state="final">Multi-Faktor-Authentifizierung</target>
       </trans-unit>
       <trans-unit id="mfaProviders.notAvailable" resname="mfaProviders.notAvailable" approved="yes">
         <source>Multi-factor authentication is currently not available.</source>
-        <target state="final">Mehrfaktor-Authentifizierung ist derzeit nicht verfügbar.</target>
+        <target state="final">Multi-Faktor-Authentifizierung ist derzeit nicht verfügbar.</target>
       </trans-unit>
       <trans-unit id="mfaProviders.description" resname="mfaProviders.description" approved="yes">
         <source>Use multi-factor authentication to secure your account by providing another factor next to your password.</source>
-        <target state="final">Nutzen Sie mehrfaktor Authentifizierung um Ihren Account zu schützen, indem sie einen weiteren Faktor neben dem Passwort festlegen.</target>
+        <target state="final">Nutzen Sie Multi-Faktor-Authentifizierung um Ihren Account zu schützen, indem sie einen weiteren Faktor neben dem Passwort festlegen.</target>
       </trans-unit>
       <trans-unit id="mfaProviders.lockedMfaProviders" resname="mfaProviders.lockedMfaProviders" approved="yes">
         <source>Some providers are currently locked!</source>
