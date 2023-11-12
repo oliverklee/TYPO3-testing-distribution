@@ -1,6 +1,7 @@
 .DS_Store
 .idea
 /.ddev/docker-compose.extensions.yaml
+/.php-cs-fixer.cache
 /composer.lock
 /public/*
 !/public/.htaccess

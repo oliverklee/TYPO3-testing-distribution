@@ -44,9 +44,11 @@
 	},
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.28.3",
+		"friendsofphp/php-cs-fixer": "^3.38.0",
 		"seld/jsonlint": "^1.10.0",
 		"ssch/typo3-rector": "^1.4.1",
-		"symfony/yaml": "^5.4.11 || ^6.1.3"
+		"symfony/yaml": "^5.4.11 || ^6.1.3",
+		"typo3/coding-standards": "^0.6.1"
 	},
 	"repositories": [
 		{
@@ -78,21 +80,25 @@
 			"@composer normalize --dry-run --no-check-lock src/extensions/site-dev/composer.json"
 		],
 		"ci:json:lint": "find . -path '*/public/*' ! -path '*/var/*' ! -path '*/vendor/*' -name '*.json' | xargs -r php vendor/bin/jsonlint -q",
-		"ci:php:lint": "find *.php config/ src/extensions/site-dev -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"ci:php:cs-fixer": "php-cs-fixer fix --config .php-cs-fixer.php -v --dry-run --using-cache no --diff",
+		"ci:php:lint": "find *.php .*.php config/ src/ -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
 		"ci:static": [
 			"@ci:composer:normalize",
-			"@ci:php:lint",
 			"@ci:json:lint",
+			"@ci:php:lint",
+			"@ci:php:cs-fixer",
 			"@ci:yaml:lint"
 		],
-		"ci:yaml:lint": "find .ddev .github config src/extensions/site-dev -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
+		"ci:yaml:lint": "find .ddev .github config src/ -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
 		"fix": [
-			"@fix:composer"
+			"@fix:composer",
+			"@fix:php:cs"
 		],
 		"fix:composer": [
 			"@composer normalize --no-check-lock",
 			"@composer normalize --no-check-lock src/extensions/site-dev/composer.json"
 		],
+		"fix:php:cs": "php-cs-fixer fix --config .php-cs-fixer.php",
 		"typo3-cms-scripts": [
 			"typo3 install:fixfolderstructure"
 		]
@@ -101,10 +107,12 @@
 		"ci": "Runs all code checks.",
 		"ci:composer:normalize": "Checks the formatting and structure of the composer.json.",
 		"ci:json:lint": "Lints the JSON files.",
+		"ci:php:cs-fixer": "Checks the code style with the PHP Coding Standards Fixer (PHP-CS-Fixer).",
 		"ci:php:lint": "Lints the PHP files for syntax errors.",
 		"ci:static": "Runs all static code checks (syntax, style, types).",
 		"ci:yaml:lint": "Lints the YAML files for syntax errors.",
 		"fix": "Reformats the code.",
-		"fix:composer": "Reformats and sorts the composer.json files."
+		"fix:composer": "Reformats and sorts the composer.json files.",
+		"fix:php:cs": "Fixes the code style with PHP-CS-Fixer."
 	}
 }
