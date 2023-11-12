@@ -6,12 +6,6 @@
 /public/*
 !/public/.htaccess
 !/public/favicon.ico
-!/public/typo3conf
-/public/typo3conf/*
-!/public/typo3conf/AdditionalConfiguration.php
-!/public/typo3conf/LocalConfiguration.php
-/src/extensions/*
-!/src/extensions/site-dev
 /var/*
 !/var/labels
 /vendor
