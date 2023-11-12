@@ -1,0 +1,15 @@
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - phpstan-baseline.neon
+
+parameters:
+  level: 9
+
+  paths:
+    - src/
+
+  excludePaths:
+    - src/extensions/site-dev/ext_emconf.php
+
+  # Allow instanceof checks, particularly in tests
+  checkAlwaysTrueCheckTypeFunctionCall: false
