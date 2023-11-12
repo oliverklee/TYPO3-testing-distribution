@@ -105,6 +105,7 @@
 			"@ci:typoscript:lint",
 			"@ci:yaml:lint"
 		],
+		"ci:tests:functional": "phpunit -c config/FunctionalTests.xml",
 		"ci:tests:unit": "phpunit -c config/UnitTests.xml",
 		"ci:typoscript:lint": "typoscript-lint -c config/TypoScriptLint.yaml --ansi -n --fail-on-warnings -vvv src/extensions/site-dev/Configuration/TsConfig src/extensions/site-dev/Configuration/TypoScript",
 		"ci:yaml:lint": "find .ddev .github config src/ -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
@@ -130,7 +131,8 @@
 		"ci:php:lint": "Lints the PHP files for syntax errors.",
 		"ci:php:stan": "Checks the PHP types using PHPStan.",
 		"ci:static": "Runs all static code checks (syntax, style, types).",
-		"ci:tests": "Runs all PHPUnit tests.",
+		"ci:tests:functional": "Runs the functional tests.",
+		"ci:tests:unit": "Runs the unit tests.",
 		"ci:typoscript:lint": "Lints the TypoScript files.",
 		"ci:yaml:lint": "Lints the YAML files for syntax errors.",
 		"fix": "Reformats the code.",
