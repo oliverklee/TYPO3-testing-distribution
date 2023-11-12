@@ -78,7 +78,7 @@
 			"@composer normalize --dry-run --no-check-lock src/extensions/site-dev/composer.json"
 		],
 		"ci:json:lint": "find . -path '*/public/*' ! -path '*/var/*' ! -path '*/vendor/*' -name '*.json' | xargs -r php vendor/bin/jsonlint -q",
-		"ci:php:lint": "find public/typo3conf/LocalConfiguration.php src/extensions/site-dev -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"ci:php:lint": "find config/ src/extensions/site-dev -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
 		"ci:static": [
 			"@ci:composer:normalize",
 			"@ci:php:lint",
