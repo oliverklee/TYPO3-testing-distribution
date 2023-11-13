@@ -14,11 +14,15 @@
         <testsuite name="Site">
             <directory>../src/extensions/site-dev/Tests/Unit</directory>
         </testsuite>
+        <testsuite name="Site">
+            <directory>../src/extensions/slub-structured-content/Tests/Unit</directory>
+        </testsuite>
     </testsuites>
 
     <source>
         <include>
             <directory>../src/extensions/site-dev/Classes</directory>
+            <directory>../src/extensions/slub-structured-content/Classes</directory>
         </include>
     </source>
 
