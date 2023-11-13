@@ -19,6 +19,7 @@
 		"georgringer/autoswitchtolistview": "^3.0.0",
 		"helhum/typo3-console": "^8.0.3",
 		"oliverklee/site-dev": "@dev",
+		"slub/structured-content": "@dev",
 		"ttn/tea": "dev-main",
 		"typo3/cms-adminpanel": "^12.4",
 		"typo3/cms-belog": "^12.4",
@@ -91,7 +92,8 @@
 		],
 		"ci:composer:normalize": [
 			"@composer normalize --dry-run --no-check-lock",
-			"@composer normalize --dry-run --no-check-lock src/extensions/site-dev/composer.json"
+			"@composer normalize --dry-run --no-check-lock src/extensions/site-dev/composer.json",
+			"@composer normalize --dry-run --no-check-lock src/extensions/slub-structured-content/composer.json"
 		],
 		"ci:json:lint": "find . -path '*/public/*' ! -path '*/var/*' ! -path '*/vendor/*' -name '*.json' | xargs -r php vendor/bin/jsonlint -q",
 		"ci:php:cs-fixer": "php-cs-fixer fix --config .php-cs-fixer.php -v --dry-run --using-cache no --diff",

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file source-language="en" datatype="plaintext" original="messages">
+		<header/>
+		<body>
+			<trans-unit id="tx_slubstructuredcontent_domain_model_room">
+				<source>Room</source>
+			</trans-unit>
+			<trans-unit id="tx_slubstructuredcontent_domain_model_room.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_slubstructuredcontent_domain_model_room.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_slubstructuredcontent_domain_model_room.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_slubstructuredcontent_domain_model_room.noise">
+				<source>Noise</source>
+			</trans-unit>
+			<trans-unit id="tx_slubstructuredcontent_domain_model_room.noise.checked">
+				<source>Noisy</source>
+			</trans-unit>
+			<trans-unit id="tx_slubstructuredcontent_domain_model_room.daylight">
+				<source>Daylight</source>
+			</trans-unit>
+			<trans-unit id="tx_slubstructuredcontent_domain_model_room.daylight.checked">
+				<source>There is daylight</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
