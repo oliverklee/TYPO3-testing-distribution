@@ -57,7 +57,7 @@ $tca = [
                     'allowedFileExtensions' => ['jpg', 'png'],
                     'allowedOptions' => ['params', 'rel'],
                 ],
-            ]
+            ],
         ],
         'noise' => [
             'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_slubstructuredcontent_domain_model_room.noise',
@@ -87,7 +87,7 @@ $tca = [
     'types' => [
         [
             'showitem' =>
-                'title,description,link,noise,daylight'
+                'title,description,link,noise,daylight',
         ],
     ],
 ];
@@ -111,10 +111,8 @@ if ($typo3Version->getMajorVersion() < 12) {
                 ],
             ],
         ],
-        'softref' => 'typolink'
+        'softref' => 'typolink',
     ];
 }
 
 return $tca;
-
-
