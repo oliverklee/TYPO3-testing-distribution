@@ -2,10 +2,8 @@
 
 declare(strict_types=1);
 
-
 use Slub\StructuredContent\Domain\Model\Room;
 use Slub\StructuredContent\Domain\Repository\RoomRepository;
-use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\Persistence\PersistenceManagerInterface;
 use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
@@ -40,7 +38,6 @@ final class RoomRepositoryTest extends FunctionalTestCase
         self::assertCount(0, $result);
     }
 
-
     /**
      * @test
      */
@@ -71,5 +68,4 @@ final class RoomRepositoryTest extends FunctionalTestCase
         self::assertTrue($model->getNoise());
         self::assertTrue($model->getDaylight());
     }
-
 }

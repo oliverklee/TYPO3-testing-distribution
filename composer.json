@@ -68,7 +68,8 @@
 	"prefer-stable": true,
 	"autoload-dev": {
 		"psr-4": {
-			"OliverKlee\\SiteDev\\Tests\\": "src/extensions/site-dev/Tests/"
+			"OliverKlee\\SiteDev\\Tests\\": "src/extensions/site-dev/Tests/",
+			"Slub\\StructuredContent\\Tests\\": "src/extensions/slub-structured-content/Tests/"
 		}
 	},
 	"config": {
@@ -118,7 +119,8 @@
 		],
 		"fix:composer": [
 			"@composer normalize --no-check-lock",
-			"@composer normalize --no-check-lock src/extensions/site-dev/composer.json"
+			"@composer normalize --no-check-lock src/extensions/site-dev/composer.json",
+			"@composer normalize --no-check-lock src/extensions/slub-structured-content/composer.json"
 		],
 		"fix:php:cs": "php-cs-fixer fix --config .php-cs-fixer.php",
 		"phpstan:baseline": "phpstan --generate-baseline=phpstan-baseline.neon --allow-empty-baseline",
