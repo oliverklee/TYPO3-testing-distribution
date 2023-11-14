@@ -3,28 +3,28 @@
 	<file source-language="en" datatype="plaintext" original="messages">
 		<header/>
 		<body>
-			<trans-unit id="tx_slubstructuredcontent_domain_model_room">
+			<trans-unit id="tx_structuredcontent_domain_model_room">
 				<source>Room</source>
 			</trans-unit>
-			<trans-unit id="tx_slubstructuredcontent_domain_model_room.title">
+			<trans-unit id="tx_structuredcontent_domain_model_room.title">
 				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="tx_slubstructuredcontent_domain_model_room.description">
+			<trans-unit id="tx_structuredcontent_domain_model_room.description">
 				<source>Description</source>
 			</trans-unit>
-			<trans-unit id="tx_slubstructuredcontent_domain_model_room.link">
+			<trans-unit id="tx_structuredcontent_domain_model_room.link">
 				<source>Link</source>
 			</trans-unit>
-			<trans-unit id="tx_slubstructuredcontent_domain_model_room.noise">
+			<trans-unit id="tx_structuredcontent_domain_model_room.noise">
 				<source>Noise</source>
 			</trans-unit>
-			<trans-unit id="tx_slubstructuredcontent_domain_model_room.noise.checked">
+			<trans-unit id="tx_structuredcontent_domain_model_room.noise.checked">
 				<source>Noisy</source>
 			</trans-unit>
-			<trans-unit id="tx_slubstructuredcontent_domain_model_room.daylight">
+			<trans-unit id="tx_structuredcontent_domain_model_room.daylight">
 				<source>Daylight</source>
 			</trans-unit>
-			<trans-unit id="tx_slubstructuredcontent_domain_model_room.daylight.checked">
+			<trans-unit id="tx_structuredcontent_domain_model_room.daylight.checked">
 				<source>There is daylight</source>
 			</trans-unit>
 		</body>

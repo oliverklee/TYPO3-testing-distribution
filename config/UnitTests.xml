@@ -14,7 +14,7 @@
         <testsuite name="Site">
             <directory>../src/extensions/site-dev/Tests/Unit</directory>
         </testsuite>
-        <testsuite name="Site">
+        <testsuite name="SlubSC">
             <directory>../src/extensions/slub-structured-content/Tests/Unit</directory>
         </testsuite>
     </testsuites>

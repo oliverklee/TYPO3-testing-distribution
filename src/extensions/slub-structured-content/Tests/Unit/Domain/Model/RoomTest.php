@@ -62,18 +62,10 @@ final class RoomTest extends UnitTestCase
      */
     public function setDescriptionSetsDescription(): void
     {
-        $value = 'Club-Mate';
+        $value = 'Room Description';
         $this->subject->setDescription($value);
 
         self::assertSame($value, $this->subject->getDescription());
-    }
-
-    /**
-     * @test
-     */
-    public function getNoiseInitiallyReturnsFalse(): void
-    {
-        self::assertFalse($this->subject->getNoise());
     }
 
     /**
@@ -89,7 +81,7 @@ final class RoomTest extends UnitTestCase
      */
     public function setLinkSetsLink(): void
     {
-        $value = 'Club-Mate';
+        $value = 'https://www.slub-dresden.de';
         $this->subject->setLink($value);
 
         self::assertSame($value, $this->subject->getLink());
@@ -110,6 +102,14 @@ final class RoomTest extends UnitTestCase
         $this->subject->setDaylight(true);
 
         self::assertTrue($this->subject->getDaylight());
+    }
+
+    /**
+     * @test
+     */
+    public function getNoiseInitiallyReturnsFalse(): void
+    {
+        self::assertFalse($this->subject->getNoise());
     }
 
     /**

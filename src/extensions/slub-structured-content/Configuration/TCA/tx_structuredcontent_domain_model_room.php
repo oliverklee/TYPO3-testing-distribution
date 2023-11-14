@@ -2,11 +2,11 @@
 
 defined('TYPO3') or die();
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToInsertRecords('tx_slubstructuredcontent_domain_model_room');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToInsertRecords('tx_structuredcontent_domain_model_room');
 
 $tca = [
     'ctrl' => [
-        'title' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_slubstructuredcontent_domain_model_room',
+        'title' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_structuredcontent_domain_model_room',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -25,7 +25,7 @@ $tca = [
     'columns' => [
         'title' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_slubstructuredcontent_domain_model_room.title',
+            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_structuredcontent_domain_model_room.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -34,7 +34,7 @@ $tca = [
             ],
         ],
         'description' => [
-            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_slubstructuredcontent_domain_model_room.description',
+            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_structuredcontent_domain_model_room.description',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
@@ -45,7 +45,7 @@ $tca = [
             ],
         ],
         'link' => [
-            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_slubstructuredcontent_domain_model_room.link',
+            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_structuredcontent_domain_model_room.link',
             'config' => [
                 'type' => 'link',
                 'size' => 20,
@@ -60,25 +60,25 @@ $tca = [
             ],
         ],
         'noise' => [
-            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_slubstructuredcontent_domain_model_room.noise',
+            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_structuredcontent_domain_model_room.noise',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
                 'items' => [
                     [
-                        'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_slubstructuredcontent_domain_model_room.noise.checked',
+                        'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_structuredcontent_domain_model_room.noise.checked',
                     ],
                 ],
             ],
         ],
         'daylight' => [
-            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_slubstructuredcontent_domain_model_room.daylight',
+            'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_structuredcontent_domain_model_room.daylight',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
                 'items' => [
                     [
-                        'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_slubstructuredcontent_domain_model_room.daylight.checked',
+                        'label' => 'LLL:EXT:slub_structured_content/Resources/Private/Language/locallang_db.xlf:tx_structuredcontent_domain_model_room.daylight.checked',
                     ],
                 ],
             ],
