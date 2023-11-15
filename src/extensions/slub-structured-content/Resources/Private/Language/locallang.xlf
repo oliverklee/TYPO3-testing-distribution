@@ -30,6 +30,18 @@
 			<trans-unit id="plugin.room.show.link">
 				<source>Link to the room</source>
 			</trans-unit>
+			<trans-unit id="plugin.room.show.noise.true">
+				<source>Noisy</source>
+			</trans-unit>
+			<trans-unit id="plugin.room.show.noise.false">
+				<source>Quiet</source>
+			</trans-unit>
+			<trans-unit id="plugin.room.show.daylight.true">
+				<source>Daylight</source>
+			</trans-unit>
+			<trans-unit id="plugin.room.show.daylight.false">
+				<source>Artificial light only</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

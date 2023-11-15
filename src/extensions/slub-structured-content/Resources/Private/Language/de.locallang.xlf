@@ -39,6 +39,22 @@
 				<source>Link to the room</source>
 				<target>Link zum Raum</target>
 			</trans-unit>
+			<trans-unit id="plugin.room.show.noise.true">
+				<source>Noisy</source>
+				<target>Geräuschvoll</target>
+			</trans-unit>
+			<trans-unit id="plugin.room.show.noise.false">
+				<source>Quiet</source>
+				<target>Geräuscharm</target>
+			</trans-unit>
+			<trans-unit id="plugin.room.show.daylight.true">
+				<source>Daylight</source>
+				<target>Tageslicht</target>
+			</trans-unit>
+			<trans-unit id="plugin.room.show.daylight.false">
+				<source>Artificial light only</source>
+				<target>Nur Kunstlicht</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
