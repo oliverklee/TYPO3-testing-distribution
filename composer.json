@@ -111,7 +111,7 @@
 		],
 		"ci:tests:functional": "phpunit -c config/FunctionalTests.xml",
 		"ci:tests:unit": "phpunit -c config/UnitTests.xml",
-		"ci:typoscript:lint": "typoscript-lint -c config/TypoScriptLint.yaml --ansi -n --fail-on-warnings -vvv src/extensions/site-dev/Configuration/TsConfig src/extensions/site-dev/Configuration/TypoScript",
+		"ci:typoscript:lint": "typoscript-lint -c config/TypoScriptLint.yaml --ansi -n --fail-on-warnings -vvv src/extensions/site-dev/Configuration/TsConfig src/extensions/site-dev/Configuration/TypoScript src/extensions/slub-structured-content/Configuration/TsConfig src/extensions/slub-structured-content/Configuration/TypoScript",
 		"ci:yaml:lint": "find .ddev .github config src/ -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
 		"fix": [
 			"@fix:composer",

@@ -16,8 +16,4 @@ plugin.tx_structuredcontent {
   persistence {
     storagePid = {$plugin.tx_structuredcontent.persistence.storagePid}
   }
-
-  settings {
-    typo = Zukunfts-Astrid
-  }
 }
