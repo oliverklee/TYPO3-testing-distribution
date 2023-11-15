@@ -4,9 +4,8 @@
 
 
     <f:section name="main">
-        <f:debug>{_all}</f:debug>
         <h2>
-            <f:translate key="LLL:EXT:slub_structured_content/Resources/Private/Language/locallang.xlf:plugin.room.heading"/>
+            <f:translate key="LLL:EXT:structured_content/Resources/Private/Language/locallang.xlf:plugin.room.heading"/>
         </h2>
 
         <table class="table">
@@ -32,10 +31,16 @@
                             </f:link.action>
                         </td>
                         <td>
-                            {room.noise}
+                            <f:if condition="{room.noise}">
+                                <f:then>🔊</f:then>
+                                <f:else>🔇</f:else>
+                            </f:if>
                         </td>
                         <td>
-                            {room.daylight}
+                            <f:if condition="{room.daylight}">
+                                <f:then>☀️</f:then>
+                                <f:else>💡</f:else>
+                            </f:if>
                         </td>
                     </tr>
                 </f:for>

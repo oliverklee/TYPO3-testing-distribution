@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Slub\StructuredContent\Controller;
 
 use Psr\Http\Message\ResponseInterface;
-use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use Slub\StructuredContent\Domain\Repository\RoomRepository;
 use Slub\StructuredContent\Domain\Model\Room;
+use Slub\StructuredContent\Domain\Repository\RoomRepository;
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
  * Controller for the main "Room" FE plugin.

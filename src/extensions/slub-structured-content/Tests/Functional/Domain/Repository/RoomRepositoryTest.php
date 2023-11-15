@@ -13,7 +13,7 @@ use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
  */
 final class RoomRepositoryTest extends FunctionalTestCase
 {
-    protected array $testExtensionsToLoad = ['slub_structured_content'];
+    protected array $testExtensionsToLoad = ['structured_content'];
 
     private RoomRepository $subject;
 

@@ -7,7 +7,6 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 defined('TYPO3') or die('Access denied.');
 
-
 ExtensionUtility::configurePlugin(
     // extension name, matching the PHP namespaces (but without the vendor)
     'structured_content',

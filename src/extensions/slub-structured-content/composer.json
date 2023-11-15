@@ -51,7 +51,7 @@
 		"typo3/testing-framework": "^7.0.4"
 	},
 	"replace": {
-		"typo3-ter/slub_structured_content": "self.version"
+		"typo3-ter/structured_content": "self.version"
 	},
 	"conflict": {
 		"typo3/class-alias-loader": "< 1.1.0"
@@ -88,7 +88,7 @@
 		},
 		"typo3/cms": {
 			"app-dir": ".Build",
-			"extension-key": "slub_structured_content",
+			"extension-key": "structured_content",
 			"web-dir": ".Build/Web"
 		}
 	},
@@ -167,7 +167,7 @@
 		"fix:php:sniff": "phpcbf Classes Configuration Tests",
 		"link-extension": [
 			"@php -r 'is_dir($extFolder=__DIR__.\"/.Build/Web/typo3conf/ext/\") || mkdir($extFolder, 0777, true);'",
-			"@php -r 'file_exists($extFolder=__DIR__.\"/.Build/Web/typo3conf/ext/slub_structured_content\") || symlink(__DIR__,$extFolder);'"
+			"@php -r 'file_exists($extFolder=__DIR__.\"/.Build/Web/typo3conf/ext/structured_content\") || symlink(__DIR__,$extFolder);'"
 		],
 		"phpstan:baseline": ".Build/bin/phpstan  --generate-baseline=phpstan-baseline.neon",
 		"prepare-release": [
