@@ -16,8 +16,9 @@ call_user_func(
             'EXT:structured_content/Resources/Public/Icons/Extension.svg'
         );
 
-        // This removes the default controls from the plugin.
+        // This removes the default controls from the plugin
         $controlsToRemove = 'recursive,select_key,pages';
+        // @phpstan-ignore-next-line we know it works!!!1!
         $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['structuredcontent_room'] = $controlsToRemove;
     }
 );

@@ -21,7 +21,7 @@ final class RoomRepositoryTest extends UnitTestCase
         parent::setUp();
 
         if (\interface_exists(ObjectManagerInterface::class)) {
-            $objectManagerStub = $this->createStub(ObjectManagerInterface::class);
+            $objectManagerStub = self::createStub(ObjectManagerInterface::class);
             // @phpstan-ignore-next-line This line is 11LTS-specific, but we're running PHPStan on TYPO3 12.
             $this->subject = new RoomRepository($objectManagerStub);
         } else {

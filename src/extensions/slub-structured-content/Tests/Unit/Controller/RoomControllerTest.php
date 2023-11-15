@@ -51,7 +51,7 @@ final class RoomControllerTest extends UnitTestCase
         $this->viewMock = $this->createMock(TemplateView::class);
         $this->subject->_set('view', $this->viewMock);
 
-        $responseStub = $this->createStub(HtmlResponse::class);
+        $responseStub = self::createStub(HtmlResponse::class);
         $this->subject->method('htmlResponse')->willReturn($responseStub);
     }
 

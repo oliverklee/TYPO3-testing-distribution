@@ -17,13 +17,9 @@ final class RoomRepositoryTest extends FunctionalTestCase
 
     private RoomRepository $subject;
 
-    private PersistenceManagerInterface $persistenceManager;
-
     protected function setUp(): void
     {
         parent::setUp();
-
-        $this->persistenceManager = $this->get(PersistenceManagerInterface::class);
 
         $this->subject = $this->get(RoomRepository::class);
     }
