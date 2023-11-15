@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:layout name="Default"/>
+
+    <f:section name="main">
+        <h2>
+            {room.title}
+        </h2>
+        <p>
+            <f:translate key="plugin.room.show.properties"/>:
+
+            <f:if condition="{room.noise}">
+                <f:then>🔊</f:then>
+                <f:else>🔇</f:else>
+            </f:if>
+            <f:if condition="{room.daylight}">
+                <f:then>☀️</f:then>
+                <f:else>💡</f:else>
+            </f:if>
+        </p>
+
+        <f:if condition="{room.link}">
+            <p>
+                <f:link.external uri="{room.link}"><f:translate key="plugin.room.show.link"/></f:link.external>
+            </p>
+        </f:if>
+
+        {room.description -> f:format.html()}
+
+
+    </f:section>
+</html>

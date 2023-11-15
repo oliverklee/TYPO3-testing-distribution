@@ -27,7 +27,6 @@ class Room extends AbstractEntity
      * @Extbase\Validate("StringLength", options={"maximum": 1024})
      */
     protected string $link = '';
-
     protected bool $noise = false;
 
     public function getTitle(): string

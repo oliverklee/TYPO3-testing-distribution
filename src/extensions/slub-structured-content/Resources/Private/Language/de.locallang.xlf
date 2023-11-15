@@ -23,6 +23,14 @@
 				<source>Has daylight</source>
 				<target>Hat Tageslicht</target>
 			</trans-unit>
+			<trans-unit id="plugin.room.show.properties">
+				<source>Properties</source>
+				<target>Eigenschaften</target>
+			</trans-unit>
+			<trans-unit id="plugin.room.show.link">
+				<source>Link to the room</source>
+				<target>Link zum Raum</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -50,7 +50,7 @@ $tca = [
                 'type' => 'link',
                 'size' => 20,
                 'nullable' => 'true',
-                'allowedTypes' => ['page', 'url', 'record'],
+                'allowedTypes' => ['url'],
                 'appearance' => [
                     'enableBrowser' => true,
                     'browserTitle' => 'Browser title',
@@ -107,7 +107,7 @@ if ($typo3Version->getMajorVersion() < 12) {
                     'title' => 'Browser title',
                     'allowedExtensions' => 'jpg,png',
                     'blindLinkFields' => 'class,target,title',
-                    'blindLinkOptions' => 'mail,folder,file,telephone',
+                    'blindLinkOptions' => 'mail,folder,file,telephone,page',
                 ],
             ],
         ],
