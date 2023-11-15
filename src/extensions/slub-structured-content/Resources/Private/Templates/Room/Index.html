@@ -2,19 +2,24 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
     <f:layout name="Default"/>
 
+
     <f:section name="main">
+        <f:debug>{_all}</f:debug>
         <h2>
-            <f:translate key="plugin.room.heading"/>
+            <f:translate key="LLL:EXT:slub_structured_content/Resources/Private/Language/locallang.xlf:plugin.room.heading"/>
         </h2>
 
         <table class="table">
             <thead>
                 <tr>
                     <th>
-                        <f:translate key="plugin.room.property.uid"/>
+                        <f:translate key="plugin.room.property.title"/>
                     </th>
                     <th>
-                        <f:translate key="plugin.room.property.title"/>
+                        <f:translate key="plugin.room.property.noise"/>
+                    </th>
+                    <th>
+                        <f:translate key="plugin.room.property.daylight"/>
                     </th>
                 </tr>
             </thead>
@@ -22,12 +27,15 @@
                 <f:for each="{rooms}" as="room">
                     <tr>
                         <td>
-                            {room.uid}
-                        </td>
-                        <td>
-                            <f:link.action action="show" arguments="{room: room}" pageUid="{settings.singleViewPageUid}">
+                            <f:link.action action="show" arguments="{room: room}">
                                 {room.title}
                             </f:link.action>
+                        </td>
+                        <td>
+                            {room.noise}
+                        </td>
+                        <td>
+                            {room.daylight}
                         </td>
                     </tr>
                 </f:for>

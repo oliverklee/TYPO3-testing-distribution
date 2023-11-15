@@ -1,10 +1,5 @@
 # TYPO3 CMS distribution for testing my extensions
 
-** TODO
-Labels anlegen für Templates für Roomaction
-
-** ENDE
-
 This is a TYPO3 distribution which I use to manually test my extensions:
 
 - [crowdfunding](https://github.com/oliverklee/ext-crowdfunding)

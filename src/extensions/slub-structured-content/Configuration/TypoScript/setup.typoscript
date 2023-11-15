@@ -1,0 +1,19 @@
+plugin.tx_structuredcontent {
+  view {
+    templateRootPaths {
+      0 = EXT:slub_structured_content/Resources/Private/Templates/
+    }
+
+    partialRootPaths {
+      0 = EXT:slub_structured_content/Resources/Private/Partials/
+    }
+
+    layoutRootPaths {
+      0 = EXT:slub_structured_content/Resources/Private/Layouts/
+    }
+  }
+
+  persistence {
+    storagePid = {$plugin.tx_slub_structured_content.persistence.storagePid}
+  }
+}

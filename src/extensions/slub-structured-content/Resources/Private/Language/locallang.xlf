@@ -6,6 +6,18 @@
 			<trans-unit id="plugin.room_index">
 				<source>Room list</source>
 			</trans-unit>
+			<trans-unit id="plugin.room.heading">
+				<source>Room list</source>
+			</trans-unit>
+			<trans-unit id="plugin.room.property.title">
+				<source>Room</source>
+			</trans-unit>
+			<trans-unit id="plugin.room.property.noise">
+				<source>Noisy</source>
+			</trans-unit>
+			<trans-unit id="plugin.room.property.daylight">
+				<source>Has daylight</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

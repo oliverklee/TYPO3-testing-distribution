@@ -11,6 +11,18 @@
 				<source>Room list</source>
 				<target>Raumliste</target>
 			</trans-unit>
+			<trans-unit id="plugin.room.property.title">
+				<source>Room</source>
+				<target>Raum</target>
+			</trans-unit>
+			<trans-unit id="plugin.room.property.noise">
+				<source>Noisy</source>
+				<target>Laut</target>
+			</trans-unit>
+			<trans-unit id="plugin.room.property.daylight">
+				<source>Has daylight</source>
+				<target>Hat Tageslicht</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
