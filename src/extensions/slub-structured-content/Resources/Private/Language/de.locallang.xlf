@@ -7,6 +7,14 @@
 				<source>Room list</source>
 				<target>Raumliste</target>
 			</trans-unit>
+			<trans-unit id="plugin.room_index_description">
+				<source>Create Room list</source>
+				<target>Raumliste anlegen</target>
+			</trans-unit>
+			<trans-unit id="content_group.slubstructuredcontent">
+				<source>SLUB Structured Content</source>
+				<target>SLUB Strukturierte Inhalte</target>
+			</trans-unit>
 			<trans-unit id="plugin.room.heading">
 				<source>Room list</source>
 				<target>Raumliste</target>
@@ -17,7 +25,7 @@
 			</trans-unit>
 			<trans-unit id="plugin.room.property.noise">
 				<source>Noisy</source>
-				<target>Laut</target>
+				<target>Geräuschpegel</target>
 			</trans-unit>
 			<trans-unit id="plugin.room.property.daylight">
 				<source>Has daylight</source>

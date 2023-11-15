@@ -1,0 +1,2 @@
+@import 'EXT:structured_content/Configuration/TsConfig/Page/Mod/Wizards/NewContentElement.tsconfig'
+@import 'EXT:structured_content/Configuration/TsConfig/Page/ContentElement/Categories.tsconfig'

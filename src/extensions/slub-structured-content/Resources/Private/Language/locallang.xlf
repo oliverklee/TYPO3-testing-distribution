@@ -6,6 +6,12 @@
 			<trans-unit id="plugin.room_index">
 				<source>Room list</source>
 			</trans-unit>
+			<trans-unit id="plugin.room_index_description">
+				<source>Create Room list</source>
+			</trans-unit>
+			<trans-unit id="content_group.slubstructuredcontent">
+				<source>SLUB Structured Content</source>
+			</trans-unit>
 			<trans-unit id="plugin.room.heading">
 				<source>Room list</source>
 			</trans-unit>

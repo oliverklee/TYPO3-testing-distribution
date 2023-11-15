@@ -1,0 +1,3 @@
+mod.wizards.newContentElement.wizardItems {
+  slubstructuredcontent.header = LLL:EXT:structured_content/Resources/Private/Language/locallang.xlf:content_group.slubstructuredcontent
+}

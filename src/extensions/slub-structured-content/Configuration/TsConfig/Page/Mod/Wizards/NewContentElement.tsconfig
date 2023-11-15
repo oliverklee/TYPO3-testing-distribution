@@ -1,0 +1,18 @@
+mod.wizards {
+  newContentElement.wizardItems {
+    slubstructuredcontent {
+      elements {
+        structuredcontent_room {
+          iconIdentifier = structuredcontent_room
+          title = LLL:EXT:structured_content/Resources/Private/Language/locallang.xlf:plugin.room_index
+          description = LLL:EXT:structured_content/Resources/Private/Language/locallang.xlf:plugin.room_index_description
+          tt_content_defValues {
+            CType = list
+            list_type = structuredcontent_room
+          }
+        }
+      }
+      show := addToList(structuredcontent_room)
+    }
+  }
+}
