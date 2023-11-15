@@ -101,6 +101,7 @@
 			"@ci:composer:normalize",
 			"@ci:json:lint",
 			"@ci:php:lint",
+			"@ci:php:stan",
 			"@ci:php:cs-fixer",
 			"@ci:typoscript:lint",
 			"@ci:yaml:lint"
