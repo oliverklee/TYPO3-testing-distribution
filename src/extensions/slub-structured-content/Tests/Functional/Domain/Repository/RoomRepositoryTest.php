@@ -38,7 +38,7 @@ final class RoomRepositoryTest extends FunctionalTestCase
      */
     public function findByUidForExistingRecordReturnsModel(): void
     {
-        $this->importCSVDataSet(__DIR__ . '/Fixtures/Room.csv');
+        $this->importCSVDataSet(__DIR__ . '/Fixtures/RoomWithMinimalData.csv');
 
         $uid = 1;
         $model = $this->subject->findByUid($uid);
@@ -62,5 +62,18 @@ final class RoomRepositoryTest extends FunctionalTestCase
         self::assertSame('https://www.slub-dresden.de', $model->getLink());
         self::assertTrue($model->getNoise());
         self::assertTrue($model->getDaylight());
+    }
+
+    /**
+     * @test
+     */
+    public function findAllSortsByTitleInAscendingOrder(): void
+    {
+        $this->importCSVDataSet(__DIR__ . '/Fixtures/RoomsSortedByUIDAsc.csv');
+
+        $result = $this->subject->findAll();
+
+        $result->rewind();
+        self::assertSame(2, $result->current()->getUid());
     }
 }
