@@ -105,4 +105,27 @@ final class RoomControllerTest extends UnitTestCase
 
         self::assertInstanceOf(HtmlResponse::class, $result);
     }
+
+    /**
+     * @test
+     */
+    public function searchActionReturnsHtmlResponse(): void
+    {
+        $result = $this->subject->searchAction('OSL 666');
+
+        self::assertInstanceOf(HtmlResponse::class, $result);
+    }
+
+    /**
+     * @test
+     */
+    public function searchActionAssignsResultingRoomsToView(): void
+    {
+        $searchTerm = 'OSL 666';
+        $rooms = $this->createMock(QueryResultInterface::class);
+        $this->roomRepositoryMock->method('findBySearchTerm')->with($searchTerm)->willReturn($rooms);
+        $this->viewMock->expects(self::once())->method('assign')->with('rooms', $rooms);
+
+        $this->subject->searchAction($searchTerm);
+    }
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:layout name="Default"/>
+
+
+    <f:section name="main">
+        <h2>
+            <f:translate key="plugin.room.heading"/>
+        </h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <f:translate key="plugin.room.property.title"/>
+                    </th>
+                    <th>
+                        <f:translate key="plugin.room.property.noise"/>
+                    </th>
+                    <th>
+                        <f:translate key="plugin.room.property.daylight"/>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <f:for each="{rooms}" as="room">
+                    <tr>
+                        <td>
+                            <f:link.action action="show" arguments="{room: room}">
+                                {room.title}
+                            </f:link.action>
+                        </td>
+                        <td>
+                            <f:if condition="{room.noise}">
+                                <f:then>
+                                    <span aria-hidden="true">🔊</span>
+                                    <span class="label"><f:translate key="plugin.room.show.noise.true"/></span>
+                                </f:then>
+                                <f:else>
+                                    <span aria-hidden="true">🔇</span>
+                                    <span class="label"><f:translate key="plugin.room.show.noise.false"/></span>
+                                </f:else>
+                            </f:if>
+                        </td>
+                        <td>
+                            <f:if condition="{room.daylight}">
+                                <f:then>
+                                    <span aria-hidden="true">☀️</span>
+                                    <span class="label"><f:translate key="plugin.room.show.daylight.true"/></span>
+                                </f:then>
+                                <f:else>
+                                    <span aria-hidden="true">💡</span>
+                                    <span class="label"><f:translate key="plugin.room.show.daylight.false"/></span>
+                                </f:else>
+                            </f:if>
+                        </td>
+                    </tr>
+                </f:for>
+            </tbody>
+        </table>
+    </f:section>
+</html>

@@ -27,9 +27,14 @@ class RoomController extends ActionController
         return $this->htmlResponse();
     }
 
-    public function searchAction(): ResponseInterface
+    /**
+     * @param string $searchTerm
+     *
+     * @return ResponseInterface
+     */
+    public function searchAction(string $searchTerm): ResponseInterface
     {
-        $this->view->assign('rooms', $this->roomRepository->findAll());
+        $this->view->assign('rooms', $this->roomRepository->findBySearchTerm($searchTerm));
         return $this->htmlResponse();
     }
 
