@@ -24,12 +24,12 @@
 				<target>Raum</target>
 			</trans-unit>
 			<trans-unit id="plugin.room.property.noise">
-				<source>Noisy</source>
+				<source>Noise level</source>
 				<target>Geräuschpegel</target>
 			</trans-unit>
 			<trans-unit id="plugin.room.property.daylight">
-				<source>Has daylight</source>
-				<target>Hat Tageslicht</target>
+				<source>Light conditions</source>
+				<target>Lichtverhältnisse</target>
 			</trans-unit>
 			<trans-unit id="plugin.room.show.properties">
 				<source>Properties</source>

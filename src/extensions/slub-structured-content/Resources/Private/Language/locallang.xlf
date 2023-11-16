@@ -19,10 +19,10 @@
 				<source>Room</source>
 			</trans-unit>
 			<trans-unit id="plugin.room.property.noise">
-				<source>Noisy</source>
+				<source>Noise level</source>
 			</trans-unit>
 			<trans-unit id="plugin.room.property.daylight">
-				<source>Has daylight</source>
+				<source>Light conditions</source>
 			</trans-unit>
 			<trans-unit id="plugin.room.show.properties">
 				<source>Properties</source>

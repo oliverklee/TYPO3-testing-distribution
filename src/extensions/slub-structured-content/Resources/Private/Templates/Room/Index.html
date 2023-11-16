@@ -32,14 +32,26 @@
                         </td>
                         <td>
                             <f:if condition="{room.noise}">
-                                <f:then>🔊</f:then>
-                                <f:else>🔇</f:else>
+                                <f:then>
+                                    <span aria-hidden="true">🔊</span>
+                                    <span class="label"><f:translate key="plugin.room.show.noise.true"/></span>
+                                </f:then>
+                                <f:else>
+                                    <span aria-hidden="true">🔇</span>
+                                    <span class="label"><f:translate key="plugin.room.show.noise.false"/></span>
+                                </f:else>
                             </f:if>
                         </td>
                         <td>
                             <f:if condition="{room.daylight}">
-                                <f:then>☀️</f:then>
-                                <f:else>💡</f:else>
+                                <f:then>
+                                    <span aria-hidden="true">☀️</span>
+                                    <span class="label"><f:translate key="plugin.room.show.daylight.true"/></span>
+                                </f:then>
+                                <f:else>
+                                    <span aria-hidden="true">💡</span>
+                                    <span class="label"><f:translate key="plugin.room.show.daylight.false"/></span>
+                                </f:else>
                             </f:if>
                         </td>
                     </tr>
