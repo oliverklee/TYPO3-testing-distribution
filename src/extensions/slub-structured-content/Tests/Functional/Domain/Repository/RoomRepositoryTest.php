@@ -76,4 +76,104 @@ final class RoomRepositoryTest extends FunctionalTestCase
         $result->rewind();
         self::assertSame(2, $result->current()->getUid());
     }
+
+    /**
+     * @test
+     */
+    public function findBySearchTermWithEmptyStringReturnsAllRooms(): void
+    {
+        $this->importCSVDataSet(__DIR__ . '/Fixtures/RoomsFindBySearchTerm.csv');
+
+        $result = $this->subject->findBySearchTerm('');
+
+        self::assertCount(2, $result);
+    }
+    // searchterm passt exakt
+
+    /**
+     * @test
+     */
+    public function findBySearchTermWithMatchingTermReturnsMatchingResult(): void
+    {
+        $this->importCSVDataSet(__DIR__ . '/Fixtures/RoomsFindBySearchTerm.csv');
+
+        $result = $this->subject->findBySearchTerm('OSL 122');
+        self::assertCount(1, $result);
+
+        self::assertInstanceOf(Room::class, $result->getFirst());
+        self::assertSame('OSL 122', $result->getFirst()->getTitle());
+    }
+
+    // searchterm passt nicht
+    /**
+     * @test
+     */
+    public function findBySearchTermWithNoneMatchingTermReturnsEmptyResult(): void
+    {
+        $this->importCSVDataSet(__DIR__ . '/Fixtures/RoomsFindBySearchTerm.csv');
+
+        $result = $this->subject->findBySearchTerm('%OSL 1223');
+
+        self::assertCount(0, $result);
+    }
+
+    /**
+     * @return array<string,array<string>>
+     */
+    public static function subStringDataProvider(): array
+    {
+        return [
+            'prefix' => ['OSL 1'],
+            'infix' => ['SL 12'],
+            'suffix' => ['L 122'],
+        ];
+    }
+
+    /**
+     * @test
+     *
+     * @dataProvider subStringDataProvider
+     */
+    public function findBySearchTermWithMatchingSubStringReturnsResult(string $room): void
+    {
+        $this->importCSVDataSet(__DIR__ . '/Fixtures/RoomsFindBySearchTerm.csv');
+
+        $result = $this->subject->findBySearchTerm($room);
+
+        self::assertCount(1, $result);
+        self::assertInstanceOf(Room::class, $result->getFirst());
+        self::assertSame('OSL 122', $result->getFirst()->getTitle());
+    }
+
+    /**
+     * @test
+     */
+    public function findBySearchTermWithMatchingTermButLowerCaseReturnsMatchingResult(): void
+    {
+        $this->importCSVDataSet(__DIR__ . '/Fixtures/RoomsFindBySearchTerm.csv');
+
+        $result = $this->subject->findBySearchTerm('osl 122');
+
+        self::assertCount(1, $result);
+        self::assertInstanceOf(Room::class, $result->getFirst());
+        self::assertSame('OSL 122', $result->getFirst()->getTitle());
+    }
+
+    /**
+     * @test
+     */
+    public function findBySearchTermReturnsRoomsInAscendingAlphabeticalOrderByTitle(): void
+    {
+        $this->importCSVDataSet(__DIR__ . '/Fixtures/RoomsFindBySearchTerm.csv');
+
+        $result = $this->subject->findBySearchTerm('');
+
+        self::assertCount(2, $result);
+
+        self::assertInstanceOf(Room::class, $result->getFirst());
+        self::assertSame('C+4.03', $result->getFirst()->getTitle());
+
+        self::assertInstanceOf(Room::class, $result->offsetGet('1'));
+        self::assertSame('OSL 122', $result->offsetGet('1')->getTitle());
+    }
 }
