@@ -1,4 +1,4 @@
-@import 'EXT:fluid_styled_content/Configuraton/setup.typoscript'
+@import 'EXT:fluid_styled_content/Configuraton/TypoScript/setup.typoscript'
 @import './lib/*.typoscript'
 @import './config.typoscript'
 @import './page.typoscript'
