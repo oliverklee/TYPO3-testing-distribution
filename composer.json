@@ -18,6 +18,7 @@
 		"php": ">= 8.1.23",
 		"georgringer/autoswitchtolistview": "^3.0.0",
 		"helhum/typo3-console": "^8.0.3",
+		"oliverklee/feuserextrafields": "dev-main",
 		"oliverklee/site-dev": "@dev",
 		"ttn/tea": "dev-main",
 		"typo3/cms-adminpanel": "^12.4",
