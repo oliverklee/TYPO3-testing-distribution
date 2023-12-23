@@ -5,7 +5,6 @@ version: "3.6"
 services:
   web:
     volumes:
-      - "$HOME/src/typo3/ext/oelib:/var/www/html/packages/oelib:cached,ro"
       - "$HOME/src/typo3/ext/onetimeaccount:/var/www/html/packages/onetimeaccount:cached,ro"
       - "$HOME/src/typo3/ext/seminars:/var/www/html/packages/seminars:cached,ro"
       - "$HOME/src/typo3/ext/typo3-devsite:/var/www/html/packages/typo3-devsite:cached,ro"
