@@ -10,7 +10,6 @@ vendor/bin/typo3 database:export \
     --exclude sys_be_shortcuts \
     --exclude sys_category* \
     --exclude sys_collection* \
-    --exclude sys_file_processedfile \
     --exclude sys_history \
     --exclude sys_lockedrecords \
     --exclude sys_log \
