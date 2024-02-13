@@ -2106,6 +2106,44 @@ LOCK TABLES `sys_file_metadata` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `sys_file_processedfile`
+--
+
+DROP TABLE IF EXISTS `sys_file_processedfile`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_file_processedfile` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `storage` int(11) NOT NULL DEFAULT 0,
+  `original` int(11) NOT NULL DEFAULT 0,
+  `identifier` varchar(512) NOT NULL DEFAULT '',
+  `name` tinytext DEFAULT NULL,
+  `processing_url` text DEFAULT NULL,
+  `configuration` blob DEFAULT NULL,
+  `configurationsha1` varchar(40) NOT NULL DEFAULT '',
+  `originalfilesha1` varchar(40) NOT NULL DEFAULT '',
+  `task_type` varchar(200) NOT NULL DEFAULT '',
+  `checksum` varchar(10) NOT NULL DEFAULT '',
+  `width` int(11) DEFAULT 0,
+  `height` int(11) DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `combined_1` (`original`,`task_type`(100),`configurationsha1`),
+  KEY `identifier` (`storage`,`identifier`(180))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_file_processedfile`
+--
+
+LOCK TABLES `sys_file_processedfile` WRITE;
+/*!40000 ALTER TABLE `sys_file_processedfile` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_file_processedfile` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sys_file_reference`
 --
 
@@ -12220,4 +12258,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-13 12:39:51
+-- Dump completed on 2024-02-13 12:44:09
