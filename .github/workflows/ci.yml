@@ -73,7 +73,7 @@ jobs:
           path: ~/.cache/composer
           restore-keys: "php${{ matrix.php-version }}-composer-\n"
       - name: "Install Composer dependencies"
-        run: "composer install --no-progress"
+        run: "composer update --no-progress"
       - name: "Run command"
         run: "composer ci:${{ matrix.command }}"
     strategy:
@@ -129,7 +129,7 @@ jobs:
             php${{ matrix.php-version }}-composer-
 
       - name: Install Composer dependencies
-        run: composer install --no-progress
+        run: composer update --no-progress
 
       - name: Run Rector
         run: vendor/bin/rector --dry-run --no-progress-bar
@@ -164,7 +164,7 @@ jobs:
           path: ~/.cache/composer
           restore-keys: "php${{ matrix.php-version }}-composer-\n"
       - name: "Install Composer dependencies"
-        run: "composer install --no-progress"
+        run: "composer update --no-progress"
       - name: "Run the tests"
         run: "composer ci:tests:unit"
 
@@ -204,7 +204,7 @@ jobs:
           path: ~/.cache/composer
           restore-keys: "php${{ matrix.php-version }}-composer-\n"
       - name: "Install Composer dependencies"
-        run: "composer install --no-progress"
+        run: "composer update --no-progress"
       - name: "Start MySQL"
         run: "sudo /etc/init.d/mysql start"
       - name: "Run the tests"
