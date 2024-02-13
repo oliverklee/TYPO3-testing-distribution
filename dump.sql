@@ -2102,6 +2102,49 @@ LOCK TABLES `sys_file_metadata` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `sys_file_processedfile`
+--
+
+DROP TABLE IF EXISTS `sys_file_processedfile`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_file_processedfile` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `storage` int(11) NOT NULL DEFAULT 0,
+  `original` int(11) NOT NULL DEFAULT 0,
+  `identifier` varchar(512) NOT NULL DEFAULT '',
+  `name` tinytext DEFAULT NULL,
+  `processing_url` text DEFAULT NULL,
+  `configuration` blob DEFAULT NULL,
+  `configurationsha1` varchar(40) NOT NULL DEFAULT '',
+  `originalfilesha1` varchar(40) NOT NULL DEFAULT '',
+  `task_type` varchar(200) NOT NULL DEFAULT '',
+  `checksum` varchar(32) NOT NULL DEFAULT '',
+  `width` int(11) DEFAULT 0,
+  `height` int(11) DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `combined_1` (`original`,`task_type`(100),`configurationsha1`),
+  KEY `identifier` (`storage`,`identifier`(180))
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_file_processedfile`
+--
+
+LOCK TABLES `sys_file_processedfile` WRITE;
+/*!40000 ALTER TABLE `sys_file_processedfile` DISABLE KEYS */;
+INSERT INTO `sys_file_processedfile` VALUES
+(1,1682009145,1682009114,1,3,'/_processed_/8/e/preview_Brooding_metropolis_in_autumn_24a6116898.jpg','preview_Brooding_metropolis_in_autumn_24a6116898.jpg','','a:2:{s:5:\"width\";i:64;s:6:\"height\";i:64;}','551dfa8957f1a04693c61acf34bc959a1ca971c4','cbc9717a75d4ce1c17c3d6721c5755a8c35e1184','Image.Preview','24a6116898',64,38),
+(2,1682009147,1682009146,1,3,'/_processed_/8/e/csm_Brooding_metropolis_in_autumn_aa13887ac8.jpg','csm_Brooding_metropolis_in_autumn_aa13887ac8.jpg','','a:3:{s:8:\"maxWidth\";i:145;s:9:\"maxHeight\";i:45;s:6:\"height\";s:3:\"45m\";}','99641ee1e111db8018e526d3105ad5631f8f88a4','cbc9717a75d4ce1c17c3d6721c5755a8c35e1184','Image.CropScaleMask','aa13887ac8',75,45),
+(3,1682009191,1682009191,1,3,'/_processed_/8/e/csm_Brooding_metropolis_in_autumn_0b022ce69a.jpg','csm_Brooding_metropolis_in_autumn_0b022ce69a.jpg',NULL,'a:11:{s:5:\"width\";s:4:\"260m\";s:6:\"height\";s:4:\"160m\";s:13:\"fileExtension\";s:0:\"\";s:8:\"maxWidth\";i:0;s:9:\"maxHeight\";i:0;s:8:\"minWidth\";i:0;s:9:\"minHeight\";i:0;s:7:\"noScale\";s:0:\"\";s:20:\"additionalParameters\";s:0:\"\";s:5:\"frame\";i:0;s:4:\"crop\";N;}','2d6bacc213db9300cf8786c860b59f539241bf80','cbc9717a75d4ce1c17c3d6721c5755a8c35e1184','Image.CropScaleMask','0b022ce69a',260,156),
+(4,1682009191,1682009191,1,3,'/_processed_/8/e/csm_Brooding_metropolis_in_autumn_5ad977d39a.jpg','csm_Brooding_metropolis_in_autumn_5ad977d39a.jpg',NULL,'a:11:{s:5:\"width\";s:3:\"70c\";s:6:\"height\";s:3:\"43c\";s:13:\"fileExtension\";s:0:\"\";s:8:\"maxWidth\";i:0;s:9:\"maxHeight\";i:0;s:8:\"minWidth\";i:0;s:9:\"minHeight\";i:0;s:7:\"noScale\";s:0:\"\";s:20:\"additionalParameters\";s:0:\"\";s:5:\"frame\";i:0;s:4:\"crop\";N;}','e17302c6592245c9f5dbeaf13a5507cfac62a2e1','cbc9717a75d4ce1c17c3d6721c5755a8c35e1184','Image.CropScaleMask','5ad977d39a',70,43);
+/*!40000 ALTER TABLE `sys_file_processedfile` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sys_file_reference`
 --
 
@@ -12286,4 +12329,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-13 12:39:56
+-- Dump completed on 2024-02-13 12:44:06
