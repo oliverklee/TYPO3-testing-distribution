@@ -87,7 +87,7 @@ jobs:
           - php:stan
           - typoscript:lint
         php-version:
-          - '8.1'
+          - '8.3'
 
   rector:
     name: Rector
@@ -101,7 +101,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.1"
+          - '8.3'
 
     steps:
       - name: Checkout
