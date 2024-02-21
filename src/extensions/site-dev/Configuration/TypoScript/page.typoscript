@@ -4,15 +4,6 @@ page {
     bootstrap = EXT:site_dev/Resources/Public/Css/bootstrap.css
   }
 
-  # jQuery intentionally does not get included in the footer so extensions like mkforms
-  # that require jQuery in the BODY don't break.
-  includeJSLibs {
-    jQuery = EXT:site_dev/Resources/Public/JavaScript/jquery.js
-    jQuery {
-      forceOnTop = 1
-    }
-  }
-
   includeJSFooterlibs {
     bootstrap = EXT:site_dev/Resources/Public/JavaScript/bootstrap.bundle.js
     bootstrap {
