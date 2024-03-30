@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814984" source-language="en" datatype="plaintext" original="EXT:scheduler/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="scheduler" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:scheduler/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="scheduler" target-language="de">
     <header/>
     <body>
       <trans-unit id="action.add" resname="action.add" approved="yes">
@@ -41,9 +41,8 @@
 					By default, the command to run in composer mode is `vendor/bin/typo3 scheduler:run`.
 				</source>
         <target state="final">
-					Das System läuft im Composer-Modus, der Pfad zur ausführbaren `typo3`-Datei konnte nicht zuverlässig ermittelt werden.
-					Standardmäßig lautet der Befehl zur Ausführung im Composer-Modus `vendor/bin/typo3 scheduler:run`.
-				</target>
+Das System läuft im Composer-Modus, der Pfad zur ausführbaren `typo3`-Datei konnte nicht zuverlässig ermittelt werden.
+					Standardmäßig lautet der Befehl zur Ausführung im Composer-Modus `vendor/bin/typo3 scheduler:run`.</target>
       </trans-unit>
       <trans-unit id="hdg.lastRun" resname="hdg.lastRun" approved="yes">
         <source>Last run</source>
@@ -98,12 +97,12 @@
         <target state="final">Ende (HH:MM TT-MM-JJJJ)</target>
       </trans-unit>
       <trans-unit id="label.executeSelected" resname="label.executeSelected" approved="yes">
-        <source>Execute selected tasks</source>
-        <target state="final">Ausgewählte Tasks ausführen</target>
+        <source>Execute</source>
+        <target state="final">Ausführen</target>
       </trans-unit>
       <trans-unit id="label.cronjobSelected" resname="label.cronjobSelected" approved="yes">
-        <source>Execute selected tasks on next cron job</source>
-        <target state="final">Ausgewählte Tasks mit nächstem Cron-Job ausführen</target>
+        <source>Execute on next cron job</source>
+        <target state="final">Beim nächsten Cron-Job ausführen</target>
       </trans-unit>
       <trans-unit id="label.extension" resname="label.extension" approved="yes">
         <source>Extension</source>
@@ -209,6 +208,10 @@
         <source>Database tables</source>
         <target state="final">Datenbanktabellen</target>
       </trans-unit>
+      <trans-unit id="label.status" resname="label.status" approved="yes">
+        <source>Status</source>
+        <target state="final">Status</target>
+      </trans-unit>
       <trans-unit id="label.type" resname="label.type" approved="yes">
         <source>Type</source>
         <target state="final">Typ</target>
@@ -246,8 +249,8 @@
         <target state="final">Anzahl Tasks, deren Klasse nicht gefunden werden konnte</target>
       </trans-unit>
       <trans-unit id="label.schedulableCommandName" resname="label.schedulableCommandName" approved="yes">
-        <source><![CDATA[Schedulable Command. <em>Save and reopen to define command arguments</em>]]></source>
-        <target state="final"><![CDATA[Planbarer Befehl. &lt;em&gt;Speichern und öffnen Sie dieses Fenster wieder, um die Argumente festzulegen.&lt;/em&gt;]]></target>
+        <source>Schedulable Command. Save and reopen to define command arguments</source>
+        <target state="final">Planbarer Befehl. Speichern und erneut öffnen, um Argumente zu definieren</target>
       </trans-unit>
       <trans-unit id="label.saveAndCreateNewTask" resname="label.saveAndCreateNewTask" approved="yes">
         <source>Save and create new task</source>
@@ -294,8 +297,8 @@
         <target state="final">Das Enddatum liegt vor dem Startdatum.</target>
       </trans-unit>
       <trans-unit id="msg.executed" resname="msg.executed" approved="yes">
-        <source>Executed: %s</source>
-        <target state="final">Ausgeführt: %s</target>
+        <source>Task "%s" with uid "%s" has been executed.</source>
+        <target state="final">Die Aufgabe "%s" mit der UID "%s" wurde ausgeführt.</target>
       </trans-unit>
       <trans-unit id="msg.frequencyError" resname="msg.frequencyError" approved="yes">
         <source>Invalid frequency. Please enter either a number of seconds or a valid cron command. The cron parser said: %1$s [code: %2$d].</source>
@@ -358,8 +361,8 @@
         <target state="final">Noch keine Tasks angelegt.</target>
       </trans-unit>
       <trans-unit id="msg.notExecuted" resname="msg.notExecuted" approved="yes">
-        <source>Not executed: %s</source>
-        <target state="final">Nicht ausgeführt: %s</target>
+        <source>Task "%s" with uid "%s" has not been executed.</source>
+        <target state="final">Die Aufgabe "%s" mit der UID "%s" wurde nicht ausgeführt.</target>
       </trans-unit>
       <trans-unit id="msg.executionFailed" resname="msg.executionFailed" approved="yes">
         <source>Execution of task "%1$s" failed with the following message: %2$s</source>
@@ -410,8 +413,8 @@
         <target state="final">%s registrierte Tasks können nicht ausgeführt werden</target>
       </trans-unit>
       <trans-unit id="msg.invalidTaskClass.infobox.message" resname="msg.invalidTaskClass.infobox.message" approved="yes">
-        <source><![CDATA[<a href="#recordlist-task-group-missing">Please check the erroneous tasks!</a>]]></source>
-        <target state="final"><![CDATA[<a href="#recordlist-task-group-missing">Bitte überprüfen Sie die fehlerhaften Tasks!</a>]]></target>
+        <source><![CDATA[<a href="#scheduler-task-group-missing">Please check the erroneous tasks!</a>]]></source>
+        <target state="final"><![CDATA[<a href="#scheduler-task-group-missing">Bitte überprüfen Sie die fehlerhaften Tasks!</a>]]></target>
       </trans-unit>
       <trans-unit id="msg.schedulerSetupCheck" resname="msg.schedulerSetupCheck" approved="yes">
         <source>This screen checks if the requisites for running the Scheduler as a cron job are fulfilled. It also displays information about the last run of the Scheduler.</source>
@@ -610,7 +613,7 @@
         <target state="final">Dieser Task anonymisiert IP-Adressen um den Datenschutz für bestehende Daten zu gewährleisten.</target>
       </trans-unit>
       <trans-unit id="label.ipAnonymization.table" resname="label.ipAnonymization.table" approved="yes">
-        <source>Table to anoymize</source>
+        <source>Table to anonymize</source>
         <target state="final">Zu anonymisierende Tabelle</target>
       </trans-unit>
       <trans-unit id="label.ipAnonymization.additionalInformationTable" resname="label.ipAnonymization.additionalInformationTable" approved="yes">
@@ -652,6 +655,18 @@
       <trans-unit id="command.example4" resname="command.example4" approved="yes">
         <source>Every Tuesday at 07:00</source>
         <target state="final">Jeden Dienstag um 7 Uhr</target>
+      </trans-unit>
+      <trans-unit id="systemmessage.noLastRun" resname="systemmessage.noLastRun" approved="yes">
+        <source><![CDATA[It seems the Scheduler has never yet run. Please check your <a href="%1$s">configuration</a>.]]></source>
+        <target state="final"><![CDATA[Offenbar wurde der Planer noch niemals ausgeführt. Bitte überprüfen Sie Ihre <a href="%1$s">Konfiguration</a>.]]></target>
+      </trans-unit>
+      <trans-unit id="systeminformation.lastRunLabel" resname="systeminformation.lastRunLabel" approved="yes">
+        <source>Last Scheduler run</source>
+        <target state="final">Letzter Lauf des Planer</target>
+      </trans-unit>
+      <trans-unit id="systeminformation.lastRunValue" resname="systeminformation.lastRunValue" approved="yes">
+        <source>%1$s at %2$s, Duration %3$s, (started %4$s)</source>
+        <target state="final">%1$s um %2$s, Dauer %3$s, (gestartet %4$s)</target>
       </trans-unit>
     </body>
   </file>
