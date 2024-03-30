@@ -19,6 +19,10 @@
         <source>%s search match(es)</source>
         <target state="final">%s Suchergebnis(se)</target>
       </trans-unit>
+      <trans-unit id="moduleMenu.dropdown.label" resname="moduleMenu.dropdown.label" approved="yes">
+        <source>Configuration to show</source>
+        <target state="final">anzuzeigende Konfiguration</target>
+      </trans-unit>
       <trans-unit id="typo3ConfVars" resname="typo3ConfVars" approved="yes">
         <source>$GLOBALS['TYPO3_CONF_VARS'] (Global Configuration)</source>
         <target state="final">$GLOBALS['TYPO3_CONF_VARS'] (Globale Konfiguration)</target>
@@ -50,6 +54,10 @@
       <trans-unit id="httpMiddlewareStacks" resname="httpMiddlewareStacks" approved="yes">
         <source>HTTP Middlewares (PSR-15)</source>
         <target state="final">HTTP-Middleware (PSR-15)</target>
+      </trans-unit>
+      <trans-unit id="contentSecurityPolicyMutations" resname="contentSecurityPolicyMutations" approved="yes">
+        <source>Content Security Policy Mutations</source>
+        <target state="final">Content-Security-Policy-Mutationen</target>
       </trans-unit>
       <trans-unit id="sitesTcaConfiguration" resname="sitesTcaConfiguration" approved="yes">
         <source>Sites: TCA configuration</source>
@@ -106,6 +114,20 @@
       <trans-unit id="module.dbint.description" resname="module.dbint.description" approved="yes">
         <source>Here you can check the integrity of the database tables configured by the $TCA. For instance all records must belong to a page record. You can also get a view of the total pagetree including deleted pages. Finally you've got access to a global database search facility.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</source>
         <target state="final">Hier können Sie die Integrität der Datenbanktabellen überprüfen, welche vom $TCA (Table Configuration Array) konfiguriert sind. Zum Beispiel müssen alle Datensätze eine Relation zu einem Seiten-Datensatz beinhalten. Ebenso haben Sie Zugang zu einer globalen Datenbanksuchfunktion.&lt;br /&gt;&lt;em&gt;Zugriff nur für Administratoren!&lt;/em&gt;</target>
+      </trans-unit>
+      <trans-unit id="module.dbint.docheader.viewmode" resname="module.dbint.docheader.viewmode" approved="yes">
+        <source>Module action</source>
+        <target state="final">Modul-Aktion</target>
+      </trans-unit>
+      <trans-unit id="search.placeholder" resname="search.placeholder" approved="yes">
+        <source>Search Word</source>
+        <target state="final">Suchbegriff</target>
+        <note>Placeholder text for search in database input</note>
+      </trans-unit>
+      <trans-unit id="search.submit" resname="search.submit" approved="yes">
+        <source>Search All Records</source>
+        <target state="final">Alle Datensätze durchsuchen</target>
+        <note>Label of submit button to search within the database (raw search in all fields)</note>
       </trans-unit>
       <trans-unit id="search" resname="search" approved="yes">
         <source>Search</source>
@@ -243,6 +265,15 @@
         <source>Result</source>
         <target state="final">Ergebnis:</target>
       </trans-unit>
+      <trans-unit id="no_results" resname="no_results" approved="yes">
+        <source>No results found for "%s".</source>
+        <target state="final">Keine Ergebnisse für „%s“ gefunden.</target>
+        <note>Info text in case no results are found for a given search term</note>
+      </trans-unit>
+      <trans-unit id="no_sword" resname="no_sword" approved="yes">
+        <source>Enter a search term to search for records</source>
+        <target state="final">Geben Sie einen Suchbegriff ein, um nach Datensätzen zu suchen</target>
+      </trans-unit>
       <trans-unit id="tables" resname="tables" approved="yes">
         <source>Tables</source>
         <target state="final">Tabellen:</target>
@@ -350,6 +381,14 @@
       <trans-unit id="relations" resname="relations" approved="yes">
         <source>Relations</source>
         <target state="final">Verknüpfungen</target>
+      </trans-unit>
+      <trans-unit id="relations_description" resname="relations_description" approved="yes">
+        <source>The module gives some overview of missing relations in fields of the TCA types 'select' and 'group'.</source>
+        <target state="final">Das Modul gibt einen Überblick über fehlende Beziehungen in den Feldern der TCA-Typen 'select' und 'group'.</target>
+      </trans-unit>
+      <trans-unit id="relations_noRecordsFound" resname="relations_noRecordsFound" approved="yes">
+        <source>No records found.</source>
+        <target state="final">Keine Datensätze gefunden.</target>
       </trans-unit>
       <trans-unit id="select_db" resname="select_db" approved="yes">
         <source>Select fields</source>

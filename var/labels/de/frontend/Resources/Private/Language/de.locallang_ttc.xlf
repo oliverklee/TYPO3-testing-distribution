@@ -17,7 +17,7 @@
       </trans-unit>
       <trans-unit id="CType.I.2" resname="CType.I.2" approved="yes">
         <source>Text &amp; Images</source>
-        <target state="final">Text und Bilder</target>
+        <target state="final">Text &amp; Bilder</target>
       </trans-unit>
       <trans-unit id="CType.I.3" resname="CType.I.3" approved="yes">
         <source>Images</source>

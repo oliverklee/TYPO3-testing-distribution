@@ -190,6 +190,10 @@ Wenn Sie Ihre Wiederherstellungscodes verloren haben, oder einfach neue generier
         <source>Setup not possible</source>
         <target state="final">Einrichtung nicht möglich</target>
       </trans-unit>
+      <trans-unit id="setup.recoveryCodes.noActiveProviders.message" resname="setup.recoveryCodes.noActiveProviders.message" approved="yes">
+        <source>Recovery codes are only meant as a fallback if you lose access to your main multi-factorauthentication credentials. Therefore, please activate a comprehensive MFA provider first.</source>
+        <target state="final">Wiederherstellungscodes sind nur als Ausweichlösung gedacht, wenn Sie den Zugang zu Ihren primären Multi-Faktor-Authentifizierungsdaten verlieren. Aktivieren Sie daher bitte zuerst einen umfassenden MFA-Provider.</target>
+      </trans-unit>
       <trans-unit id="setup.totpAuthUrlButton.title" resname="setup.totpAuthUrlButton.title" approved="yes">
         <source>Show authentication URL</source>
         <target state="final">Authentifizierungs-URL anzeigen</target>

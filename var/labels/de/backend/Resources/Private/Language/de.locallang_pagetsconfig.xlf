@@ -3,9 +3,61 @@
   <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_pagetsconfig.xlf" date="2023-01-19T14:41:00Z" product-name="cms" target-language="de">
     <header/>
     <body>
+      <trans-unit id="module.pagetsconfig.title" resname="module.pagetsconfig.title" approved="yes">
+        <source>Page TSconfig</source>
+        <target state="final">Page TSconfig</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig.description" resname="module.pagetsconfig.description" approved="yes">
+        <source>The page TSconfig module lets you manage configuration overrides for editors and option display throughout the Backend.</source>
+        <target state="final">Mit dem Page TSconfig Modul können Sie Konfigurationsüberschreibungen für Redakteure und die Anzeige von Optionen im gesamten Backend verwalten.</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig.shortDescription" resname="module.pagetsconfig.shortDescription" approved="yes">
+        <source>Page TSconfig tools</source>
+        <target state="final">Page TSconfig Tools</target>
+      </trans-unit>
       <trans-unit id="module.pagetsconfig.noAccess" resname="module.pagetsconfig.noAccess" approved="yes">
         <source>Access to this module denied.</source>
         <target state="final">Zugriff auf dieses Modul verweigert.</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_pages" resname="module.pagetsconfig_pages" approved="yes">
+        <source>Pages containing page TSconfig</source>
+        <target state="final">Seiten, die Page TSconfig enthalten</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_pages.headline" resname="module.pagetsconfig_pages.headline" approved="yes">
+        <source>Pages containing page TSconfig</source>
+        <target state="final">Seiten, die Page TSconfig enthalten</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_pages.description" resname="module.pagetsconfig_pages.description" approved="yes">
+        <source>Global overview of all pages in the database containing page TSconfig.</source>
+        <target state="final">Globale Übersicht aller Seiten in der Datenbank, die benutzerdefiniertes Page TSconfig enthalten.</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_pages.noRecords" resname="module.pagetsconfig_pages.noRecords" approved="yes">
+        <source>There are no pages containing page TSconfig settings in the page configuration.</source>
+        <target state="final">Es gibt keine Seiten mit Page TSconfig-Einstellungen in der Seitenkonfiguration.</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_pages.pagetitle" resname="module.pagetsconfig_pages.pagetitle" approved="yes">
+        <source>Page title</source>
+        <target state="final">Seitentitel</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_pages.written_tsconfig_lines" resname="module.pagetsconfig_pages.written_tsconfig_lines" approved="yes">
+        <source>Number of lines of code in field "TSconfig"</source>
+        <target state="final">Anzahl der Codezeilen im Feld "TSconfig"</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active" resname="module.pagetsconfig_active" approved="yes">
+        <source>Active page TSconfig</source>
+        <target state="final">Aktive Page TSconfig</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.headline" resname="module.pagetsconfig_active.headline" approved="yes">
+        <source>Active page TSconfig of page "%s"</source>
+        <target state="final">Aktive Page TSconfig auf Seite "%s"</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.description" resname="module.pagetsconfig_active.description" approved="yes">
+        <source>Overview of the current page TSconfig of the system. A targeted search for values and names is possible. The list of results can also be filtered according to conditions.</source>
+        <target state="final">Übersicht des aktuell geladenen Page TSconfig dieses Systems. Eine gezielte Suche nach Werten und Namen ist möglich. Die Ergebnisliste kann auch nach Bedingungen gefiltert werden.</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.displayConstantSubstitutions" resname="module.pagetsconfig_active.displayConstantSubstitutions" approved="yes">
+        <source>Substitute constants in page TSconfig</source>
+        <target state="final">Konstanten in Page TSconfig ersetzen</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_active.displayComments" resname="module.pagetsconfig_active.displayComments" approved="yes">
         <source>Display comments</source>
@@ -43,9 +95,25 @@
         <source>Constants from site settings</source>
         <target state="final">Konstanten aus der Site-Konfiguration</target>
       </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.activePageTsConfig" resname="module.pagetsconfig_active.activePageTsConfig" approved="yes">
+        <source>Page TSconfig</source>
+        <target state="final">Page TSconfig</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_active.noPageTSconfigAvailable" resname="module.pagetsconfig_active.noPageTSconfigAvailable" approved="yes">
+        <source>No suitable page TSconfig available.</source>
+        <target state="final">Keine passende Page TSconfig verfügbar.</target>
+      </trans-unit>
       <trans-unit id="module.pagetsconfig_active.tree.valueWithConstant" resname="module.pagetsconfig_active.tree.valueWithConstant" approved="yes">
         <source>Constant usage: [%s]</source>
         <target state="final">Konstanten-Nutzung: [%s]</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes" resname="module.pagetsconfig_includes" approved="yes">
+        <source>Included page TSconfig</source>
+        <target state="final">Eingebundene Page TSconfig</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.headline" resname="module.pagetsconfig_includes.headline" approved="yes">
+        <source>Included page TSconfig of page "%s"</source>
+        <target state="final">Eingebundene Page TSconfig auf der Seite "%s"</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_includes.description" resname="module.pagetsconfig_includes.description" approved="yes">
         <source>Overview of the included TypoScript and include order for the current page.</source>
@@ -55,13 +123,29 @@
         <source>Constants from site settings</source>
         <target state="final">Konstanten aus Site-Konfiguration</target>
       </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.pagetsconfig" resname="module.pagetsconfig_includes.pagetsconfig" approved="yes">
+        <source>Page TSconfig</source>
+        <target state="final">Page TSconfig</target>
+      </trans-unit>
       <trans-unit id="module.pagetsconfig_includes.panel.header.configuration" resname="module.pagetsconfig_includes.panel.header.configuration" approved="yes">
         <source>Configuration</source>
         <target state="final">Konfiguration</target>
       </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.panel.header.syntaxErrors" resname="module.pagetsconfig_includes.panel.header.syntaxErrors" approved="yes">
+        <source>Syntax scanner warnings</source>
+        <target state="final">Warnungen des Syntax-Scanner</target>
+      </trans-unit>
       <trans-unit id="module.pagetsconfig_includes.panel.header.conditions" resname="module.pagetsconfig_includes.panel.header.conditions" approved="yes">
         <source>Conditions</source>
         <target state="final">Bedingungen</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.panel.info.syntaxErrorCount.single" resname="module.pagetsconfig_includes.panel.info.syntaxErrorCount.single" approved="yes">
+        <source>%s syntax warning</source>
+        <target state="final">%s Syntax-Warnung</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.panel.info.syntaxErrorCount.multiple" resname="module.pagetsconfig_includes.panel.info.syntaxErrorCount.multiple" approved="yes">
+        <source>%s syntax warnings</source>
+        <target state="final">%s Syntax-Warnungen</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_includes.panel.info.conditionActiveCount.multiple" resname="module.pagetsconfig_includes.panel.info.conditionActiveCount.multiple" approved="yes">
         <source>%s active conditions</source>
@@ -74,6 +158,22 @@
       <trans-unit id="module.pagetsconfig_includes.panel.info.conditionWithConstant" resname="module.pagetsconfig_includes.panel.info.conditionWithConstant" approved="yes">
         <source>Constant usage: [%s]</source>
         <target state="final">Konstanten-Nutzung: [%s]</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.syntaxError.sourceCode" resname="module.pagetsconfig_includes.syntaxError.sourceCode" approved="yes">
+        <source>Show affected code snippet</source>
+        <target state="final">Zeige betroffenes Code-Snippet</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.syntaxError.type.line.invalid" resname="module.pagetsconfig_includes.syntaxError.type.line.invalid" approved="yes">
+        <source>Invalid line in "%1$s", line number "%2$s"</source>
+        <target state="final">Ungültige Zeile in "%1$s", Zeilennummer "%2$s"</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.syntaxError.type.brace.excess" resname="module.pagetsconfig_includes.syntaxError.type.brace.excess" approved="yes">
+        <source>Brace in excess in "%1$s", line number "%2$s"</source>
+        <target state="final">Klammer zu viel in "%1$s", Zeilennummer "%2$s"</target>
+      </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.syntaxError.type.brace.missing" resname="module.pagetsconfig_includes.syntaxError.type.brace.missing" approved="yes">
+        <source>Brace missing in "%1$s", line number "%2$s"</source>
+        <target state="final">Klammer fehlt in "%1$s", Zeilennummer "%2$s"</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_includes.tree.child.type.Segment" resname="module.pagetsconfig_includes.tree.child.type.Segment" approved="yes">
         <source>Code segment</source>

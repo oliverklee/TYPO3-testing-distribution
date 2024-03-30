@@ -239,17 +239,13 @@
         <source>Custom module options</source>
         <target state="final">Benutzerdefinierte Moduloptionen</target>
       </trans-unit>
-      <trans-unit id="be_groups.inc_access_lists" resname="be_groups.inc_access_lists" approved="yes">
-        <source>Include Access Lists</source>
-        <target state="final">Zugrifflisten mit einschließen</target>
-      </trans-unit>
       <trans-unit id="be_groups.subgroup" resname="be_groups.subgroup" approved="yes">
         <source>Inherit settings from groups</source>
         <target state="final">Einstellungen von Gruppen übernehmen</target>
       </trans-unit>
       <trans-unit id="be_groups.tabs.base_rights" resname="be_groups.tabs.base_rights" approved="yes">
-        <source>Access Lists</source>
-        <target state="final">Zugriffsliste</target>
+        <source>Access Rights</source>
+        <target state="final">Zugriffsrechte</target>
       </trans-unit>
       <trans-unit id="be_groups.tabs.mounts_and_workspaces" resname="be_groups.tabs.mounts_and_workspaces" approved="yes">
         <source>Mounts and Workspaces</source>
@@ -478,6 +474,10 @@
       <trans-unit id="doktype.I.2" resname="doktype.I.2" approved="yes">
         <source>Recycler</source>
         <target state="final">Papierkorb</target>
+      </trans-unit>
+      <trans-unit id="title" resname="title" approved="yes">
+        <source>Page title</source>
+        <target state="final">Seitentitel</target>
       </trans-unit>
       <trans-unit id="php_tree_stop" resname="php_tree_stop" approved="yes">
         <source>Hide child pages in page tree</source>

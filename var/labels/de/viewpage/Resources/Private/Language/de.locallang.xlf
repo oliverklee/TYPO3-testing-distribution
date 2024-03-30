@@ -67,6 +67,10 @@
         <source>View selected page in different screen resolutions</source>
         <target state="final">Ansicht ausgewählter Seiten in unterschiedlichen Bildschirm-Auflösungen</target>
       </trans-unit>
+      <trans-unit id="moduleMenu.dropdown.label" resname="moduleMenu.dropdown.label" approved="yes">
+        <source>Page language</source>
+        <target state="final">Sprache der Seite</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

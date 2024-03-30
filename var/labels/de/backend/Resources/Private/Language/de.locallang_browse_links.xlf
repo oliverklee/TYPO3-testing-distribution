@@ -3,6 +3,10 @@
   <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_browse_links.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
     <header/>
     <body>
+      <trans-unit id="openLinkWizard" resname="openLinkWizard" approved="yes">
+        <source>Open link wizard</source>
+        <target state="final">Link-Assistent öffnen</target>
+      </trans-unit>
       <trans-unit id="removeLink" resname="removeLink" approved="yes">
         <source>Remove link</source>
         <target state="final">Link entfernen</target>
