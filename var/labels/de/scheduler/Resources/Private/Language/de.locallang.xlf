@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
-  <file t3:id="1415814984" source-language="en" datatype="plaintext" original="EXT:scheduler/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="scheduler" target-language="de">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:scheduler/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="scheduler" target-language="de">
     <header/>
     <body>
-      <trans-unit id="action.add" resname="action.add" approved="yes">
-        <source>Add task</source>
-        <target state="final">Task hinzufügen</target>
-      </trans-unit>
-      <trans-unit id="action.edit" resname="action.edit" approved="yes">
-        <source>Edit task</source>
-        <target state="final">Task bearbeiten</target>
-      </trans-unit>
       <trans-unit id="button.cancel" resname="button.cancel" approved="yes">
         <source>Cancel</source>
         <target state="final">Abbrechen</target>
+      </trans-unit>
+      <trans-unit id="button.group.modalOk" resname="button.group.modalOk" approved="yes">
+        <source>Create group</source>
+        <target state="final">Gruppe erstellen</target>
       </trans-unit>
       <trans-unit id="function.scheduler" resname="function.scheduler" approved="yes">
         <source>Scheduled tasks</source>
         <target state="final">Geplante Tasks</target>
       </trans-unit>
       <trans-unit id="function.check" resname="function.check" approved="yes">
-        <source>Setup check</source>
-        <target state="final">Konfiguration prüfen</target>
+        <source>Scheduler setup check</source>
+        <target state="final">Aufgabenplaner Konfigurationsprüfung</target>
       </trans-unit>
       <trans-unit id="function.info" resname="function.info" approved="yes">
-        <source>Information</source>
-        <target state="final">Informationen</target>
+        <source>Available scheduler commands &amp; tasks</source>
+        <target state="final">Verfügbare Scheduler Commands &amp; Tasks</target>
+      </trans-unit>
+      <trans-unit id="function.edit" resname="function.edit" approved="yes">
+        <source>Edit scheduled task "%s"</source>
+        <target state="final">Geplante Aufgabe "%s" bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="function.add" resname="function.add" approved="yes">
+        <source>New task</source>
+        <target state="final">Neue Aufgabe</target>
+      </trans-unit>
+      <trans-unit id="function.group.add" resname="function.group.add" approved="yes">
+        <source>New group</source>
+        <target state="final">Neue Gruppe</target>
+      </trans-unit>
+      <trans-unit id="function.group.label" resname="function.group.label" approved="yes">
+        <source>Group name</source>
+        <target state="final">Gruppenname</target>
       </trans-unit>
       <trans-unit id="hdg.cliScript" resname="hdg.cliScript" approved="yes">
         <source>CLI script</source>
@@ -41,9 +53,12 @@
 					By default, the command to run in composer mode is `vendor/bin/typo3 scheduler:run`.
 				</source>
         <target state="final">
-					Das System läuft im Composer-Modus, der Pfad zur ausführbaren `typo3`-Datei konnte nicht zuverlässig ermittelt werden.
-					Standardmäßig lautet der Befehl zur Ausführung im Composer-Modus `vendor/bin/typo3 scheduler:run`.
-				</target>
+Das System läuft im Composer-Modus, der Pfad zur ausführbaren `typo3`-Datei konnte nicht zuverlässig ermittelt werden.
+					Standardmäßig lautet der Befehl zur Ausführung im Composer-Modus `vendor/bin/typo3 scheduler:run`.</target>
+      </trans-unit>
+      <trans-unit id="availableCommands" resname="availableCommands" approved="yes">
+        <source>This is the list of all available commands in this TYPO3 installation.</source>
+        <target state="final">Dies ist die Liste aller verfügbaren Commands in dieser TYPO3-Installation.</target>
       </trans-unit>
       <trans-unit id="hdg.lastRun" resname="hdg.lastRun" approved="yes">
         <source>Last run</source>
@@ -66,8 +81,8 @@
         <target state="final">Alle auswählen/abwählen</target>
       </trans-unit>
       <trans-unit id="label.class" resname="label.class" approved="yes">
-        <source>Class</source>
-        <target state="final">Klasse</target>
+        <source>Task</source>
+        <target state="final">Aufgabe</target>
       </trans-unit>
       <trans-unit id="label.cron" resname="label.cron" approved="yes">
         <source>Cron</source>
@@ -98,12 +113,12 @@
         <target state="final">Ende (HH:MM TT-MM-JJJJ)</target>
       </trans-unit>
       <trans-unit id="label.executeSelected" resname="label.executeSelected" approved="yes">
-        <source>Execute selected tasks</source>
-        <target state="final">Ausgewählte Tasks ausführen</target>
+        <source>Execute</source>
+        <target state="final">Ausführen</target>
       </trans-unit>
       <trans-unit id="label.cronjobSelected" resname="label.cronjobSelected" approved="yes">
-        <source>Execute selected tasks on next cron job</source>
-        <target state="final">Ausgewählte Tasks mit nächstem Cron-Job ausführen</target>
+        <source>Execute on next cron job</source>
+        <target state="final">Beim nächsten Cron-Job ausführen</target>
       </trans-unit>
       <trans-unit id="label.extension" resname="label.extension" approved="yes">
         <source>Extension</source>
@@ -209,6 +224,10 @@
         <source>Database tables</source>
         <target state="final">Datenbanktabellen</target>
       </trans-unit>
+      <trans-unit id="label.status" resname="label.status" approved="yes">
+        <source>Status</source>
+        <target state="final">Status</target>
+      </trans-unit>
       <trans-unit id="label.type" resname="label.type" approved="yes">
         <source>Type</source>
         <target state="final">Typ</target>
@@ -229,25 +248,53 @@
         <source>Amount of tasks in this scheduler task group</source>
         <target state="final">Anzahl von Tasks in dieser Taskgruppe</target>
       </trans-unit>
+      <trans-unit id="label.group.taskUnusedCount" resname="label.group.taskUnusedCount" approved="yes">
+        <source>Amount of unused task groups</source>
+        <target state="final">Anzahl ungenutzter Aufgabengruppen</target>
+      </trans-unit>
       <trans-unit id="label.noGroup" resname="label.noGroup" approved="yes">
-        <source>(no task group defined)</source>
-        <target state="final">(keine Taskgruppe festgelegt)</target>
+        <source>Not assigned to any task group</source>
+        <target state="final">Keine Aufgabengruppe zugewiesen</target>
       </trans-unit>
       <trans-unit id="label.noGroup.taskCount" resname="label.noGroup.taskCount" approved="yes">
         <source>Amount of tasks that are not assigned to any scheduler task group</source>
         <target state="final">Anzahl Tasks, die keiner Taskgruppe zugeordnet sind</target>
       </trans-unit>
-      <trans-unit id="label.noClass" resname="label.noClass" approved="yes">
-        <source>Tasks without registered classes</source>
-        <target state="final">Tasks ohne registrierte Klassen</target>
+      <trans-unit id="label.group.isDisabled" resname="label.group.isDisabled" approved="yes">
+        <source>disabled</source>
+        <target state="final">deaktiviert</target>
       </trans-unit>
-      <trans-unit id="label.noClass.taskCount" resname="label.noClass.taskCount" approved="yes">
-        <source>Amount of tasks without found class</source>
-        <target state="final">Anzahl Tasks, deren Klasse nicht gefunden werden konnte</target>
+      <trans-unit id="label.group.unused" resname="label.noGroup" approved="yes">
+        <source>Unused task groups</source>
+        <target state="final">Unbenutzte Aufgabengruppen</target>
+      </trans-unit>
+      <trans-unit id="label.group.tableColumn" resname="label.noGroup" approved="yes">
+        <source>Group</source>
+        <target state="final">Gruppe</target>
+      </trans-unit>
+      <trans-unit id="label.group.enable" resname="label.noGroup" approved="yes">
+        <source>Enable group</source>
+        <target state="final">Gruppe aktivieren</target>
+      </trans-unit>
+      <trans-unit id="label.group.disable" resname="label.noGroup" approved="yes">
+        <source>Disable group</source>
+        <target state="final">Gruppe deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="label.group.edit" resname="label.noGroup" approved="yes">
+        <source>Edit group</source>
+        <target state="final">Gruppe bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="label.errorClass" resname="label.errorClass" approved="yes">
+        <source>Broken tasks</source>
+        <target state="final">Defekte Aufgaben</target>
+      </trans-unit>
+      <trans-unit id="label.errorClass.taskCount" resname="label.errorClass.taskCount" approved="yes">
+        <source>Amount of broken tasks</source>
+        <target state="final">Anzahl defekter Aufgaben</target>
       </trans-unit>
       <trans-unit id="label.schedulableCommandName" resname="label.schedulableCommandName" approved="yes">
-        <source><![CDATA[Schedulable Command. <em>Save and reopen to define command arguments</em>]]></source>
-        <target state="final"><![CDATA[Planbarer Befehl. &lt;em&gt;Speichern und öffnen Sie dieses Fenster wieder, um die Argumente festzulegen.&lt;/em&gt;]]></target>
+        <source>Schedulable Command. Save and reopen to define command arguments</source>
+        <target state="final">Planbarer Befehl. Speichern und erneut öffnen, um Argumente zu definieren</target>
       </trans-unit>
       <trans-unit id="label.saveAndCreateNewTask" resname="label.saveAndCreateNewTask" approved="yes">
         <source>Save and create new task</source>
@@ -256,10 +303,6 @@
       <trans-unit id="label.addOptionToCommand" resname="label.addOptionToCommand" approved="yes">
         <source>Add option</source>
         <target state="final">Option hinzufügen</target>
-      </trans-unit>
-      <trans-unit id="msg.addError" resname="msg.addError" approved="yes">
-        <source>The task could not be added.</source>
-        <target state="final">Der Task konnte nicht hinzugefügt werden.</target>
       </trans-unit>
       <trans-unit id="msg.addSuccess" resname="msg.addSuccess" approved="yes">
         <source>The task was added successfully.</source>
@@ -294,8 +337,8 @@
         <target state="final">Das Enddatum liegt vor dem Startdatum.</target>
       </trans-unit>
       <trans-unit id="msg.executed" resname="msg.executed" approved="yes">
-        <source>Executed: %s</source>
-        <target state="final">Ausgeführt: %s</target>
+        <source>Task "%s" with uid "%s" has been executed.</source>
+        <target state="final">Die Aufgabe "%s" mit der UID "%s" wurde ausgeführt.</target>
       </trans-unit>
       <trans-unit id="msg.frequencyError" resname="msg.frequencyError" approved="yes">
         <source>Invalid frequency. Please enter either a number of seconds or a valid cron command. The cron parser said: %1$s [code: %2$d].</source>
@@ -306,8 +349,8 @@
         <target state="final">Die Informationen zur letzten Ausführung des Planers sind unvollständig.</target>
       </trans-unit>
       <trans-unit id="msg.infoScreenIntro" resname="msg.infoScreenIntro" approved="yes">
-        <source>This is the list of all available tasks in this TYPO3 installation. Click on the icon at the far right to directly create a new scheduled task of the chosen type.</source>
-        <target state="final">Dies ist eine Liste aller in dieser TYPO3-Installation verfügbaren Tasks. Klicken Sie auf das Symbol außen rechts, um einen neuen geplanten Task des gewählten Typs zu erstellen.</target>
+        <source>This is the list of all available tasks in this TYPO3 installation.</source>
+        <target state="final">Dies ist die Liste aller verfügbaren Aufgaben in dieser TYPO3-Installation.</target>
       </trans-unit>
       <trans-unit id="msg.invalidFrequency" resname="msg.invalidFrequency" approved="yes">
         <source>Invalid frequency. Please enter either a number of seconds or a valid cron command.</source>
@@ -321,7 +364,7 @@
         <source>The Scheduler was last started (%1$s) on %2$s at %3$s and ended on %4$s at %5$s.</source>
         <target state="final">Der Planer wurde zuletzt gestartet (%1$s) am %2$s um %3$s und endete am %4$s um %5$s.</target>
       </trans-unit>
-      <trans-unit id="msg.maynotDeleteRunningTask" resname="msg.maynotDeleteRunningTask" approved="yes">
+      <trans-unit id="msg.canNotDeleteRunningTask" resname="msg.canNotDeleteRunningTask" approved="yes">
         <source>A running task may not be deleted.</source>
         <target state="final">Ein laufender Task kann nicht gelöscht werden.</target>
       </trans-unit>
@@ -353,17 +396,33 @@
         <source>The selected task class could not be found. You should probably contact the task's developers.</source>
         <target state="final">Die ausgewählte Taskklasse konnte nicht gefunden werden. Sie sollten sich an den Entwickler des Tasks wenden.</target>
       </trans-unit>
+      <trans-unit id="msg.invalidTaskType" resname="msg.invalidTaskType" approved="yes">
+        <source>The selected task type must be either "single execution" or "recurring execution".</source>
+        <target state="final">Die ausgewählte Aufgabe muss entweder vom Typ "einmalig" oder "wiederkehrend" sein.</target>
+      </trans-unit>
       <trans-unit id="msg.noTasks" resname="msg.noTasks" approved="yes">
         <source>No tasks defined yet.</source>
         <target state="final">Noch keine Tasks angelegt.</target>
       </trans-unit>
       <trans-unit id="msg.notExecuted" resname="msg.notExecuted" approved="yes">
-        <source>Not executed: %s</source>
-        <target state="final">Nicht ausgeführt: %s</target>
+        <source>Task "%s" with uid "%s" has not been executed.</source>
+        <target state="final">Die Aufgabe "%s" mit der UID "%s" wurde nicht ausgeführt.</target>
       </trans-unit>
       <trans-unit id="msg.executionFailed" resname="msg.executionFailed" approved="yes">
         <source>Execution of task "%1$s" failed with the following message: %2$s</source>
         <target state="final">Die Ausführung von Task "%1$s" ist fehlgeschlagen mit folgender Meldung: %2$s</target>
+      </trans-unit>
+      <trans-unit id="msg.schedulingFailed" resname="msg.schedulingFailed" approved="yes">
+        <source>Scheduling of task "%1$s" failed with the following message: %2$s</source>
+        <target state="final">Die Ausführung des Task "%1$s" ist fehlgeschlagen. Fehlermeldung: %2$s</target>
+      </trans-unit>
+      <trans-unit id="msg.toggleDisableFailed" resname="msg.toggleDisableFailed" approved="yes">
+        <source>Toggling disabled state of task "%1$s" failed with the following message: %2$s</source>
+        <target state="final">Umschalten des deaktivierten Zustands des Tasks "%1$s" schlug mit folgender Meldung fehl: %2$s</target>
+      </trans-unit>
+      <trans-unit id="msg.stopTaskFailed" resname="msg.stopTaskFailed" approved="yes">
+        <source>Stopping task "%1$s" failed with the following message: %2$s</source>
+        <target state="final">Stoppen des Task "%1$s" fehlgeschlagen. Fehlermeldung: %2$s</target>
       </trans-unit>
       <trans-unit id="msg.executionFailureDefault" resname="msg.executionFailureDefault" approved="yes">
         <source>The execution failed, but the error message could not be retrieved (it was probably too large). Sorry.</source>
@@ -398,8 +457,12 @@
         <target state="final">Mindestens ein Cache-Backend auswählen.</target>
       </trans-unit>
       <trans-unit id="msg.invalidTaskClass" resname="msg.invalidTaskClass" approved="yes">
-        <source><![CDATA[<strong>The following tasks can not be executed. No related class could be found for none of the following listed tasks.</strong> You should consider reinstalling the extension that provided them or simply deleting the tasks. Please check also if any of the listed tasks have to be recreated manually (which can be necessary after an extension update due to breaking changes or missing migration scripts).]]></source>
-        <target state="final"><![CDATA[Die Klasse %s des registrierten Tasks konnte nicht gefunden werden. Sie sollten die Erweiterung, die den Task zur Verfügung stellt, neuinstallieren oder den Task löschen.]]></target>
+        <source><![CDATA[<strong>The following tasks are broken.</strong> If your task doesn't have a registered class, you should consider reinstalling the extension that provided them or simply deleting the task. In case the error is "Cannot unserialize [class]", the announced class must be removed from your task class, as it is not allowed to be used due to security reasons. Please check also if any of the listed tasks have to be recreated manually (which can be necessary after an extension update due to breaking changes or missing migration scripts).]]></source>
+        <target state="final"><![CDATA[<strong>Die folgenden Aufgaben sind defekt.</strong> Wenn Ihre Aufgabe keine registrierte Klasse hat, sollten Sie erwägen, die TYPO3 Extension, welche die Aufgabe zur Verfügung stellt, neu zu installieren oder einfach die Aufgabe zu löschen. Falls der Fehler "Cannot unserialize [class]" lautet, muss die erwähnte Klasse aus der Task-Klasse entfernt werden, da diese aus Sicherheitsgründen nicht verwendet werden darf. Bitte überprüfen Sie auch, ob eine der aufgelisteten Aufgaben manuell neu erstellt werden muss (was nach einer Aktualisierung der TYPO3 Extension aufgrund Änderungen im Code oder fehlender Migrationsskripte notwendig sein kann).]]></target>
+      </trans-unit>
+      <trans-unit id="msg.errorMessage" resname="msg.errorMessage" approved="yes">
+        <source>Error message</source>
+        <target state="final">Fehlermeldung</target>
       </trans-unit>
       <trans-unit id="msg.invalidTaskClassEdit" resname="msg.invalidTaskClassEdit" approved="yes">
         <source>The current class (%s) could not be found. Change it below or consider deleting this task altogether.</source>
@@ -410,8 +473,8 @@
         <target state="final">%s registrierte Tasks können nicht ausgeführt werden</target>
       </trans-unit>
       <trans-unit id="msg.invalidTaskClass.infobox.message" resname="msg.invalidTaskClass.infobox.message" approved="yes">
-        <source><![CDATA[<a href="#recordlist-task-group-missing">Please check the erroneous tasks!</a>]]></source>
-        <target state="final"><![CDATA[<a href="#recordlist-task-group-missing">Bitte überprüfen Sie die fehlerhaften Tasks!</a>]]></target>
+        <source><![CDATA[<a href="#scheduler-task-group-missing">Please check the erroneous tasks!</a>]]></source>
+        <target state="final"><![CDATA[<a href="#scheduler-task-group-missing">Bitte überprüfen Sie die fehlerhaften Tasks!</a>]]></target>
       </trans-unit>
       <trans-unit id="msg.schedulerSetupCheck" resname="msg.schedulerSetupCheck" approved="yes">
         <source>This screen checks if the requisites for running the Scheduler as a cron job are fulfilled. It also displays information about the last run of the Scheduler.</source>
@@ -470,8 +533,32 @@
         <target state="final">Fehler beim Parsen der aktuellen Optionen: "%s".</target>
       </trans-unit>
       <trans-unit id="msg.mandatoryArgumentMissing" resname="msg.mandatoryArgumentMissing" approved="yes">
-        <source>Argument "%s" is mandatory</source>
-        <target state="final">Argument "%s" ist zwingend erforderlich</target>
+        <source>Argument "%s" is mandatory.</source>
+        <target state="final">Argument "%s" ist zwingend erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="msg.taskEnabled" resname="msg.taskEnabled" approved="yes">
+        <source>Task "%s" with uid "%s" has been enabled.</source>
+        <target state="final">Aufgabe "%s" mit UID "%s" wurde aktiviert.</target>
+      </trans-unit>
+      <trans-unit id="msg.taskDisabled" resname="msg.taskDisabled" approved="yes">
+        <source>Task "%s" with uid "%s" has been disabled.</source>
+        <target state="final">Aufgabe "%s" mit UID "%s" wurde deaktiviert.</target>
+      </trans-unit>
+      <trans-unit id="msg.taskEnabledAndQueuedForExecution" resname="msg.taskEnabledAndQueuedForExecution" approved="yes">
+        <source>Task "%s" with uid "%s" has been enabled and queued for execution at next scheduler CLI run.</source>
+        <target state="final">Die Aufgabe "%s" mit der UID "%s" wurde aktiviert und in die Warteschlange für die Ausführung beim nächsten Start des Planers über die Konsole (CLI) aufgenommen.</target>
+      </trans-unit>
+      <trans-unit id="msg.taskQueuedForExecution" resname="msg.taskQueuedForExecution" approved="yes">
+        <source>Task "%s" with uid "%s" has been queued for execution at next scheduler CLI run.</source>
+        <target state="final">Die Aufgabe "%s" mit der UID "%s" wurde in die Warteschlange für die Ausführung beim nächsten Start des Planers über die Konsole (CLI) aufgenommen.</target>
+      </trans-unit>
+      <trans-unit id="msg.group.deleted" resname="msg.group.deleted" approved="yes">
+        <source>Successfully deleted scheduler group.</source>
+        <target state="final">Gruppe erfolgreich gelöscht.</target>
+      </trans-unit>
+      <trans-unit id="msg.group.delete.failed" resname="msg.group.delete.failed" approved="yes">
+        <source>Failed to delete scheduler group.</source>
+        <target state="final">Fehler beim Löschen der Gruppe.</target>
       </trans-unit>
       <trans-unit id="none" resname="none" approved="yes">
         <source>None</source>
@@ -488,6 +575,10 @@
       <trans-unit id="status.disabled" resname="status.disabled" approved="yes">
         <source>disabled</source>
         <target state="final">deaktiviert</target>
+      </trans-unit>
+      <trans-unit id="status.disabledByGroup" resname="status.disabledByGroup" approved="yes">
+        <source>disabled by group</source>
+        <target state="final">Deaktiviert durch Gruppe</target>
       </trans-unit>
       <trans-unit id="status.failure" resname="status.failure" approved="yes">
         <source>failure</source>
@@ -520,22 +611,6 @@
       <trans-unit id="action.run_task_cron" resname="action.run_task_cron" approved="yes">
         <source>Run task on next cron job</source>
         <target state="final">Task mit nächstem Cron-Job ausführen</target>
-      </trans-unit>
-      <trans-unit id="testTask.name" resname="testTask.name" approved="yes">
-        <source>Scheduler test task</source>
-        <target state="final">Planer-Test-Task</target>
-      </trans-unit>
-      <trans-unit id="testTask.description" resname="testTask.description" approved="yes">
-        <source>The Scheduler test task just sends a mail to a given email address. It is designed to be used for testing purposes.</source>
-        <target state="final">Der Test-Task schickt eine E-Mail an eine angegebene E-Mail-Adresse. Er ist zu Testzwecken gedacht.</target>
-      </trans-unit>
-      <trans-unit id="sleepTask.name" resname="sleepTask.name" approved="yes">
-        <source>Scheduler sleep task</source>
-        <target state="final">Planer-Pause-Task</target>
-      </trans-unit>
-      <trans-unit id="sleepTask.description" resname="sleepTask.description" approved="yes">
-        <source>This task does nothing but put PHP to sleep for a number of seconds. It is designed to test multiple executions.</source>
-        <target state="final">Dieser Task macht nichts außer PHP eine gewisse Anzahl Sekunden zu pausieren. Er ist zum Testen mehrfacher, gleichzeitiger Ausführungen des Planers gedacht.</target>
       </trans-unit>
       <trans-unit id="cachingFrameworkGarbageCollection.name" resname="cachingFrameworkGarbageCollection.name" approved="yes">
         <source>Caching framework garbage collection</source>
@@ -610,7 +685,7 @@
         <target state="final">Dieser Task anonymisiert IP-Adressen um den Datenschutz für bestehende Daten zu gewährleisten.</target>
       </trans-unit>
       <trans-unit id="label.ipAnonymization.table" resname="label.ipAnonymization.table" approved="yes">
-        <source>Table to anoymize</source>
+        <source>Table to anonymize</source>
         <target state="final">Zu anonymisierende Tabelle</target>
       </trans-unit>
       <trans-unit id="label.ipAnonymization.additionalInformationTable" resname="label.ipAnonymization.additionalInformationTable" approved="yes">
@@ -652,6 +727,38 @@
       <trans-unit id="command.example4" resname="command.example4" approved="yes">
         <source>Every Tuesday at 07:00</source>
         <target state="final">Jeden Dienstag um 7 Uhr</target>
+      </trans-unit>
+      <trans-unit id="systemmessage.noLastRun" resname="systemmessage.noLastRun" approved="yes">
+        <source><![CDATA[It seems the Scheduler has never yet run. Please check your <a href="%1$s">configuration</a>.]]></source>
+        <target state="final"><![CDATA[Offenbar wurde der Planer noch niemals ausgeführt. Bitte überprüfen Sie Ihre <a href="%1$s">Konfiguration</a>.]]></target>
+      </trans-unit>
+      <trans-unit id="systeminformation.lastRunLabel" resname="systeminformation.lastRunLabel" approved="yes">
+        <source>Last Scheduler run</source>
+        <target state="final">Letzter Lauf des Planer</target>
+      </trans-unit>
+      <trans-unit id="systeminformation.lastRunValue" resname="systeminformation.lastRunValue" approved="yes">
+        <source>%1$s at %2$s, Duration %3$s, (started %4$s)</source>
+        <target state="final">%1$s um %2$s, Dauer %3$s, (gestartet %4$s)</target>
+      </trans-unit>
+      <trans-unit id="msg.group.notification.error.title" resname="group.notification.error.title" approved="yes">
+        <source>Error</source>
+        <target state="final">Fehler</target>
+      </trans-unit>
+      <trans-unit id="msg.group.notification.error.message" resname="group.notification.error.message" approved="yes">
+        <source>Could not create group</source>
+        <target state="final">Konnte Gruppe nicht erstellen</target>
+      </trans-unit>
+      <trans-unit id="scheduler.form.palettes.general" resname="scheduler.form.palettes.general" approved="yes">
+        <source>General</source>
+        <target state="final">Allgemein</target>
+      </trans-unit>
+      <trans-unit id="scheduler.form.palettes.settings" resname="scheduler.form.palettes.settings" approved="yes">
+        <source>Settings</source>
+        <target state="final">Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="scheduler.form.palettes.timing" resname="scheduler.form.palettes.timing" approved="yes">
+        <source>Timing</source>
+        <target state="final">Timing</target>
       </trans-unit>
     </body>
   </file>
