@@ -68,6 +68,10 @@ return [
         'onetimeaccount' => [
             'enableConfigCheck' => '1',
         ],
+        'scheduler' => [
+            'maxLifetime' => '1440',
+            'showSampleTasks' => '1',
+        ],
         'seminars' => [
             'enableConfigCheck' => '1',
         ],
@@ -96,12 +100,12 @@ return [
             'CMS' => [
                 'deprecations' => [
                     'writerConfiguration' => [
-                        'notice' => [
+                        5 => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                                 'disabled' => false,
                             ],
                         ],
-                        5 => [
+                        'notice' => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                                 'disabled' => false,
                             ],
