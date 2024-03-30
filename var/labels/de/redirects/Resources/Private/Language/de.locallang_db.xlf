@@ -135,6 +135,10 @@
         <source>automatically created</source>
         <target state="final">automatisch erstellt</target>
       </trans-unit>
+      <trans-unit id="sys_redirect.webhook_type.typo3-redirect-was-hit" resname="sys_redirect.webhook_type.typo3-redirect-was-hit" approved="yes">
+        <source>... when a redirect has been hit</source>
+        <target state="final">... wenn eine Weiterleitung aufgerufen wurde</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

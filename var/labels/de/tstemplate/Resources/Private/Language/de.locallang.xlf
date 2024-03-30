@@ -23,6 +23,10 @@
         <source>Edit TypoScript Record</source>
         <target state="final">TypoScript Datensatz bearbeiten</target>
       </trans-unit>
+      <trans-unit id="submodules.option.active" resname="submodules.option.active" approved="yes">
+        <source>Active TypoScript</source>
+        <target state="final">Aktives TypoScript</target>
+      </trans-unit>
       <trans-unit id="submodules.option.templateAnalyzer" resname="submodules.option.templateAnalyzer" approved="yes">
         <source>Included TypoScript</source>
         <target state="final">Eingebundenes TypoScript</target>

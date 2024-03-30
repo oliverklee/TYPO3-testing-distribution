@@ -36,12 +36,16 @@
         <target state="final">Weiterleitungen werden bereinigt, wenn sie weniger als die angegebene Zahl verwendet werden</target>
       </trans-unit>
       <trans-unit id="cleanupRedirectsCommand.label.path" resname="cleanupRedirectsCommand.label.path" approved="yes">
-        <source>Cleanup redirects matching given path (as database like expression)&gt;</source>
-        <target state="final">Weiterleitungen werden bereinigt, wenn sie mit dem angegebenen Pfad übereinstimmen (als Datenbankanfrage)&gt;</target>
+        <source>Cleanup redirects matching given path (as database like expression)</source>
+        <target state="final">Bereinigung von Weiterleitungen, die dem angegebenen Pfad entsprechen (als datenbankähnlicher Ausdruck)</target>
       </trans-unit>
       <trans-unit id="cleanupRedirectsCommand.label.creationType" resname="cleanupRedirectsCommand.label.creationType" approved="yes">
         <source>Cleanup redirects matching provided creation type</source>
         <target state="final">Weiterleitungen mit bestimmten Erstellungstyp aufräumen</target>
+      </trans-unit>
+      <trans-unit id="cleanupRedirectsCommand.label.statusCode" resname="cleanupRedirectsCommand.label.statusCode" approved="yes">
+        <source>Cleanup redirects matching provided status code(s)</source>
+        <target state="final">Umleitungen werden bereinigt, wenn sie mit dem/den angegebenen Status Code(s) übereinstimmen</target>
       </trans-unit>
     </body>
   </file>

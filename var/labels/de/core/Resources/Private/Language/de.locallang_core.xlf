@@ -3,6 +3,10 @@
   <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_core.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
     <header/>
     <body>
+      <trans-unit id="labels.datepicker.label" resname="labels.datepicker.label" approved="yes">
+        <source>Open date picker</source>
+        <target state="final">Datumsauswahl öffnen</target>
+      </trans-unit>
       <trans-unit id="labels.openInNewWindow" resname="labels.openInNewWindow" approved="yes">
         <source>Open in new window</source>
         <target state="final">In neuem Fenster öffnen</target>
@@ -508,6 +512,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Move this item</source>
         <target state="final">Dieses Objekt verschieben</target>
       </trans-unit>
+      <trans-unit id="labels.browse_elements" resname="labels.browse_elemets" approved="yes">
+        <source>Browse for elements</source>
+        <target state="final">Nach Elementen suchen</target>
+      </trans-unit>
       <trans-unit id="labels.browse_folder" resname="labels.browse_folder" approved="yes">
         <source>Browse for folders</source>
         <target state="final">Nach Ordnern suchen</target>
@@ -696,6 +704,14 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>No translation parent assigned</source>
         <target state="final">Der Übersetzung ist kein Elternelement zugeordnet</target>
       </trans-unit>
+      <trans-unit id="labels.notEditableInWorkspace" resname="labels.notEditableInWorkspace" approved="yes">
+        <source>Not editable in this workspace without "Live" edit permissions.</source>
+        <target state="final">Nicht bearbeitbar in diesem Workspace ohne Bearbeitungsrechte für "Live".</target>
+      </trans-unit>
+      <trans-unit id="labels.editingLiveRecordsWarning" resname="labels.editingLiveRecordsWarning" approved="yes">
+        <source>Caution! These records are not versioned, you will edit the live records.</source>
+        <target state="final">Achtung! Diese Datensätze sind nicht versioniert. Sie bearbeiten die Live-Datensätze.</target>
+      </trans-unit>
       <trans-unit id="alttext.suggestSearching" resname="alttext.suggestSearching" approved="yes">
         <source>Searching...</source>
         <target state="final">Suche läuft...</target>
@@ -872,6 +888,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Upload failed! A file with &quot;{0}&quot; extension is expected!</source>
         <target state="final">Hochladen fehlgeschlagen! Eine Datei mit Erweiterung "{0}" wird erwartet!</target>
       </trans-unit>
+      <trans-unit id="file_upload.fileExtensionDisallowed" resname="file_upload.fileExtensionDisallowed" approved="yes">
+        <source>Upload failed! The file extension must not be &quot;{0}&quot;!</source>
+        <target state="final">Upload fehlgeschlagen! Die Dateiendung darf nicht "{0} " sein!</target>
+      </trans-unit>
       <trans-unit id="file_upload.uploadFailed" resname="file_upload.uploadFailed" approved="yes">
         <source>Upload of file &quot;{0}&quot; failed!</source>
         <target state="final">Hochladen von Datei "{0}" fehlgeschlagen!</target>
@@ -1047,6 +1067,18 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="online_media.error.invalid_url" resname="online_media.error.invalid_url" approved="yes">
         <source>Unknown/not allowed URL</source>
         <target state="final">Unbekannte/verbotene URL</target>
+      </trans-unit>
+      <trans-unit id="online_media.error.already_exists" resname="online_media.error.already_exists" approved="yes">
+        <source>Online media "%s" does already exist in this folder.</source>
+        <target state="final">Das Online-Medium "%s" existiert bereits in diesem Ordner.</target>
+      </trans-unit>
+      <trans-unit id="online_media.update.success" resname="online_media.update.success" approved="yes">
+        <source>Successfully updated online media</source>
+        <target state="final">Online-Medium erfolgreich aktualisiert</target>
+      </trans-unit>
+      <trans-unit id="online_media.update.error" resname="online_media.update.error" approved="yes">
+        <source>Error on updating online media</source>
+        <target state="final">Fehler beim Aktualisieren des Online-Mediums</target>
       </trans-unit>
       <trans-unit id="file_clipupload.php.warning_head" resname="file_clipupload.php.warning_head" approved="yes">
         <source>Upload path error</source>
@@ -1325,8 +1357,8 @@ Do you want to refresh it now?</source>
         <target state="final">Datei nicht gelöscht</target>
       </trans-unit>
       <trans-unit id="message.description.fileNotDeletedHasReferences" resname="message.description.fileNotDeletedHasReferences" approved="yes">
-        <source>The file cannot be deleted since it is still used at the following places</source>
-        <target state="final">Die Datei kann nicht gelöscht werden, weil sie noch an den folgenden Orten benutzt wird</target>
+        <source>The file "%s" cannot be deleted since it is still used at the following places</source>
+        <target state="final">Die Datei "%s" kann nicht gelöscht werden, da sie noch an folgenden Stellen verwendet wird</target>
       </trans-unit>
       <trans-unit id="message.header.folderNotDeletedHasFilesWithReferences" resname="message.header.folderNotDeletedHasFilesWithReferences" approved="yes">
         <source>Folder not deleted</source>
@@ -1499,6 +1531,10 @@ Do you want to refresh it now?</source>
       <trans-unit id="cm.select" resname="cm.select" approved="yes">
         <source>Select</source>
         <target state="final">Auswählen</target>
+      </trans-unit>
+      <trans-unit id="cm.selectFile" resname="cm.selectFile" approved="yes">
+        <source>Select %s</source>
+        <target state="final">Wähle %s</target>
       </trans-unit>
       <trans-unit id="cm.deselect" resname="cm.deselect" approved="yes">
         <source>Deselect</source>
@@ -1743,6 +1779,14 @@ Do you want to refresh it now?</source>
       <trans-unit id="warning.inline_use_combination" resname="warning.inline_use_combination" approved="yes">
         <source>This record will be modified globally.</source>
         <target state="final">Dieser Datensatz wird global verändert.</target>
+      </trans-unit>
+      <trans-unit id="warning.tableDisplayOrder.message" resname="warning.tableDisplayOrder.message" approved="yes">
+        <source>The TSconfig setting for "mod.web_list.tableDisplayOrder" contains a circular dependency and cannot be resolved.</source>
+        <target state="final">Die TSconfig Einstellung für "mod.web_list.tableDisplayOrder" enthält einen Zirkelbezug und kann nicht aufgelöst werden.</target>
+      </trans-unit>
+      <trans-unit id="warning.tableDisplayOrder.title" resname="warning.tableDisplayOrder.title" approved="yes">
+        <source>Circular table ordering detected</source>
+        <target state="final">Zirkelbezug in der Sortierungsreihenfolge erkannt</target>
       </trans-unit>
       <trans-unit id="error.formProtection.tokenInvalid" resname="error.formProtection.tokenInvalid" approved="yes">
         <source>Validating the security token of this form has failed. Please reload the form and submit it again.</source>

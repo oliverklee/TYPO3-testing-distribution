@@ -15,6 +15,10 @@
         <source>"%s" query entry removed!</source>
         <target state="final">Abfrageeintrag "%s" entfernt!</target>
       </trans-unit>
+      <trans-unit id="undelete_only" resname="undelete_only" approved="yes">
+        <source>undelete</source>
+        <target state="final">wiederherstellen</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

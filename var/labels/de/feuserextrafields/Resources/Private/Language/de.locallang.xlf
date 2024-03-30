@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="messages" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="full_salutation" approved="yes">
+        <source>Full salutation (possibly with name)</source>
+        <target state="final">Vollständige Anrede (evtl. mit Name)</target>
+      </trans-unit>
+      <trans-unit id="gender" approved="yes">
+        <source>Gender</source>
+        <target state="final">Geschlecht</target>
+      </trans-unit>
+      <trans-unit id="gender.99" approved="yes">
+        <source>(none provided)</source>
+        <target state="final">(nicht angegeben)</target>
+      </trans-unit>
+      <trans-unit id="gender.0" approved="yes">
+        <source>Mr.</source>
+        <target state="final">Herr</target>
+      </trans-unit>
+      <trans-unit id="gender.1" approved="yes">
+        <source>Mrs.</source>
+        <target state="final">Frau</target>
+      </trans-unit>
+      <trans-unit id="gender.2" approved="yes">
+        <source>diverse</source>
+        <target state="final">divers</target>
+      </trans-unit>
+      <trans-unit id="dateOfBirth" approved="yes">
+        <source>Birth date</source>
+        <target state="final">Geburtsdatum</target>
+      </trans-unit>
+      <trans-unit id="zone" approved="yes">
+        <source>State/province</source>
+        <target state="final">Bundesland</target>
+      </trans-unit>
+      <trans-unit id="privacy" approved="yes">
+        <source>Privacy agreement</source>
+        <target state="final">Datenschutzerklärung</target>
+      </trans-unit>
+      <trans-unit id="status" approved="yes">
+        <source>Job status</source>
+        <target state="final">Beschäftigungsstatus</target>
+      </trans-unit>
+      <trans-unit id="status.1" approved="yes">
+        <source>Student</source>
+        <target state="final">in Ausbildung</target>
+      </trans-unit>
+      <trans-unit id="status.2" approved="yes">
+        <source>Job seeking (full time)</source>
+        <target state="final">auf Arbeitssuche (Vollzeit)</target>
+      </trans-unit>
+      <trans-unit id="status.3" approved="yes">
+        <source>Working</source>
+        <target state="final">arbeitend</target>
+      </trans-unit>
+      <trans-unit id="status.4" approved="yes">
+        <source>Retired</source>
+        <target state="final">in Rente</target>
+      </trans-unit>
+      <trans-unit id="status.5" approved="yes">
+        <source>Job seeking (part time)</source>
+        <target state="final">auf Arbeitssuche (Teilzeit)</target>
+      </trans-unit>
+      <trans-unit id="comments" approved="yes">
+        <source>Comments</source>
+        <target state="final">Anmerkungen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

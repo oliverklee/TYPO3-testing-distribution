@@ -127,6 +127,14 @@
         <source>View redirect</source>
         <target state="final">Weiterleitung anzeigen</target>
       </trans-unit>
+      <trans-unit id="labels.delete.title" resname="labels.delete.title" approved="yes">
+        <source>Delete redirects</source>
+        <target state="final">Weiterleitungen löschen</target>
+      </trans-unit>
+      <trans-unit id="labels.delete.message" resname="labels.delete.message" approved="yes">
+        <source>Are you sure you want to delete all marked redirects?</source>
+        <target state="final">Sind Sie sicher, dass Sie alle markierten Weiterleitungen löschen wollen?</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

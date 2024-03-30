@@ -427,6 +427,14 @@ Um Sie beim Erstellen einer validen composer.json Datei für Ihre Extension zu u
         <source>Download Error</source>
         <target state="final">Fehler beim Herunterladen</target>
       </trans-unit>
+      <trans-unit id="extensionList.dependenciesResolveInstallError.title" resname="extensionList.dependenciesResolveInstallError.title" approved="yes">
+        <source>Install Error</source>
+        <target state="final">Installationsfehler</target>
+      </trans-unit>
+      <trans-unit id="extensionList.dependenciesResolveInstallError.message" resname="extensionList.dependenciesResolveInstallError.message" approved="yes">
+        <source>Your installation failed while resolving dependencies.</source>
+        <target state="final">Die Installation ist beim Auflösen von Abhängigkeiten fehlgeschlagen.</target>
+      </trans-unit>
       <trans-unit id="extensionList.dependenciesResolveDownloadSuccess.message" resname="extensionList.dependenciesResolveDownloadSuccess.message" approved="yes">
         <source>Your installation of {0} was successful.</source>
         <target state="final">Die Installation von {0} war erfolgreich.</target>

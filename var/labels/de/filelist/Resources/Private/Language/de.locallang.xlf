@@ -158,6 +158,10 @@
         <source>Create File</source>
         <target state="final">Datei erstellen</target>
       </trans-unit>
+      <trans-unit id="translations" resname="translations" approved="yes">
+        <source>Translations</source>
+        <target state="final">Übersetzungen</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
