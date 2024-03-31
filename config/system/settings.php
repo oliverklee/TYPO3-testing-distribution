@@ -64,6 +64,9 @@ return [
             'useMysqlFulltext' => '0',
             'xlhtml' => '/usr/bin/',
         ],
+        'scheduler' => [
+            'maxLifetime' => '1440',
+        ],
     ],
     'FE' => [
         'debug' => true,
@@ -85,12 +88,12 @@ return [
             'CMS' => [
                 'deprecations' => [
                     'writerConfiguration' => [
-                        'notice' => [
+                        5 => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                                 'disabled' => false,
                             ],
                         ],
-                        5 => [
+                        'notice' => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                                 'disabled' => false,
                             ],
