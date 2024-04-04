@@ -45,7 +45,7 @@ CREATE TABLE `backend_layout` (
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -79,7 +79,7 @@ CREATE TABLE `be_dashboards` (
   `widgets` text DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -131,7 +131,7 @@ CREATE TABLE `be_groups` (
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,7 +188,7 @@ CREATE TABLE `be_users` (
   KEY `username` (`username`),
   KEY `parent` (`pid`,`deleted`,`disable`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -228,7 +228,7 @@ CREATE TABLE `fe_groups` (
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,7 +305,7 @@ CREATE TABLE `fe_users` (
   KEY `is_online` (`is_online`),
   KEY `dummy` (`tx_oelib_is_dummy_record`),
   KEY `felogin_forgotHash` (`felogin_forgotHash`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -419,7 +419,7 @@ CREATE TABLE `pages` (
   KEY `translation_source` (`l10n_source`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -506,7 +506,7 @@ CREATE TABLE `static_countries` (
   `cn_country_zones` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=254 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=254 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -792,7 +792,7 @@ CREATE TABLE `static_country_zones` (
   `zn_country_table` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=711 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=711 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1488,7 +1488,7 @@ CREATE TABLE `static_currencies` (
   `cu_sub_symbol_right` varchar(12) NOT NULL DEFAULT '',
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=181 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=181 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1690,7 +1690,7 @@ CREATE TABLE `static_languages` (
   `lg_constructed` smallint(6) NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=200 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=200 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1916,7 +1916,7 @@ CREATE TABLE `static_territories` (
   `tr_name_en` varchar(50) NOT NULL DEFAULT '',
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1992,7 +1992,7 @@ CREATE TABLE `sys_file` (
   KEY `sha1` (`sha1`),
   KEY `parent` (`pid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2043,7 +2043,7 @@ CREATE TABLE `sys_file_collection` (
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2089,7 +2089,7 @@ CREATE TABLE `sys_file_metadata` (
   KEY `fal_filelist` (`l10n_parent`,`sys_language_uid`),
   KEY `parent` (`pid`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2127,7 +2127,7 @@ CREATE TABLE `sys_file_processedfile` (
   PRIMARY KEY (`uid`),
   KEY `combined_1` (`original`,`task_type`(100),`configurationsha1`),
   KEY `identifier` (`storage`,`identifier`(180))
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2189,7 +2189,7 @@ CREATE TABLE `sys_file_reference` (
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2228,7 +2228,7 @@ CREATE TABLE `sys_file_storage` (
   `processingfolder` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2263,7 +2263,7 @@ CREATE TABLE `sys_filemounts` (
   `read_only` smallint(5) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`,`hidden`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2294,7 +2294,7 @@ CREATE TABLE `sys_language` (
   `static_lang_isocode` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`hidden`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2340,7 +2340,7 @@ CREATE TABLE `sys_redirect` (
   PRIMARY KEY (`uid`),
   KEY `index_source` (`source_host`(80),`source_path`(80)),
   KEY `parent` (`pid`,`deleted`,`disabled`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2366,7 +2366,7 @@ CREATE TABLE `sys_registry` (
   `entry_value` mediumblob DEFAULT NULL,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `entry_identifier` (`entry_namespace`,`entry_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2417,7 +2417,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1711821234;'),
+(43,'core','sys_refindex_lastUpdate','i:1712248234;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -2468,7 +2468,7 @@ CREATE TABLE `sys_template` (
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2573,7 +2573,7 @@ CREATE TABLE `tt_content` (
   KEY `language` (`l18n_parent`,`sys_language_uid`),
   KEY `translation_source` (`l10n_source`),
   KEY `dummy` (`tx_oelib_is_dummy_record`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2633,7 +2633,7 @@ CREATE TABLE `tx_oelib_domain_model_germanzipcode` (
   `latitude` decimal(9,6) NOT NULL DEFAULT 0.000000,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=8290 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8290 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -10991,7 +10991,7 @@ CREATE TABLE `tx_seminars_attendances` (
   KEY `seminar` (`seminar`),
   KEY `user` (`user`),
   KEY `parent` (`pid`,`deleted`,`hidden`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11027,7 +11027,7 @@ CREATE TABLE `tx_seminars_attendances_checkboxes_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11056,7 +11056,7 @@ CREATE TABLE `tx_seminars_attendances_foods_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11085,7 +11085,7 @@ CREATE TABLE `tx_seminars_attendances_lodgings_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11119,7 +11119,7 @@ CREATE TABLE `tx_seminars_categories` (
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11155,7 +11155,7 @@ CREATE TABLE `tx_seminars_checkboxes` (
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11191,7 +11191,7 @@ CREATE TABLE `tx_seminars_event_types` (
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11227,7 +11227,7 @@ CREATE TABLE `tx_seminars_foods` (
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11265,7 +11265,7 @@ CREATE TABLE `tx_seminars_lodgings` (
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11305,7 +11305,7 @@ CREATE TABLE `tx_seminars_organizers` (
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11342,7 +11342,7 @@ CREATE TABLE `tx_seminars_payment_methods` (
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11447,7 +11447,7 @@ CREATE TABLE `tx_seminars_seminars` (
   KEY `slug` (`slug`(127)),
   FULLTEXT KEY `index_event_searchfields` (`accreditation_number`),
   FULLTEXT KEY `index_topic_searchfields` (`title`,`subtitle`,`description`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11489,7 +11489,7 @@ CREATE TABLE `tx_seminars_seminars_categories_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11521,7 +11521,7 @@ CREATE TABLE `tx_seminars_seminars_checkboxes_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11555,7 +11555,7 @@ CREATE TABLE `tx_seminars_seminars_feusers_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11584,7 +11584,7 @@ CREATE TABLE `tx_seminars_seminars_foods_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11626,7 +11626,7 @@ CREATE TABLE `tx_seminars_seminars_lodgings_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11663,7 +11663,7 @@ CREATE TABLE `tx_seminars_seminars_organizers_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11703,7 +11703,7 @@ CREATE TABLE `tx_seminars_seminars_organizing_partners_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11732,7 +11732,7 @@ CREATE TABLE `tx_seminars_seminars_payment_methods_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11766,7 +11766,7 @@ CREATE TABLE `tx_seminars_seminars_place_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11800,7 +11800,7 @@ CREATE TABLE `tx_seminars_seminars_requirements_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11831,7 +11831,7 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11864,7 +11864,7 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm_leaders` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11893,7 +11893,7 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm_partners` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11922,7 +11922,7 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm_tutors` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11951,7 +11951,7 @@ CREATE TABLE `tx_seminars_seminars_target_groups_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11995,7 +11995,7 @@ CREATE TABLE `tx_seminars_sites` (
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`,`city`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12033,7 +12033,7 @@ CREATE TABLE `tx_seminars_skills` (
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12085,7 +12085,7 @@ CREATE TABLE `tx_seminars_speakers` (
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`,`hidden`),
   FULLTEXT KEY `index_searchfields` (`title`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12119,7 +12119,7 @@ CREATE TABLE `tx_seminars_speakers_skills_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12153,7 +12153,7 @@ CREATE TABLE `tx_seminars_target_groups` (
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12200,7 +12200,7 @@ CREATE TABLE `tx_seminars_timeslots` (
   KEY `dummy` (`is_dummy_record`),
   KEY `seminar` (`seminar`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12232,7 +12232,7 @@ CREATE TABLE `tx_seminars_timeslots_speakers_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12264,7 +12264,7 @@ CREATE TABLE `tx_seminars_usergroups_categories_mm` (
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`),
   KEY `dummy` (`is_dummy_record`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12307,7 +12307,7 @@ CREATE TABLE `tx_tea_domain_model_tea` (
   KEY `translation_source` (`l10n_source`),
   KEY `owner` (`owner`),
   KEY `parent` (`pid`,`deleted`,`hidden`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12332,4 +12332,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-30 18:57:09
+-- Dump completed on 2024-04-04 18:38:00
