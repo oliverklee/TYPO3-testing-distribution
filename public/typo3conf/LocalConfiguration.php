@@ -13,11 +13,11 @@ return [
         'Connections' => [
             'Default' => [
                 'charset' => 'utf8mb4',
-                'collate' => 'utf8mb4_general_ci',
+                'collate' => 'utf8mb4_unicode_ci',
                 'driver' => 'pdo_mysql',
                 'tableoptions' => [
                     'charset' => 'utf8mb4',
-                    'collate' => 'utf8mb4_general_ci',
+                    'collate' => 'utf8mb4_unicode_ci',
                 ],
             ],
         ],
