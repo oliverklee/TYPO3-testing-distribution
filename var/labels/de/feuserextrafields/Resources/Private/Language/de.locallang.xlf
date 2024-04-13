@@ -3,67 +3,67 @@
   <file source-language="en" datatype="plaintext" original="messages" target-language="de">
     <header/>
     <body>
-      <trans-unit id="full_salutation" approved="yes">
+      <trans-unit id="full_salutation" resname="full_salutation" approved="yes">
         <source>Full salutation (possibly with name)</source>
         <target state="final">Vollständige Anrede (evtl. mit Name)</target>
       </trans-unit>
-      <trans-unit id="gender" approved="yes">
+      <trans-unit id="gender" resname="gender" approved="yes">
         <source>Gender</source>
         <target state="final">Geschlecht</target>
       </trans-unit>
-      <trans-unit id="gender.99" approved="yes">
+      <trans-unit id="gender.99" resname="gender.99" approved="yes">
         <source>(none provided)</source>
         <target state="final">(nicht angegeben)</target>
       </trans-unit>
-      <trans-unit id="gender.0" approved="yes">
+      <trans-unit id="gender.0" resname="gender.0" approved="yes">
         <source>Mr.</source>
         <target state="final">Herr</target>
       </trans-unit>
-      <trans-unit id="gender.1" approved="yes">
+      <trans-unit id="gender.1" resname="gender.1" approved="yes">
         <source>Mrs.</source>
         <target state="final">Frau</target>
       </trans-unit>
-      <trans-unit id="gender.2" approved="yes">
+      <trans-unit id="gender.2" resname="gender.2" approved="yes">
         <source>diverse</source>
         <target state="final">divers</target>
       </trans-unit>
-      <trans-unit id="dateOfBirth" approved="yes">
+      <trans-unit id="dateOfBirth" resname="dateOfBirth" approved="yes">
         <source>Birth date</source>
         <target state="final">Geburtsdatum</target>
       </trans-unit>
-      <trans-unit id="zone" approved="yes">
+      <trans-unit id="zone" resname="zone" approved="yes">
         <source>State/province</source>
         <target state="final">Bundesland</target>
       </trans-unit>
-      <trans-unit id="privacy" approved="yes">
+      <trans-unit id="privacy" resname="privacy" approved="yes">
         <source>Privacy agreement</source>
         <target state="final">Datenschutzerklärung</target>
       </trans-unit>
-      <trans-unit id="status" approved="yes">
+      <trans-unit id="status" resname="status" approved="yes">
         <source>Job status</source>
         <target state="final">Beschäftigungsstatus</target>
       </trans-unit>
-      <trans-unit id="status.1" approved="yes">
+      <trans-unit id="status.1" resname="status.1" approved="yes">
         <source>Student</source>
         <target state="final">in Ausbildung</target>
       </trans-unit>
-      <trans-unit id="status.2" approved="yes">
+      <trans-unit id="status.2" resname="status.2" approved="yes">
         <source>Job seeking (full time)</source>
         <target state="final">auf Arbeitssuche (Vollzeit)</target>
       </trans-unit>
-      <trans-unit id="status.3" approved="yes">
+      <trans-unit id="status.3" resname="status.3" approved="yes">
         <source>Working</source>
         <target state="final">arbeitend</target>
       </trans-unit>
-      <trans-unit id="status.4" approved="yes">
+      <trans-unit id="status.4" resname="status.4" approved="yes">
         <source>Retired</source>
         <target state="final">in Rente</target>
       </trans-unit>
-      <trans-unit id="status.5" approved="yes">
+      <trans-unit id="status.5" resname="status.5" approved="yes">
         <source>Job seeking (part time)</source>
         <target state="final">auf Arbeitssuche (Teilzeit)</target>
       </trans-unit>
-      <trans-unit id="comments" approved="yes">
+      <trans-unit id="comments" resname="comments" approved="yes">
         <source>Comments</source>
         <target state="final">Anmerkungen</target>
       </trans-unit>

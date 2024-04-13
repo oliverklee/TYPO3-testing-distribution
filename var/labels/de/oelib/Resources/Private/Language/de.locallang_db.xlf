@@ -3,23 +3,23 @@
   <file source-language="en" datatype="plaintext" original="messages" target-language="de">
     <header/>
     <body>
-      <trans-unit id="tx_oelib_domain_model_germanzipcode" approved="yes">
+      <trans-unit id="tx_oelib_domain_model_germanzipcode" resname="tx_oelib_domain_model_germanzipcode" approved="yes">
         <source>German ZIP codes</source>
         <target state="final">Deutsche Postleitzahlen</target>
       </trans-unit>
-      <trans-unit id="tx_oelib_domain_model_germanzipcode.zip_code" approved="yes">
+      <trans-unit id="tx_oelib_domain_model_germanzipcode.zip_code" resname="tx_oelib_domain_model_germanzipcode.zip_code" approved="yes">
         <source>ZIP code</source>
         <target state="final">Postleitzahl</target>
       </trans-unit>
-      <trans-unit id="tx_oelib_domain_model_germanzipcode.city_name" approved="yes">
+      <trans-unit id="tx_oelib_domain_model_germanzipcode.city_name" resname="tx_oelib_domain_model_germanzipcode.city_name" approved="yes">
         <source>City</source>
         <target state="final">Ort</target>
       </trans-unit>
-      <trans-unit id="tx_oelib_domain_model_germanzipcode.longitude" approved="yes">
+      <trans-unit id="tx_oelib_domain_model_germanzipcode.longitude" resname="tx_oelib_domain_model_germanzipcode.longitude" approved="yes">
         <source>Longitude</source>
         <target state="final">Längengrad</target>
       </trans-unit>
-      <trans-unit id="tx_oelib_domain_model_germanzipcode.latitude" approved="yes">
+      <trans-unit id="tx_oelib_domain_model_germanzipcode.latitude" resname="tx_oelib_domain_model_germanzipcode.latitude" approved="yes">
         <source>Latitude</source>
         <target state="final">Breitengrad</target>
       </trans-unit>
