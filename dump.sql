@@ -290,15 +290,16 @@ CREATE TABLE `fe_users` (
   `felogin_forgotHash` varchar(80) DEFAULT '',
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tx_seminars_registration` int(10) unsigned NOT NULL DEFAULT 0,
-  `gender` int(10) unsigned NOT NULL DEFAULT 0,
+  `gender` smallint(5) unsigned NOT NULL DEFAULT 0,
   `date_of_birth` int(11) NOT NULL DEFAULT 0,
   `zone` varchar(45) NOT NULL DEFAULT '',
-  `status` int(10) unsigned NOT NULL DEFAULT 0,
+  `status` smallint(5) unsigned NOT NULL DEFAULT 0,
   `comments` text DEFAULT NULL,
   `full_salutation` varchar(255) NOT NULL DEFAULT '',
   `static_info_country` varchar(3) NOT NULL DEFAULT '',
   `privacy` smallint(5) unsigned NOT NULL DEFAULT 0,
   `mfa` mediumblob DEFAULT NULL,
+  `terms_acknowledged` smallint(5) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`username`(100)),
   KEY `username` (`username`(100)),
@@ -315,12 +316,12 @@ CREATE TABLE `fe_users` (
 LOCK TABLES `fe_users` WRITE;
 /*!40000 ALTER TABLE `fe_users` DISABLE KEYS */;
 INSERT INTO `fe_users` VALUES
-(1,4,1670000836,1627917285,1,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna A. Attendee','Anna','Ariana','Attendee','Bertha-von-Suttner-Platz 1','+29 228 111111','','attendee@example.com','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53111','Bonn','Germany','','Anna Enterprises','0','',1671406711,1671406711,'','',0,0,0,0,'',0,NULL,'Hello Anna!','',0,NULL),
-(2,4,1627922794,1627922794,1,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0,0,0,'',0,NULL,'','',0,NULL),
-(3,4,1627922848,1627922848,1,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com',NULL,'','','','','','',NULL,'',1687429506,1687429569,'','',0,0,0,0,'',0,NULL,'','',0,NULL),
-(4,4,1628002830,1628002830,1,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com',NULL,'','','','','','',NULL,'',0,0,'','',0,0,0,0,'',0,NULL,'','',0,NULL),
-(5,4,1628002865,1628002862,1,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com',NULL,'','','','','','','0','',0,0,'','',0,0,0,0,'',0,NULL,'','',0,NULL),
-(6,4,1670000977,1670000977,2,0,0,0,0,'','0','admin','$argon2i$v=19$m=65536,t=16,p=1$cjR4ZVR1NXlLMUJIYkZoUQ$7HXMQwbSppGCYiBAYbMuyHOsi1FRWttEBCwQqF/t53U','4,3,1','Anton R. Admin','Anton','R.','Admin','Admin Avenue 4','+49 228 12345678','','admin@example.com',NULL,'','53111','Bonn','Germany','','Admin Inc.',NULL,'',1671044482,1671044482,'','',0,0,99,0,'',0,'','Bonjour Anton!','',0,NULL);
+(1,4,1670000836,1627917285,1,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna A. Attendee','Anna','Ariana','Attendee','Bertha-von-Suttner-Platz 1','+29 228 111111','','attendee@example.com','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53111','Bonn','Germany','','Anna Enterprises','0','',1671406711,1671406711,'','',0,0,0,0,'',0,NULL,'Hello Anna!','',0,NULL,0),
+(2,4,1627922794,1627922794,1,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0),
+(3,4,1627922848,1627922848,1,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com',NULL,'','','','','','',NULL,'',1687429506,1687429569,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0),
+(4,4,1628002830,1628002830,1,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com',NULL,'','','','','','',NULL,'',0,0,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0),
+(5,4,1628002865,1628002862,1,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com',NULL,'','','','','','','0','',0,0,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0),
+(6,4,1670000977,1670000977,2,0,0,0,0,'','0','admin','$argon2i$v=19$m=65536,t=16,p=1$cjR4ZVR1NXlLMUJIYkZoUQ$7HXMQwbSppGCYiBAYbMuyHOsi1FRWttEBCwQqF/t53U','4,3,1','Anton R. Admin','Anton','R.','Admin','Admin Avenue 4','+49 228 12345678','','admin@example.com',NULL,'','53111','Bonn','Germany','','Admin Inc.',NULL,'',1671044482,1671044482,'','',0,0,99,0,'',0,'','Bonjour Anton!','',0,NULL,0);
 /*!40000 ALTER TABLE `fe_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2417,7 +2418,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1712248234;'),
+(43,'core','sys_refindex_lastUpdate','i:1713219322;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -12332,4 +12333,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-04 18:38:00
+-- Dump completed on 2024-04-16  0:16:00
