@@ -39,6 +39,10 @@
         <source>Privacy agreement</source>
         <target state="final">Datenschutzerklärung</target>
       </trans-unit>
+      <trans-unit id="terms_acknowledged" resname="comments" approved="yes">
+        <source>Terms acknowledged</source>
+        <target state="final">AGB bestätigt</target>
+      </trans-unit>
       <trans-unit id="status" resname="status" approved="yes">
         <source>Job status</source>
         <target state="final">Beschäftigungsstatus</target>
