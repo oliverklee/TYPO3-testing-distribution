@@ -1,4 +1,8 @@
 <?php
+
+use TYPO3\CMS\Core\Log\LogLevel;
+use TYPO3\CMS\Core\Log\Writer\FileWriter;
+
 return [
     'BE' => [
         'debug' => true,
@@ -87,17 +91,36 @@ return [
         'processor_path' => '/usr/bin/',
     ],
     'LOG' => [
+        'writerConfiguration' => [
+            LogLevel::DEBUG => [
+                FileWriter::class => [
+                    'disabled' => false,
+                    'logFileInfix' => 'debug',
+                ],
+            ],
+            LogLevel::INFO => [
+                FileWriter::class => [
+                    'disabled' => false,
+                    'logFileInfix' => 'info',
+                ],
+            ],
+        ],
         'TYPO3' => [
+            'HtmlSanitizer' => [
+                'writerConfiguration' => [
+                    LogLevel::DEBUG => [
+                        FileWriter::class => [
+                            'disabled' => false,
+                            'logFileInfix' => 'html',
+                        ],
+                    ],
+                ],
+            ],
             'CMS' => [
                 'deprecations' => [
                     'writerConfiguration' => [
-                        5 => [
-                            'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
-                                'disabled' => false,
-                            ],
-                        ],
-                        'notice' => [
-                            'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
+                        LogLevel::NOTICE => [
+                            FileWriter::class => [
                                 'disabled' => false,
                             ],
                         ],
