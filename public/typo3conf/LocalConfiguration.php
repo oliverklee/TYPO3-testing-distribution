@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$YU5FTVJBdExRaUFJNnhvbw$wSZvR/qYmk/cD4xUdxsR4HFQYSkybvbL8CdRvGSa1sA',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$NWw5dHE4ZUpGLnh0eFBsRg$23YWgVR/GYmHuqn+usxBbekhKBAyXoYbf8N03CfFq4o',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -128,7 +128,7 @@ return [
     ],
     'MAIL' => [
         'transport' => 'sendmail',
-        'transport_sendmail_command' => '/usr/local/bin/mailpit sendmail --smtp-addr 127.0.0.1:1025',
+        'transport_sendmail_command' => '/usr/local/bin/mailpit sendmail -t --smtp-addr 127.0.0.1:1025',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',
