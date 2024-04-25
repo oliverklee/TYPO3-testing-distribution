@@ -104,6 +104,18 @@ return [
                     'logFileInfix' => 'info',
                 ],
             ],
+            LogLevel::NOTICE => [
+                FileWriter::class => [
+                    'disabled' => false,
+                    'logFileInfix' => 'notice',
+                ],
+            ],
+            LogLevel::WARNING => [
+                FileWriter::class => [
+                    'disabled' => false,
+                    'logFileInfix' => 'warning',
+                ],
+            ],
         ],
         'TYPO3' => [
             'HtmlSanitizer' => [
