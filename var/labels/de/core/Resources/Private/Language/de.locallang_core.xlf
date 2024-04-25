@@ -2028,6 +2028,14 @@ Do you want to refresh it now?</source>
         <source>Today</source>
         <target state="final">Heute</target>
       </trans-unit>
+      <trans-unit id="labels.contextMenu.open" resname="labels.contextMenu.open" approved="yes">
+        <source>Open context menu</source>
+        <target state="final">Kontextmenü öffnen</target>
+      </trans-unit>
+      <trans-unit id="labels.contextMenu.open.recordLabel" resname="labels.contextMenu.open.recordLabel" approved="yes">
+        <source>Open context menu for record: %s</source>
+        <target state="final">Kontextmenü für Datensatz öffnen: %s</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -3,6 +3,14 @@
   <file source-language="en" datatype="plaintext" original="messages" target-language="de">
     <header/>
     <body>
+      <trans-unit id="crdate" resname="crdate" approved="yes">
+        <source>Creation date</source>
+        <target state="final">Erstellungsdatum</target>
+      </trans-unit>
+      <trans-unit id="tstamp" resname="tstamp" approved="yes">
+        <source>Change date</source>
+        <target state="final">Änderungsdatum</target>
+      </trans-unit>
       <trans-unit id="full_salutation" resname="full_salutation" approved="yes">
         <source>Full salutation (possibly with name)</source>
         <target state="final">Vollständige Anrede (evtl. mit Name)</target>

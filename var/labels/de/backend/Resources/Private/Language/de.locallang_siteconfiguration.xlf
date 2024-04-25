@@ -31,6 +31,10 @@
         <source>Add new site configuration for this site</source>
         <target state="final">Neue Site-Konfiguration für diese Seite hinzufügen</target>
       </trans-unit>
+      <trans-unit id="overview.editSiteConfiguration" resname="overview.editSiteConfiguration" approved="yes">
+        <source>Edit site configuration</source>
+        <target state="final">Seitenkonfiguration bearbeiten</target>
+      </trans-unit>
       <trans-unit id="overview.deleteSiteConfiguration" resname="overview.deleteSiteConfiguration" approved="yes">
         <source>Delete site configuration</source>
         <target state="final">Site-Konfiguration löschen</target>
