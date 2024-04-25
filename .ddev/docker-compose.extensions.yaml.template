@@ -1,6 +1,5 @@
 # This is a template file for mounting your local extensions into this distribution.
 # Copy this file to docker-compose.src/extensions.yaml and modify it to your needs. (More details in the README.)
-version: "3.6"
 
 services:
   web:
