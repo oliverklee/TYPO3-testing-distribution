@@ -1,5 +1,8 @@
 <?php
 
+declare(strict_types=1);
+
 $config = \TYPO3\CodingStandards\CsFixerConfig::create();
-$config->getFinder()->in('src/');
+$config->setParallelConfig(\PhpCsFixer\Runner\Parallel\ParallelConfigFactory::detect());
+$config->getFinder()->in(__DIR__ . '/config')->in(__DIR__ . '/src');
 return $config;
