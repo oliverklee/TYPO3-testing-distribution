@@ -1,8 +1,10 @@
 <?php
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+ExtensionManagementUtility::addPageTSConfig(
     '@import "EXT:site_dev/Configuration/TsConfig/Page/"'
 );
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
+ExtensionManagementUtility::addUserTSConfig(
     '@import "EXT:site_dev/Configuration/TsConfig/User/"'
 );

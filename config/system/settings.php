@@ -1,5 +1,7 @@
 <?php
 
+use TYPO3\CMS\Core\Cache\Backend\Typo3DatabaseBackend;
+use TYPO3\CMS\Core\Crypto\PasswordHashing\Argon2idPasswordHash;
 use TYPO3\CMS\Core\Log\LogLevel;
 use TYPO3\CMS\Core\Log\Writer\FileWriter;
 
@@ -8,7 +10,7 @@ return [
         'debug' => true,
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$LllPa2ZNY29LU2RRcGpUdQ$SgfBdtrn3pBh7s7NeGipTaTd0K3F67iAJCmSQB9RbI8',
         'passwordHashing' => [
-            'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2idPasswordHash',
+            'className' => Argon2idPasswordHash::class,
             'options' => [],
         ],
     ],
@@ -78,7 +80,7 @@ return [
     'FE' => [
         'debug' => true,
         'passwordHashing' => [
-            'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2idPasswordHash',
+            'className' => Argon2idPasswordHash::class,
             'options' => [],
         ],
     ],
@@ -153,22 +155,22 @@ return [
         'caching' => [
             'cacheConfigurations' => [
                 'hash' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'backend' => Typo3DatabaseBackend::class,
                 ],
                 'imagesizes' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'backend' => Typo3DatabaseBackend::class,
                     'options' => [
                         'compression' => true,
                     ],
                 ],
                 'pages' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'backend' => Typo3DatabaseBackend::class,
                     'options' => [
                         'compression' => true,
                     ],
                 ],
                 'rootline' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'backend' => Typo3DatabaseBackend::class,
                     'options' => [
                         'compression' => true,
                     ],
