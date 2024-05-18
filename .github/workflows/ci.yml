@@ -5,7 +5,7 @@ on:
 jobs:
   php-lint:
     name: "PHP linter"
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: "Checkout"
         uses: actions/checkout@v4
@@ -31,7 +31,7 @@ jobs:
           - '8.2'
   composer-validate:
     name: "Composer validate"
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: "Checkout"
         uses: actions/checkout@v4
@@ -53,7 +53,7 @@ jobs:
           - '8.2'
   code-quality:
     name: "Code quality checks"
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     needs: composer-validate
     steps:
       - name: "Checkout"
