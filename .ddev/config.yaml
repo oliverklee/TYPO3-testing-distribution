@@ -9,11 +9,13 @@ xdebug_enabled: false
 additional_hostnames:
   - "typo3-testing-10-4-en"
 additional_fqdns: [ ]
-mariadb_version: "10.6"
-mysql_version: ""
+database:
+  type: mariadb
+  version: "10.6"
 use_dns_when_possible: true
 timezone: Europe/Berlin
 composer_version: "2.5"
 web_environment: [ ]
+nodejs_version: "22"
 
 # This config.yaml was created with ddev version v1.17.7
