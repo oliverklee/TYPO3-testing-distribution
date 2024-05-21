@@ -290,7 +290,7 @@ CREATE TABLE `fe_users` (
   `felogin_forgotHash` varchar(80) DEFAULT '',
   `tx_oelib_is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tx_seminars_registration` int(10) unsigned NOT NULL DEFAULT 0,
-  `gender` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `gender` smallint(5) unsigned NOT NULL DEFAULT 99,
   `date_of_birth` int(11) NOT NULL DEFAULT 0,
   `zone` varchar(45) NOT NULL DEFAULT '',
   `status` smallint(5) unsigned NOT NULL DEFAULT 0,
@@ -300,6 +300,9 @@ CREATE TABLE `fe_users` (
   `privacy` smallint(5) unsigned NOT NULL DEFAULT 0,
   `mfa` mediumblob DEFAULT NULL,
   `terms_acknowledged` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `privacy_date_of_acceptance` int(10) unsigned NOT NULL DEFAULT 0,
+  `terms_date_of_acceptance` int(10) unsigned NOT NULL DEFAULT 0,
+  `vat_in` varchar(15) NOT NULL DEFAULT '',
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`username`(100)),
   KEY `username` (`username`(100)),
@@ -316,12 +319,12 @@ CREATE TABLE `fe_users` (
 LOCK TABLES `fe_users` WRITE;
 /*!40000 ALTER TABLE `fe_users` DISABLE KEYS */;
 INSERT INTO `fe_users` VALUES
-(1,4,1670000836,1627917285,1,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna A. Attendee','Anna','Ariana','Attendee','Bertha-von-Suttner-Platz 1','+29 228 111111','','attendee@example.com','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53111','Bonn','Germany','','Anna Enterprises','0','',1671406711,1671406711,'','',0,0,0,0,'',0,NULL,'Hello Anna!','',0,NULL,0),
-(2,4,1627922794,1627922794,1,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0),
-(3,4,1627922848,1627922848,1,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com',NULL,'','','','','','',NULL,'',1687429506,1687429569,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0),
-(4,4,1628002830,1628002830,1,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com',NULL,'','','','','','',NULL,'',0,0,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0),
-(5,4,1628002865,1628002862,1,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com',NULL,'','','','','','','0','',0,0,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0),
-(6,4,1670000977,1670000977,2,0,0,0,0,'','0','admin','$argon2i$v=19$m=65536,t=16,p=1$cjR4ZVR1NXlLMUJIYkZoUQ$7HXMQwbSppGCYiBAYbMuyHOsi1FRWttEBCwQqF/t53U','4,3,1','Anton R. Admin','Anton','R.','Admin','Admin Avenue 4','+49 228 12345678','','admin@example.com',NULL,'','53111','Bonn','Germany','','Admin Inc.',NULL,'',1671044482,1671044482,'','',0,0,99,0,'',0,'','Bonjour Anton!','',0,NULL,0);
+(1,4,1670000836,1627917285,1,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna A. Attendee','Anna','Ariana','Attendee','Bertha-von-Suttner-Platz 1','+29 228 111111','','attendee@example.com','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53111','Bonn','Germany','','Anna Enterprises','0','',1671406711,1671406711,'','',0,0,0,0,'',0,NULL,'Hello Anna!','',0,NULL,0,0,0,''),
+(2,4,1627922794,1627922794,1,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0,0,0,''),
+(3,4,1627922848,1627922848,1,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com',NULL,'','','','','','',NULL,'',1687429506,1687429569,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0,0,0,''),
+(4,4,1628002830,1628002830,1,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com',NULL,'','','','','','',NULL,'',0,0,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0,0,0,''),
+(5,4,1628002865,1628002862,1,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com',NULL,'','','','','','','0','',0,0,'','',0,0,0,0,'',0,NULL,'','',0,NULL,0,0,0,''),
+(6,4,1670000977,1670000977,2,0,0,0,0,'','0','admin','$argon2i$v=19$m=65536,t=16,p=1$cjR4ZVR1NXlLMUJIYkZoUQ$7HXMQwbSppGCYiBAYbMuyHOsi1FRWttEBCwQqF/t53U','4,3,1','Anton R. Admin','Anton','R.','Admin','Admin Avenue 4','+49 228 12345678','','admin@example.com',NULL,'','53111','Bonn','Germany','','Admin Inc.',NULL,'',1671044482,1671044482,'','',0,0,99,0,'',0,'','Bonjour Anton!','',0,NULL,0,0,0,'');
 /*!40000 ALTER TABLE `fe_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2418,7 +2421,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1714834021;'),
+(43,'core','sys_refindex_lastUpdate','i:1716301686;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -12287,7 +12290,7 @@ DROP TABLE IF EXISTS `tx_tea_domain_model_tea`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tx_tea_domain_model_tea` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(10) unsigned NOT NULL DEFAULT 0,
+  `pid` int(11) NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
@@ -12305,10 +12308,15 @@ CREATE TABLE `tx_tea_domain_model_tea` (
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `starttime` int(10) unsigned NOT NULL DEFAULT 0,
   `endtime` int(10) unsigned NOT NULL DEFAULT 0,
+  `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
+  `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
+  `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
+  `t3ver_stage` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `translation_source` (`l10n_source`),
   KEY `owner` (`owner`),
-  KEY `parent` (`pid`,`deleted`,`hidden`)
+  KEY `parent` (`pid`,`deleted`,`hidden`),
+  KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -12319,9 +12327,9 @@ CREATE TABLE `tx_tea_domain_model_tea` (
 LOCK TABLES `tx_tea_domain_model_tea` WRITE;
 /*!40000 ALTER TABLE `tx_tea_domain_model_tea` DISABLE KEYS */;
 INSERT INTO `tx_tea_domain_model_tea` VALUES
-(1,3,1627916201,1627916201,1,0,'Earl Grey','<p>Fruchtig-duftend.</p>',0,'0',0,0,0,NULL,NULL,0,0,0,0),
-(2,3,1687429497,1627916222,1,0,'Darjeeling','<p>Frisch und zart.</p>',0,'',0,0,0,NULL,'{\"title\":\"\",\"description\":\"\",\"image\":\"\",\"owner\":\"\",\"fe_group\":\"\"}',3,0,0,0),
-(3,3,1683114389,1683114372,2,0,'Earl Grey (English)','<p>Fruity and fragrant.</p>',0,'',1,1,1,NULL,'{\"l18n_parent\":\"0\",\"l18n_diffsource\":\"\",\"title\":\"Earl Grey\",\"description\":\"<p>Fruchtig-duftend.<\\/p>\",\"image\":\"0\",\"sys_language_uid\":\"0\",\"l10n_source\":\"0\",\"fe_group\":\"0\"}',0,0,0,0);
+(1,3,1627916201,1627916201,1,0,'Earl Grey','<p>Fruchtig-duftend.</p>',0,'0',0,0,0,NULL,NULL,0,0,0,0,0,0,0,0),
+(2,3,1687429497,1627916222,1,0,'Darjeeling','<p>Frisch und zart.</p>',0,'',0,0,0,NULL,'{\"title\":\"\",\"description\":\"\",\"image\":\"\",\"owner\":\"\",\"fe_group\":\"\"}',3,0,0,0,0,0,0,0),
+(3,3,1683114389,1683114372,2,0,'Earl Grey (English)','<p>Fruity and fragrant.</p>',0,'',1,1,1,NULL,'{\"l18n_parent\":\"0\",\"l18n_diffsource\":\"\",\"title\":\"Earl Grey\",\"description\":\"<p>Fruchtig-duftend.<\\/p>\",\"image\":\"0\",\"sys_language_uid\":\"0\",\"l10n_source\":\"0\",\"fe_group\":\"0\"}',0,0,0,0,0,0,0,0);
 /*!40000 ALTER TABLE `tx_tea_domain_model_tea` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -12334,4 +12342,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-04 16:47:55
+-- Dump completed on 2024-05-21 16:28:38
