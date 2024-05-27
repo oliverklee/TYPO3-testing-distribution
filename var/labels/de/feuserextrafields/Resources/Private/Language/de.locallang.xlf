@@ -47,9 +47,17 @@
         <source>Privacy agreement</source>
         <target state="final">Datenschutzerklärung</target>
       </trans-unit>
-      <trans-unit id="terms_acknowledged" resname="comments" approved="yes">
+      <trans-unit id="privacyDateOfAcceptance" resname="privacyDateOfAcceptance" approved="yes">
+        <source>Privacy agreement acknowledged at</source>
+        <target state="final">Datenschutzvereinbarung bestätigt am</target>
+      </trans-unit>
+      <trans-unit id="terms_acknowledged" resname="terms_acknowledged" approved="yes">
         <source>Terms acknowledged</source>
         <target state="final">AGB bestätigt</target>
+      </trans-unit>
+      <trans-unit id="termsDateOfAcceptance" resname="termsDateOfAcceptance" approved="yes">
+        <source>Terms acknowledged at</source>
+        <target state="final">Datum der Zustimmung zu den AGB</target>
       </trans-unit>
       <trans-unit id="status" resname="status" approved="yes">
         <source>Job status</source>
@@ -78,6 +86,10 @@
       <trans-unit id="comments" resname="comments" approved="yes">
         <source>Comments</source>
         <target state="final">Anmerkungen</target>
+      </trans-unit>
+      <trans-unit id="vatIn" resname="vatIn" approved="yes">
+        <source>VAT identification number (VATIN)</source>
+        <target state="final">Umsatzsteuer-Identifikationsnummer (USt-IdNr.)</target>
       </trans-unit>
     </body>
   </file>
