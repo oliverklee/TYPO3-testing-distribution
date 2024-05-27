@@ -87,6 +87,14 @@
         <source>Canonical link</source>
         <target state="final">Kanonischer Link</target>
       </trans-unit>
+      <trans-unit id="pages.canonical_link.description" resname="pages.canonical_link.description" approved="yes">
+        <source>A canonical URL is the URL of a page that search engines are advised to choose as the most representative from a set of duplicate pages. Often called deduplication, this process helps search engines show only one version of the otherwise duplicate content in its search results. TYPO3 automatically sets this to the most likely URL of the page if not set explicitly - which is most likely the URL of the page itself. If set here, the page will be removed from the XML sitemap.</source>
+        <target state="final">Eine kanonische URL ist die URL einer Seite, die als Repräsentativste aus einer Reihe von Seiten mit (fast) gleichem Inhalt Suchmaschinen empfohlen wird. Dieser Prozess, der oft als Deduplication bezeichnet wird, hilft Suchmaschinen, nur eine Version des zu indexieren und verhindert eine Abwertung der Seiten mit ähnlichem Inhalt.
+
+TYPO3 setzt dies automatisch auf die wahrscheinlichste URL der Seite, wenn sie nicht explizit gesetzt wird - was höchstwahrscheinlich die URL der Seite selbst ist.
+
+Wenn hier gesetzt, wird die Seite aus der XML-Sitemap entfernt.</target>
+      </trans-unit>
       <trans-unit id="pages.tabs.socialmedia" resname="pages.tabs.socialmedia" approved="yes">
         <source>Social media</source>
         <target state="final">Soziale Medien</target>

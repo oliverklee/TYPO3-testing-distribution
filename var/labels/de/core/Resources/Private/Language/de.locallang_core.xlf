@@ -1024,6 +1024,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Rename</source>
         <target state="final">Umbenennen</target>
       </trans-unit>
+      <trans-unit id="file_rename.label" resname="file_rename.label" approved="yes">
+        <source>New filename</source>
+        <target state="final">Neuer Dateiname</target>
+      </trans-unit>
       <trans-unit id="file_rename.button.cancel" resname="file_rename.button.cancel" approved="yes">
         <source>Cancel</source>
         <target state="final">Abbrechen</target>
@@ -2027,6 +2031,10 @@ Do you want to refresh it now?</source>
       <trans-unit id="labels.datepicker.today" resname="labels.datepicker.today" approved="yes">
         <source>Today</source>
         <target state="final">Heute</target>
+      </trans-unit>
+      <trans-unit id="labels.inputfield.clearButton.title" resname="labels.inputfield.clearButton.title" approved="yes">
+        <source>Clear input</source>
+        <target state="final">Eingabe löschen</target>
       </trans-unit>
       <trans-unit id="labels.contextMenu.open" resname="labels.contextMenu.open" approved="yes">
         <source>Open context menu</source>

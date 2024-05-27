@@ -47,6 +47,10 @@
         <source>Expand record</source>
         <target state="final">Datensatz ausklappen</target>
       </trans-unit>
+      <trans-unit id="button.dropdown.multiselect" resname="button.dropdown.multiselect" approved="yes">
+        <source>Open context menu for multiselect options</source>
+        <target state="final">Kontextmenü für Mehrfachauswahl öffnen</target>
+      </trans-unit>
       <trans-unit id="button.undoselected" resname="button.undoselected" approved="yes">
         <source>Recover {0} records</source>
         <target state="final">{0} Datensätze wiederherstellen</target>
@@ -134,6 +138,10 @@
       <trans-unit id="flashmessage.undo.failure.plural" resname="flashmessage.undo.failure.plural" approved="yes">
         <source>Could not recover %d records.</source>
         <target state="final">%d Datensätze konnten nicht wiederhergestellt werden.</target>
+      </trans-unit>
+      <trans-unit id="table.caption.recently_deleted_records" resname="table.caption.recently_deleted_records" approved="yes">
+        <source>Recently deleted records</source>
+        <target state="final">Kürzlich gelöschte Einträge</target>
       </trans-unit>
       <trans-unit id="table.header.uid" resname="table.header.uid" approved="yes">
         <source>UID</source>
