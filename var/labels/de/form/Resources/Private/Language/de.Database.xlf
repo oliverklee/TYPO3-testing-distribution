@@ -518,7 +518,7 @@
             <target state="final">Erste Option (leerer Wert)</target></trans-unit>
       <trans-unit id="formEditor.elements.SelectionMixin.editor.inactiveOption.fieldExplanationText" resname="formEditor.elements.SelectionMixin.editor.inactiveOption.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>If set, this label will be shown as first option.</source>
-            <target state="final">Wenn gesetzt, wird dies Bezeichnung als erste Option angezeigt.</target></trans-unit>
+            <target state="final">Wenn gesetzt, wird diese Bezeichnung als erste Option angezeigt.</target></trans-unit>
       <trans-unit id="formEditor.elements.SelectionMixin.editor.options.label" resname="formEditor.elements.SelectionMixin.editor.options.label" xml:space="preserve" approved="yes">
                 <source>Choices</source>
             <target state="final">Optionen</target></trans-unit>
