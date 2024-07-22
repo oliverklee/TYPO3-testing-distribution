@@ -10960,8 +10960,8 @@ LOCK TABLES `tx_seminars_attendances` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_attendances` DISABLE KEYS */;
 INSERT INTO `tx_seminars_attendances` VALUES
 (1,12,1628003260,1628003260,0,0,0,'Anna Attendee / TCCD, 20.-23.11.2021',1,7,0,'Standardpreis: € 500,00',1,0,500.00,NULL,0,0,1,NULL,'',0,NULL,'','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,NULL),
-(2,12,1628016412,1628016412,0,0,0,NULL,4,7,0,'',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,NULL),
-(3,12,1628016433,1628016433,0,0,0,NULL,5,7,0,'',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,NULL),
+(2,12,1628016412,1628016412,0,0,0,NULL,4,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,'price_regular'),
+(3,12,1628016433,1628016433,0,0,0,NULL,5,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,'price_regular'),
 (4,12,1671044582,1671044495,0,0,0,'Event with waiting list / Anton R. Admin, 01.01.2030',6,11,0,'Standardpreis \r\n    \r\n    \r\n    \r\n    0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular'),
 (5,12,1671044607,1671044565,0,0,0,'Event with waiting list / Anna A. Attendee, 01.01.2030',1,11,1,'Standardpreis \r\n    \r\n    \r\n    \r\n    0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular'),
 (6,12,1671226186,1671226135,0,0,0,'Event for unregistration / Anna A. Attendee, 01.01.2030',1,12,0,'Standardpreis \r\n    \r\n    \r\n    \r\n    0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular');
@@ -12245,4 +12245,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-22 12:49:08
+-- Dump completed on 2024-07-22 13:03:03
