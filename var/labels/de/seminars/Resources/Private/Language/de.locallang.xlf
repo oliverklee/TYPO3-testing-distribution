@@ -2153,6 +2153,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>This event does not have any registrations yet.</source>
         <target state="final">Für diese Veranstaltung gibt es noch keine Anmeldungen.</target>
       </trans-unit>
+      <trans-unit id="backEndModule.message.numberOfEventsFound" resname="backEndModule.message.numberOfEventsFound" approved="yes">
+        <source>%u event(s) found.</source>
+        <target state="final">%u Veranstaltung(en) gefunden.</target>
+      </trans-unit>
       <trans-unit id="backEndModule.events.property.uid" resname="backEndModule.events.property.uid" approved="yes">
         <source>UID</source>
         <target state="final">UID</target>
@@ -2217,6 +2221,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Un-hide record</source>
         <target state="final">Datensatz sichtbar machen</target>
       </trans-unit>
+      <trans-unit id="backEndModule.action.delete" resname="backEndModule.action.delete" approved="yes">
+        <source>Delete record</source>
+        <target state="final">Datensatz löschen</target>
+      </trans-unit>
       <trans-unit id="backEndModule.action.csvDownload" resname="backEndModule.action.csvDownload" approved="yes">
         <source>Download as CSV file</source>
         <target state="final">CSV-Datei herunterladen</target>
@@ -2244,6 +2252,22 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="backEndModule.action.sendEmail" resname="backEndModule.action.sendEmail" approved="yes">
         <source>Send email</source>
         <target state="final">E-Mail verschicken</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.action.showAllEvents" resname="backEndModule.action.showAllEvents" approved="yes">
+        <source>Show all events</source>
+        <target state="final">Alle Veranstaltungen anzeigen</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.action.search" resname="backEndModule.action.search" approved="yes">
+        <source>Search</source>
+        <target state="final">Suchen</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.search.label" resname="backEndModule.search.label" approved="yes">
+        <source>Search events</source>
+        <target state="final">Veranstaltungen durchsuchen</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.search.placeholder" resname="backEndModule.search.placeholder" approved="yes">
+        <source>UID or search term</source>
+        <target state="final">UID oder Suchbegriff</target>
       </trans-unit>
       <trans-unit id="backEndModule.email.subject" resname="backEndModule.email.subject" approved="yes">
         <source>Subject</source>
