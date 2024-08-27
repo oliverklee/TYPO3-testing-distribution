@@ -760,6 +760,14 @@ Das System läuft im Composer-Modus, der Pfad zur ausführbaren `typo3`-Datei ko
         <source>Timing</source>
         <target state="final">Timing</target>
       </trans-unit>
+      <trans-unit id="editableGroupName.input.field.label" resname="editableGroupName.input.field.label" approved="yes">
+        <source>Enter a group name</source>
+        <target state="final">Geben Sie einen Gruppennamen ein</target>
+      </trans-unit>
+      <trans-unit id="editableGroupName.button.edit.label" resname="editableGroupName.button.edit.label" approved="yes">
+        <source>Edit group name</source>
+        <target state="final">Gruppenname bearbeiten</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

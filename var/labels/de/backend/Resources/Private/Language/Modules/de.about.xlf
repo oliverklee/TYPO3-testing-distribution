@@ -97,7 +97,7 @@
       </trans-unit>
       <trans-unit id="introtext2" resname="introtext2" approved="yes">
         <source>This is a brief description of the available modules.</source>
-        <target state="final">Dies ist eine kurze Beschreibung der verfügbaren Module.</target>
+        <target state="final">Hier finden Sie eine kurze Beschreibung der verfügbaren Module.</target>
       </trans-unit>
       <trans-unit id="endText" resname="endText" approved="yes">
         <source>Features may vary depending on your website and permissions</source>

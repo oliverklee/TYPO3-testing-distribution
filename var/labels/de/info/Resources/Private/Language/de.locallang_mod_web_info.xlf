@@ -3,14 +3,6 @@
   <file source-language="en" datatype="plaintext" original="EXT:info/Resources/Private/Language/locallang_mod_web_info.xlf" date="2011-10-17T20:22:34Z" product-name="lang" target-language="de">
     <header/>
     <body>
-      <trans-unit id="title" resname="title" approved="yes">
-        <source>Page information</source>
-        <target state="final">Seiteninformation</target>
-      </trans-unit>
-      <trans-unit id="message" resname="message" approved="yes">
-        <source>There are no page information available.</source>
-        <target state="final">Es sind keine Seiteninformationen verfügbar.</target>
-      </trans-unit>
       <trans-unit id="mlang_labels_tablabel" resname="mlang_labels_tablabel" approved="yes">
         <source>Page related information, eg. hit statistics, change log, record counts</source>
         <target state="final">Seitenbezogene Informationen, z.B. Zugriffsstatistik, Änderungsprotokollierung, Datensatzanzahl</target>

@@ -79,6 +79,10 @@
         <source>Brace missing in "%1$s", line number "%2$s"</source>
         <target state="final">Klammer fehlt in "%1$s", Zeilennummer "%2$s"</target>
       </trans-unit>
+      <trans-unit id="syntaxError.type.import.empty" resname="syntaxError.type.import.empty" approved="yes">
+        <source>Import does not find a file in "%1$s", line number "%2$s"</source>
+        <target state="final">Der Import findet keine Datei in "%1$s", Zeile "%2$s"</target>
+      </trans-unit>
       <trans-unit id="tree.child.btn.sourceCode" resname="tree.child.btn.sourceCode" approved="yes">
         <source>Show code</source>
         <target state="final">Code anzeigen</target>

@@ -7,10 +7,6 @@
         <source>Page content</source>
         <target state="final">Seiteninhalt</target>
       </trans-unit>
-      <trans-unit id="advancedFunctions" resname="advancedFunctions" approved="yes">
-        <source>Advanced functions</source>
-        <target state="final">Erweiterte Funktionen</target>
-      </trans-unit>
       <trans-unit id="noEditItems" resname="noEditItems" approved="yes">
         <source>Sorry, you do not have permissions to edit items on this page!</source>
         <target state="final">Sie haben leider nicht die notwendigen Rechte, um Elemente dieser Seite zu bearbeiten!</target>
@@ -127,6 +123,10 @@
         <source>Content</source>
         <target state="final">Inhalt</target>
       </trans-unit>
+      <trans-unit id="createNewContent" resname="createNewContent" approved="yes">
+        <source>Create new content</source>
+        <target state="final">Neuen Inhalt erstellen</target>
+      </trans-unit>
       <trans-unit id="newInColumn" resname="newInColumn" approved="yes">
         <source>Create new record in top of this column</source>
         <target state="final">Einen neuen Datensatz am Anfang dieser Spalte erstellen</target>
@@ -179,6 +179,10 @@
         <source>Edit the page title</source>
         <target state="final">Seitentitel bearbeiten</target>
       </trans-unit>
+      <trans-unit id="editPageTitle.input.field.label" resname="editPageTitle.input.field.label" approved="yes">
+        <source>Enter a page title</source>
+        <target state="final">Seitentitel eingeben</target>
+      </trans-unit>
       <trans-unit id="editPageLanguageOverlayProperties" resname="editPageLanguageOverlayProperties" approved="yes">
         <source>Edit page language overlay properties</source>
         <target state="final">Übersetzungseigenschaften bearbeiten</target>
@@ -224,12 +228,12 @@
         <target state="final">Nicht zugewiesen</target>
       </trans-unit>
       <trans-unit id="emptyColPos" resname="emptyColPos" approved="yes">
-        <source>Empty Colpos</source>
-        <target state="final">Leerer Colpos-Wert</target>
+        <source>Empty section</source>
+        <target state="final">Leerer Abschnitt</target>
       </trans-unit>
       <trans-unit id="emptyColPos.message" resname="emptyColPos.message" approved="yes">
-        <source>This column has no "colPos". This is only for display Purposes.</source>
-        <target state="final">Diese Spalte hat keine "colPos". Dies dient nur der Anzeige.</target>
+        <source>This section is only for display purposes, no "colPos" configuration is set.</source>
+        <target state="final">Dieser Abschnitt dient nur der Anzeige, es wird keine "colPos"-Konfiguration vorgenommen.</target>
       </trans-unit>
       <trans-unit id="unusedColPos" resname="unusedColPos" approved="yes">
         <source>Unused</source>

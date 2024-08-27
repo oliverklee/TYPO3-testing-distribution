@@ -215,6 +215,14 @@
         <source>No records found</source>
         <target state="final">Keine Datensätze gefunden</target>
       </trans-unit>
+      <trans-unit id="flexform.section.delete.title" resname="flexform.section.delete.title" approved="yes">
+        <source>Delete this container?</source>
+        <target state="final">Diesen Container löschen?</target>
+      </trans-unit>
+      <trans-unit id="flexform.section.delete.message" resname="flexform.section.delete.message" approved="yes">
+        <source>Are you sure you want to delete this container?</source>
+        <target state="final">Möchten Sie diesen Container wirklich löschen?</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

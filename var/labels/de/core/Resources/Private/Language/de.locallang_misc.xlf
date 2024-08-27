@@ -287,6 +287,10 @@
         <source>Copy elements</source>
         <target state="final">Elemente kopieren</target>
       </trans-unit>
+      <trans-unit id="copyElementToHere" resname="copyElementToHere" approved="yes">
+        <source>Copy element to this position</source>
+        <target state="final">Element an diese Position kopieren</target>
+      </trans-unit>
       <trans-unit id="selectPositionOfElement" resname="selectPositionOfElement" approved="yes">
         <source>Select position of the element</source>
         <target state="final">Position für das Element auswählen</target>

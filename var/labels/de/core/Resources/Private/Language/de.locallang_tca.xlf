@@ -39,6 +39,10 @@
         <source>Limit to languages</source>
         <target state="final">Auf Sprachen einschränken</target>
       </trans-unit>
+      <trans-unit id="allowed_languages.description" resname="allowed_languages.description" approved="yes">
+        <source>If no language is selected, all languages will be available by default.</source>
+        <target state="final">Wenn keine Sprache ausgewählt wird, sind standardmäßig alle Sprachen verfügbar.</target>
+      </trans-unit>
       <trans-unit id="category_perms" resname="category_perms" approved="yes">
         <source>Category Mounts</source>
         <target state="final">Kategoriefreigaben</target>

@@ -12,8 +12,8 @@
         <target state="final">Konfiguration von localconf.php und tables.php anzeigen</target>
       </trans-unit>
       <trans-unit id="module.configuration.description" resname="module.configuration.description" approved="yes">
-        <source>Allows you to browse the values of the $TCA array (table configuration) and $TYPO3_CONF_VARS. You cannot set any values, only browse them.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</source>
-        <target state="final">Erlaubt es Ihnen, die Werte des $TCA -Arrays (Tabellenkonfiguration) und $TYPO3_CONF_VARS zu durchsuchen. Sie können keine Werte verändern, nur durchsuchen.&lt;br /&gt;&lt;em&gt;Zugriff nur für Benutzer mit Administrator-Rechten!&lt;/em&gt;</target>
+        <source>Allows you to browse the values of the $TCA array (table configuration) and $TYPO3_CONF_VARS. You cannot set any values, only browse them.</source>
+        <target state="final">Ermöglicht das Durchsuchen der Werte des Arrays $TCA (Tabellenkonfiguration) und $TYPO3_CONF_VARS. Du kannst keine Werte festlegen, sondern sie nur durchsuchen.</target>
       </trans-unit>
       <trans-unit id="module.configuration.numberOfSearchMatches" resname="module.configuration.numberOfSearchMatches" approved="yes">
         <source>%s search match(es)</source>
@@ -22,6 +22,10 @@
       <trans-unit id="moduleMenu.dropdown.label" resname="moduleMenu.dropdown.label" approved="yes">
         <source>Configuration to show</source>
         <target state="final">anzuzeigende Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="configuration.headline" resname="configuration.headline" approved="yes">
+        <source>Configuration of "%1s"</source>
+        <target state="final">Konfiguration von "%1s"</target>
       </trans-unit>
       <trans-unit id="typo3ConfVars" resname="typo3ConfVars" approved="yes">
         <source>$GLOBALS['TYPO3_CONF_VARS'] (Global Configuration)</source>
@@ -112,8 +116,8 @@
         <target state="final">Datenbankintegritätsprüfung</target>
       </trans-unit>
       <trans-unit id="module.dbint.description" resname="module.dbint.description" approved="yes">
-        <source>Here you can check the integrity of the database tables configured by the $TCA. For instance all records must belong to a page record. You can also get a view of the total pagetree including deleted pages. Finally you've got access to a global database search facility.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</source>
-        <target state="final">Hier können Sie die Integrität der Datenbanktabellen überprüfen, welche vom $TCA (Table Configuration Array) konfiguriert sind. Zum Beispiel müssen alle Datensätze eine Relation zu einem Seiten-Datensatz beinhalten. Ebenso haben Sie Zugang zu einer globalen Datenbanksuchfunktion.&lt;br /&gt;&lt;em&gt;Zugriff nur für Administratoren!&lt;/em&gt;</target>
+        <source>Here you can check the integrity of the database tables configured by the $TCA. For instance all records must belong to a page record. You can also get a view of the total pagetree including deleted pages. Finally you've got access to a global database search facility.</source>
+        <target state="final">Hier kannst du die Integrität der von $TCA konfigurierten Datenbanktabellen überprüfen. Zum Beispiel müssen alle Datensätze zu einem Seitendatensatz gehören. Du kannst dir auch einen Überblick über den gesamten Seitenbaum verschaffen, einschließlich der gelöschten Seiten. Und du hast Zugang zu einer globalen Datenbank-Suchfunktion.</target>
       </trans-unit>
       <trans-unit id="module.dbint.docheader.viewmode" resname="module.dbint.docheader.viewmode" approved="yes">
         <source>Module action</source>

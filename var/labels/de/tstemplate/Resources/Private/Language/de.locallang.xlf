@@ -12,8 +12,8 @@
         <target state="final">TypoScript Werkzeuge</target>
       </trans-unit>
       <trans-unit id="module.typoscript.description" resname="module.typoscript.description" approved="yes">
-        <source>Here you manage the TypoScript records which are in charge of the look of your website on the frontend. The module provides specialized features like a TypoScript tree, a constant editor and raw editing facilities.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</source>
-        <target state="final">Hier können Sie TypoScript-Datensätze verwalten. Diese Datensätze sind für das Erscheinungsbild Ihrer Website verantwortlich. Das Modul bietet spezielle Funktionen wie einen Objekt-Browser, einen Konstanten-Editor und einfache Bearbeitungsmöglichkeiten.&lt;br /&gt;&lt;em&gt;Zugriff nur für Administratoren!&lt;/em&gt;</target>
+        <source>Here you manage the TypoScript records which are in charge of the look of your website on the frontend. The module provides specialized features like a TypoScript tree, a constant editor and raw editing facilities.</source>
+        <target state="final">Hier verwaltest du die TypoScript-Datensätze, die für das Aussehen deiner Website im Frontend verantwortlich sind. Das Modul bietet spezielle Funktionen wie einen TypoScript-Baum, einen Konstanten-Editor und direkte Bearbeitungsmöglichkeiten.</target>
       </trans-unit>
       <trans-unit id="submodules.option.constantEditor" resname="submodules.option.constantEditor" approved="yes">
         <source>Constant Editor</source>

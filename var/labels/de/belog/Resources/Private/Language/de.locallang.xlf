@@ -451,6 +451,10 @@
         <source>Log entry could not be found.</source>
         <target state="final">Der Eintrag wurde nicht gefunden.</target>
       </trans-unit>
+      <trans-unit id="info.noRecords.message" resname="info.noRecords.message" approved="yes">
+        <source>No records found.</source>
+        <target state="final">Keine Datensätze gefunden.</target>
+      </trans-unit>
       <trans-unit id="info.selectPage.title" resname="info.selectPage.title" approved="yes">
         <source>No page selected</source>
         <target state="final">Keine Seite ausgewählt</target>

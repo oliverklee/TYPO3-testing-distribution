@@ -33,6 +33,10 @@
       <trans-unit id="widget.error" resname="widget.error" xml:space="preserve" approved="yes">
 				<source>An error occurred while retrieving information for this widget. Please try again, and if the problem persists, contact your administrator.</source>
 			<target state="final">Beim Abrufen der Informationen für dieses Widget ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut und wenn das Problem weiterhin auftritt, kontaktieren Sie Ihren Administrator.</target></trans-unit>
+      <trans-unit id="dashboard.headline" resname="dashboard.headline" approved="yes">
+        <source>Dashboard "%s"</source>
+        <target state="final">Dashboard "%s"</target>
+      </trans-unit>
       <trans-unit id="dashboard.default" resname="dashboard.default" xml:space="preserve" approved="yes">
 				<source>My dashboard</source>
 			<target state="final">Mein Dashboard</target></trans-unit>

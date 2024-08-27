@@ -52,20 +52,20 @@
         <target state="final">Bild</target>
       </trans-unit>
       <trans-unit id="pages.palettes.twittercards" resname="pages.palettes.twittercards" approved="yes">
-        <source>Twitter Cards</source>
-        <target state="final">Twitter-Karten</target>
+        <source>X / Twitter Cards</source>
+        <target state="final">X / Twitter Cards</target>
       </trans-unit>
       <trans-unit id="pages.twitter_title" resname="pages.twitter_title" approved="yes">
-        <source>Twitter Title</source>
-        <target state="final">Twitter-Titel</target>
+        <source>X / Twitter Title</source>
+        <target state="final">X / Twitter Titel</target>
       </trans-unit>
       <trans-unit id="pages.twitter_description" resname="pages.twitter_description" approved="yes">
-        <source>Twitter Description</source>
-        <target state="final">Twitter-Beschreibung</target>
+        <source>X / Twitter Description</source>
+        <target state="final">X / Twitter Beschreibung</target>
       </trans-unit>
       <trans-unit id="pages.twitter_image" resname="pages.twitter_image" approved="yes">
-        <source>Twitter Image</source>
-        <target state="final">Twitter-Bild</target>
+        <source>X / Twitter Image</source>
+        <target state="final">X / Twitter Bild</target>
       </trans-unit>
       <trans-unit id="pages.twitter_card" resname="pages.twitter_card" approved="yes">
         <source>Type of card to show</source>

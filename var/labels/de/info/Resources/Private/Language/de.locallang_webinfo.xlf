@@ -135,6 +135,22 @@
         <source>Language</source>
         <target state="final">Sprache</target>
       </trans-unit>
+      <trans-unit id="error.noAccess.title" resname="error.noAccess.title" approved="yes">
+        <source>No access</source>
+        <target state="final">Zugriff verweigert</target>
+      </trans-unit>
+      <trans-unit id="error.noAccess.message" resname="error.noAccess.message" approved="yes">
+        <source>You don't have access to this module.</source>
+        <target state="final">Du hast keinen Zugang zu diesem Modul.</target>
+      </trans-unit>
+      <trans-unit id="info.noContent.message" resname="info.noContent.message" approved="yes">
+        <source>There are no page information available.</source>
+        <target state="final">Es sind keine Seiteninformationen verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="info.noPageSelected.message" resname="info.noPageSelected.message" approved="yes">
+        <source>Please select a page in the page tree.</source>
+        <target state="final">Bitte wähle eine Seite im Seitenbaum aus.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

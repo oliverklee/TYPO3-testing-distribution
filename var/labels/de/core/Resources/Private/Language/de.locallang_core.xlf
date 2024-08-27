@@ -20,16 +20,16 @@
         <target state="final">Einen Verweis auf diese Seite erzeugen?</target>
       </trans-unit>
       <trans-unit id="labels.makeBookmark" resname="labels.makeBookmark" approved="yes">
-        <source>Create a bookmark to this page</source>
-        <target state="final">Ein Lesezeichen für diese Seite erzeugen</target>
+        <source>Create a bookmark to this record</source>
+        <target state="final">Lesezeichen für diesen Datensatz erstellen</target>
       </trans-unit>
       <trans-unit id="labels.alreadyBookmarked" resname="labels.alreadyBookmarked" approved="yes">
-        <source>This page is already bookmarked</source>
-        <target state="final">Diese Seite ist bereits mit einem Lesezeichen versehen</target>
+        <source>This record is already bookmarked</source>
+        <target state="final">Dieser Datensatz ist bereits mit einem Lesezeichen versehen</target>
       </trans-unit>
       <trans-unit id="labels.copyCurrentUrl" resname="labels.copyCurrentUrl" approved="yes">
-        <source>Copy URL of this page</source>
-        <target state="final">URL dieser Seite kopieren</target>
+        <source>Copy URL of this record</source>
+        <target state="final">URL dieses Datensatzes kopieren</target>
       </trans-unit>
       <trans-unit id="labels.lockedRecord" resname="labels.lockedRecord" approved="yes">
         <source>The user '%s' began to edit this record %s ago.</source>
@@ -548,6 +548,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>INVALID VALUE ("%s")</source>
         <target state="final">WERT IST NICHT ERLAUBT ("%s")</target>
       </trans-unit>
+      <trans-unit id="labels.noMatchingLabel" resname="labels.noMatchingLabel" approved="yes">
+        <source>MISSING LABEL ("%s")</source>
+        <target state="final">FEHLENDES LABEL ("%s")</target>
+      </trans-unit>
       <trans-unit id="labels.thumbmode_clip" resname="labels.thumbmode_clip" approved="yes">
         <source>Show Thumbnails on ClipBoard</source>
         <target state="final">Vorschaubilder in der Zwischenablage anzeigen</target>
@@ -599,6 +603,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.setAllCheckboxes" resname="labels.setAllCheckboxes" approved="yes">
         <source>Select All Checkboxes</source>
         <target state="final">Alle Markierungsfelder auswählen</target>
+      </trans-unit>
+      <trans-unit id="labels.openSelectionOptions" resname="labels.openSelectionOptions" approved="yes">
+        <source>Open selection options</source>
+        <target state="final">Auswahloptionen öffnen</target>
       </trans-unit>
       <trans-unit id="labels.checkAll" resname="labels.checkAll" approved="yes">
         <source>Check all</source>
