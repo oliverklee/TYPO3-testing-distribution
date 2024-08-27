@@ -284,7 +284,7 @@
             <target state="final">Ungültiges Datei-Größenformat, gültig z.B. "10B|K|M|G"</target></trans-unit>
       <trans-unit id="formEditor.formElementPropertyValidatorsDefinition.RFC3339FullDate.label" resname="formEditor.formElementPropertyValidatorsDefinition.RFC3339FullDate.label" xml:space="preserve" approved="yes">
                 <source>Invalid date format. Valid format: Y-m-d (2018-03-17)</source>
-            <target state="final">Ungültiges Datumsformat. Gültiges Format: d.m.Y (17.3.2018)</target></trans-unit>
+            <target state="final">Ungültiges Datumsformat. Gültiges Format: Y-m-d (2018-03-17)</target></trans-unit>
       <trans-unit id="formEditor.formElementGroups.input.label" resname="formEditor.formElementGroups.input.label" xml:space="preserve" approved="yes">
                 <source>Basic elements</source>
             <target state="final">Grundlegende Elemente</target></trans-unit>
