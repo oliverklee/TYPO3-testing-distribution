@@ -2378,7 +2378,7 @@ INSERT INTO `sys_registry` VALUES
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysActionExtractionUpdate','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SvgFilesSanitization','i:1;'),
 (44,'installUpdateRows','rowUpdatersDone','a:1:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";}'),
-(45,'core','sys_refindex_lastUpdate','i:1721645284;'),
+(45,'core','sys_refindex_lastUpdate','i:1725458117;'),
 (48,'languagePacks','baseUrl','s:33:\"https://localize.typo3.org/xliff/\";'),
 (49,'languagePacks','de-feuserextrafields','i:1699808188;'),
 (50,'languagePacks','de-tea','i:1699808195;'),
@@ -11384,6 +11384,7 @@ CREATE TABLE `tx_seminars_seminars` (
   `price_on_request` smallint(5) unsigned NOT NULL DEFAULT 0,
   `date_of_last_registration_digest` int(10) unsigned NOT NULL DEFAULT 0,
   `slug` varchar(262) DEFAULT NULL,
+  `event_format` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `object_type` (`object_type`),
@@ -11404,18 +11405,18 @@ CREATE TABLE `tx_seminars_seminars` (
 LOCK TABLES `tx_seminars_seminars` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars` VALUES
-(1,13,1634124323,1628002174,0,0,0,0,0,1,'TCCD',0,'TYPO3 CMS Certified Developer',1,'TCCD-Training de luxe!','<p>I\'m baby leggings artisan tbh enamel pin art party raclette hot chicken intelligentsia readymade, cardigan XOXO. Cray sriracha normcore organic. Fixie live-edge quinoa cred four loko poke tumeric art party whatever air plant. Hella asymmetrical locavore direct trade shaman. Actually green juice waistcoat succulents.</p>',1,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',500.00,450.00,400.00,375.00,'',1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,1,0,0,0,0,0,0,'tccd'),
-(2,13,1634124328,1628002285,0,0,0,0,0,1,'TCCI',0,'TYPO3 CMS Certified Integrator',1,'TCCI - so einfach geht TYPO3!','<p>Farm-to-table adaptogen vice YOLO four dollar toast bespoke. Hammock helvetica asymmetrical next level. Deep v hoodie ramps fam lo-fi unicorn paleo hot chicken fanny pack affogato trust fund chartreuse twee offal iceland. Photo booth godard everyday carry heirloom chillwave 90\'s craft beer, direct trade kogi skateboard dreamcatcher butcher.</p>',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',650.00,0.00,0.00,0.00,'',0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,0,1,0,0,0,0,0,'tcci'),
-(3,14,1654092629,1628002505,0,0,0,0,0,0,'Einzelveranstaltung mit Anmeldeopotionen',0,'',0,'','',0,'',0,1964419200,1964448000,0,0,1647334800,0,1647334800,0,'',1,'Raum \"Brandenburg\"',3,6,1,0,0,0,'',0.00,0.00,0.00,0.00,'',1,1,0,0,0,1,0,4,12,0,0,2,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-anmeldeopotionen'),
-(4,14,1634124396,1628002652,0,0,0,0,0,0,'Einzelveranstaltung mit Zeitslots',0,'',0,'','<p>Mustache direct trade master cleanse, fashion axe aesthetic farm-to-table vexillologist drinking vinegar austin 90\'s ramps 8-bit biodiesel snackwave taxidermy. Whatever banh mi chartreuse chicharrones. Unicorn bespoke sriracha pabst, art party typewriter messenger bag vexillologist banh mi intelligentsia. Bicycle rights four dollar toast kickstarter sustainable vegan tumblr, quinoa tumeric fingerstache. Artisan tilde sartorial, quinoa raw denim banh mi pitchfork offal bitters dreamcatcher actually keffiyeh. Palo santo air plant XOXO pug woke shaman.</p>',0,'',0,1964505600,1964606400,2,0,0,0,0,0,'',2,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-zeitslots'),
-(5,14,1634124392,1628002667,0,0,0,0,0,2,'TCCD-Termin',1,'',0,'','',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,0,'',0,0,0,0,0,0,0,0,0,'tccd-1'),
-(6,14,1654092629,1628002703,0,0,0,0,0,2,'TCCI-Termin',2,'',0,'','',0,'',0,1944399480,1955375880,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tcci-1'),
-(7,14,1654092629,1628002743,0,0,0,0,0,2,'TCCD-Termin mit Datum',1,'',0,'','',0,'',0,1952956740,1953215940,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tccd-2'),
-(8,30,1667052715,1628014468,0,0,0,0,0,0,'Frontend-created event',0,'',0,'','There is no spoon. And the cake is a lie.',2,'',0,1680336000,1680451200,0,0,0,1677625200,0,0,NULL,1,'',0,0,2,0,0,0,'',250.00,175.00,0.00,0.00,'',0,1,0,0,0,1,0,2,25,0,0,0,0,0,3,0,0,0,'',0,0,0,0,0,0,0,0,0,'frontend-created-event'),
-(9,30,1671225712,1667052765,0,0,0,0,0,0,'Created in the FE, too',0,NULL,0,NULL,'',4,NULL,0,0,0,0,0,0,0,0,0,NULL,0,NULL,0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,NULL,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,NULL,0,0,0,0,0,0,0,0,0,'created-in-the-fe-too'),
-(10,14,1670000681,1670000681,0,0,0,0,0,0,'Infinite registrations!',0,'',0,'','<p>This event allows an infinite number of registrations.</p>',1,'',0,1735722000,1735750800,0,0,0,0,0,0,'',0,'',4,6,0,0,0,0,'',200.00,175.00,150.00,125.00,'',2,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,2,1,'',0,0,0,0,0,0,0,0,0,'infinite-registrations'),
-(11,14,1671044582,1671044468,0,0,0,0,0,0,'Event with waiting list',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,1,1,0,0,2,0,0,0,0,0,'',0,0,0,0,1,0,0,0,0,'event-with-waiting-list'),
-(12,14,1671226186,1671225968,0,0,0,0,0,0,'Event for unregistration',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,1893484800,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'event-for-unregistration');
+(1,13,1634124323,1628002174,0,0,0,0,0,1,'TCCD',0,'TYPO3 CMS Certified Developer',1,'TCCD-Training de luxe!','<p>I\'m baby leggings artisan tbh enamel pin art party raclette hot chicken intelligentsia readymade, cardigan XOXO. Cray sriracha normcore organic. Fixie live-edge quinoa cred four loko poke tumeric art party whatever air plant. Hella asymmetrical locavore direct trade shaman. Actually green juice waistcoat succulents.</p>',1,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',500.00,450.00,400.00,375.00,'',1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,1,0,0,0,0,0,0,'tccd',0),
+(2,13,1634124328,1628002285,0,0,0,0,0,1,'TCCI',0,'TYPO3 CMS Certified Integrator',1,'TCCI - so einfach geht TYPO3!','<p>Farm-to-table adaptogen vice YOLO four dollar toast bespoke. Hammock helvetica asymmetrical next level. Deep v hoodie ramps fam lo-fi unicorn paleo hot chicken fanny pack affogato trust fund chartreuse twee offal iceland. Photo booth godard everyday carry heirloom chillwave 90\'s craft beer, direct trade kogi skateboard dreamcatcher butcher.</p>',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',650.00,0.00,0.00,0.00,'',0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,0,1,0,0,0,0,0,'tcci',0),
+(3,14,1654092629,1628002505,0,0,0,0,0,0,'Einzelveranstaltung mit Anmeldeopotionen',0,'',0,'','',0,'',0,1964419200,1964448000,0,0,1647334800,0,1647334800,0,'',1,'Raum \"Brandenburg\"',3,6,1,0,0,0,'',0.00,0.00,0.00,0.00,'',1,1,0,0,0,1,0,4,12,0,0,2,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-anmeldeopotionen',0),
+(4,14,1634124396,1628002652,0,0,0,0,0,0,'Einzelveranstaltung mit Zeitslots',0,'',0,'','<p>Mustache direct trade master cleanse, fashion axe aesthetic farm-to-table vexillologist drinking vinegar austin 90\'s ramps 8-bit biodiesel snackwave taxidermy. Whatever banh mi chartreuse chicharrones. Unicorn bespoke sriracha pabst, art party typewriter messenger bag vexillologist banh mi intelligentsia. Bicycle rights four dollar toast kickstarter sustainable vegan tumblr, quinoa tumeric fingerstache. Artisan tilde sartorial, quinoa raw denim banh mi pitchfork offal bitters dreamcatcher actually keffiyeh. Palo santo air plant XOXO pug woke shaman.</p>',0,'',0,1964505600,1964606400,2,0,0,0,0,0,'',2,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-zeitslots',0),
+(5,14,1634124392,1628002667,0,0,0,0,0,2,'TCCD-Termin',1,'',0,'','',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,0,'',0,0,0,0,0,0,0,0,0,'tccd-1',0),
+(6,14,1654092629,1628002703,0,0,0,0,0,2,'TCCI-Termin',2,'',0,'','',0,'',0,1944399480,1955375880,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tcci-1',0),
+(7,14,1654092629,1628002743,0,0,0,0,0,2,'TCCD-Termin mit Datum',1,'',0,'','',0,'',0,1952956740,1953215940,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tccd-2',0),
+(8,30,1667052715,1628014468,0,0,0,0,0,0,'Frontend-created event',0,'',0,'','There is no spoon. And the cake is a lie.',2,'',0,1680336000,1680451200,0,0,0,1677625200,0,0,NULL,1,'',0,0,2,0,0,0,'',250.00,175.00,0.00,0.00,'',0,1,0,0,0,1,0,2,25,0,0,0,0,0,3,0,0,0,'',0,0,0,0,0,0,0,0,0,'frontend-created-event',0),
+(9,30,1671225712,1667052765,0,0,0,0,0,0,'Created in the FE, too',0,NULL,0,NULL,'',4,NULL,0,0,0,0,0,0,0,0,0,NULL,0,NULL,0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,NULL,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,NULL,0,0,0,0,0,0,0,0,0,'created-in-the-fe-too',0),
+(10,14,1670000681,1670000681,0,0,0,0,0,0,'Infinite registrations!',0,'',0,'','<p>This event allows an infinite number of registrations.</p>',1,'',0,1735722000,1735750800,0,0,0,0,0,0,'',0,'',4,6,0,0,0,0,'',200.00,175.00,150.00,125.00,'',2,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,2,1,'',0,0,0,0,0,0,0,0,0,'infinite-registrations',0),
+(11,14,1671044582,1671044468,0,0,0,0,0,0,'Event with waiting list',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,1,1,0,0,2,0,0,0,0,0,'',0,0,0,0,1,0,0,0,0,'event-with-waiting-list',0),
+(12,14,1671226186,1671225968,0,0,0,0,0,0,'Event for unregistration',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,1893484800,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'event-for-unregistration',0);
 /*!40000 ALTER TABLE `tx_seminars_seminars` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12245,4 +12246,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-22 13:03:03
+-- Dump completed on 2024-09-04 15:55:49
