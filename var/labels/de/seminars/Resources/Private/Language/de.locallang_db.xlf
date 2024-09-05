@@ -203,6 +203,22 @@
         <source>Place/Time</source>
         <target state="final">Ort/Zeit</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_seminars.event_format" resname="tx_seminars_seminars.event_format" approved="yes">
+        <source>Event format</source>
+        <target state="final">Veranstaltungsformat</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_seminars.event_format.on-site" resname="tx_seminars_seminars.format.event_on-site" approved="yes">
+        <source>on-site</source>
+        <target state="final">vor Ort</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_seminars.event_format.hybrid" resname="tx_seminars_seminars.format.event_hybrid" approved="yes">
+        <source>hybrid</source>
+        <target state="final">hybrid</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_seminars.event_format.online" resname="tx_seminars_seminars.event_format.online" approved="yes">
+        <source>online</source>
+        <target state="final">online</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_seminars.begin_date" resname="tx_seminars_seminars.begin_date" approved="yes">
         <source>Begin time and date</source>
         <target state="final">Anfangszeit und -datum</target>
@@ -646,6 +662,18 @@
       <trans-unit id="tx_seminars_sites.notes" resname="tx_seminars_sites.notes" approved="yes">
         <source>Internal Notes</source>
         <target state="final">Interne Notizen</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_sites.contact_person" resname="tx_seminars_sites.contact_person" approved="yes">
+        <source>Contact person</source>
+        <target state="final">Kontaktperson</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_sites.email_address" resname="tx_seminars_sites.email_address" approved="yes">
+        <source>Email address</source>
+        <target state="final">E-Mail-Adresse</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_sites.phone_number" resname="tx_seminars_sites.phone_number" approved="yes">
+        <source>Phone number</source>
+        <target state="final">Telefonnummer</target>
       </trans-unit>
       <trans-unit id="tx_seminars_organizers" resname="tx_seminars_organizers" approved="yes">
         <source>Organizers</source>

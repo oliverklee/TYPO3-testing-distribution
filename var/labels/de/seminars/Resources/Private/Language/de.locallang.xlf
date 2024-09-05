@@ -96,20 +96,8 @@
         <target state="final">Angemeldete Personen:</target>
       </trans-unit>
       <trans-unit id="label_lodgings" resname="label_lodgings" approved="yes">
-        <source>Selected lodging options</source>
-        <target state="final">Art der Unterbringung:</target>
-      </trans-unit>
-      <trans-unit id="label_accommodation" resname="label_accommodation" approved="yes">
-        <source>Accommodation</source>
-        <target state="final">Wie möchten Sie übernachten (wenn möglich im Einzelzimmer, Doppelzimmer, keine Übernachtung):</target>
-      </trans-unit>
-      <trans-unit id="label_foods" resname="label_foods" approved="yes">
-        <source>Selected food options</source>
-        <target state="final">Art der Verpflegung:</target>
-      </trans-unit>
-      <trans-unit id="label_food" resname="label_food" approved="yes">
-        <source>Food</source>
-        <target state="final">Welche Kost bevorzugen Sie (Normalkost, vegetarisch oder eine spezielle Diät):</target>
+        <source>Lodging options</source>
+        <target state="final">Unterbringungsmöglichkeiten</target>
       </trans-unit>
       <trans-unit id="label_kids" resname="label_kids" approved="yes">
         <source>Number of kids</source>
@@ -227,13 +215,9 @@
         <source>Background knowledge</source>
         <target state="final">Vorkenntnisse:</target>
       </trans-unit>
-      <trans-unit id="label_known_from" resname="label_known_from" approved="yes">
-        <source>Known from</source>
-        <target state="final">Wie haben Sie von dieser Veranstaltung erfahren?</target>
-      </trans-unit>
       <trans-unit id="label_notes" resname="label_notes" approved="yes">
-        <source>Notes</source>
-        <target state="final">Weitere Mitteilungen:</target>
+        <source>Additional Notes</source>
+        <target state="final">Zusätzliche Anmerkungen</target>
       </trans-unit>
       <trans-unit id="label_url" resname="label_url" approved="yes">
         <source>More information</source>
@@ -1035,45 +1019,9 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Category</source>
         <target state="final">Kategorie</target>
       </trans-unit>
-      <trans-unit id="label_title" resname="label_title" approved="yes">
-        <source>Title</source>
-        <target state="final">Titel</target>
-      </trans-unit>
       <trans-unit id="label_subtitle" resname="label_subtitle" approved="yes">
         <source>Subtitle</source>
         <target state="final">Untertitel</target>
-      </trans-unit>
-      <trans-unit id="label_uid" resname="label_uid" approved="yes">
-        <source>Number</source>
-        <target state="final">Nummer</target>
-      </trans-unit>
-      <trans-unit id="label_registration_uid" resname="label_registration_uid" approved="yes">
-        <source>Ticket ID</source>
-        <target state="final">Ticket-ID</target>
-      </trans-unit>
-      <trans-unit id="label_accreditation_number" resname="label_accreditation_number" approved="yes">
-        <source>Accreditation number</source>
-        <target state="final">Akkreditierungsnummer</target>
-      </trans-unit>
-      <trans-unit id="label_credit_points" resname="label_credit_points" approved="yes">
-        <source>Credit points</source>
-        <target state="final">Leistungspunkte</target>
-      </trans-unit>
-      <trans-unit id="label_date" resname="label_date" approved="yes">
-        <source>Date</source>
-        <target state="final">Datum</target>
-      </trans-unit>
-      <trans-unit id="label_time" resname="label_time" approved="yes">
-        <source>Time</source>
-        <target state="final">Zeit</target>
-      </trans-unit>
-      <trans-unit id="label_place" resname="label_place" approved="yes">
-        <source>Place</source>
-        <target state="final">Ort</target>
-      </trans-unit>
-      <trans-unit id="label_room" resname="label_room" approved="yes">
-        <source>Room</source>
-        <target state="final">Raum</target>
       </trans-unit>
       <trans-unit id="label_timeslots" resname="label_timeslots" approved="yes">
         <source>Time slots</source>
@@ -1119,41 +1067,9 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Language</source>
         <target state="final">Sprache</target>
       </trans-unit>
-      <trans-unit id="label_price_general" resname="label_price_general" approved="yes">
-        <source>Price</source>
-        <target state="final">Preis</target>
-      </trans-unit>
-      <trans-unit id="label_select_price" resname="label_select_price" approved="yes">
-        <source>Price:</source>
-        <target state="final">Preis:</target>
-      </trans-unit>
-      <trans-unit id="label_price" resname="label_price" approved="yes">
-        <source>Price</source>
-        <target state="final">Preis</target>
-      </trans-unit>
       <trans-unit id="label_price_range" resname="label_price_range" approved="yes">
         <source>Price</source>
         <target state="final">Preis</target>
-      </trans-unit>
-      <trans-unit id="label_price_regular" resname="label_price_regular" approved="yes">
-        <source>Regular price</source>
-        <target state="final">Standardpreis</target>
-      </trans-unit>
-      <trans-unit id="label_price_earlybird_regular" resname="label_price_earlybird_regular" approved="yes">
-        <source>Early-bird price</source>
-        <target state="final">Frühbucherpreis</target>
-      </trans-unit>
-      <trans-unit id="label_price_special" resname="label_price_special" approved="yes">
-        <source>Special price</source>
-        <target state="final">Spezialpreis</target>
-      </trans-unit>
-      <trans-unit id="label_price_earlybird_special" resname="label_price_earlybird_special" approved="yes">
-        <source>Early-bird special price</source>
-        <target state="final">Frühbucher-Spezialpreis</target>
-      </trans-unit>
-      <trans-unit id="label_total_price" resname="label_total_price" approved="yes">
-        <source>Total price</source>
-        <target state="final">Gesamtpreis</target>
       </trans-unit>
       <trans-unit id="label_paymentmethods" resname="label_paymentmethods" approved="yes">
         <source>Available methods of payment</source>
@@ -1162,10 +1078,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="label_select_paymentmethod" resname="label_select_paymentmethod" approved="yes">
         <source>Payment method:</source>
         <target state="final">Zahlungsart:</target>
-      </trans-unit>
-      <trans-unit id="label_event_type" resname="label_event_type" approved="yes">
-        <source>Event type</source>
-        <target state="final">Veranstaltungsart</target>
       </trans-unit>
       <trans-unit id="label_target_groups" resname="label_target_groups" approved="yes">
         <source>Target Groups</source>
@@ -1194,10 +1106,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="label_categories" resname="label_categories" approved="yes">
         <source>Categories</source>
         <target state="final">Kategorien</target>
-      </trans-unit>
-      <trans-unit id="label_vacancies" resname="label_vacancies" approved="yes">
-        <source>Vacancies</source>
-        <target state="final">Freie Plätze</target>
       </trans-unit>
       <trans-unit id="label_deadline_registration" resname="label_deadline_registration" approved="yes">
         <source>Deadline for registration</source>
@@ -1263,29 +1171,13 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Additional information</source>
         <target state="final">Weitere Informationen</target>
       </trans-unit>
-      <trans-unit id="label_checkboxes" resname="label_checkboxes" approved="yes">
-        <source>Additional information:</source>
-        <target state="final">Weitere Informationen:</target>
-      </trans-unit>
-      <trans-unit id="label_interests" resname="label_interests" approved="yes">
-        <source>Special interests:</source>
-        <target state="final">Spezielle Interessen:</target>
-      </trans-unit>
-      <trans-unit id="label_expectations" resname="label_expectations" approved="yes">
-        <source>Expectations for the event:</source>
-        <target state="final">Erwartungen an die Veranstaltung:</target>
-      </trans-unit>
-      <trans-unit id="label_background_knowledge" resname="label_background_knowledge" approved="yes">
-        <source>Background knowledge:</source>
-        <target state="final">Vorkenntnisse:</target>
-      </trans-unit>
       <trans-unit id="label_register_lodging_and_food" resname="label_register_lodging_and_food" approved="yes">
         <source>Lodging and food</source>
         <target state="final">Unterbringung und Verpflegung</target>
       </trans-unit>
       <trans-unit id="label_accommodation" resname="label_accommodation" approved="yes">
         <source>How are your lodging preferences (if possible a single room, a double room, no lodging)?</source>
-        <target state="final">Wie möchten Sie übernachten (wenn möglich im Einzelzimmer, Doppelzimmer, keine Übernachtung):</target>
+        <target state="final">Wie möchten Sie übernachten (wenn möglich im Einzelzimmer, Doppelzimmer, keine Übernachtung)?</target>
       </trans-unit>
       <trans-unit id="label_food" resname="label_food" approved="yes">
         <source>Which kind of food do you prefer (normal, vegetarian, or a special diet):</source>
@@ -1299,17 +1191,9 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>How have you heard of this event?</source>
         <target state="final">Wie hast du von dieser Veranstaltung erfahren?</target>
       </trans-unit>
-      <trans-unit id="label_notes" resname="label_notes" approved="yes">
-        <source>Additional notes:</source>
-        <target state="final">Weitere Mitteilungen:</target>
-      </trans-unit>
       <trans-unit id="label_register_additional_attendees" resname="label_register_additional_attendees" approved="yes">
         <source>Persons to register:</source>
         <target state="final">Angemeldete Personen:</target>
-      </trans-unit>
-      <trans-unit id="label_seats" resname="label_seats" approved="yes">
-        <source>Seats</source>
-        <target state="final">Plätze</target>
       </trans-unit>
       <trans-unit id="label_registered_themselves" resname="label_registered_themselves" approved="yes">
         <source>myself</source>
@@ -1327,77 +1211,21 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Seats to book:</source>
         <target state="final">Zu buchende Plätze:</target>
       </trans-unit>
-      <trans-unit id="label_attendees_names" resname="label_attendees_names" approved="yes">
-        <source>Registered persons:</source>
-        <target state="final">Angemeldete Personen:</target>
-      </trans-unit>
-      <trans-unit id="label_kids" resname="label_kids" approved="yes">
-        <source>Number of kids:</source>
-        <target state="final">Anzahl Kinder:</target>
-      </trans-unit>
       <trans-unit id="label_legend_payment" resname="label_legend_payment" approved="yes">
         <source>Payment</source>
         <target state="final">Bezahlung</target>
-      </trans-unit>
-      <trans-unit id="label_billing_address" resname="label_billing_address" approved="yes">
-        <source>Billing address</source>
-        <target state="final">Rechnungsadresse</target>
       </trans-unit>
       <trans-unit id="label_company" resname="label_company" approved="yes">
         <source>Company:</source>
         <target state="final">Firma:</target>
       </trans-unit>
-      <trans-unit id="label_gender" resname="label_gender" approved="yes">
-        <source>Mr./Mrs.:</source>
-        <target state="final">Anrede:</target>
-      </trans-unit>
-      <trans-unit id="label_gender.I.0" resname="label_gender.I.0" approved="yes">
-        <source>Mr.</source>
-        <target state="final">Herr</target>
-      </trans-unit>
-      <trans-unit id="label_gender.I.1" resname="label_gender.I.1" approved="yes">
-        <source>Ms.</source>
-        <target state="final">Frau</target>
-      </trans-unit>
       <trans-unit id="label_gender.I.2" resname="label_gender.I.2" approved="yes">
         <source>diverse</source>
         <target state="final">divers</target>
       </trans-unit>
-      <trans-unit id="label_name" resname="label_name" approved="yes">
-        <source>Name:</source>
-        <target state="final">Name</target>
-      </trans-unit>
-      <trans-unit id="label_address" resname="label_address" approved="yes">
-        <source>Street:</source>
-        <target state="final">Straße</target>
-      </trans-unit>
-      <trans-unit id="label_zip" resname="label_zip" approved="yes">
-        <source>ZIP:</source>
-        <target state="final">PLZ:</target>
-      </trans-unit>
-      <trans-unit id="label_city" resname="label_city" approved="yes">
-        <source>City:</source>
-        <target state="final">Stadt</target>
-      </trans-unit>
-      <trans-unit id="label_country" resname="label_country" approved="yes">
-        <source>Country:</source>
-        <target state="final">Land:</target>
-      </trans-unit>
-      <trans-unit id="label_telephone" resname="label_telephone" approved="yes">
-        <source>Phone number:</source>
-        <target state="final">Telefon:</target>
-      </trans-unit>
-      <trans-unit id="label_email" resname="label_email" approved="yes">
-        <source>Email address:</source>
-        <target state="final">E-Mail-Adresse:</target>
-      </trans-unit>
-      <trans-unit id="label_lodgings" resname="label_lodgings" approved="yes">
-        <source>Lodging:</source>
-        <target state="final">Art der Unterbringung:</target>
-      </trans-unit>
       <trans-unit id="label_foods" resname="label_foods" approved="yes">
-        <source>Food:</source>
-        <target state="final">Art der Verpflegung:</target>
+        <source>Food options</source>
+        <target state="final">Verpflegungsmöglichkeiten</target>
       </trans-unit>
       <trans-unit id="label_register_all_terms" resname="label_register_all_terms" approved="yes">
         <source>Registration terms</source>
@@ -1410,10 +1238,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="label_terms_2" resname="label_terms_2" approved="yes">
         <source>I accept the terms for travelling.</source>
         <target state="final">Ich akzeptiere die Reisebedingungen.</target>
-      </trans-unit>
-      <trans-unit id="label_method_of_payment" resname="label_method_of_payment" approved="yes">
-        <source>Selected method of payment:</source>
-        <target state="final">Gewählte Zahlungsart:</target>
       </trans-unit>
       <trans-unit id="label_timeslot_date" resname="label_timeslot_date" approved="yes">
         <source>Date</source>
@@ -1499,29 +1323,9 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Waiting list</source>
         <target state="final">Warteliste</target>
       </trans-unit>
-      <trans-unit id="message_missingSeminarNumber" resname="message_missingSeminarNumber" approved="yes">
-        <source>The even UID is missing from the URL. If you get this error message using a link on this page, please notify the webmaster. Thank you!</source>
-        <target state="final">Die URL enthält keine Veranstaltungs-ID. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank!</target>
-      </trans-unit>
-      <trans-unit id="message_wrongSeminarNumber" resname="message_wrongSeminarNumber" approved="yes">
-        <source>There is no event with this number. If you get this error message using a link on this page, please notify the webmaster. Thank you!</source>
-        <target state="final">Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank!</target>
-      </trans-unit>
-      <trans-unit id="message_wrongSeminarNumber_informal" resname="message_wrongSeminarNumber_informal" approved="yes">
-        <source>There is no event with this number. If you get this error message using a link on this page, please notify the webmaster. Thank you!</source>
-        <target state="final">Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn du diese Fehlermeldung durch einen Link auf unserer Seite bekommen hast, benachrichtige bitte den Webmaster. Vielen Dank!</target>
-      </trans-unit>
       <trans-unit id="message_noResults" resname="message_noResults" approved="yes">
         <source>Sorry, currently no events could be found.</source>
         <target state="final">Momentan konnten leider keine Veranstaltungen gefunden werden.</target>
-      </trans-unit>
-      <trans-unit id="message_notLoggedIn" resname="message_notLoggedIn" approved="yes">
-        <source>Sorry, you are not logged in.</source>
-        <target state="final">Sie sind nicht eingeloggt.</target>
-      </trans-unit>
-      <trans-unit id="message_notLoggedIn_informal" resname="message_notLoggedIn_informal" approved="yes">
-        <source>Sorry, you are not logged in.</source>
-        <target state="final">Du bist nicht eingeloggt.</target>
       </trans-unit>
       <trans-unit id="message_pleaseLogIn" resname="message_pleaseLogIn" approved="yes">
         <source>Please log in to view this page.</source>
@@ -1538,10 +1342,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="message_earlybird_price" resname="message_earlybird_price" approved="yes">
         <source>price valid and bookable until %s</source>
         <target state="final">Preis gültig und buchbar bis %s</target>
-      </trans-unit>
-      <trans-unit id="message_registrationOpensOn" resname="message_registrationOpensOn" approved="yes">
-        <source>starting %s</source>
-        <target state="final">ab %s</target>
       </trans-unit>
       <trans-unit id="message_noTargetGroupAgeNumber" resname="message_noTargetGroupAgeNumber" approved="yes">
         <source>Please enter only positive numbers as minimum and maximum age.</source>
@@ -2276,6 +2076,14 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="backEndModule.email.body" resname="backEndModule.email.body" approved="yes">
         <source>Email body</source>
         <target state="final">E-Mail-Text</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.message.eventDeleted" resname="backEndModule.message.eventDeleted" approved="yes">
+        <source>The event has been deleted.</source>
+        <target state="final">Die Veranstaltung wurde gelöscht.</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.message.registrationDeleted" resname="backEndModule.message.registrationDeleted" approved="yes">
+        <source>The registration has been deleted.</source>
+        <target state="final">Ihre Anmeldung wurde gelöscht.</target>
       </trans-unit>
       <trans-unit id="plugin.eventUnregistration.heading.sorry" resname="plugin.eventUnregistration.heading.sorry" approved="yes">
         <source>Sorry!</source>
