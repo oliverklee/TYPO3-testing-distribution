@@ -2378,7 +2378,7 @@ INSERT INTO `sys_registry` VALUES
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysActionExtractionUpdate','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SvgFilesSanitization','i:1;'),
 (44,'installUpdateRows','rowUpdatersDone','a:1:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";}'),
-(45,'core','sys_refindex_lastUpdate','i:1725458117;'),
+(45,'core','sys_refindex_lastUpdate','i:1725548706;'),
 (48,'languagePacks','baseUrl','s:33:\"https://localize.typo3.org/xliff/\";'),
 (49,'languagePacks','de-feuserextrafields','i:1699808188;'),
 (50,'languagePacks','de-tea','i:1699808195;'),
@@ -11924,6 +11924,9 @@ CREATE TABLE `tx_seminars_sites` (
   `homepage` tinytext DEFAULT NULL,
   `directions` text DEFAULT NULL,
   `notes` text DEFAULT NULL,
+  `contact_person` tinytext DEFAULT NULL,
+  `email_address` tinytext DEFAULT NULL,
+  `phone_number` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`),
@@ -11938,12 +11941,12 @@ CREATE TABLE `tx_seminars_sites` (
 LOCK TABLES `tx_seminars_sites` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_sites` DISABLE KEYS */;
 INSERT INTO `tx_seminars_sites` VALUES
-(1,15,1628001887,1628001690,0,0,'DJH Jugendherberge Bonn','Haager Weg 42\r\n53127 Bonn','53127','Bonn','DE','https://www.jugendherberge.de/jugendherbergen/bonn-438/portraet/','<h1>So erreichen Sie die Jugendherberge Bonn mit öffentlichen Verkehrsmitteln</h1>\r\n<h2>Ab Flughafen Köln/Bonn</h2>\r\n<p>Mit dem Airportbus (Linie SB60) erreichen Sie in 30 min. den Bonner Hauptbahnhof.</p>\r\n<h2>Ab Bonn Hbf</h2>\r\n<p>Direkt gegenüber vom Hauptbahnhof befindet sich der zentrale Busbahnhof. Vom Bussteig A1 nehmen Sie die Buslinie 600 Richtung Ippendorf-Altenheim bis zur Haltestelle \"Jugendherberge\".</p>\r\n<h1>So erreichen Sie die Jugendherberge Bonn mit dem Bus oder Pkw</h1>\r\n<h2>Aus dem Norden, Süden und Osten kommend</h2>\r\n<p>A3 bis Autobahnkreuz Bonn‐Siegburg, dann auf die A 560 bis Autobahndreieck Sankt Augustin, weiter auf der A 565 Richtung Bonn / Koblenz bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus Köln kommend</h2>\r\n<p>Am Kölner Ring auf die A 555 bis Autobahnkreuz Bonn-Nord, dort auf die A 565 Richtung Bonn / Koblenz wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus dem Westen kommend</h2>\r\n<p>A 61 bis Autobahnkreuz Meckenheim, dort auf die A 565 Richtung Bonn wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Ab Ausfahrt Bonn-Hardtberg/Röttgen</h2>\r\n<p>Nach der Ausfahrt Bonn‐Hardtberg/Röttgen links abbiegen und bergab bis zur Verkehrsampel fahren, dort rechts abbiegen (Provinzialstraße), dem Straßenverlauf folgen (Reichsstraße) Richtung Venusberg/Uni-Klinik bis vor den Stadtteil Röttgen. Dort links in die Röttgener Straße abbiegen (Achtung: scharfe S-Kurve, Tempo 30). Dem Straßenverlauf folgen bis zur zweiten Straßeneinmündung auf der rechten Seite, dort rechts abbiegen und im spitzen Winkel sofort wieder rechts in den Gudenauer Weg abbiegen (Tempo 30 beachten!). Der Straße folgen bis zur Spreestraße, an der Kreuzung nach links versetzt in die Spreestraße einbiegen, am Ende der Spreestraße nach links in den Haager Web abbiegen. Nach ca. 800 m erreichen Sie die Jugendherberge.</p>\r\n<h1>Anreise mit dem Fahrrad</h1>\r\n<p>Zur Aufbewahrung Ihrer Fahrräder steht Ihnen im Haus ein gesicherter Abstellplatz zur Verfügung.</p>',''),
-(2,15,1628001898,1628001870,0,0,'DJH Jugendherberge Köln-Deutz','Siegesstraße 5\r\n50679 Köln','50679','Köln','DE','','',''),
-(3,15,1628001937,1628001937,0,0,'DJH Jugendherberge Köln-Riehl','An der Schanz 14\r\n50735 Köln','50735','Köln','DE','','',''),
-(4,15,1628001964,1628001964,0,0,'Station - Hostel für Backpacker','Marzellenstraße 44-56\r\n50668 Köln','50668','50668 Köln','DE','','',''),
-(5,15,1628001991,1628001991,0,0,'DJH Jugendherberge Köln-Pathpoint','Allerheiligenstraße 15','50668','Köln','DE','','',''),
-(6,15,1628002041,1628002041,0,0,'CJD Bonn Castell','Graurheindorfer Str. 149\r\n53117 Bonn','53117','Bonn','DE','','','');
+(1,15,1628001887,1628001690,0,0,'DJH Jugendherberge Bonn','Haager Weg 42\r\n53127 Bonn','53127','Bonn','DE','https://www.jugendherberge.de/jugendherbergen/bonn-438/portraet/','<h1>So erreichen Sie die Jugendherberge Bonn mit öffentlichen Verkehrsmitteln</h1>\r\n<h2>Ab Flughafen Köln/Bonn</h2>\r\n<p>Mit dem Airportbus (Linie SB60) erreichen Sie in 30 min. den Bonner Hauptbahnhof.</p>\r\n<h2>Ab Bonn Hbf</h2>\r\n<p>Direkt gegenüber vom Hauptbahnhof befindet sich der zentrale Busbahnhof. Vom Bussteig A1 nehmen Sie die Buslinie 600 Richtung Ippendorf-Altenheim bis zur Haltestelle \"Jugendherberge\".</p>\r\n<h1>So erreichen Sie die Jugendherberge Bonn mit dem Bus oder Pkw</h1>\r\n<h2>Aus dem Norden, Süden und Osten kommend</h2>\r\n<p>A3 bis Autobahnkreuz Bonn‐Siegburg, dann auf die A 560 bis Autobahndreieck Sankt Augustin, weiter auf der A 565 Richtung Bonn / Koblenz bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus Köln kommend</h2>\r\n<p>Am Kölner Ring auf die A 555 bis Autobahnkreuz Bonn-Nord, dort auf die A 565 Richtung Bonn / Koblenz wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus dem Westen kommend</h2>\r\n<p>A 61 bis Autobahnkreuz Meckenheim, dort auf die A 565 Richtung Bonn wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Ab Ausfahrt Bonn-Hardtberg/Röttgen</h2>\r\n<p>Nach der Ausfahrt Bonn‐Hardtberg/Röttgen links abbiegen und bergab bis zur Verkehrsampel fahren, dort rechts abbiegen (Provinzialstraße), dem Straßenverlauf folgen (Reichsstraße) Richtung Venusberg/Uni-Klinik bis vor den Stadtteil Röttgen. Dort links in die Röttgener Straße abbiegen (Achtung: scharfe S-Kurve, Tempo 30). Dem Straßenverlauf folgen bis zur zweiten Straßeneinmündung auf der rechten Seite, dort rechts abbiegen und im spitzen Winkel sofort wieder rechts in den Gudenauer Weg abbiegen (Tempo 30 beachten!). Der Straße folgen bis zur Spreestraße, an der Kreuzung nach links versetzt in die Spreestraße einbiegen, am Ende der Spreestraße nach links in den Haager Web abbiegen. Nach ca. 800 m erreichen Sie die Jugendherberge.</p>\r\n<h1>Anreise mit dem Fahrrad</h1>\r\n<p>Zur Aufbewahrung Ihrer Fahrräder steht Ihnen im Haus ein gesicherter Abstellplatz zur Verfügung.</p>','',NULL,NULL,NULL),
+(2,15,1628001898,1628001870,0,0,'DJH Jugendherberge Köln-Deutz','Siegesstraße 5\r\n50679 Köln','50679','Köln','DE','','','',NULL,NULL,NULL),
+(3,15,1628001937,1628001937,0,0,'DJH Jugendherberge Köln-Riehl','An der Schanz 14\r\n50735 Köln','50735','Köln','DE','','','',NULL,NULL,NULL),
+(4,15,1628001964,1628001964,0,0,'Station - Hostel für Backpacker','Marzellenstraße 44-56\r\n50668 Köln','50668','50668 Köln','DE','','','',NULL,NULL,NULL),
+(5,15,1628001991,1628001991,0,0,'DJH Jugendherberge Köln-Pathpoint','Allerheiligenstraße 15','50668','Köln','DE','','','',NULL,NULL,NULL),
+(6,15,1628002041,1628002041,0,0,'CJD Bonn Castell','Graurheindorfer Str. 149\r\n53117 Bonn','53117','Bonn','DE','','','',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `tx_seminars_sites` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12246,4 +12249,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-04 15:55:49
+-- Dump completed on 2024-09-05 17:05:22
