@@ -219,6 +219,10 @@
         <source>online</source>
         <target state="final">online</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_seminars.webinar_url" resname="tx_seminars_seminars.webinar_url" approved="yes">
+        <source>Webinar URL</source>
+        <target state="final">Webinar-URL</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_seminars.begin_date" resname="tx_seminars_seminars.begin_date" approved="yes">
         <source>Begin time and date</source>
         <target state="final">Anfangszeit und -datum</target>
