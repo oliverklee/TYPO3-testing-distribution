@@ -86,6 +86,10 @@ Möglicherweise ist in Ihrem Browser auch das Setzen von Cookies nicht gestattet
         <source>Change your password</source>
         <target state="final">Passwort ändern</target>
       </trans-unit>
+      <trans-unit id="change_password_message" resname="change_password_message" approved="yes">
+        <source>Please enter your new password twice. Password needs a minimum length of %s chars.</source>
+        <target state="final">Bitte geben Sie Ihr neues Passwort zweimal ein. Das Passwort muss mindestens %s Zeichen lang sein.</target>
+      </trans-unit>
       <trans-unit id="change_password_description" resname="change_password_description" approved="yes">
         <source>Please enter your new password twice.</source>
         <target state="final">Bitte geben Sie Ihr neues Passwort zweimal ein.</target>
