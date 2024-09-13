@@ -375,6 +375,10 @@
         <source>Date of last registration digest email</source>
         <target state="final">Datum der letzten Anmelde-Zusammenfassungsmail</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_seminars.additional_email_text" resname="tx_seminars_seminars.additional_email_text" approved="yes">
+        <source>Additional text for the thank-you email to the attendees</source>
+        <target state="final">Zusätzlicher Text für die Bestätigungs-E-Mail an die angemeldeten Personen</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_speakers" resname="tx_seminars_speakers" approved="yes">
         <source>Speakers</source>
         <target state="final">ReferentInnen</target>
