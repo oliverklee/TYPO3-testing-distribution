@@ -41,16 +41,6 @@ The dump includes (and hence overwrite on import) FE users and FE user groups,
 but not BE users or BE user groups. (So it is safe to add BE users and then
 run the import.)
 
-### Developing and testing extensions
-
-To test a local copy of an extension in this distribution, you can do one of
-the following (or a combination):
-
-1. Put the extension folders in `packages/`.
-2. Mount the extension directories via Docker. For this, create the file
-   `.ddev/docker-compose.packages.yaml` as a copy of
-   `.ddev/docker-compose.packages.yaml.template` and modify it to your needs.
-
 ## Relevant URLs and launch options
 
 - Backend:

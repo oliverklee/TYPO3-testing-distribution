@@ -1,6 +1,0 @@
-# This is a template file for mounting your local extensions into this distribution.
-# Copy this file to docker-compose.packages.yaml and modify it to your needs. (More details in the README.)
-services:
-  web:
-    volumes:
-      - "$HOME/src/typo3/ext/typo3-devsite:/var/www/html/packages/typo3-devsite:cached,ro"
