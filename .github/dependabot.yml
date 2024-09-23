@@ -13,4 +13,7 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "development"
+    ignore:
+      - dependency-name: "symfony/*"
+        versions: [ ">= 7.0.0" ]
     versioning-strategy: "increase"
