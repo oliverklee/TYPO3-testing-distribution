@@ -197,7 +197,7 @@ LOCK TABLES `be_users` WRITE;
 /*!40000 ALTER TABLE `be_users` DISABLE KEYS */;
 INSERT INTO `be_users` VALUES
 (1,0,1668178395,1668178395,0,0,0,0,0,NULL,'_cli_',0,'$argon2i$v=19$m=65536,t=16,p=1$blVUUDcvMkZnS0E4cXRYaQ$Drs1ruYAO6r9+xXd1ACXlyzx7Chg/oIUGKaUg91jtDo',1,'','default','',NULL,0,'',NULL,'','a:12:{s:14:\"interfaceSetup\";s:0:\"\";s:10:\"moduleData\";a:0:{}s:19:\"thumbnailsByDefault\";i:1;s:14:\"emailMeAtLogin\";i:0;s:8:\"titleLen\";i:50;s:8:\"edit_RTE\";s:1:\"1\";s:20:\"edit_docModuleUpload\";s:1:\"1\";s:15:\"resizeTextareas\";i:1;s:25:\"resizeTextareas_MaxHeight\";i:500;s:24:\"resizeTextareas_Flexible\";i:0;s:4:\"lang\";s:7:\"default\";s:19:\"firstLoginTimeStamp\";i:1668178395;}',NULL,NULL,1,NULL,0,0,NULL,'',NULL),
-(2,0,1699808021,1668446719,0,0,0,0,0,NULL,'admin',0,'$argon2i$v=19$m=65536,t=16,p=1$NmFEMHVQLkxxZ1Yucmlacw$XX5y+tF73dwLpyJ3ZhYL5KurebqPbvnagY3VJYp+roo',1,'','de','',NULL,0,'',NULL,'','a:29:{s:14:\"interfaceSetup\";s:7:\"backend\";s:10:\"moduleData\";a:12:{s:10:\"web_layout\";a:2:{s:8:\"function\";s:1:\"1\";s:8:\"language\";s:1:\"0\";}s:8:\"web_list\";a:2:{s:9:\"clipBoard\";s:1:\"0\";s:15:\"bigControlPanel\";s:1:\"1\";}s:10:\"FormEngine\";a:2:{i:0;a:0:{}i:1;s:32:\"30214382b789903a3c8c2d5d07f541e4\";}s:57:\"TYPO3\\CMS\\Backend\\Utility\\BackendUtility::getUpdateSignal\";a:0:{}s:16:\"opendocs::recent\";a:8:{s:32:\"30214382b789903a3c8c2d5d07f541e4\";a:4:{i:0;s:36:\"Online-Veranstaltung mit E-Mail-Text\";i:1;a:5:{s:4:\"edit\";a:1:{s:20:\"tx_seminars_seminars\";a:1:{i:13;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:44:\"&edit%5Btx_seminars_seminars%5D%5B13%5D=edit\";i:3;a:5:{s:5:\"table\";s:20:\"tx_seminars_seminars\";s:3:\"uid\";i:13;s:3:\"pid\";i:14;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"ac8eceb4554a238d877cdbced8a9c761\";a:4:{i:0;s:0:\"\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:26;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B26%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:26;s:3:\"pid\";i:7;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"86205c5935270b8ee413592ec1b62292\";a:4:{i:0;s:4:\"Root\";i:1;a:5:{s:4:\"edit\";a:1:{s:12:\"sys_template\";a:1:{i:1;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:35:\"&edit%5Bsys_template%5D%5B1%5D=edit\";i:3;a:5:{s:5:\"table\";s:12:\"sys_template\";s:3:\"uid\";i:1;s:3:\"pid\";i:1;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"6c80f638c9c2df76271e87bdc8259527\";a:4:{i:0;s:14:\"onetimeaccount\";i:1;a:5:{s:4:\"edit\";a:1:{s:12:\"sys_template\";a:1:{i:5;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:35:\"&edit%5Bsys_template%5D%5B5%5D=edit\";i:3;a:5:{s:5:\"table\";s:12:\"sys_template\";s:3:\"uid\";i:5;s:3:\"pid\";i:6;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"08a06f2b8fb494ab79c4796bee35f6db\";a:4:{i:0;s:22:\"Auf der Website suchen\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:34;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B34%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:34;s:3:\"pid\";i:44;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"4682dffdfad2eee3552f9f97b7842579\";a:4:{i:0;s:0:\"\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:33;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B33%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:33;s:3:\"pid\";i:43;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"1e82483905bf73dbb1d0ece8628d1ebc\";a:4:{i:0;s:10:\"Tea editor\";i:1;a:5:{s:4:\"edit\";a:1:{s:5:\"pages\";a:1:{i:43;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:29:\"&edit%5Bpages%5D%5B43%5D=edit\";i:3;a:5:{s:5:\"table\";s:5:\"pages\";s:3:\"uid\";i:43;s:3:\"pid\";i:9;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"c5d0a0aca161448570c311265ce97b2f\";a:4:{i:0;s:10:\"Darjeeling\";i:1;a:5:{s:4:\"edit\";a:1:{s:31:\"tx_tea_domain_model_product_tea\";a:1:{i:2;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:54:\"&edit%5Btx_tea_domain_model_product_tea%5D%5B2%5D=edit\";i:3;a:5:{s:5:\"table\";s:31:\"tx_tea_domain_model_product_tea\";s:3:\"uid\";i:2;s:3:\"pid\";i:3;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}}s:16:\"browse_links.php\";a:1:{s:10:\"expandPage\";s:1:\"6\";}s:18:\"list/displayFields\";a:1:{s:5:\"pages\";a:3:{i:0;s:5:\"title\";i:1;s:6:\"hidden\";i:2;s:4:\"slug\";}}s:47:\"TYPO3\\CMS\\Belog\\Controller\\BackendLogController\";s:337:\"O:39:\"TYPO3\\CMS\\Belog\\Domain\\Model\\Constraint\":11:{s:14:\"\0*\0userOrGroup\";s:1:\"0\";s:9:\"\0*\0number\";i:20;s:15:\"\0*\0workspaceUid\";i:-99;s:10:\"\0*\0channel\";s:3:\"php\";s:8:\"\0*\0level\";s:5:\"debug\";s:17:\"\0*\0startTimestamp\";i:0;s:15:\"\0*\0endTimestamp\";i:0;s:18:\"\0*\0manualDateStart\";N;s:17:\"\0*\0manualDateStop\";N;s:9:\"\0*\0pageId\";i:0;s:8:\"\0*\0depth\";i:0;}\";s:12:\"system_dbint\";a:3:{s:8:\"function\";s:8:\"refindex\";s:6:\"search\";s:3:\"raw\";s:22:\"search_query_makeQuery\";s:3:\"all\";}s:13:\"system_config\";a:2:{s:4:\"tree\";s:8:\"confVars\";s:11:\"regexSearch\";b:0;}s:28:\"dashboard/current_dashboard/\";s:40:\"a789be90af62969620339f403de7f74072572aaa\";s:6:\"web_ts\";a:7:{s:8:\"function\";s:87:\"TYPO3\\CMS\\Tstemplate\\Controller\\TypoScriptTemplateObjectBrowserModuleFunctionController\";s:8:\"language\";N;s:19:\"constant_editor_cat\";s:7:\"content\";s:15:\"ts_browser_type\";s:5:\"setup\";s:16:\"ts_browser_const\";s:1:\"0\";s:23:\"ts_browser_showComments\";s:1:\"1\";s:25:\"tsbrowser_depthKeys_setup\";a:0:{}}}s:19:\"thumbnailsByDefault\";i:1;s:14:\"emailMeAtLogin\";i:0;s:8:\"titleLen\";s:2:\"50\";s:8:\"edit_RTE\";i:1;s:20:\"edit_docModuleUpload\";i:1;s:15:\"resizeTextareas\";i:1;s:25:\"resizeTextareas_MaxHeight\";s:3:\"500\";s:24:\"resizeTextareas_Flexible\";i:0;s:4:\"lang\";s:2:\"de\";s:19:\"firstLoginTimeStamp\";i:1668446726;s:15:\"moduleSessionID\";a:11:{s:10:\"web_layout\";s:40:\"f2e0259ede2cfcbce4d6885d48211ebc886122aa\";s:8:\"web_list\";s:40:\"f2e0259ede2cfcbce4d6885d48211ebc886122aa\";s:10:\"FormEngine\";s:40:\"129ba6b0aaeec388ec450abac51ec89a0e10bcc2\";s:57:\"TYPO3\\CMS\\Backend\\Utility\\BackendUtility::getUpdateSignal\";s:40:\"129ba6b0aaeec388ec450abac51ec89a0e10bcc2\";s:16:\"opendocs::recent\";s:40:\"129ba6b0aaeec388ec450abac51ec89a0e10bcc2\";s:16:\"browse_links.php\";s:40:\"dfa313744cd68b3f847de8a0c1f642db4b8536e9\";s:18:\"list/displayFields\";s:40:\"caf54c66d08fb403b77ce515a7c1e7897bf9e63e\";s:47:\"TYPO3\\CMS\\Belog\\Controller\\BackendLogController\";s:40:\"ceb5132f7c45750bd0321eb897823d33cf119504\";s:12:\"system_dbint\";s:40:\"a8272af325bdfbf71dfc5f9ea5a77f2a4eb728ff\";s:28:\"dashboard/current_dashboard/\";s:40:\"caf54c66d08fb403b77ce515a7c1e7897bf9e63e\";s:6:\"web_ts\";s:40:\"dfa313744cd68b3f847de8a0c1f642db4b8536e9\";}s:17:\"BackendComponents\";a:1:{s:6:\"States\";a:1:{s:8:\"Pagetree\";a:1:{s:9:\"stateHash\";a:10:{s:3:\"0_2\";s:1:\"1\";s:3:\"0_5\";s:1:\"1\";s:3:\"0_1\";s:1:\"1\";s:4:\"0_16\";s:1:\"1\";s:4:\"0_18\";s:1:\"0\";s:4:\"0_11\";s:1:\"1\";s:4:\"0_20\";s:1:\"0\";s:4:\"0_19\";s:1:\"1\";s:3:\"0_9\";s:1:\"1\";s:4:\"0_36\";s:1:\"0\";}}}}s:10:\"modulemenu\";s:39:\"{\"site\":true,\"file\":true,\"system\":true}\";s:11:\"browseTrees\";a:1:{s:11:\"browsePages\";s:34:\"[{\"0\":1,\"1\":1,\"16\":1,\"2\":1,\"5\":1}]\";}s:17:\"systeminformation\";s:45:\"{\"system_BelogLog\":{\"lastAccess\":1687429483}}\";s:11:\"tx_recycler\";a:3:{s:14:\"depthSelection\";i:0;s:14:\"tableSelection\";s:0:\"\";s:11:\"resultLimit\";i:25;}s:8:\"realName\";s:0:\"\";s:5:\"email\";s:0:\"\";s:8:\"password\";s:0:\"\";s:9:\"password2\";s:0:\"\";s:6:\"avatar\";s:0:\"\";s:11:\"startModule\";s:0:\"\";s:25:\"showHiddenFilesAndFolders\";i:0;s:10:\"copyLevels\";s:0:\"\";s:18:\"resetConfiguration\";s:0:\"\";s:12:\"mfaProviders\";s:0:\"\";s:18:\"backendTitleFormat\";s:10:\"titleFirst\";}',NULL,NULL,1,NULL,1726243411,0,NULL,'',NULL);
+(2,0,1699808021,1668446719,0,0,0,0,0,NULL,'admin',0,'$argon2i$v=19$m=65536,t=16,p=1$NmFEMHVQLkxxZ1Yucmlacw$XX5y+tF73dwLpyJ3ZhYL5KurebqPbvnagY3VJYp+roo',1,'','de','',NULL,0,'',NULL,'','a:29:{s:14:\"interfaceSetup\";s:7:\"backend\";s:10:\"moduleData\";a:12:{s:10:\"web_layout\";a:2:{s:8:\"function\";s:1:\"1\";s:8:\"language\";s:1:\"0\";}s:8:\"web_list\";a:2:{s:9:\"clipBoard\";s:1:\"0\";s:15:\"bigControlPanel\";s:1:\"1\";}s:10:\"FormEngine\";a:2:{i:0;a:0:{}i:1;s:32:\"30214382b789903a3c8c2d5d07f541e4\";}s:57:\"TYPO3\\CMS\\Backend\\Utility\\BackendUtility::getUpdateSignal\";a:0:{}s:16:\"opendocs::recent\";a:8:{s:32:\"30214382b789903a3c8c2d5d07f541e4\";a:4:{i:0;s:36:\"Online-Veranstaltung mit E-Mail-Text\";i:1;a:5:{s:4:\"edit\";a:1:{s:20:\"tx_seminars_seminars\";a:1:{i:13;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:44:\"&edit%5Btx_seminars_seminars%5D%5B13%5D=edit\";i:3;a:5:{s:5:\"table\";s:20:\"tx_seminars_seminars\";s:3:\"uid\";i:13;s:3:\"pid\";i:14;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"ac8eceb4554a238d877cdbced8a9c761\";a:4:{i:0;s:0:\"\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:26;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B26%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:26;s:3:\"pid\";i:7;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"86205c5935270b8ee413592ec1b62292\";a:4:{i:0;s:4:\"Root\";i:1;a:5:{s:4:\"edit\";a:1:{s:12:\"sys_template\";a:1:{i:1;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:35:\"&edit%5Bsys_template%5D%5B1%5D=edit\";i:3;a:5:{s:5:\"table\";s:12:\"sys_template\";s:3:\"uid\";i:1;s:3:\"pid\";i:1;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"6c80f638c9c2df76271e87bdc8259527\";a:4:{i:0;s:14:\"onetimeaccount\";i:1;a:5:{s:4:\"edit\";a:1:{s:12:\"sys_template\";a:1:{i:5;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:35:\"&edit%5Bsys_template%5D%5B5%5D=edit\";i:3;a:5:{s:5:\"table\";s:12:\"sys_template\";s:3:\"uid\";i:5;s:3:\"pid\";i:6;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"08a06f2b8fb494ab79c4796bee35f6db\";a:4:{i:0;s:22:\"Auf der Website suchen\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:34;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B34%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:34;s:3:\"pid\";i:44;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"4682dffdfad2eee3552f9f97b7842579\";a:4:{i:0;s:0:\"\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:33;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B33%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:33;s:3:\"pid\";i:43;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"1e82483905bf73dbb1d0ece8628d1ebc\";a:4:{i:0;s:10:\"Tea editor\";i:1;a:5:{s:4:\"edit\";a:1:{s:5:\"pages\";a:1:{i:43;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:29:\"&edit%5Bpages%5D%5B43%5D=edit\";i:3;a:5:{s:5:\"table\";s:5:\"pages\";s:3:\"uid\";i:43;s:3:\"pid\";i:9;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"c5d0a0aca161448570c311265ce97b2f\";a:4:{i:0;s:10:\"Darjeeling\";i:1;a:5:{s:4:\"edit\";a:1:{s:31:\"tx_tea_domain_model_product_tea\";a:1:{i:2;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:54:\"&edit%5Btx_tea_domain_model_product_tea%5D%5B2%5D=edit\";i:3;a:5:{s:5:\"table\";s:31:\"tx_tea_domain_model_product_tea\";s:3:\"uid\";i:2;s:3:\"pid\";i:3;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}}s:16:\"browse_links.php\";a:1:{s:10:\"expandPage\";s:1:\"6\";}s:18:\"list/displayFields\";a:1:{s:5:\"pages\";a:3:{i:0;s:5:\"title\";i:1;s:6:\"hidden\";i:2;s:4:\"slug\";}}s:47:\"TYPO3\\CMS\\Belog\\Controller\\BackendLogController\";s:337:\"O:39:\"TYPO3\\CMS\\Belog\\Domain\\Model\\Constraint\":11:{s:14:\"\0*\0userOrGroup\";s:1:\"0\";s:9:\"\0*\0number\";i:20;s:15:\"\0*\0workspaceUid\";i:-99;s:10:\"\0*\0channel\";s:3:\"php\";s:8:\"\0*\0level\";s:5:\"debug\";s:17:\"\0*\0startTimestamp\";i:0;s:15:\"\0*\0endTimestamp\";i:0;s:18:\"\0*\0manualDateStart\";N;s:17:\"\0*\0manualDateStop\";N;s:9:\"\0*\0pageId\";i:0;s:8:\"\0*\0depth\";i:0;}\";s:12:\"system_dbint\";a:3:{s:8:\"function\";s:8:\"refindex\";s:6:\"search\";s:3:\"raw\";s:22:\"search_query_makeQuery\";s:3:\"all\";}s:13:\"system_config\";a:2:{s:4:\"tree\";s:8:\"confVars\";s:11:\"regexSearch\";b:0;}s:28:\"dashboard/current_dashboard/\";s:40:\"a789be90af62969620339f403de7f74072572aaa\";s:6:\"web_ts\";a:7:{s:8:\"function\";s:87:\"TYPO3\\CMS\\Tstemplate\\Controller\\TypoScriptTemplateObjectBrowserModuleFunctionController\";s:8:\"language\";N;s:19:\"constant_editor_cat\";s:7:\"content\";s:15:\"ts_browser_type\";s:5:\"setup\";s:16:\"ts_browser_const\";s:1:\"0\";s:23:\"ts_browser_showComments\";s:1:\"1\";s:25:\"tsbrowser_depthKeys_setup\";a:0:{}}}s:19:\"thumbnailsByDefault\";i:1;s:14:\"emailMeAtLogin\";i:0;s:8:\"titleLen\";s:2:\"50\";s:8:\"edit_RTE\";i:1;s:20:\"edit_docModuleUpload\";i:1;s:15:\"resizeTextareas\";i:1;s:25:\"resizeTextareas_MaxHeight\";s:3:\"500\";s:24:\"resizeTextareas_Flexible\";i:0;s:4:\"lang\";s:2:\"de\";s:19:\"firstLoginTimeStamp\";i:1668446726;s:15:\"moduleSessionID\";a:11:{s:10:\"web_layout\";s:40:\"f2e0259ede2cfcbce4d6885d48211ebc886122aa\";s:8:\"web_list\";s:40:\"f2e0259ede2cfcbce4d6885d48211ebc886122aa\";s:10:\"FormEngine\";s:40:\"129ba6b0aaeec388ec450abac51ec89a0e10bcc2\";s:57:\"TYPO3\\CMS\\Backend\\Utility\\BackendUtility::getUpdateSignal\";s:40:\"8ed95f766730dbf39f179e870e84a0da2a1643ae\";s:16:\"opendocs::recent\";s:40:\"129ba6b0aaeec388ec450abac51ec89a0e10bcc2\";s:16:\"browse_links.php\";s:40:\"dfa313744cd68b3f847de8a0c1f642db4b8536e9\";s:18:\"list/displayFields\";s:40:\"caf54c66d08fb403b77ce515a7c1e7897bf9e63e\";s:47:\"TYPO3\\CMS\\Belog\\Controller\\BackendLogController\";s:40:\"ceb5132f7c45750bd0321eb897823d33cf119504\";s:12:\"system_dbint\";s:40:\"a8272af325bdfbf71dfc5f9ea5a77f2a4eb728ff\";s:28:\"dashboard/current_dashboard/\";s:40:\"caf54c66d08fb403b77ce515a7c1e7897bf9e63e\";s:6:\"web_ts\";s:40:\"dfa313744cd68b3f847de8a0c1f642db4b8536e9\";}s:17:\"BackendComponents\";a:1:{s:6:\"States\";a:1:{s:8:\"Pagetree\";a:1:{s:9:\"stateHash\";a:10:{s:3:\"0_2\";s:1:\"1\";s:3:\"0_5\";s:1:\"1\";s:3:\"0_1\";s:1:\"1\";s:4:\"0_16\";s:1:\"1\";s:4:\"0_18\";s:1:\"0\";s:4:\"0_11\";s:1:\"1\";s:4:\"0_20\";s:1:\"0\";s:4:\"0_19\";s:1:\"1\";s:3:\"0_9\";s:1:\"1\";s:4:\"0_36\";s:1:\"0\";}}}}s:10:\"modulemenu\";s:39:\"{\"site\":true,\"file\":true,\"system\":true}\";s:11:\"browseTrees\";a:1:{s:11:\"browsePages\";s:34:\"[{\"0\":1,\"1\":1,\"16\":1,\"2\":1,\"5\":1}]\";}s:17:\"systeminformation\";s:45:\"{\"system_BelogLog\":{\"lastAccess\":1687429483}}\";s:11:\"tx_recycler\";a:3:{s:14:\"depthSelection\";i:999;s:14:\"tableSelection\";s:0:\"\";s:11:\"resultLimit\";i:25;}s:8:\"realName\";s:0:\"\";s:5:\"email\";s:0:\"\";s:8:\"password\";s:0:\"\";s:9:\"password2\";s:0:\"\";s:6:\"avatar\";s:0:\"\";s:11:\"startModule\";s:0:\"\";s:25:\"showHiddenFilesAndFolders\";i:0;s:10:\"copyLevels\";s:0:\"\";s:18:\"resetConfiguration\";s:0:\"\";s:12:\"mfaProviders\";s:0:\"\";s:18:\"backendTitleFormat\";s:10:\"titleFirst\";}',NULL,NULL,1,NULL,1727210056,0,NULL,'',NULL);
 /*!40000 ALTER TABLE `be_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -444,7 +444,6 @@ INSERT INTO `pages` VALUES
 (18,16,1669819115,1627922292,1,0,0,0,0,'',512,NULL,0,0,0,0,NULL,0,'{\"slug\":null,\"title\":null}',0,0,0,0,1,0,31,27,0,'Registration','/seminars/registration',1,NULL,0,0,'',0,0,'',0,'',0,0,NULL,0,'',0,NULL,0,1669819115,NULL,'',0,'','','',1,0,0,0,0,0,'','',NULL,0,'',0,0,'',NULL,0,'',NULL,0,'','',0.5,''),
 (19,16,1669819115,1627922292,1,0,0,0,0,'-2',768,NULL,0,0,0,0,NULL,0,'{\"slug\":null,\"title\":null}',0,0,0,0,1,0,31,27,0,'My Events','/seminars/my-events',1,NULL,0,0,'',0,0,'',0,'',0,0,NULL,0,'',0,NULL,0,1669819115,NULL,'',0,'','','',0,0,0,0,0,0,'','',NULL,0,'',0,0,'',NULL,0,'',NULL,0,'','',0.5,''),
 (20,16,1669819115,1627922292,1,0,0,0,0,'3',1024,NULL,0,0,0,0,NULL,0,'{\"slug\":null,\"title\":null}',0,0,0,0,1,0,31,27,0,'My VIP events','/seminars/my-vip-events',1,NULL,0,0,'',0,0,'',0,'',0,0,NULL,0,'',0,NULL,0,1627923147,NULL,'',0,'','','',0,0,0,0,0,0,'','',NULL,0,'',0,0,'',NULL,0,'',NULL,0,'','',0.5,''),
-(21,16,1669819115,1627922292,1,0,0,0,0,'4',1280,NULL,0,0,0,0,NULL,0,'{\"slug\":null,\"title\":null}',0,0,0,0,1,0,31,27,0,'FE Editor','/seminars/my-created-events',1,NULL,0,0,'',0,0,'',0,'',0,0,NULL,0,'',0,NULL,0,1669819115,NULL,'',0,'','','',0,0,0,0,0,0,'','',NULL,0,'',0,0,'',NULL,0,'',NULL,0,'','',0.5,''),
 (22,18,1627922430,1627922397,1,0,0,0,0,'',256,NULL,0,0,0,0,NULL,0,'{\"doktype\":null,\"title\":null,\"nav_title\":null,\"subtitle\":null,\"abstract\":null,\"keywords\":null,\"description\":null,\"author\":null,\"author_email\":null,\"lastUpdated\":null,\"layout\":null,\"newUntil\":null,\"backend_layout\":null,\"backend_layout_next_level\":null,\"content_from_pid\":null,\"alias\":null,\"target\":null,\"cache_timeout\":null,\"cache_tags\":null,\"is_siteroot\":null,\"no_search\":null,\"php_tree_stop\":null,\"module\":null,\"media\":null,\"tsconfig_includes\":null,\"TSconfig\":null,\"l18n_cfg\":null,\"hidden\":null,\"nav_hide\":null,\"starttime\":null,\"endtime\":null,\"extendToSubpages\":null,\"fe_group\":null,\"fe_login_mode\":null,\"editlock\":null,\"categories\":null,\"rowDescription\":null}',0,0,0,0,1,0,31,27,0,'Thank you','/2/thank-you',1,NULL,0,0,'',0,0,'',0,'',0,0,NULL,0,'',0,NULL,0,1627922430,NULL,'',0,'','','',1,0,0,0,0,0,'','',NULL,0,'',0,0,'',NULL,0,'',NULL,0,'','',0.5,''),
 (23,19,1627922528,1627922453,1,0,0,0,0,'-2',256,NULL,0,0,0,0,NULL,0,'{\"doktype\":null,\"title\":null,\"nav_title\":null,\"subtitle\":null,\"abstract\":null,\"keywords\":null,\"description\":null,\"author\":null,\"author_email\":null,\"lastUpdated\":null,\"layout\":null,\"newUntil\":null,\"backend_layout\":null,\"backend_layout_next_level\":null,\"content_from_pid\":null,\"alias\":null,\"target\":null,\"cache_timeout\":null,\"cache_tags\":null,\"is_siteroot\":null,\"no_search\":null,\"php_tree_stop\":null,\"module\":null,\"media\":null,\"tsconfig_includes\":null,\"TSconfig\":null,\"l18n_cfg\":null,\"hidden\":null,\"nav_hide\":null,\"starttime\":null,\"endtime\":null,\"extendToSubpages\":null,\"fe_group\":null,\"fe_login_mode\":null,\"editlock\":null,\"categories\":null,\"rowDescription\":null}',0,0,0,0,1,0,31,27,0,'Participants','/2/my-events/participants',1,NULL,0,0,'',0,0,'',0,'',0,0,NULL,0,'',0,NULL,0,1627922528,NULL,'',0,'','','',1,0,0,0,0,0,'','',NULL,0,'',0,0,'',NULL,0,'',NULL,0,'','',0.5,''),
 (24,20,1627923157,1627922473,1,0,0,0,0,'3',256,NULL,0,0,0,0,NULL,0,'{\"doktype\":null,\"title\":null,\"nav_title\":null,\"subtitle\":null,\"abstract\":null,\"keywords\":null,\"description\":null,\"author\":null,\"author_email\":null,\"lastUpdated\":null,\"layout\":null,\"newUntil\":null,\"backend_layout\":null,\"backend_layout_next_level\":null,\"content_from_pid\":null,\"alias\":null,\"target\":null,\"cache_timeout\":null,\"cache_tags\":null,\"is_siteroot\":null,\"no_search\":null,\"php_tree_stop\":null,\"module\":null,\"media\":null,\"tsconfig_includes\":null,\"TSconfig\":null,\"l18n_cfg\":null,\"hidden\":null,\"nav_hide\":null,\"starttime\":null,\"endtime\":null,\"extendToSubpages\":null,\"fe_group\":null,\"fe_login_mode\":null,\"editlock\":null,\"categories\":null,\"rowDescription\":null}',0,0,0,0,1,0,31,27,0,'Participants','/2/my-vip-events/participants',1,NULL,0,0,'',0,0,'',0,'',0,0,NULL,0,'',0,NULL,0,1627923157,NULL,'',0,'','','',1,0,0,0,0,0,'','',NULL,0,'',0,0,'',NULL,0,'',NULL,0,'','',0.5,''),
@@ -2455,7 +2454,7 @@ CREATE TABLE `sys_registry` (
   `entry_value` mediumblob DEFAULT NULL,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `entry_identifier` (`entry_namespace`,`entry_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2506,7 +2505,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:5:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";i:4;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\SysRedirectRootPageMoveMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1726852355;'),
+(43,'core','sys_refindex_lastUpdate','i:1727210317;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -2515,17 +2514,17 @@ INSERT INTO `sys_registry` VALUES
 (54,'languagePacks','de-static_info_tables','i:1711821417;'),
 (55,'extensionDataImport','typo3/cms-scheduler/ext_tables_static+adt.sql','s:0:\"\";'),
 (56,'extensionDataImport','typo3/cms-indexed-search/ext_tables_static+adt.sql','s:0:\"\";'),
-(60,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendGroupsExplicitAllowDenyMigration','i:1;'),
-(61,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendModulePermissionMigration','i:1;'),
-(62,'installUpdate','TYPO3\\CMS\\Install\\Updates\\CollectionsExtractionUpdate','i:1;'),
-(63,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FeLoginModeExtractionUpdate','i:1;'),
-(64,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigrateSiteSettingsConfigUpdate','i:1;'),
-(65,'installUpdate','TYPO3\\CMS\\Install\\Updates\\ShortcutRecordsMigration','i:1;'),
-(66,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysFileCollectionIdentifierMigration','i:1;'),
-(67,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysFileMountIdentifierMigration','i:1;'),
-(68,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogSerializationUpdate','i:1;'),
-(69,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysTemplateNoWorkspaceMigration','i:1;'),
-(71,'installUpdate','TYPO3\\CMS\\Install\\Updates\\PasswordPolicyForFrontendUsersUpdate','i:1;');
+(61,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendGroupsExplicitAllowDenyMigration','i:1;'),
+(62,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendModulePermissionMigration','i:1;'),
+(63,'installUpdate','TYPO3\\CMS\\Install\\Updates\\CollectionsExtractionUpdate','i:1;'),
+(64,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FeLoginModeExtractionUpdate','i:1;'),
+(65,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigrateSiteSettingsConfigUpdate','i:1;'),
+(66,'installUpdate','TYPO3\\CMS\\Install\\Updates\\ShortcutRecordsMigration','i:1;'),
+(67,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysFileCollectionIdentifierMigration','i:1;'),
+(68,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysFileMountIdentifierMigration','i:1;'),
+(69,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogSerializationUpdate','i:1;'),
+(70,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysTemplateNoWorkspaceMigration','i:1;'),
+(72,'installUpdate','TYPO3\\CMS\\Install\\Updates\\PasswordPolicyForFrontendUsersUpdate','i:1;');
 /*!40000 ALTER TABLE `sys_registry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2686,22 +2685,21 @@ INSERT INTO `tt_content` VALUES
 (4,'',10,1698853976,1627916473,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,'',0,'','',0,'0','tea_teashow',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
 (5,'',10,1627916562,1627916562,1,0,0,0,0,'',512,0,0,0,0,NULL,0,'',0,0,0,0,'text','','','<p><a href=\"t3://page?uid=9\">zurück zur Listenansicht</a></p>',0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','',1,0,NULL,0,'','','',0,0,0,NULL,'',0,'',NULL,'','',NULL,124,0,0,0,0),
 (6,'',1,1627916920,1627916914,1,0,0,0,0,'',512,0,0,0,0,NULL,0,'{\"CType\":null,\"colPos\":null,\"header\":null,\"header_layout\":null,\"header_position\":null,\"date\":null,\"header_link\":null,\"subheader\":null,\"pages\":null,\"layout\":null,\"frame_class\":null,\"space_before_class\":null,\"space_after_class\":null,\"sectionIndex\":null,\"linkToTop\":null,\"accessibility_title\":null,\"accessibility_bypass\":null,\"accessibility_bypass_text\":null,\"sys_language_uid\":null,\"hidden\":null,\"starttime\":null,\"endtime\":null,\"fe_group\":null,\"editlock\":null,\"categories\":null,\"rowDescription\":null}',0,0,0,0,'menu_subpages','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,'1',0,'','',0,'0','',1,0,NULL,0,'','','',0,0,0,NULL,'',0,'',NULL,'','',NULL,124,0,0,0,0),
-(8,'',16,1726852399,1627923276,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
-(9,'',17,1726852399,1627923293,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
-(10,'',26,1726852399,1627923315,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
-(11,'',27,1726852399,1627923346,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
-(12,'',18,1726852399,1627923371,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_eventregistration',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(8,'',16,1727210117,1627923276,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">seminar_list</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\">event_type,language,country,city,place,organizer,categories,date,age,price,full_text_search</value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToEventTypes\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToCategories\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToPlaces\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToOrganizers\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(9,'',17,1727210117,1627923293,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">single_view</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(10,'',26,1727210117,1627923315,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">category_list</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(11,'',27,1727210117,1627923346,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">topic_list</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(12,'',18,1670000481,1627923371,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"CType\":null,\"colPos\":null,\"header\":null,\"header_layout\":null,\"header_position\":null,\"date\":null,\"header_link\":null,\"subheader\":null,\"list_type\":null,\"pi_flexform\":null,\"layout\":null,\"frame_class\":null,\"space_before_class\":null,\"space_after_class\":null,\"sectionIndex\":null,\"linkToTop\":null,\"sys_language_uid\":null,\"hidden\":null,\"starttime\":null,\"endtime\":null,\"fe_group\":null,\"editlock\":null,\"categories\":null,\"rowDescription\":null}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_eventregistration',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"pagesAndFolders\">\n            <language index=\"lDEF\">\n                <field index=\"settings.pageForMissingEvent\">\n                    <value index=\"vDEF\">16</value>\n                </field>\n                <field index=\"settings.loginPage\">\n                    <value index=\"vDEF\">7</value>\n                </field>\n                <field index=\"settings.termsAndConditionsPage\">\n                    <value index=\"vDEF\">33</value>\n                </field>\n                <field index=\"settings.termsAndConditionsLinkTitle\">\n                    <value index=\"vDEF\">AGB</value>\n                </field>\n                <field index=\"settings.additionalTermsPage\">\n                    <value index=\"vDEF\">34</value>\n                </field>\n                <field index=\"settings.additionalTermsLinkTitle\">\n                    <value index=\"vDEF\">Reisebedingungen</value>\n                </field>\n                <field index=\"settings.registrationRecordsStorageFolder\">\n                    <value index=\"vDEF\">12</value>\n                </field>\n                <field index=\"settings.additionalPersonsStorageFolder\">\n                    <value index=\"vDEF\">12</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"personsToRegister\">\n            <language index=\"lDEF\">\n                <field index=\"settings.maximumBookableSeats\">\n                    <value index=\"vDEF\">10</value>\n                </field>\n                <field index=\"settings.registerThemselvesDefault\">\n                    <value index=\"vDEF\">1</value>\n                </field>\n                <field index=\"settings.showEmailFieldForAdditionalAttendees\">\n                    <value index=\"vDEF\">1</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"formFields\">\n            <language index=\"lDEF\">\n                <field index=\"settings.fieldsToShow\">\n                    <value index=\"vDEF\">seats,registeredThemselves,attendeesNames,interests,expectations,backgroundKnowledge,knownFrom,comments,priceCode,separateBillingAddress,billingCompany,billingFullName,billingStreetAddress,billingZipCode,billingCity,billingCountry,billingPhoneNumber,billingEmailAddress,personalData,consentedToTermsAndConditions</value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
 (14,'',22,1627923458,1627923458,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'',0,0,0,0,'text','Vielen Dank!','','<p>Vielen Dank für Ihre Anmeldung! Wir sehen uns bald!</p>',0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','',1,0,NULL,0,'','','',0,0,0,NULL,'',0,'',NULL,'','',NULL,124,0,0,0,0),
 (15,'',29,1627923525,1627923525,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'',0,0,0,0,'text','Oh no!','','<p>Wir haben Ihre Abmeldung erhalten. Es tut uns Leid, dass Sie doch nicht teilnehmen.</p>',0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','',1,0,NULL,0,'','','',0,0,0,NULL,'',0,'',NULL,'','',NULL,124,0,0,0,0),
-(16,'',19,1726852399,1627924053,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
-(17,'',23,1726852399,1627924075,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
-(18,'',20,1726852399,1627924092,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
-(19,'',24,1726852399,1627924112,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
-(20,'',21,1726852399,1627924135,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_frontendeditor',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(16,'',19,1727210117,1627924053,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">my_events</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToEventTypes\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToCategories\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToPlaces\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToOrganizers\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(17,'',23,1727210117,1627924075,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">list_registrations</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(18,'',20,1727210117,1627924092,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">my_vip_events</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(19,'',24,1727210117,1627924112,1,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">list_vip_registrations</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
 (22,'',1,1631546571,1631546548,1,0,0,0,0,'',384,0,1,1,1,NULL,1,'{\"CType\":\"text\",\"colPos\":0,\"header\":\"Willkommen!\",\"header_layout\":\"0\",\"header_position\":\"\",\"date\":0,\"header_link\":\"\",\"subheader\":\"\",\"bodytext\":\"<p>Dies ist die Startseite.<\\/p>\",\"layout\":0,\"frame_class\":\"default\",\"space_before_class\":\"\",\"space_after_class\":\"\",\"sectionIndex\":1,\"linkToTop\":0,\"sys_language_uid\":0,\"l18n_parent\":0,\"hidden\":0,\"fe_group\":\"\",\"editlock\":0,\"categories\":0,\"rowDescription\":\"\",\"starttime\":0,\"endtime\":0}',0,0,0,0,'text','Welcome!','','<p>This is the start page.</p>',0,0,0,0,0,0,0,2,0,0,0,'default',0,'','','','',0,'','',0,'0','',1,0,'',0,'','','',0,0,0,NULL,'',0,'','','','',NULL,124,0,0,0,0),
 (23,'',1,1631546583,1631546548,1,0,0,0,0,'',448,0,1,6,6,NULL,6,'{\"CType\":\"menu_subpages\",\"colPos\":0,\"header\":\"\",\"header_layout\":\"0\",\"header_position\":\"\",\"date\":0,\"header_link\":\"\",\"subheader\":\"\",\"pages\":\"1\",\"layout\":0,\"frame_class\":\"default\",\"space_before_class\":\"\",\"space_after_class\":\"\",\"sectionIndex\":1,\"linkToTop\":0,\"accessibility_title\":\"\",\"accessibility_bypass\":0,\"accessibility_bypass_text\":\"\",\"sys_language_uid\":0,\"hidden\":0,\"starttime\":0,\"endtime\":0,\"fe_group\":\"\",\"editlock\":0,\"categories\":0,\"rowDescription\":\"\",\"l18n_parent\":0}',0,0,0,0,'menu_subpages','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','','','1',0,'','',0,'0','',1,0,'',0,'','','',0,0,0,NULL,'',0,'','','','',NULL,124,0,0,0,0),
-(24,'',32,1726852399,1631549808,1,0,0,0,0,'',256,0,0,0,0,NULL,8,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','','','',0,'','',0,'0','seminars_pi1',1,0,'',0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'','','','',NULL,124,0,0,0,0),
-(25,'',22,1726852399,1631550407,1,0,0,0,0,'',128,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
+(24,'',32,1727210117,1631549808,1,0,0,0,0,'',256,0,0,0,0,NULL,8,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','','','',0,'','',0,'0','seminars_pi1',1,0,'',0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">seminar_list</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\">event_type,language,country,city,place,organizer,categories,date,age,price,full_text_search</value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToEventTypes\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToCategories\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToPlaces\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToOrganizers\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\">list_registrations</value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'','','','',NULL,124,0,0,0,0),
+(25,'',22,1727210117,1631550407,1,0,0,0,0,'',128,0,0,0,0,NULL,0,'{\"pi_flexform\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','seminars_pi1',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"what_to_display\">\n                    <value index=\"vDEF\">event_headline</value>\n                </field>\n                <field index=\"listPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"detailPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"myEventsPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registerPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"loginPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"registrationsVipListPID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitFileDownloadToAttendees\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"pages\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"recursive\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_listView\">\n            <language index=\"lDEF\">\n                <field index=\"displaySearchFormFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"numberOfYearsInDateFilter\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToEventTypes\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToCategories\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToPlaces\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"limitListViewToOrganizers\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showOnlyEventsWithVacancies\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"categoriesInListView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"linkToSingleView\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_template_special\">\n            <language index=\"lDEF\">\n                <field index=\"showSingleEvent\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"timeframeInList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"defaultEventVipsFeGroupID\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideColumns\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"hideFields\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showEmptyEntryInOptionLists\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hidePageBrowser\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"hideCanceledEvents\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"sortListViewByCategory\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInList\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"generalPriceInSingle\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSpeakerDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n                <field index=\"showSiteDetails\">\n                    <value index=\"vDEF\">0</value>\n                </field>\n            </language>\n        </sheet>\n        <sheet index=\"s_registrationsListView\">\n            <language index=\"lDEF\">\n                <field index=\"showFeUserFieldsInRegistrationsList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n                <field index=\"showRegistrationFieldsInRegistrationList\">\n                    <value index=\"vDEF\"></value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
 (26,'',7,1714834061,1654093843,1,0,0,0,0,'',512,0,0,0,0,NULL,0,'{\"CType\":\"\",\"colPos\":\"\",\"header\":\"\",\"header_layout\":\"\",\"header_position\":\"\",\"date\":\"\",\"header_link\":\"\",\"subheader\":\"\",\"list_type\":\"\",\"pi_flexform\":\"\",\"layout\":\"\",\"frame_class\":\"\",\"space_before_class\":\"\",\"space_after_class\":\"\",\"sectionIndex\":\"\",\"linkToTop\":\"\",\"sys_language_uid\":\"\",\"hidden\":\"\",\"starttime\":\"\",\"endtime\":\"\",\"fe_group\":\"\",\"editlock\":\"\",\"categories\":\"\",\"rowDescription\":\"\"}',0,0,0,0,'list','','',NULL,0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,'',0,'','',0,'0','onetimeaccount_withoutautologin',1,0,NULL,0,'','','',0,0,0,'<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"general\">\n            <language index=\"lDEF\">\n                <field index=\"settings.fieldsToShow\">\n                    <value index=\"vDEF\">company,gender,fullSalutation,firstName,address,zip,city,email,telephone,dateOfBirth</value>\n                </field>\n                <field index=\"settings.requiredFields\">\n                    <value index=\"vDEF\">email</value>\n                </field>\n                <field index=\"settings.systemFolderForNewUsers\">\n                    <value index=\"vDEF\">4</value>\n                </field>\n                <field index=\"settings.groupsForNewUsers\">\n                    <value index=\"vDEF\">2</value>\n                </field>\n                <field index=\"settings.captcha\">\n                    <value index=\"vDEF\">1</value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>','',0,'',NULL,'','',NULL,124,0,0,0,0),
 (27,'',33,1669818722,1669818705,2,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"CType\":null,\"colPos\":null,\"header\":null,\"header_layout\":null,\"header_position\":null,\"date\":null,\"header_link\":null,\"subheader\":null,\"bodytext\":null,\"layout\":null,\"frame_class\":null,\"space_before_class\":null,\"space_after_class\":null,\"sectionIndex\":null,\"linkToTop\":null,\"sys_language_uid\":null,\"hidden\":null,\"starttime\":null,\"endtime\":null,\"fe_group\":null,\"editlock\":null,\"categories\":null,\"rowDescription\":null}',0,0,0,0,'text','Terms & conditions','','<p>Have fun!</p>',0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','',1,0,NULL,0,'','','',0,0,0,NULL,'',0,'',NULL,'','',NULL,124,0,0,0,0),
 (28,'',34,1669818749,1669818747,2,0,0,0,0,'',256,0,0,0,0,NULL,0,'{\"CType\":null,\"colPos\":null,\"header\":null,\"header_layout\":null,\"header_position\":null,\"date\":null,\"header_link\":null,\"subheader\":null,\"bodytext\":null,\"layout\":null,\"frame_class\":null,\"space_before_class\":null,\"space_after_class\":null,\"sectionIndex\":null,\"linkToTop\":null,\"sys_language_uid\":null,\"hidden\":null,\"starttime\":null,\"endtime\":null,\"fe_group\":null,\"editlock\":null,\"categories\":null,\"rowDescription\":null}',0,0,0,0,'text','Traveling terms','','<p>For our sailing trips, you\'ll need to be able to swim.</p>',0,0,0,0,0,0,0,2,0,0,0,'default',0,'','',NULL,NULL,0,'','',0,'0','',1,0,NULL,0,'','','',0,0,0,NULL,'',0,'',NULL,'','',NULL,124,0,0,0,0),
@@ -11046,7 +11044,6 @@ CREATE TABLE `tx_seminars_attendances` (
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `user` int(10) unsigned NOT NULL DEFAULT 0,
   `seminar` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11083,7 +11080,6 @@ CREATE TABLE `tx_seminars_attendances` (
   `separate_billing_address` smallint(5) unsigned NOT NULL DEFAULT 0,
   `price_code` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `seminar` (`seminar`),
   KEY `user` (`user`),
   KEY `parent` (`pid`,`deleted`,`hidden`)
@@ -11097,12 +11093,12 @@ CREATE TABLE `tx_seminars_attendances` (
 LOCK TABLES `tx_seminars_attendances` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_attendances` DISABLE KEYS */;
 INSERT INTO `tx_seminars_attendances` VALUES
-(1,12,1628003260,1628003260,0,0,0,'Anna Attendee / TCCD, 20.-23.11.2021',1,7,0,'Standardpreis: € 500,00',1,0,500.00,NULL,0,0,1,NULL,'',0,NULL,'','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,NULL),
-(2,12,1628016412,1628016412,0,0,0,NULL,4,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,'price_regular'),
-(3,12,1628016433,1628016433,0,0,0,NULL,5,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,'price_regular'),
-(4,12,1671044582,1671044495,0,0,0,'Event with waiting list / Anton R. Admin, 01.01.2030',6,11,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular'),
-(5,12,1671044607,1671044565,0,0,0,'Event with waiting list / Anna A. Attendee, 01.01.2030',1,11,1,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular'),
-(6,12,1671226186,1671226135,0,0,0,'Event for unregistration / Anna A. Attendee, 01.01.2030',1,12,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular');
+(1,12,1628003260,1628003260,0,0,'Anna Attendee / TCCD, 20.-23.11.2021',1,7,0,'Standardpreis: € 500,00',1,0,500.00,NULL,0,0,1,NULL,'',0,NULL,'','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,NULL),
+(2,12,1628016412,1628016412,0,0,NULL,4,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,'price_regular'),
+(3,12,1628016433,1628016433,0,0,NULL,5,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,'price_regular'),
+(4,12,1671044582,1671044495,0,0,'Event with waiting list / Anton R. Admin, 01.01.2030',6,11,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular'),
+(5,12,1671044607,1671044565,0,0,'Event with waiting list / Anna A. Attendee, 01.01.2030',1,11,1,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular'),
+(6,12,1671226186,1671226135,0,0,'Event for unregistration / Anna A. Attendee, 01.01.2030',1,12,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular');
 /*!40000 ALTER TABLE `tx_seminars_attendances` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11116,13 +11112,11 @@ DROP TABLE IF EXISTS `tx_seminars_attendances_checkboxes_mm`;
 CREATE TABLE `tx_seminars_attendances_checkboxes_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11145,13 +11139,11 @@ DROP TABLE IF EXISTS `tx_seminars_attendances_foods_mm`;
 CREATE TABLE `tx_seminars_attendances_foods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11174,13 +11166,11 @@ DROP TABLE IF EXISTS `tx_seminars_attendances_lodgings_mm`;
 CREATE TABLE `tx_seminars_attendances_lodgings_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11206,12 +11196,10 @@ CREATE TABLE `tx_seminars_categories` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `icon` int(10) unsigned NOT NULL DEFAULT 0,
   `single_view_page` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11224,9 +11212,9 @@ CREATE TABLE `tx_seminars_categories` (
 LOCK TABLES `tx_seminars_categories` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_categories` DISABLE KEYS */;
 INSERT INTO `tx_seminars_categories` VALUES
-(1,15,1634124425,1628000755,0,0,'Methodentraining',0,0),
-(2,15,1634124425,1628000766,0,0,'Politik',0,0),
-(3,15,1634124425,1628000777,0,0,'Softwareentwicklung',0,0);
+(1,15,1634124425,1628000755,0,'Methodentraining',0,0),
+(2,15,1634124425,1628000766,0,'Politik',0,0),
+(3,15,1634124425,1628000777,0,'Softwareentwicklung',0,0);
 /*!40000 ALTER TABLE `tx_seminars_categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11243,11 +11231,9 @@ CREATE TABLE `tx_seminars_checkboxes` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `description` text DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -11259,8 +11245,8 @@ CREATE TABLE `tx_seminars_checkboxes` (
 LOCK TABLES `tx_seminars_checkboxes` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_checkboxes` DISABLE KEYS */;
 INSERT INTO `tx_seminars_checkboxes` VALUES
-(1,15,1628000801,1628000801,0,0,'Ich komme später an.',NULL),
-(2,15,1628000819,1628000819,0,0,'Ich kenne schon jemanden aus der Gruppe.',NULL);
+(1,15,1628000801,1628000801,0,'Ich komme später an.',NULL),
+(2,15,1628000819,1628000819,0,'Ich kenne schon jemanden aus der Gruppe.',NULL);
 /*!40000 ALTER TABLE `tx_seminars_checkboxes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11277,11 +11263,9 @@ CREATE TABLE `tx_seminars_event_types` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `single_view_page` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11294,10 +11278,10 @@ CREATE TABLE `tx_seminars_event_types` (
 LOCK TABLES `tx_seminars_event_types` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_event_types` DISABLE KEYS */;
 INSERT INTO `tx_seminars_event_types` VALUES
-(1,15,1628000830,1628000830,0,0,'Workshop',0),
-(2,15,1628000836,1628000836,0,0,'Vortrag',0),
-(3,15,1628000845,1628000845,0,0,'Wochenendseminar',0),
-(4,15,1628000854,1628000854,0,0,'Abendveranstaltung',0);
+(1,15,1628000830,1628000830,0,'Workshop',0),
+(2,15,1628000836,1628000836,0,'Vortrag',0),
+(3,15,1628000845,1628000845,0,'Wochenendseminar',0),
+(4,15,1628000854,1628000854,0,'Abendveranstaltung',0);
 /*!40000 ALTER TABLE `tx_seminars_event_types` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11314,10 +11298,8 @@ CREATE TABLE `tx_seminars_foods` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -11329,12 +11311,12 @@ CREATE TABLE `tx_seminars_foods` (
 LOCK TABLES `tx_seminars_foods` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_foods` DISABLE KEYS */;
 INSERT INTO `tx_seminars_foods` VALUES
-(1,15,1628000870,1628000870,0,0,'vegetarisch'),
-(2,15,1628000876,1628000876,0,0,'low-carb'),
-(3,15,1628000882,1628000882,0,0,'vegan'),
-(4,15,1628000889,1628000889,0,0,'glutenfrei'),
-(5,15,1628000894,1628000894,0,0,'halal'),
-(6,15,1628000906,1628000906,0,0,'koscher');
+(1,15,1628000870,1628000870,0,'vegetarisch'),
+(2,15,1628000876,1628000876,0,'low-carb'),
+(3,15,1628000882,1628000882,0,'vegan'),
+(4,15,1628000889,1628000889,0,'glutenfrei'),
+(5,15,1628000894,1628000894,0,'halal'),
+(6,15,1628000906,1628000906,0,'koscher');
 /*!40000 ALTER TABLE `tx_seminars_foods` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11351,10 +11333,8 @@ CREATE TABLE `tx_seminars_lodgings` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -11366,10 +11346,10 @@ CREATE TABLE `tx_seminars_lodgings` (
 LOCK TABLES `tx_seminars_lodgings` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_lodgings` DISABLE KEYS */;
 INSERT INTO `tx_seminars_lodgings` VALUES
-(1,15,1628000917,1628000917,0,0,'Einzelzimmer'),
-(2,15,1628000927,1628000927,0,0,'Doppelzimmer'),
-(3,15,1628000934,1628000934,0,0,'Mehrbettzimmer'),
-(4,15,1628000946,1628000946,0,0,'Ich organisiere meine Übernachtung selbst.');
+(1,15,1628000917,1628000917,0,'Einzelzimmer'),
+(2,15,1628000927,1628000927,0,'Doppelzimmer'),
+(3,15,1628000934,1628000934,0,'Mehrbettzimmer'),
+(4,15,1628000946,1628000946,0,'Ich organisiere meine Übernachtung selbst.');
 /*!40000 ALTER TABLE `tx_seminars_lodgings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11386,14 +11366,12 @@ CREATE TABLE `tx_seminars_organizers` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `homepage` tinytext DEFAULT NULL,
   `email` tinytext DEFAULT NULL,
   `email_footer` text DEFAULT NULL,
   `description` text DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -11405,10 +11383,10 @@ CREATE TABLE `tx_seminars_organizers` (
 LOCK TABLES `tx_seminars_organizers` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_organizers` DISABLE KEYS */;
 INSERT INTO `tx_seminars_organizers` VALUES
-(1,15,1681136279,1628001001,0,0,'TYPO3 Trainer Network','t3://page?uid=38','ttn@example.com','',''),
-(2,15,1628001024,1628001024,0,0,'TYPO3 Association','','assoc@example.com','',''),
-(3,15,1628001042,1628001042,0,0,'oliverklee.de','','ok@example.com','',''),
-(4,15,1628001066,1628001066,0,0,'TYPO3 Usergroup','','ug@example.com','','');
+(1,15,1681136279,1628001001,0,'TYPO3 Trainer Network','t3://page?uid=38','ttn@example.com','',''),
+(2,15,1628001024,1628001024,0,'TYPO3 Association','','assoc@example.com','',''),
+(3,15,1628001042,1628001042,0,'oliverklee.de','','ok@example.com','',''),
+(4,15,1628001066,1628001066,0,'TYPO3 Usergroup','','ug@example.com','','');
 /*!40000 ALTER TABLE `tx_seminars_organizers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11425,11 +11403,9 @@ CREATE TABLE `tx_seminars_payment_methods` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `description` text DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -11441,8 +11417,8 @@ CREATE TABLE `tx_seminars_payment_methods` (
 LOCK TABLES `tx_seminars_payment_methods` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_payment_methods` DISABLE KEYS */;
 INSERT INTO `tx_seminars_payment_methods` VALUES
-(1,15,1628000964,1628000964,0,0,'Rechnung',''),
-(2,15,1628000974,1628000974,0,0,'bar vor Ort','');
+(1,15,1628000964,1628000964,0,'Rechnung',''),
+(2,15,1628000974,1628000974,0,'bar vor Ort','');
 /*!40000 ALTER TABLE `tx_seminars_payment_methods` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11462,7 +11438,6 @@ CREATE TABLE `tx_seminars_seminars` (
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
   `starttime` int(10) unsigned NOT NULL DEFAULT 0,
   `endtime` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `object_type` int(10) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `topic` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11510,7 +11485,6 @@ CREATE TABLE `tx_seminars_seminars` (
   `target_groups` int(10) unsigned NOT NULL DEFAULT 0,
   `registrations` int(10) unsigned NOT NULL DEFAULT 0,
   `cancelled` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `owner_feuser` int(10) unsigned NOT NULL DEFAULT 0,
   `vips` int(10) unsigned NOT NULL DEFAULT 0,
   `checkboxes` int(10) unsigned NOT NULL DEFAULT 0,
   `uses_terms_2` smallint(5) unsigned NOT NULL DEFAULT 0,
@@ -11529,7 +11503,6 @@ CREATE TABLE `tx_seminars_seminars` (
   `webinar_url` tinytext DEFAULT NULL,
   `additional_email_text` text DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `object_type` (`object_type`),
   KEY `topic` (`topic`),
   KEY `event_takes_place_reminder_sent` (`event_takes_place_reminder_sent`),
@@ -11548,19 +11521,19 @@ CREATE TABLE `tx_seminars_seminars` (
 LOCK TABLES `tx_seminars_seminars` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars` VALUES
-(1,13,1634124323,1628002174,0,0,0,0,0,1,'TCCD',0,'TYPO3 CMS Certified Developer',1,'TCCD-Training de luxe!','<p>I\'m baby leggings artisan tbh enamel pin art party raclette hot chicken intelligentsia readymade, cardigan XOXO. Cray sriracha normcore organic. Fixie live-edge quinoa cred four loko poke tumeric art party whatever air plant. Hella asymmetrical locavore direct trade shaman. Actually green juice waistcoat succulents.</p>',1,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',500.00,450.00,400.00,375.00,'',1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,1,0,0,0,0,0,0,'tccd',0,NULL,NULL),
-(2,13,1634124328,1628002285,0,0,0,0,0,1,'TCCI',0,'TYPO3 CMS Certified Integrator',1,'TCCI - so einfach geht TYPO3!','<p>Farm-to-table adaptogen vice YOLO four dollar toast bespoke. Hammock helvetica asymmetrical next level. Deep v hoodie ramps fam lo-fi unicorn paleo hot chicken fanny pack affogato trust fund chartreuse twee offal iceland. Photo booth godard everyday carry heirloom chillwave 90\'s craft beer, direct trade kogi skateboard dreamcatcher butcher.</p>',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',650.00,0.00,0.00,0.00,'',0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,0,1,0,0,0,0,0,'tcci',0,NULL,NULL),
-(3,14,1654092629,1628002505,0,0,0,0,0,0,'Einzelveranstaltung mit Anmeldeopotionen',0,'',0,'','',0,'',0,1964419200,1964448000,0,0,1647334800,0,1647334800,0,'',1,'Raum \"Brandenburg\"',3,6,1,0,0,0,'',0.00,0.00,0.00,0.00,'',1,1,0,0,0,1,0,4,12,0,0,2,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-anmeldeopotionen',0,NULL,NULL),
-(4,14,1634124396,1628002652,0,0,0,0,0,0,'Einzelveranstaltung mit Zeitslots',0,'',0,'','<p>Mustache direct trade master cleanse, fashion axe aesthetic farm-to-table vexillologist drinking vinegar austin 90\'s ramps 8-bit biodiesel snackwave taxidermy. Whatever banh mi chartreuse chicharrones. Unicorn bespoke sriracha pabst, art party typewriter messenger bag vexillologist banh mi intelligentsia. Bicycle rights four dollar toast kickstarter sustainable vegan tumblr, quinoa tumeric fingerstache. Artisan tilde sartorial, quinoa raw denim banh mi pitchfork offal bitters dreamcatcher actually keffiyeh. Palo santo air plant XOXO pug woke shaman.</p>',0,'',0,1964505600,1964606400,2,0,0,0,0,0,'',2,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-zeitslots',0,NULL,NULL),
-(5,14,1634124392,1628002667,0,0,0,0,0,2,'TCCD-Termin',1,'',0,'','',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,0,'',0,0,0,0,0,0,0,0,0,'tccd-1',0,NULL,NULL),
-(6,14,1654092629,1628002703,0,0,0,0,0,2,'TCCI-Termin',2,'',0,'','',0,'',0,1944399480,1955375880,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tcci-1',0,NULL,NULL),
-(7,14,1654092629,1628002743,0,0,0,0,0,2,'TCCD-Termin mit Datum',1,'',0,'','',0,'',0,1952956740,1953215940,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tccd-2',0,NULL,NULL),
-(8,30,1667052715,1628014468,0,0,0,0,0,0,'Frontend-created event',0,'',0,'','There is no spoon. And the cake is a lie.',2,'',0,1680336000,1680451200,0,0,0,1677625200,0,0,NULL,1,'',0,0,2,0,0,0,'',250.00,175.00,0.00,0.00,'',0,1,0,0,0,1,0,2,25,0,0,0,0,0,3,0,0,0,'',0,0,0,0,0,0,0,0,0,'frontend-created-event',0,NULL,NULL),
-(9,30,1671225712,1667052765,0,0,0,0,0,0,'Created in the FE, too',0,NULL,0,NULL,'',4,NULL,0,0,0,0,0,0,0,0,0,NULL,0,NULL,0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,NULL,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,NULL,0,0,0,0,0,0,0,0,0,'created-in-the-fe-too',0,NULL,NULL),
-(10,14,1670000681,1670000681,0,0,0,0,0,0,'Infinite registrations!',0,'',0,'','<p>This event allows an infinite number of registrations.</p>',1,'',0,1735722000,1735750800,0,0,0,0,0,0,'',0,'',4,6,0,0,0,0,'',200.00,175.00,150.00,125.00,'',2,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,2,1,'',0,0,0,0,0,0,0,0,0,'infinite-registrations',0,NULL,NULL),
-(11,14,1671044582,1671044468,0,0,0,0,0,0,'Event with waiting list',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,1,1,0,0,2,0,0,0,0,0,'',0,0,0,0,1,0,0,0,0,'event-with-waiting-list',0,NULL,NULL),
-(12,14,1671226186,1671225968,0,0,0,0,0,0,'Event for unregistration',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,1893484800,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'event-for-unregistration',0,NULL,NULL),
-(13,14,1726243424,1726243290,0,0,0,0,0,0,'Online-Veranstaltung mit E-Mail-Text',0,'',0,'','',0,'',0,1903852800,1903881600,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,99,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'online-veranstaltung-mit-e-mail-text',2,'https://www.example.com','Bitte achten Sie beim Webinar darauf, dass Ihre Kamera eingeschaltet ist.\r\n\r\nUnd wir machen genügend Kaffeepausen - also keine Panik! :->');
+(1,13,1634124323,1628002174,0,0,0,0,1,'TCCD',0,'TYPO3 CMS Certified Developer',1,'TCCD-Training de luxe!','<p>I\'m baby leggings artisan tbh enamel pin art party raclette hot chicken intelligentsia readymade, cardigan XOXO. Cray sriracha normcore organic. Fixie live-edge quinoa cred four loko poke tumeric art party whatever air plant. Hella asymmetrical locavore direct trade shaman. Actually green juice waistcoat succulents.</p>',1,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',500.00,450.00,400.00,375.00,'',1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,'',0,0,1,0,0,0,0,0,0,'tccd',0,NULL,NULL),
+(2,13,1634124328,1628002285,0,0,0,0,1,'TCCI',0,'TYPO3 CMS Certified Integrator',1,'TCCI - so einfach geht TYPO3!','<p>Farm-to-table adaptogen vice YOLO four dollar toast bespoke. Hammock helvetica asymmetrical next level. Deep v hoodie ramps fam lo-fi unicorn paleo hot chicken fanny pack affogato trust fund chartreuse twee offal iceland. Photo booth godard everyday carry heirloom chillwave 90\'s craft beer, direct trade kogi skateboard dreamcatcher butcher.</p>',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',650.00,0.00,0.00,0.00,'',0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,'',0,0,0,1,0,0,0,0,0,'tcci',0,NULL,NULL),
+(3,14,1654092629,1628002505,0,0,0,0,0,'Einzelveranstaltung mit Anmeldeopotionen',0,'',0,'','',0,'',0,1964419200,1964448000,0,0,1647334800,0,1647334800,0,'',1,'Raum \"Brandenburg\"',3,6,1,0,0,0,'',0.00,0.00,0.00,0.00,'',1,1,0,0,0,1,0,4,12,0,0,2,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-anmeldeopotionen',0,NULL,NULL),
+(4,14,1634124396,1628002652,0,0,0,0,0,'Einzelveranstaltung mit Zeitslots',0,'',0,'','<p>Mustache direct trade master cleanse, fashion axe aesthetic farm-to-table vexillologist drinking vinegar austin 90\'s ramps 8-bit biodiesel snackwave taxidermy. Whatever banh mi chartreuse chicharrones. Unicorn bespoke sriracha pabst, art party typewriter messenger bag vexillologist banh mi intelligentsia. Bicycle rights four dollar toast kickstarter sustainable vegan tumblr, quinoa tumeric fingerstache. Artisan tilde sartorial, quinoa raw denim banh mi pitchfork offal bitters dreamcatcher actually keffiyeh. Palo santo air plant XOXO pug woke shaman.</p>',0,'',0,1964505600,1964606400,2,0,0,0,0,0,'',2,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-zeitslots',0,NULL,NULL),
+(5,14,1634124392,1628002667,0,0,0,0,2,'TCCD-Termin',1,'',0,'','',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,2,0,'',0,0,0,0,0,0,0,0,0,'tccd-1',0,NULL,NULL),
+(6,14,1654092629,1628002703,0,0,0,0,2,'TCCI-Termin',2,'',0,'','',0,'',0,1944399480,1955375880,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tcci-1',0,NULL,NULL),
+(7,14,1654092629,1628002743,0,0,0,0,2,'TCCD-Termin mit Datum',1,'',0,'','',0,'',0,1952956740,1953215940,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tccd-2',0,NULL,NULL),
+(8,30,1667052715,1628014468,0,0,0,0,0,'Frontend-created event',0,'',0,'','There is no spoon. And the cake is a lie.',2,'',0,1680336000,1680451200,0,0,0,1677625200,0,0,NULL,1,'',0,0,2,0,0,0,'',250.00,175.00,0.00,0.00,'',0,1,0,0,0,1,0,2,25,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'frontend-created-event',0,NULL,NULL),
+(9,30,1671225712,1667052765,0,0,0,0,0,'Created in the FE, too',0,NULL,0,NULL,'',4,NULL,0,0,0,0,0,0,0,0,0,NULL,0,NULL,0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,NULL,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0,'created-in-the-fe-too',0,NULL,NULL),
+(10,14,1670000681,1670000681,0,0,0,0,0,'Infinite registrations!',0,'',0,'','<p>This event allows an infinite number of registrations.</p>',1,'',0,1735722000,1735750800,0,0,0,0,0,0,'',0,'',4,6,0,0,0,0,'',200.00,175.00,150.00,125.00,'',2,1,0,0,0,1,1,0,0,0,0,0,0,0,0,2,1,'',0,0,0,0,0,0,0,0,0,'infinite-registrations',0,NULL,NULL),
+(11,14,1671044582,1671044468,0,0,0,0,0,'Event with waiting list',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,1,1,0,0,2,0,0,0,0,'',0,0,0,0,1,0,0,0,0,'event-with-waiting-list',0,NULL,NULL),
+(12,14,1671226186,1671225968,0,0,0,0,0,'Event for unregistration',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,1893484800,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'event-for-unregistration',0,NULL,NULL),
+(13,14,1726243424,1726243290,0,0,0,0,0,'Online-Veranstaltung mit E-Mail-Text',0,'',0,'','',0,'',0,1903852800,1903881600,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,99,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'online-veranstaltung-mit-e-mail-text',2,'https://www.example.com','Bitte achten Sie beim Webinar darauf, dass Ihre Kamera eingeschaltet ist.\r\n\r\nUnd wir machen genügend Kaffeepausen - also keine Panik! :->');
 /*!40000 ALTER TABLE `tx_seminars_seminars` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11574,13 +11547,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_categories_mm`;
 CREATE TABLE `tx_seminars_seminars_categories_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11591,8 +11562,8 @@ CREATE TABLE `tx_seminars_seminars_categories_mm` (
 LOCK TABLES `tx_seminars_seminars_categories_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_categories_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_categories_mm` VALUES
-(1,3,0,'',1,0),
-(2,3,0,'',1,0);
+(1,3,'',1,0),
+(2,3,'',1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_categories_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11606,13 +11577,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_checkboxes_mm`;
 CREATE TABLE `tx_seminars_seminars_checkboxes_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11623,10 +11592,10 @@ CREATE TABLE `tx_seminars_seminars_checkboxes_mm` (
 LOCK TABLES `tx_seminars_seminars_checkboxes_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_checkboxes_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_checkboxes_mm` VALUES
-(5,1,0,'',1,0),
-(5,2,0,'',2,0),
-(10,1,0,'',1,0),
-(10,2,0,'',2,0);
+(5,1,'',1,0),
+(5,2,'',2,0),
+(10,1,'',1,0),
+(10,2,'',2,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_checkboxes_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11640,13 +11609,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_feusers_mm`;
 CREATE TABLE `tx_seminars_seminars_feusers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11669,13 +11636,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_foods_mm`;
 CREATE TABLE `tx_seminars_seminars_foods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11686,18 +11651,18 @@ CREATE TABLE `tx_seminars_seminars_foods_mm` (
 LOCK TABLES `tx_seminars_seminars_foods_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_foods_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_foods_mm` VALUES
-(3,4,0,'',1,0),
-(3,5,0,'',2,0),
-(3,2,0,'',3,0),
-(3,6,0,'',4,0),
-(3,1,0,'',5,0),
-(3,3,0,'',6,0),
-(10,4,0,'',1,0),
-(10,6,0,'',2,0),
-(10,5,0,'',3,0),
-(10,3,0,'',4,0),
-(10,2,0,'',5,0),
-(10,1,0,'',6,0);
+(3,4,'',1,0),
+(3,5,'',2,0),
+(3,2,'',3,0),
+(3,6,'',4,0),
+(3,1,'',5,0),
+(3,3,'',6,0),
+(10,4,'',1,0),
+(10,6,'',2,0),
+(10,5,'',3,0),
+(10,3,'',4,0),
+(10,2,'',5,0),
+(10,1,'',6,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_foods_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11711,13 +11676,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_lodgings_mm`;
 CREATE TABLE `tx_seminars_seminars_lodgings_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11728,13 +11691,13 @@ CREATE TABLE `tx_seminars_seminars_lodgings_mm` (
 LOCK TABLES `tx_seminars_seminars_lodgings_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_lodgings_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_lodgings_mm` VALUES
-(3,2,0,'',1,0),
-(3,1,0,'',2,0),
-(3,3,0,'',3,0),
-(10,2,0,'',1,0),
-(10,1,0,'',2,0),
-(10,4,0,'',3,0),
-(10,3,0,'',4,0);
+(3,2,'',1,0),
+(3,1,'',2,0),
+(3,3,'',3,0),
+(10,2,'',1,0),
+(10,1,'',2,0),
+(10,4,'',3,0),
+(10,3,'',4,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_lodgings_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11748,13 +11711,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_organizers_mm`;
 CREATE TABLE `tx_seminars_seminars_organizers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11765,17 +11726,17 @@ CREATE TABLE `tx_seminars_seminars_organizers_mm` (
 LOCK TABLES `tx_seminars_seminars_organizers_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_organizers_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_organizers_mm` VALUES
-(3,2,0,'',1,0),
-(4,1,0,'',1,0),
-(5,3,0,'',1,0),
-(6,1,0,'',1,0),
-(7,1,0,'',1,0),
-(8,3,0,'',1,0),
-(9,3,0,'',1,0),
-(10,3,0,'',1,0),
-(11,3,0,'',1,0),
-(12,3,0,'',1,0),
-(13,3,0,'',1,0);
+(3,2,'',1,0),
+(4,1,'',1,0),
+(5,3,'',1,0),
+(6,1,'',1,0),
+(7,1,'',1,0),
+(8,3,'',1,0),
+(9,3,'',1,0),
+(10,3,'',1,0),
+(11,3,'',1,0),
+(12,3,'',1,0),
+(13,3,'',1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_organizers_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11789,13 +11750,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_organizing_partners_mm`;
 CREATE TABLE `tx_seminars_seminars_organizing_partners_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11818,13 +11777,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_payment_methods_mm`;
 CREATE TABLE `tx_seminars_seminars_payment_methods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11835,10 +11792,10 @@ CREATE TABLE `tx_seminars_seminars_payment_methods_mm` (
 LOCK TABLES `tx_seminars_seminars_payment_methods_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_payment_methods_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_payment_methods_mm` VALUES
-(1,1,0,'',1,0),
-(3,2,0,'',1,0),
-(10,2,0,'',1,0),
-(10,1,0,'',2,0);
+(1,1,'',1,0),
+(3,2,'',1,0),
+(10,2,'',1,0),
+(10,1,'',2,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_payment_methods_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11852,13 +11809,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_place_mm`;
 CREATE TABLE `tx_seminars_seminars_place_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11869,10 +11824,10 @@ CREATE TABLE `tx_seminars_seminars_place_mm` (
 LOCK TABLES `tx_seminars_seminars_place_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_place_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_place_mm` VALUES
-(3,1,0,'',1,0),
-(7,1,0,'',1,0),
-(4,4,0,'',0,0),
-(8,1,0,'',1,0);
+(3,1,'',1,0),
+(7,1,'',1,0),
+(4,4,'',0,0),
+(8,1,'',1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_place_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11886,13 +11841,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_requirements_mm`;
 CREATE TABLE `tx_seminars_seminars_requirements_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11903,7 +11856,7 @@ CREATE TABLE `tx_seminars_seminars_requirements_mm` (
 LOCK TABLES `tx_seminars_seminars_requirements_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_requirements_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_requirements_mm` VALUES
-(1,2,0,'',1,1);
+(1,2,'',1,1);
 /*!40000 ALTER TABLE `tx_seminars_seminars_requirements_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11917,13 +11870,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm`;
 CREATE TABLE `tx_seminars_seminars_speakers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11934,9 +11885,9 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm` (
 LOCK TABLES `tx_seminars_seminars_speakers_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_speakers_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_speakers_mm` VALUES
-(3,1,0,'',1,0),
-(8,3,0,'',1,0),
-(8,1,0,'',2,0);
+(3,1,'',1,0),
+(8,3,'',1,0),
+(8,1,'',2,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_speakers_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11950,13 +11901,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm_leaders`;
 CREATE TABLE `tx_seminars_seminars_speakers_mm_leaders` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -11979,13 +11928,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm_partners`;
 CREATE TABLE `tx_seminars_seminars_speakers_mm_partners` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -12008,13 +11955,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm_tutors`;
 CREATE TABLE `tx_seminars_seminars_speakers_mm_tutors` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -12037,13 +11982,11 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_target_groups_mm`;
 CREATE TABLE `tx_seminars_seminars_target_groups_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -12054,10 +11997,10 @@ CREATE TABLE `tx_seminars_seminars_target_groups_mm` (
 LOCK TABLES `tx_seminars_seminars_target_groups_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_target_groups_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_target_groups_mm` VALUES
-(1,8,0,'',1,0),
-(2,4,0,'',1,0),
-(3,6,0,'',1,0),
-(3,5,0,'',2,0);
+(1,8,'',1,0),
+(2,4,'',1,0),
+(3,6,'',1,0),
+(3,5,'',2,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_target_groups_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12074,7 +12017,6 @@ CREATE TABLE `tx_seminars_sites` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `address` text DEFAULT NULL,
   `zip` tinytext DEFAULT NULL,
@@ -12087,7 +12029,6 @@ CREATE TABLE `tx_seminars_sites` (
   `email_address` tinytext DEFAULT NULL,
   `phone_number` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`,`city`)
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -12100,12 +12041,12 @@ CREATE TABLE `tx_seminars_sites` (
 LOCK TABLES `tx_seminars_sites` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_sites` DISABLE KEYS */;
 INSERT INTO `tx_seminars_sites` VALUES
-(1,15,1628001887,1628001690,0,0,'DJH Jugendherberge Bonn','Haager Weg 42\r\n53127 Bonn','53127','Bonn','DE','https://www.jugendherberge.de/jugendherbergen/bonn-438/portraet/','<h1>So erreichen Sie die Jugendherberge Bonn mit öffentlichen Verkehrsmitteln</h1>\r\n<h2>Ab Flughafen Köln/Bonn</h2>\r\n<p>Mit dem Airportbus (Linie SB60) erreichen Sie in 30 min. den Bonner Hauptbahnhof.</p>\r\n<h2>Ab Bonn Hbf</h2>\r\n<p>Direkt gegenüber vom Hauptbahnhof befindet sich der zentrale Busbahnhof. Vom Bussteig A1 nehmen Sie die Buslinie 600 Richtung Ippendorf-Altenheim bis zur Haltestelle \"Jugendherberge\".</p>\r\n<h1>So erreichen Sie die Jugendherberge Bonn mit dem Bus oder Pkw</h1>\r\n<h2>Aus dem Norden, Süden und Osten kommend</h2>\r\n<p>A3 bis Autobahnkreuz Bonn‐Siegburg, dann auf die A 560 bis Autobahndreieck Sankt Augustin, weiter auf der A 565 Richtung Bonn / Koblenz bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus Köln kommend</h2>\r\n<p>Am Kölner Ring auf die A 555 bis Autobahnkreuz Bonn-Nord, dort auf die A 565 Richtung Bonn / Koblenz wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus dem Westen kommend</h2>\r\n<p>A 61 bis Autobahnkreuz Meckenheim, dort auf die A 565 Richtung Bonn wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Ab Ausfahrt Bonn-Hardtberg/Röttgen</h2>\r\n<p>Nach der Ausfahrt Bonn‐Hardtberg/Röttgen links abbiegen und bergab bis zur Verkehrsampel fahren, dort rechts abbiegen (Provinzialstraße), dem Straßenverlauf folgen (Reichsstraße) Richtung Venusberg/Uni-Klinik bis vor den Stadtteil Röttgen. Dort links in die Röttgener Straße abbiegen (Achtung: scharfe S-Kurve, Tempo 30). Dem Straßenverlauf folgen bis zur zweiten Straßeneinmündung auf der rechten Seite, dort rechts abbiegen und im spitzen Winkel sofort wieder rechts in den Gudenauer Weg abbiegen (Tempo 30 beachten!). Der Straße folgen bis zur Spreestraße, an der Kreuzung nach links versetzt in die Spreestraße einbiegen, am Ende der Spreestraße nach links in den Haager Web abbiegen. Nach ca. 800 m erreichen Sie die Jugendherberge.</p>\r\n<h1>Anreise mit dem Fahrrad</h1>\r\n<p>Zur Aufbewahrung Ihrer Fahrräder steht Ihnen im Haus ein gesicherter Abstellplatz zur Verfügung.</p>','',NULL,NULL,NULL),
-(2,15,1628001898,1628001870,0,0,'DJH Jugendherberge Köln-Deutz','Siegesstraße 5\r\n50679 Köln','50679','Köln','DE','','','',NULL,NULL,NULL),
-(3,15,1628001937,1628001937,0,0,'DJH Jugendherberge Köln-Riehl','An der Schanz 14\r\n50735 Köln','50735','Köln','DE','','','',NULL,NULL,NULL),
-(4,15,1681136288,1628001964,0,0,'Station - Hostel für Backpacker','Marzellenstraße 44-56\r\n50668 Köln','50668','50668 Köln','DE','t3://page?uid=39','','',NULL,NULL,NULL),
-(5,15,1628001991,1628001991,0,0,'DJH Jugendherberge Köln-Pathpoint','Allerheiligenstraße 15','50668','Köln','DE','','','',NULL,NULL,NULL),
-(6,15,1628002041,1628002041,0,0,'CJD Bonn Castell','Graurheindorfer Str. 149\r\n53117 Bonn','53117','Bonn','DE','','','',NULL,NULL,NULL);
+(1,15,1628001887,1628001690,0,'DJH Jugendherberge Bonn','Haager Weg 42\r\n53127 Bonn','53127','Bonn','DE','https://www.jugendherberge.de/jugendherbergen/bonn-438/portraet/','<h1>So erreichen Sie die Jugendherberge Bonn mit öffentlichen Verkehrsmitteln</h1>\r\n<h2>Ab Flughafen Köln/Bonn</h2>\r\n<p>Mit dem Airportbus (Linie SB60) erreichen Sie in 30 min. den Bonner Hauptbahnhof.</p>\r\n<h2>Ab Bonn Hbf</h2>\r\n<p>Direkt gegenüber vom Hauptbahnhof befindet sich der zentrale Busbahnhof. Vom Bussteig A1 nehmen Sie die Buslinie 600 Richtung Ippendorf-Altenheim bis zur Haltestelle \"Jugendherberge\".</p>\r\n<h1>So erreichen Sie die Jugendherberge Bonn mit dem Bus oder Pkw</h1>\r\n<h2>Aus dem Norden, Süden und Osten kommend</h2>\r\n<p>A3 bis Autobahnkreuz Bonn‐Siegburg, dann auf die A 560 bis Autobahndreieck Sankt Augustin, weiter auf der A 565 Richtung Bonn / Koblenz bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus Köln kommend</h2>\r\n<p>Am Kölner Ring auf die A 555 bis Autobahnkreuz Bonn-Nord, dort auf die A 565 Richtung Bonn / Koblenz wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus dem Westen kommend</h2>\r\n<p>A 61 bis Autobahnkreuz Meckenheim, dort auf die A 565 Richtung Bonn wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Ab Ausfahrt Bonn-Hardtberg/Röttgen</h2>\r\n<p>Nach der Ausfahrt Bonn‐Hardtberg/Röttgen links abbiegen und bergab bis zur Verkehrsampel fahren, dort rechts abbiegen (Provinzialstraße), dem Straßenverlauf folgen (Reichsstraße) Richtung Venusberg/Uni-Klinik bis vor den Stadtteil Röttgen. Dort links in die Röttgener Straße abbiegen (Achtung: scharfe S-Kurve, Tempo 30). Dem Straßenverlauf folgen bis zur zweiten Straßeneinmündung auf der rechten Seite, dort rechts abbiegen und im spitzen Winkel sofort wieder rechts in den Gudenauer Weg abbiegen (Tempo 30 beachten!). Der Straße folgen bis zur Spreestraße, an der Kreuzung nach links versetzt in die Spreestraße einbiegen, am Ende der Spreestraße nach links in den Haager Web abbiegen. Nach ca. 800 m erreichen Sie die Jugendherberge.</p>\r\n<h1>Anreise mit dem Fahrrad</h1>\r\n<p>Zur Aufbewahrung Ihrer Fahrräder steht Ihnen im Haus ein gesicherter Abstellplatz zur Verfügung.</p>','',NULL,NULL,NULL),
+(2,15,1628001898,1628001870,0,'DJH Jugendherberge Köln-Deutz','Siegesstraße 5\r\n50679 Köln','50679','Köln','DE','','','',NULL,NULL,NULL),
+(3,15,1628001937,1628001937,0,'DJH Jugendherberge Köln-Riehl','An der Schanz 14\r\n50735 Köln','50735','Köln','DE','','','',NULL,NULL,NULL),
+(4,15,1681136288,1628001964,0,'Station - Hostel für Backpacker','Marzellenstraße 44-56\r\n50668 Köln','50668','50668 Köln','DE','t3://page?uid=39','','',NULL,NULL,NULL),
+(5,15,1628001991,1628001991,0,'DJH Jugendherberge Köln-Pathpoint','Allerheiligenstraße 15','50668','Köln','DE','','','',NULL,NULL,NULL),
+(6,15,1628002041,1628002041,0,'CJD Bonn Castell','Graurheindorfer Str. 149\r\n53117 Bonn','53117','Bonn','DE','','','',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `tx_seminars_sites` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12122,10 +12063,8 @@ CREATE TABLE `tx_seminars_skills` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -12137,12 +12076,12 @@ CREATE TABLE `tx_seminars_skills` (
 LOCK TABLES `tx_seminars_skills` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_skills` DISABLE KEYS */;
 INSERT INTO `tx_seminars_skills` VALUES
-(1,15,1628001238,1628001238,0,0,'TCCD'),
-(2,15,1628001244,1628001244,0,0,'TCCE'),
-(3,15,1628001249,1628001249,0,0,'TCCC'),
-(4,15,1628001255,1628001255,0,0,'TCCI'),
-(5,15,1628001262,1628001262,0,0,'Moderation'),
-(6,15,1628001274,1628001274,0,0,'Trainings geben');
+(1,15,1628001238,1628001238,0,'TCCD'),
+(2,15,1628001244,1628001244,0,'TCCE'),
+(3,15,1628001249,1628001249,0,'TCCC'),
+(4,15,1628001255,1628001255,0,'TCCI'),
+(5,15,1628001262,1628001262,0,'Moderation'),
+(6,15,1628001274,1628001274,0,'Trainings geben');
 /*!40000 ALTER TABLE `tx_seminars_skills` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12160,7 +12099,6 @@ CREATE TABLE `tx_seminars_speakers` (
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `organization` tinytext DEFAULT NULL,
   `homepage` tinytext DEFAULT NULL,
@@ -12175,7 +12113,6 @@ CREATE TABLE `tx_seminars_speakers` (
   `email` tinytext DEFAULT NULL,
   `cancelation_period` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`,`hidden`),
   FULLTEXT KEY `index_searchfields` (`title`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -12188,10 +12125,10 @@ CREATE TABLE `tx_seminars_speakers` (
 LOCK TABLES `tx_seminars_speakers` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_speakers` DISABLE KEYS */;
 INSERT INTO `tx_seminars_speakers` VALUES
-(1,15,1681136267,1628001482,0,0,0,'Joe Speaker','','t3://page?uid=37','<p class=\"paragraph\">Powder pie cake pudding ice cream bonbon. Apple pie chocolate lemon drops marshmallow apple pie toffee dragée lemon drops. Bear claw brownie brownie pudding cake gummies cake chupa chups. Danish dessert ice cream liquorice macaroon icing croissant croissant cake. Halvah wafer brownie shortbread oat cake chocolate cake. Cheesecake shortbread chupa chups croissant brownie wafer. Shortbread danish gummi bears sugar plum sesame snaps toffee marshmallow bonbon. Cotton candy pie croissant sesame snaps macaroon lemon drops cupcake cotton candy.</p>',0,0,'','','','','','',0),
-(2,15,1628001493,1628001493,0,0,0,'Max Speaker','','','<p>Sweet roll powder jujubes marshmallow gummies chocolate cake tiramisu. Cookie icing fruitcake icing sugar plum toffee cheesecake cookie cotton candy. Apple pie caramels apple pie tootsie roll biscuit brownie tootsie roll dragée. Brownie donut brownie candy candy wafer. Sesame snaps tootsie roll pie candy cotton candy pie jelly-o. Cake sesame snaps croissant bonbon liquorice. Pudding cake bonbon jelly-o marzipan. Lemon drops cupcake candy canes chupa chups chocolate cake macaroon muffin jujubes. Marshmallow jujubes caramels jujubes cake lollipop. Gingerbread candy powder dessert shortbread jelly jelly beans.</p>',0,0,'','','','','','',0),
-(3,15,1628001518,1628001518,0,0,0,'Carry Speaker','','','<p>Sweet sweet jelly-o carrot cake pastry caramels wafer dragée. Lemon drops powder biscuit carrot cake caramels marshmallow. Chupa chups gummies cupcake liquorice sweet roll. Tiramisu chocolate bar icing chocolate toffee pie powder. Gummi bears gummies sweet roll donut cookie sweet roll. Shortbread gummi bears cotton candy bonbon halvah. Bear claw gummies sesame snaps fruitcake bear claw dessert danish liquorice fruitcake. Lollipop cheesecake donut cheesecake apple pie. Shortbread jelly cake gummi bears sesame snaps. Wafer caramels cotton candy marshmallow cookie sweet roll.</p>',0,0,'','','','','','',0),
-(4,15,1628001555,1628001555,0,0,0,'Mel Speaker','','','<p>Cotton candy marzipan powder cookie apple pie marshmallow dragée sweet roll apple pie. Powder sweet roll carrot cake apple pie powder sweet roll. Cupcake gummies powder candy dessert sugar plum sweet roll. Jelly beans cheesecake wafer apple pie dragée halvah ice cream wafer. Sweet roll gummi bears croissant cupcake jelly-o shortbread. Candy bonbon pudding bonbon bonbon toffee toffee. Shortbread gummi bears pudding cake tiramisu. Gummies muffin bear claw oat cake lemon drops biscuit. Cupcake carrot cake cake donut cotton candy oat cake toffee biscuit.</p>',0,0,'','','','','','',0);
+(1,15,1681136267,1628001482,0,0,'Joe Speaker','','t3://page?uid=37','<p class=\"paragraph\">Powder pie cake pudding ice cream bonbon. Apple pie chocolate lemon drops marshmallow apple pie toffee dragée lemon drops. Bear claw brownie brownie pudding cake gummies cake chupa chups. Danish dessert ice cream liquorice macaroon icing croissant croissant cake. Halvah wafer brownie shortbread oat cake chocolate cake. Cheesecake shortbread chupa chups croissant brownie wafer. Shortbread danish gummi bears sugar plum sesame snaps toffee marshmallow bonbon. Cotton candy pie croissant sesame snaps macaroon lemon drops cupcake cotton candy.</p>',0,0,'','','','','','',0),
+(2,15,1628001493,1628001493,0,0,'Max Speaker','','','<p>Sweet roll powder jujubes marshmallow gummies chocolate cake tiramisu. Cookie icing fruitcake icing sugar plum toffee cheesecake cookie cotton candy. Apple pie caramels apple pie tootsie roll biscuit brownie tootsie roll dragée. Brownie donut brownie candy candy wafer. Sesame snaps tootsie roll pie candy cotton candy pie jelly-o. Cake sesame snaps croissant bonbon liquorice. Pudding cake bonbon jelly-o marzipan. Lemon drops cupcake candy canes chupa chups chocolate cake macaroon muffin jujubes. Marshmallow jujubes caramels jujubes cake lollipop. Gingerbread candy powder dessert shortbread jelly jelly beans.</p>',0,0,'','','','','','',0),
+(3,15,1628001518,1628001518,0,0,'Carry Speaker','','','<p>Sweet sweet jelly-o carrot cake pastry caramels wafer dragée. Lemon drops powder biscuit carrot cake caramels marshmallow. Chupa chups gummies cupcake liquorice sweet roll. Tiramisu chocolate bar icing chocolate toffee pie powder. Gummi bears gummies sweet roll donut cookie sweet roll. Shortbread gummi bears cotton candy bonbon halvah. Bear claw gummies sesame snaps fruitcake bear claw dessert danish liquorice fruitcake. Lollipop cheesecake donut cheesecake apple pie. Shortbread jelly cake gummi bears sesame snaps. Wafer caramels cotton candy marshmallow cookie sweet roll.</p>',0,0,'','','','','','',0),
+(4,15,1628001555,1628001555,0,0,'Mel Speaker','','','<p>Cotton candy marzipan powder cookie apple pie marshmallow dragée sweet roll apple pie. Powder sweet roll carrot cake apple pie powder sweet roll. Cupcake gummies powder candy dessert sugar plum sweet roll. Jelly beans cheesecake wafer apple pie dragée halvah ice cream wafer. Sweet roll gummi bears croissant cupcake jelly-o shortbread. Candy bonbon pudding bonbon bonbon toffee toffee. Shortbread gummi bears pudding cake tiramisu. Gummies muffin bear claw oat cake lemon drops biscuit. Cupcake carrot cake cake donut cotton candy oat cake toffee biscuit.</p>',0,0,'','','','','','',0);
 /*!40000 ALTER TABLE `tx_seminars_speakers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12205,13 +12142,11 @@ DROP TABLE IF EXISTS `tx_seminars_speakers_skills_mm`;
 CREATE TABLE `tx_seminars_speakers_skills_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -12237,12 +12172,10 @@ CREATE TABLE `tx_seminars_target_groups` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `minimum_age` smallint(5) unsigned NOT NULL DEFAULT 0,
   `maximum_age` smallint(5) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `parent` (`pid`,`deleted`),
   FULLTEXT KEY `index_searchfields` (`title`)
 ) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -12255,14 +12188,14 @@ CREATE TABLE `tx_seminars_target_groups` (
 LOCK TABLES `tx_seminars_target_groups` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_target_groups` DISABLE KEYS */;
 INSERT INTO `tx_seminars_target_groups` VALUES
-(1,15,1628001095,1628001095,0,0,'Einsteiger:innen',0,0),
-(2,15,1628001102,1628001102,0,0,'Fortgeschrittene',0,0),
-(3,15,1628001109,1628001109,0,0,'Trainer:innen',0,0),
-(4,15,1628001121,1628001121,0,0,'TYPO3-Integrator:innen',0,0),
-(5,15,1628001133,1628001133,0,0,'Erwachsene',18,0),
-(6,15,1628001143,1628001143,0,0,'Jugendliche',12,17),
-(7,15,1628001151,1628001151,0,0,'Kinder',0,11),
-(8,15,1628001165,1628001165,0,0,'TYPO3-Entwickler:innen',0,0);
+(1,15,1628001095,1628001095,0,'Einsteiger:innen',0,0),
+(2,15,1628001102,1628001102,0,'Fortgeschrittene',0,0),
+(3,15,1628001109,1628001109,0,'Trainer:innen',0,0),
+(4,15,1628001121,1628001121,0,'TYPO3-Integrator:innen',0,0),
+(5,15,1628001133,1628001133,0,'Erwachsene',18,0),
+(6,15,1628001143,1628001143,0,'Jugendliche',12,17),
+(7,15,1628001151,1628001151,0,'Kinder',0,11),
+(8,15,1628001165,1628001165,0,'TYPO3-Entwickler:innen',0,0);
 /*!40000 ALTER TABLE `tx_seminars_target_groups` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12279,7 +12212,6 @@ CREATE TABLE `tx_seminars_timeslots` (
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `seminar` int(10) unsigned NOT NULL DEFAULT 0,
   `begin_date` int(10) unsigned NOT NULL DEFAULT 0,
   `end_date` int(10) unsigned NOT NULL DEFAULT 0,
@@ -12288,7 +12220,6 @@ CREATE TABLE `tx_seminars_timeslots` (
   `place` int(10) unsigned NOT NULL DEFAULT 0,
   `room` text DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  KEY `dummy` (`is_dummy_record`),
   KEY `seminar` (`seminar`),
   KEY `parent` (`pid`,`deleted`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -12301,8 +12232,8 @@ CREATE TABLE `tx_seminars_timeslots` (
 LOCK TABLES `tx_seminars_timeslots` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_timeslots` DISABLE KEYS */;
 INSERT INTO `tx_seminars_timeslots` VALUES
-(1,14,1654092597,1628002652,0,0,4,1964505600,1964534400,0,1,4,'Raum 1'),
-(2,14,1654092597,1628002652,0,0,4,1964592000,1964606400,0,2,4,'Raum 2');
+(1,14,1654092597,1628002652,0,4,1964505600,1964534400,0,1,4,'Raum 1'),
+(2,14,1654092597,1628002652,0,4,1964592000,1964606400,0,2,4,'Raum 2');
 /*!40000 ALTER TABLE `tx_seminars_timeslots` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12316,13 +12247,11 @@ DROP TABLE IF EXISTS `tx_seminars_timeslots_speakers_mm`;
 CREATE TABLE `tx_seminars_timeslots_speakers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -12333,9 +12262,9 @@ CREATE TABLE `tx_seminars_timeslots_speakers_mm` (
 LOCK TABLES `tx_seminars_timeslots_speakers_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_timeslots_speakers_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_timeslots_speakers_mm` VALUES
-(1,1,0,'',1,0),
-(2,2,0,'',1,0),
-(2,4,0,'',2,0);
+(1,1,'',1,0),
+(2,2,'',1,0),
+(2,4,'',2,0);
 /*!40000 ALTER TABLE `tx_seminars_timeslots_speakers_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12349,12 +12278,10 @@ DROP TABLE IF EXISTS `tx_seminars_usergroups_categories_mm`;
 CREATE TABLE `tx_seminars_usergroups_categories_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `is_dummy_record` smallint(5) unsigned NOT NULL DEFAULT 0,
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`),
-  KEY `dummy` (`is_dummy_record`)
+  KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -12428,4 +12355,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-20 19:13:28
+-- Dump completed on 2024-09-24 22:39:16
