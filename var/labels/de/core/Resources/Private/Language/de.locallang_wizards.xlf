@@ -71,13 +71,21 @@
         <source>Change table size</source>
         <target state="final">Größe der Tabelle ändern</target>
       </trans-unit>
-      <trans-unit id="table_buttonApply" resname="table_buttonApply" approved="yes">
-        <source>Apply</source>
-        <target state="final">Anwenden</target>
+      <trans-unit id="table_buttonUpdate" resname="table_buttonUpdate" approved="yes">
+        <source>Update</source>
+        <target state="final">Aktualisieren</target>
       </trans-unit>
-      <trans-unit id="table_showCode" resname="table_buttonApply" approved="yes">
+      <trans-unit id="table_showCode" resname="table_showCode" approved="yes">
         <source>Show table code</source>
         <target state="final">Zeige Quelltext der Tabelle</target>
+      </trans-unit>
+      <trans-unit id="table_showCodeHeadline" resname="table_showCodeHeadline" approved="yes">
+        <source>Table code</source>
+        <target state="final">Code der Tabelle</target>
+      </trans-unit>
+      <trans-unit id="table_showCodeLabel" resname="table_showCodeLabel" approved="yes">
+        <source>Raw value</source>
+        <target state="final">Rohdaten</target>
       </trans-unit>
       <trans-unit id="grid_windowTitle" resname="grid_windowTitle" approved="yes">
         <source>Set cell name and column number</source>
