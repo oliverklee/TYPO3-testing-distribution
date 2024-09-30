@@ -2505,7 +2505,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:5:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";i:4;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\SysRedirectRootPageMoveMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1727210317;'),
+(43,'core','sys_refindex_lastUpdate','i:1727704161;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -11115,6 +11115,7 @@ CREATE TABLE `tx_seminars_attendances_checkboxes_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11142,6 +11143,7 @@ CREATE TABLE `tx_seminars_attendances_foods_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11169,6 +11171,7 @@ CREATE TABLE `tx_seminars_attendances_lodgings_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11550,6 +11553,7 @@ CREATE TABLE `tx_seminars_seminars_categories_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11580,6 +11584,7 @@ CREATE TABLE `tx_seminars_seminars_checkboxes_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11612,6 +11617,7 @@ CREATE TABLE `tx_seminars_seminars_feusers_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11639,6 +11645,7 @@ CREATE TABLE `tx_seminars_seminars_foods_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11651,18 +11658,18 @@ CREATE TABLE `tx_seminars_seminars_foods_mm` (
 LOCK TABLES `tx_seminars_seminars_foods_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_foods_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_foods_mm` VALUES
+(3,1,'',5,0),
+(3,2,'',3,0),
+(3,3,'',6,0),
 (3,4,'',1,0),
 (3,5,'',2,0),
-(3,2,'',3,0),
 (3,6,'',4,0),
-(3,1,'',5,0),
-(3,3,'',6,0),
-(10,4,'',1,0),
-(10,6,'',2,0),
-(10,5,'',3,0),
-(10,3,'',4,0),
+(10,1,'',6,0),
 (10,2,'',5,0),
-(10,1,'',6,0);
+(10,3,'',4,0),
+(10,4,'',1,0),
+(10,5,'',3,0),
+(10,6,'',2,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_foods_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11679,6 +11686,7 @@ CREATE TABLE `tx_seminars_seminars_lodgings_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11691,13 +11699,13 @@ CREATE TABLE `tx_seminars_seminars_lodgings_mm` (
 LOCK TABLES `tx_seminars_seminars_lodgings_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_lodgings_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_lodgings_mm` VALUES
-(3,2,'',1,0),
 (3,1,'',2,0),
+(3,2,'',1,0),
 (3,3,'',3,0),
-(10,2,'',1,0),
 (10,1,'',2,0),
-(10,4,'',3,0),
-(10,3,'',4,0);
+(10,2,'',1,0),
+(10,3,'',4,0),
+(10,4,'',3,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_lodgings_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11714,6 +11722,7 @@ CREATE TABLE `tx_seminars_seminars_organizers_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11753,6 +11762,7 @@ CREATE TABLE `tx_seminars_seminars_organizing_partners_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11780,6 +11790,7 @@ CREATE TABLE `tx_seminars_seminars_payment_methods_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11794,8 +11805,8 @@ LOCK TABLES `tx_seminars_seminars_payment_methods_mm` WRITE;
 INSERT INTO `tx_seminars_seminars_payment_methods_mm` VALUES
 (1,1,'',1,0),
 (3,2,'',1,0),
-(10,2,'',1,0),
-(10,1,'',2,0);
+(10,1,'',2,0),
+(10,2,'',1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_payment_methods_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11812,6 +11823,7 @@ CREATE TABLE `tx_seminars_seminars_place_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11825,8 +11837,8 @@ LOCK TABLES `tx_seminars_seminars_place_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_place_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_place_mm` VALUES
 (3,1,'',1,0),
-(7,1,'',1,0),
 (4,4,'',0,0),
+(7,1,'',1,0),
 (8,1,'',1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_place_mm` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -11844,6 +11856,7 @@ CREATE TABLE `tx_seminars_seminars_requirements_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11873,6 +11886,7 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11886,8 +11900,8 @@ LOCK TABLES `tx_seminars_seminars_speakers_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_speakers_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_speakers_mm` VALUES
 (3,1,'',1,0),
-(8,3,'',1,0),
-(8,1,'',2,0);
+(8,1,'',2,0),
+(8,3,'',1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_speakers_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11904,6 +11918,7 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm_leaders` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11931,6 +11946,7 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm_partners` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11958,6 +11974,7 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm_tutors` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11985,6 +12002,7 @@ CREATE TABLE `tx_seminars_seminars_target_groups_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -11999,8 +12017,8 @@ LOCK TABLES `tx_seminars_seminars_target_groups_mm` WRITE;
 INSERT INTO `tx_seminars_seminars_target_groups_mm` VALUES
 (1,8,'',1,0),
 (2,4,'',1,0),
-(3,6,'',1,0),
-(3,5,'',2,0);
+(3,5,'',2,0),
+(3,6,'',1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_target_groups_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12145,6 +12163,7 @@ CREATE TABLE `tx_seminars_speakers_skills_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -12250,6 +12269,7 @@ CREATE TABLE `tx_seminars_timeslots_speakers_mm` (
   `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
   KEY `uid_local` (`uid_local`),
   KEY `uid_foreign` (`uid_foreign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -12355,4 +12375,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-24 22:39:16
+-- Dump completed on 2024-09-30 15:50:04
