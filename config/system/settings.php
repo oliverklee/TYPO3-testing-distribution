@@ -103,12 +103,6 @@ return [
     ],
     'LOG' => [
         'writerConfiguration' => [
-            LogLevel::DEBUG => [
-                FileWriter::class => [
-                    'disabled' => false,
-                    'logFileInfix' => 'debug',
-                ],
-            ],
             LogLevel::INFO => [
                 FileWriter::class => [
                     'disabled' => false,
