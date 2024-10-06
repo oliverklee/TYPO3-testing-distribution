@@ -2404,7 +2404,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1727210127;'),
+(43,'core','sys_refindex_lastUpdate','i:1728202896;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -11085,7 +11085,6 @@ CREATE TABLE `tx_seminars_categories` (
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
-  `icon` int(10) unsigned NOT NULL DEFAULT 0,
   `single_view_page` int(10) unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`),
@@ -11100,9 +11099,9 @@ CREATE TABLE `tx_seminars_categories` (
 LOCK TABLES `tx_seminars_categories` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_categories` DISABLE KEYS */;
 INSERT INTO `tx_seminars_categories` VALUES
-(1,15,1634124425,1628000755,0,'Methodentraining',0,0),
-(2,15,1634124425,1628000766,0,'Politik',0,0),
-(3,15,1634124425,1628000777,0,'Softwareentwicklung',0,0);
+(1,15,1634124425,1628000755,0,'Methodentraining',0),
+(2,15,1634124425,1628000766,0,'Politik',0),
+(3,15,1634124425,1628000777,0,'Softwareentwicklung',0);
 /*!40000 ALTER TABLE `tx_seminars_categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12243,4 +12242,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-24 22:35:35
+-- Dump completed on 2024-10-06 10:22:06
