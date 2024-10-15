@@ -1,6 +1,5 @@
 
 -- Dump of TYPO3 Connection "Default"
-/*!999999\- enable the sandbox mode */ 
 -- MariaDB dump 10.19  Distrib 10.11.8-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: db    Database: db
