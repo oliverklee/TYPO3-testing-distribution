@@ -2,15 +2,9 @@
 
 This is a TYPO3 distribution which I use to manually test my extensions:
 
-- [crowdfunding](https://github.com/oliverklee/ext-crowdfunding)
-  (once it supports TYPO3 11LTS)
-- [csv_to_openimmo](https://github.com/oliverklee/ext-csv_to_openimmo)
-  (once it supports TYPO3 11LTS)
 - [feuserextrafields](https://github.com/oliverklee/ext-feuserextrafields)
 - [oelib](https://github.com/oliverklee/ext-oelib)
 - [onetimeaccount](https://github.com/oliverklee/ext-onetimeaccount)
-- [realty](https://github.com/oliverklee/ext-realty)
-  (once it supports TYPO3 11LTS)
 - [seminars](https://github.com/oliverklee/ext-seminars)
 - [tea](https://github.com/TYPO3-Documentation/tea)
 
