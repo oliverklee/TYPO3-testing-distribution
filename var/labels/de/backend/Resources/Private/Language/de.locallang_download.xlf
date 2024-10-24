@@ -108,7 +108,7 @@
         <target state="final">Doppeltes Anführungszeichen</target>
       </trans-unit>
       <trans-unit id="downloadSettings.formatOptions.csv.quote.singlequote" resname="downloadSettings.formatOptions.csv.quote.singlequote" approved="yes">
-        <source>single qoute</source>
+        <source>single quote</source>
         <target state="final">Einfaches Anführungszeichen</target>
       </trans-unit>
       <trans-unit id="downloadSettings.formatOptions.csv.quote.space" resname="downloadSettings.formatOptions.csv.quote.space" approved="yes">

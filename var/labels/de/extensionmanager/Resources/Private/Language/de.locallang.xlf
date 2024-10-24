@@ -20,8 +20,8 @@
         <target state="final">Composer-Modus</target>
       </trans-unit>
       <trans-unit id="composerStrictMode.message" resname="composerMode.message" approved="yes">
-        <source>The system is set to composer mode. Please notice that it is this list is for informational purpose only. To modify which extensions are part of the system, use Composer. To set extensions up, use the TYPO3 cli (extension:setup)</source>
-        <target state="final">Das System ist auf den Composer-Modus eingestellt. Bitte beachten Sie, dass diese Liste nur zu Informationszwecken dient. Um zu ändern, welche Erweiterungen Teil des Systems sind, verwenden Sie Composer. Um Erweiterungen einzurichten, verwenden Sie den TYPO3-Cli (extension:setup)</target>
+        <source>The system is set to composer mode. Please notice that this list is for informational purpose only. To modify which extensions are part of the system, use Composer. To set extensions up, use the TYPO3 cli (extension:setup)</source>
+        <target state="final">Dieses System ist im Composer-Mode. Bitte beachte, dass diese Liste nur zu Informationszwecken dient. Um zu ändern, welche TYPO3 Extensions Teil des Systems sind, verwende Composer. Um TYPO3 Extensions einzurichten, verwende die TYPO3 CLI  (extension:setup)</target>
       </trans-unit>
       <trans-unit id="installedExtensions" resname="installedExtensions" approved="yes">
         <source>Installed Extensions</source>
