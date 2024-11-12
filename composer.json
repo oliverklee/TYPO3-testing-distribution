@@ -22,6 +22,7 @@
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/onetimeaccount": "dev-main",
 		"oliverklee/site-dev": "@dev",
+		"phpstan/phpdoc-parser": "^1.33",
 		"ttn/tea": "dev-main",
 		"typo3/cms-adminpanel": "^12.4",
 		"typo3/cms-belog": "^12.4",
