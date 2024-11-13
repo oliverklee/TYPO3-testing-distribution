@@ -22,7 +22,6 @@
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/onetimeaccount": "dev-main",
 		"oliverklee/site-dev": "@dev",
-		"phpstan/phpdoc-parser": "^1.33",
 		"ttn/tea": "dev-main",
 		"typo3/cms-adminpanel": "^12.4",
 		"typo3/cms-belog": "^12.4",
@@ -63,6 +62,9 @@
 		"symfony/yaml": "^6.4.13",
 		"typo3/coding-standards": "^0.8.0",
 		"typo3/testing-framework": "^8.2.3"
+	},
+	"conflict": {
+		"phpstan/phpdoc-parser": "< 1.0 || >= 2.0"
 	},
 	"repositories": [
 		{
