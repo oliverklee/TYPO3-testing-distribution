@@ -127,6 +127,10 @@
         <source>Creation Type</source>
         <target state="final">Erstellungstyp</target>
       </trans-unit>
+      <trans-unit id="sys_redirect.creation_type.description" resname="sys_redirect.creation_type.description" approved="yes">
+        <source>Defines how the redirect was created.</source>
+        <target state="final">Legt fest, wie die Umleitung erstellt wurde.</target>
+      </trans-unit>
       <trans-unit id="sys_redirect.creation_type.1" resname="sys_redirect.creation_type.1" approved="yes">
         <source>manually created</source>
         <target state="final">manuell erstellt</target>

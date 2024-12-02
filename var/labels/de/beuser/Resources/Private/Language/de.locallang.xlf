@@ -205,7 +205,7 @@
       </trans-unit>
       <trans-unit id="backendUserAdministration" resname="backendUserAdministration" approved="yes">
         <source>Backend User Administration</source>
-        <target state="final">Backend-Benutzerverwaltung</target>
+        <target state="final">Backend-Benutzer-Verwaltung</target>
       </trans-unit>
       <trans-unit id="backendUserGroup" resname="backendUserGroup" approved="yes">
         <source>User group</source>
@@ -233,7 +233,7 @@
       </trans-unit>
       <trans-unit id="section.compare" resname="section.compare" approved="yes">
         <source>Compare</source>
-        <target state="final">Vergleich</target>
+        <target state="final">Vergleichen</target>
       </trans-unit>
       <trans-unit id="section.allUserGroups" resname="section.allUserGroups" approved="yes">
         <source>All backend user groups</source>
@@ -245,7 +245,7 @@
       </trans-unit>
       <trans-unit id="compare" resname="compare" approved="yes">
         <source>Compare</source>
-        <target state="final">Vergleich</target>
+        <target state="final">Vergleichen</target>
       </trans-unit>
       <trans-unit id="remove" resname="remove" approved="yes">
         <source>Remove</source>

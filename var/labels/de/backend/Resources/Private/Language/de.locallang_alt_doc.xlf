@@ -63,6 +63,14 @@
         <source>The edit form could not be loaded for the requested records. This might be due to insufficient permissions.</source>
         <target state="final">Das Bearbeitungsformular konnte für die angeforderten Datensätze nicht geladen werden. Dies könnte auf unzureichende Berechtigungen zurückzuführen sein.</target>
       </trans-unit>
+      <trans-unit id="noFieldsEditForm" resname="noEditForm" approved="yes">
+        <source>No fields to edit</source>
+        <target state="final">Keine Felder zum Bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="noFieldsEditForm.message" resname="noEditForm.message" approved="yes">
+        <source>There are no editable fields available for the requested record. This might be due to insufficient permissions or a configuration mismatch.</source>
+        <target state="final">Es sind keine bearbeitbaren Felder für den angeforderten Datensatz verfügbar. Dies kann an unzureichenden Berechtigungen oder einer fehlerhaften Konfiguration liegen.</target>
+      </trans-unit>
       <trans-unit id="buttons.confirm.duplicate_record_changed.cancel" resname="buttons.confirm.duplicate_record_changed.cancel" approved="yes">
         <source>Cancel</source>
         <target state="final">Abbrechen</target>

@@ -211,6 +211,10 @@
         <source>TSconfig</source>
         <target state="final">TsConfig</target>
       </trans-unit>
+      <trans-unit id="module.pagetsconfig_includes.tree.child.type.Site" resname="module.pagetsconfig_includes.tree.child.type.Site" approved="yes">
+        <source>Site</source>
+        <target state="final">Site</target>
+      </trans-unit>
       <trans-unit id="module.pagetsconfig_includes.tree.child.conditionVerdict.matched" resname="module.pagetsconfig_includes.tree.child.conditionVerdict.matched" approved="yes">
         <source>Matched</source>
         <target state="final">Übereinstimmung</target>
