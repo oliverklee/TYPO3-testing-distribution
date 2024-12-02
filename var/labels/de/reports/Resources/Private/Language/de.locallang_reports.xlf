@@ -152,8 +152,8 @@
         <target state="final">Überprüfung des Zeichensatzes fehlgeschlagen, Ergebnis war "%1$s" anstelle von "character_set_database"</target>
       </trans-unit>
       <trans-unit id="status_MysqlDatabaseCharacterSet_Unsupported" resname="status_MysqlDatabaseCharacterSet_Unsupported" approved="yes">
-        <source>Your default database uses character set "%1$s", but only "utf8" or "utf8mb4" is supported with TYPO3.</source>
-        <target state="final">Ihre Standard-Datenbank verwendet den Zeichensatz "%1$s", aber TYPO3 unterstützt nur "utf8" oder "utf8mb4".</target>
+        <source>Your default database uses character set "%1$s", but only "utf8", "utf8mb3" or "utf8mb4" is supported with TYPO3.</source>
+        <target state="final">Ihre Standard-Datenbank verwendet den Zeichensatz "%1$s", aber TYPO3 unterstützt nur "utf8", "utf8mb3" oder "utf8mb4".</target>
       </trans-unit>
       <trans-unit id="status_MysqlDatabaseCharacterSet_Ok" resname="status_MysqlDatabaseCharacterSet_Ok" approved="yes">
         <source>Your default database uses utf-8. All good.</source>
