@@ -35,7 +35,7 @@ routeEnhancers:
     index: ''
     map:
       '/': 0
-  EventSingleView:
+  LegacyEventSingleView:
     type: Plugin
     limitToPages:
       - 17
@@ -47,6 +47,23 @@ routeEnhancers:
       slug: '[a-z0-9/\-]+'
     aspects:
       slug:
+        type: PersistedAliasMapper
+        tableName: 'tx_seminars_seminars'
+        routeFieldName: 'slug'
+  EventSingleView:
+    type: Extbase
+    limitToPages:
+      - 47
+    extension: Seminars
+    plugin: EventSingleView
+    defaultController: 'Event::show'
+    routes:
+      - routePath: '/{event}'
+        _controller: 'Event::show'
+        _arguments:
+          event: event
+    aspects:
+      event:
         type: PersistedAliasMapper
         tableName: 'tx_seminars_seminars'
         routeFieldName: 'slug'
