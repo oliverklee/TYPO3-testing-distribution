@@ -2202,8 +2202,8 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Datum</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.events.property.eventType" approved="yes">
-        <source>Event type</source>
-        <target state="final">Veranstaltungsart</target>
+        <source>Type</source>
+        <target state="final">Art</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.events.property.topic" approved="yes">
         <source>Topic</source>
@@ -2215,7 +2215,7 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.events.property.venue" approved="yes">
         <source>Venue</source>
-        <target state="final">Veranstaltungsort</target>
+        <target state="final">Ort</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook" approved="yes">
         <source>Event outlook</source>
@@ -2265,6 +2265,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>venue</source>
         <target state="final">Veranstaltungsort</target>
       </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.vacancies" approved="yes">
+        <source>vacancies</source>
+        <target state="final">freie Plätze</target>
+      </trans-unit>
       <trans-unit id="plugin.eventOutlook.message.noEventsFound" approved="yes">
         <source>No events found.</source>
         <target state="final">Keine Veranstaltungen gefunden.</target>
@@ -2274,8 +2278,8 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Datum</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.eventType" approved="yes">
-        <source>Event type</source>
-        <target state="final">Veranstaltungsart</target>
+        <source>Type</source>
+        <target state="final">Art</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.topic" approved="yes">
         <source>Topic</source>
@@ -2287,7 +2291,19 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.venue" approved="yes">
         <source>Venue</source>
-        <target state="final">Veranstaltungsort</target>
+        <target state="final">Ort</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.vacancies" approved="yes">
+        <source>Vacancies</source>
+        <target state="final">Frei</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.vacancies.enough" approved="yes">
+        <source>enough</source>
+        <target state="final">genug</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.vacancies.fullyBooked" approved="yes">
+        <source>full</source>
+        <target state="final">voll</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView" approved="yes">
         <source>Event single view</source>
@@ -2304,6 +2320,18 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.title" approved="yes">
         <source>title</source>
         <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.description" approved="yes">
+        <source>description</source>
+        <target state="final">Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.room" approved="yes">
+        <source>room</source>
+        <target state="final">Raum</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.events.property.room" approved="yes">
+        <source>Room</source>
+        <target state="final">Raum</target>
       </trans-unit>
     </body>
   </file>
