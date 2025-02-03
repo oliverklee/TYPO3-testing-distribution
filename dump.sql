@@ -196,7 +196,7 @@ LOCK TABLES `be_users` WRITE;
 /*!40000 ALTER TABLE `be_users` DISABLE KEYS */;
 INSERT INTO `be_users` VALUES
 (1,0,1668178395,1668178395,0,0,0,0,0,NULL,'_cli_',0,'$argon2i$v=19$m=65536,t=16,p=1$blVUUDcvMkZnS0E4cXRYaQ$Drs1ruYAO6r9+xXd1ACXlyzx7Chg/oIUGKaUg91jtDo',1,'','default','',NULL,0,'',NULL,'','a:12:{s:14:\"interfaceSetup\";s:0:\"\";s:10:\"moduleData\";a:0:{}s:19:\"thumbnailsByDefault\";i:1;s:14:\"emailMeAtLogin\";i:0;s:8:\"titleLen\";i:50;s:8:\"edit_RTE\";s:1:\"1\";s:20:\"edit_docModuleUpload\";s:1:\"1\";s:15:\"resizeTextareas\";i:1;s:25:\"resizeTextareas_MaxHeight\";i:500;s:24:\"resizeTextareas_Flexible\";i:0;s:4:\"lang\";s:7:\"default\";s:19:\"firstLoginTimeStamp\";i:1668178395;}',NULL,NULL,1,NULL,0,0,NULL,'',NULL),
-(2,0,1699808021,1668446719,0,0,0,0,0,NULL,'admin',0,'$argon2i$v=19$m=65536,t=16,p=1$NmFEMHVQLkxxZ1Yucmlacw$XX5y+tF73dwLpyJ3ZhYL5KurebqPbvnagY3VJYp+roo',1,'','de','',NULL,0,'',NULL,'','a:29:{s:14:\"interfaceSetup\";s:7:\"backend\";s:10:\"moduleData\";a:12:{s:10:\"web_layout\";a:2:{s:8:\"function\";s:1:\"1\";s:8:\"language\";s:1:\"0\";}s:8:\"web_list\";a:2:{s:9:\"clipBoard\";s:1:\"0\";s:15:\"bigControlPanel\";s:1:\"1\";}s:10:\"FormEngine\";a:2:{i:0;a:0:{}i:1;s:32:\"96ff66a506e13c06f796303c02720bb6\";}s:57:\"TYPO3\\CMS\\Backend\\Utility\\BackendUtility::getUpdateSignal\";a:0:{}s:16:\"opendocs::recent\";a:8:{s:32:\"96ff66a506e13c06f796303c02720bb6\";a:4:{i:0;s:16:\"CJD Bonn Castell\";i:1;a:5:{s:4:\"edit\";a:1:{s:17:\"tx_seminars_sites\";a:1:{s:11:\"6,1,2,5,3,4\";s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";s:7:\"address\";s:6:\"noView\";N;}i:2;s:80:\"&edit%5Btx_seminars_sites%5D%5B6%2C1%2C2%2C5%2C3%2C4%5D=edit&columnsOnly=address\";i:3;a:5:{s:5:\"table\";s:17:\"tx_seminars_sites\";s:3:\"uid\";i:6;s:3:\"pid\";i:15;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"fc472c5f7cbd90ed0716db7efb24c89b\";a:4:{i:0;s:34:\"DJH Jugendherberge Köln-Pathpoint\";i:1;a:5:{s:4:\"edit\";a:1:{s:17:\"tx_seminars_sites\";a:1:{i:5;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:40:\"&edit%5Btx_seminars_sites%5D%5B5%5D=edit\";i:3;a:5:{s:5:\"table\";s:17:\"tx_seminars_sites\";s:3:\"uid\";i:5;s:3:\"pid\";i:15;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"062fe123aa6de8f1be4afd4e90062279\";a:4:{i:0;s:0:\"\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:37;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B37%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:37;s:3:\"pid\";i:47;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"9df3e67185f062ce6b56a1d9af62085e\";a:4:{i:0;s:26:\"Ausgebucht ohne Warteliste\";i:1;a:5:{s:4:\"edit\";a:1:{s:20:\"tx_seminars_seminars\";a:1:{i:16;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:44:\"&edit%5Btx_seminars_seminars%5D%5B16%5D=edit\";i:3;a:5:{s:5:\"table\";s:20:\"tx_seminars_seminars\";s:3:\"uid\";i:16;s:3:\"pid\";i:14;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"7379749a99e9acb386dd0e97c5e558df\";a:4:{i:0;s:0:\"\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:20;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B20%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:20;s:3:\"pid\";i:21;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"61765c6a3de2e0ba09d6230397278147\";a:4:{i:0;s:0:\"\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:12;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B12%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:12;s:3:\"pid\";i:18;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"d4da84319118bf151b548cc61b911282\";a:4:{i:0;s:20:\"Veranstaltungsarchiv\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:35;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B35%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:35;s:3:\"pid\";i:45;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"f7e608d6e9127a38fb480425c61d2c10\";a:4:{i:0;s:22:\"Veranstaltungsausblick\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:36;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B36%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:36;s:3:\"pid\";i:46;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}}s:16:\"browse_links.php\";a:1:{s:10:\"expandPage\";s:2:\"18\";}s:18:\"list/displayFields\";a:3:{s:5:\"pages\";a:3:{i:0;s:5:\"title\";i:1;s:6:\"hidden\";i:2;s:4:\"slug\";}s:20:\"tx_seminars_seminars\";a:2:{i:0;s:5:\"title\";i:1;s:5:\"place\";}s:17:\"tx_seminars_sites\";a:3:{i:0;s:5:\"title\";i:1;s:4:\"city\";i:2;s:7:\"address\";}}s:47:\"TYPO3\\CMS\\Belog\\Controller\\BackendLogController\";s:337:\"O:39:\"TYPO3\\CMS\\Belog\\Domain\\Model\\Constraint\":11:{s:14:\"\0*\0userOrGroup\";s:1:\"0\";s:9:\"\0*\0number\";i:20;s:15:\"\0*\0workspaceUid\";i:-99;s:10:\"\0*\0channel\";s:3:\"php\";s:8:\"\0*\0level\";s:5:\"debug\";s:17:\"\0*\0startTimestamp\";i:0;s:15:\"\0*\0endTimestamp\";i:0;s:18:\"\0*\0manualDateStart\";N;s:17:\"\0*\0manualDateStop\";N;s:9:\"\0*\0pageId\";i:0;s:8:\"\0*\0depth\";i:0;}\";s:12:\"system_dbint\";a:3:{s:8:\"function\";s:8:\"refindex\";s:6:\"search\";s:3:\"raw\";s:22:\"search_query_makeQuery\";s:3:\"all\";}s:13:\"system_config\";a:2:{s:4:\"tree\";s:8:\"confVars\";s:11:\"regexSearch\";b:0;}s:28:\"dashboard/current_dashboard/\";s:40:\"a789be90af62969620339f403de7f74072572aaa\";s:6:\"web_ts\";a:8:{s:8:\"function\";s:88:\"TYPO3\\CMS\\Tstemplate\\Controller\\TypoScriptTemplateConstantEditorModuleFunctionController\";s:8:\"language\";N;s:19:\"constant_editor_cat\";s:27:\"plugin.tx_seminars.settings\";s:15:\"ts_browser_type\";s:5:\"setup\";s:16:\"ts_browser_const\";s:1:\"0\";s:23:\"ts_browser_showComments\";s:1:\"1\";s:25:\"tsbrowser_depthKeys_setup\";a:3:{s:6:\"plugin\";i:1;s:18:\"plugin.tx_seminars\";i:1;s:30:\"plugin.tx_seminars.persistence\";i:1;}s:20:\"ts_browser_alphaSort\";s:1:\"1\";}}s:19:\"thumbnailsByDefault\";i:1;s:14:\"emailMeAtLogin\";i:0;s:8:\"titleLen\";s:2:\"50\";s:8:\"edit_RTE\";i:1;s:20:\"edit_docModuleUpload\";i:1;s:15:\"resizeTextareas\";i:1;s:25:\"resizeTextareas_MaxHeight\";s:3:\"500\";s:24:\"resizeTextareas_Flexible\";i:0;s:4:\"lang\";s:2:\"de\";s:19:\"firstLoginTimeStamp\";i:1668446726;s:15:\"moduleSessionID\";a:11:{s:10:\"web_layout\";s:40:\"f2e0259ede2cfcbce4d6885d48211ebc886122aa\";s:8:\"web_list\";s:40:\"f2e0259ede2cfcbce4d6885d48211ebc886122aa\";s:10:\"FormEngine\";s:40:\"0a3ac23c969204aa0a2fe40499b9bb25907b782c\";s:57:\"TYPO3\\CMS\\Backend\\Utility\\BackendUtility::getUpdateSignal\";s:40:\"0a3ac23c969204aa0a2fe40499b9bb25907b782c\";s:16:\"opendocs::recent\";s:40:\"0a3ac23c969204aa0a2fe40499b9bb25907b782c\";s:16:\"browse_links.php\";s:40:\"2c1595ad1ef86a7b52455451f1abca8d2252953b\";s:18:\"list/displayFields\";s:40:\"17f5c25d90cc325422671ca2559f3f294c9300e9\";s:47:\"TYPO3\\CMS\\Belog\\Controller\\BackendLogController\";s:40:\"13eb2d58ac5ed5af00203b7b9594c4fbf2796c60\";s:12:\"system_dbint\";s:40:\"a8272af325bdfbf71dfc5f9ea5a77f2a4eb728ff\";s:28:\"dashboard/current_dashboard/\";s:40:\"caf54c66d08fb403b77ce515a7c1e7897bf9e63e\";s:6:\"web_ts\";s:40:\"183fe9df0af5487cae4ba2b1a2d061b7ae0d40aa\";}s:17:\"BackendComponents\";a:1:{s:6:\"States\";a:1:{s:8:\"Pagetree\";a:1:{s:9:\"stateHash\";a:10:{s:3:\"0_2\";s:1:\"1\";s:3:\"0_5\";s:1:\"1\";s:3:\"0_1\";s:1:\"1\";s:4:\"0_16\";s:1:\"1\";s:4:\"0_18\";s:1:\"0\";s:4:\"0_11\";s:1:\"1\";s:4:\"0_20\";s:1:\"0\";s:4:\"0_19\";s:1:\"0\";s:3:\"0_9\";s:1:\"1\";s:4:\"0_36\";s:1:\"0\";}}}}s:10:\"modulemenu\";s:52:\"{\"site\":true,\"file\":true,\"system\":true,\"tools\":true}\";s:11:\"browseTrees\";a:1:{s:11:\"browsePages\";s:34:\"[{\"0\":1,\"1\":1,\"16\":1,\"2\":1,\"5\":1}]\";}s:17:\"systeminformation\";s:45:\"{\"system_BelogLog\":{\"lastAccess\":1737476164}}\";s:11:\"tx_recycler\";a:3:{s:14:\"depthSelection\";i:0;s:14:\"tableSelection\";s:0:\"\";s:11:\"resultLimit\";i:25;}s:8:\"realName\";s:0:\"\";s:5:\"email\";s:0:\"\";s:8:\"password\";s:0:\"\";s:9:\"password2\";s:0:\"\";s:6:\"avatar\";s:0:\"\";s:11:\"startModule\";s:0:\"\";s:25:\"showHiddenFilesAndFolders\";i:0;s:10:\"copyLevels\";s:0:\"\";s:18:\"resetConfiguration\";s:0:\"\";s:12:\"mfaProviders\";s:0:\"\";s:18:\"backendTitleFormat\";s:10:\"titleFirst\";}',NULL,NULL,1,NULL,1738062105,0,NULL,'',NULL);
+(2,0,1699808021,1668446719,0,0,0,0,0,NULL,'admin',0,'$argon2i$v=19$m=65536,t=16,p=1$NmFEMHVQLkxxZ1Yucmlacw$XX5y+tF73dwLpyJ3ZhYL5KurebqPbvnagY3VJYp+roo',1,'','de','',NULL,0,'',NULL,'','a:29:{s:14:\"interfaceSetup\";s:7:\"backend\";s:10:\"moduleData\";a:12:{s:10:\"web_layout\";a:2:{s:8:\"function\";s:1:\"1\";s:8:\"language\";s:1:\"0\";}s:8:\"web_list\";a:2:{s:9:\"clipBoard\";s:1:\"0\";s:15:\"bigControlPanel\";s:1:\"1\";}s:10:\"FormEngine\";a:2:{i:0;a:0:{}i:1;s:32:\"e6534f11179c43924800271dbb1a3e84\";}s:57:\"TYPO3\\CMS\\Backend\\Utility\\BackendUtility::getUpdateSignal\";a:0:{}s:16:\"opendocs::recent\";a:8:{s:32:\"e6534f11179c43924800271dbb1a3e84\";a:4:{i:0;s:54:\"Infinite registrations! / Anna A. Attendee, 01.01.2025\";i:1;a:5:{s:4:\"edit\";a:1:{s:23:\"tx_seminars_attendances\";a:1:{i:7;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:46:\"&edit%5Btx_seminars_attendances%5D%5B7%5D=edit\";i:3;a:5:{s:5:\"table\";s:23:\"tx_seminars_attendances\";s:3:\"uid\";i:7;s:3:\"pid\";i:12;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"fd2b071b7d56058ace36a2c501aba2e6\";a:4:{i:0;s:54:\"Event with waiting list / Anna A. Attendee, 01.01.2030\";i:1;a:5:{s:4:\"edit\";a:1:{s:23:\"tx_seminars_attendances\";a:1:{i:5;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:46:\"&edit%5Btx_seminars_attendances%5D%5B5%5D=edit\";i:3;a:5:{s:5:\"table\";s:23:\"tx_seminars_attendances\";s:3:\"uid\";i:5;s:3:\"pid\";i:12;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"0b9617604dd0069f805a1318d46bdca5\";a:4:{i:0;s:52:\"Event with waiting list / Anton R. Admin, 01.01.2030\";i:1;a:5:{s:4:\"edit\";a:1:{s:23:\"tx_seminars_attendances\";a:1:{i:4;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:46:\"&edit%5Btx_seminars_attendances%5D%5B4%5D=edit\";i:3;a:5:{s:5:\"table\";s:23:\"tx_seminars_attendances\";s:3:\"uid\";i:4;s:3:\"pid\";i:12;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"96ff66a506e13c06f796303c02720bb6\";a:4:{i:0;s:16:\"CJD Bonn Castell\";i:1;a:5:{s:4:\"edit\";a:1:{s:17:\"tx_seminars_sites\";a:1:{s:11:\"6,1,2,5,3,4\";s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";s:7:\"address\";s:6:\"noView\";N;}i:2;s:80:\"&edit%5Btx_seminars_sites%5D%5B6%2C1%2C2%2C5%2C3%2C4%5D=edit&columnsOnly=address\";i:3;a:5:{s:5:\"table\";s:17:\"tx_seminars_sites\";s:3:\"uid\";i:6;s:3:\"pid\";i:15;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"fc472c5f7cbd90ed0716db7efb24c89b\";a:4:{i:0;s:34:\"DJH Jugendherberge Köln-Pathpoint\";i:1;a:5:{s:4:\"edit\";a:1:{s:17:\"tx_seminars_sites\";a:1:{i:5;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:40:\"&edit%5Btx_seminars_sites%5D%5B5%5D=edit\";i:3;a:5:{s:5:\"table\";s:17:\"tx_seminars_sites\";s:3:\"uid\";i:5;s:3:\"pid\";i:15;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"062fe123aa6de8f1be4afd4e90062279\";a:4:{i:0;s:0:\"\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:37;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B37%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:37;s:3:\"pid\";i:47;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"9df3e67185f062ce6b56a1d9af62085e\";a:4:{i:0;s:26:\"Ausgebucht ohne Warteliste\";i:1;a:5:{s:4:\"edit\";a:1:{s:20:\"tx_seminars_seminars\";a:1:{i:16;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:44:\"&edit%5Btx_seminars_seminars%5D%5B16%5D=edit\";i:3;a:5:{s:5:\"table\";s:20:\"tx_seminars_seminars\";s:3:\"uid\";i:16;s:3:\"pid\";i:14;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}s:32:\"7379749a99e9acb386dd0e97c5e558df\";a:4:{i:0;s:0:\"\";i:1;a:5:{s:4:\"edit\";a:1:{s:10:\"tt_content\";a:1:{i:20;s:4:\"edit\";}}s:7:\"defVals\";N;s:12:\"overrideVals\";N;s:11:\"columnsOnly\";N;s:6:\"noView\";N;}i:2;s:34:\"&edit%5Btt_content%5D%5B20%5D=edit\";i:3;a:5:{s:5:\"table\";s:10:\"tt_content\";s:3:\"uid\";i:20;s:3:\"pid\";i:21;s:3:\"cmd\";s:4:\"edit\";s:12:\"deleteAccess\";b:1;}}}s:16:\"browse_links.php\";a:1:{s:10:\"expandPage\";s:2:\"18\";}s:18:\"list/displayFields\";a:4:{s:5:\"pages\";a:3:{i:0;s:5:\"title\";i:1;s:6:\"hidden\";i:2;s:4:\"slug\";}s:20:\"tx_seminars_seminars\";a:2:{i:0;s:5:\"title\";i:1;s:5:\"place\";}s:17:\"tx_seminars_sites\";a:3:{i:0;s:5:\"title\";i:1;s:4:\"city\";i:2;s:7:\"address\";}s:23:\"tx_seminars_attendances\";a:2:{i:0;s:5:\"title\";i:1;s:18:\"registration_queue\";}}s:47:\"TYPO3\\CMS\\Belog\\Controller\\BackendLogController\";s:337:\"O:39:\"TYPO3\\CMS\\Belog\\Domain\\Model\\Constraint\":11:{s:14:\"\0*\0userOrGroup\";s:1:\"0\";s:9:\"\0*\0number\";i:20;s:15:\"\0*\0workspaceUid\";i:-99;s:10:\"\0*\0channel\";s:3:\"php\";s:8:\"\0*\0level\";s:5:\"debug\";s:17:\"\0*\0startTimestamp\";i:0;s:15:\"\0*\0endTimestamp\";i:0;s:18:\"\0*\0manualDateStart\";N;s:17:\"\0*\0manualDateStop\";N;s:9:\"\0*\0pageId\";i:0;s:8:\"\0*\0depth\";i:0;}\";s:12:\"system_dbint\";a:3:{s:8:\"function\";s:8:\"refindex\";s:6:\"search\";s:3:\"raw\";s:22:\"search_query_makeQuery\";s:3:\"all\";}s:13:\"system_config\";a:2:{s:4:\"tree\";s:8:\"confVars\";s:11:\"regexSearch\";b:0;}s:28:\"dashboard/current_dashboard/\";s:40:\"a789be90af62969620339f403de7f74072572aaa\";s:6:\"web_ts\";a:8:{s:8:\"function\";s:88:\"TYPO3\\CMS\\Tstemplate\\Controller\\TypoScriptTemplateConstantEditorModuleFunctionController\";s:8:\"language\";N;s:19:\"constant_editor_cat\";s:27:\"plugin.tx_seminars.settings\";s:15:\"ts_browser_type\";s:5:\"setup\";s:16:\"ts_browser_const\";s:1:\"0\";s:23:\"ts_browser_showComments\";s:1:\"1\";s:25:\"tsbrowser_depthKeys_setup\";a:3:{s:6:\"plugin\";i:1;s:18:\"plugin.tx_seminars\";i:1;s:30:\"plugin.tx_seminars.persistence\";i:1;}s:20:\"ts_browser_alphaSort\";s:1:\"1\";}}s:19:\"thumbnailsByDefault\";i:1;s:14:\"emailMeAtLogin\";i:0;s:8:\"titleLen\";s:2:\"50\";s:8:\"edit_RTE\";i:1;s:20:\"edit_docModuleUpload\";i:1;s:15:\"resizeTextareas\";i:1;s:25:\"resizeTextareas_MaxHeight\";s:3:\"500\";s:24:\"resizeTextareas_Flexible\";i:0;s:4:\"lang\";s:2:\"de\";s:19:\"firstLoginTimeStamp\";i:1668446726;s:15:\"moduleSessionID\";a:11:{s:10:\"web_layout\";s:40:\"f2e0259ede2cfcbce4d6885d48211ebc886122aa\";s:8:\"web_list\";s:40:\"f2e0259ede2cfcbce4d6885d48211ebc886122aa\";s:10:\"FormEngine\";s:40:\"ed8e0570cb49eb597d4d510332b5728770f8bd80\";s:57:\"TYPO3\\CMS\\Backend\\Utility\\BackendUtility::getUpdateSignal\";s:40:\"ed8e0570cb49eb597d4d510332b5728770f8bd80\";s:16:\"opendocs::recent\";s:40:\"ed8e0570cb49eb597d4d510332b5728770f8bd80\";s:16:\"browse_links.php\";s:40:\"2c1595ad1ef86a7b52455451f1abca8d2252953b\";s:18:\"list/displayFields\";s:40:\"eb0e160a6fd2499653bebe02465fd4cf7a1fa3fc\";s:47:\"TYPO3\\CMS\\Belog\\Controller\\BackendLogController\";s:40:\"13eb2d58ac5ed5af00203b7b9594c4fbf2796c60\";s:12:\"system_dbint\";s:40:\"a8272af325bdfbf71dfc5f9ea5a77f2a4eb728ff\";s:28:\"dashboard/current_dashboard/\";s:40:\"caf54c66d08fb403b77ce515a7c1e7897bf9e63e\";s:6:\"web_ts\";s:40:\"183fe9df0af5487cae4ba2b1a2d061b7ae0d40aa\";}s:17:\"BackendComponents\";a:1:{s:6:\"States\";a:1:{s:8:\"Pagetree\";a:1:{s:9:\"stateHash\";a:10:{s:3:\"0_2\";s:1:\"1\";s:3:\"0_5\";s:1:\"1\";s:3:\"0_1\";s:1:\"1\";s:4:\"0_16\";s:1:\"1\";s:4:\"0_18\";s:1:\"0\";s:4:\"0_11\";s:1:\"1\";s:4:\"0_20\";s:1:\"0\";s:4:\"0_19\";s:1:\"0\";s:3:\"0_9\";s:1:\"1\";s:4:\"0_36\";s:1:\"0\";}}}}s:10:\"modulemenu\";s:52:\"{\"site\":true,\"file\":true,\"system\":true,\"tools\":true}\";s:11:\"browseTrees\";a:1:{s:11:\"browsePages\";s:34:\"[{\"0\":1,\"1\":1,\"16\":1,\"2\":1,\"5\":1}]\";}s:17:\"systeminformation\";s:45:\"{\"system_BelogLog\":{\"lastAccess\":1737476164}}\";s:11:\"tx_recycler\";a:3:{s:14:\"depthSelection\";i:0;s:14:\"tableSelection\";s:0:\"\";s:11:\"resultLimit\";i:25;}s:8:\"realName\";s:0:\"\";s:5:\"email\";s:0:\"\";s:8:\"password\";s:0:\"\";s:9:\"password2\";s:0:\"\";s:6:\"avatar\";s:0:\"\";s:11:\"startModule\";s:0:\"\";s:25:\"showHiddenFilesAndFolders\";i:0;s:10:\"copyLevels\";s:0:\"\";s:18:\"resetConfiguration\";s:0:\"\";s:12:\"mfaProviders\";s:0:\"\";s:18:\"backendTitleFormat\";s:10:\"titleFirst\";}',NULL,NULL,1,NULL,1738174228,0,NULL,'',NULL);
 /*!40000 ALTER TABLE `be_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2360,7 +2360,7 @@ CREATE TABLE `sys_registry` (
   `entry_value` mediumblob DEFAULT NULL,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `entry_identifier` (`entry_namespace`,`entry_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2411,19 +2411,18 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1733145535;'),
+(43,'core','sys_refindex_lastUpdate','i:1738067778;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
-(51,'languagePacks','de-tea','i:1738002005;'),
-(52,'languagePacks','de','i:1738002005;'),
-(54,'languagePacks','de-static_info_tables','i:1738002004;'),
+(51,'languagePacks','de-tea','i:1738602782;'),
+(52,'languagePacks','de','i:1738602783;'),
+(54,'languagePacks','de-static_info_tables','i:1738602782;'),
 (55,'extensionDataImport','typo3/cms-scheduler/ext_tables_static+adt.sql','s:0:\"\";'),
 (56,'extensionDataImport','typo3/cms-indexed-search/ext_tables_static+adt.sql','s:0:\"\";'),
 (60,'installUpdate','TYPO3\\CMS\\Install\\Updates\\ShortcutRecordsMigration','i:1;'),
 (61,'installUpdate','TYPO3\\CMS\\Install\\Updates\\CollectionsExtractionUpdate','i:1;'),
-(62,'installUpdate','TYPO3\\CMS\\FrontendLogin\\Updates\\MigrateFeloginPlugins','i:1;'),
-(93,'core','formProtectionSessionToken:2','s:64:\"91bcd64b7ce6f6eb7455077c3235f51a10aecea97f098f7f85eab9aac076eff9\";');
+(62,'installUpdate','TYPO3\\CMS\\FrontendLogin\\Updates\\MigrateFeloginPlugins','i:1;');
 /*!40000 ALTER TABLE `sys_registry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11004,7 +11003,7 @@ INSERT INTO `tx_seminars_attendances` VALUES
 (4,12,1671044582,1671044495,0,0,'Event with waiting list / Anton R. Admin, 01.01.2030',6,11,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular'),
 (5,12,1671044607,1671044565,0,0,'Event with waiting list / Anna A. Attendee, 01.01.2030',1,11,1,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular'),
 (6,12,1671226186,1671226135,0,0,'Event for unregistration / Anna A. Attendee, 01.01.2030',1,12,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular'),
-(7,12,1733656335,1733656335,0,0,'Infinite registrations! / Anna A. Attendee, 01.01.2025',1,10,0,'Standardpreis 200,00 €',1,1,200.00,'',0,0,2,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular');
+(7,12,1738078154,1733656335,0,0,'Infinite registrations! / Anna A. Attendee, 01.01.2025',1,10,0,'Standardpreis 200,00 €',1,1,200.00,'',0,0,2,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular');
 /*!40000 ALTER TABLE `tx_seminars_attendances` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12131,8 +12130,6 @@ CREATE TABLE `tx_seminars_timeslots` (
   `seminar` int(10) unsigned NOT NULL DEFAULT 0,
   `begin_date` int(10) unsigned NOT NULL DEFAULT 0,
   `end_date` int(10) unsigned NOT NULL DEFAULT 0,
-  `entry_date` int(10) unsigned NOT NULL DEFAULT 0,
-  `speakers` int(10) unsigned NOT NULL DEFAULT 0,
   `place` int(10) unsigned NOT NULL DEFAULT 0,
   `room` text DEFAULT NULL,
   PRIMARY KEY (`uid`),
@@ -12148,40 +12145,9 @@ CREATE TABLE `tx_seminars_timeslots` (
 LOCK TABLES `tx_seminars_timeslots` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_timeslots` DISABLE KEYS */;
 INSERT INTO `tx_seminars_timeslots` VALUES
-(1,14,1736879058,1628002652,0,4,1964505600,1964534400,0,1,4,'Raum 1'),
-(2,14,1736879058,1628002652,0,4,1964592000,1964606400,0,2,4,'Raum 2');
+(1,14,1736879058,1628002652,0,4,1964505600,1964534400,4,'Raum 1'),
+(2,14,1736879058,1628002652,0,4,1964592000,1964606400,4,'Raum 2');
 /*!40000 ALTER TABLE `tx_seminars_timeslots` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `tx_seminars_timeslots_speakers_mm`
---
-
-DROP TABLE IF EXISTS `tx_seminars_timeslots_speakers_mm`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `tx_seminars_timeslots_speakers_mm` (
-  `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
-  `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
-  `sorting` int(10) unsigned NOT NULL DEFAULT 0,
-  `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `tx_seminars_timeslots_speakers_mm`
---
-
-LOCK TABLES `tx_seminars_timeslots_speakers_mm` WRITE;
-/*!40000 ALTER TABLE `tx_seminars_timeslots_speakers_mm` DISABLE KEYS */;
-INSERT INTO `tx_seminars_timeslots_speakers_mm` VALUES
-(1,1,'',1,0),
-(2,2,'',1,0),
-(2,4,'',2,0);
-/*!40000 ALTER TABLE `tx_seminars_timeslots_speakers_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -12211,55 +12177,46 @@ LOCK TABLES `tx_seminars_usergroups_categories_mm` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `tx_tea_domain_model_tea`
+-- Table structure for table `tx_tea_domain_model_product_tea`
 --
 
-DROP TABLE IF EXISTS `tx_tea_domain_model_tea`;
+DROP TABLE IF EXISTS `tx_tea_domain_model_product_tea`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `tx_tea_domain_model_tea` (
+CREATE TABLE `tx_tea_domain_model_product_tea` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL DEFAULT 0,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `crdate` int(10) unsigned NOT NULL DEFAULT 0,
   `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `title` varchar(255) NOT NULL DEFAULT '',
-  `description` varchar(2000) NOT NULL DEFAULT '',
-  `image` int(10) unsigned NOT NULL DEFAULT 0,
+  `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `starttime` int(10) unsigned NOT NULL DEFAULT 0,
+  `endtime` int(10) unsigned NOT NULL DEFAULT 0,
   `fe_group` varchar(255) NOT NULL DEFAULT '0',
   `sys_language_uid` int(11) NOT NULL DEFAULT 0,
   `l18n_parent` int(10) unsigned NOT NULL DEFAULT 0,
   `l10n_source` int(10) unsigned NOT NULL DEFAULT 0,
   `l10n_state` text DEFAULT NULL,
   `l18n_diffsource` mediumblob DEFAULT NULL,
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `description` varchar(2000) NOT NULL DEFAULT '',
+  `image` int(10) unsigned NOT NULL DEFAULT 0,
   `owner` int(10) unsigned NOT NULL DEFAULT 0,
-  `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `starttime` int(10) unsigned NOT NULL DEFAULT 0,
-  `endtime` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
-  `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
-  `t3ver_stage` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`),
-  KEY `translation_source` (`l10n_source`),
   KEY `owner` (`owner`),
   KEY `parent` (`pid`,`deleted`,`hidden`),
-  KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  KEY `translation_source` (`l10n_source`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tx_tea_domain_model_tea`
+-- Dumping data for table `tx_tea_domain_model_product_tea`
 --
 
-LOCK TABLES `tx_tea_domain_model_tea` WRITE;
-/*!40000 ALTER TABLE `tx_tea_domain_model_tea` DISABLE KEYS */;
-INSERT INTO `tx_tea_domain_model_tea` VALUES
-(1,3,1627916201,1627916201,1,0,'Earl Grey','<p>Fruchtig-duftend.</p>',0,'0',0,0,0,NULL,NULL,0,0,0,0,0,0,0,0),
-(2,3,1687429497,1627916222,1,0,'Darjeeling','<p>Frisch und zart.</p>',0,'',0,0,0,NULL,'{\"title\":\"\",\"description\":\"\",\"image\":\"\",\"owner\":\"\",\"fe_group\":\"\"}',3,0,0,0,0,0,0,0),
-(3,3,1683114389,1683114372,2,0,'Earl Grey (English)','<p>Fruity and fragrant.</p>',0,'',1,1,1,NULL,'{\"l18n_parent\":\"0\",\"l18n_diffsource\":\"\",\"title\":\"Earl Grey\",\"description\":\"<p>Fruchtig-duftend.<\\/p>\",\"image\":\"0\",\"sys_language_uid\":\"0\",\"l10n_source\":\"0\",\"fe_group\":\"0\"}',0,0,0,0,0,0,0,0);
-/*!40000 ALTER TABLE `tx_tea_domain_model_tea` ENABLE KEYS */;
+LOCK TABLES `tx_tea_domain_model_product_tea` WRITE;
+/*!40000 ALTER TABLE `tx_tea_domain_model_product_tea` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_tea_domain_model_product_tea` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -12271,4 +12228,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-01-28 12:05:04
+-- Dump completed on 2025-02-03 18:44:45
