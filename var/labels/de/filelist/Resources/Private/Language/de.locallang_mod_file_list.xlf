@@ -27,9 +27,9 @@
         <source>Remove from clipboard</source>
         <target state="final">Aus der Zwischenablage entfernen</target>
       </trans-unit>
-      <trans-unit id="clip_deleteMarkedWarning" resname="clip_deleteMarkedWarning" approved="yes">
-        <source>Are you sure you want to delete all marked files from this folder?</source>
-        <target state="final">Alle markierten Dateien aus diesem Ordner tatsächlich löschen?</target>
+      <trans-unit id="deleteMarkedWarning" resname="deleteMarkedWarning" approved="yes">
+        <source>Are you sure you want to delete all marked items from this folder?</source>
+        <target state="final">Bist du sicher, dass du alle markierten Elemente aus diesem Ordner löschen möchtest?</target>
       </trans-unit>
       <trans-unit id="c_name" resname="c_name" approved="yes">
         <source>Name</source>
@@ -130,6 +130,10 @@
       <trans-unit id="targetNoDir" resname="targetNoDir" approved="yes">
         <source>Target was not a directory!</source>
         <target state="final">Ziel war kein Verzeichnis!</target>
+      </trans-unit>
+      <trans-unit id="deleteMarked" resname="deleteMarked" approved="yes">
+        <source>Delete marked items</source>
+        <target state="final">Markierte Elemente löschen</target>
       </trans-unit>
     </body>
   </file>
