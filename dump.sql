@@ -2411,7 +2411,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1739307343;'),
+(43,'core','sys_refindex_lastUpdate','i:1739465936;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -10962,14 +10962,14 @@ CREATE TABLE `tx_seminars_attendances` (
   `datepaid` int(10) unsigned NOT NULL DEFAULT 0,
   `method_of_payment` int(10) unsigned NOT NULL DEFAULT 0,
   `company` tinytext DEFAULT NULL,
-  `name` varchar(80) NOT NULL DEFAULT '',
+  `name` varchar(255) NOT NULL DEFAULT '',
   `gender` smallint(5) unsigned NOT NULL DEFAULT 0,
   `address` tinytext DEFAULT NULL,
   `zip` varchar(20) NOT NULL DEFAULT '',
-  `city` varchar(50) NOT NULL DEFAULT '',
-  `country` varchar(60) NOT NULL DEFAULT '',
-  `telephone` varchar(20) NOT NULL DEFAULT '',
-  `email` varchar(80) NOT NULL DEFAULT '',
+  `city` varchar(255) NOT NULL DEFAULT '',
+  `country` varchar(255) NOT NULL DEFAULT '',
+  `telephone` varchar(255) NOT NULL DEFAULT '',
+  `email` varchar(255) NOT NULL DEFAULT '',
   `been_there` smallint(5) unsigned NOT NULL DEFAULT 0,
   `interests` text DEFAULT NULL,
   `expectations` text DEFAULT NULL,
@@ -12239,4 +12239,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-02-11 22:01:16
+-- Dump completed on 2025-02-13 17:59:26
