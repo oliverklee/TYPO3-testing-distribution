@@ -78,6 +78,7 @@ return [
         ],
         'seminars' => [
             'enableConfigCheck' => '1',
+            'pidForRegistrationsCreatedInTheBackendModule' => '12',
         ],
         'static_info_tables' => [
             'enableManager' => '0',
