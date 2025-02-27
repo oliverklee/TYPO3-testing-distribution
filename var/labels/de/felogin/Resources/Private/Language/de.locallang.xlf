@@ -31,9 +31,9 @@
 				<source>An error occurred during login. Most likely you didn't enter the username or password correctly.
 Be certain that you enter them precisely as they are, including upper/lower case.
 Another possibility is that cookies might be disabled in your web browser.</source>
-			<target state="final">Bei der Anmeldung trat ein Fehler auf. Eventuell haben Sie den Benutzernamen oder das Passwort nicht korrekt eingegeben.
-Bitte stellen Sie sicher, dass Sie sie korrekt eingeben, berücksichtigen Sie dabei bitte die Groß- und Klein­schrei­bung.
-Möglicherweise ist in Ihrem Browser auch das Setzen von Cookies nicht gestattet.</target></trans-unit>
+			<target state="final">Bei der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich haben Sie den Benutzernamen oder das Passwort nicht richtig eingegeben.
+Vergewissern Sie sich, dass Sie sie genau so eingeben, wie sie sind, einschließlich Groß- und Kleinschreibung.
+Eine andere Möglichkeit ist, dass die Cookies in Ihrem Webbrowser deaktiviert sind.</target></trans-unit>
       <trans-unit id="success_header" resname="success_header" approved="yes">
         <source>Login successful</source>
         <target state="final">Anmeldung erfolgreich</target>

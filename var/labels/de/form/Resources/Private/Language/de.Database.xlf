@@ -293,7 +293,7 @@
             <target state="final">Spezielle Elemente</target></trans-unit>
       <trans-unit id="formEditor.formElementGroups.select.label" resname="formEditor.formElementGroups.select.label" xml:space="preserve" approved="yes">
                 <source>Select elements</source>
-            <target state="final">Elemente auswählen</target></trans-unit>
+            <target state="final">Auswahlelemente</target></trans-unit>
       <trans-unit id="formEditor.formElementGroups.custom.label" resname="formEditor.formElementGroups.custom.label" xml:space="preserve" approved="yes">
                 <source>Advanced elements</source>
             <target state="final">Fortgeschrittene Elemente</target></trans-unit>
