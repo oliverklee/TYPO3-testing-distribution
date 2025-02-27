@@ -19,14 +19,6 @@
         <source>Stop</source>
         <target state="final">Stopp</target>
       </trans-unit>
-      <trans-unit id="LGL.telephone" approved="yes">
-        <source>Phone</source>
-        <target state="final">Telefon</target>
-      </trans-unit>
-      <trans-unit id="LGL.gender" approved="yes">
-        <source>Gender</source>
-        <target state="final">Anrede</target>
-      </trans-unit>
       <trans-unit id="tx_seminars_seminars" approved="yes">
         <source>Event</source>
         <target state="final">Veranstaltung</target>
@@ -485,7 +477,7 @@
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.registration_queue.regular" approved="yes">
         <source>regular registration</source>
-        <target state="final">reguläre Anmeldungen</target>
+        <target state="final">reguläre Anmeldung</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.registration_queue.waitingList" approved="yes">
         <source>waiting list</source>
@@ -662,6 +654,10 @@
       <trans-unit id="tx_seminars_attendances.attendance_mode.hybrid" approved="yes">
         <source>hybrid</source>
         <target state="final">hybrid</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_attendances.order_reference" approved="yes">
+        <source>Order reference</source>
+        <target state="final">Bestellzeichen</target>
       </trans-unit>
       <trans-unit id="tx_seminars_sites" approved="yes">
         <source>Venue</source>
