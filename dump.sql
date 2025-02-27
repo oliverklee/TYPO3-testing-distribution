@@ -1,11 +1,11 @@
 
 -- Dump of TYPO3 Connection "Default"
 /*M!999999\- enable the sandbox mode */ 
--- MariaDB dump 10.19  Distrib 10.11.10-MariaDB, for debian-linux-gnu (x86_64)
+-- MariaDB dump 10.19  Distrib 10.11.11-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: db    Database: db
 -- ------------------------------------------------------
--- Server version	10.6.20-MariaDB-ubu2004-log
+-- Server version	10.6.21-MariaDB-ubu2004-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -24,7 +24,7 @@
 
 DROP TABLE IF EXISTS `backend_layout`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `backend_layout` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(11) NOT NULL DEFAULT 0,
@@ -64,7 +64,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `be_dashboards`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `be_dashboards` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -100,7 +100,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `be_groups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `be_groups` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -148,7 +148,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `be_users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `be_users` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -206,7 +206,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `fe_groups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `fe_groups` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -246,7 +246,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `fe_users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `fe_users` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -326,7 +326,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pages`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `pages` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(11) NOT NULL DEFAULT 0,
@@ -477,7 +477,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `static_countries`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `static_countries` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -775,7 +775,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `static_country_zones`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `static_country_zones` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -1467,7 +1467,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `static_currencies`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `static_currencies` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -1673,7 +1673,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `static_languages`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `static_languages` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -1903,7 +1903,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `static_territories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `static_territories` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -1961,7 +1961,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_file`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_file` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -2006,7 +2006,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_file_collection`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_file_collection` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(11) NOT NULL DEFAULT 0,
@@ -2055,7 +2055,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_file_metadata`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_file_metadata` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(11) NOT NULL DEFAULT 0,
@@ -2101,7 +2101,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_file_processedfile`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_file_processedfile` (
   `uid` int(11) NOT NULL AUTO_INCREMENT,
   `tstamp` int(11) NOT NULL DEFAULT 0,
@@ -2144,7 +2144,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_file_reference`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_file_reference` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(11) NOT NULL DEFAULT 0,
@@ -2199,7 +2199,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_file_storage`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_file_storage` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -2240,7 +2240,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_filemounts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_filemounts` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -2273,7 +2273,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_language`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_language` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -2306,7 +2306,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_redirect`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_redirect` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -2352,7 +2352,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_registry`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_registry` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `entry_namespace` varchar(128) NOT NULL DEFAULT '',
@@ -2411,7 +2411,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1739471426;'),
+(43,'core','sys_refindex_lastUpdate','i:1740672880;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -2433,7 +2433,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sys_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_template` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(11) NOT NULL DEFAULT 0,
@@ -2488,7 +2488,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tt_content`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tt_content` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `rowDescription` text DEFAULT NULL,
@@ -2622,7 +2622,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_oelib_domain_model_germanzipcode`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_oelib_domain_model_germanzipcode` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -10941,7 +10941,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_attendances`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_attendances` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11016,7 +11016,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_attendances_checkboxes_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_attendances_checkboxes_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11043,7 +11043,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_attendances_foods_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_attendances_foods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11070,7 +11070,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_attendances_lodgings_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_attendances_lodgings_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11097,7 +11097,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_categories` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11131,7 +11131,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_checkboxes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_checkboxes` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11163,7 +11163,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_event_types`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_event_types` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11198,7 +11198,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_foods`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_foods` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11233,7 +11233,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_lodgings`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_lodgings` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11266,7 +11266,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_organizers`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_organizers` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11303,7 +11303,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_payment_methods`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_payment_methods` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11335,7 +11335,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11457,7 +11457,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_categories_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_categories_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11487,7 +11487,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_checkboxes_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_checkboxes_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11519,7 +11519,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_feusers_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_feusers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11546,7 +11546,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_foods_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_foods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11586,7 +11586,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_lodgings_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_lodgings_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11621,7 +11621,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_organizers_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_organizers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11666,7 +11666,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_organizing_partners_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_organizing_partners_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11693,7 +11693,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_payment_methods_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_payment_methods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11725,7 +11725,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_place_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_place_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11761,7 +11761,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_requirements_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_requirements_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11790,7 +11790,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_speakers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11823,7 +11823,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm_leaders`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_speakers_mm_leaders` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11850,7 +11850,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm_partners`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_speakers_mm_partners` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11877,7 +11877,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm_tutors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_speakers_mm_tutors` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11904,7 +11904,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_seminars_target_groups_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_seminars_target_groups_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11936,7 +11936,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_sites`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_sites` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -11982,7 +11982,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_skills`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_skills` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -12017,7 +12017,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_speakers`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_speakers` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -12064,7 +12064,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_speakers_skills_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_speakers_skills_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -12091,7 +12091,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_target_groups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_target_groups` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -12131,7 +12131,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_timeslots`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_timeslots` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -12167,7 +12167,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_seminars_usergroups_categories_mm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_seminars_usergroups_categories_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
@@ -12193,7 +12193,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tx_tea_domain_model_product_tea`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tx_tea_domain_model_product_tea` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT 0,
@@ -12239,4 +12239,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-02-13 19:31:40
+-- Dump completed on 2025-02-27 17:15:07
