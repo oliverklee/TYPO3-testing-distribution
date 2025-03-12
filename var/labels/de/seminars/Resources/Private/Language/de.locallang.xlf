@@ -83,6 +83,18 @@
         <source>Room</source>
         <target state="final">Raum</target>
       </trans-unit>
+      <trans-unit id="label_attendance_mode" approved="yes">
+        <source>On-site/online</source>
+        <target state="final">Vor Ort/online</target>
+      </trans-unit>
+      <trans-unit id="label_attendance_mode.onSite" approved="yes">
+        <source>on-site</source>
+        <target state="final">vor Ort</target>
+      </trans-unit>
+      <trans-unit id="label_attendance_mode.online" approved="yes">
+        <source>online</source>
+        <target state="final">online</target>
+      </trans-unit>
       <trans-unit id="label_seats" approved="yes">
         <source>Seats</source>
         <target state="final">Plätze</target>
@@ -266,6 +278,10 @@
       <trans-unit id="status_waiting_list" approved="yes">
         <source>waiting list</source>
         <target state="final">Warteliste</target>
+      </trans-unit>
+      <trans-unit id="status_nonbinding_reservation" approved="yes">
+        <source>nonbinding reservation</source>
+        <target state="final">unverbindliche Reservierung</target>
       </trans-unit>
       <trans-unit id="label_yes" approved="yes">
         <source>yes</source>
@@ -614,6 +630,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="thousandsSeparator" approved="yes">
         <source>,</source>
         <target state="final">.</target>
+      </trans-unit>
+      <trans-unit id="priceWithAndWithoutVat" approved="yes">
+        <source>%1$s incl. VAT (%2$s plus %3$s VAT)</source>
+        <target state="final">%1$s inkl. MwSt. (%2$s zzgl. %3$s MwSt.)</target>
       </trans-unit>
       <trans-unit id="registrationTitleFormat" approved="yes">
         <source>%1s / %2s, %3s</source>
@@ -1523,60 +1543,68 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Input fields</source>
         <target state="final">Eingabefelder</target>
       </trans-unit>
+      <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.attendanceMode" approved="yes">
+        <source>attendance mode</source>
+        <target state="final">Teilnahmemodus</target>
+      </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.seats" approved="yes">
-        <source>Seats</source>
+        <source>seats</source>
         <target state="final">Plätze</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.registeredThemselves" approved="yes">
-        <source>Is registering themselves (too)</source>
-        <target state="final">Meldet sich (auch) selbst an</target>
+        <source>is registering themselves (too)</source>
+        <target state="final">meldet sich (auch) selbst an</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.attendeesNames" approved="yes">
-        <source>Persons to register</source>
-        <target state="final">Anzumeldende Personen</target>
+        <source>persons to register</source>
+        <target state="final">anzumeldende Personen</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.interests" approved="yes">
-        <source>Interests</source>
+        <source>interests</source>
         <target state="final">Interessen</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.expectations" approved="yes">
-        <source>Expectations</source>
+        <source>expectations</source>
         <target state="final">Erwartungen</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.backgroundKnowledge" approved="yes">
-        <source>Background knowledge</source>
-        <target state="final">Hintergrundwissen</target>
+        <source>background knowledge</source>
+        <target state="final">Vorkenntnisse</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.knownFrom" approved="yes">
         <source>Known from where?</source>
         <target state="final">Wie davon gehört?</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.comments" approved="yes">
-        <source>Comments</source>
+        <source>comments</source>
         <target state="final">Anmerkungen</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.priceCode" approved="yes">
-        <source>Price</source>
+        <source>price</source>
         <target state="final">Preis</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.orderReference" approved="yes">
+        <source>order reference</source>
+        <target state="final">Bestellzeichen</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.group.billingAddress" approved="yes">
         <source>Billing address</source>
         <target state="final">Rechnungsadresse</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.separateBillingAddress" approved="yes">
-        <source>Separate billing address</source>
-        <target state="final">Separate Rechnungsadresse</target>
+        <source>separate billing address</source>
+        <target state="final">abweichende Rechnungsadresse</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.billingCompany" approved="yes">
-        <source>Company</source>
+        <source>company</source>
         <target state="final">Firma</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.billingFullName" approved="yes">
-        <source>Full name</source>
-        <target state="final">Vollständiger Name</target>
+        <source>full name</source>
+        <target state="final">vollständiger Name</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.billingStreetAddress" approved="yes">
-        <source>Street address</source>
+        <source>street address</source>
         <target state="final">Straße und Hausnummer</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.billingZipCode" approved="yes">
@@ -1584,19 +1612,19 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">PLZ</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.billingCity" approved="yes">
-        <source>City</source>
+        <source>city</source>
         <target state="final">Stadt</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.billingCountry" approved="yes">
-        <source>Country</source>
+        <source>country</source>
         <target state="final">Land</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.billingPhoneNumber" approved="yes">
-        <source>Phone number</source>
+        <source>phone number</source>
         <target state="final">Telefonnummer</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.billingEmailAddress" approved="yes">
-        <source>Email address</source>
+        <source>email address</source>
         <target state="final">E-Mail-Adresse</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.group.confirmationPage" approved="yes">
@@ -1604,12 +1632,16 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Bestätigungsseite</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.personalData" approved="yes">
-        <source>Personal data</source>
-        <target state="final">Persönliche Daten</target>
+        <source>personal data</source>
+        <target state="final">persönliche Daten</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.settings.fieldsToShow.consentedToTermsAndConditions" approved="yes">
-        <source>Consent to terms &amp; conditions</source>
+        <source>consent to terms &amp; conditions</source>
         <target state="final">AGB-Zustimmung</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventShared.heading.eventTitleAndDate" approved="yes">
+        <source>%1$s, %2$s</source>
+        <target state="final">%1$s, %2$s</target>
       </trans-unit>
       <trans-unit id="plugin.eventShared.heading.eventTitleAndDateAndUid" approved="yes">
         <source>%1$s, %2$s (event #%3$u)</source>
@@ -1624,8 +1656,8 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Veranstaltungsanmeldung</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.heading.eventRegistrationForWaitingList" approved="yes">
-        <source>Event registration (waiting list)</source>
-        <target state="final">Veranstaltungsanmeldung (Warteliste)</target>
+        <source>Waiting list registration</source>
+        <target state="final">Wartelisten-Registrierung</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.heading.registrationData_formal" approved="yes">
         <source>Your registration data</source>
@@ -1775,23 +1807,35 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.property.backgroundKnowledge_formal" approved="yes">
         <source>What are is your background knowledge?</source>
-        <target state="final">Was ist Ihr Hintergrundwissen?</target>
+        <target state="final">Welche Vorkenntnisse haben Sie?</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.property.backgroundKnowledge_informal" approved="yes">
         <source>What are is your background knowledge?</source>
-        <target state="final">Was ist dein Hintergrundwissen?</target>
+        <target state="final">Welche Vorkenntnisse hast du?</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.property.knownFrom_formal" approved="yes">
         <source>How did you hear about this event?</source>
         <target state="final">Wie haben Sie von dieser Veranstaltung erfahren?</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.property.knownFrom_informal" approved="yes">
-        <source>What are is your background knowledge on the topic of this event?</source>
+        <source>How did you hear about this event?</source>
         <target state="final">Wie hast du von dieser Veranstaltung erfahren?</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.property.comments" approved="yes">
         <source>Other comments</source>
         <target state="final">Sonstige Anmerkungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventRegistration.property.attendanceMode" approved="yes">
+        <source>On-site/online</source>
+        <target state="final">Vor Ort/online</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventRegistration.property.attendanceMode.1" approved="yes">
+        <source>on-site</source>
+        <target state="final">vor Ort</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventRegistration.property.attendanceMode.2" approved="yes">
+        <source>online</source>
+        <target state="final">online</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.property.seats" approved="yes">
         <source>Seats to book</source>
@@ -1864,6 +1908,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="plugin.eventRegistration.property.priceCode" approved="yes">
         <source>Price</source>
         <target state="final">Preis</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventRegistration.property.orderReference" approved="yes">
+        <source>Order reference</source>
+        <target state="final">Bestellzeichen</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.property.totalPrice" approved="yes">
         <source>Total price (incl. VAT)</source>
@@ -1985,29 +2033,49 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Name</source>
         <target state="final">Name</target>
       </trans-unit>
+      <trans-unit id="backEndModule.registration.noName" approved="yes">
+        <source>(User %1$u)</source>
+        <target state="final">(Benutzer %1$u)</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.registration.noUser" approved="yes">
+        <source>(deleted user)</source>
+        <target state="final">(gelöschter Benutzer)</target>
+      </trans-unit>
       <trans-unit id="backEndModule.action.createEvent" approved="yes">
         <source>Create event</source>
         <target state="final">Veranstaltung erstellen</target>
       </trans-unit>
-      <trans-unit id="backEndModule.action.edit" approved="yes">
-        <source>Edit record</source>
-        <target state="final">Datensatz bearbeiten</target>
+      <trans-unit id="backEndModule.action.editEvent" approved="yes">
+        <source>Edit event</source>
+        <target state="final">Veranstaltung bearbeiten</target>
       </trans-unit>
-      <trans-unit id="backEndModule.action.hide" approved="yes">
-        <source>Hide record</source>
-        <target state="final">Datensatz verbergen</target>
+      <trans-unit id="backEndModule.action.editRegistration" approved="yes">
+        <source>Edit registration</source>
+        <target state="final">Anmeldung bearbeiten</target>
       </trans-unit>
-      <trans-unit id="backEndModule.action.unhide" approved="yes">
-        <source>Un-hide record</source>
-        <target state="final">Datensatz sichtbar machen</target>
+      <trans-unit id="backEndModule.action.editFrontEndUser" approved="yes">
+        <source>Edit FE user</source>
+        <target state="final">FE-Benutzer bearbeiten</target>
       </trans-unit>
-      <trans-unit id="backEndModule.action.delete" approved="yes">
-        <source>Delete record</source>
-        <target state="final">Datensatz löschen</target>
+      <trans-unit id="backEndModule.action.hideEvent" approved="yes">
+        <source>Hide event</source>
+        <target state="final">Veranstaltung ausblenden</target>
       </trans-unit>
-      <trans-unit id="backEndModule.action.duplicate" approved="yes">
-        <source>Duplicate record</source>
-        <target state="final">Datensatz duplizieren</target>
+      <trans-unit id="backEndModule.action.unhideEvent" approved="yes">
+        <source>Un-hide event</source>
+        <target state="final">Veranstaltung wieder einblenden</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.action.deleteEvent" approved="yes">
+        <source>Delete event</source>
+        <target state="final">Veranstaltung löschen</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.action.deleteRegistration" approved="yes">
+        <source>Delete registration</source>
+        <target state="final">Anmeldung löschen</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.action.duplicateEvent" approved="yes">
+        <source>Duplicate event</source>
+        <target state="final">Veranstaltung duplizieren</target>
       </trans-unit>
       <trans-unit id="backEndModule.action.csvDownload" approved="yes">
         <source>Download as CSV file</source>
@@ -2326,8 +2394,8 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Anmeldung</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.registration.register" approved="yes">
-        <source>register</source>
-        <target state="final">anmelden</target>
+        <source>registration</source>
+        <target state="final">zur Anmeldung</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.registration.waitingList" approved="yes">
         <source>waiting list</source>
@@ -2377,6 +2445,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>room</source>
         <target state="final">Raum</target>
       </trans-unit>
+      <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.price" approved="yes">
+        <source>price</source>
+        <target state="final">Preis</target>
+      </trans-unit>
       <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.vacancies" approved="yes">
         <source>vacancies</source>
         <target state="final">freie Plätze</target>
@@ -2408,6 +2480,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="plugin.eventSingleView.events.property.room" approved="yes">
         <source>Room</source>
         <target state="final">Raum</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.events.property.price" approved="yes">
+        <source>Price</source>
+        <target state="final">Preis</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView.events.property.vacancies" approved="yes">
         <source>Vacancies</source>
@@ -2442,8 +2518,8 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Anmeldung</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView.events.property.registration.register" approved="yes">
-        <source>register for this event</source>
-        <target state="final">zu dieser Veranstaltung anmelden</target>
+        <source>registration</source>
+        <target state="final">zur Anmeldung</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView.events.property.registration.waitingList" approved="yes">
         <source>register for the waiting list</source>
