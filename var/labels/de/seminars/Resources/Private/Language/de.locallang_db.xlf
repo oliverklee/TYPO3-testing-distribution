@@ -151,6 +151,10 @@
         <source>Attached files</source>
         <target state="final">Angehängte Dateien</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_seminars.download_start_date" approved="yes">
+        <source>Downloads available starting at</source>
+        <target state="final">Downloads verfügbar ab</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_seminars.divLabelSpeakers" approved="yes">
         <source>Speakers</source>
         <target state="final">Referent_innen</target>
@@ -254,6 +258,10 @@
       <trans-unit id="tx_seminars_seminars.room" approved="yes">
         <source>Room</source>
         <target state="final">Raum</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_seminars.tab.attendeeInformation" approved="yes">
+        <source>Information for attendees</source>
+        <target state="final">Teilnahmeinformationen</target>
       </trans-unit>
       <trans-unit id="tx_seminars_seminars.divLabelLodging" approved="yes">
         <source>Lodging/Food</source>
