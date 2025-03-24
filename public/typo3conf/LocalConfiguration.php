@@ -82,6 +82,9 @@ return [
         ],
         'seminars' => [
         ],
+        'seminars_premium' => [
+            'enableDownloadsWatermark' => '1',
+        ],
         'static_info_tables' => [
             'enableManager' => '0',
         ],
