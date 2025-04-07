@@ -32,18 +32,7 @@ return RectorConfig::configure()
     ->withSets([
         // Rector sets
 
-        // LevelSetList::UP_TO_PHP_53,
-        // LevelSetList::UP_TO_PHP_54,
-        // LevelSetList::UP_TO_PHP_55,
-        // LevelSetList::UP_TO_PHP_56,
-        // LevelSetList::UP_TO_PHP_70,
-        // LevelSetList::UP_TO_PHP_71,
-        // LevelSetList::UP_TO_PHP_72,
-        // LevelSetList::UP_TO_PHP_73,
-        // LevelSetList::UP_TO_PHP_74,
-        // LevelSetList::UP_TO_PHP_80,
-        // LevelSetList::UP_TO_PHP_81,
-        // LevelSetList::UP_TO_PHP_82,
+        LevelSetList::UP_TO_PHP_82,
         // LevelSetList::UP_TO_PHP_83,
 
         // SetList::CODE_QUALITY,
@@ -59,13 +48,7 @@ return RectorConfig::configure()
         // PHPUnit sets
 
         // PHPUnitSetList::PHPUNIT80_DMS,
-        // PHPUnitSetList::PHPUNIT_40,
-        // PHPUnitSetList::PHPUNIT_50,
-        // PHPUnitSetList::PHPUNIT_60,
-        // PHPUnitSetList::PHPUNIT_70,
-        // PHPUnitSetList::PHPUNIT_80,
-        // PHPUnitSetList::PHPUNIT_90,
-        // PHPUnitSetList::PHPUNIT_100,
+        PHPUnitSetList::PHPUNIT_100,
         // PHPUnitSetList::PHPUNIT_CODE_QUALITY,
 
         // TYPO3 Sets
@@ -75,9 +58,9 @@ return RectorConfig::configure()
         Typo3SetList::CODE_QUALITY,
         Typo3SetList::GENERAL,
 
-        Typo3LevelSetList::UP_TO_TYPO3_12,
+        Typo3LevelSetList::UP_TO_TYPO3_13,
 
-        // TYPO3TestingFrameworkSetList::TYPO3_TESTING_FRAMEWORK_7,
+        TYPO3TestingFrameworkSetList::TYPO3_TESTING_FRAMEWORK_7,
     ])
     // To have a better analysis from PHPStan, we teach it here some more things
     ->withPHPStanConfigs([
