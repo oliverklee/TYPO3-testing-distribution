@@ -23,7 +23,7 @@ return RectorConfig::configure()
         __DIR__ . '/config',
         __DIR__ . '/src/extensions/site-dev',
     ])
-    ->withPhpVersion(PhpVersion::PHP_81)
+    ->withPhpVersion(PhpVersion::PHP_82)
     ->withPhpSets(true)
     // Note: We're only enabling a single set by default to improve performance. (Rector needs at least a single set to
     // run.)
