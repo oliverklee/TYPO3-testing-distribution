@@ -14,9 +14,7 @@ final class UniverseTest extends FunctionalTestCase
 {
     protected array $coreExtensionsToLoad = ['extbase', 'fluid'];
 
-    protected array $testExtensionsToLoad = [
-        'site_dev',
-    ];
+    protected array $testExtensionsToLoad = ['oliverklee/site-dev'];
 
     /**
      * @test
