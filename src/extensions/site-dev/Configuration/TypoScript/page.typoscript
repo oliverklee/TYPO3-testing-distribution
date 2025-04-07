@@ -29,7 +29,7 @@ page {
 
     variables {
       siteName = TEXT
-      siteName.data = TSFE:TYPO3_CONF_VARS|SYS|sitename
+      siteName.data = SYS|sitename
       mainNavigation < lib.mainNavigation
       subNavigation < lib.subNavigation
       breadcrumbs < lib.breadcrumbs
