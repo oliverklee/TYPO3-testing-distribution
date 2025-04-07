@@ -3,10 +3,13 @@
 This is a TYPO3 distribution which I use to manually test my extensions:
 
 - [feuserextrafields](https://github.com/oliverklee/ext-feuserextrafields)
+  (once it supports TYPO3 13LTS)
 - [oelib](https://github.com/oliverklee/ext-oelib)
+  (once it supports TYPO3 13LTS)
 - [onetimeaccount](https://github.com/oliverklee/ext-onetimeaccount)
+  (once it supports TYPO3 13LTS)
 - [seminars](https://github.com/oliverklee/ext-seminars)
-  (once it [supports TYPO3 12LTS](https://github.com/oliverklee/ext-seminars/wiki/Early-access-program-for-newer-TYPO3-versions))
+  (once it [supports TYPO3 13LTS](https://github.com/oliverklee/ext-seminars/wiki/Early-access-program-for-newer-TYPO3-versions))
 - [tea](https://github.com/TYPO3BestPractices/tea)
   (once it supports TYPO3 13LTS)
 
