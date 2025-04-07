@@ -7,7 +7,8 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 - [onetimeaccount](https://github.com/oliverklee/ext-onetimeaccount)
 - [seminars](https://github.com/oliverklee/ext-seminars)
   (once it [supports TYPO3 12LTS](https://github.com/oliverklee/ext-seminars/wiki/Early-access-program-for-newer-TYPO3-versions))
-- [tea](https://github.com/TYPO3-Documentation/tea)
+- [tea](https://github.com/TYPO3BestPractices/tea)
+  (once it supports TYPO3 13LTS)
 
 ## Usage
 
