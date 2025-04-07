@@ -3,438 +3,529 @@
   <file source-language="en" datatype="plaintext" original="EXT:lowlevel/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:34Z" product-name="lowlevel" target-language="de">
     <header/>
     <body>
-      <trans-unit id="module.configuration.title" resname="module.configuration.title" approved="yes">
+      <trans-unit id="module.configuration.title" approved="yes">
         <source>Configuration</source>
         <target state="final">Konfiguration</target>
       </trans-unit>
-      <trans-unit id="module.configuration.shortDescription" resname="module.configuration.shortDescription" approved="yes">
+      <trans-unit id="module.configuration.shortDescription" approved="yes">
         <source>View configuration from localconf.php and tables.php</source>
         <target state="final">Konfiguration von localconf.php und tables.php anzeigen</target>
       </trans-unit>
-      <trans-unit id="module.configuration.description" resname="module.configuration.description" approved="yes">
+      <trans-unit id="module.configuration.description" approved="yes">
         <source>Allows you to browse the values of the $TCA array (table configuration) and $TYPO3_CONF_VARS. You cannot set any values, only browse them.</source>
         <target state="final">Ermöglicht das Durchsuchen der Werte des Arrays $TCA (Tabellenkonfiguration) und $TYPO3_CONF_VARS. Du kannst keine Werte festlegen, sondern sie nur durchsuchen.</target>
       </trans-unit>
-      <trans-unit id="module.configuration.numberOfSearchMatches" resname="module.configuration.numberOfSearchMatches" approved="yes">
+      <trans-unit id="module.configuration.numberOfSearchMatches" approved="yes">
         <source>%s search match(es)</source>
         <target state="final">%s Suchergebnis(se)</target>
       </trans-unit>
-      <trans-unit id="moduleMenu.dropdown.label" resname="moduleMenu.dropdown.label" approved="yes">
+      <trans-unit id="moduleMenu.dropdown.label" approved="yes">
         <source>Configuration to show</source>
         <target state="final">anzuzeigende Konfiguration</target>
       </trans-unit>
-      <trans-unit id="configuration.headline" resname="configuration.headline" approved="yes">
+      <trans-unit id="configuration.headline" approved="yes">
         <source>Configuration of "%1s"</source>
         <target state="final">Konfiguration von "%1s"</target>
       </trans-unit>
-      <trans-unit id="typo3ConfVars" resname="typo3ConfVars" approved="yes">
+      <trans-unit id="typo3ConfVars" approved="yes">
         <source>$GLOBALS['TYPO3_CONF_VARS'] (Global Configuration)</source>
         <target state="final">$GLOBALS['TYPO3_CONF_VARS'] (Globale Konfiguration)</target>
       </trans-unit>
-      <trans-unit id="tca" resname="tca" approved="yes">
+      <trans-unit id="tca" approved="yes">
         <source>$GLOBALS['TCA'] (Table configuration array)</source>
         <target state="final">$GLOBALS['TCA'] (Array für Tabellenkonfiguration)</target>
       </trans-unit>
-      <trans-unit id="tbeStyles" resname="tbeStyles" approved="yes">
-        <source>$GLOBALS['TBE_STYLES'] (Skinning Styles)</source>
-        <target state="final">$GLOBALS['TBE_STYLES'] (Oberflächen-Stile)</target>
-      </trans-unit>
-      <trans-unit id="beUserTsConfig" resname="beUserTsConfig" approved="yes">
+      <trans-unit id="beUserTsConfig" approved="yes">
         <source>$GLOBALS['BE_USER']-&gt;getTSConfig() (User TSconfig)</source>
         <target state="final">$GLOBALS['BE_USER']-&gt;getTSConfig() (Benutzer-TSconfig)</target>
       </trans-unit>
-      <trans-unit id="beUser" resname="beUser" approved="yes">
+      <trans-unit id="beUser" approved="yes">
         <source>$GLOBALS['BE_USER']-&gt;uc (User Settings)</source>
         <target state="final">$GLOBALS['BE_USER']-&gt;uc (Benutzereinstellungen)</target>
       </trans-unit>
-      <trans-unit id="usersettings" resname="usersettings" approved="yes">
+      <trans-unit id="usersettings" approved="yes">
         <source>$GLOBALS['TYPO3_USER_SETTINGS'] (User Settings Configuration)</source>
         <target state="final">$GLOBALS['TYPO3_USER_SETTINGS'] (Konfiguration für Benutzereinstellungen)</target>
       </trans-unit>
-      <trans-unit id="routes" resname="routes" approved="yes">
+      <trans-unit id="routes" approved="yes">
         <source>Backend Routes</source>
         <target state="final">Backendrouten</target>
       </trans-unit>
-      <trans-unit id="httpMiddlewareStacks" resname="httpMiddlewareStacks" approved="yes">
+      <trans-unit id="httpMiddlewareStacks" approved="yes">
         <source>HTTP Middlewares (PSR-15)</source>
         <target state="final">HTTP-Middleware (PSR-15)</target>
       </trans-unit>
-      <trans-unit id="contentSecurityPolicyMutations" resname="contentSecurityPolicyMutations" approved="yes">
+      <trans-unit id="contentSecurityPolicyMutations" approved="yes">
         <source>Content Security Policy Mutations</source>
         <target state="final">Content-Security-Policy-Mutationen</target>
       </trans-unit>
-      <trans-unit id="sitesTcaConfiguration" resname="sitesTcaConfiguration" approved="yes">
+      <trans-unit id="sitesTcaConfiguration" approved="yes">
         <source>Sites: TCA configuration</source>
         <target state="final">Sites: TCA-Konfiguration</target>
       </trans-unit>
-      <trans-unit id="sitesYamlConfiguration" resname="sitesYamlConfiguration" approved="yes">
+      <trans-unit id="sitesYamlConfiguration" approved="yes">
         <source>Sites: YAML configuration</source>
         <target state="final">Sites: YAML-Konfiguration</target>
       </trans-unit>
-      <trans-unit id="eventListeners" resname="eventListeners" approved="yes">
+      <trans-unit id="eventListeners" approved="yes">
         <source>Event Listeners (PSR-14)</source>
         <target state="final">Event Listeners (PSR-14)</target>
       </trans-unit>
-      <trans-unit id="mfaProviders" resname="mfaProviders" approved="yes">
+      <trans-unit id="mfaProviders" approved="yes">
         <source>MFA providers</source>
         <target state="final">MFA Anbieter</target>
       </trans-unit>
-      <trans-unit id="softReferenceParsers" resname="softReferenceParsers" approved="yes">
+      <trans-unit id="softReferenceParsers" approved="yes">
         <source>Soft Reference Parsers</source>
         <target state="final">Soft-Referenz-Parser</target>
       </trans-unit>
-      <trans-unit id="toolbarItems" resname="toolbarItems" approved="yes">
+      <trans-unit id="toolbarItems" approved="yes">
         <source>Backend Toolbar Items</source>
         <target state="final">Backend Toolbar Elemente</target>
       </trans-unit>
-      <trans-unit id="symfonyExpressionLanguage" resname="symfonyExpressionLanguage" approved="yes">
+      <trans-unit id="symfonyExpressionLanguage" approved="yes">
         <source>Symfony Expression Language Providers</source>
         <target state="final">Symfony ExpressionLanguage Providers</target>
       </trans-unit>
-      <trans-unit id="formYamlConfiguration" resname="formYamlConfiguration" approved="yes">
+      <trans-unit id="doctrineDbalDriverMiddlewares" approved="yes">
+        <source>Doctrine DBAL Driver Middlewares</source>
+        <target state="final">Doctrine DBAL Driver Middlewares</target>
+      </trans-unit>
+      <trans-unit id="formYamlConfiguration" approved="yes">
         <source>Form: YAML Configuration</source>
         <target state="final">Formular: YAML-Konfiguration</target>
       </trans-unit>
-      <trans-unit id="t3services" resname="t3services" approved="yes">
+      <trans-unit id="t3services" approved="yes">
         <source>$GLOBALS['T3_SERVICES'] (Registered Services)</source>
         <target state="final">$GLOBALS['T3_SERVICES'] (Registrierte Dienste)</target>
       </trans-unit>
-      <trans-unit id="backendModules" resname="backendModules" approved="yes">
+      <trans-unit id="backendModules" approved="yes">
         <source>Backend Modules</source>
         <target state="final">Backend-Module</target>
       </trans-unit>
-      <trans-unit id="pagesTypes" resname="pagesTypes" approved="yes">
+      <trans-unit id="pagesTypes" approved="yes">
         <source>Table permissions per page type</source>
         <target state="final">Tabellenberechtigungen pro Seitentyp</target>
       </trans-unit>
-      <trans-unit id="module.dbint.title" resname="module.dbint.title" approved="yes">
+      <trans-unit id="module.dbint.title" approved="yes">
         <source>DB Check</source>
         <target state="final">DB Check</target>
       </trans-unit>
-      <trans-unit id="module.dbint.shortDescription" resname="module.dbint.shortDescription" approved="yes">
+      <trans-unit id="module.dbint.shortDescription" approved="yes">
         <source>Database integrity check</source>
         <target state="final">Datenbankintegritätsprüfung</target>
       </trans-unit>
-      <trans-unit id="module.dbint.description" resname="module.dbint.description" approved="yes">
+      <trans-unit id="module.dbint.description" approved="yes">
         <source>Here you can check the integrity of the database tables configured by the $TCA. For instance all records must belong to a page record. You can also get a view of the total pagetree including deleted pages. Finally you've got access to a global database search facility.</source>
         <target state="final">Hier kannst du die Integrität der von $TCA konfigurierten Datenbanktabellen überprüfen. Zum Beispiel müssen alle Datensätze zu einem Seitendatensatz gehören. Du kannst dir auch einen Überblick über den gesamten Seitenbaum verschaffen, einschließlich der gelöschten Seiten. Und du hast Zugang zu einer globalen Datenbank-Suchfunktion.</target>
       </trans-unit>
-      <trans-unit id="module.dbint.docheader.viewmode" resname="module.dbint.docheader.viewmode" approved="yes">
+      <trans-unit id="module.dbint.docheader.viewmode" approved="yes">
         <source>Module action</source>
         <target state="final">Modul-Aktion</target>
       </trans-unit>
-      <trans-unit id="search.placeholder" resname="search.placeholder" approved="yes">
-        <source>Search Word</source>
-        <target state="final">Suchbegriff</target>
-        <note>Placeholder text for search in database input</note>
-      </trans-unit>
-      <trans-unit id="search.submit" resname="search.submit" approved="yes">
+      <trans-unit id="search.submit" approved="yes">
         <source>Search All Records</source>
         <target state="final">Alle Datensätze durchsuchen</target>
         <note>Label of submit button to search within the database (raw search in all fields)</note>
       </trans-unit>
-      <trans-unit id="search" resname="search" approved="yes">
+      <trans-unit id="search" approved="yes">
         <source>Search</source>
         <target state="final">Suchen</target>
       </trans-unit>
-      <trans-unit id="recordStatistics" resname="recordStatistics" approved="yes">
+      <trans-unit id="recordStatistics" approved="yes">
         <source>Record Statistics</source>
         <target state="final">Datensatz-Statistik</target>
       </trans-unit>
-      <trans-unit id="totalPageTree" resname="totalPageTree" approved="yes">
+      <trans-unit id="totalPageTree" approved="yes">
         <source>Total Page Tree</source>
         <target state="final">Gesamter Seitenbaum</target>
       </trans-unit>
-      <trans-unit id="databaseRelations" resname="databaseRelations" approved="yes">
+      <trans-unit id="databaseRelations" approved="yes">
         <source>Database Relations</source>
         <target state="final">Datenbankrelationen</target>
       </trans-unit>
-      <trans-unit id="fullSearch" resname="fullSearch" approved="yes">
+      <trans-unit id="fullSearch" approved="yes">
         <source>Full search</source>
         <target state="final">Volltextsuche</target>
       </trans-unit>
-      <trans-unit id="findFilename" resname="findFilename" approved="yes">
+      <trans-unit id="findFilename" approved="yes">
         <source>Find filename</source>
         <target state="final">Dateinamen finden</target>
       </trans-unit>
-      <trans-unit id="manageRefIndex" resname="manageRefIndex" approved="yes">
+      <trans-unit id="manageRefIndex" approved="yes">
         <source>Manage Reference Index</source>
         <target state="final">Referenz-Index verwalten</target>
       </trans-unit>
-      <trans-unit id="rawSearch" resname="rawSearch" approved="yes">
+      <trans-unit id="rawSearch" approved="yes">
         <source>Raw search in all fields</source>
         <target state="final">Suche in allen Feldern</target>
       </trans-unit>
-      <trans-unit id="advancedQuery" resname="advancedQuery" approved="yes">
+      <trans-unit id="advancedQuery" approved="yes">
         <source>Advanced query</source>
         <target state="final">Erweiterte Abfrage</target>
       </trans-unit>
-      <trans-unit id="selectRecords" resname="selectRecords" approved="yes">
+      <trans-unit id="selectRecords" approved="yes">
         <source>Select records</source>
         <target state="final">Datensätze auswählen</target>
       </trans-unit>
-      <trans-unit id="countResults" resname="countResults" approved="yes">
+      <trans-unit id="countResults" approved="yes">
         <source>Count results</source>
         <target state="final">Ergebnisse zählen</target>
       </trans-unit>
-      <trans-unit id="explainQuery" resname="explainQuery" approved="yes">
+      <trans-unit id="explainQuery" approved="yes">
         <source>Explain query</source>
         <target state="final">Anfrage erläutern</target>
       </trans-unit>
-      <trans-unit id="csvExport" resname="csvExport" approved="yes">
+      <trans-unit id="csvExport" approved="yes">
         <source>CSV Export</source>
         <target state="final">CSV-Export</target>
       </trans-unit>
-      <trans-unit id="xmlExport" resname="xmlExport" approved="yes">
+      <trans-unit id="xmlExport" approved="yes">
         <source>XML Export</source>
         <target state="final">XML-Export</target>
       </trans-unit>
-      <trans-unit id="clickToUpdateRefIndex" resname="clickToUpdateRefIndex" approved="yes">
+      <trans-unit id="clickToUpdateRefIndex" approved="yes">
         <source>Click here to update reference index</source>
         <target state="final">Klicken Sie hier, um den Referenz-Index zu aktualisieren:</target>
       </trans-unit>
-      <trans-unit id="updateNow" resname="updateNow" approved="yes">
+      <trans-unit id="updateNow" approved="yes">
         <source>Update now!</source>
         <target state="final">Jetzt aktualisieren!</target>
       </trans-unit>
-      <trans-unit id="clickToTestRefIndex" resname="clickToTestRefIndex" approved="yes">
+      <trans-unit id="clickToTestRefIndex" approved="yes">
         <source>Click here to test reference index</source>
         <target state="final">Klicken Sie hier, um den Referenz-Index zu prüfen:</target>
       </trans-unit>
-      <trans-unit id="referenceIndex_description" resname="referenceIndex_description" approved="yes">
+      <trans-unit id="referenceIndex_description" approved="yes">
         <source>TYPO3's reference index keeps track of the relations between records. As it can happen that the reference index contains outdated values, you can check and update it here.</source>
         <target state="final">Der TYPO3-Referenzindex zeichnet Beziehungen zwischen Datensätzen auf. Da es vorkommen kann, dass Werte veralten, gibt es hier die Möglichkeit, ihn zu prüfen und aktualisieren.</target>
       </trans-unit>
-      <trans-unit id="referenceIndex_buttonUpdate" resname="referenceIndex_buttonUpdate" approved="yes">
+      <trans-unit id="referenceIndex_buttonUpdate" approved="yes">
         <source>Update reference index</source>
         <target state="final">Referenzindex aktualisieren</target>
       </trans-unit>
-      <trans-unit id="referenceIndex_buttonCheck" resname="referenceIndex_buttonCheck" approved="yes">
+      <trans-unit id="referenceIndex_buttonCheck" approved="yes">
         <source>Check reference index</source>
         <target state="final">Referenzindex prüfen</target>
       </trans-unit>
-      <trans-unit id="checkNow" resname="checkNow" approved="yes">
+      <trans-unit id="checkNow" approved="yes">
         <source>Check now!</source>
         <target state="final">Jetzt prüfen!</target>
       </trans-unit>
-      <trans-unit id="checkScript_headline" resname="checkScript_headline" approved="yes">
+      <trans-unit id="checkScript_headline" approved="yes">
         <source>Using the command line interface</source>
         <target state="final">Verwendung der Kommandozeile</target>
       </trans-unit>
-      <trans-unit id="checkScript" resname="checkScript" approved="yes">
+      <trans-unit id="checkScript" approved="yes">
         <source>You can also run the check as a shell script using CLI if the processing takes longer than the PHP max_execution_time allows.</source>
         <target state="final">Sie können die Prüfung auch in einem Shell-Script mit dem Command Line Interface (CLI) durchführen, wenn die Verarbeitung länger braucht, als die max_execution_time in PHP erlaubt.</target>
       </trans-unit>
-      <trans-unit id="checkScript_check_description" resname="checkScript_check_description" approved="yes">
+      <trans-unit id="checkScript_check_description" approved="yes">
         <source>To check the reference index use:</source>
         <target state="final">Um den Referenz-Index zu prüfen, führen Sie folgenden Befehl aus:</target>
       </trans-unit>
-      <trans-unit id="checkScript_update_description" resname="checkScript_update_description" approved="yes">
+      <trans-unit id="checkScript_update_description" approved="yes">
         <source>To update the reference index use:</source>
         <target state="final">Um den Referenz-Index zu aktualisieren, führen Sie folgenden Befehl aus:</target>
       </trans-unit>
-      <trans-unit id="checkScript_moreDetails" resname="checkScript_moreDetails" approved="yes">
+      <trans-unit id="checkScript_moreDetails" approved="yes">
         <source>For more details see:</source>
         <target state="final">Für weitere Details siehe:</target>
       </trans-unit>
-      <trans-unit id="updateRefIndex" resname="updateRefIndex" approved="yes">
+      <trans-unit id="updateRefIndex" approved="yes">
         <source>Update reference index</source>
         <target state="final">Referenzindex aktualisieren</target>
       </trans-unit>
-      <trans-unit id="showSQL" resname="showSQL" approved="yes">
+      <trans-unit id="fullSearch.flashMessage.noResultsFoundMessage" approved="yes">
+        <source>The query returned no results.</source>
+        <target state="final">Die Abfrage lieferte keine Ergebnisse.</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.section.queryOptions" approved="yes">
+        <source>Query options</source>
+        <target state="final">Abfrageoptionen</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.section.querySQL" approved="yes">
+        <source>Full SQL query</source>
+        <target state="final">Vollständige SQL-Abfrage</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.section.querySQL.error" approved="yes">
+        <source>SQL error</source>
+        <target state="final">SQL Fehler</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.section.querySettings" approved="yes">
+        <source>Query compilation</source>
+        <target state="final">Zusammenstellung der Abfrage</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.section.queryStorage" approved="yes">
+        <source>Load/save query</source>
+        <target state="final">Abfrage laden/speichern</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.section.result" approved="yes">
+        <source>Result</source>
+        <target state="final">Ergebnis</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.type.count.resultsFound" approved="yes">
+        <source>records found.</source>
+        <target state="final">Einträge gefunden.</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.type.all.noResultsFound" approved="yes">
+        <source>No records found.</source>
+        <target state="final">Keine Datensätze gefunden.</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.btn.delete.label" approved="yes">
+        <source>Delete</source>
+        <target state="final">Löschen</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.btn.load.label" approved="yes">
+        <source>Load</source>
+        <target state="final">Laden</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.btn.save.label" approved="yes">
+        <source>Save</source>
+        <target state="final">Speichern</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.groupBy.label" approved="yes">
+        <source>Group by</source>
+        <target state="final">Gruppieren nach</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.limit.label" approved="yes">
+        <source>Limit</source>
+        <target state="final">Limit</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.makeQuery.label" approved="yes">
+        <source>Result type</source>
+        <target state="final">Ergebnistyp</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.orderBy.label" approved="yes">
+        <source>Order by</source>
+        <target state="final">Sortieren nach</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.orderBy.descending" approved="yes">
+        <source>Descending</source>
+        <target state="final">Absteigend</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.searchType.label" approved="yes">
+        <source>Search type</source>
+        <target state="final">Suchtyp</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.query.label" approved="yes">
+        <source>Query</source>
+        <target state="final">Abfrage</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.queryFields.label" approved="yes">
+        <source>Fields</source>
+        <target state="final">Felder</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.queryTable.label" approved="yes">
+        <source>Table</source>
+        <target state="final">Tabelle</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.queryStore.storage.label" approved="yes">
+        <source>Saved queries</source>
+        <target state="final">Gespeicherte Abfragen</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.queryStore.storage.0" approved="yes">
+        <source>[New]</source>
+        <target state="final">[Neu]</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.queryStore.title.label" approved="yes">
+        <source>Title</source>
+        <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="fullSearch.form.field.queryConfig.comparison.negate" approved="yes">
+        <source>Negate</source>
+        <target state="final">Negieren</target>
+      </trans-unit>
+      <trans-unit id="showSQL" approved="yes">
         <source>Show SQL parts</source>
         <target state="final">SQL-Teile anzeigen</target>
       </trans-unit>
-      <trans-unit id="useFormattedStrings" resname="useFormattedStrings" approved="yes">
+      <trans-unit id="useFormattedStrings" approved="yes">
         <source>Use formatted strings, labels and dates instead of original values for results</source>
         <target state="final">Formatierte Strings, Labels und Datumsangaben statt der Originalwerte im Ergebnis anzeigen</target>
       </trans-unit>
-      <trans-unit id="dontUseOrigValues" resname="dontUseOrigValues" approved="yes">
-        <source>Don't use original values in brackets as prefix for labelled results</source>
+      <trans-unit id="dontUseOrigValues" approved="yes">
+        <source>Don't use original values in brackets as prefix for labeled results</source>
         <target state="final">Originalwerte in Klammern nicht als Präfix für Ergebnisse mit Label verwenden</target>
       </trans-unit>
-      <trans-unit id="sortOptions" resname="sortOptions" approved="yes">
+      <trans-unit id="sortOptions" approved="yes">
         <source>Sort selectbox-options for relations by label and not by value</source>
         <target state="final">Auswahlfeldoptionen für Relationen nach Label und nicht nach Wert sortieren</target>
       </trans-unit>
-      <trans-unit id="showDeleted" resname="showDeleted" approved="yes">
+      <trans-unit id="showDeleted" approved="yes">
         <source>Show even deleted entries (with undelete buttons)</source>
         <target state="final">Auch gelöschte Einträge anzeigen (mit Wiederherstellen-Schaltfläche)</target>
       </trans-unit>
-      <trans-unit id="searchOptions" resname="searchOptions" approved="yes">
-        <source>Search options</source>
-        <target state="final">Suchoptionen:</target>
-      </trans-unit>
-      <trans-unit id="result" resname="result" approved="yes">
+      <trans-unit id="result" approved="yes">
         <source>Result</source>
         <target state="final">Ergebnis:</target>
       </trans-unit>
-      <trans-unit id="no_results" resname="no_results" approved="yes">
+      <trans-unit id="no_results" approved="yes">
         <source>No results found for "%s".</source>
         <target state="final">Keine Ergebnisse für „%s“ gefunden.</target>
         <note>Info text in case no results are found for a given search term</note>
       </trans-unit>
-      <trans-unit id="no_sword" resname="no_sword" approved="yes">
+      <trans-unit id="no_sword" approved="yes">
         <source>Enter a search term to search for records</source>
         <target state="final">Geben Sie einen Suchbegriff ein, um nach Datensätzen zu suchen</target>
       </trans-unit>
-      <trans-unit id="tables" resname="tables" approved="yes">
+      <trans-unit id="tables" approved="yes">
         <source>Tables</source>
         <target state="final">Tabellen:</target>
       </trans-unit>
-      <trans-unit id="references" resname="references" approved="yes">
+      <trans-unit id="references" approved="yes">
         <source>references</source>
         <target state="final">Referenzen:</target>
       </trans-unit>
-      <trans-unit id="isMissing" resname="isMissing" approved="yes">
+      <trans-unit id="isMissing" approved="yes">
         <source>is missing!</source>
         <target state="final">fehlt!</target>
       </trans-unit>
-      <trans-unit id="referencedFrom" resname="referencedFrom" approved="yes">
+      <trans-unit id="referencedFrom" approved="yes">
         <source>Referenced from</source>
         <target state="final">Referenziert von:</target>
       </trans-unit>
-      <trans-unit id="enterRegexPattern" resname="enterRegexPattern" approved="yes">
+      <trans-unit id="enterRegexPattern" approved="yes">
         <source>Enter regex pattern</source>
         <target state="final">Muster für regulären Ausdruck eingeben:</target>
       </trans-unit>
-      <trans-unit id="searchButton" resname="searchButton" approved="yes">
+      <trans-unit id="searchButton" approved="yes">
         <source>Search</source>
         <target state="final">Suchen</target>
       </trans-unit>
-      <trans-unit id="pattern" resname="pattern" approved="yes">
+      <trans-unit id="pattern" approved="yes">
         <source>Pattern</source>
         <target state="final">Muster</target>
       </trans-unit>
-      <trans-unit id="beingChecked" resname="beingChecked" approved="yes">
+      <trans-unit id="beingChecked" approved="yes">
         <source>being checked...</source>
         <target state="final">wird geprüft...</target>
       </trans-unit>
-      <trans-unit id="directories" resname="directories" approved="yes">
+      <trans-unit id="directories" approved="yes">
         <source>Dirs</source>
         <target state="final">Verzeichnisse:</target>
       </trans-unit>
-      <trans-unit id="directoriesTooDeep" resname="directoriesTooDeep" approved="yes">
+      <trans-unit id="directoriesTooDeep" approved="yes">
         <source>ERROR: Directories deeper than the following number of levels</source>
         <target state="final">FEHLER: Verzeichnisse tiefer verschachtelt als folgende Anzahl Ebenen:</target>
       </trans-unit>
-      <trans-unit id="files" resname="files" approved="yes">
+      <trans-unit id="files" approved="yes">
         <source>Files</source>
         <target state="final">Dateien:</target>
       </trans-unit>
-      <trans-unit id="matchingFiles" resname="matchingFiles" approved="yes">
+      <trans-unit id="matchingFiles" approved="yes">
         <source>Matching files</source>
         <target state="final">Gefundene Dateien:</target>
       </trans-unit>
-      <trans-unit id="notChecked" resname="notChecked" approved="yes">
+      <trans-unit id="notChecked" approved="yes">
         <source>not checked.</source>
         <target state="final">nicht geprüft.</target>
       </trans-unit>
-      <trans-unit id="searchingForFilenames" resname="searchingForFilenames" approved="yes">
+      <trans-unit id="searchingForFilenames" approved="yes">
         <source>Searching for filenames</source>
         <target state="final">Suche nach Dateinamen:</target>
       </trans-unit>
-      <trans-unit id="fixLostRecord" resname="fixLostRecord" approved="yes">
+      <trans-unit id="fixLostRecord" approved="yes">
         <source>Click to move this lost record to rootlevel (pid=0)</source>
         <target state="final">Klicken, um diesen verwaisten Eintrag an die Wurzel zu verschieben (pid=0)</target>
       </trans-unit>
-      <trans-unit id="doktype" resname="doktype" approved="yes">
+      <trans-unit id="doktype" approved="yes">
         <source>Document types</source>
         <target state="final">Seitentypen:</target>
       </trans-unit>
-      <trans-unit id="doktype_value" resname="doktype_value" approved="yes">
+      <trans-unit id="doktype_value" approved="yes">
         <source>Document types (value)</source>
         <target state="final">Dokumenttypen (Wert)</target>
       </trans-unit>
-      <trans-unit id="pages" resname="pages" approved="yes">
+      <trans-unit id="pages" approved="yes">
         <source>Pages</source>
         <target state="final">Seiten:</target>
       </trans-unit>
-      <trans-unit id="total_pages" resname="total_pages" approved="yes">
+      <trans-unit id="total_pages" approved="yes">
         <source>Total number of default language pages</source>
         <target state="final">Gesamtzahl der Seiten</target>
       </trans-unit>
-      <trans-unit id="translated_pages" resname="translated_pages" approved="yes">
+      <trans-unit id="translated_pages" approved="yes">
         <source>Total number of translated pages</source>
         <target state="final">Gesamtanzahl übersetzter Seiten</target>
       </trans-unit>
-      <trans-unit id="deleted_pages" resname="deleted_pages" approved="yes">
+      <trans-unit id="deleted_pages" approved="yes">
         <source>Marked-deleted pages</source>
         <target state="final">Als gelöscht markierte Seiten:</target>
       </trans-unit>
-      <trans-unit id="hidden_pages" resname="hidden_pages" approved="yes">
+      <trans-unit id="hidden_pages" approved="yes">
         <source>Hidden pages</source>
         <target state="final">Verborgene Seiten:</target>
       </trans-unit>
-      <trans-unit id="count" resname="count" approved="yes">
+      <trans-unit id="count" approved="yes">
         <source>Count</source>
         <target state="final">Anzahl</target>
       </trans-unit>
-      <trans-unit id="label" resname="label" approved="yes">
+      <trans-unit id="label" approved="yes">
         <source>Label</source>
         <target state="final">Label</target>
       </trans-unit>
-      <trans-unit id="tablename" resname="tablename" approved="yes">
+      <trans-unit id="tablename" approved="yes">
         <source>Table name</source>
         <target state="final">Tabellenname</target>
       </trans-unit>
-      <trans-unit id="total_lost" resname="total_lost" approved="yes">
+      <trans-unit id="total_lost" approved="yes">
         <source>Records total / lost</source>
         <target state="final">Datensätze insgesamt/verloren</target>
       </trans-unit>
-      <trans-unit id="relations" resname="relations" approved="yes">
+      <trans-unit id="relations" approved="yes">
         <source>Relations</source>
         <target state="final">Verknüpfungen</target>
       </trans-unit>
-      <trans-unit id="relations_description" resname="relations_description" approved="yes">
+      <trans-unit id="relations_description" approved="yes">
         <source>The module gives some overview of missing relations in fields of the TCA types 'select' and 'group'.</source>
         <target state="final">Das Modul gibt einen Überblick über fehlende Beziehungen in den Feldern der TCA-Typen 'select' und 'group'.</target>
       </trans-unit>
-      <trans-unit id="relations_noRecordsFound" resname="relations_noRecordsFound" approved="yes">
+      <trans-unit id="relations_noRecordsFound" approved="yes">
         <source>No records found.</source>
         <target state="final">Keine Datensätze gefunden.</target>
       </trans-unit>
-      <trans-unit id="select_db" resname="select_db" approved="yes">
+      <trans-unit id="select_db" approved="yes">
         <source>Select fields</source>
         <target state="final">Auswahlfelder:</target>
       </trans-unit>
-      <trans-unit id="group_db" resname="group_db" approved="yes">
+      <trans-unit id="group_db" approved="yes">
         <source>Group fields</source>
         <target state="final">Gruppenfelder:</target>
       </trans-unit>
-      <trans-unit id="tree" resname="tree" approved="yes">
+      <trans-unit id="tree" approved="yes">
         <source>The Page Tree</source>
         <target state="final">Der Seitenbaum:</target>
       </trans-unit>
-      <trans-unit id="tree_description" resname="tree_description" approved="yes">
+      <trans-unit id="tree_description" approved="yes">
         <source>This shows all pages in the system in one large tree. Beware that this will probably result in a very long document which will also take some time for the server to compute!</source>
         <target state="final">Hier werden alle Seiten im System in einem großen Seitenbaum angezeigt. Beachten Sie, dass das Ergebnis wahrscheinlich ein sehr großes Dokument ist und der Server einige Zeit brauchen kann, um es zu erstellen.</target>
       </trans-unit>
-      <trans-unit id="records" resname="records" approved="yes">
+      <trans-unit id="records" approved="yes">
         <source>Records Statistics</source>
         <target state="final">Statistik der Datenbank-Einträge</target>
       </trans-unit>
-      <trans-unit id="records_description" resname="records_description" approved="yes">
+      <trans-unit id="records_description" approved="yes">
         <source>This shows some statistics for the records in the database. This runs through the entire page-tree and therefore it will also load the server heavily!</source>
         <target state="final">Zeigt statistische Daten zu den Einträgen in der Datenbank an. Hierzu wird der komplette Seitenbaum durchsucht, der Server wird entsprechend stark belastet!</target>
       </trans-unit>
-      <trans-unit id="search_whole_database" resname="search_whole_database" approved="yes">
+      <trans-unit id="search_whole_database" approved="yes">
         <source>Search whole Database</source>
         <target state="final">Gesamte Datenbank durchsuchen</target>
       </trans-unit>
-      <trans-unit id="search_description" resname="search_description" approved="yes">
+      <trans-unit id="search_description" approved="yes">
         <source>This searches through all database tables and records for a text string.</source>
         <target state="final">Durchsucht alle Datenbank-Tabellen und Einträge nach einem Text.</target>
       </trans-unit>
-      <trans-unit id="refindex" resname="refindex" approved="yes">
+      <trans-unit id="refindex" approved="yes">
         <source>Check and update global reference index</source>
         <target state="final">Globalen Referenz-Index prüfen und aktualisieren</target>
       </trans-unit>
-      <trans-unit id="refindex_description" resname="refindex_description" approved="yes">
+      <trans-unit id="refindex_description" approved="yes">
         <source>Allows you to maintain the reference index kept by TYPO3.</source>
         <target state="final">Ermöglicht die Pflege des von TYPO3 verwalteten Referenz-Index.</target>
       </trans-unit>
-      <trans-unit id="refindex_ok" resname="refindex_ok" approved="yes">
+      <trans-unit id="refindex_ok" approved="yes">
         <source>Index integrity was perfect!</source>
         <target state="final">Index-Integrität war perfekt!</target>
       </trans-unit>

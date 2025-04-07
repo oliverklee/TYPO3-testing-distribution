@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_sitesettings.xlf" date="2024-09-10T12:13:00Z" product-name="backend" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="overview.title" approved="yes">
+        <source>Site Settings Overview</source>
+        <target state="final">Übersicht über die Site-Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="overview.setSummary" approved="yes">
+        <source>Sets (%d)</source>
+        <target state="final">Sets (%d)</target>
+      </trans-unit>
+      <trans-unit id="overview.customSettingsSummary" approved="yes">
+        <source>Custom Settings (%d)</source>
+        <target state="final">Benutzerdefinierte Einstellungen (%d)</target>
+      </trans-unit>
+      <trans-unit id="overview.editSettings" approved="yes">
+        <source>Edit Settings</source>
+        <target state="final">Einstellungen bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="overview.message.notEditable" approved="yes">
+        <source>The sets of this site do not provide any configurable settings.</source>
+        <target state="final">Die Sets dieser Site bieten keine anpassbaren Einstellungen an.</target>
+      </trans-unit>
+      <trans-unit id="overview.noSiteSettingsExists.title" approved="yes">
+        <source>No configurable Site Settings found</source>
+        <target state="final">Keine anpassbaren Site-Einstellungen gefunden</target>
+      </trans-unit>
+      <trans-unit id="overview.noSiteSettingsExists.message" approved="yes">
+        <source>See the documentation for instructions on defining settings via site sets.</source>
+        <target state="final">Anweisungen zur Änderung von Einstellungen über Site-Sets findest du in der Dokumentation.</target>
+      </trans-unit>
+      <trans-unit id="overview.noSiteSettingsExists.button-documentation-label" approved="yes">
+        <source>Open the documentation</source>
+        <target state="final">Dokumentation öffnen</target>
+      </trans-unit>
+      <trans-unit id="edit.headline" approved="yes">
+        <source>Site Settings for "%s"</source>
+        <target state="final">Einstellungen für Site "%s"</target>
+      </trans-unit>
+      <trans-unit id="edit.noSettings.title" approved="yes">
+        <source>No settings available</source>
+        <target state="final">Keine Einstellungen verfügbar</target>
+      </trans-unit>
+      <trans-unit id="edit.noSettings.message" approved="yes">
+        <source>The site '%s' does not provide configurable settings.</source>
+        <target state="final">Die Site '%s' bietet keine anpassbaren Einstellungen.</target>
+      </trans-unit>
+      <trans-unit id="edit.yamlExport" approved="yes">
+        <source>YAML export</source>
+        <target state="final">YAML-Export</target>
+      </trans-unit>
+      <trans-unit id="edit.editSiteConfiguration" approved="yes">
+        <source>Edit site configuration</source>
+        <target state="final">Site-Konfiguration bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="edit.resetSetting" approved="yes">
+        <source>Reset setting</source>
+        <target state="final">Einstellung zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="edit.copySettingsIdentifier" approved="yes">
+        <source>Copy identifier</source>
+        <target state="final">Identifier kopieren</target>
+      </trans-unit>
+      <trans-unit id="edit.copyAsYaml" approved="yes">
+        <source>Copy as YAML</source>
+        <target state="final">Als YAML kopieren</target>
+      </trans-unit>
+      <trans-unit id="edit.searchTermVisuallyHiddenLabel" approved="yes">
+        <source>Search settings</source>
+        <target state="final">Einstellungen durchsuchen</target>
+      </trans-unit>
+      <trans-unit id="edit.searchTermPlaceholder" approved="yes">
+        <source>Search settings</source>
+        <target state="final">Einstellungen durchsuchen</target>
+      </trans-unit>
+      <trans-unit id="edit.search.noResultsTitle" approved="yes">
+        <source>No settings were found.</source>
+        <target state="final">Es wurden keine Einstellungen gefunden.</target>
+      </trans-unit>
+      <trans-unit id="edit.search.noResultsMessage" approved="yes">
+        <source>The search filters by setting value, label, description or identifier.</source>
+        <target state="final">Die Suche filtert nach Einstellungswert, Bezeichnung, Beschreibung oder Identifier.</target>
+      </trans-unit>
+      <trans-unit id="edit.search.noResultsResetButtonLabel" approved="yes">
+        <source>Reset filter</source>
+        <target state="final">Filter zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="save.message.updated" approved="yes">
+        <source>Settings updated.</source>
+        <target state="final">Einstellungen aktualisiert.</target>
+      </trans-unit>
+      <trans-unit id="categories.other" approved="yes">
+        <source>Other</source>
+        <target state="final">Sonstige</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

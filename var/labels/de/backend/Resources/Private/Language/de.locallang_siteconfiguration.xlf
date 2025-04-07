@@ -3,107 +3,135 @@
   <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_siteconfiguration.xlf" date="2018-02-27T22:22:32Z" product-name="backend" target-language="de">
     <header/>
     <body>
-      <trans-unit id="overview.title" resname="overview.title" approved="yes">
+      <trans-unit id="overview.title" approved="yes">
         <source>Site Configuration</source>
         <target state="final">Site-Konfiguration</target>
       </trans-unit>
-      <trans-unit id="overview.site" resname="overview.site" approved="yes">
+      <trans-unit id="overview.site" approved="yes">
         <source>Site</source>
         <target state="final">Site</target>
       </trans-unit>
-      <trans-unit id="overview.siteIdentifier" resname="overview.siteIdentifier" approved="yes">
+      <trans-unit id="overview.siteIdentifier" approved="yes">
         <source>Site identifier</source>
         <target state="final">Site Identifier (Eindeutige Kennung)</target>
       </trans-unit>
-      <trans-unit id="overview.noPages.title" resname="overview.noPages.title" approved="yes">
-        <source>No pages found!</source>
-        <target state="final">Keine Seiten gefunden!</target>
+      <trans-unit id="overview.noPages.title" approved="yes">
+        <source>No Root Pages Available</source>
+        <target state="final">Keine Root-Seiten verfügbar</target>
       </trans-unit>
-      <trans-unit id="overview.noPages.message" resname="overview.noPages.message" approved="yes">
-        <source>Please add at least one page through the Page module.</source>
-        <target state="final">Bitte fügen Sie im Seitenmodul mindestens eine Seite hinzu.</target>
+      <trans-unit id="overview.noPages.message" approved="yes">
+        <source>Please create at least one root page in the Page module. A root page must be a content page at the top level (not a folder or separator) or have the "Root Page" flag enabled (Page Properties → Behavior tab).</source>
+        <target state="final">Bitte erstelle mindestens eine Root-Seite im Seitenmodul. Eine Root-Seite muss eine Inhaltsseite auf der obersten Ebene sein (kein Ordner oder Trennzeichen) oder das Flag „Als Anfang der Website benutzen“ muss aktiviert sein (Seiteneigenschaften → Registerkarte „Verhalten“).</target>
       </trans-unit>
-      <trans-unit id="overview.noSiteConfiguration" resname="overview.noSiteConfiguration" approved="yes">
+      <trans-unit id="overview.noSiteConfiguration" approved="yes">
         <source>This site does not have a configuration, yet.</source>
         <target state="final">Diese Site wurde noch nicht konfiguriert.</target>
       </trans-unit>
-      <trans-unit id="overview.addSiteConfiguration" resname="overview.addSiteConfiguration" approved="yes">
+      <trans-unit id="overview.addSiteConfiguration" approved="yes">
         <source>Add new site configuration for this site</source>
         <target state="final">Neue Site-Konfiguration für diese Seite hinzufügen</target>
       </trans-unit>
-      <trans-unit id="overview.editSiteConfiguration" resname="overview.editSiteConfiguration" approved="yes">
+      <trans-unit id="overview.editSiteConfiguration" approved="yes">
         <source>Edit site configuration</source>
         <target state="final">Seitenkonfiguration bearbeiten</target>
       </trans-unit>
-      <trans-unit id="overview.deleteSiteConfiguration" resname="overview.deleteSiteConfiguration" approved="yes">
+      <trans-unit id="overview.editSiteSettings" approved="yes">
+        <source>Edit site settings</source>
+        <target state="final">Site-Einstellungen bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="overview.editSiteSettingsUnavailable" approved="yes">
+        <source>This site provides no configurable settings</source>
+        <target state="final">Diese Site bietet keine anpassbaren Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="overview.deleteSiteConfiguration" approved="yes">
         <source>Delete site configuration</source>
         <target state="final">Site-Konfiguration löschen</target>
       </trans-unit>
-      <trans-unit id="overview.baseUrl" resname="overview.baseUrl" approved="yes">
+      <trans-unit id="overview.baseUrl" approved="yes">
         <source>Base URL</source>
         <target state="final">Basis-URL</target>
       </trans-unit>
-      <trans-unit id="overview.unassignedSites.title" resname="overview.unassignedSites.title" approved="yes">
+      <trans-unit id="overview.unassignedSites.title" approved="yes">
         <source>Unassigned site configurations</source>
         <target state="final">Nicht zugeordneter Site-Konfigurationen</target>
       </trans-unit>
-      <trans-unit id="overview.unassignedSites.description" resname="overview.unassignedSites.description" approved="yes">
+      <trans-unit id="overview.unassignedSites.description" approved="yes">
         <source>The following sites don't belong to any page anymore and can be removed.</source>
         <target state="final">Die folgenden Sites gehören zu keiner Seite mehr und können entfernt werden.</target>
       </trans-unit>
-      <trans-unit id="overview.duplicatedEntryPoints" resname="overview.duplicatedEntryPoints" approved="yes">
+      <trans-unit id="overview.invalidSets.title" approved="yes">
+        <source>Invalid site set configurations</source>
+        <target state="final">Ungültige Site-Set Konfigurationen</target>
+      </trans-unit>
+      <trans-unit id="overview.invalidSets.description" approved="yes">
+        <source>The following site sets contain errors and therefore could not be loaded.</source>
+        <target state="final">Die folgenden Site-Sets enthalten Fehler und konnten daher nicht geladen werden.</target>
+      </trans-unit>
+      <trans-unit id="overview.invalidSets.set" approved="yes">
+        <source>Set</source>
+        <target state="final">Set</target>
+      </trans-unit>
+      <trans-unit id="overview.invalidSets.error" approved="yes">
+        <source>Error</source>
+        <target state="final">Fehler</target>
+      </trans-unit>
+      <trans-unit id="overview.duplicatedEntryPoints" approved="yes">
         <source>Duplicated Entrypoints</source>
         <target state="final">Doppelte Einstiegspunkte</target>
       </trans-unit>
-      <trans-unit id="overview.duplicatedEntryPoints.listing" resname="overview.duplicatedEntryPoints.listing" approved="yes">
+      <trans-unit id="overview.duplicatedEntryPoints.listing" approved="yes">
         <source>The following entry points are used more than once:</source>
         <target state="final">Die folgenden Einstiegspunkte werden mehrmals verwendet:</target>
       </trans-unit>
-      <trans-unit id="overview.duplicatedRootPage" resname="overview.duplicatedRootPage" approved="yes">
+      <trans-unit id="overview.duplicatedRootPage" approved="yes">
         <source>Duplicated root pages</source>
         <target state="final">Duplizierte Root-Seiten</target>
       </trans-unit>
-      <trans-unit id="overview.duplicatedRootPage.message" resname="overview.duplicatedRootPage.message" approved="yes">
+      <trans-unit id="overview.duplicatedRootPage.message" approved="yes">
         <source>The page with ID "%1s" is used in the following site configurations:</source>
         <target state="final">Die Seite mit der ID "%1s" wird in den folgenden Site-Konfigurationen verwendet:</target>
       </trans-unit>
-      <trans-unit id="validation.identifierRenamed.title" resname="validation.identifierRenamed.title" approved="yes">
+      <trans-unit id="edit.editSiteSettings" approved="yes">
+        <source>Edit site settings</source>
+        <target state="final">Site-Einstellungen bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="validation.identifierRenamed.title" approved="yes">
         <source>Renamed identifier</source>
         <target state="final">Umbenannter Bezeichner</target>
       </trans-unit>
-      <trans-unit id="validation.identifierRenamed.message" resname="validation.identifierRenamed.message" approved="yes">
+      <trans-unit id="validation.identifierRenamed.message" approved="yes">
         <source>Given site identifier "%1s" already exists. It has been renamed to "%2s". Maybe you want to edit the site again and give it a better name.</source>
         <target state="final">Der Seitenbezeichner "%1s" ist schon vorhanden und wurde umbenannt in "%2s". Eventuell möchten Sie die Seite anpassen und einen neuen Namen vergeben.</target>
       </trans-unit>
-      <trans-unit id="validation.identifierExists.title" resname="validation.identifierExists.title" approved="yes">
+      <trans-unit id="validation.identifierExists.title" approved="yes">
         <source>Identifier not changed</source>
         <target state="final">Bezeichner wurde nicht geändert</target>
       </trans-unit>
-      <trans-unit id="validation.identifierExists.message" resname="validation.identifierExists.message" approved="yes">
+      <trans-unit id="validation.identifierExists.message" approved="yes">
         <source>Given site identifier "%1s" already exists and points to a different site. The existing identifier "%2s" for this site is kept.</source>
         <target state="final">Der angegebene Seitenbezeichner "%1s" existiert bereits und verweist auf eine andere Seite. Der vorhandene Bezeichner "%2s" für diese Seite wird beibehalten.</target>
       </trans-unit>
-      <trans-unit id="validation.required.title" resname="validation.required.title" approved="yes">
+      <trans-unit id="validation.required.title" approved="yes">
         <source>Site configuration not saved</source>
         <target state="final">Site-Konfiguration nicht gespeichert</target>
       </trans-unit>
-      <trans-unit id="validation.required.message" resname="validation.required.message" approved="yes">
+      <trans-unit id="validation.required.message" approved="yes">
         <source>Field "%1s" is a required field, but no value has been provided.</source>
         <target state="final">Feld"%1s" ist ein Pflichtfeld, aber es wurde keine Eingabe gemacht.</target>
       </trans-unit>
-      <trans-unit id="validation.duplicateErrorCode.title" resname="validation.duplicateErrorCode.title" approved="yes">
+      <trans-unit id="validation.duplicateErrorCode.title" approved="yes">
         <source>Duplicate error code removed</source>
         <target state="final">Doppelter Fehlercode wurde entfernt</target>
       </trans-unit>
-      <trans-unit id="validation.duplicateErrorCode.message" resname="validation.duplicateErrorCode.message" approved="yes">
+      <trans-unit id="validation.duplicateErrorCode.message" approved="yes">
         <source>Two error handler configurations for error code "%1s" found. This would be an invalid configuration, the dangling one has been removed.</source>
         <target state="final">Es wurden zwei Konfigurationen für Fehlercode "%1s" gefunden. Eine solche Konfiguration wäre ungültig; die doppelte Konfiguration wurde daher entfernt.</target>
       </trans-unit>
-      <trans-unit id="validation.duplicateLanguageId.title" resname="validation.duplicateLanguageId.title" approved="yes">
+      <trans-unit id="validation.duplicateLanguageId.title" approved="yes">
         <source>Duplicate language configuration removed</source>
         <target state="final">Doppelte Sprachkonfiguration wurde entfernt</target>
       </trans-unit>
-      <trans-unit id="validation.duplicateLanguageId.message" resname="validation.duplicateLanguageId.message" approved="yes">
+      <trans-unit id="validation.duplicateLanguageId.message" approved="yes">
         <source>Two language configurations for language "%1s" found. This would be an invalid configuration, the dangling one has been removed.</source>
         <target state="final">Es wurden zwei Sprachkonfigurationen für Sprache "%1s" gefunden. Eine solche Konfiguration wäre ungültig; die doppelte Konfiguration wurde daher entfernt.</target>
       </trans-unit>

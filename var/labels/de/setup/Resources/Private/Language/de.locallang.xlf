@@ -3,209 +3,209 @@
   <file source-language="en" datatype="plaintext" original="EXT:setup/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="setup" target-language="de">
     <header/>
     <body>
-      <trans-unit id="UserSettings" resname="UserSettings" approved="yes">
+      <trans-unit id="UserSettings" approved="yes">
         <source>User Settings</source>
         <target state="final">Benutzereinstellungen</target>
       </trans-unit>
-      <trans-unit id="language" resname="language" approved="yes">
+      <trans-unit id="language" approved="yes">
         <source>Language</source>
         <target state="final">Sprache</target>
       </trans-unit>
-      <trans-unit id="languageUnavailable" resname="languageUnavailable" approved="yes">
+      <trans-unit id="languageUnavailable" approved="yes">
         <source>The selected language "%s" is not available before the language files are installed.</source>
         <target state="final">Die ausgewählte Sprache "%s" ist nicht verfügbar, bevor die Sprachdateien installiert sind.</target>
       </trans-unit>
-      <trans-unit id="languageUnavailable.admin" resname="languageUnavailable.admin" approved="yes">
+      <trans-unit id="languageUnavailable.admin" approved="yes">
         <source>You can use "Manage Language Packs" in the Maintenance module to easily download new language files.</source>
         <target state="final">Sie können "Sprachpakete verwalten" im Wartungsmodul verwenden, um neue Sprachdateien herunterzuladen.</target>
       </trans-unit>
-      <trans-unit id="languageUnavailable.user" resname="languageUnavailable.user" approved="yes">
+      <trans-unit id="languageUnavailable.user" approved="yes">
         <source>Please ask your system administrator to do this.</source>
         <target state="final">Bitten Sie Ihren Systemadministrator, dies zu tun.</target>
       </trans-unit>
-      <trans-unit id="simulate" resname="simulate" approved="yes">
+      <trans-unit id="simulate" approved="yes">
         <source>Simulate backend user</source>
         <target state="final">Backend-Benutzer simulieren</target>
       </trans-unit>
-      <trans-unit id="opening" resname="opening" approved="yes">
+      <trans-unit id="opening" approved="yes">
         <source>Backend appearance</source>
         <target state="final">Backend-Erscheinungsbild</target>
       </trans-unit>
-      <trans-unit id="personal_data" resname="personal_data" approved="yes">
+      <trans-unit id="personal_data" approved="yes">
         <source>Personal data</source>
         <target state="final">Persönliche Daten</target>
       </trans-unit>
-      <trans-unit id="startModule" resname="startModule" approved="yes">
+      <trans-unit id="startModule" approved="yes">
         <source>Start up in the following module</source>
         <target state="final">Beim Start folgendes Modul aufrufen</target>
       </trans-unit>
-      <trans-unit id="emailMeAtLogin" resname="emailMeAtLogin" approved="yes">
+      <trans-unit id="emailMeAtLogin" approved="yes">
         <source>Notify me by email when somebody logs in from my account</source>
         <target state="final">Mich per E-Mail benachrichtigen, wenn sich jemand mit meinem Konto anmeldet</target>
       </trans-unit>
-      <trans-unit id="helpText" resname="helpText" approved="yes">
+      <trans-unit id="helpText" approved="yes">
         <source>Show help text when applicable</source>
         <target state="final">Hilfetexte anzeigen, wenn vorhanden</target>
       </trans-unit>
-      <trans-unit id="maxTitleLen" resname="maxTitleLen" approved="yes">
+      <trans-unit id="maxTitleLen" approved="yes">
         <source>Max. title length</source>
         <target state="final">Max. Titellänge</target>
       </trans-unit>
-      <trans-unit id="edit_docModuleUpload" resname="edit_docModuleUpload" approved="yes">
+      <trans-unit id="edit_docModuleUpload" approved="yes">
         <source>File upload directly in Doc-module</source>
         <target state="final">Hochladen von Dateien direkt im Web-Modul</target>
       </trans-unit>
-      <trans-unit id="showHiddenFilesAndFolders" resname="showHiddenFilesAndFolders" approved="yes">
+      <trans-unit id="showHiddenFilesAndFolders" approved="yes">
         <source>Show hidden files and folders in the filelist</source>
         <target state="final">Versteckte Dateien und Ordner in der Dateiliste anzeigen</target>
       </trans-unit>
-      <trans-unit id="editFunctionsTab" resname="editFunctionsTab" approved="yes">
+      <trans-unit id="editFunctionsTab" approved="yes">
         <source>Edit and advanced functions</source>
         <target state="final">Bearbeiten und erweiterte Funktionen</target>
       </trans-unit>
-      <trans-unit id="setToStandard" resname="setToStandard" approved="yes">
+      <trans-unit id="setToStandard" approved="yes">
         <source>Reset all values to default</source>
         <target state="final">Alle Angaben auf den Standardwert zurücksetzen</target>
       </trans-unit>
-      <trans-unit id="resetTab" resname="resetTab" approved="yes">
+      <trans-unit id="resetTab" approved="yes">
         <source>Reset configuration</source>
         <target state="final">Konfiguration zurücksetzen</target>
       </trans-unit>
-      <trans-unit id="resetConfiguration" resname="resetConfiguration" approved="yes">
+      <trans-unit id="resetConfiguration" approved="yes">
         <source>Reset configuration and clear temporary data</source>
         <target state="final">Konfiguration zurücksetzen und temporäre Daten löschen</target>
       </trans-unit>
-      <trans-unit id="resetConfigurationButton" resname="resetConfigurationButton" approved="yes">
+      <trans-unit id="resetConfigurationButton" approved="yes">
         <source>Reset user settings to default state</source>
         <target state="final">Benutzereinstellungen auf Standardeinstellungen zurücksetzen</target>
       </trans-unit>
-      <trans-unit id="setToStandardQuestion" resname="setToStandardQuestion" approved="yes">
+      <trans-unit id="setToStandardQuestion" approved="yes">
         <source>Are you sure you want to reset all values to default?</source>
         <target state="final">Alle Werte tatsächlich auf die Standardwerte zurücksetzen?</target>
       </trans-unit>
-      <trans-unit id="functions" resname="functions" approved="yes">
+      <trans-unit id="functions" approved="yes">
         <source>Advanced functions</source>
         <target state="final">Erweiterte Funktionen</target>
       </trans-unit>
-      <trans-unit id="copyLevels" resname="copyLevels" approved="yes">
+      <trans-unit id="copyLevels" approved="yes">
         <source>Recursive copy: Enter the number of page sublevels to include, when a page is copied</source>
         <target state="final">Rekursives Kopieren: Geben Sie die Anzahl der zu kopierenden Unterebenen an</target>
       </trans-unit>
-      <trans-unit id="activateChanges" resname="activateChanges" approved="yes">
-        <source>Notice! In order to activate most of these changes, please reload the backend (eg. logout and login again).</source>
-        <target state="final">Achtung! Die meisten Optionen werden erst beim nächsten Start aktiv. Bitte ab- und anmelden.</target>
-      </trans-unit>
-      <trans-unit id="levels" resname="levels" approved="yes">
+      <trans-unit id="levels" approved="yes">
         <source>levels</source>
         <target state="final">Tiefe</target>
       </trans-unit>
-      <trans-unit id="beUser_realName" resname="beUser_realName" approved="yes">
+      <trans-unit id="beUser_realName" approved="yes">
         <source>Your name</source>
         <target state="final">Ihr Name</target>
       </trans-unit>
-      <trans-unit id="beUser_avatar" resname="beUser_avatar" approved="yes">
+      <trans-unit id="beUser_avatar" approved="yes">
         <source>Avatar</source>
         <target state="final">Avatar</target>
       </trans-unit>
-      <trans-unit id="beUser_email" resname="beUser_email" approved="yes">
+      <trans-unit id="beUser_email" approved="yes">
         <source>Your email address</source>
         <target state="final">Ihre E-Mail-Adresse</target>
       </trans-unit>
-      <trans-unit id="save" resname="save" approved="yes">
+      <trans-unit id="save" approved="yes">
         <source>Save configuration</source>
         <target state="final">Konfiguration speichern</target>
       </trans-unit>
-      <trans-unit id="newPassword" resname="newPassword" approved="yes">
+      <trans-unit id="newPassword" approved="yes">
         <source>New password</source>
         <target state="final">Neues Passwort</target>
       </trans-unit>
-      <trans-unit id="newPasswordAgain" resname="newPasswordAgain" approved="yes">
+      <trans-unit id="newPasswordAgain" approved="yes">
         <source>New password (repetition)</source>
         <target state="final">Neues Passwort (wiederholen)</target>
       </trans-unit>
-      <trans-unit id="newPassword_ok" resname="newPassword_ok" approved="yes">
+      <trans-unit id="newPassword_ok" approved="yes">
         <source>Password was updated.</source>
         <target state="final">Ihr Passwort wurde aktualisiert.</target>
       </trans-unit>
-      <trans-unit id="passwordCurrent" resname="passwordCurrent" approved="yes">
+      <trans-unit id="passwordCurrent" approved="yes">
         <source>Current password</source>
         <target state="final">Aktuelles Passwort</target>
       </trans-unit>
-      <trans-unit id="passwordPolicyFailed" resname="passwordPolicyFailed" approved="yes">
+      <trans-unit id="passwordPolicyFailed" approved="yes">
         <source>The password was NOT updated, since it does not meet the password policy requirements.</source>
         <target state="final">Das Passwort wurde NICHT aktualisiert, da es nicht den Anforderungen der Passwortrichtlinien entspricht.</target>
       </trans-unit>
-      <trans-unit id="accountSecurity" resname="accountSecurity" approved="yes">
+      <trans-unit id="accountSecurity" approved="yes">
         <source>Account security</source>
         <target state="final">Account-Sicherheit</target>
       </trans-unit>
-      <trans-unit id="mfaProviders" resname="mfaProviders" approved="yes">
+      <trans-unit id="mfaProviders" approved="yes">
         <source>Multi-factor authentication</source>
         <target state="final">Multi-Faktor-Authentifizierung</target>
       </trans-unit>
-      <trans-unit id="mfaProviders.notAvailable" resname="mfaProviders.notAvailable" approved="yes">
+      <trans-unit id="mfaProviders.notAvailable" approved="yes">
         <source>Multi-factor authentication is currently not available.</source>
         <target state="final">Multi-Faktor-Authentifizierung ist derzeit nicht verfügbar.</target>
       </trans-unit>
-      <trans-unit id="mfaProviders.description" resname="mfaProviders.description" approved="yes">
+      <trans-unit id="mfaProviders.description" approved="yes">
         <source>Use multi-factor authentication to secure your account by providing another factor next to your password.</source>
         <target state="final">Nutzen Sie Multi-Faktor-Authentifizierung um Ihren Account zu schützen, indem sie einen weiteren Faktor neben dem Passwort festlegen.</target>
       </trans-unit>
-      <trans-unit id="mfaProviders.lockedMfaProviders" resname="mfaProviders.lockedMfaProviders" approved="yes">
+      <trans-unit id="mfaProviders.lockedMfaProviders" approved="yes">
         <source>Some providers are currently locked!</source>
         <target state="final">Einige Anbieter sind derzeit gesperrt!</target>
       </trans-unit>
-      <trans-unit id="mfaProviders.enabled" resname="mfaProviders.enabled" approved="yes">
+      <trans-unit id="mfaProviders.enabled" approved="yes">
         <source>Enabled</source>
         <target state="final">Aktiviert</target>
       </trans-unit>
-      <trans-unit id="mfaProviders.setupLinkTitle" resname="mfaProviders.setupLinkTitle" approved="yes">
+      <trans-unit id="mfaProviders.setupLinkTitle" approved="yes">
         <source>Setup multi-factor authentication</source>
         <target state="final">Multi-Faktor-Authentifizierung aktivieren</target>
       </trans-unit>
-      <trans-unit id="mfaProviders.manageLinkTitle" resname="mfaProviders.manageLinkTitle" approved="yes">
+      <trans-unit id="mfaProviders.manageLinkTitle" approved="yes">
         <source>Manage multi-factor authentication</source>
         <target state="final">Multi-Faktor-Authentifizierung verwalten</target>
       </trans-unit>
-      <trans-unit id="setupWasUpdated" resname="setupWasUpdated" approved="yes">
+      <trans-unit id="setupWasUpdated" approved="yes">
         <source>User settings were updated.</source>
         <target state="final">Benutzereinstellungen wurden aktualisiert.</target>
       </trans-unit>
-      <trans-unit id="newPassword_failed" resname="newPassword_failed" approved="yes">
+      <trans-unit id="newPassword_failed" approved="yes">
         <source>Password was NOT updated because you didn't enter the same password twice.</source>
         <target state="final">Das Passwort wurde nicht aktualisiert, da die Bestätigung falsch eingegeben wurde.</target>
       </trans-unit>
-      <trans-unit id="oldPassword_failed" resname="oldPassword_failed" approved="yes">
+      <trans-unit id="oldPassword_failed" approved="yes">
         <source>Password was NOT updated because you didn't enter the correct current password.</source>
         <target state="final">Das Passwort wurde NICHT aktualisiert, weil nicht das richtige, aktuelle Passwort eingegeben wurde.</target>
       </trans-unit>
-      <trans-unit id="settingsAreReset" resname="settingsAreReset" approved="yes">
+      <trans-unit id="settingsAreReset" approved="yes">
         <source>The user settings have been reset to default values and temporary data has been cleared.</source>
         <target state="final">Die Benutzereinstellungen wurden auf die Standardwerte zurückgesetzt und temporäre Daten gelöscht.</target>
       </trans-unit>
-      <trans-unit id="startModule.firstInMenu" resname="startModule.firstInMenu" approved="yes">
+      <trans-unit id="startModule.firstInMenu" approved="yes">
         <source>- First module in menu -</source>
         <target state="final">- Erstes Modul im Menü -</target>
       </trans-unit>
-      <trans-unit id="avatar.clear" resname="avatar.clear" approved="yes">
+      <trans-unit id="avatar.clear" approved="yes">
         <source>Remove selected avatar image</source>
         <target state="final">Ausgewähltes Avatar-Bild entfernen</target>
       </trans-unit>
-      <trans-unit id="avatar.openFileBrowser" resname="avatar.openFileBrowser" approved="yes">
+      <trans-unit id="avatar.openFileBrowser" approved="yes">
         <source>Open file browser to select avatar image</source>
         <target state="final">Dateibrowser öffnen, um ein Avatar-Bild auszuwählen</target>
       </trans-unit>
-      <trans-unit id="backendTitleFormat" resname="backendTitleFormat" approved="yes">
+      <trans-unit id="backendTitleFormat" approved="yes">
         <source>Format of window title in backend</source>
         <target state="final">Format des Fenstertitels im Backend</target>
       </trans-unit>
-      <trans-unit id="backendTitleFormat.sitenameFirst" resname="backendTitleFormat.sitenameFirst" approved="yes">
+      <trans-unit id="backendTitleFormat.sitenameFirst" approved="yes">
         <source>[sitename] · [title]</source>
         <target state="final">[sitename] · [title]</target>
       </trans-unit>
-      <trans-unit id="backendTitleFormat.titleFirst" resname="backendTitleFormat.titleFirst" approved="yes">
+      <trans-unit id="backendTitleFormat.titleFirst" approved="yes">
         <source>[title] · [sitename]</source>
         <target state="final">[title] · [sitename]</target>
+      </trans-unit>
+      <trans-unit id="warning.chineseSimplified" approved="yes">
+        <source>Chinese Simplified (legacy) - Warning: Choose Chinese Simplified below, as this is wrong due to older versions of TYPO3 and might be removed soon.</source>
+        <target state="final">Vereinfachtes Chinesisch (Legacy) - Warnung: Wähle weiter unten Chinesisch Vereinfacht, da dies aufgrund älterer Versionen von TYPO3 falsch ist und möglicherweise bald entfernt wird.</target>
       </trans-unit>
     </body>
   </file>

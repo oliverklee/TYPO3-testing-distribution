@@ -3,33 +3,61 @@
   <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf" date="2016-10-23T20:22:33Z" product-name="tabs" target-language="de">
     <header/>
     <body>
-      <trans-unit id="general" resname="general" approved="yes">
+      <trans-unit id="general" approved="yes">
         <source>General</source>
         <target state="final">Allgemein</target>
       </trans-unit>
-      <trans-unit id="access" resname="access" approved="yes">
+      <trans-unit id="access" approved="yes">
         <source>Access</source>
         <target state="final">Zugriff</target>
       </trans-unit>
-      <trans-unit id="accesscapabilities" resname="accesscapabilities" approved="yes">
+      <trans-unit id="accesscapabilities" approved="yes">
         <source>Access capabilities</source>
         <target state="final">Zugriffsrechte</target>
       </trans-unit>
-      <trans-unit id="categories" resname="categories" approved="yes">
+      <trans-unit id="categories" approved="yes">
         <source>Categories</source>
         <target state="final">Kategorien</target>
       </trans-unit>
-      <trans-unit id="notes" resname="notes" approved="yes">
+      <trans-unit id="notes" approved="yes">
         <source>Notes</source>
         <target state="final">Hinweise</target>
       </trans-unit>
-      <trans-unit id="language" resname="language" approved="yes">
+      <trans-unit id="language" approved="yes">
         <source>Language</source>
         <target state="final">Sprache</target>
       </trans-unit>
-      <trans-unit id="extended" resname="extended" approved="yes">
+      <trans-unit id="extended" approved="yes">
         <source>Extended</source>
         <target state="final">Erweitert</target>
+      </trans-unit>
+      <trans-unit id="appearance" approved="yes">
+        <source>Appearance</source>
+        <target state="final">Erscheinungsbild</target>
+      </trans-unit>
+      <trans-unit id="behaviour" approved="yes">
+        <source>Behavior</source>
+        <target state="final">Verhalten</target>
+      </trans-unit>
+      <trans-unit id="images" approved="yes">
+        <source>Images</source>
+        <target state="final">Bilder</target>
+      </trans-unit>
+      <trans-unit id="accessibility" approved="yes">
+        <source>Accessibility</source>
+        <target state="final">Barrierefreiheit</target>
+      </trans-unit>
+      <trans-unit id="text" approved="yes">
+        <source>Text</source>
+        <target state="final">Text</target>
+      </trans-unit>
+      <trans-unit id="media" approved="yes">
+        <source>Media</source>
+        <target state="final">Medien</target>
+      </trans-unit>
+      <trans-unit id="plugin" approved="yes">
+        <source>Plugin</source>
+        <target state="final">Plugin</target>
       </trans-unit>
     </body>
   </file>
