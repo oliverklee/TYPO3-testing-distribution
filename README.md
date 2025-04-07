@@ -6,7 +6,7 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 - [oelib](https://github.com/oliverklee/ext-oelib)
 - [onetimeaccount](https://github.com/oliverklee/ext-onetimeaccount)
 - [seminars](https://github.com/oliverklee/ext-seminars)
-- [tea](https://github.com/TYPO3-Documentation/tea)
+- [tea](https://github.com/TYPO3BestPractices/tea)
 
 ## Usage
 
