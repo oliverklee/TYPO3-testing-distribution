@@ -50,7 +50,6 @@ return [
         ],
         'indexed_search' => [
             'catdoc' => '/usr/bin/',
-            'debugMode' => '0',
             'deleteFromIndexAfterEditing' => '1',
             'disableFrontendIndexing' => '0',
             'enableMetaphoneSearch' => '1',
@@ -93,8 +92,6 @@ return [
     ],
     'GFX' => [
         'processor' => 'GraphicsMagick',
-        'processor_allowTemporaryMasksAsPng' => false,
-        'processor_colorspace' => 'RGB',
         'processor_effects' => false,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
@@ -184,7 +181,6 @@ return [
         'exceptionalErrors' => 12290,
         'features' => [
             'newTranslationServer' => true,
-            'security.usePasswordPolicyForFrontendUsers' => true,
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'TYPO3 testing site',
