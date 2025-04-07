@@ -4,21 +4,19 @@ declare(strict_types=1);
 
 namespace OliverKlee\SiteDev\Tests\Functional;
 
+use PHPUnit\Framework\Attributes\CoversNothing;
+use PHPUnit\Framework\Attributes\Test;
 use TYPO3\CMS\Core\Domain\Repository\PageRepository;
 use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
-/**
- * @coversNothing
- */
+#[CoversNothing]
 final class UniverseTest extends FunctionalTestCase
 {
     protected array $coreExtensionsToLoad = ['extbase', 'fluid'];
 
     protected array $testExtensionsToLoad = ['oliverklee/site-dev'];
 
-    /**
-     * @test
-     */
+    #[Test]
     public function canQueryTheDatabaseForPages(): void
     {
         $pageRepository = $this->get(PageRepository::class);
