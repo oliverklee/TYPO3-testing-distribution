@@ -66,8 +66,6 @@ jobs:
           tools: composer:v2.6
       - name: Show Composer version
         run: composer --version
-      - name: Add the OAuth token
-        run: composer config --global github-oauth.github.com ${{ secrets.COMPOSER_OAUTH }}
       - name: Show the Composer configuration
         run: composer config --global --list
       - name: Cache dependencies installed with composer
@@ -122,9 +120,6 @@ jobs:
       - name: Show Composer version
         run: composer --version
 
-      - name: Add the OAuth token
-        run: composer config --global github-oauth.github.com ${{ secrets.COMPOSER_OAUTH }}
-
       - name: Show the Composer configuration
         run: composer config --global --list
 
@@ -164,8 +159,6 @@ jobs:
           tools: composer:v2.6
       - name: Show Composer version
         run: composer --version
-      - name: Add the OAuth token
-        run: composer config --global github-oauth.github.com ${{ secrets.COMPOSER_OAUTH }}
       - name: Show the Composer configuration
         run: composer config --global --list
       - name: Cache dependencies installed with composer
@@ -207,8 +200,6 @@ jobs:
           tools: composer:v2.6
       - name: Show Composer version
         run: composer --version
-      - name: Add the OAuth token
-        run: composer config --global github-oauth.github.com ${{ secrets.COMPOSER_OAUTH }}
       - name: Show the Composer configuration
         run: composer config --global --list
       - name: Cache dependencies installed with composer
