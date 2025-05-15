@@ -67,6 +67,7 @@ jobs:
       - name: Show Composer version
         run: composer --version
       - name: Add the OAuth token
+        if: ${{ secrets.COMPOSER_OAUTH }}
         run: composer config --global github-oauth.github.com ${{ secrets.COMPOSER_OAUTH }}
       - name: Show the Composer configuration
         run: composer config --global --list
@@ -123,6 +124,7 @@ jobs:
         run: composer --version
 
       - name: Add the OAuth token
+        if: ${{ secrets.COMPOSER_OAUTH }}
         run: composer config --global github-oauth.github.com ${{ secrets.COMPOSER_OAUTH }}
 
       - name: Show the Composer configuration
@@ -165,6 +167,7 @@ jobs:
       - name: Show Composer version
         run: composer --version
       - name: Add the OAuth token
+        if: ${{ secrets.COMPOSER_OAUTH }}
         run: composer config --global github-oauth.github.com ${{ secrets.COMPOSER_OAUTH }}
       - name: Show the Composer configuration
         run: composer config --global --list
@@ -208,6 +211,7 @@ jobs:
       - name: Show Composer version
         run: composer --version
       - name: Add the OAuth token
+        if: ${{ secrets.COMPOSER_OAUTH }}
         run: composer config --global github-oauth.github.com ${{ secrets.COMPOSER_OAUTH }}
       - name: Show the Composer configuration
         run: composer config --global --list
