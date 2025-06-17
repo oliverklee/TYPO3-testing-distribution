@@ -53,7 +53,7 @@
 		"phpunit/phpunit": "10.5.45",
 		"saschaegerer/phpstan-typo3": "2.1.0",
 		"seld/jsonlint": "1.11.0",
-		"ssch/typo3-rector": "3.4.3",
+		"ssch/typo3-rector": "3.5.0",
 		"ssch/typo3-rector-testing-framework": "3.0.0",
 		"symfony/yaml": "7.2.5",
 		"typo3/coding-standards": "0.8.0",
