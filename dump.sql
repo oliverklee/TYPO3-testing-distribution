@@ -1,11 +1,11 @@
 
 -- Dump of TYPO3 Connection "Default"
 /*M!999999\- enable the sandbox mode */ 
--- MariaDB dump 10.19  Distrib 10.11.11-MariaDB, for debian-linux-gnu (x86_64)
+-- MariaDB dump 10.19  Distrib 10.11.13-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: db    Database: db
 -- ------------------------------------------------------
--- Server version	10.6.21-MariaDB-ubu2004-log
+-- Server version	10.6.22-MariaDB-ubu2004-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -292,6 +292,9 @@ CREATE TABLE `fe_users` (
   `privacy_date_of_acceptance` int(10) unsigned NOT NULL DEFAULT 0,
   `terms_date_of_acceptance` int(10) unsigned NOT NULL DEFAULT 0,
   `vat_in` varchar(15) NOT NULL DEFAULT '',
+  `department` varchar(128) NOT NULL DEFAULT '',
+  `default_organizer` int(10) unsigned NOT NULL DEFAULT 0,
+  `available_topics` text DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`username`(100)),
   KEY `username` (`username`(100)),
@@ -307,12 +310,12 @@ CREATE TABLE `fe_users` (
 LOCK TABLES `fe_users` WRITE;
 /*!40000 ALTER TABLE `fe_users` DISABLE KEYS */;
 INSERT INTO `fe_users` VALUES
-(1,4,1670000836,1627917285,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna A. Attendee','Anna','Ariana','Attendee','Bertha-von-Suttner-Platz 1','+29 228 111111','','attendee@example.com','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53111','Bonn','Germany','','Anna Enterprises','0','',1738769844,1739471485,'','',0,0,0,'',0,NULL,'Hello Anna!',0,NULL,0,0,0,''),
-(2,4,1627922794,1627922794,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,''),
-(3,4,1627922848,1627922848,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com',NULL,'','','','','','',NULL,'',1734462813,1734462911,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,''),
-(4,4,1628002830,1628002830,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com',NULL,'','','','','','',NULL,'',0,0,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,''),
-(5,4,1628002865,1628002862,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com',NULL,'','','','','','','0','',0,0,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,''),
-(6,4,1670000977,1670000977,0,0,0,0,'','0','admin','$argon2i$v=19$m=65536,t=16,p=1$cjR4ZVR1NXlLMUJIYkZoUQ$7HXMQwbSppGCYiBAYbMuyHOsi1FRWttEBCwQqF/t53U','4,3,1','Anton R. Admin','Anton','R.','Admin','Admin Avenue 4','+49 228 12345678','','admin@example.com',NULL,'','53111','Bonn','Germany','','Admin Inc.',NULL,'',1671044482,1671044482,'','',0,99,0,'',0,'','Bonjour Anton!',0,NULL,0,0,0,'');
+(1,4,1670000836,1627917285,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna A. Attendee','Anna','Ariana','Attendee','Bertha-von-Suttner-Platz 1','+29 228 111111','','attendee@example.com','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53111','Bonn','Germany','','Anna Enterprises','0','',1738769844,1739471485,'','',0,0,0,'',0,NULL,'Hello Anna!',0,NULL,0,0,0,'','',0,NULL),
+(2,4,1627922794,1627922794,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL),
+(3,4,1627922848,1627922848,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com',NULL,'','','','','','',NULL,'',1734462813,1734462911,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL),
+(4,4,1628002830,1628002830,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com',NULL,'','','','','','',NULL,'',0,0,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL),
+(5,4,1628002865,1628002862,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com',NULL,'','','','','','','0','',0,0,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL),
+(6,4,1670000977,1670000977,0,0,0,0,'','0','admin','$argon2i$v=19$m=65536,t=16,p=1$cjR4ZVR1NXlLMUJIYkZoUQ$7HXMQwbSppGCYiBAYbMuyHOsi1FRWttEBCwQqF/t53U','4,3,1','Anton R. Admin','Anton','R.','Admin','Admin Avenue 4','+49 228 12345678','','admin@example.com',NULL,'','53111','Bonn','Germany','','Admin Inc.',NULL,'',1671044482,1671044482,'','',0,99,0,'',0,'','Bonjour Anton!',0,NULL,0,0,0,'','',0,NULL);
 /*!40000 ALTER TABLE `fe_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12311,4 +12314,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-03-11 12:27:23
+-- Dump completed on 2025-07-31 18:30:25
