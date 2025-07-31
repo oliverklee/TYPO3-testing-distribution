@@ -177,8 +177,8 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <target state="final">Lokalisierung</target>
       </trans-unit>
       <trans-unit id="labels._REF_" approved="yes">
-        <source>Ref</source>
-        <target state="final">Ref</target>
+        <source>References</source>
+        <target state="final">Referenzen</target>
       </trans-unit>
       <trans-unit id="labels.uid" approved="yes">
         <source>Unique ID</source>
@@ -1068,6 +1068,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Rename</source>
         <target state="final">Umbenennen</target>
       </trans-unit>
+      <trans-unit id="folder_rename.label" approved="yes">
+        <source>New folder name</source>
+        <target state="final">Neuer Ordnername</target>
+      </trans-unit>
       <trans-unit id="online_media.new_media" approved="yes">
         <source>Add new media asset</source>
         <target state="final">Neue Mediendatei hinzufügen</target>
@@ -1821,8 +1825,12 @@ Do you want to refresh it now?</source>
         <target state="final">"%s" ist keine gültige E-Mail-Adresse.</target>
       </trans-unit>
       <trans-unit id="error.adminCanNotChangeSystemMaintainer" approved="yes">
-        <source>Only system maintainers can change the admin flag and password of other system maintainers. The value has not been updated.</source>
-        <target state="final">Nur Systemverantwortliche können das Administrator-Flag und die Passworte von anderen Systemverantwortlichen ändern. Der Wert wurde nicht aktualisiert.</target>
+        <source>Non system maintainers cannot change details of system maintainers. The values have not been updated.</source>
+        <target state="final">Nicht-Systemverantwortliche können keine Details von Systemverantwortlichen ändern. Die Werte sind nicht aktualisiert worden.</target>
+      </trans-unit>
+      <trans-unit id="formEngine.beUser.information.adminCanNotChangeSystemMaintainer" approved="yes">
+        <source>This user is a system maintainer. Changing details of system maintainers is not allowed.</source>
+        <target state="final">Dieser Benutzer ist ein Systemverantwortlicher. Das Ändern von Details von Systemverantwortlichen ist nicht erlaubt.</target>
       </trans-unit>
       <trans-unit id="formEngine.beUser.admin.information.userIsSystemMaintainer" approved="yes">
         <source>This user is a system maintainer</source>
@@ -1831,10 +1839,6 @@ Do you want to refresh it now?</source>
       <trans-unit id="formEngine.beUser.admin.information.userWillBecomeSystemMaintainer" approved="yes">
         <source>This user is in the list of allowed system maintainers and will gain system level access if enabling admin access.</source>
         <target state="final">Der Benutzer ist in der Liste der zugelassenen Systemverantwortlichen und wird Vollzugriff auf das System erhalten, wenn das Administrator-Zugriff aktiviert wird.</target>
-      </trans-unit>
-      <trans-unit id="formEngine.beUser.admin.information.userAdminAndPasswordChangeNotAllowed" approved="yes">
-        <source>This user is a system maintainer. Changing the admin flag and changing password is denied.</source>
-        <target state="final">Dieser Benutzer ist ein Systemverantwortlicher. Ändern des Administrator-Flags und des Passwortes ist nicht möglich.</target>
       </trans-unit>
       <trans-unit id="formEngine.pages.backendLayout.information.inheritFromParentPage" approved="yes">
         <source>This page will most likely use backend layout "%s", inherited from a parent page.</source>

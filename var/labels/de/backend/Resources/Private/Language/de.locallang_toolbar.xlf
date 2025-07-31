@@ -100,7 +100,15 @@ Hab noch einen schönen Tag.</target></trans-unit>
         <source>Application Context</source>
         <target state="final">Anwendungs-Kontext</target>
       </trans-unit>
-      <trans-unit id="toolbarItems.sysinfo.composerMode" approved="yes">
+      <trans-unit id="toolbarItems.sysinfo.installationMethod" approved="yes">
+        <source>Installation Method</source>
+        <target state="final">Installationsmethode</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.sysinfo.installationMethod.classic" approved="yes">
+        <source>Classic mode</source>
+        <target state="final">Klassischer Modus</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.sysinfo.installationMethod.composer" approved="yes">
         <source>Composer mode</source>
         <target state="final">Composer-Modus</target>
       </trans-unit>

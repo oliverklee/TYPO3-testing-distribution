@@ -555,6 +555,10 @@
         <source>Press CTRL to copy</source>
         <target state="final">Drücken Sie Strg zum Kopieren</target>
       </trans-unit>
+      <trans-unit id="progressTracker.steps" approved="yes">
+        <source>Step %d of %d</source>
+        <target state="final">Schritt %d von %d</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

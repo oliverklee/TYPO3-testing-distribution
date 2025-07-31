@@ -568,16 +568,16 @@
         <target state="final">In ausgewählten Tabellen suchen</target>
       </trans-unit>
       <trans-unit id="liveSearch_helpDescriptionPages" approved="yes">
-        <source>#page:Home will search for all pages with the title "Home"</source>
-        <target state="final">#page:Home sucht nach allen Seiten mit dem Titel "Home".</target>
+        <source>`#page:Home` will search for all pages with the title "Home"</source>
+        <target state="final">`#page:Home` sucht nach allen Seiten mit dem Titel „Home“</target>
       </trans-unit>
       <trans-unit id="liveSearch_helpDescriptionContent" approved="yes">
-        <source>#content:Professional will search for all content elements containing the term "Professional"</source>
-        <target state="final">#content:Professional sucht nach allen Inhaltselementen, die den Begriff "Professional" enthalten</target>
+        <source>`#content:Professional` will search for all content elements containing the term "Professional"</source>
+        <target state="final">`#content:Professional` sucht nach allen Inhaltselementen, die den Begriff „Professional“ enthalten</target>
       </trans-unit>
       <trans-unit id="liveSearch_help.shortcutOpen" approved="yes">
-        <source>You can open the live search by pressing the Ctrl+K or Cmd+K keystroke</source>
-        <target state="final">Sie können die Live-Suche mittels der Tastenkombination Ctrl+K oder Cmd+K öffnen</target>
+        <source><![CDATA[You can open the live search by pressing the <kbd><kbd>Ctrl</kbd> + <kbd>K</kbd></kbd> or <kbd><kbd>Cmd</kbd> + <kbd>K</kbd></kbd> keystroke]]></source>
+        <target state="final"><![CDATA[Du kannst die Live-Suche durch das Drücken der Tastenkombination <kbd><kbd>Strg</kbd> + <kbd>K</kbd></kbd> oder <kbd><kbd>Cmd</kbd> + <kbd>K</kbd></kbd> öffnen]]></target>
       </trans-unit>
       <trans-unit id="liveSearch_search" approved="yes">
         <source>Search</source>

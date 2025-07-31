@@ -131,6 +131,10 @@
         <source>You currently have unsaved changes. You can either discard these changes or save and view them.</source>
         <target state="final">Es gibt ungespeicherte Änderungen. Sie können diese Änderungen entweder verwerfen oder speichern und sie anzeigen.</target>
       </trans-unit>
+      <trans-unit id="label.confirm.view_record_changed.invalid_form" approved="yes">
+        <source>The form appears to be invalid, therefore "Save changes and view" is not available.</source>
+        <target state="final">Das Formular scheint ungültig zu sein, daher ist "Änderungen speichern und anzeigen" nicht verfügbar.</target>
+      </trans-unit>
       <trans-unit id="label.confirm.view_record_changed.content.is-new-page" approved="yes">
         <source>You need to save your changes before viewing the page. Do you want to save and view them now?</source>
         <target state="final">Sie müssen Ihre Änderungen speichern bevor Sie die Seite anzeigen. Möchten Sie jetzt speichern und anzeigen?</target>

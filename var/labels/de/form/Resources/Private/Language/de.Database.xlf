@@ -59,7 +59,7 @@
 			<target state="final">Datensatz</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToSender.label" xml:space="preserve" approved="yes">
 				<source>Email to sender (form submitter)</source>
-			<target state="final">E-Mail an Absender (Formular-Unterzeichner)</target></trans-unit>
+			<target state="final">E-Mail an Absender (Formularübermittler)</target></trans-unit>
       <trans-unit id="tt_content.finishersDefinition.EmailToSender.subject.label" xml:space="preserve" approved="yes">
 				<source>Subject of the email</source>
 			<target state="final">Betreff der E-Mail</target></trans-unit>
@@ -187,8 +187,8 @@
 				<source>Location</source>
 			<target state="final">Ort</target></trans-unit>
       <trans-unit id="formManager.references" xml:space="preserve" approved="yes">
-				<source>Ref</source>
-			<target state="final">Ref</target></trans-unit>
+				<source>References</source>
+			<target state="final">Referenzen</target></trans-unit>
       <trans-unit id="formManager.options" xml:space="preserve" approved="yes">
 				<source>Options</source>
 			<target state="final">Optionen</target></trans-unit>
@@ -578,7 +578,7 @@
 			<target state="final">Finisher hinzufügen</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.editor.finishers.EmailToSender.label" xml:space="preserve" approved="yes">
 				<source>Email to sender (form submitter)</source>
-			<target state="final">E-Mail an Absender (Formular-Unterzeichner)</target></trans-unit>
+			<target state="final">E-Mail an Absender (Formularübermittler)</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.editor.finishers.EmailToReceiver.label" xml:space="preserve" approved="yes">
 				<source>Email to receiver (you)</source>
 			<target state="final">E-Mail an Empfänger (Sie)</target></trans-unit>
@@ -593,7 +593,7 @@
 			<target state="final">Bestätigungsmeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.header.label" xml:space="preserve" approved="yes">
 				<source>Email to sender (form submitter)</source>
-			<target state="final">E-Mail an Absender (Formular-Unterzeichner)</target></trans-unit>
+			<target state="final">E-Mail an Absender (Formularübermittler)</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.subject.label" xml:space="preserve" approved="yes">
 				<source>Subject</source>
 			<target state="final">Betreff</target></trans-unit>
@@ -811,7 +811,7 @@
 				<source>address-line1 - Street address, line 1</source>
 			<target state="final">Anschrift Zeile 1</target></trans-unit>
       <trans-unit id="formEditor.elements.FormElement.editor.autocomplete.option.address-line2" xml:space="preserve" approved="yes">
-				<source>address-line1 - Street address, line 2</source>
+				<source>address-line2 - Street address, line 2</source>
 			<target state="final">Anschrift Zeile 2</target></trans-unit>
       <trans-unit id="formEditor.elements.FormElement.editor.autocomplete.option.address-level1" xml:space="preserve" approved="yes">
 				<source>address-level1 - State, Canton etc</source>
@@ -927,6 +927,9 @@
       <trans-unit id="formEditor.elements.Page.label" xml:space="preserve" approved="yes">
 				<source>Step</source>
 			<target state="final">Schritt</target></trans-unit>
+      <trans-unit id="formEditor.elements.Page.description" xml:space="preserve" approved="yes">
+				<source>A form step that can be customized with various elements</source>
+			<target state="final">Ein Formularschritt, der mit verschiedenen Elementen angepasst werden kann</target></trans-unit>
       <trans-unit id="formEditor.elements.Page.editor.label.label" xml:space="preserve" approved="yes">
 				<source>Step name</source>
 			<target state="final">Schrittname</target></trans-unit>
@@ -945,6 +948,9 @@
       <trans-unit id="formEditor.elements.SummaryPage.label" xml:space="preserve" approved="yes">
 				<source>Summary step</source>
 			<target state="final">Zusammenfassung</target></trans-unit>
+      <trans-unit id="formEditor.elements.SummaryPage.description" xml:space="preserve" approved="yes">
+				<source>A form step that displays all entered values for review before submission</source>
+			<target state="final">Ein Formularschritt, der alle eingegebenen Werte zur Überprüfung vor dem Absenden anzeigt</target></trans-unit>
       <trans-unit id="formEditor.elements.SummaryPage.editor.label.label" xml:space="preserve" approved="yes">
 				<source>Step name</source>
 			<target state="final">Schrittname</target></trans-unit>
@@ -963,36 +969,72 @@
       <trans-unit id="formEditor.elements.Fieldset.label" xml:space="preserve" approved="yes">
 				<source>Fieldset</source>
 			<target state="final">Feldgruppe</target></trans-unit>
+      <trans-unit id="formEditor.elements.Fieldset.description" xml:space="preserve" approved="yes">
+				<source>A container used to group related form elements, improving accessibility and providing content-based structure</source>
+			<target state="final">Ein Container, der dazu dient, zusammengehörige Formularelemente zu gruppieren, die Zugänglichkeit zu verbessern und eine inhaltsbezogene Struktur zu schaffen</target></trans-unit>
       <trans-unit id="formEditor.elements.Fieldset.editor.label.label" xml:space="preserve" approved="yes">
 				<source>Fieldset name</source>
 			<target state="final">Name der Feldgruppe</target></trans-unit>
+      <trans-unit id="formEditor.elements.GridColumn.label" approved="yes">
+        <source>Grid: Column</source>
+        <target state="final">Grid: Spalte</target>
+      </trans-unit>
+      <trans-unit id="formEditor.elements.GridColumn.description" approved="yes">
+        <source>A container element for arranging fields, providing visual structure</source>
+        <target state="final">Ein Containerelement zur Anordnung von Feldern um eine visuelle Struktur zu bieten</target>
+      </trans-unit>
+      <trans-unit id="formEditor.elements.GridColumn.editor.label.label" approved="yes">
+        <source>Name (not visible within frontend)</source>
+        <target state="final">Name (im Frontend nicht sichtbar)</target>
+      </trans-unit>
       <trans-unit id="formEditor.elements.GridRow.label" xml:space="preserve" approved="yes">
 				<source>Grid: Row</source>
 			<target state="final">Grid: Zeile</target></trans-unit>
+      <trans-unit id="formEditor.elements.GridRow.description" xml:space="preserve" approved="yes">
+				<source>A container element for arranging fields side by side, providing visual structuring</source>
+			<target state="final">Ein Containerelement, um Felder nebeneinander anzuordnen und eine visuelle Strukturierung zu ermöglichen</target></trans-unit>
       <trans-unit id="formEditor.elements.GridRow.editor.label.label" xml:space="preserve" approved="yes">
 				<source>Row name (not visible within frontend)</source>
 			<target state="final">Zeilenname (nicht sichtbar im Frontend)</target></trans-unit>
       <trans-unit id="formEditor.elements.Text.label" xml:space="preserve" approved="yes">
 				<source>Text</source>
 			<target state="final">Text</target></trans-unit>
+      <trans-unit id="formEditor.elements.Text.description" xml:space="preserve" approved="yes">
+				<source>A single-line text field</source>
+			<target state="final">Ein einzeiliges Textfeld</target></trans-unit>
       <trans-unit id="formEditor.elements.Email.label" xml:space="preserve" approved="yes">
 				<source>Email address</source>
 			<target state="final">E-Mail Adresse</target></trans-unit>
+      <trans-unit id="formEditor.elements.Email.description" xml:space="preserve" approved="yes">
+				<source>A text field for inputting an email address</source>
+			<target state="final">Ein Textfeld für die Eingabe einer E-Mail Adresse</target></trans-unit>
       <trans-unit id="formEditor.elements.Telephone.label" xml:space="preserve" approved="yes">
 				<source>Telephone number</source>
 			<target state="final">Telefonnummer</target></trans-unit>
+      <trans-unit id="formEditor.elements.Telephone.description" xml:space="preserve" approved="yes">
+				<source>A text field for inputting a phone number</source>
+			<target state="final">Ein Textfeld für die Eingabe einer Rufnummer</target></trans-unit>
       <trans-unit id="formEditor.elements.Url.label" xml:space="preserve" approved="yes">
 				<source>URL</source>
 			<target state="final">URL</target></trans-unit>
+      <trans-unit id="formEditor.elements.Url.description" xml:space="preserve" approved="yes">
+				<source>A text field for inputting a URL</source>
+			<target state="final">Ein Textfeld zur Eingabe einer URL</target></trans-unit>
       <trans-unit id="formEditor.elements.Number.label" xml:space="preserve" approved="yes">
 				<source>Number</source>
 			<target state="final">Zahl</target></trans-unit>
+      <trans-unit id="formEditor.elements.Number.description" xml:space="preserve" approved="yes">
+				<source>A text field for inputting numbers, with browser controls to adjust the value in predefined steps</source>
+			<target state="final">Ein Textfeld für die Eingabe von Zahlen, mit Browser-Steuerelementen zur Anpassung des Wertes in vordefinierten Schritten</target></trans-unit>
       <trans-unit id="formEditor.elements.Number.editor.validators.Number.label" xml:space="preserve" approved="yes">
 				<source>Number</source>
 			<target state="final">Zahl</target></trans-unit>
       <trans-unit id="formEditor.elements.Date.label" xml:space="preserve" approved="yes">
 				<source>Date</source>
 			<target state="final">Datum</target></trans-unit>
+      <trans-unit id="formEditor.elements.Date.description" xml:space="preserve" approved="yes">
+				<source>A text field for inputting a date in a single line</source>
+			<target state="final">Ein Textfeld zur Eingabe eines Datums in einer einzigen Zeile</target></trans-unit>
       <trans-unit id="formEditor.elements.Date.editor.defaultValue.placeholder" xml:space="preserve" approved="yes">
 				<source>A date in format Y-m-d (e.g 2018-03-17)</source>
 			<target state="final">Ein Datum im Format Y-m-d (z.B. 2018-03-17)</target></trans-unit>
@@ -1023,9 +1065,15 @@
       <trans-unit id="formEditor.elements.Password.label" xml:space="preserve" approved="yes">
 				<source>Password</source>
 			<target state="final">Passwort</target></trans-unit>
+      <trans-unit id="formEditor.elements.Password.description" xml:space="preserve" approved="yes">
+				<source>A text field for entering a password</source>
+			<target state="final">Ein Textfeld zur Eingabe eines Passworts</target></trans-unit>
       <trans-unit id="formEditor.elements.AdvancedPassword.label" xml:space="preserve" approved="yes">
 				<source>Advanced password</source>
 			<target state="final">Sichereres Passwort</target></trans-unit>
+      <trans-unit id="formEditor.elements.AdvancedPassword.description" xml:space="preserve" approved="yes">
+				<source>A text field for entering and confirming a password</source>
+			<target state="final">Ein Textfeld zur Eingabe und Bestätigung eines Passworts</target></trans-unit>
       <trans-unit id="formEditor.elements.AdvancedPassword.editor.confirmationLabel.label" xml:space="preserve" approved="yes">
 				<source>Confirmation label</source>
 			<target state="final">Beschriftung des Bestätigungsknopfes</target></trans-unit>
@@ -1035,27 +1083,51 @@
       <trans-unit id="formEditor.elements.Textarea.label" xml:space="preserve" approved="yes">
 				<source>Textarea</source>
 			<target state="final">Textfeld</target></trans-unit>
+      <trans-unit id="formEditor.elements.Textarea.description" xml:space="preserve" approved="yes">
+				<source>A multi-line text field for entering extended or continuous text</source>
+			<target state="final">Ein mehrzeiliges Textfeld zur Eingabe von längerem oder fortlaufendem Text</target></trans-unit>
       <trans-unit id="formEditor.elements.Checkbox.label" xml:space="preserve" approved="yes">
 				<source>Checkbox</source>
 			<target state="final">Checkbox</target></trans-unit>
+      <trans-unit id="formEditor.elements.Checkbox.description" xml:space="preserve" approved="yes">
+				<source>An element for creating a single checkbox</source>
+			<target state="final">Ein Element zur Erstellung eines einzelnen Kontrollkästchens</target></trans-unit>
       <trans-unit id="formEditor.elements.CountrySelect.label" xml:space="preserve" approved="yes">
 				<source>Country select</source>
 			<target state="final">Länderauswahl</target></trans-unit>
+      <trans-unit id="formEditor.elements.CountrySelect.description" xml:space="preserve" approved="yes">
+				<source>An element to select a country</source>
+			<target state="final">Ein Element zur Auswahl eines Landes</target></trans-unit>
       <trans-unit id="formEditor.elements.MultiCheckbox.label" xml:space="preserve" approved="yes">
 				<source>Multi checkbox</source>
 			<target state="final">Checkbox zur Mehrfachauswahl</target></trans-unit>
+      <trans-unit id="formEditor.elements.MultiCheckbox.description" xml:space="preserve" approved="yes">
+				<source>An element for creating multiple checkboxes</source>
+			<target state="final">Ein Element zur Erstellung mehrerer Kontrollkästchen</target></trans-unit>
       <trans-unit id="formEditor.elements.MultiSelect.label" xml:space="preserve" approved="yes">
 				<source>Multi select</source>
 			<target state="final">Mehrfachauswahl</target></trans-unit>
+      <trans-unit id="formEditor.elements.MultiSelect.description" xml:space="preserve" approved="yes">
+				<source>An element for creating a field that allows multiple selections</source>
+			<target state="final">Ein Element zur Erstellung eines Feldes, das Mehrfachauswahlen ermöglicht</target></trans-unit>
       <trans-unit id="formEditor.elements.RadioButton.label" xml:space="preserve" approved="yes">
 				<source>Radio button</source>
 			<target state="final">Auswahlknopf</target></trans-unit>
+      <trans-unit id="formEditor.elements.RadioButton.description" xml:space="preserve" approved="yes">
+				<source>An element for displaying one or more radio buttons</source>
+			<target state="final">Ein Element zur Anzeige von einem oder mehreren Optionsfeldern</target></trans-unit>
       <trans-unit id="formEditor.elements.SingleSelect.label" xml:space="preserve" approved="yes">
 				<source>Single select</source>
 			<target state="final">Einfachauswahl</target></trans-unit>
+      <trans-unit id="formEditor.elements.SingleSelect.description" xml:space="preserve" approved="yes">
+				<source>An element for creating a dropdown list for selecting a single option</source>
+			<target state="final">Ein Element zur Erstellung einer Dropdown-Liste für die Auswahl einer einzelnen Option</target></trans-unit>
       <trans-unit id="formEditor.elements.DatePicker.label" xml:space="preserve" approved="yes">
 				<source>Date picker (jQuery)</source>
 			<target state="final">Datumsauswahl (jQuery)</target></trans-unit>
+      <trans-unit id="formEditor.elements.DatePicker.description" xml:space="preserve" approved="yes">
+				<source>A text field for selecting a date via a calendar interface</source>
+			<target state="final">Ein Textfeld zur Auswahl eines Datums über eine Kalenderschnittstelle</target></trans-unit>
       <trans-unit id="formEditor.elements.DatePicker.editor.dateFormat.label" xml:space="preserve" approved="yes">
 				<source>Date format</source>
 			<target state="final">Datumsformat</target></trans-unit>
@@ -1086,6 +1158,9 @@
       <trans-unit id="formEditor.elements.StaticText.label" xml:space="preserve" approved="yes">
 				<source>Static text</source>
 			<target state="final">Statischer Text</target></trans-unit>
+      <trans-unit id="formEditor.elements.StaticText.description" xml:space="preserve" approved="yes">
+				<source>A field for unformatted text</source>
+			<target state="final">Ein Feld für unformatierten Text</target></trans-unit>
       <trans-unit id="formEditor.elements.StaticText.editor.label.label" xml:space="preserve" approved="yes">
 				<source>Header</source>
 			<target state="final">Überschrift</target></trans-unit>
@@ -1095,12 +1170,18 @@
       <trans-unit id="formEditor.elements.Hidden.label" xml:space="preserve" approved="yes">
 				<source>Hidden</source>
 			<target state="final">Verborgen</target></trans-unit>
+      <trans-unit id="formEditor.elements.Hidden.description" xml:space="preserve" approved="yes">
+				<source>A field that is not displayed in the frontend</source>
+			<target state="final">Ein Feld, das im Frontend nicht angezeigt wird</target></trans-unit>
       <trans-unit id="formEditor.elements.Hidden.editor.defaultValue.label" xml:space="preserve" approved="yes">
 				<source>Value</source>
 			<target state="final">Wert</target></trans-unit>
       <trans-unit id="formEditor.elements.ContentElement.label" xml:space="preserve" approved="yes">
 				<source>Content element</source>
 			<target state="final">Inhaltselement</target></trans-unit>
+      <trans-unit id="formEditor.elements.ContentElement.description" xml:space="preserve" approved="yes">
+				<source>A field for displaying any content element from your website</source>
+			<target state="final">Ein Feld für die Anzeige eines beliebigen Inhaltselements aus deiner Website</target></trans-unit>
       <trans-unit id="formEditor.elements.ContentElement.selectContentElement" xml:space="preserve" approved="yes">
 				<source>No content element selected</source>
 			<target state="final">Kein Inhaltselement ausgewählt</target></trans-unit>
@@ -1113,6 +1194,9 @@
       <trans-unit id="formEditor.elements.FileUpload.label" xml:space="preserve" approved="yes">
 				<source>File upload</source>
 			<target state="final">Dateiupload</target></trans-unit>
+      <trans-unit id="formEditor.elements.FileUpload.description" xml:space="preserve" approved="yes">
+				<source>An element for uploading a file</source>
+			<target state="final">Ein Element zum Hochladen einer Datei</target></trans-unit>
       <trans-unit id="formEditor.elements.FileUpload.editor.allowedMimeTypes.label" xml:space="preserve" approved="yes">
 				<source>Allowed file mime types</source>
 			<target state="final">Zulässige Mime-Typen</target></trans-unit>
@@ -1147,6 +1231,9 @@ Wenn du höhere Werte benötigst, wende dich an deinen Administrator.</target></
       <trans-unit id="formEditor.elements.ImageUpload.label" xml:space="preserve" approved="yes">
 				<source>Image upload</source>
 			<target state="final">Bildupload</target></trans-unit>
+      <trans-unit id="formEditor.elements.ImageUpload.description" xml:space="preserve" approved="yes">
+				<source>An element for uploading an image</source>
+			<target state="final">Ein Element zum Hochladen eines Bildes</target></trans-unit>
       <trans-unit id="formEditor.elements.ImageUpload.editor.allowedMimeTypes.label" xml:space="preserve" approved="yes">
 				<source>Allowed file mime types</source>
 			<target state="final">Zulässige Mime-Typen</target></trans-unit>
@@ -1201,6 +1288,34 @@ Wenn du höhere Werte benötigst, wende dich an deinen Administrator.</target></
       <trans-unit id="formEditor.inspector.editor.grid.remove" xml:space="preserve" approved="yes">
 				<source>Remove this row</source>
 			<target state="final">Zeile entfernen</target></trans-unit>
+      <trans-unit id="formEditor.inspector.editor.grid.move" xml:space="preserve" approved="yes">
+				<source>Move this row</source>
+			<target state="final">Diese Zeile verschieben</target></trans-unit>
+      <trans-unit id="formEditor.inspector.editor.entry.label" xml:space="preserve" approved="yes">
+				<source>Label</source>
+			<target state="final">Label</target></trans-unit>
+      <trans-unit id="formEditor.inspector.editor.entry.value" xml:space="preserve" approved="yes">
+				<source>Value</source>
+			<target state="final">Wert</target></trans-unit>
+      <trans-unit id="formEditor.inspector.editor.entry.selected" xml:space="preserve" approved="yes">
+				<source>Selected</source>
+			<target state="final">Ausgewählt</target></trans-unit>
+      <trans-unit id="formEditor.modals.insertElements.filter.noResults" approved="yes">
+        <source>Unfortunately no element type matches your query, please try a different one.</source>
+        <target state="final">Leider passt kein Elementtyp zu deiner Anfrage, bitte wähle einen anderen.</target>
+      </trans-unit>
+      <trans-unit id="formEditor.modals.insertElements.filter.placeholder" approved="yes">
+        <source>Search for any element type</source>
+        <target state="final">Suche nach einem beliebigen Elementtyp</target>
+      </trans-unit>
+      <trans-unit id="formEditor.modals.newPages.filter.noResults" approved="yes">
+        <source>Unfortunately no step type matches your query, please try a different one.</source>
+        <target state="final">Leider entspricht kein Stufentyp deiner Anfrage, bitte wähle einen anderen.</target>
+      </trans-unit>
+      <trans-unit id="formEditor.modals.newPages.filter.placeholder" approved="yes">
+        <source>Search for any step type</source>
+        <target state="final">Suche nach einem beliebigen Schritttyp</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

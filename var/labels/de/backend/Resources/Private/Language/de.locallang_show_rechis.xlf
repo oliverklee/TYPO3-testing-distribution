@@ -127,6 +127,10 @@
         <source>stage changed</source>
         <target state="final">Stufe geändert</target>
       </trans-unit>
+      <trans-unit id="historyRow.actiontype.7" approved="yes">
+        <source>published</source>
+        <target state="final">veröffentlicht</target>
+      </trans-unit>
       <trans-unit id="rollback.plannedAction.insert" approved="yes">
         <source>The record has been deleted and will be restored again with the rollback.</source>
         <target state="final">Der Datensatz wurde gelöscht und wird nach der Wiederherstellung wieder vorhanden sein.</target>
