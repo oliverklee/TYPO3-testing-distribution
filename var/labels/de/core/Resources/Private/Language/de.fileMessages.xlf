@@ -303,6 +303,19 @@
         <source>You don't have full access to the destination directory "%s"!</source>
         <target state="final">Sie haben keinen vollen Zugriff auf das Zielverzeichnis "%s"!</target>
       </trans-unit>
+      <!-- label removed in v14, contained here for previous TYPO3 localization bundles. Do not remove in v13 branch. -->
+      <trans-unit id="FileUtility.MimeTypeNotAllowedForFileExtension" approved="yes">
+        <source>Mime-type "%s" not allowed for file extension "%s".</source>
+        <target state="final">Mime-Typ "%s" für Dateierweiterung "%s" nicht zulässig.</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.MimeTypeNotAllowedForFileExtensionWithExpectation" approved="yes">
+        <source>Mime-type "%s" not allowed for file extension "%s" (expected: %s).</source>
+        <target state="final">Mime-Typ "%s" für Dateierweiterung "%s" nicht zulässig (erwartet: %s).</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.FileExtensionIsNotAllowed" approved="yes">
+        <source>File extension "%s" is not in the list of allowed values.</source>
+        <target state="final">Die Dateierweiterung „%s“ steht nicht in der Liste der zulässigen Werte.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

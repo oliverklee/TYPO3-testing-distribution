@@ -127,10 +127,6 @@
         <source>Password was updated.</source>
         <target state="final">Ihr Passwort wurde aktualisiert.</target>
       </trans-unit>
-      <trans-unit id="passwordCurrent" resname="passwordCurrent" approved="yes">
-        <source>Current password</source>
-        <target state="final">Aktuelles Passwort</target>
-      </trans-unit>
       <trans-unit id="passwordPolicyFailed" resname="passwordPolicyFailed" approved="yes">
         <source>The password was NOT updated, since it does not meet the password policy requirements.</source>
         <target state="final">Das Passwort wurde NICHT aktualisiert, da es nicht den Anforderungen der Passwortrichtlinien entspricht.</target>
