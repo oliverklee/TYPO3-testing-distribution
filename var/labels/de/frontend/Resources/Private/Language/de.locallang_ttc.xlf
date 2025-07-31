@@ -121,7 +121,7 @@
       </trans-unit>
       <trans-unit id="CType.menu_sitemap_pages" resname="CType.menu_sitemap_pages" approved="yes">
         <source>Sitemaps of selected pages</source>
-        <target state="final">Sitemap der ausgewählten Seiten.</target>
+        <target state="final">Sitemap der ausgewählten Seiten</target>
       </trans-unit>
       <trans-unit id="CType.div.standard" resname="CType.div.standard" approved="yes">
         <source>Standard</source>

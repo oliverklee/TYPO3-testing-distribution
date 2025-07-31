@@ -189,7 +189,7 @@ When specific pages need a longer or shorter cache lifetime than the default, th
 			<target state="final">Standardmäßig werden Seiten für 24 Stunden zwischengespeichert. Nach 24 Stunden wird die Seite neu erzeugt und neu in den Zwischenspeicher geschrieben. Abhängig von der Konfiguration wird der Zwischenspeicher möglicherweise um Mitternacht gelöscht. Wenn bestimmte Seiten eine längere oder kürzere Lebensdauer im Zwischenspeicher benötigen, kann diese Option vewendet werden.</target></trans-unit>
       <trans-unit id="no_search.description" resname="no_search.description" approved="yes">
         <source>If enabled, this option includes the page in searching operations on the website.</source>
-        <target state="final">Wenn aktiviert, enthält diese Option die Seite bei der Suche auf der Website.</target>
+        <target state="final">Wenn diese Option aktiviert ist, wird die Seite in die Suche auf der Website einbezogen.</target>
       </trans-unit>
       <trans-unit id="php_tree_stop.description" resname="php_tree_stop.description" approved="yes">
         <source>If enabled, this option excludes the subtree from rendering in the backend.</source>
