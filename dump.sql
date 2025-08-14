@@ -2414,7 +2414,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1741692125;'),
+(43,'core','sys_refindex_lastUpdate','i:1755181291;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -10964,15 +10964,15 @@ CREATE TABLE `tx_seminars_attendances` (
   `additional_persons` int(10) unsigned NOT NULL DEFAULT 0,
   `datepaid` int(10) unsigned NOT NULL DEFAULT 0,
   `method_of_payment` int(10) unsigned NOT NULL DEFAULT 0,
-  `company` tinytext DEFAULT NULL,
-  `name` varchar(255) NOT NULL DEFAULT '',
+  `company` varchar(80) DEFAULT '',
+  `name` varchar(80) NOT NULL DEFAULT '',
   `gender` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `address` tinytext DEFAULT NULL,
-  `zip` varchar(20) NOT NULL DEFAULT '',
-  `city` varchar(255) NOT NULL DEFAULT '',
-  `country` varchar(255) NOT NULL DEFAULT '',
-  `telephone` varchar(255) NOT NULL DEFAULT '',
-  `email` varchar(255) NOT NULL DEFAULT '',
+  `address` varchar(40) DEFAULT '',
+  `zip` varchar(10) NOT NULL DEFAULT '',
+  `city` varchar(40) NOT NULL DEFAULT '',
+  `country` varchar(40) NOT NULL DEFAULT '',
+  `telephone` varchar(40) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '',
   `been_there` smallint(5) unsigned NOT NULL DEFAULT 0,
   `interests` text DEFAULT NULL,
   `expectations` text DEFAULT NULL,
@@ -10985,10 +10985,13 @@ CREATE TABLE `tx_seminars_attendances` (
   `notes` text DEFAULT NULL,
   `kids` int(10) unsigned NOT NULL DEFAULT 0,
   `checkboxes` int(10) unsigned NOT NULL DEFAULT 0,
-  `separate_billing_address` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `separate_billing_address` smallint(5) unsigned NOT NULL DEFAULT 1,
   `price_code` tinytext DEFAULT NULL,
   `attendance_mode` int(10) unsigned NOT NULL DEFAULT 0,
   `order_reference` tinytext DEFAULT NULL,
+  `invoice_date` int(10) unsigned NOT NULL DEFAULT 0,
+  `collmex_invoice_number` varchar(8) DEFAULT NULL,
+  `collmex_customer_number` varchar(8) DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `seminar` (`seminar`),
   KEY `user` (`user`),
@@ -11003,13 +11006,13 @@ CREATE TABLE `tx_seminars_attendances` (
 LOCK TABLES `tx_seminars_attendances` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_attendances` DISABLE KEYS */;
 INSERT INTO `tx_seminars_attendances` VALUES
-(1,12,1628003260,1628003260,0,0,'Anna Attendee / TCCD, 20.-23.11.2021',1,7,0,'Standardpreis: € 500,00',1,0,500.00,NULL,0,0,1,NULL,'',0,NULL,'','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,NULL,0,NULL),
-(2,12,1628016412,1628016412,0,0,NULL,4,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,'price_regular',0,NULL),
-(3,12,1628016433,1628016433,0,0,NULL,5,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','','',0,'',0,'','',0,0,0,'price_regular',0,NULL),
-(4,12,1671044582,1671044495,0,0,'Event with waiting list / Anton R. Admin, 01.01.2030',6,11,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular',0,NULL),
-(5,12,1671044607,1671044565,0,0,'Event with waiting list / Anna A. Attendee, 01.01.2030',1,11,1,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular',0,NULL),
-(6,12,1671226186,1671226135,0,0,'Event for unregistration / Anna A. Attendee, 01.01.2030',1,12,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular',0,NULL),
-(7,12,1738690037,1733656335,0,0,'Infinite registrations! / Anna A. Attendee, 01.01.2025',1,10,2,'Standardpreis 200,00 €',1,1,200.00,'',0,0,2,'','',0,'','','','','','',0,'','','',NULL,0,NULL,0,'','',0,0,0,'price_regular',0,NULL);
+(1,12,1628003260,1628003260,0,0,'Anna Attendee / TCCD, 20.-23.11.2021',1,7,0,'Standardpreis: € 500,00',1,0,500.00,NULL,0,0,1,'Anna Enterprises','Anna A. Attendee',0,'Bertha-von-Suttner-Platz 1','53111','Bonn','Germany','+29 228 111111','attendee@example.com',0,'','','',NULL,0,NULL,0,'','',0,0,1,NULL,0,NULL,0,NULL,NULL),
+(2,12,1628016412,1628016412,0,0,NULL,4,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','Joe Attendee',0,'','','','','','joe@example.com',0,'','','','',0,'',0,'','',0,0,1,'price_regular',0,NULL,0,NULL,NULL),
+(3,12,1628016433,1628016433,0,0,NULL,5,7,0,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'','Max Attendee',0,'','','','','','max@example.com',0,'','','','',0,'',0,'','',0,0,1,'price_regular',0,NULL,0,NULL,NULL),
+(4,12,1671044582,1671044495,0,0,'Event with waiting list / Anton R. Admin, 01.01.2030',6,11,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'Admin Inc.','Anton R. Admin',0,'Admin Avenue 4','53111','Bonn','Germany','+49 228 12345678','admin@example.com',0,'','','',NULL,0,NULL,0,'','',0,0,1,'price_regular',0,NULL,0,NULL,NULL),
+(5,12,1671044607,1671044565,0,0,'Event with waiting list / Anna A. Attendee, 01.01.2030',1,11,1,'Standardpreis: 0,00 €',1,1,0.00,'',0,0,0,'Anna Enterprises','Anna A. Attendee',0,'Bertha-von-Suttner-Platz 1','53111','Bonn','Germany','+29 228 111111','attendee@example.com',0,'','','',NULL,0,NULL,0,'','',0,0,1,'price_regular',0,NULL,0,NULL,NULL),
+(6,12,1671226186,1671226135,0,0,'Event for unregistration / Anna A. Attendee, 01.01.2030',1,12,0,'Standardpreis: 0,00 €\r\n\r\n',1,1,0.00,'',0,0,0,'Anna Enterprises','Anna A. Attendee',0,'Bertha-von-Suttner-Platz 1','53111','Bonn','Germany','+29 228 111111','attendee@example.com',0,'','','',NULL,0,NULL,0,'','',0,0,1,'price_regular',0,NULL,0,NULL,NULL),
+(7,12,1738690037,1733656335,0,0,'Infinite registrations! / Anna A. Attendee, 01.01.2025',1,10,2,'Standardpreis 200,00 €',1,1,200.00,'',0,0,2,'Anna Enterprises','Anna A. Attendee',0,'Bertha-von-Suttner-Platz 1','53111','Bonn','Germany','+29 228 111111','attendee@example.com',0,'','','',NULL,0,NULL,0,'','',0,0,1,'price_regular',0,NULL,0,NULL,NULL);
 /*!40000 ALTER TABLE `tx_seminars_attendances` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11375,7 +11378,6 @@ CREATE TABLE `tx_seminars_seminars` (
   `partners` int(10) unsigned NOT NULL DEFAULT 0,
   `tutors` int(10) unsigned NOT NULL DEFAULT 0,
   `leaders` int(10) unsigned NOT NULL DEFAULT 0,
-  `language` varchar(2) NOT NULL DEFAULT '',
   `price_regular` decimal(10,2) NOT NULL DEFAULT 0.00,
   `price_regular_early` decimal(10,2) NOT NULL DEFAULT 0.00,
   `price_special` decimal(10,2) NOT NULL DEFAULT 0.00,
@@ -11414,6 +11416,9 @@ CREATE TABLE `tx_seminars_seminars` (
   `webinar_url` tinytext DEFAULT NULL,
   `additional_email_text` text DEFAULT NULL,
   `download_start_date` int(10) unsigned NOT NULL DEFAULT 0,
+  `billing_start` int(10) unsigned NOT NULL DEFAULT 0,
+  `collmex_product_number` varchar(20) DEFAULT NULL,
+  `collmex_product_name` varchar(1000) DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `object_type` (`object_type`),
   KEY `topic` (`topic`),
@@ -11433,25 +11438,25 @@ CREATE TABLE `tx_seminars_seminars` (
 LOCK TABLES `tx_seminars_seminars` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars` VALUES
-(1,13,1634124323,1628002174,0,0,0,0,1,'TCCD',0,'TYPO3 CMS Certified Developer',1,'TCCD-Training de luxe!','<p>I\'m baby leggings artisan tbh enamel pin art party raclette hot chicken intelligentsia readymade, cardigan XOXO. Cray sriracha normcore organic. Fixie live-edge quinoa cred four loko poke tumeric art party whatever air plant. Hella asymmetrical locavore direct trade shaman. Actually green juice waistcoat succulents.</p>',1,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',500.00,450.00,400.00,375.00,'',1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,1,0,0,0,0,0,0,'tccd/1',0,NULL,NULL,0),
-(2,13,1634124328,1628002285,0,0,0,0,1,'TCCI',0,'TYPO3 CMS Certified Integrator',1,'TCCI - so einfach geht TYPO3!','<p>Farm-to-table adaptogen vice YOLO four dollar toast bespoke. Hammock helvetica asymmetrical next level. Deep v hoodie ramps fam lo-fi unicorn paleo hot chicken fanny pack affogato trust fund chartreuse twee offal iceland. Photo booth godard everyday carry heirloom chillwave 90\'s craft beer, direct trade kogi skateboard dreamcatcher butcher.</p>',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',650.00,0.00,0.00,0.00,'',0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,0,1,0,0,0,0,0,'tcci/2',0,NULL,NULL,0),
-(3,14,1654092629,1628002505,0,0,0,0,0,'Einzelveranstaltung mit Anmeldeopotionen',0,'',0,'','',0,'',0,1964419200,1964448000,0,0,1647334800,0,1647334800,0,'',1,'Raum \"Brandenburg\"',3,6,1,0,0,0,'',0.00,0.00,0.00,0.00,'',1,1,0,0,0,1,0,4,12,0,0,2,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-anmeldeopotionen/3',0,NULL,NULL,0),
-(4,14,1736879058,1628002652,0,0,0,0,0,'Einzelveranstaltung mit Zeitslots',0,'',0,'','<p>Mustache direct trade master cleanse, fashion axe aesthetic farm-to-table vexillologist drinking vinegar austin 90\'s ramps 8-bit biodiesel snackwave taxidermy. Whatever banh mi chartreuse chicharrones. Unicorn bespoke sriracha pabst, art party typewriter messenger bag vexillologist banh mi intelligentsia. Bicycle rights four dollar toast kickstarter sustainable vegan tumblr, quinoa tumeric fingerstache. Artisan tilde sartorial, quinoa raw denim banh mi pitchfork offal bitters dreamcatcher actually keffiyeh. Palo santo air plant XOXO pug woke shaman.</p>',0,'',0,1964505600,1964606400,2,0,0,0,0,0,'',2,'Raum 13',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-zeitslots/4',0,NULL,NULL,0),
-(5,14,1634124392,1628002667,0,0,0,0,2,'TCCD-Termin',1,'',0,'','',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,0,'',0,0,0,0,0,0,0,0,0,'tccd/5',0,NULL,NULL,0),
-(6,14,1736847886,1628002703,0,0,0,0,2,'TCCI-Termin',2,'',0,'','',0,'',0,1944399480,1955375880,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tcci/6',0,NULL,NULL,0),
-(7,14,1736847866,1628002743,0,0,0,0,2,'TCCD-Termin mit Datum',1,'',0,'','',0,'',0,1952956740,1953215940,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,8,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tccd/7',0,NULL,NULL,0),
-(8,30,1667052715,1628014468,0,0,0,0,0,'Frontend-created event',0,'',0,'','There is no spoon. And the cake is a lie.',2,'',0,1680336000,1680451200,0,0,0,1677625200,0,0,NULL,1,'',0,0,2,0,0,0,'',250.00,175.00,0.00,0.00,'',0,1,0,0,0,1,0,2,25,0,0,0,0,0,3,0,0,0,'',0,0,0,0,0,0,0,0,0,'frontend-created-event/8',0,NULL,NULL,0),
-(9,30,1671225712,1667052765,0,0,0,0,0,'Created in the FE, too',0,NULL,0,NULL,'',4,NULL,0,0,0,0,0,0,0,0,0,NULL,0,NULL,0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,NULL,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,NULL,0,0,0,0,0,0,0,0,0,'created-in-the-fe-too/9',0,NULL,NULL,0),
-(10,14,1670000681,1670000681,0,0,0,0,0,'Infinite registrations!',0,'',0,'','<p>This event allows an infinite number of registrations.</p>',1,'',0,1735722000,1735750800,0,0,0,0,0,0,'',0,'',4,6,0,0,0,0,'',200.00,175.00,150.00,125.00,'',2,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,2,1,'',0,0,0,0,0,0,0,0,0,'infinite-registrations/10',0,NULL,NULL,0),
-(11,14,1671044582,1671044468,0,0,0,0,0,'Event with waiting list',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,1,1,0,0,2,0,0,0,0,0,'',0,0,0,0,1,0,0,0,0,'event-with-waiting-list/11',0,NULL,NULL,0),
-(12,14,1671226186,1671225968,0,0,0,0,0,'Event for unregistration',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,1893484800,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'event-for-unregistration/12',0,NULL,NULL,0),
-(13,14,1726243424,1726243290,0,0,0,0,0,'Online-Veranstaltung mit E-Mail-Text',0,'',0,'','',0,'',0,1903852800,1903881600,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,99,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'online-veranstaltung-mit-e-mail-text/13',2,'https://www.example.com','Bitte achten Sie beim Webinar darauf, dass Ihre Kamera eingeschaltet ist.\r\n\r\nUnd wir machen genügend Kaffeepausen - also keine Panik! :->',0),
-(14,14,1733251409,1733243746,0,0,0,0,0,'Vergangene Veranstaltung',0,'',0,'','',0,'',0,1680336000,1680364800,0,0,0,0,0,0,'',2,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'vergangene-veranstaltung/14',0,NULL,'',0),
-(15,14,1737120591,1736876080,0,0,0,0,0,'Einzelveranstaltung ohne Anmeldung',0,'',0,'','',0,'',0,1901260800,1901289600,0,0,0,0,0,0,'',0,'',0,0,2,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-ohne-anmeldung/15',0,NULL,'',0),
-(16,14,1737546278,1737546278,0,0,0,0,0,'Ausgebucht ohne Warteliste',0,'',0,'','',0,'',0,1948608000,1948636800,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,10,0,10,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'ausgebucht-ohne-warteliste/16',0,NULL,'',0),
-(17,14,1738760613,1738760568,0,0,0,0,0,'Vor-Ort-Event',0,'',0,'','',0,'',0,2059027200,2059056000,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'vor-ort-event/17',0,NULL,'',0),
-(18,14,1738760602,1738760582,0,0,0,0,0,'Online-Event',0,'',0,'','',0,'',0,2059027200,2059056000,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'online-event/18',2,NULL,'',0),
-(19,14,1738760650,1738760626,0,0,0,0,0,'Hybrid-Event',0,'',0,'','',0,'',0,2059027200,2059056000,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,'',0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'hybrid-event/19',1,NULL,'',0);
+(1,13,1634124323,1628002174,0,0,0,0,1,'TCCD',0,'TYPO3 CMS Certified Developer',1,'TCCD-Training de luxe!','<p>I\'m baby leggings artisan tbh enamel pin art party raclette hot chicken intelligentsia readymade, cardigan XOXO. Cray sriracha normcore organic. Fixie live-edge quinoa cred four loko poke tumeric art party whatever air plant. Hella asymmetrical locavore direct trade shaman. Actually green juice waistcoat succulents.</p>',1,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,500.00,450.00,400.00,375.00,'',1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,1,0,0,0,0,0,0,'tccd/1',0,NULL,NULL,0,0,NULL,NULL),
+(2,13,1634124328,1628002285,0,0,0,0,1,'TCCI',0,'TYPO3 CMS Certified Integrator',1,'TCCI - so einfach geht TYPO3!','<p>Farm-to-table adaptogen vice YOLO four dollar toast bespoke. Hammock helvetica asymmetrical next level. Deep v hoodie ramps fam lo-fi unicorn paleo hot chicken fanny pack affogato trust fund chartreuse twee offal iceland. Photo booth godard everyday carry heirloom chillwave 90\'s craft beer, direct trade kogi skateboard dreamcatcher butcher.</p>',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,650.00,0.00,0.00,0.00,'',0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,'',0,0,0,1,0,0,0,0,0,'tcci/2',0,NULL,NULL,0,0,NULL,NULL),
+(3,14,1654092629,1628002505,0,0,0,0,0,'Einzelveranstaltung mit Anmeldeopotionen',0,'',0,'','',0,'',0,1964419200,1964448000,0,0,1647334800,0,1647334800,0,'',1,'Raum \"Brandenburg\"',3,6,1,0,0,0,0.00,0.00,0.00,0.00,'',1,1,0,0,0,1,0,4,12,0,0,2,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-anmeldeopotionen/3',0,NULL,NULL,0,0,NULL,NULL),
+(4,14,1736879058,1628002652,0,0,0,0,0,'Einzelveranstaltung mit Zeitslots',0,'',0,'','<p>Mustache direct trade master cleanse, fashion axe aesthetic farm-to-table vexillologist drinking vinegar austin 90\'s ramps 8-bit biodiesel snackwave taxidermy. Whatever banh mi chartreuse chicharrones. Unicorn bespoke sriracha pabst, art party typewriter messenger bag vexillologist banh mi intelligentsia. Bicycle rights four dollar toast kickstarter sustainable vegan tumblr, quinoa tumeric fingerstache. Artisan tilde sartorial, quinoa raw denim banh mi pitchfork offal bitters dreamcatcher actually keffiyeh. Palo santo air plant XOXO pug woke shaman.</p>',0,'',0,1964505600,1964606400,2,0,0,0,0,0,'',2,'Raum 13',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-mit-zeitslots/4',0,NULL,NULL,0,0,NULL,NULL),
+(5,14,1634124392,1628002667,0,0,0,0,2,'TCCD-Termin',1,'',0,'','',0,'',0,0,0,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,0,'',0,0,0,0,0,0,0,0,0,'tccd/5',0,NULL,NULL,0,0,NULL,NULL),
+(6,14,1736847886,1628002703,0,0,0,0,2,'TCCI-Termin',2,'',0,'','',0,'',0,1944399480,1955375880,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tcci/6',0,NULL,NULL,0,0,NULL,NULL),
+(7,14,1736847866,1628002743,0,0,0,0,2,'TCCD-Termin mit Datum',1,'',0,'','',0,'',0,1952956740,1953215940,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,8,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'tccd/7',0,NULL,NULL,0,0,NULL,NULL),
+(8,30,1667052715,1628014468,0,0,0,0,0,'Frontend-created event',0,'',0,'','There is no spoon. And the cake is a lie.',2,'',0,1680336000,1680451200,0,0,0,1677625200,0,0,NULL,1,'',0,0,2,0,0,0,250.00,175.00,0.00,0.00,'',0,1,0,0,0,1,0,2,25,0,0,0,0,0,3,0,0,0,'',0,0,0,0,0,0,0,0,0,'frontend-created-event/8',0,NULL,NULL,0,0,NULL,NULL),
+(9,30,1671225712,1667052765,0,0,0,0,0,'Created in the FE, too',0,NULL,0,NULL,'',4,NULL,0,0,0,0,0,0,0,0,0,NULL,0,NULL,0,0,0,0,0,0,0.00,0.00,0.00,0.00,NULL,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,NULL,0,0,0,0,0,0,0,0,0,'created-in-the-fe-too/9',0,NULL,NULL,0,0,NULL,NULL),
+(10,14,1670000681,1670000681,0,0,0,0,0,'Infinite registrations!',0,'',0,'','<p>This event allows an infinite number of registrations.</p>',1,'',0,1735722000,1735750800,0,0,0,0,0,0,'',0,'',4,6,0,0,0,0,200.00,175.00,150.00,125.00,'',2,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,2,1,'',0,0,0,0,0,0,0,0,0,'infinite-registrations/10',0,NULL,NULL,0,0,NULL,NULL),
+(11,14,1671044582,1671044468,0,0,0,0,0,'Event with waiting list',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,1,1,0,0,2,0,0,0,0,0,'',0,0,0,0,1,0,0,0,0,'event-with-waiting-list/11',0,NULL,NULL,0,0,NULL,NULL),
+(12,14,1671226186,1671225968,0,0,0,0,0,'Event for unregistration',0,'',0,'','',0,'',0,1893488400,1893517200,0,0,0,0,1893484800,0,'',0,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'event-for-unregistration/12',0,NULL,NULL,0,0,NULL,NULL),
+(13,14,1726243424,1726243290,0,0,0,0,0,'Online-Veranstaltung mit E-Mail-Text',0,'',0,'','',0,'',0,1903852800,1903881600,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,1,0,99,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'online-veranstaltung-mit-e-mail-text/13',2,'https://www.example.com','Bitte achten Sie beim Webinar darauf, dass Ihre Kamera eingeschaltet ist.\r\n\r\nUnd wir machen genügend Kaffeepausen - also keine Panik! :->',0,0,NULL,NULL),
+(14,14,1733251409,1733243746,0,0,0,0,0,'Vergangene Veranstaltung',0,'',0,'','',0,'',0,1680336000,1680364800,0,0,0,0,0,0,'',2,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'vergangene-veranstaltung/14',0,NULL,'',0,0,NULL,NULL),
+(15,14,1737120591,1736876080,0,0,0,0,0,'Einzelveranstaltung ohne Anmeldung',0,'',0,'','',0,'',0,1901260800,1901289600,0,0,0,0,0,0,'',0,'',0,0,2,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'einzelveranstaltung-ohne-anmeldung/15',0,NULL,'',0,0,NULL,NULL),
+(16,14,1737546278,1737546278,0,0,0,0,0,'Ausgebucht ohne Warteliste',0,'',0,'','',0,'',0,1948608000,1948636800,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,10,0,10,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'ausgebucht-ohne-warteliste/16',0,NULL,'',0,0,NULL,NULL),
+(17,14,1738760613,1738760568,0,0,0,0,0,'Vor-Ort-Event',0,'',0,'','',0,'',0,2059027200,2059056000,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'vor-ort-event/17',0,NULL,'',0,0,NULL,NULL),
+(18,14,1738760602,1738760582,0,0,0,0,0,'Online-Event',0,'',0,'','',0,'',0,2059027200,2059056000,0,0,0,0,0,0,'',0,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'online-event/18',2,NULL,'',0,0,NULL,NULL),
+(19,14,1738760650,1738760626,0,0,0,0,0,'Hybrid-Event',0,'',0,'','',0,'',0,2059027200,2059056000,0,0,0,0,0,0,'',1,'',0,0,0,0,0,0,0.00,0.00,0.00,0.00,'',0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,'hybrid-event/19',1,NULL,'',0,0,NULL,NULL);
 /*!40000 ALTER TABLE `tx_seminars_seminars` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11949,9 +11954,7 @@ CREATE TABLE `tx_seminars_sites` (
   `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
   `title` tinytext DEFAULT NULL,
   `address` text DEFAULT NULL,
-  `zip` tinytext DEFAULT NULL,
   `city` tinytext DEFAULT NULL,
-  `country` varchar(2) NOT NULL DEFAULT '',
   `homepage` tinytext DEFAULT NULL,
   `directions` text DEFAULT NULL,
   `notes` text DEFAULT NULL,
@@ -11971,12 +11974,12 @@ CREATE TABLE `tx_seminars_sites` (
 LOCK TABLES `tx_seminars_sites` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_sites` DISABLE KEYS */;
 INSERT INTO `tx_seminars_sites` VALUES
-(1,15,1628001887,1628001690,0,'DJH Jugendherberge Bonn','Haager Weg 42\r\n53127 Bonn','53127','Bonn','DE','https://www.jugendherberge.de/jugendherbergen/bonn-438/portraet/','<h1>So erreichen Sie die Jugendherberge Bonn mit öffentlichen Verkehrsmitteln</h1>\r\n<h2>Ab Flughafen Köln/Bonn</h2>\r\n<p>Mit dem Airportbus (Linie SB60) erreichen Sie in 30 min. den Bonner Hauptbahnhof.</p>\r\n<h2>Ab Bonn Hbf</h2>\r\n<p>Direkt gegenüber vom Hauptbahnhof befindet sich der zentrale Busbahnhof. Vom Bussteig A1 nehmen Sie die Buslinie 600 Richtung Ippendorf-Altenheim bis zur Haltestelle \"Jugendherberge\".</p>\r\n<h1>So erreichen Sie die Jugendherberge Bonn mit dem Bus oder Pkw</h1>\r\n<h2>Aus dem Norden, Süden und Osten kommend</h2>\r\n<p>A3 bis Autobahnkreuz Bonn‐Siegburg, dann auf die A 560 bis Autobahndreieck Sankt Augustin, weiter auf der A 565 Richtung Bonn / Koblenz bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus Köln kommend</h2>\r\n<p>Am Kölner Ring auf die A 555 bis Autobahnkreuz Bonn-Nord, dort auf die A 565 Richtung Bonn / Koblenz wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus dem Westen kommend</h2>\r\n<p>A 61 bis Autobahnkreuz Meckenheim, dort auf die A 565 Richtung Bonn wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Ab Ausfahrt Bonn-Hardtberg/Röttgen</h2>\r\n<p>Nach der Ausfahrt Bonn‐Hardtberg/Röttgen links abbiegen und bergab bis zur Verkehrsampel fahren, dort rechts abbiegen (Provinzialstraße), dem Straßenverlauf folgen (Reichsstraße) Richtung Venusberg/Uni-Klinik bis vor den Stadtteil Röttgen. Dort links in die Röttgener Straße abbiegen (Achtung: scharfe S-Kurve, Tempo 30). Dem Straßenverlauf folgen bis zur zweiten Straßeneinmündung auf der rechten Seite, dort rechts abbiegen und im spitzen Winkel sofort wieder rechts in den Gudenauer Weg abbiegen (Tempo 30 beachten!). Der Straße folgen bis zur Spreestraße, an der Kreuzung nach links versetzt in die Spreestraße einbiegen, am Ende der Spreestraße nach links in den Haager Web abbiegen. Nach ca. 800 m erreichen Sie die Jugendherberge.</p>\r\n<h1>Anreise mit dem Fahrrad</h1>\r\n<p>Zur Aufbewahrung Ihrer Fahrräder steht Ihnen im Haus ein gesicherter Abstellplatz zur Verfügung.</p>','',NULL,NULL,NULL),
-(2,15,1628001898,1628001870,0,'DJH Jugendherberge Köln-Deutz','Siegesstraße 5\r\n50679 Köln','50679','Köln','DE','','','',NULL,NULL,NULL),
-(3,15,1628001937,1628001937,0,'DJH Jugendherberge Köln-Riehl','An der Schanz 14\r\n50735 Köln','50735','Köln','DE','','','',NULL,NULL,NULL),
-(4,15,1681136288,1628001964,0,'Station - Hostel für Backpacker','Marzellenstraße 44-56\r\n50668 Köln','50668','50668 Köln','DE','t3://page?uid=39','','',NULL,NULL,NULL),
-(5,15,1738058357,1628001991,0,'DJH Jugendherberge Köln-Pathpoint','Allerheiligenstraße 15\r\n50668 Köln','50668','Köln','DE','','','',NULL,NULL,NULL),
-(6,15,1628002041,1628002041,0,'CJD Bonn Castell','Graurheindorfer Str. 149\r\n53117 Bonn','53117','Bonn','DE','','','',NULL,NULL,NULL);
+(1,15,1628001887,1628001690,0,'DJH Jugendherberge Bonn','Haager Weg 42\r\n53127 Bonn','Bonn','https://www.jugendherberge.de/jugendherbergen/bonn-438/portraet/','<h1>So erreichen Sie die Jugendherberge Bonn mit öffentlichen Verkehrsmitteln</h1>\r\n<h2>Ab Flughafen Köln/Bonn</h2>\r\n<p>Mit dem Airportbus (Linie SB60) erreichen Sie in 30 min. den Bonner Hauptbahnhof.</p>\r\n<h2>Ab Bonn Hbf</h2>\r\n<p>Direkt gegenüber vom Hauptbahnhof befindet sich der zentrale Busbahnhof. Vom Bussteig A1 nehmen Sie die Buslinie 600 Richtung Ippendorf-Altenheim bis zur Haltestelle \"Jugendherberge\".</p>\r\n<h1>So erreichen Sie die Jugendherberge Bonn mit dem Bus oder Pkw</h1>\r\n<h2>Aus dem Norden, Süden und Osten kommend</h2>\r\n<p>A3 bis Autobahnkreuz Bonn‐Siegburg, dann auf die A 560 bis Autobahndreieck Sankt Augustin, weiter auf der A 565 Richtung Bonn / Koblenz bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus Köln kommend</h2>\r\n<p>Am Kölner Ring auf die A 555 bis Autobahnkreuz Bonn-Nord, dort auf die A 565 Richtung Bonn / Koblenz wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Aus dem Westen kommend</h2>\r\n<p>A 61 bis Autobahnkreuz Meckenheim, dort auf die A 565 Richtung Bonn wechseln, weiter bis Ausfahrt Bonn-Hardtberg/Röttgen.</p>\r\n<h2>Ab Ausfahrt Bonn-Hardtberg/Röttgen</h2>\r\n<p>Nach der Ausfahrt Bonn‐Hardtberg/Röttgen links abbiegen und bergab bis zur Verkehrsampel fahren, dort rechts abbiegen (Provinzialstraße), dem Straßenverlauf folgen (Reichsstraße) Richtung Venusberg/Uni-Klinik bis vor den Stadtteil Röttgen. Dort links in die Röttgener Straße abbiegen (Achtung: scharfe S-Kurve, Tempo 30). Dem Straßenverlauf folgen bis zur zweiten Straßeneinmündung auf der rechten Seite, dort rechts abbiegen und im spitzen Winkel sofort wieder rechts in den Gudenauer Weg abbiegen (Tempo 30 beachten!). Der Straße folgen bis zur Spreestraße, an der Kreuzung nach links versetzt in die Spreestraße einbiegen, am Ende der Spreestraße nach links in den Haager Web abbiegen. Nach ca. 800 m erreichen Sie die Jugendherberge.</p>\r\n<h1>Anreise mit dem Fahrrad</h1>\r\n<p>Zur Aufbewahrung Ihrer Fahrräder steht Ihnen im Haus ein gesicherter Abstellplatz zur Verfügung.</p>','',NULL,NULL,NULL),
+(2,15,1628001898,1628001870,0,'DJH Jugendherberge Köln-Deutz','Siegesstraße 5\r\n50679 Köln','Köln','','','',NULL,NULL,NULL),
+(3,15,1628001937,1628001937,0,'DJH Jugendherberge Köln-Riehl','An der Schanz 14\r\n50735 Köln','Köln','','','',NULL,NULL,NULL),
+(4,15,1681136288,1628001964,0,'Station - Hostel für Backpacker','Marzellenstraße 44-56\r\n50668 Köln','50668 Köln','t3://page?uid=39','','',NULL,NULL,NULL),
+(5,15,1738058357,1628001991,0,'DJH Jugendherberge Köln-Pathpoint','Allerheiligenstraße 15\r\n50668 Köln','Köln','','','',NULL,NULL,NULL),
+(6,15,1628002041,1628002041,0,'CJD Bonn Castell','Graurheindorfer Str. 149\r\n53117 Bonn','Bonn','','','',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `tx_seminars_sites` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12243,4 +12246,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-31 18:30:22
+-- Dump completed on 2025-08-14 16:22:39
