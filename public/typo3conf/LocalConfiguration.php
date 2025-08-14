@@ -83,6 +83,10 @@ return [
         'seminars' => [
         ],
         'seminars_premium' => [
+            'collmexCompanyId' => '1',
+            'collmexCustomerId' => '12345',
+            'collmexPassword' => 'password',
+            'collmexUsername' => 'user',
             'enableDownloadsWatermark' => '1',
         ],
         'static_info_tables' => [
