@@ -33,7 +33,7 @@
       </trans-unit>
       <trans-unit id="info.about" resname="info.about" approved="yes">
         <source>This is the backend login of TYPO3. You need username and password to access this administration interface. If you are a visitor of ###SITENAME###, please visit the public website: ###SITELINK###</source>
-        <target state="final">Dies ist die Anmeldung am TYPO3-Backend. Um auf die Verwaltungsoberfläche zugreifen zu können, benötigen Sie einen Benutzernamen und ein Passwort. Falls Sie ein Besucher von ###SITENAME### sind, besuchen Sie bitte den öffentlichen Bereich: ###SITELINK###</target>
+        <target state="final">Dies ist die Anmeldung am TYPO3-Backend. Um auf die Verwaltungsoberfläche zugreifen zu können, benötigst du einen Benutzernamen und ein Passwort. Falls du ein Besucher von ###SITENAME### bist, besuche bitte den öffentlichen Bereich: ###SITELINK###</target>
       </trans-unit>
       <trans-unit id="info.reset" resname="info.reset" approved="yes">
         <source>Reset this form</source>
@@ -53,11 +53,11 @@
       </trans-unit>
       <trans-unit id="warning.incompatibleBrowser" resname="warning.incompatibleBrowser" approved="yes">
         <source>You are using an unsupported browser version.</source>
-        <target state="final">Sie verwenden eine nicht unterstützte Browser-Version.</target>
+        <target state="final">Du verwendest eine nicht unterstützte Browser-Version.</target>
       </trans-unit>
       <trans-unit id="warning.incompatibleBrowserInternetExplorer" resname="warning.incompatibleBrowserInternetExplorer" approved="yes">
         <source>Please install &lt;a href="http://www.microsoft.com/internetexplorer/" target="_blank" rel="noreferrer" /&gt;a more modern browser version&lt;/a&gt;.</source>
-        <target state="final">Bitte installieren Sie &lt;a href="http://www.microsoft.com/internetexplorer/" target="_blank" rel="noreferrer" /&gt;eine aktuellere Browser-Version&lt;/a&gt;.</target>
+        <target state="final">Bitte installiere &lt;a href="http://www.microsoft.com/internetexplorer/" target="_blank" rel="noreferrer" /&gt;eine aktuellere Browser-Version&lt;/a&gt;.</target>
       </trans-unit>
       <trans-unit id="newsheadline" resname="newsheadline" approved="yes">
         <source>Important Messages</source>
@@ -65,7 +65,7 @@
       </trans-unit>
       <trans-unit id="error.login" resname="error.login" approved="yes">
         <source>Your login attempt did not succeed. Make sure to spell your username and password correctly, including upper/lowercase characters.</source>
-        <target state="final">Der Anmeldeversuch ist fehlgeschlagen. Achten Sie darauf, Benutzernamen und Passwort korrekt einzugeben, einschließlich Groß-/Kleinschreibung.</target>
+        <target state="final">Der Anmeldeversuch ist fehlgeschlagen. Achte darauf, Benutzernamen und Passwort korrekt einzugeben, einschließlich Groß-/Kleinschreibung.</target>
       </trans-unit>
       <trans-unit id="error.cookies_ignore" resname="error.cookies_ignore" approved="yes">
         <source>Ignore!</source>
@@ -73,7 +73,7 @@
       </trans-unit>
       <trans-unit id="error.furtherInformation" resname="error.furtherInformation" approved="yes">
         <source>For more information or further help click here</source>
-        <target state="final">Weitere Informationen und Hilfe erhalten Sie hier</target>
+        <target state="final">Weitere Informationen und Hilfe erhältst du hier</target>
       </trans-unit>
       <trans-unit id="warranty.by" resname="warranty.by" approved="yes">
         <source>Warranty is supplied by %s; %sdetails about licences.%s</source>
@@ -105,7 +105,7 @@
       </trans-unit>
       <trans-unit id="details.link" resname="details.link" approved="yes">
         <source>Go to %s for details.</source>
-        <target state="final">Weitere Informationen erhalten Sie unter %s.</target>
+        <target state="final">Weitere Informationen erhältst du unter %s.</target>
       </trans-unit>
       <trans-unit id="free.software" resname="free.software" approved="yes">
         <source>This is free software, and you are welcome to redistribute it under certain conditions; %sdetails about licences.%s</source>

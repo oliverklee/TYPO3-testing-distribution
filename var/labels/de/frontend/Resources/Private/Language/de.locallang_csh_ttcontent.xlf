@@ -518,14 +518,14 @@ tt_content:image</target><note>This string contains an internal text, which must
 			<target state="final">tt_content:image</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="imagecaption.description" resname="imagecaption.description" approved="yes">
         <source>Enter captions for the images. For multiple images, enter one caption per line.</source>
-        <target state="final">Geben Sie eine Bildunterschrift ein.</target>
+        <target state="final">Gib eine Bildunterschrift ein.</target>
       </trans-unit>
       <trans-unit id="imagecaption.details" resname="imagecaption.details" xml:space="preserve" approved="yes">
 				<source>By default, the caption is positioned below the images. However, your TypoScript template may be configured to allow individual image captions by setting "styles.content.imgtext.captionSplit=1" in your template constants.
 In this case, each line in this field will be the image caption of the corresponding image in the list.
 
 The caption text field is also used by the Content Element type "File Links" where each line represents a description of a file in the list.</source>
-			<target state="final">Normalerweise wird die Bildunterschrift unter dem gesamten Bilderblock angezeigt. Die Vorlage der Website kann jedoch so programmiert werden, dass sie individuelle Bildunterschriften anzeigt, indem in den Vorlagenkonstanten "styles.content.imgtext.captionSplit=1" gesetzt wird. In diesem Fall entspricht jede Zeile der Bildunterschrift je eines Bildes. Das Feld wird außerdem vom Inhaltstypen "Dateilinks" verwendet, wobei jede Zeile der Beschreibung einer Datei in der Liste entspricht.</target></trans-unit>
+			<target state="final">Normalerweise wird die Bildbeschriftung unter dem gesamten Bilderblock angezeigt. Die Vorlage der Website kann jedoch so programmiert werden, dass sie individuelle Bildbeschriftungen anzeigt, indem in den Vorlagenkonstanten "styles.content.imgtext.captionSplit=1" gesetzt wird. In diesem Fall entspricht jede Zeile der Bildbeschriftung je eines Bildes. Das Feld wird außerdem vom Inhaltstypen "Dateilinks" verwendet, wobei jede Zeile der Beschreibung einer Datei in der Liste entspricht.</target></trans-unit>
       <trans-unit id="cols.description" resname="cols.description" approved="yes">
         <source>Select a fixed number of table columns</source>
         <target state="final">Wählen Sie eine feste Anzahl an Spalten aus.</target>

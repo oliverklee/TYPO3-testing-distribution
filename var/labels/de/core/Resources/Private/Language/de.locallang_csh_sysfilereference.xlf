@@ -31,7 +31,7 @@ If the supplementary information provided through the title attribute is somethi
       </trans-unit>
       <trans-unit id="description.description" resname="description.description" approved="yes">
         <source>Sets the image-caption-text of this asset.</source>
-        <target state="final">Setzt die Bildunterschrift für diese Datei.</target>
+        <target state="final">Setzt die Bildbeschriftung für diese Datei.</target>
       </trans-unit>
       <trans-unit id="description.details" resname="description.details" approved="yes">
         <source>This text will be displayed underneath your asset and can be used to supply additional context to the image.

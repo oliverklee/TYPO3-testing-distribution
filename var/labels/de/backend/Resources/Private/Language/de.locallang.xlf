@@ -5,7 +5,7 @@
     <body>
       <trans-unit id="no_modules_registered" resname="no_modules_registered" approved="yes">
         <source>No modules have been registered. Please contact your system administrator.</source>
-        <target state="final">Es wurden keine Module registriert. Bitte kontaktieren Sie Ihren Systemadministrator.</target>
+        <target state="final">Es wurden keine Module registriert. Bitte kontaktiere deinen Systemadministrator.</target>
       </trans-unit>
       <trans-unit id="show_references" resname="show_references" approved="yes">
         <source>Show references</source>
@@ -66,7 +66,7 @@ Einen schönen Tag noch!</target></trans-unit>
       </trans-unit>
       <trans-unit id="foldertreeview.noFolders.message" resname="foldertreeview.noFolders.message" approved="yes">
         <source>You do not have access to any folder. Please ask your administrator to fix access permissions for your account.</source>
-        <target state="final">Sie haben keinen Zugriff auf irgendeinen Ordner. Bitte bitten Sie Ihren Administrator, die Zugriffsberechtigungen Ihres Benutzers anzupassen.</target>
+        <target state="final">Du hast keinen Zugriff auf irgendeinen Ordner. Bitte deinen Administrator, die Zugriffsberechtigungen für deinen Benutzer anzupassen.</target>
       </trans-unit>
       <trans-unit id="login.header" resname="login.header" approved="yes">
         <source>Login</source>
@@ -134,15 +134,15 @@ Einen schönen Tag noch!</target></trans-unit>
       </trans-unit>
       <trans-unit id="login.error.description" resname="login.error.description" approved="yes">
         <source>Make sure to spell your username and password correctly, including upper/lowercase characters.</source>
-        <target state="final">Bitte stellen Sie sicher, dass Ihr Benutzername und Passwort korrekt sind. Groß-/Kleinschreibung wird unterschieden.</target>
+        <target state="final">Bitte stelle sicher, dass dein Benutzername und Passwort korrekt sind. Groß-/Kleinschreibung wird unterschieden.</target>
       </trans-unit>
       <trans-unit id="login.error.javascript" resname="login.error.javascript" approved="yes">
         <source>Please activate JavaScript!</source>
-        <target state="final">Bitte aktivieren Sie JavaScript!</target>
+        <target state="final">Bitte aktiviere JavaScript!</target>
       </trans-unit>
       <trans-unit id="login.error.cookies" resname="login.error.cookies" approved="yes">
         <source>Please activate Cookies!</source>
-        <target state="final">Bitte aktivieren Sie Cookies!</target>
+        <target state="final">Bitte aktiviere Cookies!</target>
       </trans-unit>
       <trans-unit id="login.error.referrer" resname="login.error.referrer" approved="yes">
         <source>TYPO3 relies on HTTP referrers for security reasons in the backend. It seems your browser refused to send this information.</source>

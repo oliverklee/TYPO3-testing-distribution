@@ -112,7 +112,7 @@ Example value: "&amp;showUid=###UID###"</source>
       </trans-unit>
       <trans-unit id="fieldlist.details" resname="fieldlist.details" approved="yes">
         <source>&lt;b&gt;Example:&lt;/b&gt; "header,bodytext,image_caption" would index the Header, Bodytext and Image Caption fields from "tt_content". Notice that you must use the real database field names, don't spell them wrong!</source>
-        <target state="final">&lt;strong&gt;Beispiel:&lt;/strong&gt; "header,bodytext,image_caption" würde die Felder Header, Bodytext und Bildunterschrift aus tt_content indizieren. Beachten Sie, dass hier die echten Namen der Datenbankfelder verwendet werden müssen; achten Sie also auf die korrekte Schreibweise!</target>
+        <target state="final">&lt;strong&gt;Beispiel:&lt;/strong&gt; "header,bodytext,image_caption" würde die Felder Header, Bodytext und Bildbeschriftung aus tt_content indizieren. Beachte, dass hier die echten Namen der Datenbankfelder verwendet werden müssen; achte also auf die korrekte Schreibweise!</target>
       </trans-unit>
       <trans-unit id="_fieldlist.seeAlso" resname="_fieldlist.seeAlso" approved="yes">
         <source>index_config:table2index</source>
