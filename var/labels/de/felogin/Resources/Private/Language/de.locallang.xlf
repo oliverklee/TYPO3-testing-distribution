@@ -240,7 +240,7 @@ For security reasons, this link is only active until %s. If you do not visit the
 Diese E-Mail wurde als Antwort auf Ihre Anfrage gesendet, Ihr Passwort zurückzusetzen. Bitte klicken Sie auf den Link unten.
 %s
 
-Aus Sicherheitsgründen ist dieser Link nur bis %saktiv. Wenn Sie den Link vorher nicht besuchen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.</target></trans-unit>
+Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Wenn Sie den Link vorher nicht besuchen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.</target></trans-unit>
     </body>
   </file>
 </xliff>

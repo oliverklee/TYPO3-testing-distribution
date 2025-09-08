@@ -567,6 +567,10 @@
         <source>Search in certain tables</source>
         <target state="final">In ausgewählten Tabellen suchen</target>
       </trans-unit>
+      <trans-unit id="liveSearch.versionizedRecord" approved="yes">
+        <source>Versionized record</source>
+        <target state="final">Versionierter Datensatz</target>
+      </trans-unit>
       <trans-unit id="liveSearch_helpDescriptionPages" approved="yes">
         <source>`#page:Home` will search for all pages with the title "Home"</source>
         <target state="final">`#page:Home` sucht nach allen Seiten mit dem Titel „Home“</target>

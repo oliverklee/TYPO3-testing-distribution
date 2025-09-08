@@ -421,6 +421,14 @@
         <source>Backend user groups</source>
         <target state="final">Backend-Benutzergruppen</target>
       </trans-unit>
+      <trans-unit id="backendUserGroup.noGroupsFound.title" approved="yes">
+        <source>No backend user groups found!</source>
+        <target state="final">Keine Backend-Benutzergruppen gefunden!</target>
+      </trans-unit>
+      <trans-unit id="backendUserGroup.noGroupsFound.message" approved="yes">
+        <source>There are currently no backend user groups found in the database.</source>
+        <target state="final">Derzeit sind keine Backend-Benutzergruppen in der Datenbank vorhanden.</target>
+      </trans-unit>
       <trans-unit id="backendUserGroup.list.section.compare" approved="yes">
         <source>Backend user groups to compare</source>
         <target state="final">Zu vergleichende Backend-Benutzergruppen</target>

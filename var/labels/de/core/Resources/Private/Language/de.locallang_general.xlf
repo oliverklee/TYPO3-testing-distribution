@@ -85,7 +85,7 @@
       </trans-unit>
       <trans-unit id="LGL.caption" approved="yes">
         <source>Caption</source>
-        <target state="final">Bildunterschrift</target>
+        <target state="final">Bildbeschriftung</target>
       </trans-unit>
       <trans-unit id="LGL.subheader" approved="yes">
         <source>Subheader</source>

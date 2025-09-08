@@ -1232,6 +1232,14 @@ Do you want to refresh it now?</source>
         <source>This change will affect which fields are available in the form. Would you like to save now in order to refresh the display?</source>
         <target state="final">Diese Änderung wird die im Formular verfügbaren Felder beeinflussen. Möchten Sie jetzt speichern, um die Anzeige zu aktualisieren?</target>
       </trans-unit>
+      <trans-unit id="mess.refreshRequired.cancel" approved="yes">
+        <source>Keep editing</source>
+        <target state="final">Bearbeitung fortsetzen</target>
+      </trans-unit>
+      <trans-unit id="mess.refreshRequired.confirm" approved="yes">
+        <source>Save and refresh</source>
+        <target state="final">Speichern und aktualisieren</target>
+      </trans-unit>
       <trans-unit id="mess.move_into" approved="yes">
         <source>Move "%s" into "%s"?</source>
         <target state="final">"%s" nach "%s" verschieben?</target>

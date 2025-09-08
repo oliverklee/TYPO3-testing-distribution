@@ -7,11 +7,11 @@
     <body>
       <trans-unit id="sel1" approved="yes">
         <source>Please select the type of page content you wish to create</source>
-        <target state="final">Wählen Sie bitte den Seiteninhaltstyp aus, den Sie erstellen wollen:</target>
+        <target state="final">Wähle bitte den Seiteninhaltstyp aus, den du erstellen willst:</target>
       </trans-unit>
       <trans-unit id="sel2" approved="yes">
         <source>Now, click the position where you wish to place the element on the page</source>
-        <target state="final">Wählen Sie nun die Position aus, an der das Element auf der Seite positioniert werden soll:</target>
+        <target state="final">Wähle als nächstes die Position aus, an der das Element auf der Seite positioniert werden soll:</target>
       </trans-unit>
       <trans-unit id="common" approved="yes">
         <source>Typical page content</source>
@@ -243,7 +243,7 @@
       </trans-unit>
       <trans-unit id="plugins_general_description" approved="yes">
         <source>Select this element type to insert a plugin which cannot be found amongst the options below.</source>
-        <target state="final">Wählen Sie diesen Elementtyp, um ein Plug-In einzufügen, das nicht bei den Optionen oben aufgeführt ist.</target>
+        <target state="final">Wähle diesen Elementtyp aus, um ein Plug-In einzufügen, das nicht in den unten aufgeführten Optionen enthalten ist.</target>
       </trans-unit>
     </body>
   </file>

@@ -87,6 +87,14 @@
         <source>The given subject is no valid URL.</source>
         <target state="final">Der angegebene Wert ist keine gültige URL.</target>
       </trans-unit>
+      <trans-unit id="validation.fileextension.notallowed" approved="yes">
+        <source>The file extension '%s' is not allowed.</source>
+        <target state="final">Die Dateiendung '%s' ist nicht erlaubt.</target>
+      </trans-unit>
+      <trans-unit id="validation.fileextensionmimetypeconsistency.notallowed" approved="yes">
+        <source>The resolved media type "%s" is not allowed for file extension "%s".</source>
+        <target state="final">Der aufgelöste Medientyp "%s" ist für die Dateiendung "%s" nicht zulässig.</target>
+      </trans-unit>
       <trans-unit id="validation.mimetype.notallowed" approved="yes">
         <source>The mime type '%s' is not allowed.</source>
         <target state="final">Der Mime-Typ '%s' ist nicht erlaubt.</target>
