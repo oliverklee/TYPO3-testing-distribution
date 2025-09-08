@@ -343,6 +343,14 @@
         <source>Allowed methods of payment</source>
         <target state="final">Erlaubte Zahlungsarten</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_seminars.divLabelBilling" approved="yes">
+        <source>Billing</source>
+        <target state="final">Abrechnung</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_seminars.billing_start" approved="yes">
+        <source>Start of the billing process</source>
+        <target state="final">Beginn der Rechnungserstellung</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_seminars.divLabelAccess" approved="yes">
         <source>Access</source>
         <target state="final">Zugriff</target>
@@ -448,8 +456,8 @@
         <target state="final">Anmeldekommentare</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.divLabelPaymentInformation" approved="yes">
-        <source>Payment Information</source>
-        <target state="final">Zahlungsinformationen</target>
+        <source>Billing</source>
+        <target state="final">Abrechnung</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.divLabelBillingAddress" approved="yes">
         <source>Billing Address</source>

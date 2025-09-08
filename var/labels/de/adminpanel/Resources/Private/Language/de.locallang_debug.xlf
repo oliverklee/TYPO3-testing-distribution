@@ -117,7 +117,7 @@
       </trans-unit>
       <trans-unit id="submodule.pageTitle.cacheEnabled.extraInfo" approved="yes">
         <source>Visit this page uncached, or disable the cache through this admin panel.</source>
-        <target state="final">Besuchen Sie diese Seite uncached, oder deaktivieren Sie den Cache über das Admin-Panel.</target>
+        <target state="final">Besuche diese Seite uncached, oder deaktiviere den Cache über das Admin-Panel.</target>
       </trans-unit>
     </body>
   </file>
