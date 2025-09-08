@@ -43,7 +43,7 @@
 		"typo3/minimal": "^13.4"
 	},
 	"require-dev": {
-		"ergebnis/composer-normalize": "2.48.1",
+		"ergebnis/composer-normalize": "2.48.2",
 		"friendsofphp/php-cs-fixer": "3.87.1",
 		"helmich/typo3-typoscript-lint": "3.3.0",
 		"phpstan/extension-installer": "1.4.3",
