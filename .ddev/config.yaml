@@ -7,15 +7,15 @@ router_http_port: "8080"
 router_https_port: "8081"
 xdebug_enabled: false
 additional_hostnames:
-  - typo3-testing-9-5-en
-additional_fqdns: [ ]
+    - typo3-testing-9-5-en
+additional_fqdns: []
 database:
-  type: mariadb
-  version: "10.6"
+    type: mariadb
+    version: "10.6"
 use_dns_when_possible: true
 timezone: Europe/Berlin
 composer_version: 1.10.26
-web_environment: [ ]
+web_environment: []
 corepack_enable: false
 
 # Key features of DDEV's config.yaml:
