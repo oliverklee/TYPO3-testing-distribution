@@ -100,6 +100,29 @@ return [
         'processor_path' => '/usr/bin/',
     ],
     'LOG' => [
+        'TYPO3' => [
+            'CMS' => [
+                'deprecations' => [
+                    'writerConfiguration' => [
+                        LogLevel::NOTICE => [
+                            FileWriter::class => [
+                                'disabled' => false,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'HtmlSanitizer' => [
+                'writerConfiguration' => [
+                    LogLevel::DEBUG => [
+                        FileWriter::class => [
+                            'disabled' => false,
+                            'logFileInfix' => 'html',
+                        ],
+                    ],
+                ],
+            ],
+        ],
         'writerConfiguration' => [
             LogLevel::INFO => [
                 FileWriter::class => [
@@ -117,29 +140,6 @@ return [
                 FileWriter::class => [
                     'disabled' => false,
                     'logFileInfix' => 'warning',
-                ],
-            ],
-        ],
-        'TYPO3' => [
-            'HtmlSanitizer' => [
-                'writerConfiguration' => [
-                    LogLevel::DEBUG => [
-                        FileWriter::class => [
-                            'disabled' => false,
-                            'logFileInfix' => 'html',
-                        ],
-                    ],
-                ],
-            ],
-            'CMS' => [
-                'deprecations' => [
-                    'writerConfiguration' => [
-                        LogLevel::NOTICE => [
-                            FileWriter::class => [
-                                'disabled' => false,
-                            ],
-                        ],
-                    ],
                 ],
             ],
         ],
