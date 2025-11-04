@@ -17,6 +17,7 @@
 	"require": {
 		"php": "^8.2",
 		"georgringer/autoswitchtolistview": "^3.0.0",
+		"georgringer/news": "^12.3",
 		"helhum/typo3-console": "^8.1.0",
 		"oliverklee/site-dev": "@dev",
 		"typo3/cms-adminpanel": "^13.4",
