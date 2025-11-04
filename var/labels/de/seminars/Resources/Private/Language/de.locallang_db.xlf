@@ -527,9 +527,21 @@
         <source>Total price for this attendance</source>
         <target state="final">Gesamtpreis dieser Buchung</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_attendances.invoice_date" approved="yes">
+        <source>Invoice date</source>
+        <target state="final">Rechnungsdatum</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_attendances.datepaid" approved="yes">
         <source>Date of payment</source>
         <target state="final">Datum der Bezahlung</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_attendances.invoice_number" approved="yes">
+        <source>Invoice number</source>
+        <target state="final">Rechnungsnummer</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_attendances.customer_number" approved="yes">
+        <source>Customer number</source>
+        <target state="final">Kund_innennummer</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.method_of_payment" approved="yes">
         <source>Method of payment</source>
@@ -564,8 +576,8 @@
         <target state="final">divers</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.address" approved="yes">
-        <source>Address</source>
-        <target state="final">Adresse</target>
+        <source>Street address</source>
+        <target state="final">Straße und Hausnummer</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.zip" approved="yes">
         <source>ZIP</source>

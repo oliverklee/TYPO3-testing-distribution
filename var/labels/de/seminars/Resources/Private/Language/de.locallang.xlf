@@ -1508,6 +1508,10 @@ Sie hatten sich für die Veranstaltung "%eventTitle" (%eventDate) angemeldet.			
         <source>Date</source>
         <target state="final">Datum</target>
       </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.property.regularRegistrations" approved="yes">
+        <source>Registrations</source>
+        <target state="final">Anmeldungen</target>
+      </trans-unit>
       <trans-unit id="plugin.frontEndEditor.property.description" approved="yes">
         <source>Description</source>
         <target state="final">Beschreibung</target>
@@ -2137,6 +2141,18 @@ Sie hatten sich für die Veranstaltung "%eventTitle" (%eventDate) angemeldet.			
       <trans-unit id="backEndModule.events.property.seats.noLimit" approved="yes">
         <source>This event allows an unlimited registrations.</source>
         <target state="final">Bei dieser Veranstaltung sind unbegrenzt viele Anmeldungen möglich.</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.events.property.invoicingStatus" approved="yes">
+        <source>Invoicing</source>
+        <target state="final">Abrechnung</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.events.property.invoicingStatus.invoiced" approved="yes">
+        <source>⏳ invoiced</source>
+        <target state="final">⏳ berechnet</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.events.property.invoicingStatus.paid" approved="yes">
+        <source>✅ paid</source>
+        <target state="final">✅ bezahlt</target>
       </trans-unit>
       <trans-unit id="backEndModule.events.property.registrations" approved="yes">
         <source>Registrations</source>
