@@ -388,6 +388,14 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Show</source>
         <target state="final">Anzeigen</target>
       </trans-unit>
+      <trans-unit id="labels.openTreeOptionsMenu" approved="yes">
+        <source>Open tree options menu</source>
+        <target state="final">Baum-Options-Menü öffnen</target>
+      </trans-unit>
+      <trans-unit id="labels.openPageTreeOptionsMenu" approved="yes">
+        <source>Open page tree options menu</source>
+        <target state="final">Seitenbaum-Options-Menü öffnen</target>
+      </trans-unit>
       <trans-unit id="labels.refresh" approved="yes">
         <source>Reload the tree from server</source>
         <target state="final">Baumansicht aktualisieren</target>

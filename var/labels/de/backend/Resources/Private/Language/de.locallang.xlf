@@ -270,6 +270,10 @@
         <source>Toggle color scheme between light and dark mode</source>
         <target state="final">Umschalten des Farbschemas zwischen hellem und dunklem Modus</target>
       </trans-unit>
+      <trans-unit id="colorSchemeToggleDisabled" approved="yes">
+        <source>Due to your current accessibility settings, the color scheme cannot be changed.</source>
+        <target state="final">Aufgrund deiner aktuellen Einstellungen für die Barrierefreiheit kann das Farbschema nicht geändert werden.</target>
+      </trans-unit>
       <trans-unit id="colorScheme.auto" approved="yes">
         <source>Auto detect</source>
         <target state="final">Automatisch erkennen</target>
