@@ -46,6 +46,7 @@
 		"typo3/cms-setup": "^11.5",
 		"typo3/cms-tstemplate": "^11.5",
 		"typo3/cms-viewpage": "^11.5",
+		"typo3/cms-workspaces": "^11.5",
 		"typo3/minimal": "^11.5"
 	},
 	"require-dev": {

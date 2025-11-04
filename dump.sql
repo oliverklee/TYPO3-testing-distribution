@@ -175,7 +175,7 @@ CREATE TABLE `be_users` (
   `uc` mediumblob DEFAULT NULL,
   `file_mountpoints` text DEFAULT NULL,
   `file_permissions` text DEFAULT NULL,
-  `workspace_perms` smallint(6) NOT NULL DEFAULT 1,
+  `workspace_perms` smallint(6) NOT NULL DEFAULT 0,
   `TSconfig` text DEFAULT NULL,
   `lastlogin` int(10) unsigned NOT NULL DEFAULT 0,
   `workspace_id` int(11) NOT NULL DEFAULT 0,
@@ -2305,6 +2305,31 @@ INSERT INTO `sys_language` VALUES
 UNLOCK TABLES;
 
 --
+-- Table structure for table `sys_preview`
+--
+
+DROP TABLE IF EXISTS `sys_preview`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `sys_preview` (
+  `keyword` varchar(32) NOT NULL DEFAULT '',
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `endtime` int(11) NOT NULL DEFAULT 0,
+  `config` text DEFAULT NULL,
+  PRIMARY KEY (`keyword`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_preview`
+--
+
+LOCK TABLES `sys_preview` WRITE;
+/*!40000 ALTER TABLE `sys_preview` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_preview` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sys_redirect`
 --
 
@@ -2419,9 +2444,9 @@ INSERT INTO `sys_registry` VALUES
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
-(51,'languagePacks','de-tea','i:1757317583;'),
-(52,'languagePacks','de','i:1757317583;'),
-(54,'languagePacks','de-static_info_tables','i:1757317583;'),
+(51,'languagePacks','de-tea','i:1762277311;'),
+(52,'languagePacks','de','i:1762277312;'),
+(54,'languagePacks','de-static_info_tables','i:1762277311;'),
 (55,'extensionDataImport','typo3/cms-scheduler/ext_tables_static+adt.sql','s:0:\"\";'),
 (56,'extensionDataImport','typo3/cms-indexed-search/ext_tables_static+adt.sql','s:0:\"\";'),
 (60,'installUpdate','TYPO3\\CMS\\Install\\Updates\\ShortcutRecordsMigration','i:1;'),
@@ -2484,6 +2509,89 @@ INSERT INTO `sys_template` VALUES
 (4,5,1627921886,1627921886,1,0,0,0,0,256,'',0,0,0,0,0,'seminars (for the BE module)',0,0,'','','','3',0,0),
 (5,6,1714581031,1714581031,2,0,0,0,0,64,'',0,0,0,0,0,'onetimeaccount',0,0,'EXT:onetimeaccount/Configuration/TypoScript','','','',0,0);
 /*!40000 ALTER TABLE `sys_template` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_workspace`
+--
+
+DROP TABLE IF EXISTS `sys_workspace`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `sys_workspace` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
+  `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
+  `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `description` text DEFAULT NULL,
+  `title` varchar(30) NOT NULL DEFAULT '',
+  `adminusers` varchar(4000) NOT NULL DEFAULT '',
+  `members` varchar(4000) NOT NULL DEFAULT '',
+  `db_mountpoints` text DEFAULT NULL,
+  `file_mountpoints` text DEFAULT NULL,
+  `publish_time` int(11) NOT NULL DEFAULT 0,
+  `freeze` smallint(6) NOT NULL DEFAULT 0,
+  `live_edit` smallint(6) NOT NULL DEFAULT 0,
+  `publish_access` smallint(6) NOT NULL DEFAULT 0,
+  `previewlink_lifetime` int(11) NOT NULL DEFAULT 0,
+  `custom_stages` int(11) NOT NULL DEFAULT 0,
+  `stagechg_notification` smallint(6) NOT NULL DEFAULT 0,
+  `edit_notification_defaults` varchar(255) NOT NULL DEFAULT '',
+  `edit_notification_preselection` smallint(6) NOT NULL DEFAULT 3,
+  `edit_allow_notificaton_settings` smallint(6) NOT NULL DEFAULT 0,
+  `publish_notification_defaults` varchar(255) NOT NULL DEFAULT '',
+  `publish_notification_preselection` smallint(6) NOT NULL DEFAULT 3,
+  `publish_allow_notificaton_settings` smallint(6) NOT NULL DEFAULT 0,
+  `execute_notification_defaults` varchar(255) NOT NULL DEFAULT '',
+  `execute_notification_preselection` smallint(6) NOT NULL DEFAULT 3,
+  `execute_allow_notificaton_settings` smallint(6) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`,`deleted`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_workspace`
+--
+
+LOCK TABLES `sys_workspace` WRITE;
+/*!40000 ALTER TABLE `sys_workspace` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_workspace` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_workspace_stage`
+--
+
+DROP TABLE IF EXISTS `sys_workspace_stage`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `sys_workspace_stage` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
+  `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
+  `deleted` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `sorting` int(11) NOT NULL DEFAULT 0,
+  `title` varchar(30) NOT NULL DEFAULT '',
+  `responsible_persons` varchar(255) NOT NULL DEFAULT '',
+  `default_mailcomment` text DEFAULT NULL,
+  `parentid` int(11) NOT NULL DEFAULT 0,
+  `parenttable` varchar(255) NOT NULL DEFAULT '',
+  `notification_defaults` varchar(255) NOT NULL DEFAULT '',
+  `allow_notificaton_settings` smallint(6) NOT NULL DEFAULT 0,
+  `notification_preselection` smallint(6) NOT NULL DEFAULT 8,
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`,`deleted`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_workspace_stage`
+--
+
+LOCK TABLES `sys_workspace_stage` WRITE;
+/*!40000 ALTER TABLE `sys_workspace_stage` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_workspace_stage` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -12246,4 +12354,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-04 18:27:03
+-- Dump completed on 2025-11-04 18:28:47
