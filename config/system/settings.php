@@ -18,11 +18,11 @@ return [
         'Connections' => [
             'Default' => [
                 'charset' => 'utf8mb4',
-                'driver' => 'pdo_mysql',
                 'defaultTableOptions' => [
                     'charset' => 'utf8mb4',
                     'collation' => 'utf8mb4_unicode_ci',
                 ],
+                'driver' => 'pdo_mysql',
             ],
         ],
     ],
@@ -43,10 +43,6 @@ return [
             'loginHighlightColor' => '',
             'loginLogo' => '',
             'loginLogoAlt' => '',
-        ],
-        'extensionmanager' => [
-            'automaticInstallation' => '1',
-            'offlineMode' => '0',
         ],
         'indexed_search' => [
             'catdoc' => '/usr/bin/',
@@ -90,6 +86,10 @@ return [
         'onetimeaccount' => [
             'enableConfigCheck' => '1',
         ],
+        'redirects' => [
+            'showCheckIntegrityInfoInReports' => '1',
+            'showCheckIntegrityInfoInReportsSeconds' => '86400',
+        ],
         'scheduler' => [
             'maxLifetime' => '1440',
         ],
@@ -115,6 +115,29 @@ return [
         'processor_path' => '/usr/bin/',
     ],
     'LOG' => [
+        'TYPO3' => [
+            'CMS' => [
+                'deprecations' => [
+                    'writerConfiguration' => [
+                        LogLevel::NOTICE => [
+                            FileWriter::class => [
+                                'disabled' => false,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'HtmlSanitizer' => [
+                'writerConfiguration' => [
+                    LogLevel::DEBUG => [
+                        FileWriter::class => [
+                            'disabled' => false,
+                            'logFileInfix' => 'html',
+                        ],
+                    ],
+                ],
+            ],
+        ],
         'writerConfiguration' => [
             LogLevel::INFO => [
                 FileWriter::class => [
@@ -132,29 +155,6 @@ return [
                 FileWriter::class => [
                     'disabled' => false,
                     'logFileInfix' => 'warning',
-                ],
-            ],
-        ],
-        'TYPO3' => [
-            'HtmlSanitizer' => [
-                'writerConfiguration' => [
-                    LogLevel::DEBUG => [
-                        FileWriter::class => [
-                            'disabled' => false,
-                            'logFileInfix' => 'html',
-                        ],
-                    ],
-                ],
-            ],
-            'CMS' => [
-                'deprecations' => [
-                    'writerConfiguration' => [
-                        LogLevel::NOTICE => [
-                            FileWriter::class => [
-                                'disabled' => false,
-                            ],
-                        ],
-                    ],
                 ],
             ],
         ],
