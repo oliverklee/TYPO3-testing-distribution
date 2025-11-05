@@ -77,20 +77,17 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		],
-		"ci": [
-			"@ci:static"
-		],
-		"ci:composer:normalize": [
+		"check:composer:normalize": [
 			"@composer normalize --dry-run --no-check-lock",
 			"@composer normalize --dry-run --no-check-lock src/extensions/site-dev/composer.json"
 		],
-		"ci:php:lint": "find public/typo3conf/LocalConfiguration.php src/extensions/site-dev -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
-		"ci:static": [
-			"@ci:composer:normalize",
-			"@ci:php:lint",
-			"@ci:yaml:lint"
+		"check:php:lint": "find public/typo3conf/LocalConfiguration.php src/extensions/site-dev -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"check:static": [
+			"@check:composer:normalize",
+			"@check:php:lint",
+			"@check:yaml:lint"
 		],
-		"ci:yaml:lint": "find .ddev .github config src/extensions/site-dev -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
+		"check:yaml:lint": "find .ddev .github config src/extensions/site-dev -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
 		"fix": [
 			"@fix:composer"
 		],
@@ -103,11 +100,10 @@
 		]
 	},
 	"scripts-descriptions": {
-		"ci": "Runs all code checks.",
-		"ci:composer:normalize": "Checks the formatting and structure of the composer.json.",
-		"ci:php:lint": "Lints the PHP files for syntax errors.",
-		"ci:static": "Runs all static code checks (syntax, style, types).",
-		"ci:yaml:lint": "Lints the YAML files for syntax errors.",
+		"check:composer:normalize": "Checks the formatting and structure of the composer.json.",
+		"check:php:lint": "Lints the PHP files for syntax errors.",
+		"check:static": "Runs all static code checks (syntax, style, types).",
+		"check:yaml:lint": "Lints the YAML files for syntax errors.",
 		"fix": "Reformats the code.",
 		"fix:composer": "Reformats and sorts the composer.json files."
 	}
