@@ -48,7 +48,7 @@ return RectorConfig::configure()
         // PHPUnit sets
 
         // PHPUnitSetList::PHPUNIT80_DMS,
-        PHPUnitSetList::PHPUNIT_100,
+        PHPUnitSetList::PHPUNIT_110,
         // PHPUnitSetList::PHPUNIT_CODE_QUALITY,
 
         // TYPO3 Sets

@@ -53,14 +53,14 @@
 		"phpstan/phpstan": "2.1.31",
 		"phpstan/phpstan-phpunit": "2.0.7",
 		"phpstan/phpstan-strict-rules": "2.0.7",
-		"phpunit/phpunit": "10.5.45",
+		"phpunit/phpunit": "^11.5.43",
 		"saschaegerer/phpstan-typo3": "2.1.1",
 		"seld/jsonlint": "1.11.0",
 		"ssch/typo3-rector": "3.7.0",
 		"ssch/typo3-rector-testing-framework": "3.0.0",
 		"symfony/yaml": "7.2.5",
 		"typo3/coding-standards": "0.8.0",
-		"typo3/testing-framework": "8.2.7"
+		"typo3/testing-framework": "^9.2.0"
 	},
 	"repositories": [
 		{
