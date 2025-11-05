@@ -114,13 +114,13 @@
 		"check:yaml:lint": "find .ddev .github config src/extensions/site-dev -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
 		"fix": [
 			"@fix:composer",
-			"@fix:php:cs"
+			"@fix:php:cs-fixer"
 		],
 		"fix:composer": [
 			"@composer normalize --no-check-lock",
 			"@composer normalize --no-check-lock src/extensions/site-dev/composer.json"
 		],
-		"fix:php:cs": "php-cs-fixer fix --config .php-cs-fixer.php",
+		"fix:php:cs-fixer": "php-cs-fixer fix --config .php-cs-fixer.php",
 		"phpstan:baseline": "phpstan --generate-baseline=phpstan-baseline.neon --allow-empty-baseline",
 		"typo3-cms-scripts": [
 			"typo3 install:fixfolderstructure"
@@ -139,7 +139,7 @@
 		"check:yaml:lint": "Lints the YAML files for syntax errors.",
 		"fix": "Reformats the code.",
 		"fix:composer": "Reformats and sorts the composer.json files.",
-		"fix:php:cs": "Fixes the code style with PHP-CS-Fixer.",
+		"fix:php:cs-fixer": "Fixes the code style with PHP-CS-Fixer.",
 		"phpstan:baseline": "Updates the PHPStan baseline file to match the code."
 	}
 }
