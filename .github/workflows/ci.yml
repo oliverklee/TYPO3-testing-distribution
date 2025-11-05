@@ -20,7 +20,7 @@ jobs:
       - name: "Show the Composer configuration"
         run: composer config --global --list
       - name: "Run PHP lint"
-        run: "composer ci:php:lint"
+        run: "composer check:php:lint"
     strategy:
       fail-fast: false
       matrix:
@@ -77,7 +77,7 @@ jobs:
       - name: "Install Composer dependencies"
         run: "composer update --no-progress"
       - name: "Run command"
-        run: "composer ci:${{ matrix.command }}"
+        run: "composer check:${{ matrix.command }}"
     strategy:
       fail-fast: false
       matrix:
