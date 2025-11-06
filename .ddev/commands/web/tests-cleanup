@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## Description: Clean up temporary data from the functional tests
+## Usage: tests-cleanup
+## Example: "ddev tests-cleanup"
+
+rm -rf public/typo3temp/var/tests/
+
+echo 'Finished removing temporary test data.'
