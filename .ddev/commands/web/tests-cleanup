@@ -5,5 +5,7 @@
 ## Example: "ddev tests-cleanup"
 
 rm -rf public/typo3temp/var/tests/
+echo 'Finished removing temporary test directories.'
 
-echo 'Finished removing temporary test data.'
+ddev mariadb --skip-column-names <<< 'SELECT CONCAT("DROP DATABASE ", SCHEMA_NAME, ";") FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME LIKE "%test%";' | ddev mariadb --verbose
+echo 'Finished removing test databases.'
