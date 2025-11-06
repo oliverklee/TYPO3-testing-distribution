@@ -53,8 +53,6 @@ The DDEVd documentation provides very good
 After that, you need to configure the PhpStorm templates for PHPUnit tests:
 
 - Configuration file: `config/UnitTests.xml`
-- Environment variables:
-  `typo3DatabaseUsername=root;typo3DatabaseHost=db;TYPO3_PATH_WEB=public/;typo3DatabaseName=typo3_test;typo3DatabasePassword=root`
 
 Also, `config/UnitTests.xml` is the configuration file for unit tests,
 while `config/FunctionalTests.xml` is the corresponding file for functional
