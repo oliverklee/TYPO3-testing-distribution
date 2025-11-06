@@ -108,6 +108,10 @@
 			"@check:typoscript:lint",
 			"@check:yaml:lint"
 		],
+		"check:tests": [
+			"@check:tests:unit",
+			"@check:tests:functional"
+		],
 		"check:tests:functional": "phpunit -c config/FunctionalTests.xml",
 		"check:tests:unit": "phpunit -c config/UnitTests.xml",
 		"check:typoscript:lint": "typoscript-lint -c config/TypoScriptLint.yaml --ansi -n --fail-on-warnings -vvv src/extensions/site-dev/Configuration/*.tsconfig src/extensions/site-dev/Configuration/TypoScript",
@@ -133,6 +137,7 @@
 		"check:php:lint": "Lints the PHP files for syntax errors.",
 		"check:php:stan": "Checks the PHP types using PHPStan.",
 		"check:static": "Runs all static code checks (syntax, style, types).",
+		"check:tests": "Runs all tests (unit and functional).",
 		"check:tests:functional": "Runs the functional tests.",
 		"check:tests:unit": "Runs the unit tests.",
 		"check:typoscript:lint": "Lints the TypoScript files.",
