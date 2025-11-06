@@ -7,5 +7,5 @@
 rm -rf public/typo3temp/var/tests/
 echo 'Finished removing temporary test directories.'
 
-ddev mariadb --skip-column-names <<< 'SELECT CONCAT("DROP DATABASE ", SCHEMA_NAME, ";") FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME LIKE "%test%";' | ddev mariadb --verbose
+mariadb --skip-column-names <<< 'SELECT CONCAT("DROP DATABASE ", SCHEMA_NAME, ";") FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME LIKE "%test%";' | mariadb --verbose
 echo 'Finished removing test databases.'
