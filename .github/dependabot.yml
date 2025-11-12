@@ -3,11 +3,15 @@
 version: 2
 updates:
   - package-ecosystem: "github-actions"
+    target_branch: 13.x
+    milestone: 3
     directory: "/"
     schedule:
       interval: "daily"
 
   - package-ecosystem: "composer"
+    target_branch: 13.x
+    milestone: 3
     directory: "/"
     schedule:
       interval: "daily"
