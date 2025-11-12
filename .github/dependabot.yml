@@ -18,3 +18,37 @@ updates:
     allow:
       - dependency-type: "development"
     versioning-strategy: "increase"
+
+  - package-ecosystem: "github-actions"
+    target_branch: 12.x
+    milestone: 2
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "composer"
+    target_branch: 12.x
+    milestone: 2
+    directory: "/"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-type: "development"
+    versioning-strategy: "increase"
+
+  - package-ecosystem: "github-actions"
+    target_branch: 11.x
+    milestone: 1
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "composer"
+    target_branch: 11.x
+    milestone: 1
+    directory: "/"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-type: "development"
+    versioning-strategy: "increase"
