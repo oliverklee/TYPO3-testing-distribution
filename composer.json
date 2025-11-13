@@ -68,7 +68,7 @@
 			"typo3/cms-composer-installers": true
 		},
 		"audit": {
-			"block-abandoned": true,
+			"block-abandoned": false,
 			"block-insecure": false
 		},
 		"lock": false,
