@@ -67,6 +67,10 @@
 			"typo3/class-alias-loader": true,
 			"typo3/cms-composer-installers": true
 		},
+		"audit": {
+			"block-abandoned": true,
+			"block-insecure": false
+		},
 		"lock": false,
 		"preferred-install": {
 			"*": "dist"
