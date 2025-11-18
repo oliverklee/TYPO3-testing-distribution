@@ -93,7 +93,7 @@
 			<target state="final">Bitte wählen Sie eine Seite im Seitenbaum aus, um Änderungen zu überprüfen und zu veröffentlichen.</target></trans-unit>
       <trans-unit id="admin.noWorkspaceSetup.title" resname="admin.noWorkspaceSetup.title" xml:space="preserve" approved="yes">
 				<source>No workspace set up!</source>
-			<target state="final">Kein Arbeitsbereich eingerichtet!</target></trans-unit>
+			<target state="final">Keine Arbeitsumgebung eingerichtet!</target></trans-unit>
       <trans-unit id="admin.noWorkspaceSetup.message" resname="admin.noWorkspaceSetup.message" xml:space="preserve" approved="yes">
 				<source>There are currently no workspace records configured in the database. To use the workspace
 					functionality, at least one workspace must be set up on the root page.
