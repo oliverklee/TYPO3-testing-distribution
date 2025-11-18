@@ -121,6 +121,9 @@
       <trans-unit id="flexforms_general.archiveRestriction.active" xml:space="preserve" approved="yes">
 				<source>Only active (non archived)</source>
 			<target state="final">Nur aktive (nicht archiviert)</target></trans-unit>
+      <trans-unit id="flexforms_general.archiveRestriction.none" xml:space="preserve" approved="yes">
+                <source>None</source>
+            <target state="final">Keine</target></trans-unit>
       <trans-unit id="flexforms_general.archiveRestriction.archived" xml:space="preserve" approved="yes">
 				<source>Archived</source>
 			<target state="final">Archivierte</target></trans-unit>
@@ -220,6 +223,9 @@
       <trans-unit id="flexforms_general.recursive.I.inherit" xml:space="preserve" approved="yes">
 				<source>Defined in TypoScript</source>
 			<target state="final">Definiert in TypoScript</target></trans-unit>
+      <trans-unit id="flexforms_general.no-constraint" xml:space="preserve" approved="yes">
+				<source>No constraint </source>
+			<target state="final">keine Einschränkung </target></trans-unit>
       <trans-unit id="flexforms_general.selectedList" xml:space="preserve" approved="yes">
 				<source>List of articles</source>
 			<target state="final">Liste der Artikel</target></trans-unit>
@@ -577,7 +583,7 @@ TCEFORM.tx_news_domain_model_news.categories.PAGE_TSCONFIG_IDLIST=120. Dieses Fe
 			<target state="final">Der Import wurde erfolgreich abgeschlossen. Laden Sie das Modul neu um einen neuen Import zu starten.</target></trans-unit>
       <trans-unit id="import.backupwarning" xml:space="preserve" approved="yes">
 				<source>It's strongly recommended to backup all news tables before running an import job.</source>
-			<target state="final">Es wird dringend dazu geraten, ein Backup der Datenbank und Dateien zu erstellen, bevor der Import Job durchgeführt wird</target></trans-unit>
+			<target state="final">Es wird dringend dazu geraten, ein Backup der Datenbank und Dateien zu erstellen, bevor der Import Job durchgeführt wird.</target></trans-unit>
       <trans-unit id="import.backupwarning.header" xml:space="preserve" approved="yes">
 				<source>Important!</source>
 			<target state="final">Wichtig!</target></trans-unit>

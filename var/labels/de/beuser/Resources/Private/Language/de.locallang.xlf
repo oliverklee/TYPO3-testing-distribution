@@ -339,7 +339,7 @@
       </trans-unit>
       <trans-unit id="backendUser.list.filter.status.disabled" approved="yes">
         <source>Disabled</source>
-        <target state="final">Dektiviert</target>
+        <target state="final">Deaktiviert</target>
       </trans-unit>
       <trans-unit id="backendUser.list.filter.userType" approved="yes">
         <source>Type</source>
