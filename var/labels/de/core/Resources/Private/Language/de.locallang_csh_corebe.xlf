@@ -478,7 +478,7 @@ EXT:core/Resources/Public/Images/cshimages/core_24.png,</target><note>This strin
 				<source>The Content Element wizard presents a set of preset types. Just select one by clicking its title.
 After selecting the type you will (often) have to select a position of the element among the other existing Content Elements on the page.
 You can access the Content Element wizard from the Create new record dialog.</source>
-			<target state="final">Der Assistent für Inhaltselemente führt einen Satz verschiedener Elementtypen auf. Wählen Sie einen durch einen Klick aus. Nach der Auswahl des Typs ist es (oft) erforderlich, für das Element eine Position innerhalb der bereits vorhandenen Elemente auf der Seite festzulegen. Auf den Assistenten "Neues Inhaltselement erstellen" kann über den Dialog "Neuen Datensatz erstellen" zugegriffen werden.</target></trans-unit>
+			<target state="final">Der Assistent für Inhaltselemente führt einen Satz verschiedener Elementtypen auf. Wähle einen durch einen Klick aus. Nach der Auswahl des Typs ist es (oft) erforderlich, für das Element eine Position innerhalb der bereits vorhandenen Elemente auf der Seite festzulegen. Auf den Assistenten "Neues Inhaltselement erstellen" kann über den Dialog "Neuen Datensatz erstellen" zugegriffen werden.</target></trans-unit>
       <trans-unit id="move_el_pages.alttitle" resname="move_el_pages.alttitle" approved="yes">
         <source>Move page wizard</source>
         <target state="final">Assistent "Seite verschieben"</target>

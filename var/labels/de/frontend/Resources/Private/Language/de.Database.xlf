@@ -69,7 +69,7 @@
       </trans-unit>
       <trans-unit id="tt_content.table_caption" resname="tt_content.table_caption" approved="yes">
         <source>Table caption</source>
-        <target state="final">Tabellenunterschrift</target>
+        <target state="final">Tabellenbeschriftung</target>
       </trans-unit>
       <trans-unit id="tt_content.table_delimiter" resname="tt_content.table_delimiter" approved="yes">
         <source>Field Delimiter</source>

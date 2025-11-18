@@ -13,11 +13,11 @@
       </trans-unit>
       <trans-unit id="noEditItems" resname="noEditItems" approved="yes">
         <source>Sorry, you do not have permissions to edit items on this page!</source>
-        <target state="final">Sie haben leider nicht die notwendigen Rechte, um Elemente dieser Seite zu bearbeiten!</target>
+        <target state="final">Du hast leider nicht die notwendigen Rechte, um Elemente dieser Seite zu bearbeiten!</target>
       </trans-unit>
       <trans-unit id="noEditPage" resname="noEditPage" approved="yes">
         <source>Sorry, you do not have permissions to edit this page!</source>
-        <target state="final">Sie haben leider nicht die notwendigen Rechte, um diese Seite zu bearbeiten!</target>
+        <target state="final">Du hast leider nicht die notwendigen Rechte, um diese Seite zu bearbeiten!</target>
       </trans-unit>
       <trans-unit id="moveUp" resname="moveUp" approved="yes">
         <source>Move record up</source>
@@ -201,7 +201,7 @@
       </trans-unit>
       <trans-unit id="noAccess_msg" resname="noAccess_msg" approved="yes">
         <source>You do not have access to edit the requested record.</source>
-        <target state="final">Sie haben keinen Bearbeitungszugriff für den angeforderten Datensatz.</target>
+        <target state="final">Du hast keinen Bearbeitungszugriff für den angeforderten Datensatz.</target>
       </trans-unit>
       <trans-unit id="notAssigned" resname="notAssigned" approved="yes">
         <source>Not assigned</source>
@@ -409,7 +409,7 @@
       </trans-unit>
       <trans-unit id="staleTranslationWarning" resname="staleTranslationWarning" approved="yes">
         <source>Make sure that this behavior is intended and does not pose a problem for you. We highlighted the problematic records for you.</source>
-        <target state="final">Stellen Sie sicher, dass dieses Verhalten gewünscht ist und kein Problem für Sie darstellt. Die problematischen Datensätze wurden hervorgehoben.</target>
+        <target state="final">Stelle sicher, dass dieses Verhalten gewünscht ist und kein Problem für dich darstellt. Die problematischen Datensätze wurden hervorgehoben.</target>
       </trans-unit>
       <trans-unit id="staleTranslationWarningTitle" resname="staleTranslationWarningTitle" approved="yes">
         <source>Inconsistent content detected in language "%s"</source>
@@ -429,7 +429,7 @@
       </trans-unit>
       <trans-unit id="staleUnusedElementsWarning" resname="staleUnusedElementsWarning" approved="yes">
         <source>These elements don't belong to any of the available columns of this page. You should either delete them or move them to existing columns. We highlighted the problematic records for you.</source>
-        <target state="final">Diese Elemente gehören zu keiner der verfügbaren Spalten dieser Seite. Sie sollten sie entweder löschen oder sie in bestehende Spalten verschieben. Die problematischen Datensätze wurden hervorgehoben.</target>
+        <target state="final">Diese Elemente gehören zu keiner der verfügbaren Spalten dieser Seite. Du solltest sie entweder löschen oder in bestehende Spalten verschieben. Die problematischen Datensätze wurden hervorgehoben.</target>
       </trans-unit>
       <trans-unit id="staleUnusedElementsWarningTitle" resname="staleUnusedElementsWarningTitle" approved="yes">
         <source>Unused elements detected on this page</source>
@@ -469,7 +469,7 @@
       </trans-unit>
       <trans-unit id="localize.view.chooseLanguage" resname="localize.view.chooseLanguage" approved="yes">
         <source>Choose the language from which you want to localize the content</source>
-        <target state="final">Wählen Sie die Sprache, von der aus Sie Inhalte lokalisieren möchten</target>
+        <target state="final">Wähle die Sprache aus, von der du Inhalte lokalisieren möchtest</target>
       </trans-unit>
       <trans-unit id="localize.view.summary" resname="localize.view.summary" approved="yes">
         <source>Record summary</source>
@@ -506,11 +506,11 @@
 				</target></trans-unit>
       <trans-unit id="error.invalidBackendLayout" resname="error.invalidBackendLayout" approved="yes">
         <source>The selected page layout is mis-configured, no columns are specified to be editable. Please update your backend layout to have at least one parameter "colPos" set.</source>
-        <target state="final">Das ausgewählte Seitenlayout ist falsch konfiguriert: Es sind keine Spalten als bearbeitbar festgelegt. Bitte aktualisieren Sie Ihr Backendlayout in der Art, dass zumindest einmal der Parameter "colPos" gesetzt ist.</target>
+        <target state="final">Das ausgewählte Seitenlayout ist falsch konfiguriert: Es sind keine Spalten als bearbeitbar festgelegt. Bitte aktualisiere dein Backendlayout so, dass zumindest einmal der Parameter "colPos" gesetzt ist.</target>
       </trans-unit>
       <trans-unit id="dragdrop.copy.message" resname="dragdrop.copy.message" approved="yes">
         <source>Press CTRL to copy</source>
-        <target state="final">Drücken Sie Strg zum Kopieren</target>
+        <target state="final">Drücke &lt;kbd&gt;Strg&lt;/kbd&gt; oder &lt;kbd&gt;Cmd&lt;/kbd&gt; zum Kopieren</target>
       </trans-unit>
     </body>
   </file>

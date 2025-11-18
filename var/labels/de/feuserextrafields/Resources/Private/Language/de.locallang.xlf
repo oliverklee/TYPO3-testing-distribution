@@ -91,6 +91,10 @@
         <source>VAT identification number (VATIN)</source>
         <target state="final">Umsatzsteuer-Identifikationsnummer (USt-IdNr.)</target>
       </trans-unit>
+      <trans-unit id="department" approved="yes">
+        <source>Department</source>
+        <target state="final">Abteilung</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
