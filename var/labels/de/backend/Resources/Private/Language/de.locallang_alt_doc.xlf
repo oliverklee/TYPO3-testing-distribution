@@ -37,7 +37,7 @@
       </trans-unit>
       <trans-unit id="noDocuments_msg2" resname="noDocuments_msg2" approved="yes">
         <source>You can go to %s to find the page or the record you wish to edit.</source>
-        <target state="final">Rufen Sie %s auf, um die Seite oder den Datensatz zu finden, den Sie bearbeiten möchten.</target>
+        <target state="final">Rufe %s auf, um die Seite oder den Datensatz zu finden, den du bearbeiten möchtest.</target>
       </trans-unit>
       <trans-unit id="noDocuments_msg3" resname="noDocuments_msg3" approved="yes">
         <source>You can select one of your most recently edited records from this list</source>
@@ -85,7 +85,7 @@
       </trans-unit>
       <trans-unit id="label.confirm.duplicate_record_changed.content" resname="label.confirm.duplicate_record_changed.content" approved="yes">
         <source>You currently have unsaved changes. Do you want to save your changes before duplicating this record?</source>
-        <target state="final">Es gibt ungespeicherte Änderungen. Möchten Sie Ihre Änderungen speichern bevor der Datensatz dupliziert wird?</target>
+        <target state="final">Es gibt ungespeicherte Änderungen. Möchtest du deine Änderungen speichern bevor der Datensatz dupliziert wird?</target>
       </trans-unit>
       <trans-unit id="label.confirm.new_record_changed.title" resname="label.confirm.new_record_changed.title" approved="yes">
         <source>Do you want to save before adding?</source>
@@ -93,7 +93,7 @@
       </trans-unit>
       <trans-unit id="label.confirm.new_record_changed.content" resname="label.confirm.new_record_changed.content" approved="yes">
         <source>You need to save your changes before creating a new record. Do you want to save and create now?</source>
-        <target state="final">Sie müssen Ihre Änderungen vor dem Erstellen eines neuen Datensatzes speichern. Jetzt speichern und erstellen?</target>
+        <target state="final">Bevor du einen neuen Datensatz erstellst, musst du deine Änderungen speichern. Möchtest du speichern und den neuen Datensatz erstellen?</target>
       </trans-unit>
       <trans-unit id="buttons.confirm.new_record_changed.cancel" resname="buttons.confirm.new_record_changed.cancel" approved="yes">
         <source>Cancel</source>
@@ -113,11 +113,11 @@
       </trans-unit>
       <trans-unit id="label.confirm.view_record_changed.content" resname="label.confirm.view_record_changed.content" approved="yes">
         <source>You currently have unsaved changes. You can either discard these changes or save and view them.</source>
-        <target state="final">Es gibt ungespeicherte Änderungen. Sie können diese Änderungen entweder verwerfen oder speichern und sie anzeigen.</target>
+        <target state="final">Es gibt ungespeicherte Änderungen. Du kannst diese Änderungen entweder verwerfen oder speichern und anzeigen lassen.</target>
       </trans-unit>
       <trans-unit id="label.confirm.view_record_changed.content.is-new-page" resname="label.confirm.view_record_changed.content.is-new-page" approved="yes">
         <source>You need to save your changes before viewing the page. Do you want to save and view them now?</source>
-        <target state="final">Sie müssen Ihre Änderungen speichern bevor Sie die Seite anzeigen. Möchten Sie jetzt speichern und anzeigen?</target>
+        <target state="final">Du musst deine Änderungen speichern, bevor du die Seite anzeigen kannst. Möchtest du speichern und die Seite anzeigen?</target>
       </trans-unit>
       <trans-unit id="buttons.confirm.view_record_changed.cancel" resname="buttons.confirm.view_record_changed.cancel" approved="yes">
         <source>Cancel</source>

@@ -757,7 +757,7 @@
       </trans-unit>
       <trans-unit id="sys_file_reference.description" resname="sys_file_reference.description" approved="yes">
         <source>Description (Caption)</source>
-        <target state="final">Beschreibung (Bildunterschrift)</target>
+        <target state="final">Beschreibung (Bildbeschriftung)</target>
       </trans-unit>
       <trans-unit id="sys_file_reference.downloadname" resname="sys_file_reference.downloadname" approved="yes">
         <source>Download Name</source>

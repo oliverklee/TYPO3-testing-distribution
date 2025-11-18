@@ -312,7 +312,7 @@ be_groups:non_exclude_fields</source>
 			<target state="final">be_groups:pagetypes_select, be_groups:tables_modify, be_groups:tables_select, be_groups:groupMods, be_groups:non_exclude_fields</target><note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="description.description" resname="description.description" approved="yes">
         <source>Enter a short description of the user group, what it is for and who should be members. This is for internal use only.</source>
-        <target state="final">Geben Sie eine Kurzbeschreibung der Benutzergruppe ein, aus der sich erkennen lässt, wozu sie dient und wer Mitglied sein sollte. Nur für internen Gebrauch.</target>
+        <target state="final">Gib eine Kurzbeschreibung der Benutzergruppe ein, aus der sich erkennen lässt, wozu sie dient und wer Mitglied sein sollte. Nur für internen Gebrauch.</target>
       </trans-unit>
       <trans-unit id="_description.seeAlso" resname="_description.seeAlso" approved="yes">
         <source>fe_groups:description</source>
