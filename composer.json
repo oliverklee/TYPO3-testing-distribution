@@ -50,7 +50,7 @@
 		"friendsofphp/php-cs-fixer": "3.91.3",
 		"helmich/typo3-typoscript-lint": "3.3.0",
 		"phpstan/extension-installer": "1.4.3",
-		"phpstan/phpstan": "2.1.32",
+		"phpstan/phpstan": "2.1.33",
 		"phpstan/phpstan-phpunit": "2.0.8",
 		"phpstan/phpstan-strict-rules": "2.0.7",
 		"phpunit/phpunit": "^11.5.43",
