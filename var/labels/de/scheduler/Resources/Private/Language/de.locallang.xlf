@@ -410,7 +410,7 @@ Das System läuft im Composer-Modus, der Pfad zur ausführbaren `typo3`-Datei ko
       </trans-unit>
       <trans-unit id="msg.invalidTaskType" approved="yes">
         <source>The selected task type must be either "single execution" or "recurring execution".</source>
-        <target state="final">Die ausgewählte Aufgabe muss entweder vom Typ "einmalig" oder "wiederkehrend" sein.</target>
+        <target state="final">Bitte wähle als Aufgabentyp entweder „Einmalige Ausführung" oder „Wiederkehrende Ausführung".</target>
       </trans-unit>
       <trans-unit id="msg.noTasks" approved="yes">
         <source>No tasks defined yet.</source>

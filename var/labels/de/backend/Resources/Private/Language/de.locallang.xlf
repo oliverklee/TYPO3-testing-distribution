@@ -125,11 +125,11 @@
       </trans-unit>
       <trans-unit id="login.error.javascript" approved="yes">
         <source>Please activate JavaScript!</source>
-        <target state="final">Bitte aktiviere JavaScript!</target>
+        <target state="final">Bitte aktivieren Sie JavaScript!</target>
       </trans-unit>
       <trans-unit id="login.error.cookies" approved="yes">
         <source>Please activate Cookies!</source>
-        <target state="final">Bitte aktiviere Cookies!</target>
+        <target state="final">Bitte aktivieren Sie Cookies!</target>
       </trans-unit>
       <trans-unit id="login.error.referrer" approved="yes">
         <source>TYPO3 relies on HTTP referrers for security reasons in the backend. It seems your browser refused to send this information.</source>
