@@ -17,6 +17,9 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "development"
+    ignore:
+      - dependency-name: "georgringer/autoswitchtolistview"
+        versions: [ "3.1.0" ]
     versioning-strategy: "increase"
     commit-message:
       prefix: "[Dependabot] "
