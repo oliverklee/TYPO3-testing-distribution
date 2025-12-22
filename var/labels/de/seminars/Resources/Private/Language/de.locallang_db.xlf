@@ -625,9 +625,9 @@
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.accommodation" approved="yes">
         <source>
-					How are your lodging preferences (if possible a single room, a double room, no lodging)?
-				</source>
-        <target state="final">Wie möchten Sie übernachten (wenn möglich im Einzelzimmer, Doppelzimmer, keine Übernachtung)?</target>
+          How are your lodging preferences (if possible a single room, a double room, no lodging)?
+        </source>
+        <target state="final">Übernachtungswünsche</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.foods" approved="yes">
         <source>Selected food options</source>
