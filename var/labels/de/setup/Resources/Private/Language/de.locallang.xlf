@@ -101,7 +101,7 @@
       </trans-unit>
       <trans-unit id="beUser_realName" resname="beUser_realName" approved="yes">
         <source>Your name</source>
-        <target state="final">Ihr Name</target>
+        <target state="final">Dein Name</target>
       </trans-unit>
       <trans-unit id="beUser_avatar" resname="beUser_avatar" approved="yes">
         <source>Avatar</source>
