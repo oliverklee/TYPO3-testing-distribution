@@ -5,7 +5,7 @@
     <body>
       <trans-unit id="overview.title" resname="overview.title" approved="yes">
         <source>Site Configuration</source>
-        <target state="final">Site-Konfiguration</target>
+        <target state="final">Seitenkonfiguration</target>
       </trans-unit>
       <trans-unit id="overview.site" resname="overview.site" approved="yes">
         <source>Site</source>
@@ -33,7 +33,7 @@
       </trans-unit>
       <trans-unit id="overview.editSiteConfiguration" resname="overview.editSiteConfiguration" approved="yes">
         <source>Edit site configuration</source>
-        <target state="final">Seitenkonfiguration bearbeiten</target>
+        <target state="final">Site-Konfiguration bearbeiten</target>
       </trans-unit>
       <trans-unit id="overview.deleteSiteConfiguration" resname="overview.deleteSiteConfiguration" approved="yes">
         <source>Delete site configuration</source>
@@ -49,7 +49,7 @@
       </trans-unit>
       <trans-unit id="overview.unassignedSites.description" resname="overview.unassignedSites.description" approved="yes">
         <source>The following sites don't belong to any page anymore and can be removed.</source>
-        <target state="final">Die folgenden Sites gehören zu keiner Seite mehr und können entfernt werden.</target>
+        <target state="final">Die folgenden Seiten gehören zu keiner Seite mehr und können entfernt werden.</target>
       </trans-unit>
       <trans-unit id="overview.duplicatedEntryPoints" resname="overview.duplicatedEntryPoints" approved="yes">
         <source>Duplicated Entrypoints</source>
