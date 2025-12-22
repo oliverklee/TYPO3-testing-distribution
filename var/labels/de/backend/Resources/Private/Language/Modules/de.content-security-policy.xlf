@@ -127,6 +127,10 @@
         <source>Select a row to see more information.</source>
         <target state="final">Wählen Sie eine Zeile aus, um weitere Informationen zu sehen.</target>
       </trans-unit>
+      <trans-unit id="module.label.showDetails" approved="yes">
+        <source>Show details for "%s" violation with URI: %s</source>
+        <target state="final">zeige Details zu „%s“-Verstoß der URI: %s</target>
+      </trans-unit>
       <trans-unit id="module.button.apply" approved="yes">
         <source>Apply</source>
         <target state="final">Anwenden</target>

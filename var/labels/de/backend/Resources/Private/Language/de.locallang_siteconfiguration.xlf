@@ -5,7 +5,7 @@
     <body>
       <trans-unit id="overview.title" approved="yes">
         <source>Site Configuration</source>
-        <target state="final">Site-Konfiguration</target>
+        <target state="final">Seitenkonfiguration</target>
       </trans-unit>
       <trans-unit id="overview.site" approved="yes">
         <source>Site</source>
@@ -33,7 +33,7 @@
       </trans-unit>
       <trans-unit id="overview.editSiteConfiguration" approved="yes">
         <source>Edit site configuration</source>
-        <target state="final">Seitenkonfiguration bearbeiten</target>
+        <target state="final">Site-Konfiguration bearbeiten</target>
       </trans-unit>
       <trans-unit id="overview.editSiteSettings" approved="yes">
         <source>Edit site settings</source>
@@ -57,7 +57,7 @@
       </trans-unit>
       <trans-unit id="overview.unassignedSites.description" approved="yes">
         <source>The following sites don't belong to any page anymore and can be removed.</source>
-        <target state="final">Die folgenden Sites gehören zu keiner Seite mehr und können entfernt werden.</target>
+        <target state="final">Die folgenden Seiten gehören zu keiner Seite mehr und können entfernt werden.</target>
       </trans-unit>
       <trans-unit id="overview.invalidSets.title" approved="yes">
         <source>Invalid site set configurations</source>
