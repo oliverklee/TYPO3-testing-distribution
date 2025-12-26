@@ -1,4 +1,5 @@
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:seminars_premium/Configuration/TypoScript/setup.typoscript'
 @import './lib/*.typoscript'
 @import './config.typoscript'
 @import './page.typoscript'
