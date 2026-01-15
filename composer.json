@@ -11,8 +11,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/oliverklee/TYPO3-testing-distribution/issues",
-		"source": "https://github.com/oliverklee/TYPO3-testing-distribution"
+		"issues": "https://github.com/oliverklee-de/TYPO3-testing-distribution/issues",
+		"source": "https://github.com/oliverklee-de/TYPO3-testing-distribution"
 	},
 	"require": {
 		"php": "^7.4 || ^8.0",
