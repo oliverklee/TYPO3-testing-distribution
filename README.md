@@ -2,11 +2,11 @@
 
 This is a TYPO3 distribution which I use to manually test my extensions:
 
-- [feuserextrafields](https://github.com/oliverklee/ext-feuserextrafields)
-- [oelib](https://github.com/oliverklee/ext-oelib)
-- [onetimeaccount](https://github.com/oliverklee/ext-onetimeaccount)
-- [seminars](https://github.com/oliverklee/ext-seminars)
-  (once it [supports TYPO3 12LTS](https://github.com/oliverklee/ext-seminars/wiki/Early-access-program-for-newer-TYPO3-versions))
+- [feuserextrafields](https://github.com/oliverklee-de/feuserextrafields)
+- [oelib](https://github.com/oliverklee-de/oelib)
+- [onetimeaccount](https://github.com/oliverklee-de/onetimeaccount)
+- [seminars](https://github.com/oliverklee-de/seminars)
+  (once it [supports TYPO3 12LTS](https://github.com/oliverklee-de/seminars/wiki/Early-access-program-for-newer-TYPO3-versions))
 - [tea](https://github.com/TYPO3BestPractices/tea)
 
 ## Usage
