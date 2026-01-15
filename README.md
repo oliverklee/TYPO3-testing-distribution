@@ -2,10 +2,10 @@
 
 This is a TYPO3 distribution which I use to manually test my extensions:
 
-- [feuserextrafields](https://github.com/oliverklee/ext-feuserextrafields)
-- [oelib](https://github.com/oliverklee/ext-oelib)
-- [onetimeaccount](https://github.com/oliverklee/ext-onetimeaccount)
-- [seminars](https://github.com/oliverklee/ext-seminars)
+- [feuserextrafields](https://github.com/oliverklee-de/feuserextrafields)
+- [oelib](https://github.com/oliverklee-de/oelib)
+- [onetimeaccount](https://github.com/oliverklee-de/onetimeaccount)
+- [seminars](https://github.com/oliverklee-de/seminars)
 - [tea](https://github.com/TYPO3BestPractices/tea)
 
 ## Usage
