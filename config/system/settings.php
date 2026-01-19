@@ -1,16 +1,10 @@
 <?php
-
-use TYPO3\CMS\Core\Cache\Backend\Typo3DatabaseBackend;
-use TYPO3\CMS\Core\Crypto\PasswordHashing\Argon2idPasswordHash;
-use TYPO3\CMS\Core\Log\LogLevel;
-use TYPO3\CMS\Core\Log\Writer\FileWriter;
-
 return [
     'BE' => [
         'debug' => true,
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$LllPa2ZNY29LU2RRcGpUdQ$SgfBdtrn3pBh7s7NeGipTaTd0K3F67iAJCmSQB9RbI8',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$RGJpc29kNjhUYVBnRExCNA$WygnkWSkTRNmZFLUBhJnfZ/3GVvQqDoE9eKYEgci2eM',
         'passwordHashing' => [
-            'className' => Argon2idPasswordHash::class,
+            'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2idPasswordHash',
             'options' => [],
         ],
     ],
@@ -76,18 +70,11 @@ return [
         'scheduler' => [
             'maxLifetime' => '1440',
         ],
-        'seminars' => [
-            'enableConfigCheck' => '1',
-            'pidForRegistrationsCreatedInTheBackendModule' => '12',
-        ],
-        'static_info_tables' => [
-            'enableManager' => '0',
-        ],
     ],
     'FE' => [
         'debug' => true,
         'passwordHashing' => [
-            'className' => Argon2idPasswordHash::class,
+            'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2idPasswordHash',
             'options' => [],
         ],
     ],
@@ -104,8 +91,8 @@ return [
             'CMS' => [
                 'deprecations' => [
                     'writerConfiguration' => [
-                        LogLevel::NOTICE => [
-                            FileWriter::class => [
+                        'notice' => [
+                            'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                                 'disabled' => false,
                             ],
                         ],
@@ -114,8 +101,8 @@ return [
             ],
             'HtmlSanitizer' => [
                 'writerConfiguration' => [
-                    LogLevel::DEBUG => [
-                        FileWriter::class => [
+                    'debug' => [
+                        'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                             'disabled' => false,
                             'logFileInfix' => 'html',
                         ],
@@ -124,20 +111,20 @@ return [
             ],
         ],
         'writerConfiguration' => [
-            LogLevel::INFO => [
-                FileWriter::class => [
+            'info' => [
+                'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                     'disabled' => false,
                     'logFileInfix' => 'info',
                 ],
             ],
-            LogLevel::NOTICE => [
-                FileWriter::class => [
+            'notice' => [
+                'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                     'disabled' => false,
                     'logFileInfix' => 'notice',
                 ],
             ],
-            LogLevel::WARNING => [
-                FileWriter::class => [
+            'warning' => [
+                'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                     'disabled' => false,
                     'logFileInfix' => 'warning',
                 ],
@@ -156,22 +143,22 @@ return [
         'caching' => [
             'cacheConfigurations' => [
                 'hash' => [
-                    'backend' => Typo3DatabaseBackend::class,
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                 ],
                 'imagesizes' => [
-                    'backend' => Typo3DatabaseBackend::class,
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
                         'compression' => true,
                     ],
                 ],
                 'pages' => [
-                    'backend' => Typo3DatabaseBackend::class,
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
                         'compression' => true,
                     ],
                 ],
                 'rootline' => [
-                    'backend' => Typo3DatabaseBackend::class,
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
                         'compression' => true,
                     ],
