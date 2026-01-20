@@ -47,12 +47,12 @@ the following (or a combination):
 ## Relevant URLs and launch options
 
 - Backend:
-  - `ddev launch typo3`
+    - `ddev launch typo3`
 - Frontend (DE):
-  - `ddev launch`
+    - `ddev launch`
 - Frontend (EN): https://typo3-testing-10-4-en.ddev.site:8081/
 - MailHog:
-  - `ddev launch -m`
+    - `ddev launch -m`
 
 ## Credentials
 
@@ -60,6 +60,7 @@ Backend admin: `admin` / `Password1!`<br/>
 Install tool password: `Password1!`
 
 Frontend users:
+
 - `attendee` / `attendee`
 - `editor` / `editor`
 - `manager` / `manager`
