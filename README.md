@@ -41,11 +41,9 @@ run the import.)
 
 ### Developing and testing extensions
 
-To test a local copy of an extension in this distribution, you can do one of
-the following (or a combination):
+To test a local copy of an extension in this distribution:
 
-1. Put the extension folders in `src/extensions/`.
-2. Mount the extension directories via Docker. For this, create the file
+- Mount the extension directories via Docker. For this, create the file
    `.ddev/docker-compose.packages.yaml` as a copy of
    `.ddev/docker-compose.packages.yaml.template` and modify it to your needs.
 
