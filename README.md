@@ -6,7 +6,8 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 - [oelib](https://github.com/oliverklee-de/oelib)
 - [onetimeaccount](https://github.com/oliverklee-de/onetimeaccount)
 - [seminars](https://github.com/oliverklee-de/seminars)
-  (once it [supports TYPO3 12LTS](https://github.com/oliverklee-de/seminars/wiki/Early-access-program-for-newer-TYPO3-versions))
+  (once
+  it [supports TYPO3 12LTS](https://github.com/oliverklee-de/seminars/wiki/Early-access-program-for-newer-TYPO3-versions))
 - [tea](https://github.com/TYPO3BestPractices/tea)
 
 ## Usage
@@ -61,12 +62,12 @@ tests.
 ## Relevant URLs and launch options
 
 - Backend:
-  - `ddev launch typo3`
+    - `ddev launch typo3`
 - Frontend (DE):
-  - `ddev launch`
+    - `ddev launch`
 - Frontend (EN): https://typo3-testing-10-4-en.ddev.site:8081/
 - MailHog:
-  - `ddev launch -m`
+    - `ddev launch -m`
 
 ## Credentials
 
@@ -74,6 +75,7 @@ Backend admin: `admin` / `Password1!`<br/>
 Install tool password: `Password1!`
 
 Frontend users:
+
 - `attendee` / `attendee`
 - `editor` / `editor`
 - `manager` / `manager`
