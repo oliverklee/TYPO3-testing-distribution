@@ -299,6 +299,7 @@ CREATE TABLE `fe_users` (
   `department` varchar(128) NOT NULL DEFAULT '',
   `default_organizer` int(10) unsigned NOT NULL DEFAULT 0,
   `available_topics` text DEFAULT NULL,
+  `membership_number` varchar(8) NOT NULL DEFAULT '',
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`username`(100)),
   KEY `username` (`username`(100)),
@@ -314,12 +315,12 @@ CREATE TABLE `fe_users` (
 LOCK TABLES `fe_users` WRITE;
 /*!40000 ALTER TABLE `fe_users` DISABLE KEYS */;
 INSERT INTO `fe_users` VALUES
-(1,4,1670000836,1627917285,1,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna A. Attendee','Anna','Ariana','Attendee','Bertha-von-Suttner-Platz 1','+29 228 111111','','attendee@example.com','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53111','Bonn','Germany','','Anna Enterprises','0','',1757318006,1757318069,'','',0,0,0,'',0,NULL,'Hello Anna!',0,NULL,0,0,0,'','',0,NULL),
-(2,4,1627922794,1627922794,1,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL),
-(3,4,1627922848,1627922848,1,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com',NULL,'','','','','','',NULL,'',1757317982,1757317982,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL),
-(4,4,1628002830,1628002830,1,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com',NULL,'','','','','','',NULL,'',0,0,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL),
-(5,4,1628002865,1628002862,1,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com',NULL,'','','','','','','0','',0,0,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL),
-(6,4,1670000977,1670000977,2,0,0,0,0,'','0','admin','$argon2i$v=19$m=65536,t=16,p=1$cjR4ZVR1NXlLMUJIYkZoUQ$7HXMQwbSppGCYiBAYbMuyHOsi1FRWttEBCwQqF/t53U','4,3,1','Anton R. Admin','Anton','R.','Admin','Admin Avenue 4','+49 228 12345678','','admin@example.com',NULL,'','53111','Bonn','Germany','','Admin Inc.',NULL,'',1671044482,1671044482,'','',0,99,0,'',0,'','Bonjour Anton!',0,NULL,0,0,0,'','',0,NULL);
+(1,4,1670000836,1627917285,1,0,0,0,0,'','0','attendee','$argon2i$v=19$m=65536,t=16,p=1$ODBXYmZrYkQ2akMwa1lHYg$iWz2uY5XHXAhjqG69uFSQDWvy/y1G931gk/s19sfBxo','1','Anna A. Attendee','Anna','Ariana','Attendee','Bertha-von-Suttner-Platz 1','+29 228 111111','','attendee@example.com','a:1:{s:49:\"tx_seminars_registration_editor_method_of_payment\";s:1:\"1\";}','','53111','Bonn','Germany','','Anna Enterprises','0','',1757318006,1757318069,'','',0,0,0,'',0,NULL,'Hello Anna!',0,NULL,0,0,0,'','',0,NULL,''),
+(2,4,1627922794,1627922794,1,0,0,0,0,'','0','manager','$argon2i$v=19$m=65536,t=16,p=1$SFlwZWtxcWgyNVEuV1BjbQ$ZoMcnqrwWGYifTKJDFrLEHwIOMnf9R/4AN1M3jqixbo','3','Max Manager','Max','','Manager','','','','manager@example.com',NULL,'','','','','','',NULL,'',1628014697,1628016344,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL,''),
+(3,4,1627922848,1627922848,1,0,0,0,0,'','0','editor','$argon2i$v=19$m=65536,t=16,p=1$N3IuWjhQUXBzRlkyUy45Wg$ktEw18UKASsqun0SoZDh8pG8ELNjo+wyrG6mbmoO8bw','1,4','Eddi Editor','Eddi','','Editor','','','','editor@example.com',NULL,'','','','','','',NULL,'',1757317982,1757317982,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL,''),
+(4,4,1628002830,1628002830,1,0,0,0,0,'','0','attendee1','$argon2i$v=19$m=65536,t=16,p=1$emEybmJQYi91N2NNUUVYcQ$8fJzJXhtMf2S8g0BWWgyT42ARYE25QogTLZFFGmHNRc','1','Joe Attendee','Joe','','Attendee','','','','joe@example.com',NULL,'','','','','','',NULL,'',0,0,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL,''),
+(5,4,1628002865,1628002862,1,0,0,0,0,'','0','attendee2','$argon2i$v=19$m=65536,t=16,p=1$THlYU0p2NDNseEd5N3RhNQ$eUEKyg2qTgUPr4oWcFacQ/s4J+9u4QQfQYPVQWdR1HM','1','Max Attendee','Max','','Attendee','','','','max@example.com',NULL,'','','','','','','0','',0,0,'','',0,0,0,'',0,NULL,'',0,NULL,0,0,0,'','',0,NULL,''),
+(6,4,1670000977,1670000977,2,0,0,0,0,'','0','admin','$argon2i$v=19$m=65536,t=16,p=1$cjR4ZVR1NXlLMUJIYkZoUQ$7HXMQwbSppGCYiBAYbMuyHOsi1FRWttEBCwQqF/t53U','4,3,1','Anton R. Admin','Anton','R.','Admin','Admin Avenue 4','+49 228 12345678','','admin@example.com',NULL,'','53111','Bonn','Germany','','Admin Inc.',NULL,'',1671044482,1671044482,'','',0,99,0,'',0,'','Bonjour Anton!',0,NULL,0,0,0,'','',0,NULL,'');
 /*!40000 ALTER TABLE `fe_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2441,7 +2442,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1762277173;'),
+(43,'core','sys_refindex_lastUpdate','i:1769430126;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -11171,7 +11172,6 @@ DROP TABLE IF EXISTS `tx_seminars_attendances_checkboxes_mm`;
 CREATE TABLE `tx_seminars_attendances_checkboxes_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11198,7 +11198,6 @@ DROP TABLE IF EXISTS `tx_seminars_attendances_foods_mm`;
 CREATE TABLE `tx_seminars_attendances_foods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11225,7 +11224,6 @@ DROP TABLE IF EXISTS `tx_seminars_attendances_lodgings_mm`;
 CREATE TABLE `tx_seminars_attendances_lodgings_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11613,7 +11611,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_categories_mm`;
 CREATE TABLE `tx_seminars_seminars_categories_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11628,8 +11625,8 @@ CREATE TABLE `tx_seminars_seminars_categories_mm` (
 LOCK TABLES `tx_seminars_seminars_categories_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_categories_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_categories_mm` VALUES
-(1,3,'',1,0),
-(2,3,'',1,0);
+(1,3,1,0),
+(2,3,1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_categories_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11643,7 +11640,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_checkboxes_mm`;
 CREATE TABLE `tx_seminars_seminars_checkboxes_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11658,10 +11654,10 @@ CREATE TABLE `tx_seminars_seminars_checkboxes_mm` (
 LOCK TABLES `tx_seminars_seminars_checkboxes_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_checkboxes_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_checkboxes_mm` VALUES
-(5,1,'',1,0),
-(5,2,'',2,0),
-(10,1,'',1,0),
-(10,2,'',2,0);
+(5,1,1,0),
+(5,2,2,0),
+(10,1,1,0),
+(10,2,2,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_checkboxes_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11675,7 +11671,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_feusers_mm`;
 CREATE TABLE `tx_seminars_seminars_feusers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11702,7 +11697,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_foods_mm`;
 CREATE TABLE `tx_seminars_seminars_foods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11717,18 +11711,18 @@ CREATE TABLE `tx_seminars_seminars_foods_mm` (
 LOCK TABLES `tx_seminars_seminars_foods_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_foods_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_foods_mm` VALUES
-(3,4,'',1,0),
-(3,5,'',2,0),
-(3,2,'',3,0),
-(3,6,'',4,0),
-(3,1,'',5,0),
-(3,3,'',6,0),
-(10,4,'',1,0),
-(10,6,'',2,0),
-(10,5,'',3,0),
-(10,3,'',4,0),
-(10,2,'',5,0),
-(10,1,'',6,0);
+(3,4,1,0),
+(3,5,2,0),
+(3,2,3,0),
+(3,6,4,0),
+(3,1,5,0),
+(3,3,6,0),
+(10,4,1,0),
+(10,6,2,0),
+(10,5,3,0),
+(10,3,4,0),
+(10,2,5,0),
+(10,1,6,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_foods_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11742,7 +11736,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_lodgings_mm`;
 CREATE TABLE `tx_seminars_seminars_lodgings_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11757,13 +11750,13 @@ CREATE TABLE `tx_seminars_seminars_lodgings_mm` (
 LOCK TABLES `tx_seminars_seminars_lodgings_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_lodgings_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_lodgings_mm` VALUES
-(3,2,'',1,0),
-(3,1,'',2,0),
-(3,3,'',3,0),
-(10,2,'',1,0),
-(10,1,'',2,0),
-(10,4,'',3,0),
-(10,3,'',4,0);
+(3,2,1,0),
+(3,1,2,0),
+(3,3,3,0),
+(10,2,1,0),
+(10,1,2,0),
+(10,4,3,0),
+(10,3,4,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_lodgings_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11777,7 +11770,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_organizers_mm`;
 CREATE TABLE `tx_seminars_seminars_organizers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11792,23 +11784,23 @@ CREATE TABLE `tx_seminars_seminars_organizers_mm` (
 LOCK TABLES `tx_seminars_seminars_organizers_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_organizers_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_organizers_mm` VALUES
-(3,2,'',1,0),
-(4,1,'',1,0),
-(5,3,'',1,0),
-(6,1,'',1,0),
-(7,1,'',1,0),
-(8,3,'',1,0),
-(9,3,'',1,0),
-(10,3,'',1,0),
-(11,3,'',1,0),
-(12,3,'',1,0),
-(13,3,'',1,0),
-(14,3,'',1,0),
-(15,3,'',1,0),
-(16,3,'',1,0),
-(17,3,'',1,0),
-(18,3,'',1,0),
-(19,3,'',1,0);
+(3,2,1,0),
+(4,1,1,0),
+(5,3,1,0),
+(6,1,1,0),
+(7,1,1,0),
+(8,3,1,0),
+(9,3,1,0),
+(10,3,1,0),
+(11,3,1,0),
+(12,3,1,0),
+(13,3,1,0),
+(14,3,1,0),
+(15,3,1,0),
+(16,3,1,0),
+(17,3,1,0),
+(18,3,1,0),
+(19,3,1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_organizers_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11822,7 +11814,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_organizing_partners_mm`;
 CREATE TABLE `tx_seminars_seminars_organizing_partners_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11849,7 +11840,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_payment_methods_mm`;
 CREATE TABLE `tx_seminars_seminars_payment_methods_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11864,10 +11854,10 @@ CREATE TABLE `tx_seminars_seminars_payment_methods_mm` (
 LOCK TABLES `tx_seminars_seminars_payment_methods_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_payment_methods_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_payment_methods_mm` VALUES
-(1,1,'',1,0),
-(3,2,'',1,0),
-(10,2,'',1,0),
-(10,1,'',2,0);
+(1,1,1,0),
+(3,2,1,0),
+(10,2,1,0),
+(10,1,2,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_payment_methods_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11881,7 +11871,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_place_mm`;
 CREATE TABLE `tx_seminars_seminars_place_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11896,14 +11885,14 @@ CREATE TABLE `tx_seminars_seminars_place_mm` (
 LOCK TABLES `tx_seminars_seminars_place_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_place_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_place_mm` VALUES
-(3,1,'',1,0),
-(7,1,'',1,0),
-(8,1,'',1,0),
-(14,1,'',1,0),
-(14,6,'',2,0),
-(4,4,'',0,0),
-(17,1,'',1,0),
-(19,1,'',1,0);
+(3,1,1,0),
+(7,1,1,0),
+(8,1,1,0),
+(14,1,1,0),
+(14,6,2,0),
+(4,4,0,0),
+(17,1,1,0),
+(19,1,1,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_place_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11917,7 +11906,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_requirements_mm`;
 CREATE TABLE `tx_seminars_seminars_requirements_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11932,7 +11920,7 @@ CREATE TABLE `tx_seminars_seminars_requirements_mm` (
 LOCK TABLES `tx_seminars_seminars_requirements_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_requirements_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_requirements_mm` VALUES
-(1,2,'',1,1);
+(1,2,1,1);
 /*!40000 ALTER TABLE `tx_seminars_seminars_requirements_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11946,7 +11934,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm`;
 CREATE TABLE `tx_seminars_seminars_speakers_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -11961,11 +11948,11 @@ CREATE TABLE `tx_seminars_seminars_speakers_mm` (
 LOCK TABLES `tx_seminars_seminars_speakers_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_speakers_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_speakers_mm` VALUES
-(3,1,'',1,0),
-(8,3,'',1,0),
-(8,1,'',2,0),
-(15,1,'',1,0),
-(15,3,'',2,0);
+(3,1,1,0),
+(8,3,1,0),
+(8,1,2,0),
+(15,1,1,0),
+(15,3,2,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_speakers_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11979,7 +11966,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm_leaders`;
 CREATE TABLE `tx_seminars_seminars_speakers_mm_leaders` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -12006,7 +11992,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm_partners`;
 CREATE TABLE `tx_seminars_seminars_speakers_mm_partners` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -12033,7 +12018,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_speakers_mm_tutors`;
 CREATE TABLE `tx_seminars_seminars_speakers_mm_tutors` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -12060,7 +12044,6 @@ DROP TABLE IF EXISTS `tx_seminars_seminars_target_groups_mm`;
 CREATE TABLE `tx_seminars_seminars_target_groups_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -12075,10 +12058,10 @@ CREATE TABLE `tx_seminars_seminars_target_groups_mm` (
 LOCK TABLES `tx_seminars_seminars_target_groups_mm` WRITE;
 /*!40000 ALTER TABLE `tx_seminars_seminars_target_groups_mm` DISABLE KEYS */;
 INSERT INTO `tx_seminars_seminars_target_groups_mm` VALUES
-(1,8,'',1,0),
-(2,4,'',1,0),
-(3,6,'',1,0),
-(3,5,'',2,0);
+(1,8,1,0),
+(2,4,1,0),
+(3,6,1,0),
+(3,5,2,0);
 /*!40000 ALTER TABLE `tx_seminars_seminars_target_groups_mm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12218,7 +12201,6 @@ DROP TABLE IF EXISTS `tx_seminars_speakers_skills_mm`;
 CREATE TABLE `tx_seminars_speakers_skills_mm` (
   `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
   `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
   `sorting` int(10) unsigned NOT NULL DEFAULT 0,
   `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
   KEY `uid_local` (`uid_local`),
@@ -12312,32 +12294,6 @@ INSERT INTO `tx_seminars_timeslots` VALUES
 UNLOCK TABLES;
 
 --
--- Table structure for table `tx_seminars_usergroups_categories_mm`
---
-
-DROP TABLE IF EXISTS `tx_seminars_usergroups_categories_mm`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `tx_seminars_usergroups_categories_mm` (
-  `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
-  `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablenames` varchar(30) NOT NULL DEFAULT '',
-  `sorting` int(10) unsigned NOT NULL DEFAULT 0,
-  KEY `uid_local` (`uid_local`),
-  KEY `uid_foreign` (`uid_foreign`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `tx_seminars_usergroups_categories_mm`
---
-
-LOCK TABLES `tx_seminars_usergroups_categories_mm` WRITE;
-/*!40000 ALTER TABLE `tx_seminars_usergroups_categories_mm` DISABLE KEYS */;
-/*!40000 ALTER TABLE `tx_seminars_usergroups_categories_mm` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `tx_tea_domain_model_product_tea`
 --
 
@@ -12389,4 +12345,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-04 18:51:08
+-- Dump completed on 2026-01-26 13:23:49
