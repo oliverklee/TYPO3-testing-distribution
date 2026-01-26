@@ -51,7 +51,7 @@ To test a local development copies of extension in this distribution:
 
 ### Configuring PHPUnit
 
-The DDEVd documentation provides very good
+The DDEV documentation provides very good
 [step-by-step instructions for the Docker setup in PhpStorm](https://ddev.readthedocs.io/en/stable/users/topics/phpstorm/).
 
 After that, you need to configure the PhpStorm templates for PHPUnit tests:
