@@ -135,11 +135,12 @@
         <source>The fields marked with an exclamation mark are not yet correctly filled in. Please complete them properly.</source>
         <target state="final">Mit einem Ausrufezeichen markierte Felder wurden noch nicht ordnungsgemäß ausgefüllt. Bitte füllen Sie sie korrekt aus.</target>
       </trans-unit>
-      <trans-unit id="labels.fieldsChanged" xml:space="preserve" approved="yes">
-				<source>There are unsaved changes in the form!
+      <trans-unit id="labels.fieldsChanged" approved="yes">
+        <source>There are unsaved changes in the form!
 Do you want to continue WITHOUT saving?</source>
-			<target state="final">Das Formular enthält nicht gespeicherte Änderungen!
-Ohne Speichern fortfahren?</target></trans-unit>
+        <target state="final">Das Formular enthält nicht gespeicherte Änderungen!
+Ohne Speichern fortfahren?</target>
+      </trans-unit>
       <trans-unit id="labels.remainingCharacters" approved="yes">
         <source>Remaining characters: {0}</source>
         <target state="final">Verbleibende Zeichen: {0}</target>
@@ -1152,10 +1153,11 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Are you sure you want to delete ALL referenced elements (%s) on the clipboard?</source>
         <target state="final">Tatsächlich alle markierten Elemente (%s) aus der Zwischenablage entfernen?</target>
       </trans-unit>
-      <trans-unit id="mess.refresh_login" xml:space="preserve" approved="yes">
-				<source>Your login has probably expired.
+      <trans-unit id="mess.refresh_login" approved="yes">
+        <source>Your login has probably expired.
 Do you want to refresh it now?</source>
-			<target state="final">Ihre Anmeldung ist abgelaufen. Die Anmeldung erneuern?</target></trans-unit>
+        <target state="final">Ihre Anmeldung ist abgelaufen. Die Anmeldung erneuern?</target>
+      </trans-unit>
       <trans-unit id="mess.refresh_login_refresh_button" approved="yes">
         <source>Stay logged in!</source>
         <target state="final">Angemeldet bleiben!</target>

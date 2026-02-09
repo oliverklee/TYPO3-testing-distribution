@@ -23,12 +23,12 @@
         <source>The system environment check returned notices. Those should not affect the functionality and stability of your TYPO3 CMS instance. Please check the install tool "System environment" for all details.</source>
         <target state="final">Die Systemumgebungsüberprüfung ergab Hinweise. Diese Hinweise sollten die Funktionalität und Stabilität Ihrer TYPO3-CMS-Installation nicht beeinträchtigen. Bitte überprüfen Sie die Seite "System environment" im Install Tool für mehr Details.</target>
       </trans-unit>
-      <trans-unit id="environment.status.message.ok" xml:space="preserve">
-				<source/>
-			</trans-unit>
-      <trans-unit id="environment.status.message.info" xml:space="preserve">
-				<source/>
-			</trans-unit>
+      <trans-unit id="environment.status.message.ok">
+        <source/>
+      </trans-unit>
+      <trans-unit id="environment.status.message.info">
+        <source/>
+      </trans-unit>
       <trans-unit id="status_fileSystem" approved="yes">
         <source>File System</source>
         <target state="final">Dateisystem</target>
