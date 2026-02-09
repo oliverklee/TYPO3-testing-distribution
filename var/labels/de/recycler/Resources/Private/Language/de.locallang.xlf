@@ -99,6 +99,10 @@
         <source>Do you really want to recover all selected records and optionally potential subpages?</source>
         <target state="final">Alle ausgewählten Datensätze und optional potenzielle Unterseiten tatsächlich wiederherstellen?</target>
       </trans-unit>
+      <trans-unit id="flashmessage.delete.unauthorized" approved="yes">
+        <source>Insufficient permissions to delete records.</source>
+        <target state="final">Unzureichende Berechtigungen zum Löschen von Datensätzen.</target>
+      </trans-unit>
       <trans-unit id="flashmessage.delete.norecordsselected" resname="flashmessage.delete.norecordsselected" approved="yes">
         <source>No records set to delete.</source>
         <target state="final">Keine Datensätze zum Löschen markiert.</target>

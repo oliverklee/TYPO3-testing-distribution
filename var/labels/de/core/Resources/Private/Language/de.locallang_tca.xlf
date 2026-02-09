@@ -757,7 +757,7 @@
       </trans-unit>
       <trans-unit id="sys_file_collection.type.0" resname="sys_file_collection.type.0" approved="yes">
         <source>Static selection of files</source>
-        <target state="final">Auswahl einzelner Dateien</target>
+        <target state="final">Statische Auswahl von Dateien</target>
       </trans-unit>
       <trans-unit id="sys_file_collection.type.1" resname="sys_file_collection.type.1" approved="yes">
         <source>Folder from Storage</source>
