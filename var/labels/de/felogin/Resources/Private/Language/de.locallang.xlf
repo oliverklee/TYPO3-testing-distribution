@@ -27,13 +27,14 @@
         <source>Login failure</source>
         <target state="final">Anmeldefehler</target>
       </trans-unit>
-      <trans-unit id="error_message" xml:space="preserve" approved="yes">
-				<source>An error occurred during login. Most likely you didn't enter the username or password correctly.
+      <trans-unit id="error_message" approved="yes">
+        <source>An error occurred during login. Most likely you didn't enter the username or password correctly.
 Be certain that you enter them precisely as they are, including upper/lower case.
 Another possibility is that cookies might be disabled in your web browser.</source>
-			<target state="final">Bei der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich haben Sie den Benutzernamen oder das Passwort nicht richtig eingegeben.
+        <target state="final">Bei der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich haben Sie den Benutzernamen oder das Passwort nicht richtig eingegeben.
 Vergewissern Sie sich, dass Sie sie genau so eingeben, wie sie sind, einschließlich Groß- und Kleinschreibung.
-Eine andere Möglichkeit ist, dass die Cookies in Ihrem Webbrowser deaktiviert sind.</target></trans-unit>
+Eine andere Möglichkeit ist, dass die Cookies in Ihrem Webbrowser deaktiviert sind.</target>
+      </trans-unit>
       <trans-unit id="success_header" approved="yes">
         <source>Login successful</source>
         <target state="final">Anmeldung erfolgreich</target>
@@ -134,42 +135,45 @@ Eine andere Möglichkeit ist, dass die Cookies in Ihrem Webbrowser deaktiviert s
         <source>Forgot your password?</source>
         <target state="final">Passwort vergessen?</target>
       </trans-unit>
-      <trans-unit id="forgot_email_password" xml:space="preserve" approved="yes">
-				<source>Your password
+      <trans-unit id="forgot_email_password" approved="yes">
+        <source>Your password
 Hi %s
 
 Your username is "%s"
 Your password is "%s"</source>
-			<target state="final">Ihr Passwort
+        <target state="final">Ihr Passwort
 Hallo %s,
 
 Ihr Benutzername lautet "%s".
-Ihr Passwort ist "%s".</target></trans-unit>
-      <trans-unit id="forgot_email_nopassword" xml:space="preserve" approved="yes">
-				<source>Your password
+Ihr Passwort ist "%s".</target>
+      </trans-unit>
+      <trans-unit id="forgot_email_nopassword" approved="yes">
+        <source>Your password
 Hi %s
 
 We couldn't find a username for this email address and so cannot send the password to you. Probably you misspelled the email address (upper/lower case makes a difference) or maybe you even didn't register yet?</source>
-			<target state="final">Ihr Passwort
+        <target state="final">Ihr Passwort
 Hallo %s,
 
-wir konnten keinen Benutzernamen mit dieser E-Mail-Adresse finden und Ihnen daher kein Passwort schicken. Eventuell haben Sie die E-Mail-Adresse nicht korrekt geschrieben (bitte Groß- und Kleinschreibung beachten) oder sich gar noch nicht registriert?</target></trans-unit>
-      <trans-unit id="forgot_validate_reset_password" xml:space="preserve" approved="yes">
-				<source>Your new password
+wir konnten keinen Benutzernamen mit dieser E-Mail-Adresse finden und Ihnen daher kein Passwort schicken. Eventuell haben Sie die E-Mail-Adresse nicht korrekt geschrieben (bitte Groß- und Kleinschreibung beachten) oder sich gar noch nicht registriert?</target>
+      </trans-unit>
+      <trans-unit id="forgot_validate_reset_password" approved="yes">
+        <source>Your new password
 Dear %s,
 
 This email was sent in response to your request to reset your password. Please click on the link below.
 %s
 
 For security reasons, this link is only active until %s. If you do not visit the link before then, you will need to repeat the password reset steps.</source>
-			<target state="final">Ihr neues Passwort
+        <target state="final">Ihr neues Passwort
 Hallo %s,
 
 diese E-Mail ist Teil des Passwort-Wiederherstellen-Prozesses. Bitte klicken Sie den untenstehenden Link.
 
 %s
 
-Aus Sicherheitsgründen ist dieser Link nur gültig bis %s. Wenn Sie den Link nicht bis dahin geöffnet haben, müssen Sie die Passwort-Wiederherstellung erneut anstoßen.</target></trans-unit>
+Aus Sicherheitsgründen ist dieser Link nur gültig bis %s. Wenn Sie den Link nicht bis dahin geöffnet haben, müssen Sie die Passwort-Wiederherstellung erneut anstoßen.</target>
+      </trans-unit>
       <trans-unit id="forgot_message" approved="yes">
         <source>Please enter the email address by which you registered your user account. Then press "Send password" and your password will immediately be emailed to you. Make sure to spell your email address correctly.</source>
         <target state="final">Bitte geben Sie die E-Mail-Adresse ein, die Sie bei der Erstellung Ihres Kontos genutzt haben. Dann klicken Sie auf "Passwort verschicken" und Ihr Passwort wird Ihnen umgehend zugemailt. Bitte stellen Sie sicher, dass Sie die E-Mail-Adresse korrekt schreiben.</target>
@@ -218,29 +222,31 @@ Aus Sicherheitsgründen ist dieser Link nur gültig bis %s. Wenn Sie den Link ni
         <source>New Password must match repeated password.</source>
         <target state="final">Neues Passwort muss mit wiederholtem Passwort übereinstimmen.</target>
       </trans-unit>
-      <trans-unit id="forgot_validate_reset_password_html" xml:space="preserve" approved="yes">
-				<source>&lt;p&gt;Dear %s,&lt;/p&gt;
+      <trans-unit id="forgot_validate_reset_password_html" approved="yes">
+        <source>&lt;p&gt;Dear %s,&lt;/p&gt;
 &lt;p&gt;This email was sent in response to your request to reset your password. Please click on the link below.&lt;/p&gt;
 &lt;p&gt;%s&lt;/p&gt;
 &lt;p&gt;For security reasons, this link is only active until %s. If you do not visit the link before then, you will need to repeat the password reset steps.&lt;/p&gt;
 				</source>
-			<target state="final">&lt;p&gt;Hallo %s,&lt;/p&gt;
+        <target state="final">&lt;p&gt;Hallo %s,&lt;/p&gt;
 &lt;p&gt;Diese E-Mail wurde als Antwort auf Ihre Anfrage gesendet, Ihr Passwort zurückzusetzen. Bitte klicken Sie auf den Link unten.&lt;/p&gt;
 &lt;p&gt;%s&lt;/p&gt;
-&lt;p&gt;Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Wenn Sie den Link vorher nicht aufrufen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.&lt;/p&gt;</target></trans-unit>
-      <trans-unit id="forgot_validate_reset_password_plaintext" xml:space="preserve" approved="yes">
-				<source>Dear %s,
+&lt;p&gt;Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Wenn Sie den Link vorher nicht aufrufen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="forgot_validate_reset_password_plaintext" approved="yes">
+        <source>Dear %s,
 
 This email was sent in response to your request to reset your password. Please click on the link below.
 %s
 
 For security reasons, this link is only active until %s. If you do not visit the link before then, you will need to repeat the password reset steps.</source>
-			<target state="final">Hallo %s,
+        <target state="final">Hallo %s,
 
 Diese E-Mail wurde als Antwort auf Ihre Anfrage gesendet, Ihr Passwort zurückzusetzen. Bitte klicken Sie auf den Link unten.
 %s
 
-Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Wenn Sie den Link vorher nicht besuchen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.</target></trans-unit>
+Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Wenn Sie den Link vorher nicht besuchen, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

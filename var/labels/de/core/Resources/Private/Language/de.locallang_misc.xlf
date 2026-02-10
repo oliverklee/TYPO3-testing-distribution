@@ -567,6 +567,10 @@
         <source>Search in certain tables</source>
         <target state="final">In ausgewählten Tabellen suchen</target>
       </trans-unit>
+      <trans-unit id="liveSearch_hasErrors" approved="yes">
+        <source>Something went wrong.</source>
+        <target state="final">Etwas ist schiefgelaufen.</target>
+      </trans-unit>
       <trans-unit id="liveSearch.versionizedRecord" approved="yes">
         <source>Versionized record</source>
         <target state="final">Versionierter Datensatz</target>

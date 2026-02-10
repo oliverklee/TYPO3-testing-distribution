@@ -55,28 +55,34 @@
         <source>Workspace List</source>
         <target state="final">Liste der Arbeitsumgebungen</target>
       </trans-unit>
-      <trans-unit id="editorInLive" xml:space="preserve" approved="yes">
-				<source>You are in LIVE workspace. Please select a draft workspace from the top bar
+      <trans-unit id="editorInLive" approved="yes">
+        <source>You are in LIVE workspace. Please select a draft workspace from the top bar
 					menu before you can review and publish changes.
 				</source>
-			<target state="final">Sie befinden sich in der LIVE-Arbeitsumgebung. Bitte wählen Sie eine Entwurf-Arbeitsumgebung aus der oberen Leiste, um Änderungen zu prüfen und zu veröffentlichen.</target></trans-unit>
-      <trans-unit id="moduleOnPageIdZero" xml:space="preserve" approved="yes">
-				<source>Please select a page in the page tree to review and publish changes.</source>
-			<target state="final">Bitte wählen Sie eine Seite im Seitenbaum aus, um Änderungen zu überprüfen und zu veröffentlichen.</target></trans-unit>
-      <trans-unit id="admin.noWorkspaceSetup.title" xml:space="preserve" approved="yes">
-				<source>No workspace set up!</source>
-			<target state="final">Keine Arbeitsumgebung eingerichtet!</target></trans-unit>
-      <trans-unit id="admin.noWorkspaceSetup.message" xml:space="preserve" approved="yes">
-				<source>There are currently no workspace records configured in the database. To use the workspace
+        <target state="final">Sie befinden sich in der LIVE-Arbeitsumgebung. Bitte wählen Sie eine Entwurf-Arbeitsumgebung aus der oberen Leiste, um Änderungen zu prüfen und zu veröffentlichen.</target>
+      </trans-unit>
+      <trans-unit id="moduleOnPageIdZero" approved="yes">
+        <source>Please select a page in the page tree to review and publish changes.</source>
+        <target state="final">Bitte wählen Sie eine Seite im Seitenbaum aus, um Änderungen zu überprüfen und zu veröffentlichen.</target>
+      </trans-unit>
+      <trans-unit id="admin.noWorkspaceSetup.title" approved="yes">
+        <source>No workspace set up!</source>
+        <target state="final">Keine Arbeitsumgebung eingerichtet!</target>
+      </trans-unit>
+      <trans-unit id="admin.noWorkspaceSetup.message" approved="yes">
+        <source>There are currently no workspace records configured in the database. To use the workspace
 					functionality, at least one workspace must be set up on the root page.
 				</source>
-			<target state="final">Es sind noch keine Arbeitsumgebungen in der Datenbank konfiguriert. Um diese Funktion zu nutzen, muss mindestens eine Arbeitsumgebung auf der Anfangsseite eingerichtet werden.</target></trans-unit>
-      <trans-unit id="admin.noWorkspaceSetup.buttonCreate" xml:space="preserve" approved="yes">
-				<source>Create a workspace</source>
-			<target state="final">Arbeitsumgebung anlegen</target></trans-unit>
-      <trans-unit id="button.editWorkspaceSettings" xml:space="preserve" approved="yes">
-				<source>Edit workspace settings</source>
-			<target state="final">Workspace-Einstellungen bearbeiten</target></trans-unit>
+        <target state="final">Es sind noch keine Arbeitsumgebungen in der Datenbank konfiguriert. Um diese Funktion zu nutzen, muss mindestens eine Arbeitsumgebung auf der Anfangsseite eingerichtet werden.</target>
+      </trans-unit>
+      <trans-unit id="admin.noWorkspaceSetup.buttonCreate" approved="yes">
+        <source>Create a workspace</source>
+        <target state="final">Arbeitsumgebung anlegen</target>
+      </trans-unit>
+      <trans-unit id="button.editWorkspaceSettings" approved="yes">
+        <source>Edit workspace settings</source>
+        <target state="final">Workspace-Einstellungen bearbeiten</target>
+      </trans-unit>
       <trans-unit id="actionSendToStage" approved="yes">
         <source>Send to stage</source>
         <target state="final">An Stufe senden</target>
