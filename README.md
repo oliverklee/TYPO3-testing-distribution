@@ -65,7 +65,7 @@ tests.
     - `ddev launch typo3`
 - Frontend (DE):
     - `ddev launch`
-- Frontend (EN): https://typo3-testing-10-4-en.ddev.site:8081/
+- Frontend (EN): https://typo3-testing-10-4-en.ddev.site
 - MailHog:
     - `ddev launch -m`
 
