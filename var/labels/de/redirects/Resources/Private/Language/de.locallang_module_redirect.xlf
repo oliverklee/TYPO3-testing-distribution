@@ -39,6 +39,14 @@
         <source>Create new redirect</source>
         <target state="final">Neue Weiterleitung erstellen</target>
       </trans-unit>
+      <trans-unit id="noAccessPermissions.title" resname="noAccessPermissions.title" approved="yes">
+        <source>Access denied</source>
+        <target state="final">Zugriff verweigert</target>
+      </trans-unit>
+      <trans-unit id="noAccessPermissions.message" resname="noAccessPermissions.message" approved="yes">
+        <source>You are not allowed to list or modify redirects due to insufficient permissions.</source>
+        <target state="final">Sie sind aufgrund unzureichender Berechtigungen nicht berechtigt, Weiterleitungen aufzulisten oder zu ändern.</target>
+      </trans-unit>
       <trans-unit id="redirect_not_found_with_filter.title" resname="redirect_not_found_with_filter.title" approved="yes">
         <source>No redirects found!</source>
         <target state="final">Keine Weiterleitungen gefunden!</target>

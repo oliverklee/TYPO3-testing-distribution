@@ -85,7 +85,7 @@
       </trans-unit>
       <trans-unit id="module.pagetsconfig_active.panel.info.conditionWithConstant" resname="module.pagetsconfig_active.panel.info.conditionWithConstant" approved="yes">
         <source>Site settings usage: [%s]</source>
-        <target state="final">Site Settings Nutzung: [%s]</target>
+        <target state="final">Site-Einstellungen Nutzung: [%s]</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_active.panel.header.configuration" resname="module.pagetsconfig_active.panel.header.configuration" approved="yes">
         <source>Configuration</source>
