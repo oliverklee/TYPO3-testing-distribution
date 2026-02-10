@@ -8,6 +8,7 @@ return [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$VDRPbnpHMFFaMXptRG9XWg$u/+EHO41JZRI8PSxn59YNxUmQjGucvpVP1ndBYEocy8',
+        'lockSSL' => true,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
