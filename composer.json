@@ -51,7 +51,7 @@
 		"helmich/typo3-typoscript-lint": "3.3.0",
 		"phpstan/extension-installer": "1.4.3",
 		"phpstan/phpstan": "2.1.38",
-		"phpstan/phpstan-phpunit": "2.0.12",
+		"phpstan/phpstan-phpunit": "2.0.14",
 		"phpstan/phpstan-strict-rules": "2.0.8",
 		"phpunit/phpunit": "^11.5.50",
 		"saschaegerer/phpstan-typo3": "2.1.1",
