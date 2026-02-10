@@ -51,8 +51,8 @@
 		"typo3/minimal": "^11.5"
 	},
 	"require-dev": {
-		"ergebnis/composer-normalize": "^2.39.0",
-		"symfony/yaml": "^5.4.31"
+		"ergebnis/composer-normalize": "2.50.0",
+		"symfony/yaml": "5.4.45"
 	},
 	"repositories": [
 		{
@@ -68,8 +68,8 @@
 			"typo3/cms-composer-installers": true
 		},
 		"audit": {
-			"block-abandoned": false,
-			"block-insecure": false
+			"block-insecure": false,
+			"block-abandoned": false
 		},
 		"lock": false,
 		"preferred-install": {
