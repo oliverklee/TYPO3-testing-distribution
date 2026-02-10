@@ -95,6 +95,10 @@
         <source>Department</source>
         <target state="final">Abteilung</target>
       </trans-unit>
+      <trans-unit id="membership_number" approved="yes">
+        <source>Membership number</source>
+        <target state="final">Mitgliedsnummer</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
