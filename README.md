@@ -69,7 +69,7 @@ tests.
 - Frontend (DE):
   - `ddev launch`
 - Frontend (EN): https://typo3-testing-10-4-en.ddev.site
-- MailHog:
+- Mailpit:
   - `ddev launch -m`
 
 ## Credentials
