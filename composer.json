@@ -52,6 +52,7 @@
 	},
 	"require-dev": {
 		"ergebnis/composer-normalize": "2.50.0",
+		"php-parallel-lint/php-parallel-lint": "1.4.0",
 		"symfony/yaml": "5.4.45"
 	},
 	"repositories": [
@@ -85,7 +86,7 @@
 			"@composer normalize --dry-run --no-check-lock",
 			"@composer normalize --dry-run --no-check-lock src/extensions/site-dev/composer.json"
 		],
-		"check:php:lint": "find public/typo3conf/LocalConfiguration.php src/extensions/site-dev -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"check:php:lint": "parallel-lint public/typo3conf/LocalConfiguration.php src/extensions/site-dev",
 		"check:static": [
 			"@check:composer:normalize",
 			"@check:php:lint",
