@@ -60,7 +60,7 @@
 		"ssch/typo3-rector-testing-framework": "3.0.0",
 		"symfony/yaml": "7.4.1",
 		"typo3/coding-standards": "0.8.0",
-		"typo3/testing-framework": "9.3.0"
+		"typo3/testing-framework": "9.4.0"
 	},
 	"conflict": {
 		"georgringer/autoswitchtolistview": "3.1.0"
