@@ -4,7 +4,6 @@
 services:
   web:
     volumes:
-      - "$HOME/src/typo3/ext/feuserextrafields:/var/www/html/src/extensions/feuserextrafields:cached,ro"
       - "$HOME/src/typo3/ext/oelib:/var/www/html/src/extensions/oelib:cached,ro"
       - "$HOME/src/typo3/ext/onetimeaccount:/var/www/html/src/extensions/onetimeaccount:cached,ro"
       - "$HOME/src/typo3/ext/seminars:/var/www/html/src/extensions/seminars:cached,ro"

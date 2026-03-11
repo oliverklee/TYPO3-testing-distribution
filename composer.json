@@ -18,7 +18,7 @@
 		"php": "^7.4 || ^8.0",
 		"georgringer/autoswitchtolistview": "^2.0.4",
 		"helhum/typo3-console": "^7.1.4",
-		"oliverklee/feuserextrafields": "dev-main",
+		"oliverklee/feuserextrafields": "6.7.1",
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/onetimeaccount": "dev-main",
 		"oliverklee/seminars": "dev-main",
