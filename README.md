@@ -10,7 +10,8 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 
 ## Usage
 
-This distribution uses [ddev](https://github.com/drud/ddev).
+This distribution uses [ddev](https://github.com/drud/ddev). It requires at
+least ddev version 1.25.1.
 
 ### Initializing the project
 
