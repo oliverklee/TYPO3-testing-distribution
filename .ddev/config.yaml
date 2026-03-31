@@ -19,6 +19,7 @@ web_environment:
     - typo3DatabaseUsername=db
     - typo3DatabaseName=test
 corepack_enable: false
+ddev_version_constraint: '>= v1.25.1'
 
 # Key features of DDEV's config.yaml:
 
