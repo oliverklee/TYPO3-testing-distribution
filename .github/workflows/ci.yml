@@ -93,6 +93,7 @@ jobs:
           - composer:normalize
           - json:lint
           - yaml:lint
+          - php:rector
           - php:cs-fixer
           - php:stan
           - typoscript:lint
