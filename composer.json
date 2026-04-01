@@ -106,6 +106,7 @@
 		"check:json:lint": "find . -path '*/public/*' ! -path '*/var/*' ! -path '*/vendor/*' -name '*.json' | xargs -r php vendor/bin/jsonlint -q",
 		"check:php:cs-fixer": "php-cs-fixer fix --config .php-cs-fixer.php -v --dry-run --using-cache no --diff",
 		"check:php:lint": "parallel-lint *.php .*.php config src/extensions/site-dev",
+		"check:php:rector": "rector process --dry-run",
 		"check:php:stan": "phpstan --no-progress",
 		"check:static": [
 			"@check:composer:normalize",
@@ -126,13 +127,18 @@
 		"check:yaml:lint": "find .ddev .github config src/extensions/site-dev -name '*.yml' -o -name '*.yaml' | xargs php ./vendor/bin/yaml-lint",
 		"fix": [
 			"@fix:composer",
-			"@fix:php:cs-fixer"
+			"@fix:php"
 		],
 		"fix:composer": [
 			"@composer normalize --no-check-lock",
 			"@composer normalize --no-check-lock src/extensions/site-dev/composer.json"
 		],
+		"fix:php": [
+			"@fix:php:rector",
+			"@fix:php:cs-fixer"
+		],
 		"fix:php:cs-fixer": "php-cs-fixer fix --config .php-cs-fixer.php",
+		"fix:php:rector": "rector process",
 		"phpstan:baseline": "phpstan --generate-baseline=phpstan-baseline.neon --allow-empty-baseline",
 		"typo3-cms-scripts": [
 			"typo3 install:fixfolderstructure"
@@ -143,6 +149,7 @@
 		"check:json:lint": "Lints the JSON files.",
 		"check:php:cs-fixer": "Checks the code style with the PHP Coding Standards Fixer (PHP-CS-Fixer).",
 		"check:php:lint": "Lints the PHP files for syntax errors.",
+		"check:php:rector": "Checks for code for changes by Rector.",
 		"check:php:stan": "Checks the PHP types using PHPStan.",
 		"check:static": "Runs all static code checks (syntax, style, types).",
 		"check:tests": "Runs all tests (unit and functional).",
@@ -152,7 +159,9 @@
 		"check:yaml:lint": "Lints the YAML files for syntax errors.",
 		"fix": "Reformats the code.",
 		"fix:composer": "Reformats and sorts the composer.json files.",
+		"fix:php": "Runs all fixers for the PHP code.",
 		"fix:php:cs-fixer": "Fixes the code style with PHP-CS-Fixer.",
+		"fix:php:rector": "Updates the code with Rector.",
 		"phpstan:baseline": "Updates the PHPStan baseline file to match the code."
 	}
 }
