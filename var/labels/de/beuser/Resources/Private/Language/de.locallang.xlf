@@ -363,7 +363,7 @@
       </trans-unit>
       <trans-unit id="backendUser.confirmDelete" approved="yes">
         <source>Are you sure you want to delete the backend user '%s'?</source>
-        <target state="final">Möchten Sie den Backend-Benutzer "%s" tatsächlich löschen'?</target>
+        <target state="final">Möchtest du den Backend-Benutzer "%s" tatsächlich löschen?</target>
       </trans-unit>
       <!-- Backend users: Show -->
       <trans-unit id="backendUser.show.title" approved="yes">
@@ -526,7 +526,7 @@
       </trans-unit>
       <trans-unit id="resetPassword.confirmation.text" approved="yes">
         <source>Are you sure you want to reset the password for %s?</source>
-        <target state="final">Möchten Sie das Passwort für %s wirklich zurücksetzen?</target>
+        <target state="final">Möchtest du das Passwort für %s wirklich zurücksetzen?</target>
       </trans-unit>
     </body>
   </file>
