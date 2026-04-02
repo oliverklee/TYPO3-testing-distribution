@@ -77,7 +77,7 @@
       </trans-unit>
       <trans-unit id="noSubpages.message" resname="noSubpages.message" approved="yes">
         <source>Please select a page with subpages.</source>
-        <target state="final">Bitte wählen Sie eine Seite mit Unterseiten.</target>
+        <target state="final">Bitte wähle eine Seite mit Unterseiten.</target>
       </trans-unit>
       <trans-unit id="notAvailableInWorkspace.title" resname="notAvailableInWorkspace.title" approved="yes">
         <source>Not implemented</source>

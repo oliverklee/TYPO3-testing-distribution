@@ -453,7 +453,7 @@
       </trans-unit>
       <trans-unit id="localize.chooseLanguage" resname="localize.chooseLanguage" approved="yes">
         <source>Choose your language</source>
-        <target state="final">Wählen Sie Ihre Sprache aus</target>
+        <target state="final">Wähle deine Sprache aus</target>
       </trans-unit>
       <trans-unit id="localize.wizard.header" resname="localize.wizard.header" approved="yes">
         <source>Localize record &quot;{0}&quot; into {1}</source>
