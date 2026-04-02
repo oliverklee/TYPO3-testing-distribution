@@ -65,7 +65,7 @@
       </trans-unit>
       <trans-unit id="validation.identifierRenamed.message" resname="validation.identifierRenamed.message" approved="yes">
         <source>Given site identifier "%1s" already exists. It has been renamed to "%2s". Maybe you want to edit the site again and give it a better name.</source>
-        <target state="final">Der Seitenbezeichner "%1s" ist schon vorhanden und wurde umbenannt in "%2s". Eventuell möchten Sie die Seite anpassen und einen neuen Namen vergeben.</target>
+        <target state="final">Der Site Identifier "%1s" existiert bereits und wurde in "%2s" umbenannt. Eventuell möchtest du die Site erneut bearbeiten und ihr einen besseren Namen vergeben.</target>
       </trans-unit>
       <trans-unit id="validation.identifierExists.title" resname="validation.identifierExists.title" approved="yes">
         <source>Identifier not changed</source>

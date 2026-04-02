@@ -345,7 +345,7 @@
       </trans-unit>
       <trans-unit id="resetPassword.confirmation.text" resname="resetPassword.confirmation.text" approved="yes">
         <source>Are you sure you want to reset the password for %s?</source>
-        <target state="final">Möchten Sie das Passwort für %s wirklich zurücksetzen?</target>
+        <target state="final">Möchtest du das Passwort für %s wirklich zurücksetzen?</target>
       </trans-unit>
       <trans-unit id="compare.tables" resname="compare.tables" approved="yes">
         <source>Table permissions</source>

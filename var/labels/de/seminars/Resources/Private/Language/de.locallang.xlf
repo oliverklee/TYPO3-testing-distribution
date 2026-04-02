@@ -1439,8 +1439,8 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <target state="final">Anzeigeoptionen</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow" approved="yes">
-        <source>categories</source>
-        <target state="final">Kategorien</target>
+        <source>Fields in the editor form</source>
+        <target state="final">Felder im Editor</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.categories" approved="yes">
         <source>categories</source>
@@ -1501,6 +1501,46 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.speakers" approved="yes">
         <source>speakers</source>
         <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList" approved="yes">
+        <source>Registration list</source>
+        <target state="final">Anmeldeliste</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow" approved="yes">
+        <source>Columns to show</source>
+        <target state="final">anzuzeigende Spalten</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.counter" approved="yes">
+        <source>counter</source>
+        <target state="final">Zähler</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.membershipNumber" approved="yes">
+        <source>membership number</source>
+        <target state="final">Mitgliedsnummer</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.name" approved="yes">
+        <source>name</source>
+        <target state="final">Name</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.address" approved="yes">
+        <source>address</source>
+        <target state="final">Adresse</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.email" approved="yes">
+        <source>email</source>
+        <target state="final">E-Mail</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.telephone" approved="yes">
+        <source>telephone</source>
+        <target state="final">Telefon</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.dateOfBirth" approved="yes">
+        <source>date of birth</source>
+        <target state="final">Geburtsdatum</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.registrationDate" approved="yes">
+        <source>registration date</source>
+        <target state="final">Anmeldedatum</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.index.headline" approved="yes">
         <source>Events I have created</source>
@@ -1625,6 +1665,58 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.frontEndEditor.action.save" approved="yes">
         <source>Save</source>
         <target state="final">Speichern</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.action.listRegistrations" approved="yes">
+        <source>Registration list</source>
+        <target state="final">Anmeldungsliste</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.headline.regularRegistrations" approved="yes">
+        <source>Regular registrations</source>
+        <target state="final">Reguläre Anmeldungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.headline.waitingListRegistrations" approved="yes">
+        <source>Waiting list registrations</source>
+        <target state="final">Anmeldungen auf der Warteliste</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.counter" approved="yes">
+        <source>#</source>
+        <target state="final">#</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.membershipNumber" approved="yes">
+        <source>Membership number</source>
+        <target state="final">Mitgliedsnummer</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Name</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.address" approved="yes">
+        <source>Address</source>
+        <target state="final">Adresse</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.email" approved="yes">
+        <source>Email</source>
+        <target state="final">E-Mail</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.telephone" approved="yes">
+        <source>Phone</source>
+        <target state="final">Telefon</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.dateOfBirth" approved="yes">
+        <source>Date of birth</source>
+        <target state="final">Geburtsdatum</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.registrationDate" approved="yes">
+        <source>Registration date</source>
+        <target state="final">Anmeldedatum</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.message.noRegistrations" approved="yes">
+        <source>This event does not have any registrations yet.</source>
+        <target state="final">Diese Veranstaltung hat noch keine Anmeldungen.</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.backlink" approved="yes">
+        <source>Back to the event list</source>
+        <target state="final">Zurück zur Veranstaltungsliste</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration" approved="yes">
         <source>Registration form for events</source>
@@ -2561,8 +2653,8 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <target state="final">Frei</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.vacancies.fullyBooked" approved="yes">
-        <source>full</source>
-        <target state="final">voll</target>
+        <source>fully booked</source>
+        <target state="final">ausgebucht</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.vacancies.unlimited" approved="yes">
         <source>∞</source>
