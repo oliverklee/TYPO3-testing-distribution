@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" datatype="plaintext" original="messages" date="2016-07-18T21:20:33Z" product-name="seminars" target-language="de">
+  <file source-language="en" datatype="plaintext" original="messages" target-language="de">
     <header/>
     <body>
       <trans-unit id="moduleFunction.tx_seminars_modfunc1" approved="yes">
@@ -455,6 +455,10 @@
         <source>Registration Comments</source>
         <target state="final">Anmeldekommentare</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_attendances.divLabelCertificateOfAttendance" approved="yes">
+        <source>Certificate of attendance</source>
+        <target state="final">Teilnahmebescheinigung</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_attendances.divLabelPaymentInformation" approved="yes">
         <source>Billing</source>
         <target state="final">Abrechnung</target>
@@ -527,9 +531,21 @@
         <source>Total price for this attendance</source>
         <target state="final">Gesamtpreis dieser Buchung</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_attendances.invoice_date" approved="yes">
+        <source>Invoice date</source>
+        <target state="final">Rechnungsdatum</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_attendances.datepaid" approved="yes">
         <source>Date of payment</source>
         <target state="final">Datum der Bezahlung</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_attendances.invoice_number" approved="yes">
+        <source>Invoice number</source>
+        <target state="final">Rechnungsnummer</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_attendances.customer_number" approved="yes">
+        <source>Customer number</source>
+        <target state="final">Kund_innennummer</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.method_of_payment" approved="yes">
         <source>Method of payment</source>
@@ -564,8 +580,8 @@
         <target state="final">divers</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.address" approved="yes">
-        <source>Address</source>
-        <target state="final">Adresse</target>
+        <source>Street address</source>
+        <target state="final">Straße und Hausnummer</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.zip" approved="yes">
         <source>ZIP</source>
@@ -613,9 +629,9 @@
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.accommodation" approved="yes">
         <source>
-					How are your lodging preferences (if possible a single room, a double room, no lodging)?
-				</source>
-        <target state="final">Wie möchten Sie übernachten (wenn möglich im Einzelzimmer, Doppelzimmer, keine Übernachtung)?</target>
+          How are your lodging preferences (if possible a single room, a double room, no lodging)?
+        </source>
+        <target state="final">Übernachtungswünsche</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.foods" approved="yes">
         <source>Selected food options</source>
