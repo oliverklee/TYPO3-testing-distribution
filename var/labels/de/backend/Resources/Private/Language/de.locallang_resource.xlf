@@ -19,9 +19,21 @@
         <source>The resource must be a file or a folder.</source>
         <target state="final">Die Ressource muss eine Datei oder ein Ordner sein.</target>
       </trans-unit>
+      <trans-unit id="ajax.error.message.resourceOutsideOfStorages" approved="yes">
+        <source>Access to files outside your configured storages is not permitted.</source>
+        <target state="final">Der Zugriff auf Dateien außerhalb Ihres konfigurierten Speichers ist nicht gestattet.</target>
+      </trans-unit>
+      <trans-unit id="ajax.error.message.resourceNoPermissionRename" approved="yes">
+        <source>Renaming this resource is not permitted.</source>
+        <target state="final">Umbenennen dieser Ressource ist nicht zulässig.</target>
+      </trans-unit>
       <trans-unit id="ajax.error.message.resourceNameCannotBeEmpty" approved="yes">
         <source>The resource name cannot be empty.</source>
         <target state="final">Der Name einer Ressource darf nicht leer sein.</target>
+      </trans-unit>
+      <trans-unit id="ajax.error.message.resourceNameNotDifferent" approved="yes">
+        <source>The resource %s already has this name. No changes were made.</source>
+        <target state="final">Die Ressource %s hat diesen Namen. Es wurden keine Änderungen vorgenommen.</target>
       </trans-unit>
       <trans-unit id="ajax.error.message.resourceNotRenamed" approved="yes">
         <source>The resource %s could not be renamed.</source>

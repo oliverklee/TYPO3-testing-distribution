@@ -47,7 +47,7 @@
       </trans-unit>
       <trans-unit id="site.languages.description" approved="yes">
         <source>Select an already existing language from another site or create a new one.</source>
-        <target state="final">Wählen Sie eine bereits existierende Sprache einer anderen Site oder erstellen Sie eine neue.</target>
+        <target state="final">Wähle eine bereits existierende Sprache einer anderen Site oder erstelle eine neue.</target>
       </trans-unit>
       <trans-unit id="site.languages.new" approved="yes">
         <source>New language</source>
