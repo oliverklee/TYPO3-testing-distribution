@@ -19,7 +19,7 @@
 		"georgringer/autoswitchtolistview": "^2.0.4",
 		"helhum/typo3-console": "^7.1.4",
 		"oliverklee/feuserextrafields": "6.7.1",
-		"oliverklee/oelib": "dev-main",
+		"oliverklee/oelib": "6.3.1",
 		"oliverklee/onetimeaccount": "dev-main",
 		"oliverklee/seminars": "dev-main",
 		"oliverklee/site-dev": "@dev",
