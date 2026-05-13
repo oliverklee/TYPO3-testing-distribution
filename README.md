@@ -3,7 +3,6 @@
 This is a TYPO3 distribution which I use to manually test my extensions:
 
 - [feuserextrafields](https://github.com/oliverklee-de/feuserextrafields)
-  (once it supports TYPO3 13LTS)
 - [oelib](https://github.com/oliverklee-de/oelib)
   (once it supports TYPO3 13LTS)
 - [onetimeaccount](https://github.com/oliverklee-de/onetimeaccount)
