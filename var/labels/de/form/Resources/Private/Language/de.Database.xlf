@@ -377,7 +377,7 @@
             <target state="final">Muster</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.editor.pattern.fieldExplanationText" resname="formEditor.elements.TextMixin.editor.pattern.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Additional client-side validation as JavaScript regular expression</source>
-            <target state="final">Zusätzliche Client-seitige Validierung als regulärer Ausdruck in JavaScript</target></trans-unit>
+            <target state="final">Zusätzliche Client-seitige Validierung als Regulärer Ausdruck in JavaScript</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.editor.step.label" resname="formEditor.elements.TextMixin.editor.step.label" xml:space="preserve" approved="yes">
                 <source>Step</source>
             <target state="final">Schritt</target></trans-unit>
@@ -425,7 +425,7 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.Alphanumeric.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.TextMixin.validators.Alphanumeric.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.Text.editor.header.label" resname="formEditor.elements.TextMixin.validators.Text.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Non-XML text</source>
             <target state="final">Nicht-XML-Text</target></trans-unit>
@@ -434,7 +434,7 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.Text.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.TextMixin.validators.Text.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.StringLength.editor.header.label" resname="formEditor.elements.TextMixin.validators.StringLength.editor.header.label" xml:space="preserve" approved="yes">
                 <source>String length</source>
             <target state="final">Länge des Strings</target></trans-unit>
@@ -443,7 +443,7 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.StringLength.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.TextMixin.validators.StringLength.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.EmailAddress.editor.header.label" resname="formEditor.elements.TextMixin.validators.EmailAddress.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Email</source>
             <target state="final">E-Mail</target></trans-unit>
@@ -452,7 +452,7 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.EmailAddress.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.TextMixin.validators.EmailAddress.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.Integer.editor.header.label" resname="formEditor.elements.TextMixin.validators.Integer.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Integer number</source>
             <target state="final">Ganzzahl</target></trans-unit>
@@ -461,7 +461,7 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.Integer.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.TextMixin.validators.Integer.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.Float.editor.header.label" resname="formEditor.elements.TextMixin.validators.Float.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Floating-point number</source>
             <target state="final">Fließkommazahl</target></trans-unit>
@@ -470,7 +470,7 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.Float.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.TextMixin.validators.Float.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.Number.editor.header.label" resname="formEditor.elements.TextMixin.validators.Number.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Number</source>
             <target state="final">Zahl</target></trans-unit>
@@ -482,7 +482,7 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.NumberRange.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.TextMixin.validators.NumberRange.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.RegularExpression.editor.header.label" resname="formEditor.elements.TextMixin.validators.RegularExpression.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Regular expression</source>
             <target state="final">Regulärer Ausdruck</target></trans-unit>
@@ -491,13 +491,13 @@
             <target state="final">Regulärer Ausdruck</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.RegularExpression.editor.regex.fieldExplanationText" resname="formEditor.elements.TextMixin.validators.RegularExpression.editor.regex.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Enter a valid PHP PCRE regular expression here.</source>
-            <target state="final">Füge hier einen validen regulären PHP-PCRE-Ausdruck ein.</target></trans-unit>
+            <target state="final">Geben Sie hier einen validen regulären PHP-PCRE-Ausdruck ein.</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.RegularExpression.editor.validationErrorMessage.label" resname="formEditor.elements.TextMixin.validators.RegularExpression.editor.validationErrorMessage.label" xml:space="preserve" approved="yes">
                 <source>Custom error message</source>
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.TextMixin.validators.RegularExpression.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.TextMixin.validators.RegularExpression.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.MultiSelectionMixin.validators.Count.editor.header.label" resname="formEditor.elements.MultiSelectionMixin.validators.Count.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Number of submitted values</source>
             <target state="final">Anzahl der übermittelten Werte</target></trans-unit>
@@ -506,13 +506,13 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.MultiSelectionMixin.validators.Count.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.MultiSelectionMixin.validators.Count.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.SelectionMixin.editor.inactiveOption.label" resname="formEditor.elements.SelectionMixin.editor.inactiveOption.label" xml:space="preserve" approved="yes">
                 <source>First option (empty value)</source>
             <target state="final">Erste Option (leerer Wert)</target></trans-unit>
       <trans-unit id="formEditor.elements.SelectionMixin.editor.inactiveOption.fieldExplanationText" resname="formEditor.elements.SelectionMixin.editor.inactiveOption.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>If set, this label will be shown as first option.</source>
-            <target state="final">Wenn gesetzt, wird diese Bezeichnung als erste Option angezeigt.</target></trans-unit>
+            <target state="final">Wenn gesetzt, wird dies Bezeichnung als erste Option angezeigt.</target></trans-unit>
       <trans-unit id="formEditor.elements.SelectionMixin.editor.options.label" resname="formEditor.elements.SelectionMixin.editor.options.label" xml:space="preserve" approved="yes">
                 <source>Choices</source>
             <target state="final">Optionen</target></trans-unit>
@@ -575,7 +575,7 @@
             <target state="final">Empfänger</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>The email addresses and names of the website visitors to which the email should be sent.</source>
-            <target state="final">Die E-Mail-Adressen und Namen der Website-Besucher an welche die E-Mail gesendet werden soll.</target></trans-unit>
+            <target state="final">Die E-Mail Adressen und Namen der Websitebesucher an die die E-Mail gesendet werden soll.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.gridColumns.value.title" resname="formEditor.elements.Form.finisher.EmailToSender.editor.recipients.gridColumns.value.title" xml:space="preserve" approved="yes">
                 <source>Email Address</source>
             <target state="final">E-Mail Adresse</target></trans-unit>
@@ -587,13 +587,13 @@
             <target state="final">Adresse des Absenders</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.senderAddress.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.senderAddress.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>The email address of the sender (e.g. your company's email address) which appears in the website visitor email client.</source>
-            <target state="final">Die E-Mail Adresse des Absenders (z.B. die E-Mail Adresse deiner Firma) welche im E-Mail Programm des Besuchers erscheint.</target></trans-unit>
+            <target state="final">Die E-Mail Adresse des Absenders (z.B. die E-Mail Adresse ihrer Firma) welche im E-Mail Programm des Besuchers erscheint.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.senderName.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.senderName.label" xml:space="preserve" approved="yes">
                 <source>Sender name</source>
             <target state="final">Name des Absenders</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.senderName.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.senderName.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>The name of the sender (e.g. your company's name) which appears in the website visitor email client.</source>
-            <target state="final">Der Name des Absenders (z.B. der Name deiner Firma), welche als Absender im E-Mail Programm des Webseitenbesuchers erscheint.</target></trans-unit>
+            <target state="final">Der Name des Absenders (z.B. der Name Ihrer Firma), welche als Absender im E-Mail Programm des Webseitenbesuchers erscheint.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.replyToRecipients.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.replyToRecipients.label" xml:space="preserve" approved="yes">
                 <source>Reply-To Recipients</source>
             <target state="final">Reply-To Empfänger</target></trans-unit>
@@ -608,7 +608,7 @@
             <target state="final">HTML E-Mail Teil hinzufügen</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.addHtmlPart.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToSender.editor.addHtmlPart.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>If enabled, the email will contain a plaintext and an HTML part, otherwise only a plaintext part.</source>
-            <target state="final">Wenn aktiviert, enthält die E-Mail einen Klartext und einen HTML-Teil, ansonsten nur einen Klartext-Teil.</target></trans-unit>
+            <target state="final">Wenn aktiviert, dann enthält die E-Mail einen plaintext und einen HTML-Teil, sonst nur einen plaintext Teil.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToSender.editor.attachUploads.label" resname="formEditor.elements.Form.finisher.EmailToSender.editor.attachUploads.label" xml:space="preserve" approved="yes">
                 <source>Attach uploads</source>
             <target state="final">Uploads hinzufügen</target></trans-unit>
@@ -641,7 +641,7 @@
             <target state="final">Empfänger</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipients.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.recipients.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>The email addresses and names of the recipients to which the email should be sent (e.g. your company's email addresses).</source>
-            <target state="final">Die E-Mail Adresse und die Namen der Empfänger, an welche die E-Mail gesendet werden soll (z.B. die E-Mail Adressen deiner Firma).</target></trans-unit>
+            <target state="final">Die E-Mail Adresse und die Namen der Empfänger, an welche die E-Mail gesendet werden soll (z.B. die E-Mail Adressen Ihrer Firma).</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.senderAddress.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.senderAddress.label" xml:space="preserve" approved="yes">
                 <source>Sender address</source>
             <target state="final">Adresse des Absenders</target></trans-unit>
@@ -668,7 +668,7 @@
             <target state="final">HTML-Teil hinzufügen</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.addHtmlPart.fieldExplanationText" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.addHtmlPart.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>If enabled, the email will contain a plaintext and an HTML part, otherwise only a plaintext part.</source>
-            <target state="final">Wenn aktiviert, enthält die E-Mail einen Klartext und einen HTML-Teil, ansonsten nur einen Klartext-Teil.</target></trans-unit>
+            <target state="final">Wenn aktiviert, dann enthält die E-Mail einen plaintext und einen HTML-Teil, sonst nur einen plaintext Teil.</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.attachUploads.label" resname="formEditor.elements.Form.finisher.EmailToReceiver.editor.attachUploads.label" xml:space="preserve" approved="yes">
                 <source>Attach uploads</source>
             <target state="final">Uploads hinzufügen</target></trans-unit>
@@ -719,7 +719,7 @@
             <target state="final">Text</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.Confirmation.editor.message.fieldExplanationText" resname="formEditor.elements.Form.finisher.Confirmation.editor.message.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Will be ignored if "Content element" is set</source>
-            <target state="final">Wird ignoriert, wenn "Inhaltselement" gesetzt ist</target></trans-unit>
+            <target state="final">Wird nicht beachtet, wenn "Inhalts Element" gesetzt ist</target></trans-unit>
       <trans-unit id="formEditor.elements.Form.finisher.Closure.editor.header.label" resname="formEditor.elements.Form.finisher.Closure.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Execute a closure</source>
             <target state="final">Closure ausführen</target></trans-unit>
@@ -746,7 +746,7 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.FormElement.editor.requiredValidator.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.FormElement.editor.requiredValidator.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.FormElement.validators.DateRange.editor.header.label" resname="formEditor.elements.FormElement.validators.DateRange.editor.header.label" xml:space="preserve" approved="yes">
                 <source>Date range</source>
             <target state="final">Datumsbereich</target></trans-unit>
@@ -932,7 +932,7 @@
             <target state="final">Benutzerdefinierte Fehlermeldung</target></trans-unit>
       <trans-unit id="formEditor.elements.DatePicker.validators.DateTime.editor.validationErrorMessage.fieldExplanationText" resname="formEditor.elements.DatePicker.validators.DateTime.editor.validationErrorMessage.fieldExplanationText" xml:space="preserve" approved="yes">
                 <source>Error message which is shown if the validation does not succeed</source>
-            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt.</target></trans-unit>
+            <target state="final">Fehlermeldung die angezeigt wird, wenn die Validierung fehlschlägt</target></trans-unit>
       <trans-unit id="formEditor.elements.StaticText.label" resname="formEditor.elements.StaticText.label" xml:space="preserve" approved="yes">
                 <source>Static text</source>
             <target state="final">Statischer Text</target></trans-unit>
