@@ -49,7 +49,7 @@
       </trans-unit>
       <trans-unit id="maxTitleLen" approved="yes">
         <source>Max. title length</source>
-        <target state="final">Max. Titellänge</target>
+        <target state="final">Maximale Titellänge</target>
       </trans-unit>
       <trans-unit id="edit_docModuleUpload" approved="yes">
         <source>File upload directly in Doc-module</source>
@@ -65,7 +65,7 @@
       </trans-unit>
       <trans-unit id="setToStandard" approved="yes">
         <source>Reset all values to default</source>
-        <target state="final">Alle Angaben auf den Standardwert zurücksetzen</target>
+        <target state="final">Alle Werte auf Standard zurücksetzen</target>
       </trans-unit>
       <trans-unit id="resetTab" approved="yes">
         <source>Reset configuration</source>
@@ -89,7 +89,7 @@
       </trans-unit>
       <trans-unit id="copyLevels" approved="yes">
         <source>Recursive copy: Enter the number of page sublevels to include, when a page is copied</source>
-        <target state="final">Rekursives Kopieren: Geben Sie die Anzahl der zu kopierenden Unterebenen an</target>
+        <target state="final">Rekursives Kopieren: Gib die Anzahl zu kopierenden Unterebenen an, wenn eine Seite kopiert wird</target>
       </trans-unit>
       <trans-unit id="levels" approved="yes">
         <source>levels</source>
@@ -97,7 +97,7 @@
       </trans-unit>
       <trans-unit id="beUser_realName" approved="yes">
         <source>Your name</source>
-        <target state="final">Dein Name</target>
+        <target state="final">Ihr Name</target>
       </trans-unit>
       <trans-unit id="beUser_avatar" approved="yes">
         <source>Avatar</source>
@@ -117,7 +117,7 @@
       </trans-unit>
       <trans-unit id="newPasswordAgain" approved="yes">
         <source>New password (repetition)</source>
-        <target state="final">Neues Passwort (wiederholen)</target>
+        <target state="final">Neues Passwort (Wiederholung)</target>
       </trans-unit>
       <trans-unit id="newPassword_ok" approved="yes">
         <source>Password was updated.</source>
@@ -141,7 +141,7 @@
       </trans-unit>
       <trans-unit id="mfaProviders.description" approved="yes">
         <source>Use multi-factor authentication to secure your account by providing another factor next to your password.</source>
-        <target state="final">Nutzen Sie Multi-Faktor-Authentifizierung um Ihren Account zu schützen, indem sie einen weiteren Faktor neben dem Passwort festlegen.</target>
+        <target state="final">Nutze die Multi-Faktor-Authentifizierung, um dein Benutzerkonto zu schützen, indem du einen weiteren Faktor neben deinem Passwort festlegst.</target>
       </trans-unit>
       <trans-unit id="mfaProviders.lockedMfaProviders" approved="yes">
         <source>Some providers are currently locked!</source>
@@ -153,7 +153,7 @@
       </trans-unit>
       <trans-unit id="mfaProviders.setupLinkTitle" approved="yes">
         <source>Setup multi-factor authentication</source>
-        <target state="final">Multi-Faktor-Authentifizierung aktivieren</target>
+        <target state="final">﻿﻿Multi-Faktor-Authentifizierung einrichten</target>
       </trans-unit>
       <trans-unit id="mfaProviders.manageLinkTitle" approved="yes">
         <source>Manage multi-factor authentication</source>
