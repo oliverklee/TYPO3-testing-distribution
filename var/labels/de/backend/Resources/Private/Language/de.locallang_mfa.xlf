@@ -184,8 +184,8 @@ Sie müssen die Multi-Faktor-Authentifizierung einrichten, es sind jedoch keine 
         <target state="final">Zurück</target>
       </trans-unit>
       <trans-unit id="auth.locked" approved="yes">
-        <source>This provider is temporarily locked!</source>
-        <target state="final">Dieser Provider ist vorübergehend gesperrt!</target>
+        <source>This provider is locked. Unlocking may require administrative intervention. Recovery codes can be used to circumvent the lock.</source>
+        <target state="final">Dieser Provider ist gesperrt. Zum Entsperren kann ein Eingreifen durch die Administration erforderlich sein. Wiederherstellungscodes können verwendet werden, um die Sperre aufzuheben.</target>
       </trans-unit>
       <trans-unit id="auth.alternativeProviders" approved="yes">
         <source>Alternative providers</source>
