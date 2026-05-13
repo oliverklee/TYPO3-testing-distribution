@@ -355,10 +355,6 @@ Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn du diese Fehlermeldun
         <source>Sorry, there are no more vacancies.</source>
         <target state="final">Es sind leider keine Plätze mehr frei.</target>
       </trans-unit>
-      <trans-unit id="message_willBeAnnounced" approved="yes">
-        <source>will be announced</source>
-        <target state="final">wird noch bekannt gegeben</target>
-      </trans-unit>
       <trans-unit id="message_forFree" approved="yes">
         <source>free</source>
         <target state="final">kostenlos</target>
@@ -2216,6 +2212,10 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>Registrations on the waiting list (%u)</source>
         <target state="final">Anmeldungen auf der Warteliste (%u)</target>
       </trans-unit>
+      <trans-unit id="backEndModule.heading.nonbindingReservations" approved="yes">
+        <source>Nonbinding reservations</source>
+        <target state="final">Unverbindliche Reservierungen</target>
+      </trans-unit>
       <trans-unit id="backEndModule.heading.email" approved="yes">
         <source>Send an email to all registered persons</source>
         <target state="final">E-Mail an alle angemeldeten Personen schicken</target>
@@ -2235,6 +2235,10 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="backEndModule.message.noRegistrationsForEvent" approved="yes">
         <source>This event does not have any registrations yet.</source>
         <target state="final">Für diese Veranstaltung gibt es noch keine Anmeldungen.</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.message.noNonbindingReservationsForEvent" approved="yes">
+        <source>This event does not have any nonbinding reservations yet.</source>
+        <target state="final">Diese Veranstaltung hat noch keine unverbindlichen Reservierungen.</target>
       </trans-unit>
       <trans-unit id="backEndModule.message.numberOfEventsFound" approved="yes">
         <source>%u event(s) found.</source>

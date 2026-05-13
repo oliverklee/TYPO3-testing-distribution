@@ -33,7 +33,7 @@
       </trans-unit>
       <trans-unit id="title" resname="title" approved="yes">
         <source>Workspaces</source>
-        <target state="final">Arbeitsumgebungen</target>
+        <target state="final">Workspaces</target>
       </trans-unit>
       <trans-unit id="noResults" resname="noResults" approved="yes">
         <source>No records found.</source>
@@ -81,7 +81,7 @@
       </trans-unit>
       <trans-unit id="workspacelist" resname="workspacelist" approved="yes">
         <source>Workspace List</source>
-        <target state="final">Liste der Arbeitsumgebungen</target>
+        <target state="final">Liste der Workspaces</target>
       </trans-unit>
       <trans-unit id="editorInLive" resname="editorInLive" xml:space="preserve" approved="yes">
 				<source>You are in LIVE workspace. Please select a draft workspace from the top bar
