@@ -20,7 +20,7 @@
 		"helhum/typo3-console": "^7.1.4",
 		"oliverklee/feuserextrafields": "6.7.1",
 		"oliverklee/oelib": "6.3.1",
-		"oliverklee/onetimeaccount": "dev-main",
+		"oliverklee/onetimeaccount": "7.3.1",
 		"oliverklee/seminars": "dev-main",
 		"oliverklee/site-dev": "@dev",
 		"ttn/tea": "^3.1.0",
