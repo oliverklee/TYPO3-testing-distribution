@@ -9,4 +9,4 @@ parameters:
     - src/
 
   excludePaths:
-    - src/extensions/site-dev/ext_emconf.php
+    - src/extensions/*/ext_emconf.php
