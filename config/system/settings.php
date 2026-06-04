@@ -72,14 +72,11 @@ return [
             'xlhtml' => '/usr/bin/',
         ],
         'onetimeaccount' => [
-            'enableConfigCheck' => '1',
         ],
         'scheduler' => [
             'maxLifetime' => '1440',
         ],
         'seminars' => [
-            'enableConfigCheck' => '1',
-            'pidForRegistrationsCreatedInTheBackendModule' => '12',
         ],
         'static_info_tables' => [
             'enableManager' => '0',
