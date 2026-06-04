@@ -85,7 +85,6 @@ return [
             'tagPid' => '1',
         ],
         'onetimeaccount' => [
-            'enableConfigCheck' => '1',
         ],
         'redirects' => [
             'showCheckIntegrityInfoInReports' => '1',
@@ -95,8 +94,6 @@ return [
             'maxLifetime' => '1440',
         ],
         'seminars' => [
-            'enableConfigCheck' => '1',
-            'pidForRegistrationsCreatedInTheBackendModule' => '12',
         ],
         'static_info_tables' => [
             'enableManager' => '0',
