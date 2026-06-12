@@ -58,7 +58,7 @@
 		"phpstan/phpstan-strict-rules": "2.0.11",
 		"phpunit/phpunit": "11.5.52",
 		"saschaegerer/phpstan-typo3": "2.1.1",
-		"seld/jsonlint": "1.11.0",
+		"seld/jsonlint": "1.12.0",
 		"ssch/typo3-rector": "3.14.1",
 		"ssch/typo3-rector-testing-framework": "3.0.0",
 		"symfony/yaml": "7.4.1",
