@@ -41,8 +41,8 @@ run the import.)
 
 To test a local development copies of extension in this distribution:
 
-1. Copy the file `.ddev/docker-compose.packages.yaml.template` to
-   `.ddev/docker-compose.packages.yaml`.
+1. Copy the file `.ddev/docker-compose.extensions.yaml.template` to
+   `.ddev/docker-compose.extensions.yaml`.
 2. Modify the left-handside paths to match the directories of the extensions
    on your host machine.
 3. Add other extensions as needed.
