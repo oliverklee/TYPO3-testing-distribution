@@ -162,7 +162,7 @@
       </trans-unit>
       <trans-unit id="advancedQuery" approved="yes">
         <source>Advanced query</source>
-        <target state="final">Erweiterte Abfrage</target>
+        <target state="final">Erweiterte Anfrage</target>
       </trans-unit>
       <trans-unit id="selectRecords" approved="yes">
         <source>Select records</source>
@@ -262,7 +262,7 @@
       </trans-unit>
       <trans-unit id="fullSearch.section.result" approved="yes">
         <source>Result</source>
-        <target state="final">Ergebnis</target>
+        <target state="final">Ergebnis:</target>
       </trans-unit>
       <trans-unit id="fullSearch.type.count.resultsFound" approved="yes">
         <source>records found.</source>

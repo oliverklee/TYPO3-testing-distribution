@@ -417,7 +417,7 @@
       </trans-unit>
       <trans-unit id="goToListModule" approved="yes">
         <source>Go to list module</source>
-        <target state="final">Zum Modul Liste gehen</target>
+        <target state="final">Zum Modul Datensätze wechseln</target>
       </trans-unit>
       <trans-unit id="goToListModuleMessage" approved="yes">
         <source>The current page is a folder. Folders usually don't contain content elements but are used for collecting other types of records.</source>
