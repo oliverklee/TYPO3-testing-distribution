@@ -77,7 +77,7 @@
       </trans-unit>
       <trans-unit id="pages.palettes.config" approved="yes">
         <source>Page TSconfig</source>
-        <target state="final">Page TSconfig</target>
+        <target state="final">Seiten-TSconfig</target>
       </trans-unit>
       <trans-unit id="pages.doktype_formlabel" approved="yes">
         <source>Type</source>

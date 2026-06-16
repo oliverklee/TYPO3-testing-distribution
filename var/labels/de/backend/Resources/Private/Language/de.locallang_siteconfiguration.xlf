@@ -25,7 +25,7 @@
       </trans-unit>
       <trans-unit id="overview.noSiteConfiguration" approved="yes">
         <source>This site does not have a configuration, yet.</source>
-        <target state="final">Diese Site wurde noch nicht konfiguriert.</target>
+        <target state="final">Diese Seite wurde noch nicht konfiguriert.</target>
       </trans-unit>
       <trans-unit id="overview.addSiteConfiguration" approved="yes">
         <source>Add new site configuration for this site</source>
