@@ -105,7 +105,7 @@
       </trans-unit>
       <trans-unit id="details.link" resname="details.link" approved="yes">
         <source>Go to %s for details.</source>
-        <target state="final">Weitere Informationen erhältst du unter %s.</target>
+        <target state="final">Weitere Informationen erhalten Sie unter %s.</target>
       </trans-unit>
       <trans-unit id="free.software" resname="free.software" approved="yes">
         <source>This is free software, and you are welcome to redistribute it under certain conditions; %sdetails about licences.%s</source>

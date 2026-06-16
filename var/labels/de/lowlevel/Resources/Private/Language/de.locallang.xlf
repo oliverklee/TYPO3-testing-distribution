@@ -149,7 +149,7 @@
       </trans-unit>
       <trans-unit id="advancedQuery" resname="advancedQuery" approved="yes">
         <source>Advanced query</source>
-        <target state="final">Erweiterte Abfrage</target>
+        <target state="final">Erweiterte Anfrage</target>
       </trans-unit>
       <trans-unit id="selectRecords" resname="selectRecords" approved="yes">
         <source>Select records</source>
