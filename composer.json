@@ -62,7 +62,7 @@
 		"seld/jsonlint": "1.11.0",
 		"ssch/typo3-rector": "2.15.2",
 		"ssch/typo3-rector-testing-framework": "2.0.1",
-		"symfony/yaml": "6.4.30",
+		"symfony/yaml": "6.4.41",
 		"typo3/coding-standards": "0.8.0",
 		"typo3/testing-framework": "8.3.1"
 	},
