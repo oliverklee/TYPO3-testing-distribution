@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -64,7 +64,7 @@ jobs:
     needs: composer-validate
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -111,7 +111,7 @@ jobs:
           - '8.4'
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -151,7 +151,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
