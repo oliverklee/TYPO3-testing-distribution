@@ -54,7 +54,7 @@
 		"php-parallel-lint/php-parallel-lint": "1.4.0",
 		"phpstan/extension-installer": "1.4.3",
 		"phpstan/phpstan": "2.2.3",
-		"phpstan/phpstan-phpunit": "2.0.17",
+		"phpstan/phpstan-phpunit": "2.0.18",
 		"phpstan/phpstan-strict-rules": "2.0.11",
 		"phpunit/phpunit": "11.5.52",
 		"saschaegerer/phpstan-typo3": "2.1.1",
