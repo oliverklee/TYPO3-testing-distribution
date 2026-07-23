@@ -22,7 +22,7 @@
 		"oliverklee/oelib": "dev-main",
 		"oliverklee/onetimeaccount": "dev-main",
 		"oliverklee/site-dev": "@dev",
-		"ttn/tea": "dev-main",
+		"ttn/tea": "4.1.0",
 		"typo3/cms-adminpanel": "^12.4",
 		"typo3/cms-belog": "^12.4",
 		"typo3/cms-beuser": "^12.4",
