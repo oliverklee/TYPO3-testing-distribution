@@ -39,6 +39,10 @@
         <source>Company</source>
         <target state="final">Firma</target>
       </trans-unit>
+      <trans-unit id="department" approved="yes">
+        <source>Department</source>
+        <target state="final">Abteilung</target>
+      </trans-unit>
       <trans-unit id="vatIn" approved="yes">
         <source>VAT identification number</source>
         <target state="final">USt-IdNr.</target>
@@ -68,8 +72,8 @@
         <target state="final">Anrede und Name</target>
       </trans-unit>
       <trans-unit id="title" approved="yes">
-        <source>Department/Title</source>
-        <target state="final">Abteilung/Funktion</target>
+        <source>Title</source>
+        <target state="final">Titel</target>
       </trans-unit>
       <trans-unit id="name" approved="yes">
         <source>Full name</source>
@@ -118,6 +122,10 @@
       <trans-unit id="dateOfBirth" approved="yes">
         <source>Date of birth</source>
         <target state="final">Geburtsdatum</target>
+      </trans-unit>
+      <trans-unit id="membershipNumber" approved="yes">
+        <source>Membership number</source>
+        <target state="final">Mitgliedsnummer</target>
       </trans-unit>
       <trans-unit id="status" approved="yes">
         <source>Job status</source>
@@ -169,13 +177,11 @@
       </trans-unit>
       <trans-unit id="privacy.long" approved="yes">
         <source>
-					I consent that the data I enter will be stored electronically.
-					You can withdraw your consent for the future via email at any time.
-				</source>
-        <target state="final">
-					Ich stimme zu, dass meine Angaben und Daten elektronisch erhoben und gespeichert werden.
-					Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail widerrufen.
-				</target>
+          I consent that the data I enter will be stored electronically.
+          You can withdraw your consent for the future via email at any time.
+        </source>
+        <target state="final">Ich stimme zu, dass meine Angaben und Daten elektronisch erhoben und gespeichert werden.
+Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail widerrufen.</target>
       </trans-unit>
       <trans-unit id="captcha.question" approved="yes">
         <source>Are you human?</source>
@@ -203,11 +209,9 @@
       </trans-unit>
       <trans-unit id="alert.userCreatedNotLoggedIn" approved="yes">
         <source>
-					The user has been created, but the automatic login with the new user was not successful.
-				</source>
-        <target state="final">
-					Der User wurde angelegt, aber der automatische Login mit dem neuen User ist fehlgeschlagen.
-				</target>
+          The user has been created, but the automatic login with the new user was not successful.
+        </source>
+        <target state="final">Der User wurde angelegt, aber der automatische Login mit dem neuen User ist fehlgeschlagen.</target>
       </trans-unit>
       <trans-unit id="alert.userCreatedWithoutLogin" approved="yes">
         <source>The user has been created.</source>

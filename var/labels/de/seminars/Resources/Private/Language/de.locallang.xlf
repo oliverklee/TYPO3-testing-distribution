@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" datatype="plaintext" original="messages" date="2016-07-18T21:20:42Z" product-name="seminars" target-language="de">
+  <file source-language="en" datatype="plaintext" original="messages" target-language="de">
     <header/>
     <body>
       <trans-unit id="test-label" approved="yes">
@@ -177,7 +177,7 @@
       </trans-unit>
       <trans-unit id="label_country" approved="yes">
         <source>Country</source>
-        <target state="final">Land:</target>
+        <target state="final">Land</target>
       </trans-unit>
       <trans-unit id="label_attendees" approved="yes">
         <source>Attendees</source>
@@ -316,16 +316,28 @@
         <target state="final">Du bist für diese Veranstaltung bereits angemeldet.</target>
       </trans-unit>
       <trans-unit id="message_missingSeminarNumber" approved="yes">
-        <source>The even UID is missing from the URL. If you get this error message using a link on this page, please notify the webmaster. Thank you!</source>
-        <target state="final">Die URL enthält keine Veranstaltungs-ID. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank!</target>
+        <source>
+          The even UID is missing from the URL. If you get this error message using a link on this page,
+          please notify the webmaster. Thank you!
+        </source>
+        <target state="final">
+Die URL enthält keine Veranstaltungs-UID. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank        </target>
       </trans-unit>
       <trans-unit id="message_wrongSeminarNumber" approved="yes">
-        <source>There is no event with this number. If you get this error message using a link on this page, please notify the webmaster. Thank you!</source>
-        <target state="final">Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank!</target>
+        <source>
+          There is no event with this number. If you get this error message using a link on this page,
+          please notify the webmaster. Thank you!
+        </source>
+        <target state="final">
+Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank        </target>
       </trans-unit>
       <trans-unit id="message_wrongSeminarNumber_informal" approved="yes">
-        <source>There is no event with this number. If you get this error message using a link on this page, please notify the webmaster. Thank you!</source>
-        <target state="final">Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn du diese Fehlermeldung durch einen Link auf unserer Seite bekommen hast, benachrichtige bitte den Webmaster. Vielen Dank!</target>
+        <source>
+          There is no event with this number. If you get this error message using a link on this page,
+          please notify the webmaster. Thank you!
+        </source>
+        <target state="final">
+Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn du diese Fehlermeldung durch einen Link auf unserer Seite bekommen hast, benachrichtige bitte den Webmaster. Vielen Dank        </target>
       </trans-unit>
       <trans-unit id="message_noRegistrationNecessary" approved="yes">
         <source>For this event, no registration is necessary.</source>
@@ -335,10 +347,6 @@
         <source>Alas, this event has been canceled.</source>
         <target state="final">Diese Veranstaltung wurde leider abgesagt.</target>
       </trans-unit>
-      <trans-unit id="message_noDate" approved="yes">
-        <source>This event has no date yet.</source>
-        <target state="final">Diese Veranstaltung hat noch keinen fixen Termin.</target>
-      </trans-unit>
       <trans-unit id="message_seminarRegistrationIsClosed" approved="yes">
         <source>Sorry, the registration period for this event is over.</source>
         <target state="final">Die Anmeldefrist für diese Veranstaltung ist leider schon vorbei.</target>
@@ -346,10 +354,6 @@
       <trans-unit id="message_noVacancies" approved="yes">
         <source>Sorry, there are no more vacancies.</source>
         <target state="final">Es sind leider keine Plätze mehr frei.</target>
-      </trans-unit>
-      <trans-unit id="message_willBeAnnounced" approved="yes">
-        <source>will be announced</source>
-        <target state="final">wird noch bekannt gegeben</target>
       </trans-unit>
       <trans-unit id="message_forFree" approved="yes">
         <source>free</source>
@@ -366,14 +370,6 @@
       <trans-unit id="message_registrationOpensOn" approved="yes">
         <source>starting %s</source>
         <target state="final">ab %s</target>
-      </trans-unit>
-      <trans-unit id="message_accessDenied" approved="yes">
-        <source>Sorry, you don't have access to this part of the site.</source>
-        <target state="final">Zu diesem Teil der Site haben Sie leider keine Zugangsberechtigung.</target>
-      </trans-unit>
-      <trans-unit id="message_accessDenied_informal" approved="yes">
-        <source>Sorry, you don't have access to this part of the site.</source>
-        <target state="final">Zu diesem Teil der Site hast du leider keine Zugangsberechtigung.</target>
       </trans-unit>
       <trans-unit id="email_confirmationSubject" approved="yes">
         <source>Registration confirmation</source>
@@ -428,12 +424,12 @@
         <target state="final">deine Anmeldung wurde gerade zu einer regulären Anmeldung der Veranstaltung "%s"</target>
       </trans-unit>
       <trans-unit id="email_unregistrationNotice" approved="yes">
-        <source>You will be able to unregister for free until %s. After this date you will have to pay the event fee.</source>
-        <target state="final">Bis zum %s können Sie Ihre Anmeldung kostenfrei stornieren; danach sind Sie zur Zahlung der Veranstaltungsgebühr verpflichtet.</target>
+        <source>You will be able to unregister online until %s.</source>
+        <target state="final">Bis zum %s können Sie Ihre Anmeldung online stornieren.</target>
       </trans-unit>
       <trans-unit id="email_unregistrationNotice_informal" approved="yes">
-        <source>You will be able to unregister for free until %s. After this date you will have to pay the event fee.</source>
-        <target state="final">Bis zum %s kannst du deine Anmeldung kostenfrei stornieren; danach bist du zur Zahlung der Veranstaltungsgebühr verpflichtet.</target>
+        <source>You will be able to unregister online until %s.</source>
+        <target state="final">Bis zum %s kannst du deine Anmeldung online stornieren.</target>
       </trans-unit>
       <trans-unit id="email_additionalNotificationEnoughRegistrations" approved="yes">
         <source>Your event has now enough registrations to be held.</source>
@@ -456,76 +452,102 @@
         <target state="final">Anmeldebenachrichtigung</target>
       </trans-unit>
       <trans-unit id="email_notificationHello" approved="yes">
-        <source>Hello,
+        <source>
+          Hello,
 
-someone just has registered for an event:</source>
-        <target state="final">Hallo,
+          someone just has registered for an event:
+        </source>
+        <target state="final">
+Hallo,
 
-jemand hat sich gerade für eine Veranstaltung angemeldet:</target>
+jemand hat sich gerade für eine Veranstaltung angemeldet        </target>
       </trans-unit>
       <trans-unit id="email_notificationOnUnregistrationSubject" approved="yes">
         <source>Unregistration notification</source>
         <target state="final">Abmeldebenachrichtigung</target>
       </trans-unit>
       <trans-unit id="email_notificationOnUnregistrationHello" approved="yes">
-        <source>Hello,
+        <source>
+          Hello,
 
-someone just has unregistered from an event:</source>
-        <target state="final">Hallo,
+          someone just has unregistered from an event:
+        </source>
+        <target state="final">
+Hallo,
 
-jemand hat sich gerade von einer Veranstaltung abgemeldet:</target>
+jemand hat sich gerade von einer Veranstaltung abgemeldet        </target>
       </trans-unit>
       <trans-unit id="email_notificationOnRegistrationForQueueSubject" approved="yes">
         <source>Registration for waiting list notification</source>
         <target state="final">Anmeldebenachrichtigung für die Warteliste</target>
       </trans-unit>
       <trans-unit id="email_notificationOnRegistrationForQueueHello" approved="yes">
-        <source>Hello,
+        <source>
+          Hello,
 
-someone just has registered for the waiting list of an event:</source>
-        <target state="final">Hallo,
+          someone just has registered for the waiting list of an event:
+        </source>
+        <target state="final">
+Hallo,
 
-jemand hat sich gerade für die Warteliste von einer Veranstaltung angemeldet:</target>
+jemand hat sich gerade für die Warteliste von einer Veranstaltung angemeldet        </target>
       </trans-unit>
       <trans-unit id="email_notificationOnQueueUpdateSubject" approved="yes">
         <source>Registration became a regular registration notification</source>
         <target state="final">Anmeldung wurde zu regulärer Anmeldung Benachrichtigung</target>
       </trans-unit>
       <trans-unit id="email_notificationOnQueueUpdateHello" approved="yes">
-        <source>Hello,
+        <source>
+          Hello,
 
-someone's registration just has become a regular registration of an event:</source>
-        <target state="final">Hallo,
+          someone's registration just has become a regular registration of an event:
+        </source>
+        <target state="final">
+Hallo,
 
-die Anmeldung von jemandem wurde gerade zu einer regulären Anmeldung zu einer Veranstaltung:</target>
+die Anmeldung von jemandem wurde gerade zu einer regulären Anmeldung zu einer Veranstaltung        </target>
       </trans-unit>
       <trans-unit id="email_eventTakesPlaceReminderSubject" approved="yes">
         <source>&quot;%event&quot; begins in %days days</source>
         <target state="final">"%event" beginnt in %days Tagen</target>
       </trans-unit>
       <trans-unit id="email_eventTakesPlaceReminder" approved="yes">
-        <source>Hello %organizer,
+        <source>
+          Hello %organizer,
 
-the event &quot;%event&quot; (Event number: %uid) will take place in %days days. Currently, there are %registrations registrations for this event.</source>
-        <target state="final">Hallo %organizer,
+          the event &quot;%event&quot; (Event number: %uid) will take place in %days days. Currently, there
+          are %registrations registrations for this event.
+        </source>
+        <target state="final">
+Hallo %organizer,
 
-die Veranstaltung "%event" (Veranstaltungsnummer: %uid) beginnt in %days Tagen. Zur Zeit gibt es %registrations Anmeldungen für diese Veranstaltung.</target>
+die Veranstaltung "%event" (Veranstaltungsnummer: %uid) beginnt in %days Tagen. Zur Zeit gibt es %registrations Anmeldungen für diese Veranstaltung.        </target>
       </trans-unit>
       <trans-unit id="email_cancelationDeadlineReminderSubject" approved="yes">
         <source>Cancelation deadline for &quot;%event&quot; has just passed</source>
         <target state="final">Ende der Absagefrist für "%event"</target>
       </trans-unit>
       <trans-unit id="email_cancelationDeadlineReminder" approved="yes">
-        <source>Hello %organizer,
+        <source>
+          Hello %organizer,
 
-the speakers' cancelation deadline for the event &quot;%event&quot; has just passed (Event number: %uid, begin date: %begin_date). Currently, the event is neither confirmed nor canceled and there are %registrations registrations for this event.</source>
-        <target state="final">Hallo %organizer,
+          the speakers' cancelation deadline for the event &quot;%event&quot; has just passed (Event number:
+          %uid, begin date: %begin_date). Currently, the event is neither confirmed nor canceled and there are
+          %registrations registrations for this event.
+        </source>
+        <target state="final">
+Hallo %organizer,
 
-das Ende der Absagefrist für die Referent_innen der Veranstaltung "%event" wurde erreicht (Veranstaltungsnummer: %uid, Beginn: %begin_date). Zur Zeit ist diese Veranstaltung weder bestätigt noch abgesagt und es gibt %registrations Anmeldungen für diese Veranstaltung.</target>
+das Ende der Absagefrist für die Referent_innen der Veranstaltung "%event" wurde erreicht (Veranstaltungsnummer: %uid, Beginn: %begin_date). Zur Zeit ist diese Veranstaltung weder bestätigt noch abgesagt und es gibt %registrations Anmeldungen für diese Veranstaltung.        </target>
       </trans-unit>
       <trans-unit id="label_planned_disclaimer" approved="yes">
-        <source>For this event to take place, a minimum number of registrations is needed. In case this number is not reached, the event will not take place. Of course, you then will be notified as soon as possible.</source>
-        <target state="final">Eine Mindestteilnehmer­zahl ist Voraussetzung für die Durchführung dieser Veranstaltung. Wird diese nicht erreicht, findet die Veranstaltung nicht statt. Selbstver­ständlich werden wir Sie rechtzeitig informieren.</target>
+        <source>
+          For this event to take place, a minimum number of registrations is needed. In case this number
+          is not reached, the event will not take place. Of course, you then will be notified as soon as
+          possible.
+        </source>
+        <target state="final">
+Eine Mindestteilnehmer­zahl ist Voraussetzung für die Durchführung dieser Veranstaltung. Wird diese nicht erreicht, findet die Veranstaltung nicht statt. Selbstver­ständlich werden wir Sie rechtzeitig informieren        </target>
       </trans-unit>
       <trans-unit id="email_hello_informal" approved="yes">
         <source>Dear</source>
@@ -556,8 +578,12 @@ das Ende der Absagefrist für die Referent_innen der Veranstaltung "%event" wurd
         <target state="final">E-Mail-Benachrichtigungen</target>
       </trans-unit>
       <trans-unit id="schedulerTasks.mailNotifier.description" approved="yes">
-        <source>This tasks sends email notifications, including reminders that an event will take place shortly or that the cancelation deadline is due.</source>
-        <target state="final">Dieser Task verschickt Erinnerungen per Mail, darunter Erinnerungen, dass eine Veranstaltung demnächst stattfindet oder dass die Absagefrist abläuft.</target>
+        <source>
+          This tasks sends email notifications, including reminders that an event will take place shortly
+          or that the cancelation deadline is due.
+        </source>
+        <target state="final">
+Dieser Task verschickt Erinnerungen per Mail, darunter Erinnerungen, dass eine Veranstaltung demnächst stattfindet oder dass die Absagefrist abläuft.        </target>
       </trans-unit>
       <trans-unit id="schedulerTasks.fields.page-uid" approved="yes">
         <source>UID of the page with the TypoScript configuration</source>
@@ -576,28 +602,34 @@ das Ende der Absagefrist für die Referent_innen der Veranstaltung "%event" wurd
         <target state="final">Veranstaltung zugesagt: %eventTitle %eventDate</target>
       </trans-unit>
       <trans-unit id="email-event-canceled-body" approved="yes">
-        <source>%salutation
+        <source>
+          %salutation
 
-you registered for the event &quot;%eventTitle&quot; (%eventDate).
+          you registered for the event &quot;%eventTitle&quot; (%eventDate).
 
-Unfortunately, we had to cancel this event.</source>
-        <target state="final">%salutation
+          Unfortunately, we had to cancel this event.
+        </source>
+        <target state="final">
+%salutation
 
 Sie hatten sich für die Veranstaltung "%eventTitle" (%eventDate) angemeldet.
 
-Leider mussten wir diese Veranstaltung absagen.</target>
+Leider mussten wir diese Veranstaltung absagen        </target>
       </trans-unit>
       <trans-unit id="email-event-confirmed-body" approved="yes">
-        <source>%salutation
+        <source>
+          %salutation
 
-you registered for the event &quot;%eventTitle&quot; (%eventDate).
+          you registered for the event &quot;%eventTitle&quot; (%eventDate).
 
-This event now has been confirmed.</source>
-        <target state="final">%salutation
+          This event now has been confirmed.
+        </source>
+        <target state="final">
+%salutation
 
 Sie hatten sich für die Veranstaltung "%eventTitle" (%eventDate) angemeldet.
 
-Wir konnten dieser Veranstaltung nun fest zusagen.</target>
+Wir konnten dieser Veranstaltung nun fest zusagen        </target>
       </trans-unit>
       <trans-unit id="message_onRequest" approved="yes">
         <source>on request</source>
@@ -644,12 +676,20 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Fehler 403. Sorry, Sie haben nicht die Berechtigung, auf diese Daten zuzugreifen.</target>
       </trans-unit>
       <trans-unit id="message_404" approved="yes">
-        <source>Error 404. The requested page does not exist. If you get this error message using a link on this page, please notify the webmaster. Thank you!</source>
-        <target state="final">Fehler 404. Die angeforderte Seite existiert nicht. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank!</target>
+        <source>
+          Error 404. The requested page does not exist. If you get this error message using a link on this
+          page, please notify the webmaster. Thank you!
+        </source>
+        <target state="final">
+Fehler 404. Die angeforderte Seite existiert nicht. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank        </target>
       </trans-unit>
       <trans-unit id="message_404_registrations" approved="yes">
-        <source>Error 404. There is no event with this number. If you get this error message using a link on this page, please notify the webmaster. Thank you!</source>
-        <target state="final">Fehler 404. Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank!</target>
+        <source>
+          Error 404. There is no event with this number. If you get this error message using a link on
+          this page, please notify the webmaster. Thank you!
+        </source>
+        <target state="final">
+Fehler 404. Eine Veranstaltung mit dieser Nummer existiert nicht. Wenn Sie diese Fehlermeldung durch einen Link auf unserer Seite bekommen haben, benachrichtigen Sie bitte den Webmaster. Vielen Dank        </target>
       </trans-unit>
       <trans-unit id="message_emailToAttendeesSent" approved="yes">
         <source>The email to the attendees has been sent.</source>
@@ -695,18 +735,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>My Events</source>
         <target state="final">Meine Veranstaltungen</target>
       </trans-unit>
-      <trans-unit id="seminars.pi_flexform.my_vip_events" approved="yes">
-        <source>My Managed Events</source>
-        <target state="final">Meine verwalteten Veranstaltungen</target>
-      </trans-unit>
-      <trans-unit id="seminars.pi_flexform.list_registrations" approved="yes">
-        <source>List of Registrations (for attendees)</source>
-        <target state="final">Liste der Anmeldungen (für angemeldete Personen)</target>
-      </trans-unit>
-      <trans-unit id="seminars.pi_flexform.list_vip_registrations" approved="yes">
-        <source>List of Registrations (for event managers)</source>
-        <target state="final">Liste der Anmeldungen (für Verwalter)</target>
-      </trans-unit>
       <trans-unit id="seminars.pi_flexform.category_list" approved="yes">
         <source>Category List</source>
         <target state="final">Kategorienliste</target>
@@ -731,14 +759,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Page that contains the login form:</source>
         <target state="final">Seite mit dem Login-Formular:</target>
       </trans-unit>
-      <trans-unit id="seminars.pi_flexform.registrationsListPID" approved="yes">
-        <source>Page that contains the list of registrations (for attendees):</source>
-        <target state="final">Seite mit der Liste der Anmeldungen (für angemeldete Personen):</target>
-      </trans-unit>
-      <trans-unit id="seminars.pi_flexform.registrationsVipListPID" approved="yes">
-        <source>Page that contains the list of registrations (for event managers):</source>
-        <target state="final">Seite mit der Liste der Anmeldungen (für Verwalter):</target>
-      </trans-unit>
       <trans-unit id="seminars.pi_flexform.formal" approved="yes">
         <source>formal</source>
         <target state="final">formell</target>
@@ -758,14 +778,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="seminars.pi_flexform.searchForm.type" approved="yes">
         <source>Event type</source>
         <target state="final">Veranstaltungsart</target>
-      </trans-unit>
-      <trans-unit id="seminars.pi_flexform.searchForm.language" approved="yes">
-        <source>Language</source>
-        <target state="final">Sprache</target>
-      </trans-unit>
-      <trans-unit id="seminars.pi_flexform.searchForm.country" approved="yes">
-        <source>Country</source>
-        <target state="final">Land</target>
       </trans-unit>
       <trans-unit id="seminars.pi_flexform.searchForm.city" approved="yes">
         <source>City</source>
@@ -899,10 +911,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Sort the list view by category:</source>
         <target state="final">Listenansicht nach Kategorien sortieren:</target>
       </trans-unit>
-      <trans-unit id="seminars.pi_flexform.defaultEventVipsFeGroupID" approved="yes">
-        <source>FE user group for event managers:</source>
-        <target state="final">FE-Benutzergruppe für Verwalter:</target>
-      </trans-unit>
       <trans-unit id="seminars.pi_flexform.hideColumns" approved="yes">
         <source>Hide column names in list view (comma-separated):</source>
         <target state="final">Versteckte Felder in Listenansicht (komma-separiert):</target>
@@ -912,8 +920,12 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">"Preis" als Überschrift für den Standardpreis in der Listenansicht benutzen:</target>
       </trans-unit>
       <trans-unit id="seminars.pi_flexform.generalPriceInSingle" approved="yes">
-        <source>Use &quot;Price&quot; as heading for the standard price in the single view and the registration page:</source>
-        <target state="final">"Preis" als Überschrift für den Standardpreis in der Einzelansicht und bei der Anmeldung benutzen:</target>
+        <source>
+          Use &quot;Price&quot; as heading for the standard price in the single view and the registration
+          page:
+        </source>
+        <target state="final">
+"Preis" als Überschrift für den Standardpreis in der Einzelansicht und bei der Anmeldung benutzen        </target>
       </trans-unit>
       <trans-unit id="seminars.pi_flexform.showSpeakerDetails" approved="yes">
         <source>Show speaker details</source>
@@ -922,18 +934,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="seminars.pi_flexform.showSiteDetails" approved="yes">
         <source>Show site details</source>
         <target state="final">Ortsdetails anzeigen</target>
-      </trans-unit>
-      <trans-unit id="seminars.pi_flexform.sheet_registrationsListView" approved="yes">
-        <source>Registrations list view</source>
-        <target state="final">Anmeldungslistenansicht</target>
-      </trans-unit>
-      <trans-unit id="seminars.pi_flexform.showFeUserFieldsInRegistrationsList" approved="yes">
-        <source>Which FEuser fields to show in the list of registrations for an event</source>
-        <target state="final">Zeige diese FE-User-Felder in der Liste der Anmeldungen</target>
-      </trans-unit>
-      <trans-unit id="seminars.pi_flexform.showRegistrationFieldsInRegistrationList" approved="yes">
-        <source>Which registration fields to show in the list of registrations for an event:</source>
-        <target state="final">Zeige diese Anmeldungs-Felder in der Liste der Anmeldungen:</target>
       </trans-unit>
       <trans-unit id="seminars.pi_flexform.linkToSingleView" approved="yes">
         <source>Link the single view from the list view:</source>
@@ -992,8 +992,12 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Nächste &gt;</target>
       </trans-unit>
       <trans-unit id="pi_list_browseresults_displays" approved="yes">
-        <source>Displaying results ###SPAN_BEGIN###%s to %s&lt;/span&gt; out of ###SPAN_BEGIN###%s&lt;/span&gt;</source>
-        <target state="final">Zeige Ergebnisse ###SPAN_BEGIN###%s bis %s&lt;/span&gt; von ###SPAN_BEGIN###%s&lt;/span&gt;</target>
+        <source>
+          Displaying results ###SPAN_BEGIN###%s to %s&lt;/span&gt; out of
+          ###SPAN_BEGIN###%s&lt;/span&gt;
+        </source>
+        <target state="final">
+Zeige Ergebnisse ###SPAN_BEGIN###%s bis %s&lt;/span&gt; von ###SPAN_BEGIN###%s&lt;/span&gt;        </target>
       </trans-unit>
       <trans-unit id="pi_list_browseresults_noResults" approved="yes">
         <source>Sorry, no events were found.</source>
@@ -1010,14 +1014,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="label_myevents_informal" approved="yes">
         <source>You are registered for the following events:</source>
         <target state="final">Du bist für die folgenden Veranstaltungen angemeldet:</target>
-      </trans-unit>
-      <trans-unit id="label_myvipevents" approved="yes">
-        <source>You are an editor for the following events:</source>
-        <target state="final">Sie sind für die folgenden Veranstaltungen als Bearbeiter eingetragen:</target>
-      </trans-unit>
-      <trans-unit id="label_myvipevents_informal" approved="yes">
-        <source>You are an editor for the following events:</source>
-        <target state="final">Du bist für die folgenden Veranstaltungen als Bearbeiter eingetragen:</target>
       </trans-unit>
       <trans-unit id="label_category" approved="yes">
         <source>Category</source>
@@ -1066,10 +1062,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="label_leaders" approved="yes">
         <source>Leaders</source>
         <target state="final">Kursleitung</target>
-      </trans-unit>
-      <trans-unit id="label_language" approved="yes">
-        <source>Language</source>
-        <target state="final">Sprache</target>
       </trans-unit>
       <trans-unit id="label_price_range" approved="yes">
         <source>Price</source>
@@ -1143,14 +1135,6 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>unregister</source>
         <target state="final">abmelden</target>
       </trans-unit>
-      <trans-unit id="label_list_registrations" approved="yes">
-        <source>List of registrations</source>
-        <target state="final">Liste der Anmeldungen</target>
-      </trans-unit>
-      <trans-unit id="label_listRegistrationsLink" approved="yes">
-        <source>View the list of registrations</source>
-        <target state="final">Liste der Anmeldungen anzeigen</target>
-      </trans-unit>
       <trans-unit id="label_list_otherdates" approved="yes">
         <source>Other dates for this topic</source>
         <target state="final">Andere Termine für diese Veranstaltung</target>
@@ -1180,8 +1164,11 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Unterbringung und Verpflegung</target>
       </trans-unit>
       <trans-unit id="label_accommodation" approved="yes">
-        <source>How are your lodging preferences (if possible a single room, a double room, no lodging)?</source>
-        <target state="final">Wie möchten Sie übernachten (wenn möglich im Einzelzimmer, Doppelzimmer, keine Übernachtung)?</target>
+        <source>
+          How are your lodging preferences (if possible a single room, a double room, no lodging)?
+        </source>
+        <target state="final">
+Wie möchten Sie übernachten (wenn möglich im Einzelzimmer, Doppelzimmer, keine Übernachtung)?        </target>
       </trans-unit>
       <trans-unit id="label_food" approved="yes">
         <source>Which kind of food do you prefer (normal, vegetarian, or a special diet):</source>
@@ -1296,12 +1283,20 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Preis</target>
       </trans-unit>
       <trans-unit id="label_searching_hints" approved="yes">
-        <source>You can shorten the list of events by applying one ore more filter criteria. To see the whole list, just reset the filter.</source>
-        <target state="final">Sie können die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Veranstaltungen zu sehen, setzen Sie den Filter bitte zurück.</target>
+        <source>
+          You can shorten the list of events by applying one ore more filter criteria. To see the whole
+          list, just reset the filter.
+        </source>
+        <target state="final">
+Sie können die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Veranstaltungen zu sehen, setzen Sie den Filter bitte zurück        </target>
       </trans-unit>
       <trans-unit id="label_searching_hints_informal" approved="yes">
-        <source>You can shorten the list of events by applying one ore more filter criteria. To see the whole list, just reset the filter.</source>
-        <target state="final">Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Veranstaltungen zu sehen, setze den Filter bitte zurück.</target>
+        <source>
+          You can shorten the list of events by applying one ore more filter criteria. To see the whole
+          list, just reset the filter.
+        </source>
+        <target state="final">
+Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Veranstaltungen zu sehen, setze den Filter bitte zurück.        </target>
       </trans-unit>
       <trans-unit id="label_we_offer_events_in_categories" approved="yes">
         <source>Currently, we offer you events in the following categories:</source>
@@ -1315,21 +1310,17 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Currently, we aren't offering any categorized events.</source>
         <target state="final">Momentan bieten wir keine in Kategorien eingeordneten Veranstaltungen an.</target>
       </trans-unit>
-      <trans-unit id="label_waiting_list" approved="yes">
-        <source>Waiting list</source>
-        <target state="final">Warteliste</target>
-      </trans-unit>
       <trans-unit id="message_noResults" approved="yes">
         <source>Sorry, currently no events could be found.</source>
         <target state="final">Momentan konnten leider keine Veranstaltungen gefunden werden.</target>
       </trans-unit>
       <trans-unit id="message_pleaseLogIn" approved="yes">
         <source>Please log in to view this page.</source>
-        <target state="final">Bitte loggen Sie sich ein um diese Seite zu sehen.</target>
+        <target state="final">Bitte loggen Sie sich ein, um diese Seite zu sehen.</target>
       </trans-unit>
       <trans-unit id="message_pleaseLogIn_informal" approved="yes">
         <source>Please log in to view this page.</source>
-        <target state="final">Bitte logge dich ein um diese Seite zu sehen.</target>
+        <target state="final">Bitte logge dich ein, um diese Seite zu sehen.</target>
       </trans-unit>
       <trans-unit id="message_noRegistrations" approved="yes">
         <source>For this event, there are no registrations yet.</source>
@@ -1359,9 +1350,133 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Front-end editor for events</source>
         <target state="final">Front-end-Editor für Veranstaltungen</target>
       </trans-unit>
-      <trans-unit id="plugin.frontEndEditor.settings.folderForCreatedEvents" approved="yes">
+      <trans-unit id="plugin.frontEndEditor.settings.eventCreation" approved="yes">
+        <source>Event creation</source>
+        <target state="final">Veranstaltungen anlegen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.eventCreation.eventType" approved="yes">
+        <source>Event type to create</source>
+        <target state="final">Veranstaltungsart, die erstellt wird</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.eventCreation.eventType.singleEvents" approved="yes">
+        <source>single events</source>
+        <target state="final">Einzelveranstaltungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.eventCreation.eventType.eventDates" approved="yes">
+        <source>event dates</source>
+        <target state="final">Veranstaltungstermine für bestehende Themen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.eventCreation.folderForCreatedEvents" approved="yes">
         <source>Folder for the created events</source>
         <target state="final">Ordner für die angelegten Veranstaltungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions" approved="yes">
+        <source>Display options</source>
+        <target state="final">Anzeigeoptionen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow" approved="yes">
+        <source>Fields in the editor form</source>
+        <target state="final">Felder im Editor</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.categories" approved="yes">
+        <source>categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.description" approved="yes">
+        <source>description</source>
+        <target state="final">Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.eventType" approved="yes">
+        <source>eventType</source>
+        <target state="final">Veranstaltungsart</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.dateAndTime" approved="yes">
+        <source>date and time</source>
+        <target state="final">Datum und Zeit</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.earlyBirdDeadline" approved="yes">
+        <source>early-bird deadline</source>
+        <target state="final">Frühbucherfrist</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.registrationDeadline" approved="yes">
+        <source>registration deadline</source>
+        <target state="final">Anmeldefrist</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.registrationRequired" approved="yes">
+        <source>registration required</source>
+        <target state="final">Anmeldung erforderlich</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.waitingList" approved="yes">
+        <source>waiting list</source>
+        <target state="final">Warteliste</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.minimumNumberOfRegistrations" approved="yes">
+        <source>required number of registrations</source>
+        <target state="final">erforderliche Anzahl von Anmeldungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.maximumNumberOfRegistrations" approved="yes">
+        <source>maximum number of registrations</source>
+        <target state="final">Maximale Anzahl an Anmeldungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.numberOfOfflineRegistrations" approved="yes">
+        <source>offline registrations</source>
+        <target state="final">Offline-Anmeldungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.standardPrice" approved="yes">
+        <source>standard price</source>
+        <target state="final">Standardpreis</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.earlyBirdPrice" approved="yes">
+        <source>early-bird price</source>
+        <target state="final">Frühbucherpreis</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.venues" approved="yes">
+        <source>venues</source>
+        <target state="final">Veranstaltungsorte</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.displayOptions.fieldsToShow.speakers" approved="yes">
+        <source>speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList" approved="yes">
+        <source>Registration list</source>
+        <target state="final">Anmeldeliste</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow" approved="yes">
+        <source>Columns to show</source>
+        <target state="final">anzuzeigende Spalten</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.counter" approved="yes">
+        <source>counter</source>
+        <target state="final">Zähler</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.membershipNumber" approved="yes">
+        <source>membership number</source>
+        <target state="final">Mitgliedsnummer</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.name" approved="yes">
+        <source>name</source>
+        <target state="final">Name</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.address" approved="yes">
+        <source>address</source>
+        <target state="final">Adresse</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.email" approved="yes">
+        <source>email</source>
+        <target state="final">E-Mail</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.telephone" approved="yes">
+        <source>telephone</source>
+        <target state="final">Telefon</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.dateOfBirth" approved="yes">
+        <source>date of birth</source>
+        <target state="final">Geburtsdatum</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.settings.registrationList.registrationFieldsToShow.registrationDate" approved="yes">
+        <source>registration date</source>
+        <target state="final">Anmeldedatum</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.index.headline" approved="yes">
         <source>Events I have created</source>
@@ -1383,9 +1498,29 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Title</source>
         <target state="final">Titel</target>
       </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.property.topic" approved="yes">
+        <source>Topic</source>
+        <target state="final">Thema</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.property.categories" approved="yes">
+        <source>Categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
       <trans-unit id="plugin.frontEndEditor.property.date" approved="yes">
         <source>Date</source>
         <target state="final">Datum</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.property.regularRegistrations" approved="yes">
+        <source>Registrations</source>
+        <target state="final">Anmeldungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.property.vacancies" approved="yes">
+        <source>Vacancies</source>
+        <target state="final">Freie Plätze</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.events.property.vacancies.unlimited" approved="yes">
+        <source>unlimited</source>
+        <target state="final">unbegrenzt</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.property.description" approved="yes">
         <source>Description</source>
@@ -1428,12 +1563,16 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Hat eine Warteliste</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.property.minimumNumberOfRegistrations" approved="yes">
-        <source>Required registrations</source>
-        <target state="final">Minimal erforderliche Anmeldungen</target>
+        <source>Required number of registrations</source>
+        <target state="final">Erforderliche Anzahl von Anmeldungen</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.property.maximumNumberOfRegistrations" approved="yes">
-        <source>Maximum registrations</source>
+        <source>Maximum number of registrations</source>
         <target state="final">Maximale Anzahl an Anmeldungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.property.numberOfOfflineRegistrations" approved="yes">
+        <source>Offline registrations</source>
+        <target state="final">Offline-Anmeldungen</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.property.venues" approved="yes">
         <source>Venues</source>
@@ -1444,7 +1583,7 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <target state="final">Referent_innen</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.property.organizers" approved="yes">
-        <source>Organizers</source>
+        <source>Organizer</source>
         <target state="final">Veranstalter</target>
       </trans-unit>
       <trans-unit id="plugin.frontEndEditor.action.new" approved="yes">
@@ -1462,6 +1601,58 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="plugin.frontEndEditor.action.save" approved="yes">
         <source>Save</source>
         <target state="final">Speichern</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.action.listRegistrations" approved="yes">
+        <source>Registration list</source>
+        <target state="final">Anmeldungsliste</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.headline.regularRegistrations" approved="yes">
+        <source>Regular registrations</source>
+        <target state="final">Reguläre Anmeldungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.headline.waitingListRegistrations" approved="yes">
+        <source>Waiting list registrations</source>
+        <target state="final">Anmeldungen auf der Warteliste</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.counter" approved="yes">
+        <source>#</source>
+        <target state="final">#</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.membershipNumber" approved="yes">
+        <source>Membership number</source>
+        <target state="final">Mitgliedsnummer</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Name</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.address" approved="yes">
+        <source>Address</source>
+        <target state="final">Adresse</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.email" approved="yes">
+        <source>Email</source>
+        <target state="final">E-Mail</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.telephone" approved="yes">
+        <source>Phone</source>
+        <target state="final">Telefon</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.dateOfBirth" approved="yes">
+        <source>Date of birth</source>
+        <target state="final">Geburtsdatum</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.tableHeading.registrationDate" approved="yes">
+        <source>Registration date</source>
+        <target state="final">Anmeldedatum</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.message.noRegistrations" approved="yes">
+        <source>This event does not have any registrations yet.</source>
+        <target state="final">Diese Veranstaltung hat noch keine Anmeldungen.</target>
+      </trans-unit>
+      <trans-unit id="plugin.frontEndEditor.listRegistrations.backlink" approved="yes">
+        <source>Back to the event list</source>
+        <target state="final">Zurück zur Veranstaltungsliste</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration" approved="yes">
         <source>Registration form for events</source>
@@ -1733,21 +1924,21 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.message.priceOnlyForRegularRegistration_formal" approved="yes">
         <source>
-					The registration fee will only be payable once your registration has been changed from a waiting
-					list registration to a regular registration.
-				</source>
+          The registration fee will only be payable once your registration has been changed from a waiting
+          list registration to a regular registration.
+        </source>
         <target state="final">
 					Die Teilnahmegebühr wird erst fällig, wenn Ihre Anmeldung von der Warteliste nachrückt.
-				</target>
+				        </target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.message.priceOnlyForRegularRegistration_informal" approved="yes">
         <source>
-					The registration fee will only be payable once your registration has been changed from a waiting
-					list registration to a regular registration.
-				</source>
+          The registration fee will only be payable once your registration has been changed from a waiting
+          list registration to a regular registration.
+        </source>
         <target state="final">
 					Die Teilnahmegebühr wird erst fällig, wenn deine Anmeldung von der Warteliste nachrückt.
-				</target>
+				        </target>
       </trans-unit>
       <trans-unit id="plugin.eventRegistration.error.noRegistrationPossibleAtAll" approved="yes">
         <source>For this event, registration is not possible.</source>
@@ -1853,6 +2044,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Separate billing address</source>
         <target state="final">Separate Rechnungsadresse</target>
       </trans-unit>
+      <trans-unit id="plugin.eventRegistration.property.billingAddress" approved="yes">
+        <source>Billing address</source>
+        <target state="final">Rechnungsadresse</target>
+      </trans-unit>
       <trans-unit id="plugin.eventRegistration.property.company" approved="yes">
         <source>Company</source>
         <target state="final">Firma</target>
@@ -1957,6 +2152,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Registrations on the waiting list (%u)</source>
         <target state="final">Anmeldungen auf der Warteliste (%u)</target>
       </trans-unit>
+      <trans-unit id="backEndModule.heading.nonbindingReservations" approved="yes">
+        <source>Nonbinding reservations</source>
+        <target state="final">Unverbindliche Reservierungen</target>
+      </trans-unit>
       <trans-unit id="backEndModule.heading.email" approved="yes">
         <source>Send an email to all registered persons</source>
         <target state="final">E-Mail an alle angemeldeten Personen schicken</target>
@@ -1976,6 +2175,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="backEndModule.message.noRegistrationsForEvent" approved="yes">
         <source>This event does not have any registrations yet.</source>
         <target state="final">Für diese Veranstaltung gibt es noch keine Anmeldungen.</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.message.noNonbindingReservationsForEvent" approved="yes">
+        <source>This event does not have any nonbinding reservations yet.</source>
+        <target state="final">Diese Veranstaltung hat noch keine unverbindlichen Reservierungen.</target>
       </trans-unit>
       <trans-unit id="backEndModule.message.numberOfEventsFound" approved="yes">
         <source>%u event(s) found.</source>
@@ -2008,6 +2211,18 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="backEndModule.events.property.seats.noLimit" approved="yes">
         <source>This event allows an unlimited registrations.</source>
         <target state="final">Bei dieser Veranstaltung sind unbegrenzt viele Anmeldungen möglich.</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.events.property.invoicingStatus" approved="yes">
+        <source>Invoicing</source>
+        <target state="final">Abrechnung</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.events.property.invoicingStatus.invoiced" approved="yes">
+        <source>⏳ invoiced</source>
+        <target state="final">⏳ berechnet</target>
+      </trans-unit>
+      <trans-unit id="backEndModule.events.property.invoicingStatus.paid" approved="yes">
+        <source>✅ paid</source>
+        <target state="final">✅ bezahlt</target>
       </trans-unit>
       <trans-unit id="backEndModule.events.property.registrations" approved="yes">
         <source>Registrations</source>
@@ -2247,7 +2462,7 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.settings.displayOptions.columns" approved="yes">
         <source>Columns to show</source>
-        <target state="final">anzuzeigende Spalten</target>
+        <target state="final">Anzuzeigende Spalten</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.date" approved="yes">
         <source>date</source>
@@ -2261,6 +2476,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>topic</source>
         <target state="final">Thema</target>
       </trans-unit>
+      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.organizer" approved="yes">
+        <source>organizer</source>
+        <target state="final">Veranstalter</target>
+      </trans-unit>
       <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.city" approved="yes">
         <source>city</source>
         <target state="final">Stadt</target>
@@ -2268,6 +2487,26 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.venue" approved="yes">
         <source>venue</source>
         <target state="final">Veranstaltungsort</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.eventFormat" approved="yes">
+        <source>event format</source>
+        <target state="final">Veranstaltungsformat</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.categories" approved="yes">
+        <source>categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.speakers" approved="yes">
+        <source>speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.eventUid" approved="yes">
+        <source>UID</source>
+        <target state="final">UID</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.singleViewLink" approved="yes">
+        <source>link to the single view</source>
+        <target state="final">Link zur Einzelansicht</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.message.noEventsFound" approved="yes">
         <source>No events found.</source>
@@ -2285,6 +2524,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>Topic</source>
         <target state="final">Thema</target>
       </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.organizer" approved="yes">
+        <source>Organizer</source>
+        <target state="final">Veranstalter</target>
+      </trans-unit>
       <trans-unit id="plugin.eventArchive.events.property.city" approved="yes">
         <source>City</source>
         <target state="final">Stadt</target>
@@ -2292,6 +2535,46 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="plugin.eventArchive.events.property.venue" approved="yes">
         <source>Venue</source>
         <target state="final">Ort</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.eventFormat" approved="yes">
+        <source>Format</source>
+        <target state="final">Format</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.eventFormat.0" approved="yes">
+        <source>on-site</source>
+        <target state="final">vor Ort</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.eventFormat.1" approved="yes">
+        <source>hybrid</source>
+        <target state="final">hybrid</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.eventFormat.2" approved="yes">
+        <source>online</source>
+        <target state="final">online</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.categories" approved="yes">
+        <source>Categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.speakers" approved="yes">
+        <source>Speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.eventUid" approved="yes">
+        <source>Number</source>
+        <target state="final">Nummer</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.eventUid.number" approved="yes">
+        <source>#%1$u</source>
+        <target state="final">#%1$u</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.singleViewLink" approved="yes">
+        <source>Details</source>
+        <target state="final">Details</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.singleViewLink.ariaLabel" approved="yes">
+        <source>Show details for the event &quot;%1$s&quot;</source>
+        <target state="final">Details für die Veranstaltung "%1$s " anzeigen</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook" approved="yes">
         <source>Event outlook</source>
@@ -2323,7 +2606,7 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns" approved="yes">
         <source>Columns to show</source>
-        <target state="final">anzuzeigende Spalten</target>
+        <target state="final">Anzuzeigende Spalten</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.date" approved="yes">
         <source>date</source>
@@ -2337,6 +2620,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>topic</source>
         <target state="final">Thema</target>
       </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.organizer" approved="yes">
+        <source>organizer</source>
+        <target state="final">Veranstalter</target>
+      </trans-unit>
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.city" approved="yes">
         <source>city</source>
         <target state="final">Stadt</target>
@@ -2344,6 +2631,30 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.venue" approved="yes">
         <source>venue</source>
         <target state="final">Veranstaltungsort</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.eventFormat" approved="yes">
+        <source>event format</source>
+        <target state="final">Veranstaltungsformat</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.categories" approved="yes">
+        <source>categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.speakers" approved="yes">
+        <source>speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.eventUid" approved="yes">
+        <source>UID</source>
+        <target state="final">UID</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.singleViewLink" approved="yes">
+        <source>link to the single view</source>
+        <target state="final">Link zur Einzelansicht</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.price" approved="yes">
+        <source>price</source>
+        <target state="final">Preis</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.vacancies" approved="yes">
         <source>vacancies</source>
@@ -2357,37 +2668,61 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>No events found.</source>
         <target state="final">Keine Veranstaltungen gefunden.</target>
       </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.date" approved="yes">
-        <source>Date</source>
-        <target state="final">Datum</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.eventType" approved="yes">
-        <source>Type</source>
-        <target state="final">Art</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.topic" approved="yes">
-        <source>Topic</source>
-        <target state="final">Thema</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.city" approved="yes">
-        <source>City</source>
-        <target state="final">Stadt</target>
+      <trans-unit id="plugin.eventOutlook.events.property.organizer" approved="yes">
+        <source>Organizer:</source>
+        <target state="final">Veranstalter:</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.venue" approved="yes">
-        <source>Venue</source>
-        <target state="final">Ort</target>
+        <source>Venue:</source>
+        <target state="final">Veranstaltungsort:</target>
       </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.vacancies" approved="yes">
-        <source>Vacancies</source>
-        <target state="final">Frei</target>
+      <trans-unit id="plugin.eventOutlook.events.property.eventFormat.0" approved="yes">
+        <source>on-site</source>
+        <target state="final">vor Ort</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.eventFormat.1" approved="yes">
+        <source>hybrid</source>
+        <target state="final">hybrid</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.eventFormat.2" approved="yes">
+        <source>online</source>
+        <target state="final">online</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.speakers.one" approved="yes">
+        <source>Speaker:</source>
+        <target state="final">Referent_in:</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.speakers.many" approved="yes">
+        <source>Speakers:</source>
+        <target state="final">Referent_innen:</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.eventUid.number" approved="yes">
+        <source>#%1$u</source>
+        <target state="final">#%1$u</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.singleViewLink" approved="yes">
+        <source>Details</source>
+        <target state="final">Details</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.singleViewLink.ariaLabel" approved="yes">
+        <source>Show details for the event &quot;%1$s&quot;</source>
+        <target state="final">Details für die Veranstaltung "%1$s " anzeigen</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.price" approved="yes">
+        <source>Price:</source>
+        <target state="final">Preis:</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.vacancies.fullyBooked" approved="yes">
-        <source>full</source>
-        <target state="final">voll</target>
+        <source>fully booked</source>
+        <target state="final">ausgebucht</target>
       </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.vacancies.unlimited" approved="yes">
-        <source>∞</source>
-        <target state="final">∞</target>
+      <trans-unit id="plugin.eventOutlook.events.property.vacancies.fewLeft" approved="yes">
+        <source>few left</source>
+        <target state="final">wenige übrig</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.vacancies.available" approved="yes">
+        <source>available</source>
+        <target state="final">verfügbar</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.registration" approved="yes">
         <source>Registration</source>
@@ -2397,9 +2732,17 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>registration</source>
         <target state="final">zur Anmeldung</target>
       </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.registration.register.ariaLabel" approved="yes">
+        <source>Register for the event &quot;%1$s&quot;</source>
+        <target state="final">Zur Veranstaltung "%1$s" anmelden</target>
+      </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.registration.waitingList" approved="yes">
         <source>waiting list</source>
         <target state="final">Warteliste</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.registration.waitingList.ariaLabel" approved="yes">
+        <source>Subscribe to the waiting list for the event &quot;%1$s&quot;</source>
+        <target state="final">Auf die Warteliste der Veranstaltung "%1$s" setzen</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView" approved="yes">
         <source>Event single view</source>
@@ -2441,6 +2784,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>venue</source>
         <target state="final">Veranstaltungsort</target>
       </trans-unit>
+      <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.categories" approved="yes">
+        <source>categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
       <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.room" approved="yes">
         <source>room</source>
         <target state="final">Raum</target>
@@ -2449,9 +2796,17 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>price</source>
         <target state="final">Preis</target>
       </trans-unit>
+      <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.targetGroups" approved="yes">
+        <source>target groups</source>
+        <target state="final">Zielgruppen</target>
+      </trans-unit>
       <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.vacancies" approved="yes">
         <source>vacancies</source>
         <target state="final">freie Plätze</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.teaser" approved="yes">
+        <source>teaser</source>
+        <target state="final">Teaser</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView.settings.displayOptions.dataToDisplay.description" approved="yes">
         <source>description</source>
@@ -2477,6 +2832,26 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>End: %1s %2s</source>
         <target state="final">Ende: %1s %2s Uhr</target>
       </trans-unit>
+      <trans-unit id="plugin.eventSingleView.property.timeSlots.caption" approved="yes">
+        <source>Time slots</source>
+        <target state="final">Zeitslots</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.property.timeSlots.date" approved="yes">
+        <source>Date</source>
+        <target state="final">Datum</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.property.timeSlots.time" approved="yes">
+        <source>Time</source>
+        <target state="final">Zeit</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.property.timeSlots.venue" approved="yes">
+        <source>Venue</source>
+        <target state="final">Veranstaltungsort</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.property.timeSlots.room" approved="yes">
+        <source>Room</source>
+        <target state="final">Raum</target>
+      </trans-unit>
       <trans-unit id="plugin.eventSingleView.events.property.room" approved="yes">
         <source>Room</source>
         <target state="final">Raum</target>
@@ -2484,6 +2859,10 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="plugin.eventSingleView.events.property.price" approved="yes">
         <source>Price</source>
         <target state="final">Preis</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.events.property.targetGroups" approved="yes">
+        <source>Target groups</source>
+        <target state="final">Zielgruppen</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView.events.property.vacancies" approved="yes">
         <source>Vacancies</source>
@@ -2493,13 +2872,21 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
         <source>fully booked</source>
         <target state="final">ausgebucht</target>
       </trans-unit>
-      <trans-unit id="plugin.eventSingleView.events.property.vacancies.unlimited" approved="yes">
-        <source>unlimited</source>
-        <target state="final">unbegrenzt</target>
+      <trans-unit id="plugin.eventSingleView.events.property.vacancies.fewLeft" approved="yes">
+        <source>few tickets left</source>
+        <target state="final">wenige Tickets übrig</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.events.property.vacancies.available" approved="yes">
+        <source>tickets available</source>
+        <target state="final">Tickets verfügbar</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView.events.property.venue" approved="yes">
         <source>Venue</source>
         <target state="final">Veranstaltungsort</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventSingleView.events.property.categories" approved="yes">
+        <source>Categories</source>
+        <target state="final">Kategorien</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView.events.property.speakers.one" approved="yes">
         <source>Speaker</source>
@@ -2524,6 +2911,250 @@ Wir konnten dieser Veranstaltung nun fest zusagen.</target>
       <trans-unit id="plugin.eventSingleView.events.property.registration.waitingList" approved="yes">
         <source>register for the waiting list</source>
         <target state="final">auf die Warteliste eintragen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations" approved="yes">
+        <source>My registrations</source>
+        <target state="final">Meine Anmeldungen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.tab.displayOptions" approved="yes">
+        <source>Display options</source>
+        <target state="final">Anzeigeoptionen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns" approved="yes">
+        <source>Columns to show in the list view</source>
+        <target state="final">Spalten in der Listenansicht anzeigen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.date" approved="yes">
+        <source>date</source>
+        <target state="final">Datum</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.eventType" approved="yes">
+        <source>event type</source>
+        <target state="final">Veranstaltungsart</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.topic" approved="yes">
+        <source>topic</source>
+        <target state="final">Thema</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.organizer" approved="yes">
+        <source>organizer</source>
+        <target state="final">Veranstalter</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.city" approved="yes">
+        <source>city</source>
+        <target state="final">Stadt</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.venue" approved="yes">
+        <source>venue</source>
+        <target state="final">Veranstaltungsort</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.attendanceMode" approved="yes">
+        <source>attendance mode</source>
+        <target state="final">Teilnahmemodus</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.categories" approved="yes">
+        <source>categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.speakers" approved="yes">
+        <source>speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.eventUid" approved="yes">
+        <source>event UID</source>
+        <target state="final">UID der Veranstaltung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.registrationStatus" approved="yes">
+        <source>registration status</source>
+        <target state="final">Anmeldestatus</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.certificateOfAttendance" approved="yes">
+        <source>certificate of attendance</source>
+        <target state="final">Teilnahmebescheinigung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.unregistration" approved="yes">
+        <source>unregistration</source>
+        <target state="final">Abmeldung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields" approved="yes">
+        <source>Fields to show in the single view</source>
+        <target state="final">Felder in der Einzelansicht anzeigen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.topic" approved="yes">
+        <source>topic</source>
+        <target state="final">Thema</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.eventType" approved="yes">
+        <source>event type</source>
+        <target state="final">Veranstaltungsart</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.registrationStatus" approved="yes">
+        <source>registration status</source>
+        <target state="final">Anmeldestatus</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.dateAndTime" approved="yes">
+        <source>date and time</source>
+        <target state="final">Datum und Zeit</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.venue" approved="yes">
+        <source>venue</source>
+        <target state="final">Veranstaltungsort</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.categories" approved="yes">
+        <source>categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.room" approved="yes">
+        <source>room</source>
+        <target state="final">Raum</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.description" approved="yes">
+        <source>description</source>
+        <target state="final">Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.speakers" approved="yes">
+        <source>speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.unregistration" approved="yes">
+        <source>unregistration</source>
+        <target state="final">Abmeldung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.downloads" approved="yes">
+        <source>downloads</source>
+        <target state="final">Downloads</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.error.notLoggedIn" approved="yes">
+        <source>Please log in to view this page.</source>
+        <target state="final">Bitte loggen Sie sich ein, um diese Seite zu sehen.</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.error.notFound" approved="yes">
+        <source>Sorry, this page does not exist.</source>
+        <target state="final">Sorry, diese Seite existiert leider nicht.</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.messages.noRegistrations_formal" approved="yes">
+        <source>You are not registered to any events yet.</source>
+        <target state="final">Sie sind noch zu keiner Veranstaltung angemeldet.</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.messages.noRegistrations_informal" approved="yes">
+        <source>You are not registered to any events yet.</source>
+        <target state="final">Du bist noch zu keiner Veranstaltung angemeldet.</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.date" approved="yes">
+        <source>Date</source>
+        <target state="final">Datum</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.eventType" approved="yes">
+        <source>Type</source>
+        <target state="final">Art</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.topic" approved="yes">
+        <source>Topic</source>
+        <target state="final">Thema</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.organizer" approved="yes">
+        <source>Organizer</source>
+        <target state="final">Veranstalter</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.city" approved="yes">
+        <source>City</source>
+        <target state="final">Stadt</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.venue" approved="yes">
+        <source>Venue</source>
+        <target state="final">Ort</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.attendanceMode" approved="yes">
+        <source>Mode</source>
+        <target state="final">Modus</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.categories" approved="yes">
+        <source>Categories</source>
+        <target state="final">Kategorien</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.speakers" approved="yes">
+        <source>Speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.eventUid" approved="yes">
+        <source>Event number</source>
+        <target state="final">Veranstaltungsnummer</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.registrationStatus" approved="yes">
+        <source>Status</source>
+        <target state="final">Status</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.certificateOfAttendance" approved="yes">
+        <source>Certificate</source>
+        <target state="final">Bescheinigung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.displayCertificateOfAttendance.short" approved="yes">
+        <source>📄 Display</source>
+        <target state="final">📄 Anzeigen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.displayCertificateOfAttendance.long" approved="yes">
+        <source>📄 Display certificate of attendance</source>
+        <target state="final">📄 Teilnahmebescheinigung anzeigen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.property.eventUid.number" approved="yes">
+        <source>#%1$u</source>
+        <target state="final">#%1$u</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.property.attendanceMode.1" approved="yes">
+        <source>on-site</source>
+        <target state="final">vor Ort</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.property.attendanceMode.2" approved="yes">
+        <source>online</source>
+        <target state="final">online</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.property.attendanceMode.3" approved="yes">
+        <source>hybrid</source>
+        <target state="final">hybrid</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.property.registrationStatus.0" approved="yes">
+        <source>regular</source>
+        <target state="final">regulär</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.property.registrationStatus.1" approved="yes">
+        <source>waiting list</source>
+        <target state="final">Warteliste</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.property.registrationStatus.2" approved="yes">
+        <source>nonbinding reservation</source>
+        <target state="final">unverbindliche Reservierung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.unregistration" approved="yes">
+        <source>Unregistration</source>
+        <target state="final">Abmeldung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.toUnregistrationForm" approved="yes">
+        <source>unregistration</source>
+        <target state="final">Abmeldung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.registrationStatus" approved="yes">
+        <source>Registration status</source>
+        <target state="final">Anmeldestatus</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.certificateOfAttendance" approved="yes">
+        <source>Certificate of attendance</source>
+        <target state="final">Teilnahmebescheinigung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.unregistration" approved="yes">
+        <source>Unregistration</source>
+        <target state="final">Abmeldung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.displayCertificateOfAttendance" approved="yes">
+        <source>📄 Display certificate of attendance</source>
+        <target state="final">📄 Teilnahmebescheinigung anzeigen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.toUnregistrationForm" approved="yes">
+        <source>proceed to unregistration</source>
+        <target state="final">zur Abmeldung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.downloads" approved="yes">
+        <source>Downloads</source>
+        <target state="final">Downloads</target>
       </trans-unit>
     </body>
   </file>

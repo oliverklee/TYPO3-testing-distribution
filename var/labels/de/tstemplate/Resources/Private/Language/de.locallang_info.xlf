@@ -53,7 +53,7 @@
       </trans-unit>
       <trans-unit id="infoTypoScriptRecordFromSite.title" approved="yes">
         <source>TypoScript settings have been implicitly generated from site sets includes</source>
-        <target state="final">TypoScript-Einstellungen wurden implizit aus Site-Sets Abhöngigkeiten generiert</target>
+        <target state="final">TypoScript-Einstellungen wurden implizit aus Site-Sets Abhängigkeiten generiert</target>
       </trans-unit>
       <trans-unit id="infoTypoScriptRecordFromSite.message" approved="yes">
         <source>The site configuration '%s' has one or more dependencies on site sets. The sets can be configured in the 'Site Management » Settings' backend module. The TypoScript definitions can be edited on the file system.</source>
