@@ -23,6 +23,10 @@
         <source>Access to files outside your configured storages is not permitted.</source>
         <target state="final">Der Zugriff auf Dateien außerhalb Ihres konfigurierten Speichers ist nicht gestattet.</target>
       </trans-unit>
+      <trans-unit id="ajax.error.message.resourceNoPermissionRead" approved="yes">
+        <source>Reading this resource is not permitted.</source>
+        <target state="final">Das Lesen dieser Ressource ist nicht erlaubt.</target>
+      </trans-unit>
       <trans-unit id="ajax.error.message.resourceNoPermissionRename" approved="yes">
         <source>Renaming this resource is not permitted.</source>
         <target state="final">Umbenennen dieser Ressource ist nicht zulässig.</target>

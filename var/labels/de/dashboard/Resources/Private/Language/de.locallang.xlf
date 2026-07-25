@@ -81,7 +81,7 @@
       </trans-unit>
       <trans-unit id="dashboard.empty" approved="yes">
         <source>Empty dashboard</source>
-        <target state="final">Kein Dashboard vorhanden</target>
+        <target state="final">Leeres Dashboard</target>
       </trans-unit>
       <trans-unit id="dashboard.empty.description" approved="yes">
         <source>Your dashboard will be created without any widget on it.</source>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" datatype="plaintext" original="messages" date="2016-07-18T21:20:33Z" product-name="seminars" target-language="de">
+  <file source-language="en" datatype="plaintext" original="messages" target-language="de">
     <header/>
     <body>
       <trans-unit id="moduleFunction.tx_seminars_modfunc1" approved="yes">
@@ -87,10 +87,6 @@
         <source>Time</source>
         <target state="final">Zeit</target>
       </trans-unit>
-      <trans-unit id="tx_seminars_seminars.language" approved="yes">
-        <source>Language</source>
-        <target state="final">Sprache</target>
-      </trans-unit>
       <trans-unit id="tx_seminars_seminars.accreditation_number" approved="yes">
         <source>Accreditation number</source>
         <target state="final">Akkreditierungsnummer</target>
@@ -148,8 +144,8 @@
         <target state="final">Interne Notizen</target>
       </trans-unit>
       <trans-unit id="tx_seminars_seminars.attached_files" approved="yes">
-        <source>Attached files</source>
-        <target state="final">Angehängte Dateien</target>
+        <source>Downloads for registered persons</source>
+        <target state="final">Downloads für angemeldete Personen</target>
       </trans-unit>
       <trans-unit id="tx_seminars_seminars.download_start_date" approved="yes">
         <source>Downloads available starting at</source>
@@ -347,13 +343,17 @@
         <source>Allowed methods of payment</source>
         <target state="final">Erlaubte Zahlungsarten</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_seminars.divLabelBilling" approved="yes">
+        <source>Billing</source>
+        <target state="final">Abrechnung</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_seminars.billing_start" approved="yes">
+        <source>Start of the billing process</source>
+        <target state="final">Beginn der Rechnungserstellung</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_seminars.divLabelAccess" approved="yes">
         <source>Access</source>
         <target state="final">Zugriff</target>
-      </trans-unit>
-      <trans-unit id="tx_seminars_seminars.vips" approved="yes">
-        <source>Managers of this event</source>
-        <target state="final">Verwaltung dieser Veranstaltung</target>
       </trans-unit>
       <trans-unit id="tx_seminars_seminars.image" approved="yes">
         <source>Image</source>
@@ -451,9 +451,13 @@
         <source>Registration Comments</source>
         <target state="final">Anmeldekommentare</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_attendances.divLabelCertificateOfAttendance" approved="yes">
+        <source>Certificate of attendance</source>
+        <target state="final">Teilnahmebescheinigung</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_attendances.divLabelPaymentInformation" approved="yes">
-        <source>Payment Information</source>
-        <target state="final">Zahlungsinformationen</target>
+        <source>Billing</source>
+        <target state="final">Abrechnung</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.divLabelBillingAddress" approved="yes">
         <source>Billing Address</source>
@@ -523,9 +527,21 @@
         <source>Total price for this attendance</source>
         <target state="final">Gesamtpreis dieser Buchung</target>
       </trans-unit>
+      <trans-unit id="tx_seminars_attendances.invoice_date" approved="yes">
+        <source>Invoice date</source>
+        <target state="final">Rechnungsdatum</target>
+      </trans-unit>
       <trans-unit id="tx_seminars_attendances.datepaid" approved="yes">
         <source>Date of payment</source>
         <target state="final">Datum der Bezahlung</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_attendances.invoice_number" approved="yes">
+        <source>Invoice number</source>
+        <target state="final">Rechnungsnummer</target>
+      </trans-unit>
+      <trans-unit id="tx_seminars_attendances.customer_number" approved="yes">
+        <source>Customer number</source>
+        <target state="final">Kund_innennummer</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.method_of_payment" approved="yes">
         <source>Method of payment</source>
@@ -560,8 +576,8 @@
         <target state="final">divers</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.address" approved="yes">
-        <source>Address</source>
-        <target state="final">Adresse</target>
+        <source>Street address</source>
+        <target state="final">Straße und Hausnummer</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.zip" approved="yes">
         <source>ZIP</source>
@@ -608,8 +624,10 @@
         <target state="final">Gewählte Unterbringungsmöglichkeiten</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.accommodation" approved="yes">
-        <source>How are your lodging preferences (if possible a single room, a double room, no lodging)?</source>
-        <target state="final">Wie möchten Sie übernachten (wenn möglich im Einzelzimmer, Doppelzimmer, keine Übernachtung)</target>
+        <source>
+          How are your lodging preferences (if possible a single room, a double room, no lodging)?
+        </source>
+        <target state="final">Übernachtungswünsche</target>
       </trans-unit>
       <trans-unit id="tx_seminars_attendances.foods" approved="yes">
         <source>Selected food options</source>
@@ -679,17 +697,9 @@
         <source>Full address</source>
         <target state="final">Vollständige Adresse</target>
       </trans-unit>
-      <trans-unit id="tx_seminars_sites.zip" approved="yes">
-        <source>ZIP code</source>
-        <target state="final">Postleitzahl</target>
-      </trans-unit>
       <trans-unit id="tx_seminars_sites.city" approved="yes">
         <source>City</source>
         <target state="final">Stadt</target>
-      </trans-unit>
-      <trans-unit id="tx_seminars_sites.country" approved="yes">
-        <source>Country</source>
-        <target state="final">Land</target>
       </trans-unit>
       <trans-unit id="tx_seminars_sites.homepage" approved="yes">
         <source>Homepage</source>
@@ -850,6 +860,18 @@
       <trans-unit id="owner_feuser" approved="yes">
         <source>Front-end user who has created this record</source>
         <target state="final">Frontend-User, der diesen Datensatz eingetragen hat</target>
+      </trans-unit>
+      <trans-unit id="fe_users.divLabel.seminars" approved="yes">
+        <source>Event management</source>
+        <target state="final">Veranstaltungsverwaltung</target>
+      </trans-unit>
+      <trans-unit id="fe_users.default_organizer" approved="yes">
+        <source>Default organizer (for the FE editor)</source>
+        <target state="final">Default-Veranstalter (für den FE-Editor)</target>
+      </trans-unit>
+      <trans-unit id="fe_users.available_topics" approved="yes">
+        <source>Available topics in the FE editor</source>
+        <target state="final">Verfügbare Themen im FE-Editor</target>
       </trans-unit>
     </body>
   </file>
