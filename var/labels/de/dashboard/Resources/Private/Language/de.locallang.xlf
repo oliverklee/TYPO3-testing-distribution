@@ -41,7 +41,7 @@
 			<target state="final">Erstellen Sie ein neues Dashboard mit einigen allgemeinen TYPO3-Widgets</target></trans-unit>
       <trans-unit id="dashboard.empty" resname="dashboard.empty" xml:space="preserve" approved="yes">
 				<source>Empty dashboard</source>
-			<target state="final">Kein Dashboard vorhanden</target></trans-unit>
+			<target state="final">Leeres Dashboard</target></trans-unit>
       <trans-unit id="dashboard.empty.description" resname="dashboard.empty.description" xml:space="preserve" approved="yes">
 				<source>Your dashboard will be created without any widget on it.</source>
 			<target state="final">Ihr Dashboard wird ohne Widgets erstellt.</target></trans-unit>
