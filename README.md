@@ -6,8 +6,6 @@ This is a TYPO3 distribution which I use to manually test my extensions:
 - [oelib](https://github.com/oliverklee-de/oelib)
 - [onetimeaccount](https://github.com/oliverklee-de/onetimeaccount)
 - [seminars](https://github.com/oliverklee-de/seminars)
-  (once
-  it [supports TYPO3 12LTS](https://github.com/oliverklee-de/seminars/wiki/Early-access-program-for-newer-TYPO3-versions))
 - [tea](https://github.com/TYPO3BestPractices/tea)
 
 ## Usage
