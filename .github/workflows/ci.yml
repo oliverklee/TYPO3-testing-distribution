@@ -37,6 +37,7 @@ jobs:
           - '8.2'
           - '8.3'
           - '8.4'
+          - '8.5'
   composer-validate:
     name: Composer validate
     runs-on: ubuntu-24.04
@@ -57,7 +58,7 @@ jobs:
       matrix:
         php-version:
           - '8.2'
-          - '8.4'
+          - '8.5'
   code-quality:
     name: Code quality checks
     runs-on: ubuntu-24.04
@@ -108,7 +109,7 @@ jobs:
       matrix:
         php-version:
           - '8.2'
-          - '8.4'
+          - '8.5'
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -142,7 +143,7 @@ jobs:
       matrix:
         php-version:
           - '8.2'
-          - '8.4'
+          - '8.5'
     env:
       DB_DATABASE: typo3
       DB_USER: root
