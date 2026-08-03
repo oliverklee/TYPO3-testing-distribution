@@ -146,12 +146,12 @@
         <target state="final">Ausweichlösung-Typ</target>
       </trans-unit>
       <trans-unit id="site_language.fallbackType.strict" approved="yes">
-        <source>Strict: Show only translated content, based on overlays</source>
-        <target state="final">Strikt: Nur übersetzte Inhalte anzeigen, basierend auf Overlays</target>
+        <source>Strict: Show only translated content, based on overlays. Also show records that only exist in this language.</source>
+        <target state="final">Strict: Nur übersetzte Inhalte anzeigen, basierend auf Overlays. Auch Datensätze anzeigen, die nur in dieser Sprache vorhanden sind.</target>
       </trans-unit>
       <trans-unit id="site_language.fallbackType.fallback" approved="yes">
-        <source>Fallback: Show default language if no translation exists</source>
-        <target state="final">Fallback: Standardsprache anzeigen, wenn keine Übersetzung vorhanden ist</target>
+        <source>Fallback: Show default language if no translation exists. Also show records that only exist in this language.</source>
+        <target state="final">Fallback: Die Standardsprache anzeigen, wenn keine Übersetzung vorhanden ist. Außerdem Datensätze anzeigen, die nur in dieser Sprache vorliegen.</target>
       </trans-unit>
       <trans-unit id="site_language.fallbackType.free" approved="yes">
         <source>Free mode: Ignore translation and overlay concept, only show data from selected language</source>

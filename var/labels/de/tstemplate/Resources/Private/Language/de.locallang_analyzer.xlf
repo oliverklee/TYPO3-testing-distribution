@@ -99,10 +99,6 @@
         <source>Condition (else)</source>
         <target state="final">Bedingung (else)</target>
       </trans-unit>
-      <trans-unit id="tree.child.type.ConditionIncludeTyposcript" approved="yes">
-        <source>Included via "INCLUDE_TYPOSCRIPT" (deprecated, with condition)</source>
-        <target state="final">Eingebunden via "INCLUDE_TYPOSPOSCRIPT" (veraltet, mit Bedingung)</target>
-      </trans-unit>
       <trans-unit id="tree.child.type.ConditionStop" approved="yes">
         <source>Condition (end)</source>
         <target state="final">Bedingung (Ende)</target>
@@ -134,10 +130,6 @@
       <trans-unit id="tree.child.type.IncludeStaticFileFile" approved="yes">
         <source>TypoScript set (included via file)</source>
         <target state="final">TypoScript Set (eingebunden via Datei)</target>
-      </trans-unit>
-      <trans-unit id="tree.child.type.IncludeTyposcript" approved="yes">
-        <source>Included via "INCLUDE_TYPOSCRIPT" (deprecated)</source>
-        <target state="final">Eingebunden via "INCLUDE_TYPOSPOSCRIPT" (veraltet)</target>
       </trans-unit>
       <trans-unit id="tree.child.type.Root" approved="yes">
         <source>Root</source>

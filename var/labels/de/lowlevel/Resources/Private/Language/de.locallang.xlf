@@ -3,22 +3,6 @@
   <file source-language="en" datatype="plaintext" original="EXT:lowlevel/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:34Z" product-name="lowlevel" target-language="de">
     <header/>
     <body>
-      <trans-unit id="module.configuration.title" approved="yes">
-        <source>Configuration</source>
-        <target state="final">Konfiguration</target>
-      </trans-unit>
-      <trans-unit id="module.configuration.shortDescription" approved="yes">
-        <source>View configuration from localconf.php and tables.php</source>
-        <target state="final">Konfiguration von localconf.php und tables.php anzeigen</target>
-      </trans-unit>
-      <trans-unit id="module.configuration.description" approved="yes">
-        <source>Allows you to browse the values of the $TCA array (table configuration) and $TYPO3_CONF_VARS. You cannot set any values, only browse them.</source>
-        <target state="final">Ermöglicht das Durchsuchen der Werte des Arrays $TCA (Tabellenkonfiguration) und $TYPO3_CONF_VARS. Du kannst keine Werte festlegen, sondern sie nur durchsuchen.</target>
-      </trans-unit>
-      <trans-unit id="module.configuration.numberOfSearchMatches" approved="yes">
-        <source>%s search match(es)</source>
-        <target state="final">%s Suchergebnis(se)</target>
-      </trans-unit>
       <trans-unit id="moduleMenu.dropdown.label" approved="yes">
         <source>Configuration to show</source>
         <target state="final">anzuzeigende Konfiguration</target>
@@ -43,7 +27,7 @@
         <source>$GLOBALS['BE_USER']-&gt;uc (User Settings)</source>
         <target state="final">$GLOBALS['BE_USER']-&gt;uc (Benutzereinstellungen)</target>
       </trans-unit>
-      <trans-unit id="usersettings" approved="yes">
+      <trans-unit id="usersettings" x-unused-since="15.0" approved="yes">
         <source>$GLOBALS['TYPO3_USER_SETTINGS'] (User Settings Configuration)</source>
         <target state="final">$GLOBALS['TYPO3_USER_SETTINGS'] (Konfiguration für Benutzereinstellungen)</target>
       </trans-unit>
@@ -87,6 +71,10 @@
         <source>Symfony Expression Language Providers</source>
         <target state="final">Symfony ExpressionLanguage Providers</target>
       </trans-unit>
+      <trans-unit id="translationDomainList" approved="yes">
+        <source>Translation Domain List</source>
+        <target state="final">Übersetzungs-Domänenliste</target>
+      </trans-unit>
       <trans-unit id="doctrineDbalDriverMiddlewares" approved="yes">
         <source>Doctrine DBAL Driver Middlewares</source>
         <target state="final">Doctrine DBAL Driver Middlewares</target>
@@ -107,22 +95,6 @@
         <source>Table permissions per page type</source>
         <target state="final">Tabellenberechtigungen pro Seitentyp</target>
       </trans-unit>
-      <trans-unit id="module.dbint.title" approved="yes">
-        <source>DB Check</source>
-        <target state="final">DB Check</target>
-      </trans-unit>
-      <trans-unit id="module.dbint.shortDescription" approved="yes">
-        <source>Database integrity check</source>
-        <target state="final">Datenbankintegritätsprüfung</target>
-      </trans-unit>
-      <trans-unit id="module.dbint.description" approved="yes">
-        <source>Here you can check the integrity of the database tables configured by the $TCA. For instance all records must belong to a page record. You can also get a view of the total pagetree including deleted pages. Finally you've got access to a global database search facility.</source>
-        <target state="final">Hier kannst du die Integrität der von $TCA konfigurierten Datenbanktabellen überprüfen. Zum Beispiel müssen alle Datensätze zu einem Seitendatensatz gehören. Du kannst dir auch einen Überblick über den gesamten Seitenbaum verschaffen, einschließlich der gelöschten Seiten. Und du hast Zugang zu einer globalen Datenbank-Suchfunktion.</target>
-      </trans-unit>
-      <trans-unit id="module.dbint.docheader.viewmode" approved="yes">
-        <source>Module action</source>
-        <target state="final">Modul-Aktion</target>
-      </trans-unit>
       <trans-unit id="search.submit" approved="yes">
         <source>Search All Records</source>
         <target state="final">Alle Datensätze durchsuchen</target>
@@ -132,37 +104,9 @@
         <source>Search</source>
         <target state="final">Suchen</target>
       </trans-unit>
-      <trans-unit id="recordStatistics" approved="yes">
-        <source>Record Statistics</source>
-        <target state="final">Datensatz-Statistik</target>
-      </trans-unit>
-      <trans-unit id="totalPageTree" approved="yes">
-        <source>Total Page Tree</source>
-        <target state="final">Gesamter Seitenbaum</target>
-      </trans-unit>
-      <trans-unit id="databaseRelations" approved="yes">
-        <source>Database Relations</source>
-        <target state="final">Datenbankrelationen</target>
-      </trans-unit>
       <trans-unit id="fullSearch" approved="yes">
         <source>Full search</source>
         <target state="final">Volltextsuche</target>
-      </trans-unit>
-      <trans-unit id="findFilename" approved="yes">
-        <source>Find filename</source>
-        <target state="final">Dateinamen finden</target>
-      </trans-unit>
-      <trans-unit id="manageRefIndex" approved="yes">
-        <source>Manage Reference Index</source>
-        <target state="final">Referenz-Index verwalten</target>
-      </trans-unit>
-      <trans-unit id="rawSearch" approved="yes">
-        <source>Raw search in all fields</source>
-        <target state="final">Suche in allen Feldern</target>
-      </trans-unit>
-      <trans-unit id="advancedQuery" approved="yes">
-        <source>Advanced query</source>
-        <target state="final">Erweiterte Anfrage</target>
       </trans-unit>
       <trans-unit id="selectRecords" approved="yes">
         <source>Select records</source>
@@ -179,62 +123,6 @@
       <trans-unit id="csvExport" approved="yes">
         <source>CSV Export</source>
         <target state="final">CSV-Export</target>
-      </trans-unit>
-      <trans-unit id="xmlExport" approved="yes">
-        <source>XML Export</source>
-        <target state="final">XML-Export</target>
-      </trans-unit>
-      <trans-unit id="clickToUpdateRefIndex" approved="yes">
-        <source>Click here to update reference index</source>
-        <target state="final">Klicken Sie hier, um den Referenz-Index zu aktualisieren:</target>
-      </trans-unit>
-      <trans-unit id="updateNow" approved="yes">
-        <source>Update now!</source>
-        <target state="final">Jetzt aktualisieren!</target>
-      </trans-unit>
-      <trans-unit id="clickToTestRefIndex" approved="yes">
-        <source>Click here to test reference index</source>
-        <target state="final">Klicken Sie hier, um den Referenz-Index zu prüfen:</target>
-      </trans-unit>
-      <trans-unit id="referenceIndex_description" approved="yes">
-        <source>TYPO3's reference index keeps track of the relations between records. As it can happen that the reference index contains outdated values, you can check and update it here.</source>
-        <target state="final">Der TYPO3-Referenzindex zeichnet Beziehungen zwischen Datensätzen auf. Da es vorkommen kann, dass Werte veralten, gibt es hier die Möglichkeit, ihn zu prüfen und aktualisieren.</target>
-      </trans-unit>
-      <trans-unit id="referenceIndex_buttonUpdate" approved="yes">
-        <source>Update reference index</source>
-        <target state="final">Referenzindex aktualisieren</target>
-      </trans-unit>
-      <trans-unit id="referenceIndex_buttonCheck" approved="yes">
-        <source>Check reference index</source>
-        <target state="final">Referenzindex prüfen</target>
-      </trans-unit>
-      <trans-unit id="checkNow" approved="yes">
-        <source>Check now!</source>
-        <target state="final">Jetzt prüfen!</target>
-      </trans-unit>
-      <trans-unit id="checkScript_headline" approved="yes">
-        <source>Using the command line interface</source>
-        <target state="final">Verwendung der Kommandozeile</target>
-      </trans-unit>
-      <trans-unit id="checkScript" approved="yes">
-        <source>You can also run the check as a shell script using CLI if the processing takes longer than the PHP max_execution_time allows.</source>
-        <target state="final">Sie können die Prüfung auch in einem Shell-Script mit dem Command Line Interface (CLI) durchführen, wenn die Verarbeitung länger braucht, als die max_execution_time in PHP erlaubt.</target>
-      </trans-unit>
-      <trans-unit id="checkScript_check_description" approved="yes">
-        <source>To check the reference index use:</source>
-        <target state="final">Um den Referenz-Index zu prüfen, führen Sie folgenden Befehl aus:</target>
-      </trans-unit>
-      <trans-unit id="checkScript_update_description" approved="yes">
-        <source>To update the reference index use:</source>
-        <target state="final">Um den Referenz-Index zu aktualisieren, führen Sie folgenden Befehl aus:</target>
-      </trans-unit>
-      <trans-unit id="checkScript_moreDetails" approved="yes">
-        <source>For more details see:</source>
-        <target state="final">Für weitere Details siehe:</target>
-      </trans-unit>
-      <trans-unit id="updateRefIndex" approved="yes">
-        <source>Update reference index</source>
-        <target state="final">Referenzindex aktualisieren</target>
       </trans-unit>
       <trans-unit id="fullSearch.flashMessage.noResultsFoundMessage" approved="yes">
         <source>The query returned no results.</source>
@@ -262,7 +150,7 @@
       </trans-unit>
       <trans-unit id="fullSearch.section.result" approved="yes">
         <source>Result</source>
-        <target state="final">Ergebnis:</target>
+        <target state="final">Ergebnis</target>
       </trans-unit>
       <trans-unit id="fullSearch.type.count.resultsFound" approved="yes">
         <source>records found.</source>
@@ -356,10 +244,6 @@
         <source>Show even deleted entries (with undelete buttons)</source>
         <target state="final">Auch gelöschte Einträge anzeigen (mit Wiederherstellen-Schaltfläche)</target>
       </trans-unit>
-      <trans-unit id="result" approved="yes">
-        <source>Result</source>
-        <target state="final">Ergebnis:</target>
-      </trans-unit>
       <trans-unit id="no_results" approved="yes">
         <source>No results found for "%s".</source>
         <target state="final">Keine Ergebnisse für „%s“ gefunden.</target>
@@ -369,165 +253,13 @@
         <source>Enter a search term to search for records</source>
         <target state="final">Geben Sie einen Suchbegriff ein, um nach Datensätzen zu suchen</target>
       </trans-unit>
-      <trans-unit id="tables" approved="yes">
-        <source>Tables</source>
-        <target state="final">Tabellen:</target>
-      </trans-unit>
-      <trans-unit id="references" approved="yes">
-        <source>references</source>
-        <target state="final">Referenzen:</target>
-      </trans-unit>
-      <trans-unit id="isMissing" approved="yes">
-        <source>is missing!</source>
-        <target state="final">fehlt!</target>
-      </trans-unit>
-      <trans-unit id="referencedFrom" approved="yes">
-        <source>Referenced from</source>
-        <target state="final">Referenziert von:</target>
-      </trans-unit>
-      <trans-unit id="enterRegexPattern" approved="yes">
-        <source>Enter regex pattern</source>
-        <target state="final">Muster für regulären Ausdruck eingeben:</target>
-      </trans-unit>
-      <trans-unit id="searchButton" approved="yes">
-        <source>Search</source>
-        <target state="final">Suchen</target>
-      </trans-unit>
-      <trans-unit id="pattern" approved="yes">
-        <source>Pattern</source>
-        <target state="final">Muster</target>
-      </trans-unit>
-      <trans-unit id="beingChecked" approved="yes">
-        <source>being checked...</source>
-        <target state="final">wird geprüft...</target>
-      </trans-unit>
-      <trans-unit id="directories" approved="yes">
-        <source>Dirs</source>
-        <target state="final">Verzeichnisse:</target>
-      </trans-unit>
-      <trans-unit id="directoriesTooDeep" approved="yes">
-        <source>ERROR: Directories deeper than the following number of levels</source>
-        <target state="final">FEHLER: Verzeichnisse tiefer verschachtelt als folgende Anzahl Ebenen:</target>
-      </trans-unit>
-      <trans-unit id="files" approved="yes">
-        <source>Files</source>
-        <target state="final">Dateien:</target>
-      </trans-unit>
-      <trans-unit id="matchingFiles" approved="yes">
-        <source>Matching files</source>
-        <target state="final">Gefundene Dateien:</target>
-      </trans-unit>
-      <trans-unit id="notChecked" approved="yes">
-        <source>not checked.</source>
-        <target state="final">nicht geprüft.</target>
-      </trans-unit>
-      <trans-unit id="searchingForFilenames" approved="yes">
-        <source>Searching for filenames</source>
-        <target state="final">Suche nach Dateinamen:</target>
-      </trans-unit>
-      <trans-unit id="fixLostRecord" approved="yes">
-        <source>Click to move this lost record to rootlevel (pid=0)</source>
-        <target state="final">Klicken, um diesen verwaisten Eintrag an die Wurzel zu verschieben (pid=0)</target>
-      </trans-unit>
-      <trans-unit id="doktype" approved="yes">
-        <source>Document types</source>
-        <target state="final">Seitentypen:</target>
-      </trans-unit>
-      <trans-unit id="doktype_value" approved="yes">
-        <source>Document types (value)</source>
-        <target state="final">Dokumenttypen (Wert)</target>
-      </trans-unit>
-      <trans-unit id="pages" approved="yes">
-        <source>Pages</source>
-        <target state="final">Seiten:</target>
-      </trans-unit>
-      <trans-unit id="total_pages" approved="yes">
-        <source>Total number of default language pages</source>
-        <target state="final">Gesamtzahl der Seiten</target>
-      </trans-unit>
-      <trans-unit id="translated_pages" approved="yes">
-        <source>Total number of translated pages</source>
-        <target state="final">Gesamtanzahl übersetzter Seiten</target>
-      </trans-unit>
-      <trans-unit id="deleted_pages" approved="yes">
-        <source>Marked-deleted pages</source>
-        <target state="final">Als gelöscht markierte Seiten:</target>
-      </trans-unit>
-      <trans-unit id="hidden_pages" approved="yes">
-        <source>Hidden pages</source>
-        <target state="final">Verborgene Seiten:</target>
-      </trans-unit>
       <trans-unit id="count" approved="yes">
         <source>Count</source>
         <target state="final">Anzahl</target>
       </trans-unit>
-      <trans-unit id="label" approved="yes">
-        <source>Label</source>
-        <target state="final">Label</target>
-      </trans-unit>
-      <trans-unit id="tablename" approved="yes">
-        <source>Table name</source>
-        <target state="final">Tabellenname</target>
-      </trans-unit>
-      <trans-unit id="total_lost" approved="yes">
-        <source>Records total / lost</source>
-        <target state="final">Datensätze insgesamt/verloren</target>
-      </trans-unit>
-      <trans-unit id="relations" approved="yes">
-        <source>Relations</source>
-        <target state="final">Verknüpfungen</target>
-      </trans-unit>
-      <trans-unit id="relations_description" approved="yes">
-        <source>The module gives some overview of missing relations in fields of the TCA types 'select' and 'group'.</source>
-        <target state="final">Das Modul gibt einen Überblick über fehlende Beziehungen in den Feldern der TCA-Typen 'select' und 'group'.</target>
-      </trans-unit>
-      <trans-unit id="relations_noRecordsFound" approved="yes">
-        <source>No records found.</source>
-        <target state="final">Keine Datensätze gefunden.</target>
-      </trans-unit>
-      <trans-unit id="select_db" approved="yes">
-        <source>Select fields</source>
-        <target state="final">Auswahlfelder:</target>
-      </trans-unit>
-      <trans-unit id="group_db" approved="yes">
-        <source>Group fields</source>
-        <target state="final">Gruppenfelder:</target>
-      </trans-unit>
-      <trans-unit id="tree" approved="yes">
-        <source>The Page Tree</source>
-        <target state="final">Der Seitenbaum:</target>
-      </trans-unit>
-      <trans-unit id="tree_description" approved="yes">
-        <source>This shows all pages in the system in one large tree. Beware that this will probably result in a very long document which will also take some time for the server to compute!</source>
-        <target state="final">Hier werden alle Seiten im System in einem großen Seitenbaum angezeigt. Beachten Sie, dass das Ergebnis wahrscheinlich ein sehr großes Dokument ist und der Server einige Zeit brauchen kann, um es zu erstellen.</target>
-      </trans-unit>
-      <trans-unit id="records" approved="yes">
-        <source>Records Statistics</source>
-        <target state="final">Statistik der Datenbank-Einträge</target>
-      </trans-unit>
-      <trans-unit id="records_description" approved="yes">
-        <source>This shows some statistics for the records in the database. This runs through the entire page-tree and therefore it will also load the server heavily!</source>
-        <target state="final">Zeigt statistische Daten zu den Einträgen in der Datenbank an. Hierzu wird der komplette Seitenbaum durchsucht, der Server wird entsprechend stark belastet!</target>
-      </trans-unit>
       <trans-unit id="search_whole_database" approved="yes">
         <source>Search whole Database</source>
         <target state="final">Gesamte Datenbank durchsuchen</target>
-      </trans-unit>
-      <trans-unit id="search_description" approved="yes">
-        <source>This searches through all database tables and records for a text string.</source>
-        <target state="final">Durchsucht alle Datenbank-Tabellen und Einträge nach einem Text.</target>
-      </trans-unit>
-      <trans-unit id="refindex" approved="yes">
-        <source>Check and update global reference index</source>
-        <target state="final">Globalen Referenz-Index prüfen und aktualisieren</target>
-      </trans-unit>
-      <trans-unit id="refindex_description" approved="yes">
-        <source>Allows you to maintain the reference index kept by TYPO3.</source>
-        <target state="final">Ermöglicht die Pflege des von TYPO3 verwalteten Referenz-Index.</target>
-      </trans-unit>
-      <trans-unit id="refindex_ok" approved="yes">
-        <source>Index integrity was perfect!</source>
-        <target state="final">Index-Integrität war perfekt!</target>
       </trans-unit>
     </body>
   </file>

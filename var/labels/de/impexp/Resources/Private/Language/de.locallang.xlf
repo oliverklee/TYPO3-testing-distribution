@@ -147,14 +147,6 @@
         <source>Update</source>
         <target state="final">Aktualisieren</target>
       </trans-unit>
-      <trans-unit id="makeadvanc_softReferences" approved="yes">
-        <source>Soft References</source>
-        <target state="final">Soft-References:</target>
-      </trans-unit>
-      <trans-unit id="makeadvanc_excludeHtmlCssFile" approved="yes">
-        <source>Exclude HTML/CSS file resources</source>
-        <target state="final">HTML/CSS-Dateien ausschließen:</target>
-      </trans-unit>
       <trans-unit id="makeadvanc_files" approved="yes">
         <source>Files</source>
         <target state="final">Dateien</target>
@@ -166,6 +158,14 @@
       <trans-unit id="makeadvanc_saveFilesOutsideExportFile_limit" approved="yes">
         <source>(supported for "Save to filename" only)</source>
         <target state="final">(nur unterstützt für "Datei speichern unter")</target>
+      </trans-unit>
+      <trans-unit id="makeadvanc_siteConfigurations" approved="yes">
+        <source>Site configurations</source>
+        <target state="final">Konfiguration der Website</target>
+      </trans-unit>
+      <trans-unit id="makeadvanc_includeSiteConfigurations" approved="yes">
+        <source>Include site configurations for exported root pages (admin only)</source>
+        <target state="final">Site-Konfigurationen für exportierte Root-Seiten einbeziehen (nur für Admin)</target>
       </trans-unit>
       <trans-unit id="makeadvanc_extensionDependencies" approved="yes">
         <source>Extension dependencies</source>
@@ -300,16 +300,16 @@
         <target state="final">PID-Unterschiede generell ignorieren</target>
       </trans-unit>
       <trans-unit id="importdata_ifYouSetThis" approved="yes">
-        <source>If you set this option, the position of updated elements will not be updated to match the structure of the input file.</source>
-        <target state="final">Mit dieser Option wird die Position aktualisierter Inhalte nicht mit der Struktur aus der Importdatei überschrieben.</target>
+        <source>The position of updated elements will not be updated to match the structure of the input file.</source>
+        <target state="final">Die Position der aktualisierten Elemente wird nicht an die Struktur der Eingabedatei angepasst.</target>
       </trans-unit>
       <trans-unit id="importdata_force_all_UIDS" approved="yes">
         <source>Force ALL UIDs values</source>
         <target state="final">ALLE UID-Werte erzwingen</target>
       </trans-unit>
       <trans-unit id="importdata_force_all_UIDS_descr" approved="yes">
-        <source>With this option the original UID value of all imported records are forced to be the same. BE VERY CAREFUL WITH THIS! (Admin Only).</source>
-        <target state="final">Mit dieser Option werden alle ursprünglichen UID-Werte der importierten Datensätze beim Import erzwungen. VERWENDEN SIE DIESE OPTION MIT VORSICHT! (Nur für Administratoren.)</target>
+        <source>BE VERY CAREFUL WITH THIS: the original UID value of all imported records will be forced to be the same (Admin Only).</source>
+        <target state="final">SEI HIERBEI SEHR VORSICHTIG: Der ursprüngliche UID-Wert aller importierten Datensätze wird zwangsweise auf denselben Wert gesetzt (nur für Administratoren).</target>
       </trans-unit>
       <trans-unit id="importdata_options" approved="yes">
         <source>Options</source>
@@ -320,8 +320,8 @@
         <target state="final">Unterschiede in Datensätzen nicht anzeigen</target>
       </trans-unit>
       <trans-unit id="importdata_greenValuesAreFrom" approved="yes">
-        <source>Green values are from the import file, red values from the current database record and black values are similar in both versions.</source>
-        <target state="final">Grüne Werte stammen aus der Importdatei, rote Werte aus dem aktuellen Datensatz und schwarze Werte sind in beiden gleich.</target>
+        <source>Hides the resulting differences for each field of every imported records in the preview table.</source>
+        <target state="final">Blendet die resultierenden Unterschiede für jedes Feld aller importierten Datensätze in der Vorschau-Tabelle aus.</target>
       </trans-unit>
       <trans-unit id="importdata_action" approved="yes">
         <source>Action</source>
@@ -348,8 +348,8 @@
         <target state="final">Während des Imports einzelne Datenbankaktionen in das Protokoll schreiben</target>
       </trans-unit>
       <trans-unit id="importdata_thisIsDisabledBy" approved="yes">
-        <source>This is disabled by default since there may be hundred of entries generated.</source>
-        <target state="final">Diese Option ist standardmäßig deaktiviert, weil unter Umständen hunderte Einträge erzeugt werden.</target>
+        <source>This is disabled by default since there might be hundred of entries generated.</source>
+        <target state="final">Diese Option ist standardmäßig deaktiviert, da möglicherweise Hunderte von Einträgen generiert werden.</target>
       </trans-unit>
       <trans-unit id="importdata_uploadFileFromLocal" approved="yes">
         <source>Upload file from local computer</source>
@@ -410,6 +410,46 @@
       <trans-unit id="importdata_metaData_1387" approved="yes">
         <source>Meta data</source>
         <target state="final">Metadaten:</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteConfigurations" approved="yes">
+        <source>Site Configurations</source>
+        <target state="final">Konfiguration der Website</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteConfigurationsAdminOnly" approved="yes">
+        <source>This import contains site configurations that will not be imported because importing site configurations requires administrator privileges.</source>
+        <target state="final">Dieser Import enthält Website-Konfigurationen, die übersprungen werden, da hierfür Administratorrechte erforderlich sind.</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteIdentifier" approved="yes">
+        <source>Identifier</source>
+        <target state="final">Bezeichner</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteWebsiteTitle" approved="yes">
+        <source>Website Title</source>
+        <target state="final">Webseiten-Titel</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteBase" approved="yes">
+        <source>Base</source>
+        <target state="final">Basis</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteRootPage" approved="yes">
+        <source>Root Page</source>
+        <target state="final">Wurzelseite</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteLanguages" approved="yes">
+        <source>Languages</source>
+        <target state="final">Sprachen</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteLanguageId" approved="yes">
+        <source>ID</source>
+        <target state="final">ID</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteLanguageLocale" approved="yes">
+        <source>Locale</source>
+        <target state="final">Spracheinstellung</target>
+      </trans-unit>
+      <trans-unit id="importdata_siteDependencies" approved="yes">
+        <source>Dependencies</source>
+        <target state="final">Abhängigkeiten</target>
       </trans-unit>
       <trans-unit id="importdata_messages" approved="yes">
         <source>Messages</source>
@@ -506,10 +546,6 @@
       <trans-unit id="impexpcore_singlereco_descr" approved="yes">
         <source>Descr</source>
         <target state="final">Beschreibung:</target>
-      </trans-unit>
-      <trans-unit id="impexpcore_singlereco_filename" approved="yes">
-        <source>Filename</source>
-        <target state="final">Dateiname:</target>
       </trans-unit>
       <trans-unit id="impexpcore_singlereco_value" approved="yes">
         <source>Value</source>

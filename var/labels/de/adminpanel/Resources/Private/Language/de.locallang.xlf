@@ -23,10 +23,6 @@
         <source>View</source>
         <target state="final">Anzeigen</target>
       </trans-unit>
-      <trans-unit id="button.clearAll" approved="yes">
-        <source>Clear all</source>
-        <target state="final">Alles löschen</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>

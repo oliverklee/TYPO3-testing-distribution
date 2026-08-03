@@ -60,12 +60,12 @@
         <target state="final">Feld wiederherstellen</target>
       </trans-unit>
       <trans-unit id="userNotFound" approved="yes">
-        <source>[Not Found]</source>
-        <target state="final">[Nicht gefunden]</target>
+        <source>Not found (non-existent user)</source>
+        <target state="final">Nicht gefunden (nicht vorhandener Benutzer)</target>
       </trans-unit>
       <trans-unit id="externalChange" approved="yes">
-        <source>Intermediate external change!</source>
-        <target state="final">Externe Änderung!</target>
+        <source>Automated process (missing user information)</source>
+        <target state="final">Automatisierte Aktion (fehlende Benutzerinformation)</target>
       </trans-unit>
       <trans-unit id="viaUser" approved="yes">
         <source>via</source>

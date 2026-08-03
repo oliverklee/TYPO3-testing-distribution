@@ -4,8 +4,8 @@
     <header/>
     <body>
       <trans-unit id="overview.title" approved="yes">
-        <source>Site Configuration</source>
-        <target state="final">Seitenkonfiguration</target>
+        <source>Setup</source>
+        <target state="final">Einrichtung</target>
       </trans-unit>
       <trans-unit id="overview.site" approved="yes">
         <source>Site</source>
@@ -16,16 +16,16 @@
         <target state="final">Site Identifier (Eindeutige Kennung)</target>
       </trans-unit>
       <trans-unit id="overview.noPages.title" approved="yes">
-        <source>No Root Pages Available</source>
+        <source>No root pages available</source>
         <target state="final">Keine Root-Seiten verfügbar</target>
       </trans-unit>
       <trans-unit id="overview.noPages.message" approved="yes">
-        <source>Please create at least one root page in the Page module. A root page must be a content page at the top level (not a folder or separator) or have the "Root Page" flag enabled (Page Properties → Behavior tab).</source>
-        <target state="final">Bitte erstelle mindestens eine Root-Seite im Seitenmodul. Eine Root-Seite muss eine Inhaltsseite auf der obersten Ebene sein (kein Ordner oder Trennzeichen) oder das Flag „Als Anfang der Website benutzen“ muss aktiviert sein (Seiteneigenschaften → Registerkarte „Verhalten“).</target>
+        <source>Please create at least one root page in the Layout module. A root page must be a content page at the top level (not a folder or separator) or have the "Root Page" flag enabled (Page Properties → Behavior tab).</source>
+        <target state="final">Bitte erstelle mindestens eine Stammseite im Layout-Modul. Eine Stammseite muss eine Inhaltsseite auf der obersten Ebene sein (kein Ordner oder Trennzeichen) oder die Option „Stammseite“ aktiviert haben (Seiteneigenschaften → Registerkarte „Verhalten“).</target>
       </trans-unit>
-      <trans-unit id="overview.noSiteConfiguration" approved="yes">
-        <source>This site does not have a configuration, yet.</source>
-        <target state="final">Diese Seite wurde noch nicht konfiguriert.</target>
+      <trans-unit id="overview.noPages.link.label" approved="yes">
+        <source>Open the documentation</source>
+        <target state="final">Öffne die Dokumentation</target>
       </trans-unit>
       <trans-unit id="overview.addSiteConfiguration" approved="yes">
         <source>Add new site configuration for this site</source>
@@ -51,13 +51,21 @@
         <source>Base URL</source>
         <target state="final">Basis-URL</target>
       </trans-unit>
+      <trans-unit id="overview.rootPagesWithoutSiteConfiguration.title" approved="yes">
+        <source>Pages without a site configuration</source>
+        <target state="final">Seiten ohne Website-Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="overview.rootPagesWithoutSiteConfiguration.description" approved="yes">
+        <source>The following root pages have no site configuration:</source>
+        <target state="final">Die folgenden Stammseiten haben keine Website-Konfiguration:</target>
+      </trans-unit>
       <trans-unit id="overview.unassignedSites.title" approved="yes">
         <source>Unassigned site configurations</source>
         <target state="final">Nicht zugeordneter Site-Konfigurationen</target>
       </trans-unit>
       <trans-unit id="overview.unassignedSites.description" approved="yes">
-        <source>The following sites don't belong to any page anymore and can be removed.</source>
-        <target state="final">Die folgenden Seiten gehören zu keiner Seite mehr und können entfernt werden.</target>
+        <source>The following site configurations don't belong to any page anymore and can be removed.</source>
+        <target state="final">Die folgenden Website-Konfigurationen gehören zu keiner Seite mehr und können entfernt werden.</target>
       </trans-unit>
       <trans-unit id="overview.invalidSets.title" approved="yes">
         <source>Invalid site set configurations</source>
@@ -91,9 +99,165 @@
         <source>The page with ID "%1s" is used in the following site configurations:</source>
         <target state="final">Die Seite mit der ID "%1s" wird in den folgenden Site-Konfigurationen verwendet:</target>
       </trans-unit>
+      <trans-unit id="overview.btn.details" approved="yes">
+        <source>View details</source>
+        <target state="final">Details anzeigen</target>
+      </trans-unit>
+      <trans-unit id="overview.entry_point" approved="yes">
+        <source>Entry Point</source>
+        <target state="final">Einstiegspunkt</target>
+      </trans-unit>
+      <trans-unit id="overview.error_handling" approved="yes">
+        <source>Error handling</source>
+        <target state="final">Fehlerbehandlung</target>
+      </trans-unit>
+      <trans-unit id="overview.status.title" approved="yes">
+        <source>Status</source>
+        <target state="final">Status</target>
+      </trans-unit>
+      <trans-unit id="overview.info.all_sites.multiple" approved="yes">
+        <source><![CDATA[The installation includes <strong>%s configured sites</strong>.]]></source>
+        <target state="final"><![CDATA[Die Installation umfasst <strong>%s konfigurierte Standorte</strong>.]]></target>
+      </trans-unit>
+      <trans-unit id="overview.info.all_sites.single" approved="yes">
+        <source><![CDATA[The installation includes <strong>%s configured site</strong>.]]></source>
+        <target state="final"><![CDATA[Die Installation umfasst <strong>%s konfigurierte Standorte</strong>.]]></target>
+      </trans-unit>
+      <trans-unit id="overview.info.root_pages_without_site_sonfiguration.multiple" approved="yes">
+        <source><![CDATA[<strong>%s root pages</strong> are lacking a site configuration.]]></source>
+        <target state="final"><![CDATA[<strong>%s Root-Seiten</strong> fehlt eine Website-Konfiguration.]]></target>
+      </trans-unit>
+      <trans-unit id="overview.info.root_pages_without_site_sonfiguration.single" approved="yes">
+        <source><![CDATA[<strong>%s page</strong> is lacking a site configuration.]]></source>
+        <target state="final"><![CDATA[<strong>%s Seite</strong> fehlt eine Website-Konfiguration.]]></target>
+      </trans-unit>
+      <trans-unit id="overview.info.unassigned_sites.multiple" approved="yes">
+        <source><![CDATA[There are currently <strong>%s site configurations</strong> that are not assigned to any page.]]></source>
+        <target state="final"><![CDATA[Derzeit gibt es <strong>%s Website-Konfigurationen</strong>, die keiner Seite zugewiesen sind.]]></target>
+      </trans-unit>
+      <trans-unit id="overview.info.unassigned_sites.single" approved="yes">
+        <source><![CDATA[There is currently <strong>%s site configuration</strong> that is not assigned to any page.]]></source>
+        <target state="final"><![CDATA[Derzeit gibt es <strong>%s Website-Konfigurationen</strong>, die keiner Seite zugewiesen sind.]]></target>
+      </trans-unit>
+      <trans-unit id="overview.languages" approved="yes">
+        <source>Languages</source>
+        <target state="final">Sprachen</target>
+      </trans-unit>
+      <trans-unit id="overview.languages.amount" approved="yes">
+        <source>and %s more</source>
+        <target state="final">und %s mehr</target>
+      </trans-unit>
+      <trans-unit id="overview.root_pages_without_site_configuration.title" approved="yes">
+        <source>Sites</source>
+        <target state="final">Seiten</target>
+      </trans-unit>
+      <trans-unit id="overview.site_sets" approved="yes">
+        <source>Dependencies to site sets</source>
+        <target state="final">Abhängigkeiten zu Website-Sets</target>
+      </trans-unit>
+      <trans-unit id="overview.site_sets.yes" approved="yes">
+        <source>Yes</source>
+        <target state="final">Ja</target>
+      </trans-unit>
+      <trans-unit id="overview.static_routes" approved="yes">
+        <source>Static routes</source>
+        <target state="final">Statische Routen</target>
+      </trans-unit>
+      <trans-unit id="overview.no_sites_with_site_configuration.title" approved="yes">
+        <source>No configured sites available</source>
+        <target state="final">Keine konfigurierten Standorte verfügbar</target>
+      </trans-unit>
+      <trans-unit id="overview.no_sites_with_site_configuration.message" approved="yes">
+        <source>At least one root page must have a site configuration.</source>
+        <target state="final">Nein</target>
+      </trans-unit>
+      <trans-unit id="overview.none" approved="yes">
+        <source>None</source>
+        <target state="final">Nein</target>
+      </trans-unit>
+      <trans-unit id="detail.headline_with_site_identifier" approved="yes">
+        <source>Setup of "%s"</source>
+        <target state="final">Einrichtung von „%s“</target>
+      </trans-unit>
+      <trans-unit id="detail.headline_with_page_title" approved="yes">
+        <source>Setup of site "%s"</source>
+        <target state="final">Einrichtung der Website „%s“</target>
+      </trans-unit>
+      <trans-unit id="detail.not_configured" approved="yes">
+        <source>Not configured.</source>
+        <target state="final">Nicht konfiguriert.</target>
+      </trans-unit>
+      <trans-unit id="detail.site_configuration.error_handling" approved="yes">
+        <source>Error handling</source>
+        <target state="final">Fehlerbehandlung</target>
+      </trans-unit>
+      <trans-unit id="detail.site_configuration.headline" approved="yes">
+        <source>Site configuration</source>
+        <target state="final">Konfiguration der Website</target>
+      </trans-unit>
+      <trans-unit id="detail.site_configuration.languages" approved="yes">
+        <source>Languages</source>
+        <target state="final">Sprachen</target>
+      </trans-unit>
+      <trans-unit id="detail.site_configuration.languages.language" approved="yes">
+        <source>Language</source>
+        <target state="final">Sprache</target>
+      </trans-unit>
+      <trans-unit id="detail.site_configuration.languages.language_url" approved="yes">
+        <source>Full URL prefix</source>
+        <target state="final">Präfix der vollständigen URL</target>
+      </trans-unit>
+      <trans-unit id="detail.site_configuration.static_routes" approved="yes">
+        <source>Static routes</source>
+        <target state="final">Statische Routen</target>
+      </trans-unit>
+      <trans-unit id="detail.site_configuration.route_enhancers" approved="yes">
+        <source>Route enhancers</source>
+        <target state="final">Route Enhancers</target>
+      </trans-unit>
+      <trans-unit id="detail.site_settings.active_settings.headline" approved="yes">
+        <source>Active settings</source>
+        <target state="final">Aktive Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="detail.site_settings.active_settings.custom_site_settings" approved="yes">
+        <source>Settings within site configuration (e.g. via 'settings.yaml')</source>
+        <target state="final">Einstellungen innerhalb der Site-Konfiguration (z. B. über „settings.yaml“)</target>
+      </trans-unit>
+      <trans-unit id="detail.site_settings.dependencies.headline" approved="yes">
+        <source>Dependencies</source>
+        <target state="final">Abhängigkeiten</target>
+      </trans-unit>
+      <trans-unit id="detail.site_settings.dependencies.text" approved="yes">
+        <source><![CDATA[Settings can be stored directly via the site configuration, or indirectly by loading them as a dependency of another site set.<br>The following dependencies are stored in the site configuration:]]></source>
+        <target state="final"><![CDATA[Einstellungen können direkt über die Site-Konfiguration oder indirekt durch Laden als Abhängigkeit eines anderen Site-Sets gespeichert werden.<br>Folgende Abhängigkeiten sind in der Site-Konfiguration gespeichert:]]></target>
+      </trans-unit>
+      <trans-unit id="detail.site_settings.headline" approved="yes">
+        <source>Site settings</source>
+        <target state="final">Website-Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="detail.site_settings.no_settings_found.message" approved="yes">
+        <source><![CDATA[Settings are listed here as soon as they are either present in a <code>settings.yaml</code> file in the site folder or there is one or more dependencies on site sets in the site configuration.]]></source>
+        <target state="final"><![CDATA[Die Einstellungen werden hier aufgelistet, sobald sie entweder in einer Datei namens <code>settings.yaml</code> im Website-Ordner vorhanden sind oder eine oder mehrere Abhängigkeiten zu Website-Sets in der Website-Konfiguration bestehen.]]></target>
+      </trans-unit>
+      <trans-unit id="detail.site_settings.no_settings_found.title" approved="yes">
+        <source>No site settings were found for this site</source>
+        <target state="final">Für diese Website wurden keine Website-Einstellungen gefunden.</target>
+      </trans-unit>
       <trans-unit id="edit.editSiteSettings" approved="yes">
         <source>Edit site settings</source>
         <target state="final">Site-Einstellungen bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="edit.site_configuration" approved="yes">
+        <source>Edit site configuration</source>
+        <target state="final">Site-Konfiguration bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="edit.typeLabel" approved="yes">
+        <source>Site configuration</source>
+        <target state="final">Konfiguration der Website</target>
+      </trans-unit>
+      <trans-unit id="edit.createNewSite" approved="yes">
+        <source>Create new site</source>
+        <target state="final">Neue Website erstellen</target>
       </trans-unit>
       <trans-unit id="validation.identifierRenamed.title" approved="yes">
         <source>Renamed identifier</source>
@@ -134,6 +298,18 @@
       <trans-unit id="validation.duplicateLanguageId.message" approved="yes">
         <source>Two language configurations for language "%1s" found. This would be an invalid configuration, the dangling one has been removed.</source>
         <target state="final">Es wurden zwei Sprachkonfigurationen für Sprache "%1s" gefunden. Eine solche Konfiguration wäre ungültig; die doppelte Konfiguration wurde daher entfernt.</target>
+      </trans-unit>
+      <trans-unit id="labels.detail" approved="yes">
+        <source>View Site Configuration "%s"</source>
+        <target state="final">Website-Konfiguration „%s“ anzeigen</target>
+      </trans-unit>
+      <trans-unit id="contextMenu.editSiteSettings" approved="yes">
+        <source>Edit Site Settings</source>
+        <target state="final">Site-Einstellungen bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="contextMenu.editSiteConfiguration" approved="yes">
+        <source>Edit Site</source>
+        <target state="final">Site bearbeiten</target>
       </trans-unit>
     </body>
   </file>

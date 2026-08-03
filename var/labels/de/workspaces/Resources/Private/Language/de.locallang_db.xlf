@@ -115,10 +115,6 @@
         <source>Un-Publish changes on (requires scheduler task)</source>
         <target state="final">Änderungen zurücksetzen am (erfordert Planer-Task)</target>
       </trans-unit>
-      <trans-unit id="sys_workspace.freeze" approved="yes">
-        <source>Freeze Editing</source>
-        <target state="final">Bearbeitung einfrieren</target>
-      </trans-unit>
       <trans-unit id="sys_workspace.live_edit" approved="yes">
         <source>Allow "live" editing of records from tables without versioning</source>
         <target state="final">"Live"-Bearbeitung von Datensätzen aus Tabellen ohne Versionierung ermöglichen</target>
@@ -150,18 +146,6 @@
       <trans-unit id="sys_workspace.previewlink_lifetime" approved="yes">
         <source>Lifetime in hours on how long a preview link will be valid</source>
         <target state="final">Anzahl Stunden, welche ein Vorschaulink gültig ist</target>
-      </trans-unit>
-      <trans-unit id="sys_workspace.stagechg_notification.0" approved="yes">
-        <source>Disable notifications</source>
-        <target state="final">Benachrichtigungen deaktivieren</target>
-      </trans-unit>
-      <trans-unit id="sys_workspace.stagechg_notification.1" approved="yes">
-        <source>Notify users of next stage only</source>
-        <target state="final">Nur Benutzer der nächsten Stufe benachrichtigen</target>
-      </trans-unit>
-      <trans-unit id="sys_workspace.stagechg_notification.10" approved="yes">
-        <source>Notify all users on any change</source>
-        <target state="final">Alle Benutzer bei jeder Änderung benachrichtigen</target>
       </trans-unit>
       <trans-unit id="tabs.users" approved="yes">
         <source>Users</source>

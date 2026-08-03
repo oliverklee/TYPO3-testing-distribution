@@ -3,62 +3,6 @@
   <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_toolbar.xlf" date="2024-06-17T15:00:00Z" product-name="lang" target-language="de">
     <header/>
     <body>
-      <trans-unit id="toolbarItems.bookmarkAlreadyExistsMessage" approved="yes">
-        <source>The document is already in your bookmarks.</source>
-        <target state="final">Das Dokument ist bereits in deinen Lesezeichen gespeichert.</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarkAlreadyExistsTitle" approved="yes">
-        <source>Bookmark already exists</source>
-        <target state="final">Lesezeichen existiert bereits</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarkFailedMessage" approved="yes">
-        <source>The bookmark couldn't get created</source>
-        <target state="final">Das Lesezeichen konnte nicht erstellt werden</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarkFailedTitle" approved="yes">
-        <source>Bookmark creation failed</source>
-        <target state="final">Lesezeichenerstellung fehlgeschlagen</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarkSavedMessage" approved="yes">
-        <source>The bookmark was saved.</source>
-        <target state="final">Das Lesezeichen wurde gespeichert.</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarkSavedTitle" approved="yes">
-        <source>Bookmark saved</source>
-        <target state="final">Lesezeichen gespeichert</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarks" approved="yes">
-        <source>Bookmarks</source>
-        <target state="final">Lesezeichen</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarks.description" approved="yes">
-        <source>This is the bookmarks menu. You haven't added any bookmarks yet. To add one, click the share icon %s, available on all pages throughout the backend.</source>
-        <target state="final">Dies ist das Lesezeichen-Menü. Du hast noch keine Lesezeichen hinzugefügt. Um eines hinzuzufügen, klicke auf das Teilen-Symbol %s, das auf allen Seiten im Backend verfügbar ist.</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarks.field.group" approved="yes">
-        <source>Group</source>
-        <target state="final">Gruppe</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarks.field.title" approved="yes">
-        <source>Title</source>
-        <target state="final">Titel</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarks.notGrouped" approved="yes">
-        <source>Not grouped</source>
-        <target state="final">Nicht gruppiert</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarksDelete" approved="yes">
-        <source>Delete bookmark</source>
-        <target state="final">Lesezeichen löschen</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.bookmarksEdit" approved="yes">
-        <source>Edit bookmark</source>
-        <target state="final">Lesezeichen bearbeiten</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.confirmBookmarksDelete" approved="yes">
-        <source>Do you really want to remove this bookmark?</source>
-        <target state="final">Möchtest du dieses Lesezeichen tatsächlich entfernen?</target>
-      </trans-unit>
       <trans-unit id="toolbarItems.clearCache" approved="yes">
         <source>Clear cache</source>
         <target state="final">Cache leeren</target>
@@ -67,9 +11,13 @@
         <source>Help</source>
         <target state="final">Hilfe</target>
       </trans-unit>
-      <trans-unit id="toolbarItems.minMaxModuleMenu" approved="yes">
-        <source>Minimize/maximize module menu</source>
-        <target state="final">Modul Menü minimieren/maximieren</target>
+      <trans-unit id="toolbarItems.sidebarCollapse" approved="yes">
+        <source>Collapse sidebar</source>
+        <target state="final">Seitenleiste einklappen</target>
+      </trans-unit>
+      <trans-unit id="toolbarItems.sidebarExpand" approved="yes">
+        <source>Expand sidebar</source>
+        <target state="final">Seitenleiste ausklappen</target>
       </trans-unit>
       <trans-unit id="toolbarItems.search" approved="yes">
         <source>Search</source>
@@ -91,12 +39,11 @@
         <source>Environment Module</source>
         <target state="final">Umgebungsmodul</target>
       </trans-unit>
-      <trans-unit id="toolbarItems.sysinfo.allgood" approved="yes">
+      <trans-unit id="toolbarItems.sysinfo.allgood" xml:space="preserve" approved="yes">
         <source>Your system is fully operational.
 Have a nice day.</source>
-        <target state="final">Dein System ist voll funktionsfähig.
-Hab noch einen schönen Tag.</target>
-      </trans-unit>
+      <target state="final">Dein System ist voll funktionsfähig.
+Hab noch einen schönen Tag.</target></trans-unit>
       <trans-unit id="toolbarItems.sysinfo.applicationcontext" approved="yes">
         <source>Application Context</source>
         <target state="final">Anwendungs-Kontext</target>

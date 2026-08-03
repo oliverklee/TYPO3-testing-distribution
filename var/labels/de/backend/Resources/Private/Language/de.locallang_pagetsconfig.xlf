@@ -3,25 +3,9 @@
   <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/locallang_pagetsconfig.xlf" date="2023-01-19T14:41:00Z" product-name="cms" target-language="de">
     <header/>
     <body>
-      <trans-unit id="module.pagetsconfig.title" approved="yes">
-        <source>Page TSconfig</source>
-        <target state="final">Page TSconfig</target>
-      </trans-unit>
-      <trans-unit id="module.pagetsconfig.description" approved="yes">
-        <source>The page TSconfig module lets you manage configuration overrides for editors and option display throughout the Backend.</source>
-        <target state="final">Mit dem Page TSconfig Modul können Sie Konfigurationsüberschreibungen für Redakteure und die Anzeige von Optionen im gesamten Backend verwalten.</target>
-      </trans-unit>
-      <trans-unit id="module.pagetsconfig.shortDescription" approved="yes">
-        <source>Page TSconfig tools</source>
-        <target state="final">Page TSconfig Tools</target>
-      </trans-unit>
       <trans-unit id="module.pagetsconfig.noAccess" approved="yes">
         <source>Access to this module denied.</source>
         <target state="final">Zugriff auf dieses Modul verweigert.</target>
-      </trans-unit>
-      <trans-unit id="module.pagetsconfig_pages" approved="yes">
-        <source>Pages containing page TSconfig</source>
-        <target state="final">Seiten, die Page TSconfig enthalten</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_pages.headline" approved="yes">
         <source>Pages containing page TSconfig</source>
@@ -42,10 +26,6 @@
       <trans-unit id="module.pagetsconfig_pages.written_tsconfig_lines" approved="yes">
         <source>Number of lines of code in field "TSconfig"</source>
         <target state="final">Anzahl der Codezeilen im Feld "TSconfig"</target>
-      </trans-unit>
-      <trans-unit id="module.pagetsconfig_active" approved="yes">
-        <source>Active page TSconfig</source>
-        <target state="final">Aktive Page TSconfig</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_active.headline" approved="yes">
         <source>Active page TSconfig of page "%s"</source>
@@ -70,10 +50,6 @@
       <trans-unit id="module.pagetsconfig_active.panel.header.conditions" approved="yes">
         <source>Conditions</source>
         <target state="final">Bedingungen</target>
-      </trans-unit>
-      <trans-unit id="module.pagetsconfig_active.panel.header.numberOfSearchMatches" approved="yes">
-        <source>%s search match(es)</source>
-        <target state="final">%s Suchergebnis(se)</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_active.panel.info.conditionActiveCount.multiple" approved="yes">
         <source>%s active conditions</source>
@@ -106,10 +82,6 @@
       <trans-unit id="module.pagetsconfig_active.tree.valueWithConstant" approved="yes">
         <source>Constant usage: [%s]</source>
         <target state="final">Konstanten-Nutzung: [%s]</target>
-      </trans-unit>
-      <trans-unit id="module.pagetsconfig_includes" approved="yes">
-        <source>Included page TSconfig</source>
-        <target state="final">Eingebundene Page TSconfig</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_includes.headline" approved="yes">
         <source>Included page TSconfig of page "%s"</source>
@@ -182,14 +154,6 @@
       <trans-unit id="module.pagetsconfig_includes.tree.child.type.ConditionStop" approved="yes">
         <source>Condition (end)</source>
         <target state="final">Bedingung (Ende)</target>
-      </trans-unit>
-      <trans-unit id="module.pagetsconfig_includes.tree.child.type.ConditionIncludeTyposcript" approved="yes">
-        <source>Included via "INCLUDE_TYPOSCRIPT" (deprecated, with condition)</source>
-        <target state="final">Eingebunden via "INCLUDE_TYPOSPOSCRIPT" (veraltet, mit Bedingung)</target>
-      </trans-unit>
-      <trans-unit id="module.pagetsconfig_includes.tree.child.type.IncludeTyposcript" approved="yes">
-        <source>Included via "INCLUDE_TYPOSCRIPT" (deprecated)</source>
-        <target state="final">Eingebunden via "INCLUDE_TYPOSPOSCRIPT" (veraltet)</target>
       </trans-unit>
       <trans-unit id="module.pagetsconfig_includes.tree.child.type.TsConfig" approved="yes">
         <source>TSconfig</source>

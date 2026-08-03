@@ -3,18 +3,6 @@
   <file source-language="en" datatype="plaintext" original="EXT:reports/Resources/Private/Language/locallang_reports.xlf" date="2011-10-17T20:22:35Z" product-name="reports" target-language="de">
     <header/>
     <body>
-      <trans-unit id="status_report_title" approved="yes">
-        <source>Status Report</source>
-        <target state="final">Statusbericht</target>
-      </trans-unit>
-      <trans-unit id="status_report_description" approved="yes">
-        <source>Get a status report about your site's operation and any detected problems.</source>
-        <target state="final">Erhalten Sie einen Statusbericht über Ihre Website und erkannte Probleme.</target>
-      </trans-unit>
-      <trans-unit id="status_report_explanation" approved="yes">
-        <source>Here you can find a short overview of your site's parameters as well as any problems detected with your installation. It may be useful to copy and paste this information into support requests filed on TYPO3's support mailing lists and project issue trackers.</source>
-        <target state="final">Hier findest du einen kompakten Überblick über die Parameter deiner Website sowie über mögliche Probleme, die bei deiner Installation festgestellt wurden. Es kann hilfreich sein, diese Informationen zu kopieren und in Support-Anfragen auf den Support-Mailinglisten von TYPO3 und in den Issue-Trackern des Projekts einzufügen.</target>
-      </trans-unit>
       <trans-unit id="status_ok" approved="yes">
         <source>OK</source>
         <target state="final">OK</target>
@@ -255,17 +243,13 @@
         <source>Runs a system status check and sends notifications if problems have been found.</source>
         <target state="final">Führt eine Überprüfung des Systemstatus durch und versendet eine Mitteilung wenn Probleme gefunden wurden.</target>
       </trans-unit>
-      <trans-unit id="status_updateTaskField_notificationEmail" approved="yes">
-        <source>Notification Email Address</source>
-        <target state="final">E-Mail-Adresse für Benachrichtigung</target>
+      <trans-unit id="status_updateAdditionalInformation" approved="yes">
+        <source>Send notification to: %s</source>
+        <target state="final">Benachrichtigung senden an: %s</target>
       </trans-unit>
       <trans-unit id="status_updateTaskField_notificationEmails" approved="yes">
         <source>Notification Email Addresses (one per line)</source>
         <target state="final">E-Mail-Adressen für Benachrichtigung (eine pro Zeile)</target>
-      </trans-unit>
-      <trans-unit id="status_updateTaskField_notificationEmail_invalid" approved="yes">
-        <source>Empty or invalid notification email address.</source>
-        <target state="final">Leere oder ungültige E-Mail-Adresse für Benachrichtigungen.</target>
       </trans-unit>
       <trans-unit id="status_updateTaskField_notificationEmails_invalid" approved="yes">
         <source>Empty or invalid notification email addresses.</source>
@@ -316,40 +300,41 @@
         <target state="final">Bildverarbeitung über ImageMagick/GraphicsMagick ist deaktiviert</target>
       </trans-unit>
       <trans-unit id="status_imageprocessing_webp_not_configured" approved="yes">
-        <source>Support for WebP image generation is not configured in $TYPO3_CONF_VARS[GFX][imagefile_ext]. No WebP image files will be generated.</source>
-        <target state="final">Unterstützung für die Erstellung von WebP-Bildern ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] nicht konfiguriert. Es werden keine WebP-Bilddateien generiert.</target>
+        <source>WebP image generation is not enabled in $TYPO3_CONF_VARS[GFX][imagefile_ext]. No WebP image files will be generated.</source>
+        <target state="final">Die WebP-Bildgenerierung ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] nicht aktiviert. Es werden keine WebP-Bilddateien generiert.</target>
       </trans-unit>
       <trans-unit id="status_imageprocessing_webp_available" approved="yes">
-        <source>Support for WebP image generation is not configured in $TYPO3_CONF_VARS[GFX][imagefile_ext], but ImageMagick/GraphicsMagick supports generation of WebP image files.</source>
-        <target state="final">Unterstützung für die Erstellung von WebP-Bildern ist nicht in $TYPO3_CONF_VARS[GFX][imagefile_ext] konfiguriert, aber ImageMagick/GraphicsMagick unterstützt die Generierung von WebP-Bilddateien.</target>
+        <source>WebP image generation is not enabled in $TYPO3_CONF_VARS[GFX][imagefile_ext], but it is supported by ImageMagick/GraphicsMagick.</source>
+        <target state="final">Die WebP-Bildgenerierung ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] nicht aktiviert, wird jedoch von ImageMagick/GraphicsMagick unterstützt.
+</target>
       </trans-unit>
       <trans-unit id="status_imageprocessing_webp_not_available" approved="yes">
-        <source>Support for WebP image generation is configured in $TYPO3_CONF_VARS[GFX][imagefile_ext], but ImageMagick/GraphicsMagick does NOT support generation of WebP image files, update your system environment or disable webp support in TYPO3 Configuration.</source>
-        <target state="final">Unterstützung für die Erstellung von WebP-Bildern ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] konfiguriert, aber ImageMagick/GraphicsMagick unterstützt NICHT die Generierung von WebP-Bilddateien. Aktualisieren Sie Ihre Systemumgebung oder deaktivieren Sie den Webp-Support in der TYPO3-Konfiguration.</target>
+        <source>WebP image generation is enabled in $TYPO3_CONF_VARS[GFX][imagefile_ext], but it is NOT supported by ImageMagick/GraphicsMagick. Please update your system environment or disable webp support in TYPO3 Configuration.</source>
+        <target state="final">Die WebP-Bildgenerierung ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] aktiviert, wird jedoch von ImageMagick/GraphicsMagick NICHT unterstützt. Bitte aktualisiere deine Systemumgebung oder deaktiviere die WebP-Unterstützung in der TYPO3-Konfiguration.</target>
       </trans-unit>
       <trans-unit id="status_imageprocessing_webp_available_and_configured" approved="yes">
-        <source>Support for WebP image generation is configured in $TYPO3_CONF_VARS[GFX][imagefile_ext] and ImageMagick/GraphicsMagick supports generation of WebP image files - all fine!</source>
-        <target state="final">Unterstützung für die Erstellung von WebP-Bildern ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] konfiguriert und ImageMagick/GraphicsMagick unterstützt die Generierung von WebP-Bilddateien - alles in Ordnung!</target>
+        <source>WebP image generation is enabled in $TYPO3_CONF_VARS[GFX][imagefile_ext] and supported by ImageMagick/GraphicsMagick — Everything is configured correctly.</source>
+        <target state="final">Die WebP-Bildgenerierung ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] aktiviert und wird von ImageMagick/GraphicsMagick unterstützt – alles ist korrekt konfiguriert.</target>
       </trans-unit>
       <trans-unit id="status_imageprocessing_avif" approved="yes">
         <source>AVIF support and availability</source>
         <target state="final">AVIF-Unterstützung und Verfügbarkeit</target>
       </trans-unit>
       <trans-unit id="status_imageprocessing_avif_not_configured" approved="yes">
-        <source>Support for AVIF image generation is not configured in $TYPO3_CONF_VARS[GFX][imagefile_ext]. No AVIF image files will be generated.</source>
-        <target state="final">Unterstützung für die Erstellung von AVIF-Bildern ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] nicht konfiguriert. Es werden keine AVIF-Bilddateien generiert.</target>
+        <source>AVIF image generation is not enabled in $TYPO3_CONF_VARS[GFX][imagefile_ext]. No AVIF image files will be generated.</source>
+        <target state="final">Die AVIF-Bildgenerierung ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] nicht aktiviert. Es werden keine AVIF-Bilddateien generiert.</target>
       </trans-unit>
       <trans-unit id="status_imageprocessing_avif_available" approved="yes">
-        <source>Support for AVIF image generation is not configured in $TYPO3_CONF_VARS[GFX][imagefile_ext], but ImageMagick/GraphicsMagick supports generation of AVIF image files.</source>
-        <target state="final">Unterstützung für die Erstellung von AVIF-Bildern ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] nicht konfiguriert, aber ImageMagick/GraphicsMagick unterstützt die Erzeugung von AVIF-Bilddateien.</target>
+        <source>AVIF image generation is not enabled in $TYPO3_CONF_VARS[GFX][imagefile_ext], but it is supported by ImageMagick/GraphicsMagick.</source>
+        <target state="final">Die AVIF-Bilderzeugung ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] nicht aktiviert, wird jedoch von ImageMagick/GraphicsMagick unterstützt.</target>
       </trans-unit>
       <trans-unit id="status_imageprocessing_avif_not_available" approved="yes">
-        <source>Support for AVIF image generation is configured in $TYPO3_CONF_VARS[GFX][imagefile_ext], but ImageMagick/GraphicsMagick does NOT support generation of AVIF image files, update your system environment or disable AVIF support in TYPO3 Configuration.</source>
-        <target state="final">Unterstützung für die Erstellung von AVIF-Bildern ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] konfiguriert, aber ImageMagick/GraphicsMagick unterstützt die Erzeugung von AVIF-Bilddateien NICHT, aktualisieren Sie Ihre Systemumgebung oder deaktivieren Sie die AVIF-Unterstützung in der TYPO3-Konfiguration.</target>
+        <source>AVIF image generation is enabled in $TYPO3_CONF_VARS[GFX][imagefile_ext], but it is NOT supported by ImageMagick/GraphicsMagick. Please update your system environment or disable AVIF support in TYPO3 Configuration.</source>
+        <target state="final">Die AVIF-Bildgenerierung ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] aktiviert, wird jedoch von ImageMagick/GraphicsMagick NICHT unterstützt. Bitte aktualisiere deine Systemumgebung oder deaktiviere die AVIF-Unterstützung in der TYPO3-Konfiguration.</target>
       </trans-unit>
       <trans-unit id="status_imageprocessing_avif_available_and_configured" approved="yes">
-        <source>Support for AVIF image generation is configured in $TYPO3_CONF_VARS[GFX][imagefile_ext] and ImageMagick/GraphicsMagick supports generation of AVIF image files - all fine!</source>
-        <target state="final">Unterstützung für die Erstellung von AVIF-Bildern ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] konfiguriert und ImageMagick/GraphicsMagick unterstützt die Erzeugung von AVIF-Bilddateien - alles bestens!</target>
+        <source>AVIF image generation is enabled in $TYPO3_CONF_VARS[GFX][imagefile_ext] and supported by ImageMagick/GraphicsMagick — Everything is configured correctly.</source>
+        <target state="final">Die AVIF-Bilderzeugung ist in $TYPO3_CONF_VARS[GFX][imagefile_ext] aktiviert und wird von ImageMagick/GraphicsMagick unterstützt – alles ist korrekt konfiguriert.</target>
       </trans-unit>
       <trans-unit id="status_problem_notification_cli_disclaimer" approved="yes">
         <source>This report was generated from the Command Line Interface (CLI) context. The PHP settings and modules might differ from the ones defined for the webserver process, for example when using a different php.ini file. In case of problems, always compare the report with the one generated via the backend report module.</source>

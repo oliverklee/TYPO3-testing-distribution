@@ -40,12 +40,12 @@
         <target state="final">Stattdessen Install-Tool-Passwort verwenden</target>
       </trans-unit>
       <trans-unit id="sudoModeUserPasswordExplanation" approved="yes">
-        <source>To perform this action, please enter your user password to confirm you are authorized to proceed.</source>
-        <target state="final">Gib bitte dein Benutzerpasswort ein, um diese Aktion durchzuführen und zu bestätigen, dass du berechtigt bist, fortzufahren.</target>
+        <source>Authentication is required to perform this action. Please enter your user password to proceed.</source>
+        <target state="final">Eine Authentifizierung ist erforderlich, um diese Aktion durchzuführen. Bitte gib dein Benutzerpasswort ein, um fortzufahren.</target>
       </trans-unit>
       <trans-unit id="sudoModeInstallToolPasswordExplanation" approved="yes">
-        <source>To perform this action, please enter the Install Tool password to confirm you are authorized to proceed.</source>
-        <target state="final">Gib bitte das Passwort für das Install Tool ein, um diese Aktion auszuführen und zu bestätigen, dass du berechtigt bist, fortzufahren.</target>
+        <source>Authentication is required to perform this action. Please enter the Install Tool password to proceed.</source>
+        <target state="final">Eine Authentifizierung ist erforderlich, um diese Aktion durchzuführen. Bitte gib das Install Tool Passwort ein, um fortzufahren.</target>
       </trans-unit>
       <trans-unit id="verificationFailed" approved="yes">
         <source>Verification failed</source>

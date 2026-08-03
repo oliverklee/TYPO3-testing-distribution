@@ -203,6 +203,14 @@
         <source>Page ID</source>
         <target state="final">Seiten-ID</target>
       </trans-unit>
+      <trans-unit id="download" approved="yes">
+        <source>Force download</source>
+        <target state="final">Download forcieren</target>
+      </trans-unit>
+      <trans-unit id="download.customFilename" approved="yes">
+        <source>Custom filename</source>
+        <target state="final">Benutzerdefinierter Dateiname</target>
+      </trans-unit>
       <trans-unit id="displayThumbs" approved="yes">
         <source>Display thumbnails</source>
         <target state="final">Miniaturansichten anzeigen</target>

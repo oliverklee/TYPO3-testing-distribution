@@ -28,8 +28,8 @@
         <target state="final">Integritätsprüfung der Weiterleitungen</target>
       </trans-unit>
       <trans-unit id="status.checkIntegrityResultState.title" approved="yes">
-        <source>List of conflicting redirects may not be up to date!</source>
-        <target state="final">Die Liste der widersprüchlichen Weiterleitungen ist möglicherweise nicht aktuell!</target>
+        <source>List of conflicting redirects may not be up to date</source>
+        <target state="final">Die Liste der widersprüchlichen Weiterleitungen ist möglicherweise nicht aktuell</target>
       </trans-unit>
       <trans-unit id="status.checkIntegrityResultState.message" approved="yes">
         <source>Regularly run the console command redirects:checkintegrity.</source>

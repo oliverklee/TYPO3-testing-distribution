@@ -68,8 +68,8 @@
         <target state="final">Unsichtbare Unterseiten</target>
       </trans-unit>
       <trans-unit id="hasInvisiblePage.message" approved="yes">
-        <source>The page has invisible subpages which are not shown due to access restrictions. Those will not be sorted among others.</source>
-        <target state="final">Die Seite hat unsichtbare Unterseiten, die wegen Zugriffsbeschränkungen nicht angezeigt werden. Diese Unterseiten werden nicht mit den anderen sortiert werden.</target>
+        <source>Some subpages are not visible because of access restrictions. These hidden pages are excluded from sorting.</source>
+        <target state="final">Einige Unterseiten sind aufgrund von Zugriffsbeschränkungen nicht sichtbar. Diese verborgenen Seiten sind von der Sortierung ausgeschlossen.</target>
       </trans-unit>
       <trans-unit id="noSubpages.title" approved="yes">
         <source>No subpages</source>
@@ -84,8 +84,8 @@
         <target state="final">Nicht implementiert</target>
       </trans-unit>
       <trans-unit id="notAvailableInWorkspace.message" approved="yes">
-        <source>Sorry, this function is not available in the current draft workspace!</source>
-        <target state="final">Entschuldigung, diese Funktion ist in der aktuellen Entwurfarbeitsumgebung nicht verfügbar!</target>
+        <source>This function is not available in the current draft workspace; please switch back to the LIVE workspace.</source>
+        <target state="final">Diese Funktion ist im aktuellen Entwurfsarbeitsbereich nicht verfügbar. Bitte wechsel zurück zum LIVE-Arbeitsbereich.</target>
       </trans-unit>
       <trans-unit id="noEditPermissions" approved="yes">
         <source>No edit permissions on this sub page. This page can not be re-sorted among others.</source>

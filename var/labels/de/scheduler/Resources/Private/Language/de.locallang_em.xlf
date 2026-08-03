@@ -4,8 +4,8 @@
     <header/>
     <body>
       <trans-unit id="scheduler.config.maxLifetime" approved="yes">
-        <source>Maximum lifetime: Enter the maximum lifetime (in minutes) of a scheduler task. If a task is still running after that time, it will be dropped from the execution list (but not stopped).</source>
-        <target state="final">Maximale Lebenszeit: Geben Sie eine maximale Lebenszeit des Tasks an (in Minuten). Wenn ein Task nach Ablauf dieser Zeit noch läuft, wird er aus der Ausführungsliste entfernt (aber nicht angehalten).</target>
+        <source>Maximum lifetime: Set the maximum runtime (in minutes) for a scheduler task. Tasks still running after this time are removed from the execution list but are not stopped.</source>
+        <target state="final">Maximale Laufzeit: Gib eine maximale Laufzeit des Tasks an (in Minuten). Wenn ein Task nach Ablauf dieser Zeit noch aktiv ist, wird er aus der Ausführungsliste entfernt (aber nicht angehalten).</target>
       </trans-unit>
     </body>
   </file>

@@ -67,9 +67,9 @@
         <source>Limit to languages</source>
         <target state="final">Auf Sprachen beschränken</target>
       </trans-unit>
-      <trans-unit id="dbMountPoints" approved="yes">
-        <source>DB mountpoints</source>
-        <target state="final">DB-Freigabepunkte</target>
+      <trans-unit id="pageTreeEntryPoints" approved="yes">
+        <source>Page Tree Entry Points</source>
+        <target state="final">Seitenbaum-Einstiegspunkte</target>
       </trans-unit>
       <trans-unit id="fileMounts" approved="yes">
         <source>File mountpoints</source>
@@ -79,6 +79,10 @@
         <source>Groups</source>
         <target state="final">Benutzergruppen</target>
       </trans-unit>
+      <trans-unit id="inheritance" approved="yes">
+        <source>Inheritance</source>
+        <target state="final">Vererbung</target>
+      </trans-unit>
       <trans-unit id="group" approved="yes">
         <source>Group</source>
         <target state="final">Gruppe</target>
@@ -86,14 +90,6 @@
       <trans-unit id="languages" approved="yes">
         <source>Languages</source>
         <target state="final">Sprachen</target>
-      </trans-unit>
-      <trans-unit id="dbMounts" approved="yes">
-        <source>DB Mounts</source>
-        <target state="final">Datenbankfreigaben</target>
-      </trans-unit>
-      <trans-unit id="fileMounts" approved="yes">
-        <source>File Mounts</source>
-        <target state="final">Datei-Freigabepunkte</target>
       </trans-unit>
       <trans-unit id="categories" approved="yes">
         <source>Categories</source>
@@ -160,6 +156,10 @@
         <source>Backend User</source>
         <target state="final">Backend-Benutzer</target>
       </trans-unit>
+      <trans-unit id="backendUserGroup" approved="yes">
+        <source>Backend User Group</source>
+        <target state="final">Backend-Benutzergruppe</target>
+      </trans-unit>
       <trans-unit id="backendUsers" approved="yes">
         <source>Backend users</source>
         <target state="final">Backend-Benutzer</target>
@@ -171,6 +171,10 @@
       <trans-unit id="backendUserGroupsMenu" approved="yes">
         <source>Backend user groups</source>
         <target state="final">Backend-Benutzergruppen</target>
+      </trans-unit>
+      <trans-unit id="backendUserGroupDetails" approved="yes">
+        <source>Backend user group details</source>
+        <target state="final">Details zur Backend-Benutzergruppe</target>
       </trans-unit>
       <trans-unit id="compareBackendUsers" approved="yes">
         <source>Compare backend users</source>
@@ -192,6 +196,14 @@
       <trans-unit id="btn.backendUser.create" approved="yes">
         <source>Create new backend user</source>
         <target state="final">Neuen Backend-Benutzer anlegen</target>
+      </trans-unit>
+      <trans-unit id="btn.editor.create" approved="yes">
+        <source>Create editor</source>
+        <target state="final">Redakteur anlegen</target>
+      </trans-unit>
+      <trans-unit id="btn.admin.create" approved="yes">
+        <source>Create admin</source>
+        <target state="final">Admin anlegen</target>
       </trans-unit>
       <trans-unit id="btn.backendUserGroup.create" approved="yes">
         <source>Create new backend user group</source>
@@ -325,6 +337,10 @@
         <source>Never logged in</source>
         <target state="final">Nie angemeldet</target>
       </trans-unit>
+      <trans-unit id="backendUser.list.filter.loginState.loggedIn" approved="yes">
+        <source>Currently logged in</source>
+        <target state="final">Angemeldet als</target>
+      </trans-unit>
       <trans-unit id="backendUser.list.filter.status" approved="yes">
         <source>Status</source>
         <target state="final">Status</target>
@@ -422,8 +438,8 @@
         <target state="final">Backend-Benutzergruppen</target>
       </trans-unit>
       <trans-unit id="backendUserGroup.noGroupsFound.title" approved="yes">
-        <source>No backend user groups found!</source>
-        <target state="final">Keine Backend-Benutzergruppen gefunden!</target>
+        <source>No backend user groups found</source>
+        <target state="final">Keine Backend-Benutzergruppen gefunden</target>
       </trans-unit>
       <trans-unit id="backendUserGroup.noGroupsFound.message" approved="yes">
         <source>There are currently no backend user groups found in the database.</source>
@@ -456,6 +472,23 @@
       <trans-unit id="backendUserGroup.confirmDelete" approved="yes">
         <source>Are you sure you want to delete the backend user group '%s'?</source>
         <target state="final">Möchtest du die Benutzergruppe '%s' tatsächlich löschen?</target>
+      </trans-unit>
+      <!-- Backend user groups: Show -->
+      <trans-unit id="backendUserGroup.show.title" approved="yes">
+        <source>Configuration of backend user group "%s"</source>
+        <target state="final">Konfiguration der Backend-Benutzergruppe "%s"</target>
+      </trans-unit>
+      <trans-unit id="backendUserGroup.show.notConfigured" approved="yes">
+        <source>Not configured.</source>
+        <target state="final">Nicht konfiguriert.</target>
+      </trans-unit>
+      <trans-unit id="backendUserGroup.show.infobox.title" approved="yes">
+        <source>Compiled rights and settings</source>
+        <target state="final">Zusammengefasste Rechte und Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="backendUserGroup.show.infobox.message" approved="yes">
+        <source>This view displays all compiled rights and settings of the selected backend user group. These can come from settings in the backend user group record itself, as well as from settings that have been stored in backend user groups assigned to this backend user group.</source>
+        <target state="final">Diese Ansicht zeigt alle zusammengefassten Rechte und Einstellungen der ausgewählten Backend-Benutzergruppe an. Diese können sowohl aus Einstellungen im Backend-Benutzergruppendatensatz selbst stammen als auch aus Einstellungen, die in Backend-Benutzergruppen gespeichert wurden, die dieser Backend-Benutzergruppe zugeordnet sind.</target>
       </trans-unit>
       <!-- Backend user groups: Compare -->
       <trans-unit id="backendUserGroup.compare.title" approved="yes">

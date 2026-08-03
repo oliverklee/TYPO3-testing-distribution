@@ -23,17 +23,17 @@
 					3. Enter the generated six-digit code in the corresponding field
 					4. Submit the form to activate the provider
 
-					Note: In case your application supports otpauth:// urls, you can retrieve the url by clicking on the info button next to the shared secret.</source>
-        <target state="final">Der zeitbasierte einmalige Passwort-Provider ermöglicht es Ihnen, die Sicherheit Ihrer Konten zu verbessern, indem Sie bei jedem Login einen sechsstelligen Code benötigen. 
-Dieser Provider basiert auf einem Code, der zwischen Ihrer OTP-Anwendung (oder Ihrem Gerät) und TYPO3 ausgetauscht wird. Jeder Code berücksichtigt die aktuelle Zeit und ist nur für 30 Sekunden gültig.
+					Note: In case your application supports otpauth:// URLs, you can retrieve the URL by clicking on the info button next to the shared secret.</source>
+        <target state="final">Der zeitbasierte einmalige Passwort-Provider ermöglicht es dir, die Sicherheit deiner Konten zu verbessern, indem du bei jedem Login einen sechsstelligen Code benötigst. 
+Dieser Provider basiert auf einem Code, der zwischen deiner OTP-Anwendung (oder deinem Gerät) und TYPO3 ausgetauscht wird. Jeder Code berücksichtigt die aktuelle Zeit und ist nur für 30 Sekunden gültig.
 
 Einrichtung:
-1. Scannen Sie den QR-Code oder geben Sie den Code direkt in Ihrer Anwendung oder Ihrem Gerät ein
-2. Fügen Sie einen speziellen Namen für diesen Anbieter hinzu (optional)
-3. Geben Sie den generierten sechsstelligen Code in das entsprechende Feld ein
-4. Schicken Sie das Formular zur Aktivierung des Anbieters ab
+1. Scanne den QR-Code oder gib den Code direkt in deiner Anwendung oder deinem Gerät ein
+2. Füge einen speziellen Namen für diesen Anbieter hinzu (optional)
+3. Gib den generierten sechsstelligen Code in das entsprechende Feld ein
+4. Schicke das Formular zur Aktivierung des Anbieters ab
 
-Hinweis: Falls Ihre Anwendung otpauth:// Urls unterstützt, können Sie die URL abrufen, indem Sie auf den Info-Button neben dem geteilten Code klicken.</target>
+Hinweis: Falls deine Anwendung otpauth:// URLs unterstützt, kannst du die URL abrufen, indem du auf den Info-Button neben dem geteilten Code klickst.</target>
       </trans-unit>
       <trans-unit id="recoveryCodes.title" approved="yes">
         <source>Recovery codes</source>
@@ -73,14 +73,8 @@ Hinweis: Da die Wiederherstellungscodes verschlüsselt und sicher gespeichert we
         <target state="final">Dieser Code sollte nun auf Ihrem Gerät oder in Ihrer Anwendung angezeigt werden.</target>
       </trans-unit>
       <trans-unit id="locked" approved="yes">
-        <source>
-					The maximum attempts for this provider are exceeded. Please use another provider or contact your
-					administrator.
-				</source>
-        <target state="final">
-Die maximale Anzahl Versuche für diesen Provider wurden überschritten. 
-Bitte verwenden Sie einen anderen Anbieter oder kontaktieren Sie Ihren Administrator.
-				</target>
+        <source>The maximum attempts for this provider are exceeded. Please use another provider or contact your administrator.</source>
+        <target state="final">Die maximale Anzahl an Versuchen für diesen Anbieter wurde überschritten. Bitte verwende einen anderen Anbieter oder wende dich an deinen Administrator.</target>
       </trans-unit>
       <trans-unit id="edit.table.head" approved="yes">
         <source>Provider information</source>
@@ -118,9 +112,8 @@ Bitte verwenden Sie einen anderen Anbieter oder kontaktieren Sie Ihren Administr
         <source>
 					If you lost your recovery codes or just want to get fresh ones, you can
 					regenerate them by selecting the checkbox below. You've currently %d codes left.
-				</source>
-        <target state="final">
-Wenn Sie Ihre Wiederherstellungscodes verloren haben, oder einfach neue generieren wollen, können Sie dies durch Auswahl der Schaltfläche unterhalb tun. Derzeit sind %d Wiederherstellungscodes verbleibend.</target>
+                </source>
+        <target state="final">Wenn du deine Wiederherstellungscodes verloren hast oder einfach neue erhalten möchtest, kannst du diese neu generieren, indem du das Kontrollkästchen unten aktivierst. Du hast derzeit noch %d Codes übrig.</target>
       </trans-unit>
       <trans-unit id="edit.regenerate.inputLabel" approved="yes">
         <source>Regenerate recovery codes</source>
@@ -191,8 +184,8 @@ Wenn Sie Ihre Wiederherstellungscodes verloren haben, oder einfach neue generier
         <target state="final">Einrichtung nicht möglich</target>
       </trans-unit>
       <trans-unit id="setup.recoveryCodes.noActiveProviders.message" approved="yes">
-        <source>Recovery codes are only meant as a fallback if you lose access to your main multi-factorauthentication credentials. Therefore, please activate a comprehensive MFA provider first.</source>
-        <target state="final">Wiederherstellungscodes sind nur als Ausweichlösung gedacht, wenn Sie den Zugang zu Ihren primären Multi-Faktor-Authentifizierungsdaten verlieren. Aktivieren Sie daher bitte zuerst einen umfassenden MFA-Provider.</target>
+        <source>Recovery codes are only meant as a fallback if you lose access to your main multi-factor authentication credentials. Therefore, please activate a comprehensive MFA provider first.</source>
+        <target state="final">Wiederherstellungscodes sind nur als Ausweichlösung gedacht, wenn du den Zugang zu deinen primären Multi-Faktor-Authentifizierungsdaten verlierst. Aktiviere daher bitte zuerst einen umfassenden MFA-Provider.</target>
       </trans-unit>
       <trans-unit id="setup.totpAuthUrlButton.title" approved="yes">
         <source>Show authentication URL</source>
@@ -208,11 +201,12 @@ Wenn Sie Ihre Wiederherstellungscodes verloren haben, oder einfach neue generier
 					paste the URL shown below. The URL contains some information like the issuer (this site)
 					and your email address or username. Most OTP applications will display this information
 					next to the generated codes.
-				</source>
-        <target state="final">Falls Sie den QR-Code nicht scannen können, aber Ihre OTP-Anwendung Authentifizierungs-URLs neben oder statt einfacher geteilter Codes unterstützt, können Sie die unten angezeigte URL kopieren und einfügen. 
-Die URL enthält einige Informationen wie z. B. den Aussteller (dieser Seite) und Ihre E-Mail-Adresse oder Ihren Benutzernamen. 
-Die meisten OTP-Anwendungen werden diese Informationen neben den generierten Codes anzeigen.
-				</target>
+                </source>
+        <target state="final">Falls du den QR-Code nicht scannen kannst, deine OTP-Anwendung jedoch
+                    Authentifizierungs-URLs neben oder anstelle von einfachen gemeinsamen Geheimnissen unterstützt, kannst du die unten angezeigte URL kopieren und
+                    einfügen. Die URL enthält einige Informationen wie den Aussteller (diese Website)
+und deine E-Mail-Adresse oder deinen Benutzernamen. Die meisten OTP-Anwendungen zeigen diese Informationen
+neben den generierten Codes an.                </target>
       </trans-unit>
       <trans-unit id="setup.totpAuthUrlModal.ok" approved="yes">
         <source>OK</source>

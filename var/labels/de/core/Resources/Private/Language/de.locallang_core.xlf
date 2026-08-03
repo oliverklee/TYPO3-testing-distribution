@@ -131,15 +131,17 @@
         <source>Sorry, you didn't have proper permissions to perform this change.</source>
         <target state="final">Sie haben nicht die nötigen Rechte, um diese Änderung durchzuführen.</target>
       </trans-unit>
+      <trans-unit id="labels.fieldsMissing.title" approved="yes">
+        <source>Alert</source>
+        <target state="final">Warnung</target>
+      </trans-unit>
       <trans-unit id="labels.fieldsMissing" approved="yes">
         <source>The fields marked with an exclamation mark are not yet correctly filled in. Please complete them properly.</source>
         <target state="final">Mit einem Ausrufezeichen markierte Felder wurden noch nicht ordnungsgemäß ausgefüllt. Bitte füllen Sie sie korrekt aus.</target>
       </trans-unit>
       <trans-unit id="labels.fieldsChanged" approved="yes">
-        <source>There are unsaved changes in the form!
-Do you want to continue WITHOUT saving?</source>
-        <target state="final">Das Formular enthält nicht gespeicherte Änderungen!
-Ohne Speichern fortfahren?</target>
+        <source>Important: There are unsaved changes in the form. Continuing without saving will discard your changes. Continue?</source>
+        <target state="final">Wichtig: Es gibt ungespeicherte Änderungen im Formular. Das Fortfahren ohne Speichern wird deine Änderungen verwerfen. Fortfahren?</target>
       </trans-unit>
       <trans-unit id="labels.remainingCharacters" approved="yes">
         <source>Remaining characters: {0}</source>
@@ -225,6 +227,14 @@ Ohne Speichern fortfahren?</target>
         <source>Live record ID</source>
         <target state="final">ID des Live-Datensatzes</target>
       </trans-unit>
+      <trans-unit id="labels.t3ver_stage" approved="yes">
+        <source>Workspace stage</source>
+        <target state="final">Workspace Stage</target>
+      </trans-unit>
+      <trans-unit id="labels.l10n_diffsource" approved="yes">
+        <source>Translation differences</source>
+        <target state="final">Übersetzungsunterschiede</target>
+      </trans-unit>
       <trans-unit id="labels.setFields" approved="yes">
         <source>Set fields</source>
         <target state="final">Felder setzen</target>
@@ -252,6 +262,10 @@ Ohne Speichern fortfahren?</target>
       <trans-unit id="labels.language" approved="yes">
         <source>Language</source>
         <target state="final">Sprache</target>
+      </trans-unit>
+      <trans-unit id="labels.languages" approved="yes">
+        <source>Languages</source>
+        <target state="final">Sprachen</target>
       </trans-unit>
       <trans-unit id="labels.view" approved="yes">
         <source>View</source>
@@ -297,10 +311,6 @@ Ohne Speichern fortfahren?</target>
         <source>Download CSV file</source>
         <target state="final">CSV-Datei herunterladen</target>
       </trans-unit>
-      <trans-unit id="labels.clear_cache" approved="yes">
-        <source>Clear cache for this page</source>
-        <target state="final">Cache dieser Seite löschen</target>
-      </trans-unit>
       <trans-unit id="labels.no_title" approved="yes">
         <source>No title</source>
         <target state="final">Kein Titel</target>
@@ -340,6 +350,18 @@ Ohne Speichern fortfahren?</target>
       <trans-unit id="labels.showList" approved="yes">
         <source>Show record list</source>
         <target state="final">Datensatzliste anzeigen</target>
+      </trans-unit>
+      <trans-unit id="labels.ws.deletedElement" approved="yes">
+        <source>Deleted element</source>
+        <target state="final">Gelöschtes Element</target>
+      </trans-unit>
+      <trans-unit id="labels.ws.newLocation" approved="yes">
+        <source>New location (Move-to Pointer) WSID#%s</source>
+        <target state="final">Neuer Standort (Move-to Pointer) WSID#%s</target>
+      </trans-unit>
+      <trans-unit id="labels.ws.newElement" approved="yes">
+        <source>New element</source>
+        <target state="final">Neues Element</target>
       </trans-unit>
       <trans-unit id="labels.days" approved="yes">
         <source>days</source>
@@ -405,9 +427,9 @@ Ohne Speichern fortfahren?</target>
         <source>Collapse all tree items</source>
         <target state="final">Alle Baumelemente einklappen</target>
       </trans-unit>
-      <trans-unit id="labels.temporaryDBmount" approved="yes">
-        <source>Cancel temporary DB mount</source>
-        <target state="final">Temporäre Datenbankfreigabe aufheben</target>
+      <trans-unit id="labels.temporaryPageTreeEntryPoints" approved="yes">
+        <source>Cancel temporary Page Tree Entry Points</source>
+        <target state="final">Temporäre Seitenbaum-Einstiegspunkte aufheben</target>
       </trans-unit>
       <trans-unit id="labels.refreshList" approved="yes">
         <source>Reload list from server</source>
@@ -422,8 +444,8 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Tabellenassistent</target>
       </trans-unit>
       <trans-unit id="labels.new" approved="yes">
-        <source>NEW</source>
-        <target state="final">NEU</target>
+        <source>New</source>
+        <target state="final">Neu</target>
       </trans-unit>
       <trans-unit id="labels.list" approved="yes">
         <source>List</source>
@@ -449,6 +471,10 @@ Ohne Speichern fortfahren?</target>
         <source>Create new %s on page "%s"</source>
         <target state="final">%s auf Seite "%s" neu erstellen</target>
       </trans-unit>
+      <trans-unit id="labels.createNewTranslation" approved="yes">
+        <source>Create a %s translation</source>
+        <target state="final">Erstellen Sie eine Übersetzung für %s</target>
+      </trans-unit>
       <trans-unit id="labels.createNewRecordRootLevel" approved="yes">
         <source>Create new %s on root level</source>
         <target state="final">%s auf Wurzelebene neu erstellen</target>
@@ -469,21 +495,17 @@ Ohne Speichern fortfahren?</target>
         <source>Edit %s "%s" on root level</source>
         <target state="final">%s "%s" auf Wurzelebene bearbeiten</target>
       </trans-unit>
-      <trans-unit id="labels.editMultiplePages" approved="yes">
-        <source>Edit multiple pages</source>
-        <target state="final">Mehrere Seiten bearbeiten</target>
+      <trans-unit id="labels.editMultiple" approved="yes">
+        <source>Edit multiple</source>
+        <target state="final">Mehrere bearbeiten</target>
       </trans-unit>
-      <trans-unit id="labels.editMultipleRecords" approved="yes">
-        <source>Edit multiple "%s" records on page "%s"</source>
-        <target state="final">Mehrere "%s" Datensätze auf Seite "%s " bearbeiten</target>
-      </trans-unit>
-      <trans-unit id="labels.editMultipleRecordsRootLevel" approved="yes">
-        <source>Edit multiple "%s" records on root level</source>
-        <target state="final">Mehrere "%s" Datensätze auf Root-Ebene bearbeiten</target>
+      <trans-unit id="labels.records" approved="yes">
+        <source>{count, plural, one {# record} other {# records}}</source>
+        <target state="final">{count, plural, one {# Datensatz} other {# Datensätze}}</target>
       </trans-unit>
       <trans-unit id="labels.rootLevel" approved="yes">
-        <source>root level</source>
-        <target state="final">Wurzelebene</target>
+        <source>Root level</source>
+        <target state="final">Root-Ebene</target>
       </trans-unit>
       <trans-unit id="labels.addnew" approved="yes">
         <source>Add new</source>
@@ -562,12 +584,16 @@ Ohne Speichern fortfahren?</target>
         <target state="final">[Alle Tabellen]</target>
       </trans-unit>
       <trans-unit id="labels.noMatchingValue" approved="yes">
-        <source>INVALID VALUE ("%s")</source>
-        <target state="final">WERT IST NICHT ERLAUBT ("%s")</target>
+        <source>Invalid value ("%s")</source>
+        <target state="final">Ungültiger Wert ("%s")</target>
+      </trans-unit>
+      <trans-unit id="labels.typeNotAllowedInColumn" approved="yes">
+        <source>This element of type "%s" is not allowed in this column.</source>
+        <target state="final">Dieses Element des Typs "%s" ist in dieser Spalte nicht erlaubt.</target>
       </trans-unit>
       <trans-unit id="labels.noMatchingLabel" approved="yes">
-        <source>MISSING LABEL ("%s")</source>
-        <target state="final">FEHLENDES LABEL ("%s")</target>
+        <source>Missing label ("%s")</source>
+        <target state="final">Fehlendes Label ("%s")</target>
       </trans-unit>
       <trans-unit id="labels.thumbmode_clip" approved="yes">
         <source>Show Thumbnails on ClipBoard</source>
@@ -610,8 +636,8 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Element entfernen</target>
       </trans-unit>
       <trans-unit id="labels.holdDownCTRL" approved="yes">
-        <source>Important: Hold down the CTRL key while toggling elements in this list!</source>
-        <target state="final">Achtung: Bei Änderung innerhalb dieser Liste Strg-Taste gedrückt halten!</target>
+        <source>Important: Hold down the CTRL key while toggling elements in this list.</source>
+        <target state="final">Wichtig: Halte die STRG-Taste gedrückt während du Elemente in dieser Liste auswählst.</target>
       </trans-unit>
       <trans-unit id="labels.revertSelection" approved="yes">
         <source>Revert selection</source>
@@ -632,6 +658,22 @@ Ohne Speichern fortfahren?</target>
       <trans-unit id="labels.uncheckAll" approved="yes">
         <source>Uncheck all</source>
         <target state="final">Keine auswählen</target>
+      </trans-unit>
+      <trans-unit id="labels.selectAllLanguages" approved="yes">
+        <source>Select all available languages</source>
+        <target state="final">Alle verfügbaren Sprachen auswählen</target>
+      </trans-unit>
+      <trans-unit id="labels.deselectAllLanguages" approved="yes">
+        <source>Deselect all languages except default</source>
+        <target state="final">Alle Sprachen außer Standard deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="labels.defaultLanguageAlwaysShown" approved="yes">
+        <source>Default language is always shown</source>
+        <target state="final">Die Standardsprache wird immer angezeigt</target>
+      </trans-unit>
+      <trans-unit id="labels.createTranslationFor" approved="yes">
+        <source>Create %s translation of this page</source>
+        <target state="final">%s Übersetzung dieser Seite erstellen</target>
       </trans-unit>
       <trans-unit id="labels.selection" approved="yes">
         <source>Selection:</source>
@@ -664,6 +706,10 @@ Ohne Speichern fortfahren?</target>
       <trans-unit id="labels.generatePassword" approved="yes">
         <source>Generate password</source>
         <target state="final">Passwort generieren</target>
+      </trans-unit>
+      <trans-unit id="labels.generatePassword.failed" approved="yes">
+        <source>A password could not be generated</source>
+        <target state="final">Ein Passwort konnte nicht generiert werden</target>
       </trans-unit>
       <trans-unit id="labels.new_section" approved="yes">
         <source>Create new</source>
@@ -734,20 +780,44 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Nicht bearbeitbar in diesem Workspace ohne Bearbeitungsrechte für "Live".</target>
       </trans-unit>
       <trans-unit id="labels.editingLiveRecordsWarning" approved="yes">
-        <source>Caution! These records are not versioned, you will edit the live records.</source>
-        <target state="final">Achtung! Diese Datensätze sind nicht versioniert. Sie bearbeiten die Live-Datensätze.</target>
+        <source>Caution: These records are not versioned, you will edit the live records.</source>
+        <target state="final">Achtung: Diese Datensätze sind nicht versioniert, du wirst die Live-Datensätze bearbeiten.</target>
       </trans-unit>
       <trans-unit id="labels.th.name" approved="yes">
         <source>Name</source>
         <target state="final">Name</target>
+      </trans-unit>
+      <trans-unit id="labels.module_actions" approved="yes">
+        <source>Module actions</source>
+        <target state="final">Modulaktionen</target>
+      </trans-unit>
+      <trans-unit id="labels.new_page_translation" approved="yes">
+        <source>Create new translation</source>
+        <target state="final">Neue Übersetzung erstellen</target>
+      </trans-unit>
+      <trans-unit id="insert_after" approved="yes">
+        <source>Insert after</source>
+        <target state="final">Einfügen danach</target>
+      </trans-unit>
+      <trans-unit id="insert_inside" approved="yes">
+        <source>Insert inside</source>
+        <target state="final">Einfügen innerhalb</target>
+      </trans-unit>
+      <trans-unit id="insert_page" approved="yes">
+        <source>Insert page</source>
+        <target state="final">Seite einfügen</target>
+      </trans-unit>
+      <trans-unit id="insert_subpage" approved="yes">
+        <source>Insert subpage</source>
+        <target state="final">Unterseite einfügen</target>
       </trans-unit>
       <trans-unit id="alttext.suggestSearching" approved="yes">
         <source>Searching...</source>
         <target state="final">Suche läuft...</target>
       </trans-unit>
       <trans-unit id="ver.online" approved="yes">
-        <source>ONLINE</source>
-        <target state="final">ONLINE</target>
+        <source>Online</source>
+        <target state="final">Online</target>
       </trans-unit>
       <trans-unit id="ver.mgm" approved="yes">
         <source>Version Management</source>
@@ -770,16 +840,16 @@ Ohne Speichern fortfahren?</target>
         <target state="final">TYPO3-Element-Browser</target>
       </trans-unit>
       <trans-unit id="labels.referencesToRecord" approved="yes">
-        <source>There are %s reference(s) to this record!</source>
-        <target state="final">Auf diesen Datensatz zeigen %s Referenz(en)!</target>
+        <source>There are %s reference(s) to this record</source>
+        <target state="final">Auf diesen Datensatz zeigen %s Referenz(en)</target>
       </trans-unit>
       <trans-unit id="labels.referencesToFile" approved="yes">
-        <source>There are %s reference(s) to this file!</source>
-        <target state="final">Auf diese Datei zeigen %s Referenzen!</target>
+        <source>There are %s reference(s) to this file</source>
+        <target state="final">Auf diese Datei zeigen %s Referenzen</target>
       </trans-unit>
       <trans-unit id="labels.translationsOfRecord" approved="yes">
-        <source>This record has %s translation(s) which will be deleted, too!</source>
-        <target state="final">Für diesen Datensatz gibt es %s Übersetzung(en), die ebenfalls gelöscht werden!</target>
+        <source>This record has %s translation(s) which will be deleted, too.</source>
+        <target state="final">Für diesen Datensatz gibt es %s Übersetzung(en), die ebenfalls gelöscht werden.</target>
       </trans-unit>
       <trans-unit id="show_item.php.viewItem" approved="yes">
         <source>View Item</source>
@@ -826,8 +896,8 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Dateien</target>
       </trans-unit>
       <trans-unit id="show_item.php.cannotDisplayArchive" approved="yes">
-        <source>Sorry, TYPO3_CONF_VARS[BE][disable_exec_function] was set, so cannot display content of archive file.</source>
-        <target state="final">Es wurde leider TYPO3_CONF_VARS[BE][disable_exec_function] gesetzt, daher kann der Inhalt der Archivdatei nicht angezeigt werden.</target>
+        <source>TYPO3_CONF_VARS[BE][disable_exec_function] is enabled, so the content of the archive file cannot be displayed.</source>
+        <target state="final">TYPO3_CONF_VARS[BE][disable_exec_function] ist aktiviert, so dass der Inhalt der Archivdatei nicht angezeigt werden kann.</target>
       </trans-unit>
       <trans-unit id="show_item.php.table" approved="yes">
         <source>Table</source>
@@ -870,12 +940,12 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Ref-String</target>
       </trans-unit>
       <trans-unit id="show_item.php.ftp_area" approved="yes">
-        <source>FTP AREA</source>
-        <target state="final">FTP-BEREICH</target>
+        <source>FTP Area</source>
+        <target state="final">FTP-Bereich</target>
       </trans-unit>
       <trans-unit id="show_item.php.missing_record" approved="yes">
-        <source>Record is missing!</source>
-        <target state="final">Datensatz fehlt!</target>
+        <source>Record is missing</source>
+        <target state="final">Datensatz fehlt</target>
       </trans-unit>
       <trans-unit id="db_new.php.pagetitle" approved="yes">
         <source>New record</source>
@@ -914,24 +984,24 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Dateien auswählen und hochladen</target>
       </trans-unit>
       <trans-unit id="file_upload.maxFileSizeExceeded" approved="yes">
-        <source>File &quot;{0}&quot; exceeds maximum file size of {1}!</source>
-        <target state="final">Datei "{0}" überschreitet maximale Dateigröße von {1}!</target>
+        <source>File "{0}" exceeds maximum file size of {1}</source>
+        <target state="final">Datei "{0}" überschreitet maximale Dateigröße von {1}</target>
       </trans-unit>
       <trans-unit id="file_upload.fileNotAllowed" approved="yes">
-        <source>Filename &quot;{0}&quot; is not allowed!</source>
-        <target state="final">Dateiname "{0}" ist nicht erlaubt!</target>
+        <source>Filename "{0}" is not allowed</source>
+        <target state="final">Dateiname "{0}" ist nicht erlaubt</target>
       </trans-unit>
       <trans-unit id="file_upload.fileExtensionExpected" approved="yes">
-        <source>Upload failed! A file with &quot;{0}&quot; extension is expected!</source>
-        <target state="final">Hochladen fehlgeschlagen! Eine Datei mit Erweiterung "{0}" wird erwartet!</target>
+        <source>Upload failed. A file with "{0}" extension is expected.</source>
+        <target state="final">Hochladen fehlgeschlagen! Eine Datei mit Erweiterung "{0}" wird erwartet.</target>
       </trans-unit>
       <trans-unit id="file_upload.fileExtensionDisallowed" approved="yes">
-        <source>Upload failed! The file extension must not be &quot;{0}&quot;!</source>
-        <target state="final">Upload fehlgeschlagen! Die Dateiendung darf nicht "{0} " sein!</target>
+        <source>Upload failed. The file extension "{0}" is not allowed.</source>
+        <target state="final">Upload fehlgeschlagen. Die Dateiendung "{0}" ist nicht erlaubt.</target>
       </trans-unit>
       <trans-unit id="file_upload.uploadFailed" approved="yes">
-        <source>Upload of file &quot;{0}&quot; failed!</source>
-        <target state="final">Hochladen von Datei "{0}" fehlgeschlagen!</target>
+        <source>Upload failed for "{0}"</source>
+        <target state="final">Upload fehlgeschlagen für "{0}"</target>
       </trans-unit>
       <trans-unit id="file_upload.uploadSucceeded" approved="yes">
         <source>File has been uploaded.</source>
@@ -946,8 +1016,8 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Hochladen von Datei {0} von {1}.</target>
       </trans-unit>
       <trans-unit id="file_upload.upload-finished" approved="yes">
-        <source>Upload complete! Filelist reloading...</source>
-        <target state="final">Hochladen fertig! Dateiliste lädt neu...</target>
+        <source>Upload complete. Media module reloading...</source>
+        <target state="final">Upload abgeschlossen. Medienmodul wird neu geladen...</target>
       </trans-unit>
       <trans-unit id="file_upload.overwriteExistingFiles" approved="yes">
         <source>Shall existing files be overwritten?</source>
@@ -1086,7 +1156,7 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Neue Mediendatei hinzufügen</target>
       </trans-unit>
       <trans-unit id="online_media.new_media.label" approved="yes">
-        <source>Url of remote source</source>
+        <source>URL of remote source</source>
         <target state="final">URL der Quelldatei</target>
       </trans-unit>
       <trans-unit id="online_media.new_media.allowedProviders" approved="yes">
@@ -1106,7 +1176,7 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Medien hinzugefügt</target>
       </trans-unit>
       <trans-unit id="online_media.new_media.placeholder" approved="yes">
-        <source>Paste media url here...</source>
+        <source>Paste media URL here...</source>
         <target state="final">Medien-URL hier einfügen...</target>
       </trans-unit>
       <trans-unit id="online_media.error.new_media.failed" approved="yes">
@@ -1134,7 +1204,7 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Pfadfehler beim Hochladen</target>
       </trans-unit>
       <trans-unit id="file_clipupload.php.warning" approved="yes">
-        <source>No upload-folder is found. You should create a TEMP-folder ("_temp_") in the root of one of your mounts first!</source>
+        <source>No upload-folder is found. You should create a TEMP-folder ("_temp_") in the root of one of your mounts first</source>
         <target state="final">Kein Ordner zum Hochladen gefunden. Legen Sie zuerst einen TEMP-Ordner in einem Ihrer Hauptverzeichnisse an ("_temp_")!</target>
       </trans-unit>
       <trans-unit id="mess.redraw" approved="yes">
@@ -1154,13 +1224,12 @@ Ohne Speichern fortfahren?</target>
         <target state="final">Tatsächlich alle markierten Elemente (%s) aus der Zwischenablage entfernen?</target>
       </trans-unit>
       <trans-unit id="mess.refresh_login" approved="yes">
-        <source>Your login has probably expired.
-Do you want to refresh it now?</source>
-        <target state="final">Ihre Anmeldung ist abgelaufen. Die Anmeldung erneuern?</target>
+        <source>Your login has probably expired. Do you want to refresh it now?</source>
+        <target state="final">Dein Login ist womöglich abgelaufen. Login erneuern?</target>
       </trans-unit>
       <trans-unit id="mess.refresh_login_refresh_button" approved="yes">
-        <source>Stay logged in!</source>
-        <target state="final">Angemeldet bleiben!</target>
+        <source>Stay logged in</source>
+        <target state="final">Angemeldet bleiben</target>
       </trans-unit>
       <trans-unit id="mess.refresh_direct_logout_button" approved="yes">
         <source>No, log out.</source>
@@ -1199,8 +1268,8 @@ Do you want to refresh it now?</source>
         <target state="final">Verlassen</target>
       </trans-unit>
       <trans-unit id="mess.refresh_login_emptyPassword" approved="yes">
-        <source>Empty password is not allowed!</source>
-        <target state="final">Leeres Passwort nicht erlaubt!</target>
+        <source>Empty password is not allowed</source>
+        <target state="final">Leeres Passwort nicht erlaubt</target>
       </trans-unit>
       <trans-unit id="mess.please_wait" approved="yes">
         <source>Please wait ...</source>
@@ -1254,10 +1323,6 @@ Do you want to refresh it now?</source>
         <source>Move "%s" into "%s"?</source>
         <target state="final">"%s" nach "%s" verschieben?</target>
       </trans-unit>
-      <trans-unit id="mess.move_into_colPos" approved="yes">
-        <source>Move "%1$s" into column "%3$s" on page "%2$s"?</source>
-        <target state="final">"%1$s" in Spalte "%3$s" auf Seite "%2$s" verschieben?</target>
-      </trans-unit>
       <trans-unit id="mess.move_before" approved="yes">
         <source>Move "%s" to before "%s"?</source>
         <target state="final">Verschiebe "%s" vor "%s"?</target>
@@ -1269,10 +1334,6 @@ Do you want to refresh it now?</source>
       <trans-unit id="mess.copy_into" approved="yes">
         <source>Copy "%s" into "%s"?</source>
         <target state="final">"%s" nach "%s" kopieren?</target>
-      </trans-unit>
-      <trans-unit id="mess.copy_into_colPos" approved="yes">
-        <source>Copy "%1$s" into column "%3$s" on page "%2$s"?</source>
-        <target state="final">"%1$s" in Spalte "%3$s" auf Seite "%2$s" kopieren?</target>
       </trans-unit>
       <trans-unit id="mess.copy_after" approved="yes">
         <source>Copy "%s" to after "%s"?</source>
@@ -1341,58 +1402,6 @@ Do you want to refresh it now?</source>
       <trans-unit id="rm.closeDoc" approved="yes">
         <source>Close</source>
         <target state="final">Schließen</target>
-      </trans-unit>
-      <trans-unit id="rm.clearCache_thisPage" approved="yes">
-        <source>This page</source>
-        <target state="final">Diese Seite</target>
-      </trans-unit>
-      <trans-unit id="rm.clearCache_all" approved="yes">
-        <source>Clear FE cache</source>
-        <target state="final">Alle Caches löschen</target>
-      </trans-unit>
-      <trans-unit id="rm.clearCache_pages" approved="yes">
-        <source>Clear Page Cache</source>
-        <target state="final">Seiten-Cache löschen</target>
-      </trans-unit>
-      <trans-unit id="rm.clearCache_allTypo3Conf" approved="yes">
-        <source>Clear cache in typo3conf/</source>
-        <target state="final">Konfigurations-Cache löschen</target>
-      </trans-unit>
-      <trans-unit id="rm.clearCacheMenu_all" approved="yes">
-        <source>Clear all caches</source>
-        <target state="final">Alle Caches löschen</target>
-      </trans-unit>
-      <trans-unit id="rm.clearCacheMenu_pages" approved="yes">
-        <source>Clear page content cache</source>
-        <target state="final">Seiteninhalts-Cache löschen</target>
-      </trans-unit>
-      <trans-unit id="rm.clearCacheMenu_allTypo3Conf" approved="yes">
-        <source>Clear configuration cache</source>
-        <target state="final">Konfigurations-Cache löschen</target>
-      </trans-unit>
-      <trans-unit id="flushPageCachesTitle" approved="yes">
-        <source>Flush frontend caches</source>
-        <target state="final">Frontend-Caches leeren</target>
-      </trans-unit>
-      <trans-unit id="flushPageCachesDescription" approved="yes">
-        <source>Clear frontend and page-related caches.</source>
-        <target state="final">Frontend- und seitenbezogene Caches löschen.</target>
-      </trans-unit>
-      <trans-unit id="flushAllCachesTitle2" approved="yes">
-        <source>Flush all caches</source>
-        <target state="final">Alle Caches leeren</target>
-      </trans-unit>
-      <trans-unit id="flushAllCachesDescription2" approved="yes">
-        <source>Clear all system-related caches, including localization, extension configuration, file caches and opcode caches. Rebuilding this cache may take some time.</source>
-        <target state="final">Alle systembezogenen Caches löschen, inklusive des Lokalisierungs-, Erweiterungs-Konfigurations-, Datei und Opcode-Caches. Diese Caches wieder aufzubauen, kann einige Zeit in Anspruch nehmen.</target>
-      </trans-unit>
-      <trans-unit id="flushCaches.error" approved="yes">
-        <source>An error occurred</source>
-        <target state="final">Es ist ein Fehler aufgetreten</target>
-      </trans-unit>
-      <trans-unit id="flushCaches.error.description" approved="yes">
-        <source>An error occurred while clearing the cache. It is likely not all caches were cleared as expected.</source>
-        <target state="final">Beim Leeren des Caches ist ein Fehler aufgetreten. Wahrscheinlich wurden nicht alle Caches wie erwartet gelöscht.</target>
       </trans-unit>
       <trans-unit id="rm.adminFunctions" approved="yes">
         <source>Admin functions</source>
@@ -1463,8 +1472,8 @@ Do you want to refresh it now?</source>
         <target state="final">Verlassen</target>
       </trans-unit>
       <trans-unit id="buttons.selMenu_modules" approved="yes">
-        <source>MODULES</source>
-        <target state="final">MODULE</target>
+        <source>Modules</source>
+        <target state="final">Module</target>
       </trans-unit>
       <trans-unit id="buttons.clear" approved="yes">
         <source>Clear</source>
@@ -1499,12 +1508,12 @@ Do you want to refresh it now?</source>
         <target state="final">%s deaktivieren</target>
       </trans-unit>
       <trans-unit id="buttons.deactivateMfa.confirmation.text" approved="yes">
-        <source>Are you sure you want to deactivate all active providers? This action can not be undone and will be applied immediately!</source>
-        <target state="final">Sind Sie sicher, dass Sie alle aktiven Anbieter deaktivieren möchten? Diese Aktion kann nicht rückgängig gemacht werden und wird sofort angewandt!</target>
+        <source>Deactivate all active providers? This action cannot be undone. Caution: This will affect all users and decrease the security of the system.</source>
+        <target state="final">Alle aktiven Anbieter deaktivieren? Diese Aktion kann nicht rückgängig gemacht werden. Achtung: Dies betrifft alle Benutzer und verringert die Sicherheit des Systems.</target>
       </trans-unit>
       <trans-unit id="buttons.deactivateMfaProvider.confirmation.text" approved="yes">
-        <source>Are you sure you want to deactivate %s? This action can not be undone and will be applied immediately!</source>
-        <target state="final">Sind Sie sicher, dass Sie %s deaktivieren möchten? Diese Aktion kann nicht rückgängig gemacht werden und wird sofort angewandt!</target>
+        <source>Deactivate %s? This action cannot be undone. Caution: This will affect all users and decrease the security of the system.</source>
+        <target state="final">%sdeaktivieren? Diese Aktion kann nicht rückgängig gemacht werden. Achtung: Dies betrifft alle Benutzer und verringert die Sicherheit des Systems.</target>
       </trans-unit>
       <trans-unit id="slugCreation.success.page" approved="yes">
         <source>This page will be reachable via %s</source>
@@ -1738,17 +1747,33 @@ Do you want to refresh it now?</source>
         <source>Drag to move</source>
         <target state="final">Ziehen zum Bewegen</target>
       </trans-unit>
+      <trans-unit id="tree.search_in_translated_pages" approved="yes">
+        <source>Search in translated pages</source>
+        <target state="final">In übersetzten Seiten suchen</target>
+      </trans-unit>
+      <trans-unit id="tree.search_by_frontend_uri" approved="yes">
+        <source>Search by website address (URL)</source>
+        <target state="final">Suche nach Website-Adresse (URL)</target>
+      </trans-unit>
       <trans-unit id="tree.searchTermInfo" approved="yes">
         <source>Enter search term</source>
         <target state="final">Suchbegriff eingeben</target>
+      </trans-unit>
+      <trans-unit id="tree.searchPageTree" approved="yes">
+        <source>Search page tree</source>
+        <target state="final">Seitenbaum durchsuchen</target>
+      </trans-unit>
+      <trans-unit id="tree.searchFolderTree" approved="yes">
+        <source>Search folder tree</source>
+        <target state="final">Ordnerstruktur durchsuchen</target>
       </trans-unit>
       <trans-unit id="warning.file_deny_pattern" approved="yes">
         <source>The value of fileDenyPattern is not set to its default:%s If TYPO3 is running on Apache, a customized value might enable backend or frontend users to execute malicious php scripts.</source>
         <target state="final">Für fileDenyPattern ist nicht der Standardwert definiert: %s Wird TYPO3 mit Apache betrieben, kann ein angepasster Wert dazu führen, dass Backend- oder Frontend-Benutzer in die Lage versetzt werden, bösartige PHP-Skripte auszuführen.</target>
       </trans-unit>
       <trans-unit id="warning.file_deny_pattern_partsNotPresent" approved="yes">
-        <source>Security Risk! The new value of fileDenyPattern misses parts of its default:%s If TYPO3 is running on Apache, a customized value might enable backend or frontend users to execute malicious php scripts.</source>
-        <target state="final">Sicherheitsrisiko! Der neue Wert von fileDenyPattern enthält nicht alle Teile des Standardwertes %s. Wenn TYPO3 auf einem Apache-Server ausgeführt wird, kann ein veränderter Wert Backend- oder Frontend-Benutzer in die Lage versetzen, bösartige PHP-Skripte auszuführen.</target>
+        <source>Security risk: The new value of fileDenyPattern misses parts of its default: %s. If TYPO3 is running on Apache, a customized value might enable backend or frontend users to execute malicious PHP scripts.</source>
+        <target state="final">Sicherheitsrisiko: Der neue Wert von fileDenyPattern enthält nicht alle Teile des Standardwertes %s. Wenn TYPO3 auf einem Apache-Server ausgeführt wird, kann ein veränderter Wert Backend- oder Frontend-Benutzer in die Lage versetzen, bösartige PHP-Skripte auszuführen.</target>
       </trans-unit>
       <trans-unit id="warning.file_deny_htaccess" approved="yes">
         <source>The current value of fileDenyPattern allows to upload/create files with the name ".htaccess". If TYPO3 is running on Apache, this enables backend or frontend users to create and execute php scripts. Please reset the value of fileDenyPattern to its default.</source>
@@ -1759,8 +1784,8 @@ Do you want to refresh it now?</source>
         <target state="final">Das Installationsprogramm ist dauerhaft aktiviert. Löschen Sie die Datei "%s", wenn Sie mit der Installation von TYPO3 fertig sind.</target>
       </trans-unit>
       <trans-unit id="warning.install_enabled_cmd" approved="yes">
-        <source>Click to remove the file now!</source>
-        <target state="final">Klicken Sie hier, um die Datei jetzt zu löschen!</target>
+        <source>Click to remove the file now</source>
+        <target state="final">Klicke hier, um die Datei jetzt zu löschen</target>
       </trans-unit>
       <trans-unit id="warning.install_trustedhosts" approved="yes">
         <source>The trusted hosts pattern check is disabled. Please define the allowed hosts in the [SYS][trustedHostsPattern] section of the Install Tool.</source>
@@ -1771,24 +1796,20 @@ Do you want to refresh it now?</source>
         <target state="final">Diese Installation ist nicht für die aktuell eingesetzte TYPO3-Version konfiguriert. Haben Sie dies mit Absicht getan, können Sie die Nachricht beruhigt ignorieren. Wenn Sie unsicher sind, rufen Sie das "Upgrade-Wizard" im Modul "Admin Tools&gt;Upgrade" oder über im %sTYPO3 Install Tool%s auf, um mögliche notwendige Änderungen zu überprüfen bzw. auszuführen.</target>
       </trans-unit>
       <trans-unit id="warning.header" approved="yes">
-        <source>Important Notice!</source>
-        <target state="final">Wichtiger Hinweis!</target>
-      </trans-unit>
-      <trans-unit id="warning.backend_reference" approved="yes">
-        <source>The Reference Index table is empty which is likely the result of a recent TYPO3 upgrade. Please go to %sTools&gt;DB Check%s and update the reference index.</source>
-        <target state="final">Die Referenzindextabelle ist leer. Dies ist wahrscheinlich die Folge einer kürzlich erfolgten TYPO3-Aktualisierung. Bitte den Punkt %sWerkzeuge &gt; DB-Prüfung%s aufrufen und den Referenzindex aktualisieren.</target>
+        <source>Important Notice</source>
+        <target state="final">Wichtiger Hinweis</target>
       </trans-unit>
       <trans-unit id="warning.backend_reference_index" approved="yes">
-        <source>The Reference Index table is empty which is likely the result of a recent TYPO3 upgrade. The Reference Index was last updated on %3$s. Please go to %sSystem&gt;DB Check%s and update the reference index.</source>
-        <target state="final">Die Referenz-Index Tabelle ist leer. Dies ist wahrscheinlich die Folge eines kürzlich durchgeführten TYPO3 Upgrades. Der Referenz-Index wurde zuletzt am %3$s aktualisiert. Bitte rufen Sie das Modul %sSystem&gt;DB-Überprüfung%s auf und aktualisieren Sie den Referenz-Index.</target>
+        <source>The Reference Index is empty (table sys_refindex), which may occur after upgrades or maintenance operations. The last update found on TYPO3 Registry was on %3$s. Please rebuild it via %1$sSystem → Maintenance → Check and Update Reference Index%2$s.</source>
+        <target state="final">Der Referenzindex ist leer (Tabelle sys_refindex), was nach Upgrades oder Wartungsarbeiten vorkommen kann. Die letzte Aktualisierung in der TYPO3-Registry erfolgte am %3$s. Bitte erstelle ihn neu über %1$sSystem → Wartung → Referenzindex prüfen und aktualisieren%2$s.</target>
       </trans-unit>
       <trans-unit id="warning.memcache_not_usable" approved="yes">
         <source>Memcache is configured, but connection to memcached failed with these configuration(s)</source>
         <target state="final">Memcache wurde konfiguriert, aber Verbindung zu Memcache ist fehlgeschlagen mit folgender/n Konfiguration(en)</target>
       </trans-unit>
       <trans-unit id="warning.file_missing" approved="yes">
-        <source>File is missing!</source>
-        <target state="final">Datei fehlt!</target>
+        <source>File is missing</source>
+        <target state="final">Datei fehlt</target>
       </trans-unit>
       <trans-unit id="warning.file_missing_text" approved="yes">
         <source>This file is marked as missing</source>
@@ -1878,10 +1899,6 @@ Do you want to refresh it now?</source>
         <source>Missing ISO code for language "%s" (UID %d), please edit the language record and set it.</source>
         <target state="final">Fehlender ISO-Code für Sprache "%s" (UID %d). Bitte bearbeiten Sie den Sprachdatensatz und setzen Sie den ISO-Code.</target>
       </trans-unit>
-      <trans-unit id="error.misconfiguredPasswordRules" approved="yes">
-        <source>No password could be generated due to misconfigured password rules.</source>
-        <target state="final">Aufgrund falsch konfigurierter Passwortregeln konnte kein Passwort generiert werden.</target>
-      </trans-unit>
       <trans-unit id="labels.deleteTitle" approved="yes">
         <source>Revert to default Constant</source>
         <target state="final">Konstante auf Standardeinstellung zurücksetzen</target>
@@ -1950,9 +1967,29 @@ Do you want to refresh it now?</source>
         <source>Site set '%1$s' is disabled due to invalid settings: %2$s</source>
         <target state="final">Site-Set '%1$s' ist aufgrund ungültiger Einstellungen deaktiviert: %2$s</target>
       </trans-unit>
+      <trans-unit id="error.siteSet.invalidRouteEnhancers" approved="yes">
+        <source>Site set '%1$s' is disabled due to invalid route enhancers: %2$s</source>
+        <target state="final">Site-Set '%1$s' ist aufgrund invalider Route Enhancers deaktiviert: %2$s</target>
+      </trans-unit>
       <trans-unit id="error.siteSet.invalidSet" approved="yes">
         <source>Invalid site set '%1$s': %2$s</source>
         <target state="final">Ungültiges Site-Set '%1$s': %2$s</target>
+      </trans-unit>
+      <trans-unit id="countries.default" approved="yes">
+        <source>Default countries</source>
+        <target state="final">Standard-Länder</target>
+      </trans-unit>
+      <trans-unit id="countries.prioritized" approved="yes">
+        <source>Prioritized countries</source>
+        <target state="final">Priorisierte Länder</target>
+      </trans-unit>
+      <trans-unit id="notifications.button.clearAll" approved="yes">
+        <source>Clear all</source>
+        <target state="final">Alles löschen</target>
+      </trans-unit>
+      <trans-unit id="labels.noSelectableItemsAvailable" approved="yes">
+        <source>No selectable items available. Check TCA, related records and TSconfig.</source>
+        <target state="final">Keine auswählbaren Elemente verfügbar. Überprüfe TCA, verwandte Datensätze und TSconfig.</target>
       </trans-unit>
     </body>
   </file>

@@ -3,126 +3,6 @@
   <file source-language="en" datatype="plaintext" original="EXT:frontend/Resources/Private/Language/locallang_tca.xlf" date="2011-10-17T20:22:32Z" product-name="cms" target-language="de">
     <header/>
     <body>
-      <trans-unit id="mod_tx_cms_webinfo_page" approved="yes">
-        <source>Pagetree Overview</source>
-        <target state="final">Seitenbaumübersicht</target>
-      </trans-unit>
-      <trans-unit id="mod_tx_cms_webinfo_lang" approved="yes">
-        <source>Localization Overview</source>
-        <target state="final">Übersetzungsübersicht</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.standard" approved="yes">
-        <source>Page</source>
-        <target state="final">Seite</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.title" approved="yes">
-        <source>Title</source>
-        <target state="final">Titel</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.visibility" approved="yes">
-        <source>Visibility</source>
-        <target state="final">Sichtbarkeit</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.access" approved="yes">
-        <source>Publish Dates and Access Rights</source>
-        <target state="final">Veröffentlichungsdaten und Zugriffsrechte</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.abstract" approved="yes">
-        <source>Abstract</source>
-        <target state="final">Zusammenfassung</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.metatags" approved="yes">
-        <source>Meta Tags</source>
-        <target state="final">Meta-Tags</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.editorial" approved="yes">
-        <source>Editorial</source>
-        <target state="final">Redaktion</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.layout" approved="yes">
-        <source>Page Layout</source>
-        <target state="final">Seitenlayout</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.module" approved="yes">
-        <source>Use as Container</source>
-        <target state="final">Benutze als Container</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.replace" approved="yes">
-        <source>Replace Content</source>
-        <target state="final">Ersetze den Inhalt</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.links" approved="yes">
-        <source>Links to this Page</source>
-        <target state="final">Links zu dieser Seite</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.caching" approved="yes">
-        <source>Caching</source>
-        <target state="final">Caching</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.language" approved="yes">
-        <source>Language</source>
-        <target state="final">Sprache</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.miscellaneous" approved="yes">
-        <source>Miscellaneous</source>
-        <target state="final">Sonstige</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.media" approved="yes">
-        <source>Files</source>
-        <target state="final">Dateien</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.storage" approved="yes">
-        <source>General Record Storage Page</source>
-        <target state="final">Allgemeine Datensatzsammlung</target>
-      </trans-unit>
-      <trans-unit id="pages.palettes.config" approved="yes">
-        <source>Page TSconfig</source>
-        <target state="final">Seiten-TSconfig</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype_formlabel" approved="yes">
-        <source>Type</source>
-        <target state="final">Typ</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.I.0" approved="yes">
-        <source>Advanced</source>
-        <target state="final">Erweitert</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.I.2" approved="yes">
-        <source>Shortcut</source>
-        <target state="final">Verweis</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.I.3" approved="yes">
-        <source>Not in Menu</source>
-        <target state="final">Nicht im Menü</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.I.4" approved="yes">
-        <source>Backend User Section</source>
-        <target state="final">Backend-Benutzerbereich</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.I.5" approved="yes">
-        <source>Mount Point</source>
-        <target state="final">Einstiegspunkt</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.I.7" approved="yes">
-        <source>Menu Separator</source>
-        <target state="final">Trennzeichen für Menü</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.I.8" approved="yes">
-        <source>Link to External URL</source>
-        <target state="final">Link zu externer URL</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.div.page" approved="yes">
-        <source>Page</source>
-        <target state="final">Seite</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.div.link" approved="yes">
-        <source>Link</source>
-        <target state="final">Link</target>
-      </trans-unit>
-      <trans-unit id="pages.doktype.div.special" approved="yes">
-        <source>Special</source>
-        <target state="final">Spezial</target>
-      </trans-unit>
       <trans-unit id="pages.title_formlabel" approved="yes">
         <source>Page Title</source>
         <target state="final">Seitentitel</target>
@@ -208,10 +88,6 @@
         <target state="final">Linkziel</target>
       </trans-unit>
       <trans-unit id="pages.url" approved="yes">
-        <source>URL</source>
-        <target state="final">URL</target>
-      </trans-unit>
-      <trans-unit id="pages.url_formlabel" approved="yes">
         <source>URL</source>
         <target state="final">URL</target>
       </trans-unit>
@@ -358,10 +234,6 @@
       <trans-unit id="pages.shortcut_mode.I.1" approved="yes">
         <source>First subpage of selected/current page</source>
         <target state="final">Erste Unterseite der aktuellen Seite</target>
-      </trans-unit>
-      <trans-unit id="pages.shortcut_mode.I.2" approved="yes">
-        <source>Random subpage of selected/current page</source>
-        <target state="final">Zufällige Unterseite der aktuellen Seite</target>
       </trans-unit>
       <trans-unit id="pages.shortcut_mode.I.3" approved="yes">
         <source>Parent page of selected/current page</source>
@@ -543,10 +415,6 @@
         <source>Groups</source>
         <target state="final">Benutzergruppen:</target>
       </trans-unit>
-      <trans-unit id="fe_users.tabs.personalData" approved="yes">
-        <source>Personal Data</source>
-        <target state="final">Persönliche Daten</target>
-      </trans-unit>
       <trans-unit id="fe_users.tabs.access" approved="yes">
         <source>Access</source>
         <target state="final">Zugriff</target>
@@ -624,8 +492,9 @@
         <source>Include additional TypoScript records located elsewhere in the page tree. This can be used to load the same TypoScript records at multiple places in a page tree.
 			 	This isn't used very often nowadays and it's often easier to understand and maintain the site by extracting TypoScript configuration to files
 				and to load the full set in a single main TypoScript record.
-			</source>
-        <target state="final">Fügen Sie zusätzliche TypoScript-Datensätze hinzu, die sich woanders im Seitenbaum befinden. Dies kann verwendet werden, um die gleichen Datensätze-Einträge an mehreren Stellen in einem Seitenbaum zu laden. Dies wird heutzutage nicht oft verwendet und es ist für das Verständnis und die Pflege des System oft einfacher, die TypoScript-Konfiguration in Dateien auszulagern und den kompletten Datensatz in einem einzigen Haupt-TypoScript-Datensatz zu laden.</target>
+            </source>
+        <target state="final">Fügen Sie zusätzliche TypoScript Datensätze hinzu, die sich woanders im Seitenbaum befinden. Dies kann verwendet werden, um die gleichen TypoScript-Einträge an mehreren Stellen in einem Seitenbaum zu laden. Dies wird heutzutage nicht sehr oft verwendet und es ist oft einfacher, die Seite zu verstehen und zu pflegen, indem Sie die TypoScript-Konfiguration in Dateien auslagern und den kompletten Datensatz in einem einzigen Haupt-TypoScript-Datensatz laden.
+            </target>
       </trans-unit>
       <trans-unit id="sys_template.includeStaticAfterBasedOn" approved="yes">
         <source>Load TypoScript sets after included TypoScript records</source>
@@ -676,10 +545,6 @@
       <trans-unit id="sys_template.tabs.files" approved="yes">
         <source>Resources</source>
         <target state="final">Ressourcen</target>
-      </trans-unit>
-      <trans-unit id="sys_template.tabs.options" approved="yes">
-        <source>Advanced Options</source>
-        <target state="final">Erweiterte Optionen</target>
       </trans-unit>
       <trans-unit id="sys_template.tabs.access" approved="yes">
         <source>Access</source>

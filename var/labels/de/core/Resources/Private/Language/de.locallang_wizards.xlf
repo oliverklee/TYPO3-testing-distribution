@@ -239,6 +239,10 @@
         <source>Social media</source>
         <target state="final">Soziale Medien</target>
       </trans-unit>
+      <trans-unit id="imwizard.sync-crop-variants" approved="yes">
+        <source>Apply changes to all crop variants</source>
+        <target state="final">Änderungen auf alle Crop-Varianten anwenden</target>
+      </trans-unit>
       <trans-unit id="imwizard.selection" approved="yes">
         <source>Selected Size</source>
         <target state="final">Ausgewählte Größe</target>

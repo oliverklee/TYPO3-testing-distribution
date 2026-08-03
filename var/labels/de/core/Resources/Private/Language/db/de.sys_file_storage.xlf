@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="de">
+  <file id="f1">
+    <unit id="is_offline">
+      <segment state="final">
+        <source>offline</source>
+        <target>offline</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.base_path">
+      <segment state="final">
+        <source>Base path</source>
+        <target>Basispfad</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.base_path_placeholder">
+      <segment state="final">
+        <source>Add storage path here. For example: myPath/folder/</source>
+        <target>Speicherpfad hier hinzufügen. Beispiel: myPath/folder/</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.base_uri">
+      <segment state="final">
+        <source>Base URI</source>
+        <target>Basis-URI</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.base_uri_placeholder">
+      <segment state="final">
+        <source>Use this URI to build the public URL of files, instead of deriving the URI from base path</source>
+        <target>Verwenden Sie diese URI, um die öffentliche URL von Dateien zu erstellen, anstatt die URI aus dem Basispfad abzuleiten.</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.path_type">
+      <segment state="final">
+        <source>Path type</source>
+        <target>Pfadtyp</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.path_type_relative">
+      <segment state="final">
+        <source>relative</source>
+        <target>relativ</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.path_type_absolute">
+      <segment state="final">
+        <source>absolute</source>
+        <target>absolut</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.case_sensitive">
+      <segment state="final">
+        <source>Uses case sensitive identifiers</source>
+        <target>Benutzt case-sensitive Dateinamen</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

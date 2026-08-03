@@ -20,32 +20,32 @@
         <target state="final">Referenzen anzeigen</target>
       </trans-unit>
       <trans-unit id="config.loginLogo" approved="yes">
-        <source>Logo: If set, this logo will be used instead of the TYPO3 logo above the login credential fields (e.g. fileadmin/images/login-logo.png or EXT:my_theme/Resources/Public/Images/login-logo.png or //domain.tld/login-logo.png).</source>
-        <target state="final">Logo: Wenn gesetzt, wird dieses Logo anstelle des TYPO3-Logos über dem Anmeldefeld gezeigt (bspw. fileadmin/images/login-logo.png oder EXT:my_theme/Resources/Public/Images/login-logo.png oder //domain.tld/login-logo.png).</target>
+        <source>Logo: Replace the TYPO3 logo above the login form (e.g. fileadmin/images/login-logo.png, EXT:my_theme/Resources/Public/Images/login-logo.png, or //domain.tld/login-logo.png).</source>
+        <target state="final">Logo: Ersetze das TYPO3-Logo über dem Anmeldeformular (z.B. fileadmin/images/login-logo.png, EXT:my_theme/Resources/Public/Images/login-logo.png oder //domain.tld/login-logo.png).</target>
       </trans-unit>
       <trans-unit id="config.loginLogoAlt" approved="yes">
-        <source>Logo Alt-Text: If a custom logo is set, this text will be used as the alt attribute of the img tag.</source>
-        <target state="final">Logo Alt-Text: Wenn ein eigenes Logo gesetzt ist, wird dieser Text als alt-Attribut des img Tags verwendet.</target>
+        <source>Logo Alt-Text: Define the alternative text used as the alt attribute for the custom login logo image.</source>
+        <target state="final">Logo Alt-Text: Definiere den Alternativ-Text, der als Alt-Attribut für das benutzerdefinierte Login-Logo-Bild verwendet wird.</target>
       </trans-unit>
       <trans-unit id="config.loginHighlightColor" approved="yes">
-        <source>Highlight Color: If set, this color will be used as highlight color in the login screen.</source>
-        <target state="final">Hervorhebungsfarbe: Wenn gesetzt, wird diese Farbe als Hervorhebungsfarbe im Anmeldebildschirm benutzt.</target>
+        <source>Highlight Color: Define the accent color used for highlights on the login screen.</source>
+        <target state="final">Farbe hervorheben: Definiere die Akzentfarbe für Hervorhebungen auf dem Anmeldebildschirm.</target>
       </trans-unit>
       <trans-unit id="config.loginBackgroundImage" approved="yes">
-        <source>Background Image: If set, this image will be used as background image for the login screen (e.g. fileadmin/images/my-background.jpg or EXT:my_theme/Resources/Public/Images/my-background.jpg or //domain.tld/my-background.png).</source>
-        <target state="final">Hintergrundbild: Wenn gesetzt, wird dieses Bild als Hintergrundbild für den Anmeldebildschirm genutzt (bspw. fileadmin/images/my-background.jpg oder EXT:my_theme/Resources/Public/Images/my-background.jpg oder //domain.tld/my-background.png).</target>
+        <source>Background Image: Set the image used as the background for the login screen (e.g. fileadmin/images/my-background.jpg, EXT:my_theme/Resources/Public/Images/my-background.jpg, or //domain.tld/my-background.png).</source>
+        <target state="final">Hintergrundbild: Setze das Bild, das als Hintergrund für den Anmeldebildschirm verwendet wird (z.B. fileadmin/images/my-background.jpg, EXT:my_theme/Resources/Public/Images/my-background.jpg oder //domain.tld/my-background.png).</target>
       </trans-unit>
       <trans-unit id="config.loginFootnote" approved="yes">
-        <source>Footnote: If set, this text will be displayed on the login screen to provide copyright information for the background image (e.g. background image © 2017 by John Doe) or a descriptive text.</source>
-        <target state="final">Fußnote: Wenn gesetzt, wird dieser Text auf dem Anmeldebildschirm angezeigt, um Copyright-Informationen oder eine Bildbeschreibung über das Hintergrundbild anzuzeigen (bspw. Hintergrundbild © 2017 von Max Mustermann).</target>
+        <source>Footnote: Enter the text displayed on the login screen, for example to provide copyright information for the background image (e.g. background image © 2017 by John Doe) or a short description.</source>
+        <target state="final">Fußnote: Gib den Text ein, der auf dem Anmeldebildschirm angezeigt wird, um zum Beispiel Urheberrechts-Informationen für das Hintergrundbild anzugeben (z. B. Hintergrundbild ©️ 2017 von John Doe) oder eine kurze Beschreibung.</target>
       </trans-unit>
       <trans-unit id="config.backendLogo" approved="yes">
-        <source>Logo: If set, this logo will be used instead of the TYPO3 logo in the TYPO3 backend in the left top corner (e.g. fileadmin/images/backend-logo.png or EXT:my_theme/Resources/Public/Images/backend-logo.png).</source>
-        <target state="final">Logo: Wenn gesetzt, wird dieses Logo anstelle des TYPO3-Logos im TYPO3-Backend in der oberen linken Ecke angezeigt (bspw. fileadmin/images/backend-logo.png oder EXT:my_theme/Resources/Public/Images/backend-logo.png).</target>
+        <source>Logo: Set the logo used in the top-left corner of the TYPO3 backend instead of the TYPO3 logo (e.g. fileadmin/images/backend-logo.png or EXT:my_theme/Resources/Public/Images/backend-logo.png).</source>
+        <target state="final">Logo: Lege das Logo fest, das in der linken oberen Ecke des TYPO3-Backends anstelle des TYPO3-Logos verwendet wird (z.B. fileadmin/images/backend-logo.png oder EXT:my_theme/Resources/Public/Images/backend-logo.png).</target>
       </trans-unit>
       <trans-unit id="config.backendFavicon" approved="yes">
-        <source>Favicon: If set, this favicon will be used instead of the TYPO3 logo (e.g. EXT:my_theme/Resources/Public/Images/favicon.ico).</source>
-        <target state="final">Favicon: Wenn gesetzt, wird dieses Favicon anstelle des TYPO3-Logos genutzt (bspw. EXT:my_theme/Resources/Public/Images/favicon.ico).</target>
+        <source>Favicon: Set the favicon used instead of the TYPO3 default (e.g. EXT:my_theme/Resources/Public/Images/favicon.ico).</source>
+        <target state="final">Favicon: Lege das Favicon fest, das anstelle des TYPO3-Standards verwendet wird (z.B. EXT:my_theme/Resources/Public/Images/favicon.ico).</target>
       </trans-unit>
       <trans-unit id="foldertreeview.noFolders.title" approved="yes">
         <source>No folders available</source>
@@ -84,12 +84,20 @@
         <target state="final">Passwort vergessen?</target>
       </trans-unit>
       <trans-unit id="login.error.capslock" approved="yes">
-        <source>Attention: Caps lock enabled!</source>
-        <target state="final">Achtung: Feststelltaste aktiviert!</target>
+        <source>Attention: Caps lock enabled</source>
+        <target state="final">Achtung: Feststelltaste aktiviert</target>
       </trans-unit>
       <trans-unit id="login.error.capslockStatus" approved="yes">
         <source>Caps lock enabled</source>
         <target state="final">Feststelltaste aktiv</target>
+      </trans-unit>
+      <trans-unit id="login.warning.whitespace-around-password" approved="yes">
+        <source>The password you just pasted has leading and / or trailing whitespace.</source>
+        <target state="final">Das von dir gerade eingefügte Passwort enthält vorne oder hinten Leerzeichen.</target>
+      </trans-unit>
+      <trans-unit id="login.warning.whitespace-around-password.action-link" approved="yes">
+        <source>Remove whitespace</source>
+        <target state="final">Leerzeichen entfernen</target>
       </trans-unit>
       <trans-unit id="login.news.header" approved="yes">
         <source>System News</source>
@@ -124,16 +132,16 @@
         <target state="final">Bitte stelle sicher, dass dein Benutzername und Passwort korrekt sind. Groß-/Kleinschreibung wird unterschieden.</target>
       </trans-unit>
       <trans-unit id="login.error.javascript" approved="yes">
-        <source>Please activate JavaScript!</source>
-        <target state="final">Bitte aktivieren Sie JavaScript!</target>
+        <source>Please activate JavaScript</source>
+        <target state="final">Bitte aktiviere JavaScript</target>
       </trans-unit>
       <trans-unit id="login.error.cookies" approved="yes">
-        <source>Please activate Cookies!</source>
-        <target state="final">Bitte aktivieren Sie Cookies!</target>
+        <source>Please activate Cookies</source>
+        <target state="final">Bitte aktiviere Cookies</target>
       </trans-unit>
       <trans-unit id="login.error.referrer" approved="yes">
-        <source>TYPO3 relies on HTTP referrers for security reasons in the backend. It seems your browser refused to send this information.</source>
-        <target state="final">Das TYPO3 Backend nutzt aus Gründen der Sicherheit den HTTP Referrer. Es scheint als ob der verwendete Browser diese Information nicht mitsendet.</target>
+        <source>TYPO3 relies on HTTP referrers for security reasons in the backend. It looks like your browser was not able to send this information, which may be due to privacy or security settings.</source>
+        <target state="final">TYPO3 stützt sich aus Sicherheitsgründen im Backend auf HTTP-Referrer. Es sieht so aus, als ob dein Browser diese Informationen nicht senden konnte, was möglicherweise an den Datenschutz- oder Sicherheitseinstellungen liegt.</target>
       </trans-unit>
       <trans-unit id="login.process" approved="yes">
         <source>Verifying Login Data ...</source>
@@ -160,7 +168,8 @@
 				a base record has been deleted but the intermediate record from table %3$s with uid %4$s still points to it. To fix
 				this situation, either delete the intermediate record, or recover the deleted record using the recycler module.
 				</source>
-        <target state="final">Der Datensatz mit Uid %2$s aus Tabelle %1$s konnte nicht aus der Datenbank abgerufen werden. Diese Inkonsistenz kann auftreten, wenn ein Basis-Datensatz gelöscht worden ist, während noch der Datensatz aus Tabelle %3$s mit Uid %4$s auf ihn verweist. Um dieses Problem zu beheben, löschen Sie entweder den verweisenden Datensatz oder stellen Sie den gelöschten Datensatz mit dem Papierkorb wieder her.</target>
+        <target state="final">Der Datensatz mit Uid %2$s aus Tabelle %1$s konnte nicht aus der Datenbank abgerufen werden. Diese Inkonsistenz kann auftreten, wenn ein Basis-Datensatz gelöscht wurde, während der Datensatz aus Tabelle %3$s mit Uid %4$s noch auf ihn verweist. Um dieses Problem zu beheben, lösche entweder den verweisenden Datensatz oder stelle den gelöschten Datensatz mit dem Papierkorb wieder her.
+				</target>
       </trans-unit>
       <trans-unit id="modulemenu.label" approved="yes">
         <source>Module Menu</source>
@@ -173,6 +182,22 @@
       <trans-unit id="module.noAccess.message" approved="yes">
         <source>You've been redirected to the "%s" module, because you currently can't access the "%s" module. You either don't have the necessary permissions or access is temporarily not possible, e.g. due to workspace restrictions.</source>
         <target state="final">Du wurdest zum Modul "%s" weitergeleitet, da du derzeit nicht auf das Modul "%s" zugreifen kannst. Entweder hast du nicht die erforderlichen Berechtigungen oder der Zugriff ist vorübergehend nicht möglich, z.B. aufgrund von Arbeitsbereichsbeschränkungen.</target>
+      </trans-unit>
+      <trans-unit id="noModuleAccess.workspace.title" approved="yes">
+        <source>No workspace access</source>
+        <target state="final">Kein Workspace-Zugriff</target>
+      </trans-unit>
+      <trans-unit id="noModuleAccess.workspace.message" approved="yes">
+        <source>Your user account or user group is not assigned to any workspace and does not have permission to edit the live workspace. Please contact your administrator.</source>
+        <target state="final">Dein Benutzerkonto oder deine Benutzergruppe ist keinem Workspace zugewiesen und hat keine Berechtigung, den Live-Workspace zu bearbeiten. Bitte kontaktiere deinen Administrator.</target>
+      </trans-unit>
+      <trans-unit id="noModuleAccess.permissions.title" approved="yes">
+        <source>No module access</source>
+        <target state="final">Kein Zugriff auf das Modul</target>
+      </trans-unit>
+      <trans-unit id="noModuleAccess.permissions.message" approved="yes">
+        <source>Your user account does not have access to any backend module. Please contact your administrator.</source>
+        <target state="final">Dein Benutzerkonto hat keinen Zugriff auf ein Backend-Modul. Bitte kontaktiere deinen Administrator.</target>
       </trans-unit>
       <trans-unit id="clearcache.title" approved="yes">
         <source>Page cache</source>
@@ -250,6 +275,26 @@
         <source>Record language</source>
         <target state="final">Sprache des Datensatzes</target>
       </trans-unit>
+      <trans-unit id="moduleMenu.dropdown.overview" approved="yes">
+        <source>Module overview</source>
+        <target state="final">Modulübersicht</target>
+      </trans-unit>
+      <trans-unit id="submoduleOverview.openModule" approved="yes">
+        <source>Open module</source>
+        <target state="final">Modul öffnen</target>
+      </trans-unit>
+      <trans-unit id="submoduleOverview.openModuleWithTitle" approved="yes">
+        <source>Open %1s module</source>
+        <target state="final">%1s Modul öffnen</target>
+      </trans-unit>
+      <trans-unit id="submoduleOverview.noAccess.title" approved="yes">
+        <source>No modules available</source>
+        <target state="final">Keine Module verfügbar</target>
+      </trans-unit>
+      <trans-unit id="submoduleOverview.noAccess.message" approved="yes">
+        <source>There are no submodules available or you do not have access to any of them. Please contact your administrator if you believe this is an error.</source>
+        <target state="final">Es sind keine Submodule verfügbar oder du hast keinen Zugriff darauf. Bitte wende dich an deinen Administrator, wenn du glaubst, dass dies ein Fehler ist.</target>
+      </trans-unit>
       <trans-unit id="theme" approved="yes">
         <source>Theme</source>
         <target state="final">Stil</target>
@@ -261,6 +306,10 @@
       <trans-unit id="theme.modern" approved="yes">
         <source>Modern</source>
         <target state="final">Modern</target>
+      </trans-unit>
+      <trans-unit id="theme.fresh" approved="yes">
+        <source>Fresh</source>
+        <target state="final">Fresh</target>
       </trans-unit>
       <trans-unit id="colorScheme" approved="yes">
         <source>Color scheme</source>
@@ -285,6 +334,58 @@
       <trans-unit id="colorScheme.dark" approved="yes">
         <source>Dark mode</source>
         <target state="final">Dunkler Modus</target>
+      </trans-unit>
+      <trans-unit id="userSettings.requestBackendLanguageRefresh.title" approved="yes">
+        <source>Language changed</source>
+        <target state="final">Sprache geändert</target>
+      </trans-unit>
+      <trans-unit id="userSettings.requestBackendLanguageRefresh.message" approved="yes">
+        <source>A reload is required for the changed to take effect.</source>
+        <target state="final">Ein Nachladen ist erforderlich, damit die Änderung wirksam wird.</target>
+      </trans-unit>
+      <trans-unit id="userSettings.requestBackendLanguageRefresh.buttonReload" approved="yes">
+        <source>Reload</source>
+        <target state="final">Neu laden</target>
+      </trans-unit>
+      <trans-unit id="userSettings.requestBackendLanguageRefresh.buttonCancel" approved="yes">
+        <source>Cancel</source>
+        <target state="final">Abbrechen</target>
+      </trans-unit>
+      <trans-unit id="pageTree.found_translation" approved="yes">
+        <source>Found translation</source>
+        <target state="final">Übersetzung gefunden</target>
+      </trans-unit>
+      <trans-unit id="pageTree.found_in_translation" approved="yes">
+        <source>Found in translation: %s</source>
+        <target state="final">Gefunden in Übersetzung: %s</target>
+      </trans-unit>
+      <trans-unit id="pageTree.found_in_multiple_translations" approved="yes">
+        <source>Found in multiple translations</source>
+        <target state="final">In mehreren Übersetzungen gefunden</target>
+      </trans-unit>
+      <trans-unit id="pageTree.searchResult" approved="yes">
+        <source>Search result</source>
+        <target state="final">Suchergebnis</target>
+      </trans-unit>
+      <trans-unit id="pageTree.found_in_frontend_uri" approved="yes">
+        <source>Found by URI</source>
+        <target state="final">Gefunden in URI</target>
+      </trans-unit>
+      <trans-unit id="viewport.navigation" approved="yes">
+        <source>Navigation</source>
+        <target state="final">Navigation</target>
+      </trans-unit>
+      <trans-unit id="viewport.navigation.show" approved="yes">
+        <source>Show navigation</source>
+        <target state="final">Navigation anzeigen</target>
+      </trans-unit>
+      <trans-unit id="viewport.navigation.hide" approved="yes">
+        <source>Hide navigation</source>
+        <target state="final">Navigation verbergen</target>
+      </trans-unit>
+      <trans-unit id="collapse_state_search.numberOfSearchMatches" approved="yes">
+        <source>{count, plural, =0 {no matches} =1 {one match} other {# matches}}</source>
+        <target state="final">{count, plural, =0 {keine Ergebnisse} =1 {ein Ergebnis} other {# Ergebnisse}}</target>
       </trans-unit>
     </body>
   </file>

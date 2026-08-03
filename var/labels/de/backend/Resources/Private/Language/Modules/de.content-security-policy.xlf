@@ -3,15 +3,15 @@
   <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/Modules/content-security-policy.xlf" date="2023-01-11T00:00:00Z" product-name="typo3-cms-backend" target-language="de">
     <header/>
     <body>
-      <trans-unit id="mlang_labels_tablabel" approved="yes">
+      <trans-unit id="short_description" approved="yes">
         <source>Content Security Policy</source>
         <target state="final">Content Security Policy</target>
       </trans-unit>
-      <trans-unit id="mlang_labels_tabdescr" approved="yes">
+      <trans-unit id="description" approved="yes">
         <source>Allows to manage Content Security Policy settings.</source>
-        <target state="final">Erlaubt die Verwaltung von Content Security Policy-Einstellungen.</target>
+        <target state="final">Ermöglicht die Verwaltung der Einstellungen für die Content Security Policy.</target>
       </trans-unit>
-      <trans-unit id="mlang_tabs_tab" approved="yes">
+      <trans-unit id="title" approved="yes">
         <source>Content Security Policy</source>
         <target state="final">Content Security Policy</target>
       </trans-unit>
@@ -129,7 +129,7 @@
       </trans-unit>
       <trans-unit id="module.label.showDetails" approved="yes">
         <source>Show details for "%s" violation with URI: %s</source>
-        <target state="final">zeige Details zu „%s“-Verstoß der URI: %s</target>
+        <target state="final">Details zu „%s“-Verstoß mit URI anzeigen: %s</target>
       </trans-unit>
       <trans-unit id="module.button.apply" approved="yes">
         <source>Apply</source>

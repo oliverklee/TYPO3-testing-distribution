@@ -27,6 +27,10 @@
         <source>Unfortunately no dashboard widget matches your query, please try a different one.</source>
         <target state="final">Leider entspricht kein Dashboard-Widget Ihrer Anfrage, bitte versuchen Sie ein anderes.</target>
       </trans-unit>
+      <trans-unit id="widget.addToDashboard.userNotAllowed" approved="yes">
+        <source>No widgets are available with your current permissions.</source>
+        <target state="final">Mit deinen aktuellen Berechtigungen sind keine Widgets verfügbar.</target>
+      </trans-unit>
       <trans-unit id="widget.add.button.close" approved="yes">
         <source>Close</source>
         <target state="final">Schließen</target>
@@ -35,19 +39,35 @@
         <source>Add widget</source>
         <target state="final">Widget hinzufügen</target>
       </trans-unit>
-      <trans-unit id="widget.refresh" resname="widget.refresh" approved="yes">
+      <trans-unit id="widget.refresh" approved="yes">
         <source>Refresh Widget</source>
         <target state="final">Widget aktualisieren</target>
       </trans-unit>
-      <trans-unit id="widget.move" resname="widget.move" approved="yes">
+      <trans-unit id="widget.settings" approved="yes">
+        <source>Widget Settings</source>
+        <target state="final">Widget-Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="widget.settings.button.close" approved="yes">
+        <source>Close</source>
+        <target state="final">Schließen</target>
+      </trans-unit>
+      <trans-unit id="widget.settings.button.save" approved="yes">
+        <source>Save</source>
+        <target state="final">Speichern</target>
+      </trans-unit>
+      <trans-unit id="widget.settings.unchanged" approved="yes">
+        <source>Settings unchanged</source>
+        <target state="final">Einstellungen unverändert</target>
+      </trans-unit>
+      <trans-unit id="widget.move" approved="yes">
         <source>Move Widget</source>
         <target state="final">Widget verschieben</target>
       </trans-unit>
-      <trans-unit id="widget.remove" resname="widget.remove" approved="yes">
+      <trans-unit id="widget.remove" approved="yes">
         <source>Remove Widget</source>
         <target state="final">Widget entfernen</target>
       </trans-unit>
-      <trans-unit id="widget.remove.button.close" resname="widget.remove.button.close" approved="yes">
+      <trans-unit id="widget.remove.button.close" approved="yes">
         <source>Close</source>
         <target state="final">Schließen</target>
       </trans-unit>
@@ -219,6 +239,10 @@
         <source>Show all errors in log</source>
         <target state="final">Alle Fehler im Protokoll anzeigen</target>
       </trans-unit>
+      <trans-unit id="widgets.sysLogUsers.buttonText" approved="yes">
+        <source>Show all user logins</source>
+        <target state="final">Alle Benutzer-Logins anzeigen</target>
+      </trans-unit>
       <trans-unit id="widgets.sysLogErrors.chart.dataSet.0" approved="yes">
         <source>Number of errors</source>
         <target state="final">Anzahl der Fehler</target>
@@ -267,6 +291,10 @@
         <source>Latest changed pages</source>
         <target state="final">Zuletzt geänderte Seiten</target>
       </trans-unit>
+      <trans-unit id="widgets.latestChangedPages.title.restrictToCurrentUser" approved="yes">
+        <source>My latest changed pages</source>
+        <target state="final">Meine zuletzt geänderten Seiten</target>
+      </trans-unit>
       <trans-unit id="widgets.latestChangedPages.description" approved="yes">
         <source>Show a list of pages where the latest changes were made</source>
         <target state="final">Zeigt eine Liste von Seiten an, auf denen die letzten Änderungen vorgenommen wurden</target>
@@ -274,6 +302,10 @@
       <trans-unit id="widgets.latestChangedPages.empty" approved="yes">
         <source>No history found</source>
         <target state="final">Verlauf nicht gefunden</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestChangedPages.settings.restrictToCurrentUser" approved="yes">
+        <source>Only show my changes</source>
+        <target state="final">Nur meine Änderungen anzeigen</target>
       </trans-unit>
       <trans-unit id="widgets.latestChangedPages.column.change" approved="yes">
         <source>Change</source>
@@ -326,6 +358,42 @@
       <trans-unit id="widgets.latestChangedPages.table.pages" approved="yes">
         <source>Page</source>
         <target state="final">Seite</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestBeLogins.title" approved="yes">
+        <source>Latest backend logins</source>
+        <target state="final">Neueste Backend-Logins</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestBeLogins.description" approved="yes">
+        <source>Shows the latest backend user logins.</source>
+        <target state="final">Zeigt die letzten Backendbenutzer-Logins.</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestBeLogins.empty" approved="yes">
+        <source>No backend login history found</source>
+        <target state="final">Kein Backend-Login-Verlauf gefunden</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestBeLogins.column.time" approved="yes">
+        <source>Time</source>
+        <target state="final">Uhrzeit</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestBeLogins.column.user" approved="yes">
+        <source>User</source>
+        <target state="final">Benutzer</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestBeLogins.column.user.notFound" approved="yes">
+        <source>Not found</source>
+        <target state="final">Nicht gefunden</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestBeLogins.column.user.edit" approved="yes">
+        <source>Edit user</source>
+        <target state="final">Benutzer bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestBeLogins.settings.limit" approved="yes">
+        <source>Number of logins to display</source>
+        <target state="final">Anzahl der anzuzeigenden Logins</target>
+      </trans-unit>
+      <trans-unit id="widgets.latestBeLogins.settings.limit.description" approved="yes">
+        <source>Maximum number of backend user logins to show in the widget</source>
+        <target state="final">Maximale Anzahl von Backendbenutzer-Logins, die im Widget angezeigt werden sollen</target>
       </trans-unit>
       <trans-unit id="widget_group.general" approved="yes">
         <source>General</source>

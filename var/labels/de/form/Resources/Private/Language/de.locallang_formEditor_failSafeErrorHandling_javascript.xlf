@@ -4,8 +4,8 @@
     <header/>
     <body>
       <trans-unit id="formEditor.error.headline" approved="yes">
-        <source>Oops! Something went wrong.</source>
-        <target state="final">Ups! Etwas ist schief gegangen.</target>
+        <source>The form editor has stopped working.</source>
+        <target state="final">Der Formular-Editor funktioniert nicht mehr.</target>
       </trans-unit>
       <trans-unit id="formEditor.error.message" approved="yes">
         <source>Please contact your administrator.</source>

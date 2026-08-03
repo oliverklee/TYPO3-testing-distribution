@@ -4,12 +4,12 @@
     <header/>
     <body>
       <trans-unit id="showCheckintegrityInfoInReports.enable" approved="yes">
-        <source>Show information in reports if checkintegrity was not run.</source>
-        <target state="final">Zeige eine Information im "Berichte" Modul an, falls der Integritätscheck nicht aufgeführt wurde.</target>
+        <source>Show report warning if checkintegrity has not been run.</source>
+        <target state="final">Zeige eine Warnmeldung an, wenn „checkintegrity“ nicht ausgeführt wurde.</target>
       </trans-unit>
       <trans-unit id="showCheckintegrityInfoInReports.seconds" approved="yes">
-        <source>Number of seconds to consider last checkintegrity report.</source>
-        <target state="final">Anzahl von Sekunden, in denen ein Integritätscheck ausgeführt sein müsste</target>
+        <source>Set validity period (seconds) for the last checkintegrity report.</source>
+        <target state="final">Lege die Gültigkeitsdauer (Sekunden) für den letzten Integritätsbericht fest.</target>
       </trans-unit>
     </body>
   </file>

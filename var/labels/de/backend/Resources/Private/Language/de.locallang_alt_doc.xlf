@@ -43,17 +43,9 @@
         <source>You can select one of your most recently edited records from this list</source>
         <target state="final">Aus dieser Liste können die zuletzt bearbeiteten Datensätze ausgewählt werden</target>
       </trans-unit>
-      <trans-unit id="noDocuments_pagemodule" approved="yes">
-        <source>the Web&gt;Page module</source>
-        <target state="final">das Modul Web&gt;Seite</target>
-      </trans-unit>
       <trans-unit id="noDocuments_OR" approved="yes">
         <source>or</source>
         <target state="final">oder</target>
-      </trans-unit>
-      <trans-unit id="noDocuments_listmodule" approved="yes">
-        <source>the Web&gt;List module</source>
-        <target state="final">das Modul Web&gt;Liste</target>
       </trans-unit>
       <trans-unit id="noEditForm" approved="yes">
         <source>Edit form could not be loaded</source>
@@ -84,12 +76,12 @@
         <target state="final">Ja, speichern und diesen Datensatz duplizieren</target>
       </trans-unit>
       <trans-unit id="buttons.confirm.close_without_save.yes" approved="yes">
-        <source>Yes, discard my changes</source>
-        <target state="final">Ja, meine Änderungen verwerfen</target>
+        <source>Discard changes</source>
+        <target state="final">Änderungen verwerfen</target>
       </trans-unit>
       <trans-unit id="buttons.confirm.close_without_save.no" approved="yes">
-        <source>No, I will continue editing</source>
-        <target state="final">Nein, ich werde mit dem Bearbeiten fortfahren</target>
+        <source>Keep editing</source>
+        <target state="final">Bearbeitung fortsetzen</target>
       </trans-unit>
       <trans-unit id="buttons.confirm.save_and_close" approved="yes">
         <source>Save and close</source>
@@ -152,12 +144,12 @@
         <target state="final">Änderungen speichern und anzeigen</target>
       </trans-unit>
       <trans-unit id="label.confirm.close_without_save.title" approved="yes">
-        <source>Do you want to close without saving?</source>
-        <target state="final">Ohne Speichern schließen?</target>
+        <source>Unsaved changes</source>
+        <target state="final">Ungespeicherte Änderungen</target>
       </trans-unit>
       <trans-unit id="label.confirm.close_without_save.content" approved="yes">
-        <source>You currently have unsaved changes. Are you sure you want to discard these changes?</source>
-        <target state="final">Es gibt ungespeicherte Änderungen. Diese Änderungen tatsächlich verwerfen?</target>
+        <source>You currently have unsaved changes which will be discarded if you close without saving.</source>
+        <target state="final">Du hast noch nicht gespeicherte Änderungen, die verloren gehen, wenn du schließt, ohne zu speichern.</target>
       </trans-unit>
       <trans-unit id="buttons.confirm.delete_file.no" approved="yes">
         <source>Cancel</source>
@@ -176,8 +168,8 @@
         <target state="final">Abbrechen</target>
       </trans-unit>
       <trans-unit id="buttons.confirm.delete_record.yes" approved="yes">
-        <source>Delete record (!)</source>
-        <target state="final">Datensatz löschen (!)</target>
+        <source>Delete</source>
+        <target state="final">Löschen</target>
       </trans-unit>
       <trans-unit id="label.confirm.delete_record.title" approved="yes">
         <source>Delete this record?</source>
@@ -230,6 +222,18 @@
       <trans-unit id="notification.mass_saving.message" approved="yes">
         <source>%s records have been successfully saved.</source>
         <target state="final">%s Datensätze erfolgreich gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="notification.record_updated.title" approved="yes">
+        <source>Record updated</source>
+        <target state="final">Datensatz aktualisiert</target>
+      </trans-unit>
+      <trans-unit id="notification.record_updated.message" approved="yes">
+        <source>Record "%s" has been updated. The view is being refreshed.</source>
+        <target state="final">Datensatz "%s" wurde aktualisiert. Die Ansicht wird aktualisiert.</target>
+      </trans-unit>
+      <trans-unit id="openFullEditView" approved="yes">
+        <source>Open full editing view</source>
+        <target state="final">Vollständige Bearbeitungsansicht öffnen</target>
       </trans-unit>
       <trans-unit id="search.find_record" approved="yes">
         <source>Find records</source>

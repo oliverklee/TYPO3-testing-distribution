@@ -40,7 +40,7 @@
         <target state="final">{0} Datensätze löschen</target>
       </trans-unit>
       <trans-unit id="button.undo" approved="yes">
-        <source>Recover</source>
+        <source>Restore</source>
         <target state="final">Wiederherstellen</target>
       </trans-unit>
       <trans-unit id="button.expand" approved="yes">
@@ -52,7 +52,7 @@
         <target state="final">Kontextmenü für Mehrfachauswahl öffnen</target>
       </trans-unit>
       <trans-unit id="button.undoselected" approved="yes">
-        <source>Recover {0} records</source>
+        <source>Restore {0} records</source>
         <target state="final">{0} Datensätze wiederherstellen</target>
       </trans-unit>
       <trans-unit id="button.reload" approved="yes">
@@ -64,40 +64,40 @@
         <target state="final">Löschen bestätigen</target>
       </trans-unit>
       <trans-unit id="modal.undo.header" approved="yes">
-        <source>Recover records</source>
+        <source>Restore records</source>
         <target state="final">Datensätze wiederherstellen</target>
       </trans-unit>
       <trans-unit id="modal.undo.recursive" approved="yes">
-        <source>Recover content and subpages recursively</source>
-        <target state="final">Inhalt und Unterseiten rekursiv wiederherstellen</target>
+        <source>Restore content and subpages recursively</source>
+        <target state="final">Inhalte und Unterseiten rekursiv wiederherstellen</target>
       </trans-unit>
       <trans-unit id="modal.deletecontent.text" approved="yes">
-        <source>Do you really want to delete the record "{0}" {1} permanently? You cannot revert this action!</source>
-        <target state="final">Datensatz "{0}" {1} tatsächlich dauerhaft löschen? Diese Aktion können Sie nicht rückgängig machen!</target>
+        <source>Permanently delete record "{0}" {1}? You cannot undo this action.</source>
+        <target state="final">Datensatz „{0}“ {1} dauerhaft löschen? Diese Aktion kann nicht rückgängig gemacht werden.</target>
       </trans-unit>
       <trans-unit id="modal.massdelete.text" approved="yes">
-        <source>Do you really want to delete all selected records and potential subpages? You cannot revert this action!</source>
-        <target state="final">Alle ausgewählten Datensätze und eventuelle Unterseiten tatsächlich dauerhaft löschen? Diese Aktion können Sie nicht rückgängig machen!</target>
+        <source>Permanently delete all the selected records (and any subpages)? You cannot undo this action.</source>
+        <target state="final">Alle ausgewählten Datensätze (und alle Unterseiten) dauerhaft löschen? Diese Aktion kann nicht rückgängig gemacht werden.</target>
       </trans-unit>
       <trans-unit id="modal.deletepage.text" approved="yes">
-        <source>Do you really want to delete the page "{0}" {1} and all of its contents (records and pages) permanently? You cannot revert this action!</source>
-        <target state="final">Seite "{0}" {1} mit all ihrem Inhalt (Datensätze und Seiten) tatsächlich dauerhaft löschen? Diese Aktion können Sie nicht rückgängig machen!</target>
+        <source>Permanently delete page "{0}" {1} and all of its contents (records and pages)? You cannot undo this action.</source>
+        <target state="final">Möchtest du die Seite „{0}“ {1} und alle darin enthaltenen Inhalte (Datensätze und Seiten) endgültig löschen? Diese Aktion kann nicht rückgängig gemacht werden.</target>
       </trans-unit>
       <trans-unit id="modal.undocontent.text" approved="yes">
-        <source>Do you really want to recover the record "{0}" {1}?</source>
-        <target state="final">Datensatz "{0}" {1} tatsächlich wiederherstellen?</target>
+        <source>Restore record "{0}" {1}? The record will be restored in its initial position and may become immediately active.</source>
+        <target state="final">Datensatz „{0}“ {1} wiederherstellen? Der Datensatz wird an seiner ursprünglichen Position wiederhergestellt und ist möglicherweise sofort aktiv.</target>
       </trans-unit>
       <trans-unit id="modal.undopage.text" approved="yes">
-        <source>Do you really want to recover the page "{0}" {1}, its contents and optionally all of its subpages?</source>
-        <target state="final">Seite "{0}" {1} mit all ihrem Inhalt und optional alle ihre Unterseiten tatsächlich wiederherstellen?</target>
+        <source>Restore page "{0}" {1}, its contents (and any subpages)? The pages and their content are restored to their original location and may become immediately visible online.</source>
+        <target state="final">Seite „{0}“ {1} und deren Inhalt (sowie alle Unterseiten) wiederherstellen? Die Seiten und deren Inhalt werden an ihrem ursprünglichen Speicherort wiederhergestellt und sind möglicherweise sofort online sichtbar.</target>
       </trans-unit>
       <trans-unit id="modal.undo.parentpages" approved="yes">
-        <source>All parent pages have been restored to ensure a valid rootline!</source>
-        <target state="final">Alle Elternseiten wurden wiederhergestellt, um eine gültige Verbindung zur Websitewurzel sicherzustellen!</target>
+        <source>All parent pages have been restored to ensure a valid rootline.</source>
+        <target state="final">Alle übergeordneten Seiten wurden wiederhergestellt, um eine gültige Rootline sicherzustellen.</target>
       </trans-unit>
       <trans-unit id="modal.massundo.text" approved="yes">
-        <source>Do you really want to recover all selected records and optionally potential subpages?</source>
-        <target state="final">Alle ausgewählten Datensätze und optional potenzielle Unterseiten tatsächlich wiederherstellen?</target>
+        <source>Restore all selected records and any subpages? All records are restored to their original position and may take effect immediately, including the pages and their content that may become visible online. Undoing this requires deleting each record individually.</source>
+        <target state="final">Alle ausgewählten Datensätze und Unterseiten wiederherstellen? Alle Datensätze werden an ihrer ursprünglichen Position wiederhergestellt und können sofort wirksam werden, einschließlich der Seiten und ihrer Inhalte, die online sichtbar werden können. Um dies rückgängig zu machen, muss jeder Datensatz einzeln gelöscht werden.</target>
       </trans-unit>
       <trans-unit id="flashmessage.delete.unauthorized" approved="yes">
         <source>Insufficient permissions to delete records.</source>
@@ -124,23 +124,23 @@
         <target state="final">%d Datensätze konnten nicht gelöscht werden.</target>
       </trans-unit>
       <trans-unit id="flashmessage.undo.norecordsselected" approved="yes">
-        <source>No records set to recover.</source>
-        <target state="final">Keine Datensätze zum Wiederherstellen markiert.</target>
+        <source>No records set to restore.</source>
+        <target state="final">Es sind keine Datensätze zum Wiederherstellen vorhanden.</target>
       </trans-unit>
       <trans-unit id="flashmessage.undo.success.singular" approved="yes">
-        <source>One record was recovered.</source>
+        <source>One record was restored.</source>
         <target state="final">Ein Datensatz wurde wiederhergestellt.</target>
       </trans-unit>
       <trans-unit id="flashmessage.undo.success.plural" approved="yes">
-        <source>%d records were recovered.</source>
+        <source>%d records were restored.</source>
         <target state="final">%d Datensätze wurden wiederhergestellt.</target>
       </trans-unit>
       <trans-unit id="flashmessage.undo.failure.singular" approved="yes">
-        <source>Could not recover one record.</source>
+        <source>Could not restore one record.</source>
         <target state="final">Ein Datensatz konnte nicht wiederhergestellt werden.</target>
       </trans-unit>
       <trans-unit id="flashmessage.undo.failure.plural" approved="yes">
-        <source>Could not recover %d records.</source>
+        <source>Could not restore %d records.</source>
         <target state="final">%d Datensätze konnten nicht wiederhergestellt werden.</target>
       </trans-unit>
       <trans-unit id="alert.noDeletedRecords" approved="yes">

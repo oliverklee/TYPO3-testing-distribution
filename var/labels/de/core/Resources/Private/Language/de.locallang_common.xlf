@@ -275,6 +275,51 @@
         <source>Please confirm</source>
         <target state="final">Bitte bestätigen</target>
       </trans-unit>
+      <!-- Colors -->
+      <trans-unit id="color" approved="yes">
+        <source>Color</source>
+        <target state="final">Farbe</target>
+      </trans-unit>
+      <trans-unit id="color.red" approved="yes">
+        <source>Red</source>
+        <target state="final">Rot</target>
+      </trans-unit>
+      <trans-unit id="color.orange" approved="yes">
+        <source>Orange</source>
+        <target state="final">Orange</target>
+      </trans-unit>
+      <trans-unit id="color.yellow" approved="yes">
+        <source>Yellow</source>
+        <target state="final">Gelb</target>
+      </trans-unit>
+      <trans-unit id="color.lime" approved="yes">
+        <source>Lime</source>
+        <target state="final">Limone</target>
+      </trans-unit>
+      <trans-unit id="color.green" approved="yes">
+        <source>Green</source>
+        <target state="final">Grün</target>
+      </trans-unit>
+      <trans-unit id="color.teal" approved="yes">
+        <source>Teal</source>
+        <target state="final">Türkis</target>
+      </trans-unit>
+      <trans-unit id="color.blue" approved="yes">
+        <source>Blue</source>
+        <target state="final">Blau</target>
+      </trans-unit>
+      <trans-unit id="color.indigo" approved="yes">
+        <source>Indigo</source>
+        <target state="final">Indigo</target>
+      </trans-unit>
+      <trans-unit id="color.purple" approved="yes">
+        <source>Purple</source>
+        <target state="final">Violett</target>
+      </trans-unit>
+      <trans-unit id="color.magenta" approved="yes">
+        <source>Magenta</source>
+        <target state="final">Magenta</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

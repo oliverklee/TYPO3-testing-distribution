@@ -67,6 +67,30 @@
         <source>The pages were created successfully.</source>
         <target state="final">Die Seiten wurden erfolgreich erstellt.</target>
       </trans-unit>
+      <trans-unit id="multiplePagesCanNotBeCreated.title" approved="yes">
+        <source>Creation of multiple is disabled because of field requirements</source>
+        <target state="final">Die Erstellung von mehreren Seiten ist aufgrund von Feldanforderungen deaktiviert</target>
+      </trans-unit>
+      <trans-unit id="multiplePagesCanNotBeCreated.message" approved="yes">
+        <source>Please use the page creation wizard instead.</source>
+        <target state="final">Bitte verwende stattdessen den Seitenerstellungs-Assistenten.</target>
+      </trans-unit>
+      <trans-unit id="multiplePagesCanNotBeCreated.buttonLabel" approved="yes">
+        <source>Create single page</source>
+        <target state="final">Einzelne Seite erstellen</target>
+      </trans-unit>
+      <trans-unit id="availablePageTypesHaveBeenFiltered.title" approved="yes">
+        <source>Some page types have been filtered because of field requirements</source>
+        <target state="final">Einige Seitentypen wurden aufgrund von Feldanforderungen gefiltert</target>
+      </trans-unit>
+      <trans-unit id="availablePageTypesHaveBeenFiltered.message" approved="yes">
+        <source>The following page types need to be created using the page creation wizard:</source>
+        <target state="final">Die folgenden Seitentypen müssen mit dem Seitenerstellungsassistenten erstellt werden:</target>
+      </trans-unit>
+      <trans-unit id="availablePageTypesHaveBeenFiltered.buttonLabel" approved="yes">
+        <source>Create single page</source>
+        <target state="final">Einzelne Seite erstellen</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

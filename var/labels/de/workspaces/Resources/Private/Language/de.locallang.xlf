@@ -7,6 +7,10 @@
         <source>Workspaces</source>
         <target state="final">Workspaces</target>
       </trans-unit>
+      <trans-unit id="indicator.workspacePrefix" approved="yes">
+        <source>Workspace</source>
+        <target state="final">Arbeitsumgebung</target>
+      </trans-unit>
       <trans-unit id="noResults" approved="yes">
         <source>No records found.</source>
         <target state="final">Keine Datensätze gefunden.</target>
@@ -56,23 +60,19 @@
         <target state="final">Liste der Workspaces</target>
       </trans-unit>
       <trans-unit id="editorInLive" approved="yes">
-        <source>You are in LIVE workspace. Please select a draft workspace from the top bar
-					menu before you can review and publish changes.
-				</source>
-        <target state="final">Sie befinden sich in der LIVE-Arbeitsumgebung. Bitte wählen Sie eine Entwurf-Arbeitsumgebung aus der oberen Leiste, um Änderungen zu prüfen und zu veröffentlichen.</target>
+        <source>You are in LIVE workspace. Please select a draft workspace from the top bar menu before you can review and publish changes.</source>
+        <target state="final">Du befindest dich in der LIVE-Arbeitsumgebung. Bitte wähle eine Entwurf-Arbeitsumgebung aus der oberen Leiste, um Änderungen zu prüfen und zu veröffentlichen.</target>
       </trans-unit>
       <trans-unit id="moduleOnPageIdZero" approved="yes">
         <source>Please select a page in the page tree to review and publish changes.</source>
         <target state="final">Bitte wählen Sie eine Seite im Seitenbaum aus, um Änderungen zu überprüfen und zu veröffentlichen.</target>
       </trans-unit>
       <trans-unit id="admin.noWorkspaceSetup.title" approved="yes">
-        <source>No workspace set up!</source>
-        <target state="final">Keine Arbeitsumgebung eingerichtet!</target>
+        <source>No workspace set up</source>
+        <target state="final">Kein Arbeitsbereich eingerichtet</target>
       </trans-unit>
       <trans-unit id="admin.noWorkspaceSetup.message" approved="yes">
-        <source>There are currently no workspace records configured in the database. To use the workspace
-					functionality, at least one workspace must be set up on the root page.
-				</source>
+        <source>There are currently no workspace records configured in the database. To use the workspace functionality, at least one workspace must be set up on the root page.</source>
         <target state="final">Es sind noch keine Arbeitsumgebungen in der Datenbank konfiguriert. Um diese Funktion zu nutzen, muss mindestens eine Arbeitsumgebung auf der Anfangsseite eingerichtet werden.</target>
       </trans-unit>
       <trans-unit id="admin.noWorkspaceSetup.buttonCreate" approved="yes">
@@ -167,9 +167,13 @@
         <source>Current Stage</source>
         <target state="final">Aktuelle Stufe</target>
       </trans-unit>
-      <trans-unit id="column.lastChangeOn" approved="yes">
-        <source>Last changed on</source>
-        <target state="final">Zuletzt geändert am</target>
+      <trans-unit id="column.last_change" approved="yes">
+        <source>Last changed</source>
+        <target state="final">Letzte Änderung</target>
+      </trans-unit>
+      <trans-unit id="column.editor.unknown" approved="yes">
+        <source>Unknown</source>
+        <target state="final">Unbekannt</target>
       </trans-unit>
       <trans-unit id="column.actions" approved="yes">
         <source>Actions</source>
@@ -234,6 +238,10 @@
       <trans-unit id="tooltip.viewElementAction" approved="yes">
         <source>Preview element</source>
         <target state="final">Elementvorschau</target>
+      </trans-unit>
+      <trans-unit id="tooltip.qrCode" approved="yes">
+        <source>Preview QR code</source>
+        <target state="final">Vorschau QR-Code</target>
       </trans-unit>
       <trans-unit id="tooltip.editElementAction" approved="yes">
         <source>Edit element</source>
@@ -364,8 +372,8 @@
         <target state="final">Stufe nicht gefunden</target>
       </trans-unit>
       <trans-unit id="info.newpage" approved="yes">
-        <source>New Page!</source>
-        <target state="final">Neue Seite!</target>
+        <source>New Page</source>
+        <target state="final">Neue Seite</target>
       </trans-unit>
       <trans-unit id="info.newpage.detail" approved="yes">
         <source>The previewed page has been created in a workspace and has no live counterpart.</source>
@@ -519,25 +527,21 @@
         <source>Switch to workspace</source>
         <target state="final">Arbeitsbereich wechseln</target>
       </trans-unit>
-      <trans-unit id="toolbarItems.workspace" approved="yes">
-        <source>Workspace</source>
-        <target state="final">Arbeitsumgebung</target>
+      <trans-unit id="action.selectWorkspace" approved="yes">
+        <source>Select workspace</source>
+        <target state="final">Arbeitsbereich auswählen</target>
       </trans-unit>
-      <trans-unit id="toolbarItems.workspace.intro.text" approved="yes">
-        <source>The following workspaces are available to you.</source>
-        <target state="final">Die folgenden Arbeitsumgebungen stehen dir zur Verfügung.</target>
+      <trans-unit id="workspaceInfo.live.title" approved="yes">
+        <source>LIVE</source>
+        <target state="final">LIVE</target>
       </trans-unit>
-      <trans-unit id="toolbarItems.workspace.intro.link" approved="yes">
-        <source>Workspaces Module</source>
-        <target state="final">Modul Arbeitsbereiche</target>
+      <trans-unit id="workspaceInfo.live.description" approved="yes">
+        <source>Changes made in this workspace are published immediately and are directly visible on the live website.</source>
+        <target state="final">Änderungen in diesem Arbeitsbereich werden sofort veröffentlicht und sind direkt auf der Live-Website sichtbar.</target>
       </trans-unit>
-      <trans-unit id="toolbarItems.workspace.intro.link.description" approved="yes">
-        <source>To view changes made in a workspace, please go to:</source>
-        <target state="final">Um die in einer Arbeitsumgebung vorgenommenen Änderungen zu sehen, gehe bitte zu:</target>
-      </trans-unit>
-      <trans-unit id="toolbarItems.workspace.noWorkspaceFound" approved="yes">
-        <source>No workspaces found.</source>
-        <target state="final">Keine Arbeitsumgebungen gefunden.</target>
+      <trans-unit id="userSetting.showWorkspaceLiveIndicator" approved="yes">
+        <source>Enable workspace Live indicator</source>
+        <target state="final">Workspace Live Indikator aktivieren</target>
       </trans-unit>
     </body>
   </file>

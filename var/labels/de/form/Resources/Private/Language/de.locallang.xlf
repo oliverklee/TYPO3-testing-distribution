@@ -7,14 +7,6 @@
         <source>Uploaded image</source>
         <target state="final">Hochgeladenes Bild</target>
       </trans-unit>
-      <trans-unit id="element.DatePicker.properties.timeSelectorHourLabel" approved="yes">
-        <source>Hour</source>
-        <target state="final">Stunde</target>
-      </trans-unit>
-      <trans-unit id="element.DatePicker.properties.timeSelectorMinuteLabel" approved="yes">
-        <source>Minute</source>
-        <target state="final">Minute</target>
-      </trans-unit>
       <trans-unit id="validation.error.1221560910" approved="yes">
         <source>This field is mandatory.</source>
         <target state="final">Das ist ein Pflichtfeld.</target>
@@ -135,6 +127,10 @@
         <source>You must select a date after %s.</source>
         <target state="final">Sie müssen ein Datum nach dem %s wählen.</target>
       </trans-unit>
+      <trans-unit id="validation.error.1748345955" approved="yes">
+        <source>This field cannot be validated due to a configuration error. Please contact the website owner.</source>
+        <target state="final">Dieses Feld kann aufgrund eines Konfigurationsfehlers nicht validiert werden. Bitte kontaktieren Sie den Webseitenbetreiber.</target>
+      </trans-unit>
       <trans-unit id="validation.error.1556283177" approved="yes">
         <source>Password does not match confirmation</source>
         <target state="final">Die beiden Passworteingaben sind nicht gleich</target>
@@ -163,9 +159,17 @@
         <source>Upload failed.</source>
         <target state="final">Das Hochladen ist fehlgeschlagen</target>
       </trans-unit>
+      <trans-unit id="upload.remove" approved="yes">
+        <source>Remove</source>
+        <target state="final">Entfernen</target>
+      </trans-unit>
       <trans-unit id="form.configuration.module.provider" approved="yes">
         <source>Form: YAML Configuration</source>
         <target state="final">Formular: YAML-Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="form.finisher.error" approved="yes">
+        <source>Your form could not be submitted due to a technical issue. It might be a temporary issue, but can also be related to your input.</source>
+        <target state="final">Aufgrund eines technischen Problems konnte dein Formular nicht übermittelt werden. Es könnte sich um ein vorübergehendes Problem handeln, aber auch mit deinen Eingaben zusammenhängen.</target>
       </trans-unit>
       <trans-unit id="pagination.previous" approved="yes">
         <source>Previous</source>

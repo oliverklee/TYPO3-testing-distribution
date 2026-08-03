@@ -15,13 +15,13 @@
         <source>New form name</source>
         <target state="final">Neuer Formularname</target>
       </trans-unit>
-      <trans-unit id="formManager.form_save_path" approved="yes">
-        <source>Storage</source>
-        <target state="final">Speicherort</target>
+      <trans-unit id="formManager.form_storageLocation" approved="yes">
+        <source>Location</source>
+        <target state="final">Ort</target>
       </trans-unit>
-      <trans-unit id="formManager.form_save_path_description" approved="yes">
-        <source>Select the storage where you want to save your form definition.</source>
-        <target state="final">Wählen Sie den Speicherort, wo Sie Ihre Formulardefinition speichern möchten.</target>
+      <trans-unit id="formManager.form_storageLocation_description" approved="yes">
+        <source>Select the location where the form will be saved.</source>
+        <target state="final">Wähle den Ort, an dem das Formular gespeichert wird.</target>
       </trans-unit>
       <trans-unit id="formManager.form_prototype" approved="yes">
         <source>Form prototype</source>
@@ -32,8 +32,8 @@
         <target state="final">Vorlage</target>
       </trans-unit>
       <trans-unit id="formManager.form_template_description" approved="yes">
-        <source>Select a template on which you want to build your new form.</source>
-        <target state="final">Wählen Sie eine Vorlage aus, anhand der Sie Ihr neues Formular erstellen möchten.</target>
+        <source>Select a template for building your new form.</source>
+        <target state="final">Wähle eine Vorlage für die Erstellung des neuen Formulars aus.</target>
       </trans-unit>
       <trans-unit id="formManager.form_headline_general" approved="yes">
         <source>General</source>
@@ -56,20 +56,24 @@
         <target state="final">Löschen bestätigen</target>
       </trans-unit>
       <trans-unit id="formManager.remove_form_message" approved="yes">
-        <source>Do you really want to delete the form "{0}" permanently? You cannot revert this action!</source>
-        <target state="final">Willst du das Formular "{0}" wirklich endgültig löschen? Du kannst diese Aktion nicht rückgängig machen!</target>
+        <source>Delete form "{0}"? Forms saved as files are permanently deleted and cannot be restored from the Recycler.</source>
+        <target state="final">Formular "{0}" löschen? Als Dateien gespeicherte Formulare werden endgültig gelöscht und können nicht aus dem Papierkorb wiederhergestellt werden.</target>
       </trans-unit>
       <trans-unit id="formManager.newFormWizard.step1.title" approved="yes">
         <source>Create new form</source>
         <target state="final">Neues Formular erstellen</target>
+      </trans-unit>
+      <trans-unit id="formManager.newFormWizard.step.modes.summary.title" approved="yes">
+        <source>Mode</source>
+        <target state="final">Modus</target>
       </trans-unit>
       <trans-unit id="formManager.newFormWizard.step1.progressLabel" approved="yes">
         <source>Choose</source>
         <target state="final">Auswählen</target>
       </trans-unit>
       <trans-unit id="formManager.newFormWizard.step1.noStorages" approved="yes">
-        <source>No accessible form storage folders</source>
-        <target state="final">Keine zugänglichen Formularspeicherordner</target>
+        <source>You do not have permission to create forms. Please contact your administrator.</source>
+        <target state="final">Dir fehlt die Berechtigung, Formulare zu erstellen. Bitte kontaktieren Deinen Administrator.</target>
       </trans-unit>
       <trans-unit id="formManager.newFormWizard.step2.title" approved="yes">
         <source>Settings</source>
@@ -98,6 +102,22 @@
       <trans-unit id="formManager.newFormWizard.step4.errorMessage" approved="yes">
         <source>The form could not be saved</source>
         <target state="final">Das Formular konnte nicht gespeichert werden:</target>
+      </trans-unit>
+      <trans-unit id="formManager.newFormWizard.step.storages.title" approved="yes">
+        <source>Storage location</source>
+        <target state="final">Speicherort</target>
+      </trans-unit>
+      <trans-unit id="formManager.newFormWizard.step.storages.description" approved="yes">
+        <source>Choose how the form should be saved:</source>
+        <target state="final">Wähle, wie das Formular gespeichert werden soll:</target>
+      </trans-unit>
+      <trans-unit id="formManager.newFormWizard.step.storages.progressLabel" approved="yes">
+        <source>Storage</source>
+        <target state="final">Speicherort</target>
+      </trans-unit>
+      <trans-unit id="formManager.newFormWizard.step.storages.summary.title" approved="yes">
+        <source>Storage</source>
+        <target state="final">Speicherort</target>
       </trans-unit>
       <trans-unit id="formManager.duplicateFormWizard.step1.title" approved="yes">
         <source>Duplicate form "{0}"</source>
@@ -178,6 +198,14 @@
       <trans-unit id="formManager.predefinedForm.description" approved="yes">
         <source>Create a new form and use an existing form template for it.</source>
         <target state="final">Erstellen Sie ein neues Formular auf Basis einer vorhandenen Formularvorlage.</target>
+      </trans-unit>
+      <trans-unit id="formManager.finisher.redirect.success.title" approved="yes">
+        <source>Form created</source>
+        <target state="final">Formular erstellt</target>
+      </trans-unit>
+      <trans-unit id="formManager.finisher.redirect.success.description" approved="yes">
+        <source>The form has been successfully created. Click "Finish" to be redirected to the newly created form.</source>
+        <target state="final">Das Formular wurde erfolgreich erstellt. Klicke "Beenden", um zum neu erstellten Formular weitergeleitet zu werden.</target>
       </trans-unit>
     </body>
   </file>

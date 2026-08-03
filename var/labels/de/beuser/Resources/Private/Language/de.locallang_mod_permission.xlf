@@ -143,25 +143,13 @@
         <source>Create new pages under this page.</source>
         <target state="final">Neue Seiten unter dieser Seite erstellen.</target>
       </trans-unit>
-      <trans-unit id="mlang_labels_tablabel" approved="yes">
-        <source>Page editing permissions</source>
-        <target state="final">Seitenbearbeitungsrechte</target>
-      </trans-unit>
-      <trans-unit id="mlang_labels_tabdescr" approved="yes">
-        <source>Setting of page permissions is vital for controlling backend user access to pages. You can assign a user and a group as owners of a page and set access permissions for each.</source>
-        <target state="final">Das Setzen der Seitenzugriffsrechte ist elementar, um den Zugriff der Backend-Benutzer auf die einzelnen Seiten zu steuern. Es können einzelne Benutzer und Benutzergruppen als Besitzer der Seite definiert und deren Zugriffsrechte festgelegt werden.</target>
-      </trans-unit>
-      <trans-unit id="mlang_tabs_tab" approved="yes">
-        <source>Permissions</source>
-        <target state="final">Berechtigungen</target>
-      </trans-unit>
       <trans-unit id="WorkspaceWarning" approved="yes">
         <source>Workspace Warning</source>
         <target state="final">Arbeitsumgebungswarnung</target>
       </trans-unit>
       <trans-unit id="WorkspaceWarningText" approved="yes">
-        <source>Permissions you set in the workspace are effective on the elements only after they are published! If you need to set permissions which are effective right now, you must do so in the Live workspace. (Permissions are always evaluated on the Live workspace record/placeholder of a draft version)</source>
-        <target state="final">In einer Arbeitsumgebung gesetzte Berechtigungen werden erst nach der Veröffentlichung aktiv! Wenn Sie sofort gültige Berechtigungen benötigen, müssen Sie diese in der LIVE-Arbeitsumgebung setzen. (Berechtigungen werden stets anhand des Datensatzes/Platzhalters einer Entwurfsversion in der LIVE-Arbeitsumgebung ausgewertet.)</target>
+        <source>Permissions set in a workspace take effect only after the related elements are published. To apply permissions immediately, configure them in the Live workspace. (Permissions are always evaluated based on the Live workspace record or the placeholder of a draft version)</source>
+        <target state="final">Berechtigungen, die in einem Arbeitsbereich festgelegt werden, werden erst wirksam, nachdem die entsprechenden Elemente veröffentlicht wurden. Um die Berechtigungen sofort zu übernehmen, konfiguriere diese im Live-Arbeitsbereich. (Berechtigungen werden immer anhand des Live-Workspace-Datensatzes oder des Platzhalters einer Entwurfsversion ausgewertet)</target>
       </trans-unit>
       <trans-unit id="notSet" approved="yes">
         <source>not set</source>

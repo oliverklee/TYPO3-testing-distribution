@@ -8,7 +8,7 @@
         <target state="final">SEO</target>
       </trans-unit>
       <trans-unit id="widget.pagesWithoutMetaDescription.title" approved="yes">
-        <source>Pages missing Meta Description</source>
+        <source>Pages missing meta description</source>
         <target state="final">Seiten ohne Meta-Beschreibung</target>
       </trans-unit>
       <trans-unit id="widget.pagesWithoutMetaDescription.description" approved="yes">
@@ -16,8 +16,8 @@
         <target state="final">Seiten mit fehlender Meta-Beschreibung suchen und anzeigen</target>
       </trans-unit>
       <trans-unit id="widget.pagesWithoutMetaDescription.noMissingDescriptions" approved="yes">
-        <source>There are no pages with missing description. Good job!</source>
-        <target state="final">Keine Seiten mit fehlender Beschreibung. Gute Arbeit!</target>
+        <source>All pages have a proper meta description — everything looks good.</source>
+        <target state="final">Alle Seiten haben eine korrekte Meta-Beschreibung — alles sieht gut aus.</target>
       </trans-unit>
     </body>
   </file>

@@ -27,41 +27,45 @@
         <source>Actual backend layout</source>
         <target state="final">Aktuelles Backend-Layout</target>
       </trans-unit>
-      <trans-unit id="lang_renderl10n_viewPage" approved="yes">
-        <source>View page</source>
-        <target state="final">Seite anzeigen</target>
-      </trans-unit>
       <trans-unit id="lang_title" approved="yes">
         <source>Localization overview</source>
         <target state="final">Lokalisierungs-Übersicht</target>
       </trans-unit>
-      <trans-unit id="lang_renderl10n_editDefaultLanguagePage" approved="yes">
-        <source>Edit default language page properties</source>
-        <target state="final">Seiteneigenschaften der Standardsprache bearbeiten</target>
+      <trans-unit id="lang_renderl10n_editPage" approved="yes">
+        <source>Edit page content</source>
+        <target state="final">Seiteninhalt bearbeiten</target>
       </trans-unit>
-      <trans-unit id="lang_renderl10n_editLangOverlays" approved="yes">
-        <source>Edit all language overlay records</source>
-        <target state="final">Alle Übersetzungen bearbeiten</target>
+      <trans-unit id="lang_renderl10n_editTranslatedPage" approved="yes">
+        <source>Edit translated page content</source>
+        <target state="final">Übersetzten Seiteninhalt bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="lang_renderl10n_viewPage" approved="yes">
+        <source>View page</source>
+        <target state="final">Seite anzeigen</target>
+      </trans-unit>
+      <trans-unit id="lang_renderl10n_viewTranslatedPage" approved="yes">
+        <source>View translated page</source>
+        <target state="final">Übersetzte Seite anzeigen</target>
       </trans-unit>
       <trans-unit id="lang_renderl10n_editPageProperties" approved="yes">
+        <source>Edit page properties</source>
+        <target state="final">Seiteneigenschaften bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="lang_renderl10n_editTranslatedPageProperties" approved="yes">
+        <source>Edit translated page properties</source>
+        <target state="final">Übersetzte Seiteneigenschaften bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="lang_renderl10n_editAllPageProperties" approved="yes">
         <source>Edit all page properties</source>
         <target state="final">Alle Seiteneigenschaften bearbeiten</target>
       </trans-unit>
-      <trans-unit id="lang_renderl10n_editPage" approved="yes">
-        <source>Edit page</source>
-        <target state="final">Seite bearbeiten</target>
-      </trans-unit>
-      <trans-unit id="lang_renderl10n_editPageLang" approved="yes">
-        <source>Edit page translation</source>
-        <target state="final">Übersetzung bearbeiten</target>
+      <trans-unit id="lang_renderl10n_editAllTranslationedPageProperties" approved="yes">
+        <source>Edit all translated page properties</source>
+        <target state="final">Alle übersetzten Seiteneigenschaften bearbeiten</target>
       </trans-unit>
       <trans-unit id="lang_renderl10n_badThingThereAre" approved="yes">
-        <source>ERROR: there are two or more page overlay records for this language! Only one is allowed!</source>
-        <target state="final">FEHLER: Es existieren zwei oder mehr Übersetzungen für diese Seite! Nur eine ist erlaubt!</target>
-      </trans-unit>
-      <trans-unit id="lang_renderl10n_editLanguageOverlayRecord" approved="yes">
-        <source>Edit language overlay record</source>
-        <target state="final">Übersetzung bearbeiten</target>
+        <source>Multiple translated page records exist for this language, but only one is allowed. Please remove the extra records.</source>
+        <target state="final">Für diese Sprache existieren mehrere übersetzte Seiteneinträge, aber nur einer ist zulässig. Bitte entferne die überzähligen Einträge.</target>
       </trans-unit>
       <trans-unit id="lang_renderl10n_page" approved="yes">
         <source>Page</source>

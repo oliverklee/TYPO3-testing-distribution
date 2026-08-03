@@ -56,16 +56,16 @@
         <target state="final">TypoScript-Einstellungen wurden implizit aus Site-Sets Abhängigkeiten generiert</target>
       </trans-unit>
       <trans-unit id="infoTypoScriptRecordFromSite.message" approved="yes">
-        <source>The site configuration '%s' has one or more dependencies on site sets. The sets can be configured in the 'Site Management » Settings' backend module. The TypoScript definitions can be edited on the file system.</source>
-        <target state="final">Die Site-Konfiguration '%s' hat eine oder mehrere Abhängigkeiten von Site-Sets. Die Sets können im Backend-Modul 'Site Management » Einstellungen' konfiguriert werden. Die TypoScript-Definitionen können im Dateisystem bearbeitet werden.</target>
+        <source>The site configuration '%s' has one or more dependencies on site sets. The sets can be configured in the 'Sites » Setup' backend module. The TypoScript definitions can be edited on the file system.</source>
+        <target state="final">Die Site-Konfiguration '%s' hat eine oder mehrere Abhängigkeiten von Site-Sets. Die Gruppen können im Backend-Modul „Websites » Einrichtung“ konfiguriert werden. Die TypoScript-Definitionen können im Dateisystem bearbeitet werden.</target>
       </trans-unit>
       <trans-unit id="noConstantsButSiteSettings.title" approved="yes">
         <source>Site Settings available</source>
         <target state="final">Site-Einstellungen verfügbar</target>
       </trans-unit>
       <trans-unit id="noConstantsButSiteSettings.message" approved="yes">
-        <source>Edit site settings via the 'Site Management » Settings' backend module.</source>
-        <target state="final">Bearbeite die Site-Einstellungen über das Backend-Modul „Site Management » Einstellungen‘.</target>
+        <source>Edit site settings via the 'Sites » Setup' backend module.</source>
+        <target state="final">Bearbeite die Website-Einstellungen über das Backend-Modul „Websites » Einrichtung“.</target>
       </trans-unit>
     </body>
   </file>

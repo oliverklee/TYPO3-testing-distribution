@@ -3,17 +3,13 @@
   <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/Modules/about.xlf" date="2011-10-17T20:22:34Z" product-name="typo3-cms-backend" target-language="de">
     <header/>
     <body>
-      <trans-unit id="mlang_labels_tablabel" approved="yes">
+      <trans-unit id="short_description" approved="yes">
         <source>About TYPO3 CMS</source>
         <target state="final">Über TYPO3 CMS</target>
       </trans-unit>
-      <trans-unit id="mlang_labels_tabdescr" approved="yes">
+      <trans-unit id="description" approved="yes">
         <source>Displays the basic facts about the TYPO3 application, version and licensing terms.</source>
-        <target state="final">Zeigt die Grunddaten zu TYPO3, Versionsinformationen und Lizenzbedingungen an.</target>
-      </trans-unit>
-      <trans-unit id="mlang_tabs_tab" approved="yes">
-        <source>About TYPO3 CMS</source>
-        <target state="final">Über TYPO3 CMS</target>
+        <target state="final">Zeigt die grundlegenden Informationen zur TYPO3-Anwendung, zur Version und zu den Lizenzbedingungen an.</target>
       </trans-unit>
       <trans-unit id="title" approved="yes">
         <source>About TYPO3 CMS</source>
@@ -36,8 +32,10 @@
         <target state="final">Das TYPO3 CMS ist ein quelloffenes Business-Level Content Management System, welches weltweit verwendet wird und jegliche Webseiten aller Arten verwaltet. Von kleinen Websites für Non-Profits bis hin zu mehrsprachigen Business Lösungen für große Konzerne. &lt;br /&gt;&lt;br /&gt;Weitere Informationen auf &lt;a href="https://typo3.org/typo3-cms/" target="_blank" rel="noopener noreferrer"&gt;typo3.org&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;TYPO3 CMS ist &lt;b&gt;frei verfügbar&lt;/b&gt; unter der &lt;a href="https://typo3.org/typo3-cms/overview/licenses/" target="_blank"&gt;TYPO3-Lizenz (GNU/GPL)&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Du benutzt %s %s</target>
       </trans-unit>
       <trans-unit id="cms_description" approved="yes">
-        <source>TYPO3 CMS is an enterprise-class, Open Source Content Management System, used internationally to build and manage websites of all types, from small sites for non-profits to multilingual enterprise solutions for large corporations.&lt;br /&gt;&lt;br /&gt;For further information visit &lt;a href="https://typo3.org/typo3-cms/" target="_blank" rel="noreferrer"&gt;typo3.org&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;TYPO3 CMS is &lt;b&gt;freely available&lt;/b&gt; under the &lt;a href="https://typo3.org/project/licenses/" target="_blank"&gt;TYPO3-license (GNU/GPL)&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;You are using version %s - Copyright %s %s</source>
-        <target state="final">Das TYPO3 CMS ist ein quelloffenes Business-Level Content Management System, welches weltweit verwendet wird und jegliche Webseiten aller Arten verwaltet. Von kleinen Websites für Non-Profits bis hin zu mehrsprachigen Business Lösungen für große Konzerne. &lt;br /&gt;&lt;br /&gt;Weitere Informationen auf &lt;a href="https://typo3.org/typo3-cms/" target="_blank" rel="noopener noreferrer"&gt;typo3.org&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;TYPO3 CMS ist &lt;b&gt;frei verfügbar&lt;/b&gt; unter der &lt;a href="https://typo3.org/typo3-cms/overview/licenses/" target="_blank"&gt;TYPO3-Lizenz (GNU/GPL)&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Du benutzt Version %s - Copyright %s %s</target>
+        <source>TYPO3 CMS is an enterprise-class, Open Source Content Management System, used internationally to build and manage websites of all types, from small sites for non-profits to multilingual enterprise solutions for large corporations.&lt;br /&gt;&lt;br /&gt;For further information visit &lt;a href="https://typo3.org/typo3-cms/" target="_blank" rel="noreferrer"&gt;typo3.org&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;TYPO3 CMS is &lt;b&gt;freely available&lt;/b&gt; under the &lt;a href="https://typo3.org/project/licenses/" target="_blank"&gt;TYPO3-license (GNU/GPL)&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Copyright %s %s</source>
+        <target state="final">TYPO3 CMS ist ein Open-Source-Content-Management-System der Enterprise-Klasse, das international zum Erstellen und Verwalten von Websites aller Art eingesetzt wird – von kleinen Websites für gemeinnützige Organisationen bis hin zu mehrsprachigen Unternehmenslösungen für große Konzerne.&lt;br /&gt;&lt;br /&gt; Weitere Informationen finden Sie unter &lt;a href="https://typo3.org/typo3-cms/" target="_blank" rel="noreferrer"&gt;typo3.org&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;TYPO3 CMS ist &lt;b&gt;kostenlos verfügbar&lt;/b&gt; unter der &lt;a href="https://typo3.org/project/licenses/" target="_blank"&gt;TYPO3-Lizenz (GNU/GPL)&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Copyright %s %s
+
+Übersetzt mit DeepL.com (kostenlose Version)</target>
       </trans-unit>
       <trans-unit id="community_credits" approved="yes">
         <source>Community Credits</source>
@@ -130,6 +128,14 @@
       <trans-unit id="link.openModuleWithTitle" approved="yes">
         <source>Open %1s module</source>
         <target state="final">%1s Modul öffnen</target>
+      </trans-unit>
+      <trans-unit id="noSubModules" approved="yes">
+        <source>There are currently no functions available for this module.</source>
+        <target state="final">Für dieses Modul stehen derzeit keine Funktionen zur Verfügung.</target>
+      </trans-unit>
+      <trans-unit id="noSubModulesWithTitle" approved="yes">
+        <source>There are currently no functions available for the %1s module.</source>
+        <target state="final">Für das %1s Modul stehen derzeit keine Funktionen zur Verfügung.</target>
       </trans-unit>
     </body>
   </file>

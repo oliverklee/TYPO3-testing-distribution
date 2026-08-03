@@ -151,6 +151,14 @@
         <source>The maximum amount of %s file(s) is exceeded.</source>
         <target state="final">Die Anzahl von maximal %s Datei(en) ist überschritten.</target>
       </trans-unit>
+      <trans-unit id="class_configuration" approved="yes">
+        <source>Extbase: Class Configuration</source>
+        <target state="final">Extbase: Klassen-Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="ratelimit.action.defaultmessage" approved="yes">
+        <source>Too many requests. Please try again later.</source>
+        <target state="final">Zu viele Anfragen. Bitte versuche es später nochmals.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
