@@ -14,6 +14,8 @@ final class UniverseTest extends FunctionalTestCase
 {
     protected array $testExtensionsToLoad = ['oliverklee/site-dev'];
 
+    protected array $coreExtensionsToLoad = ['typo3/cms-fluid-styled-content'];
+
     #[Test]
     public function canQueryTheDatabaseForPages(): void
     {
