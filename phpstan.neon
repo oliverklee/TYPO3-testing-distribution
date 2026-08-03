@@ -7,6 +7,3 @@ parameters:
 
   paths:
     - src/
-
-  excludePaths:
-    - src/extensions/*/ext_emconf.php
