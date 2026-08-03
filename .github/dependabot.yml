@@ -3,7 +3,7 @@
 version: 2
 updates:
   - package-ecosystem: "github-actions"
-    milestone: 3
+    milestone: 4
     directory: "/"
     schedule:
       interval: "daily"
@@ -11,7 +11,7 @@ updates:
       prefix: "[Dependabot] "
 
   - package-ecosystem: "composer"
-    milestone: 3
+    milestone: 4
     directory: "/"
     schedule:
       interval: "daily"
