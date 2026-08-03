@@ -12,8 +12,6 @@ use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 #[CoversNothing]
 final class UniverseTest extends FunctionalTestCase
 {
-    protected array $coreExtensionsToLoad = ['extbase', 'fluid'];
-
     protected array $testExtensionsToLoad = ['oliverklee/site-dev'];
 
     #[Test]
