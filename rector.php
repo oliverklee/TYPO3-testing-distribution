@@ -58,7 +58,7 @@ return RectorConfig::configure()
         Typo3SetList::CODE_QUALITY,
         Typo3SetList::GENERAL,
 
-        Typo3LevelSetList::UP_TO_TYPO3_13,
+        Typo3LevelSetList::UP_TO_TYPO3_14,
 
         TYPO3TestingFrameworkSetList::TYPO3_TESTING_FRAMEWORK_7,
     ])
