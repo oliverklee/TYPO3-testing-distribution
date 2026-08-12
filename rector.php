@@ -23,17 +23,10 @@ return RectorConfig::configure()
         __DIR__ . '/config',
         __DIR__ . '/src/extensions/site-dev',
     ])
-    ->withPhpVersion(PhpVersion::PHP_82)
-    ->withPhpSets(true)
-    // Note: We're only enabling a single set by default to improve performance. (Rector needs at least a single set to
-    // run.)
-    //
-    // You can temporarily enable more sets as needed.
+    ->withPhpSets()
+    ->withComposerBased(phpunit: true)
     ->withSets([
         // Rector sets
-
-        LevelSetList::UP_TO_PHP_82,
-        // LevelSetList::UP_TO_PHP_83,
 
         // SetList::CODE_QUALITY,
         // SetList::CODING_STYLE,
@@ -44,12 +37,6 @@ return RectorConfig::configure()
         // SetList::PRIVATIZATION,
         // SetList::STRICT_BOOLEANS,
         // SetList::TYPE_DECLARATION,
-
-        // PHPUnit sets
-
-        // PHPUnitSetList::PHPUNIT80_DMS,
-        PHPUnitSetList::PHPUNIT_110,
-        // PHPUnitSetList::PHPUNIT_CODE_QUALITY,
 
         // TYPO3 Sets
         // https://github.com/sabbelasichon/typo3-rector/blob/main/src/Set/Typo3LevelSetList.php
