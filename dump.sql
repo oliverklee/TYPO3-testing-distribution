@@ -2079,6 +2079,31 @@ CREATE TABLE `sys_file_metadata` (
   `description` text DEFAULT NULL,
   `alternative` text DEFAULT NULL,
   `categories` int(10) unsigned NOT NULL DEFAULT 0,
+  `visible` int(10) unsigned DEFAULT 1,
+  `status` varchar(24) DEFAULT '',
+  `keywords` text DEFAULT NULL,
+  `caption` text DEFAULT NULL,
+  `creator_tool` varchar(255) DEFAULT '',
+  `download_name` varchar(255) DEFAULT '',
+  `creator` varchar(255) DEFAULT '',
+  `publisher` varchar(45) DEFAULT '',
+  `source` varchar(255) DEFAULT '',
+  `copyright` text DEFAULT NULL,
+  `location_country` varchar(45) DEFAULT '',
+  `location_region` varchar(45) DEFAULT '',
+  `location_city` varchar(45) DEFAULT '',
+  `latitude` decimal(24,14) DEFAULT 0.00000000000000,
+  `longitude` decimal(24,14) DEFAULT 0.00000000000000,
+  `ranking` int(10) unsigned DEFAULT 0,
+  `content_creation_date` int(10) unsigned DEFAULT 0,
+  `content_modification_date` int(10) unsigned DEFAULT 0,
+  `note` text DEFAULT NULL,
+  `unit` varchar(3) DEFAULT '',
+  `duration` double DEFAULT 0,
+  `color_space` varchar(4) DEFAULT '',
+  `pages` int(10) unsigned DEFAULT 0,
+  `language` varchar(12) DEFAULT '',
+  `fe_groups` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `file` (`file`),
   KEY `fal_filelist` (`l10n_parent`,`sys_language_uid`),
@@ -2384,7 +2409,7 @@ CREATE TABLE `sys_registry` (
   `entry_value` mediumblob DEFAULT NULL,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `entry_identifier` (`entry_namespace`,`entry_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2435,7 +2460,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:4:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1784981080;'),
+(43,'core','sys_refindex_lastUpdate','i:1787150641;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -2447,7 +2472,10 @@ INSERT INTO `sys_registry` VALUES
 (60,'installUpdate','TYPO3\\CMS\\Install\\Updates\\ShortcutRecordsMigration','i:1;'),
 (61,'installUpdate','TYPO3\\CMS\\Install\\Updates\\CollectionsExtractionUpdate','i:1;'),
 (62,'installUpdate','TYPO3\\CMS\\FrontendLogin\\Updates\\MigrateFeloginPlugins','i:1;'),
-(103,'languagePacks','de-seminars_premium','i:1757317583;');
+(103,'languagePacks','de-seminars_premium','i:1757317583;'),
+(107,'extensionDataImport','typo3/cms-impexp/ext_tables_static+adt.sql','s:0:\"\";'),
+(108,'extensionDataImport','typo3/cms-filemetadata/ext_tables_static+adt.sql','s:0:\"\";'),
+(109,'extensionDataImport','typo3/cms-workspaces/ext_tables_static+adt.sql','s:0:\"\";');
 /*!40000 ALTER TABLE `sys_registry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12350,4 +12378,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-25 14:04:50
+-- Dump completed on 2026-08-19 16:51:53
