@@ -5,7 +5,7 @@
     <body>
       <trans-unit id="title" approved="yes">
         <source>Constant Editor</source>
-        <target state="final">Konstanter Editor</target>
+        <target state="final">Konstanten-Editor</target>
       </trans-unit>
       <!-- intentionally left blank, not utilized (for now) -->
       <trans-unit id="short_description">
