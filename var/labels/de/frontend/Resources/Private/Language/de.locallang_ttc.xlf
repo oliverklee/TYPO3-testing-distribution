@@ -489,7 +489,7 @@
       </trans-unit>
       <trans-unit id="list_type" resname="list_type" approved="yes">
         <source>Plugin</source>
-        <target state="final">Plug-In:</target>
+        <target state="final">Plugin</target>
       </trans-unit>
       <trans-unit id="list_type_formlabel" resname="list_type_formlabel" approved="yes">
         <source>Selected Plugin</source>
@@ -861,7 +861,7 @@
       </trans-unit>
       <trans-unit id="tabs.plugin" resname="tabs.plugin" approved="yes">
         <source>Plugin</source>
-        <target state="final">Plug-In:</target>
+        <target state="final">Plugin</target>
       </trans-unit>
       <trans-unit id="subheader_formlabel" resname="subheader_formlabel" approved="yes">
         <source>Subheader</source>
