@@ -2162,7 +2162,7 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       </trans-unit>
       <trans-unit id="backEndModule.message.selectFolder" approved="yes">
         <source>Please select a folder in the page tree.</source>
-        <target state="final">Bitte wählen Sie einen Ordner im Seitenbaum aus.</target>
+        <target state="final">Bitte wähle einen Ordner im Seitenbaum aus.</target>
       </trans-unit>
       <trans-unit id="backEndModule.message.noEventsInFolder" approved="yes">
         <source>There are no event records in the selected folder.</source>
@@ -2334,7 +2334,7 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       </trans-unit>
       <trans-unit id="backEndModule.confirm.deleteEvent.content" approved="yes">
         <source>Do you really want to delete this event?</source>
-        <target state="final">Möchten Sie diese Veranstaltung wirklich löschen?</target>
+        <target state="final">Möchtest du diese Veranstaltung wirklich löschen?</target>
       </trans-unit>
       <trans-unit id="backEndModule.confirm.deleteEvent.cancel" approved="yes">
         <source>Cancel</source>
@@ -2350,7 +2350,7 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       </trans-unit>
       <trans-unit id="backEndModule.confirm.deleteRegistration.content" approved="yes">
         <source>Do you really want to delete this registration?</source>
-        <target state="final">Möchten Sie diese Anmeldung wirklich löschen?</target>
+        <target state="final">Möchtest du diese Anmeldung wirklich löschen?</target>
       </trans-unit>
       <trans-unit id="backEndModule.confirm.deleteRegistration.cancel" approved="yes">
         <source>Cancel</source>
@@ -2468,10 +2468,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>date</source>
         <target state="final">Datum</target>
       </trans-unit>
-      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.eventType" approved="yes">
-        <source>event type</source>
-        <target state="final">Veranstaltungsart</target>
-      </trans-unit>
       <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.topic" approved="yes">
         <source>topic</source>
         <target state="final">Thema</target>
@@ -2488,6 +2484,14 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>venue</source>
         <target state="final">Veranstaltungsort</target>
       </trans-unit>
+      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.speakers" approved="yes">
+        <source>speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.eventType" approved="yes">
+        <source>event type</source>
+        <target state="final">Veranstaltungsart</target>
+      </trans-unit>
       <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.eventFormat" approved="yes">
         <source>event format</source>
         <target state="final">Veranstaltungsformat</target>
@@ -2495,10 +2499,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.categories" approved="yes">
         <source>categories</source>
         <target state="final">Kategorien</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.speakers" approved="yes">
-        <source>speakers</source>
-        <target state="final">Referent_innen</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.settings.displayOptions.columns.eventUid" approved="yes">
         <source>UID</source>
@@ -2512,33 +2512,25 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>No events found.</source>
         <target state="final">Keine Veranstaltungen gefunden.</target>
       </trans-unit>
-      <trans-unit id="plugin.eventArchive.events.property.date" approved="yes">
-        <source>Date</source>
-        <target state="final">Datum</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventArchive.events.property.eventType" approved="yes">
-        <source>Type</source>
-        <target state="final">Art</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventArchive.events.property.topic" approved="yes">
-        <source>Topic</source>
-        <target state="final">Thema</target>
-      </trans-unit>
       <trans-unit id="plugin.eventArchive.events.property.organizer" approved="yes">
-        <source>Organizer</source>
-        <target state="final">Veranstalter</target>
+        <source>Organizer:</source>
+        <target state="final">Veranstalter:</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.events.property.city" approved="yes">
-        <source>City</source>
-        <target state="final">Stadt</target>
+        <source>City:</source>
+        <target state="final">Stadt:</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.events.property.venue" approved="yes">
-        <source>Venue</source>
-        <target state="final">Ort</target>
+        <source>Venue:</source>
+        <target state="final">Ort:</target>
       </trans-unit>
-      <trans-unit id="plugin.eventArchive.events.property.eventFormat" approved="yes">
-        <source>Format</source>
-        <target state="final">Format</target>
+      <trans-unit id="plugin.eventArchive.events.property.speakers.one" approved="yes">
+        <source>Speaker:</source>
+        <target state="final">Referent_in:</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventArchive.events.property.speakers.many" approved="yes">
+        <source>Speakers:</source>
+        <target state="final">Referent_innen:</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.events.property.eventFormat.0" approved="yes">
         <source>on-site</source>
@@ -2551,18 +2543,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.eventArchive.events.property.eventFormat.2" approved="yes">
         <source>online</source>
         <target state="final">online</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventArchive.events.property.categories" approved="yes">
-        <source>Categories</source>
-        <target state="final">Kategorien</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventArchive.events.property.speakers" approved="yes">
-        <source>Speakers</source>
-        <target state="final">Referent_innen</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventArchive.events.property.eventUid" approved="yes">
-        <source>Number</source>
-        <target state="final">Nummer</target>
       </trans-unit>
       <trans-unit id="plugin.eventArchive.events.property.eventUid.number" approved="yes">
         <source>#%1$u</source>
@@ -2612,10 +2592,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>date</source>
         <target state="final">Datum</target>
       </trans-unit>
-      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.eventType" approved="yes">
-        <source>event type</source>
-        <target state="final">Veranstaltungsart</target>
-      </trans-unit>
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.topic" approved="yes">
         <source>topic</source>
         <target state="final">Thema</target>
@@ -2632,6 +2608,18 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>venue</source>
         <target state="final">Veranstaltungsort</target>
       </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.speakers" approved="yes">
+        <source>speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.price" approved="yes">
+        <source>price</source>
+        <target state="final">Preis</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.eventType" approved="yes">
+        <source>event type</source>
+        <target state="final">Veranstaltungsart</target>
+      </trans-unit>
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.eventFormat" approved="yes">
         <source>event format</source>
         <target state="final">Veranstaltungsformat</target>
@@ -2639,10 +2627,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.categories" approved="yes">
         <source>categories</source>
         <target state="final">Kategorien</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.speakers" approved="yes">
-        <source>speakers</source>
-        <target state="final">Referent_innen</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.eventUid" approved="yes">
         <source>UID</source>
@@ -2652,17 +2636,13 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>link to the single view</source>
         <target state="final">Link zur Einzelansicht</target>
       </trans-unit>
-      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.price" approved="yes">
-        <source>price</source>
-        <target state="final">Preis</target>
+      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.registration" approved="yes">
+        <source>registration</source>
+        <target state="final">Anmeldung</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.vacancies" approved="yes">
         <source>vacancies</source>
         <target state="final">freie Plätze</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.settings.displayOptions.columns.registration" approved="yes">
-        <source>registration</source>
-        <target state="final">Anmeldung</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.message.noEventsFound" approved="yes">
         <source>No events found.</source>
@@ -2672,9 +2652,25 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>Organizer:</source>
         <target state="final">Veranstalter:</target>
       </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.city" approved="yes">
+        <source>City:</source>
+        <target state="final">Stadt:</target>
+      </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.venue" approved="yes">
         <source>Venue:</source>
-        <target state="final">Veranstaltungsort:</target>
+        <target state="final">Ort:</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.speakers.one" approved="yes">
+        <source>Speaker:</source>
+        <target state="final">Referent_in:</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.speakers.many" approved="yes">
+        <source>Speakers:</source>
+        <target state="final">Referent_innen:</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.price" approved="yes">
+        <source>Price:</source>
+        <target state="final">Preis:</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.eventFormat.0" approved="yes">
         <source>on-site</source>
@@ -2688,14 +2684,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>online</source>
         <target state="final">online</target>
       </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.speakers.one" approved="yes">
-        <source>Speaker:</source>
-        <target state="final">Referent_in:</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.speakers.many" approved="yes">
-        <source>Speakers:</source>
-        <target state="final">Referent_innen:</target>
-      </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.eventUid.number" approved="yes">
         <source>#%1$u</source>
         <target state="final">#%1$u</target>
@@ -2707,26 +2695,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.eventOutlook.events.property.singleViewLink.ariaLabel" approved="yes">
         <source>Show details for the event &quot;%1$s&quot;</source>
         <target state="final">Details für die Veranstaltung "%1$s " anzeigen</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.price" approved="yes">
-        <source>Price:</source>
-        <target state="final">Preis:</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.vacancies.fullyBooked" approved="yes">
-        <source>fully booked</source>
-        <target state="final">ausgebucht</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.vacancies.fewLeft" approved="yes">
-        <source>few left</source>
-        <target state="final">wenige übrig</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.vacancies.available" approved="yes">
-        <source>available</source>
-        <target state="final">verfügbar</target>
-      </trans-unit>
-      <trans-unit id="plugin.eventOutlook.events.property.registration" approved="yes">
-        <source>Registration</source>
-        <target state="final">Anmeldung</target>
       </trans-unit>
       <trans-unit id="plugin.eventOutlook.events.property.registration.register" approved="yes">
         <source>registration</source>
@@ -2743,6 +2711,18 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.eventOutlook.events.property.registration.waitingList.ariaLabel" approved="yes">
         <source>Subscribe to the waiting list for the event &quot;%1$s&quot;</source>
         <target state="final">Auf die Warteliste der Veranstaltung "%1$s" setzen</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.vacancies.fullyBooked" approved="yes">
+        <source>fully booked</source>
+        <target state="final">ausgebucht</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.vacancies.fewLeft" approved="yes">
+        <source>few left</source>
+        <target state="final">wenige übrig</target>
+      </trans-unit>
+      <trans-unit id="plugin.eventOutlook.events.property.vacancies.available" approved="yes">
+        <source>available</source>
+        <target state="final">verfügbar</target>
       </trans-unit>
       <trans-unit id="plugin.eventSingleView" approved="yes">
         <source>Event single view</source>
@@ -2928,10 +2908,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>date</source>
         <target state="final">Datum</target>
       </trans-unit>
-      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.eventType" approved="yes">
-        <source>event type</source>
-        <target state="final">Veranstaltungsart</target>
-      </trans-unit>
       <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.topic" approved="yes">
         <source>topic</source>
         <target state="final">Thema</target>
@@ -2948,6 +2924,14 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>venue</source>
         <target state="final">Veranstaltungsort</target>
       </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.speakers" approved="yes">
+        <source>speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.eventType" approved="yes">
+        <source>event type</source>
+        <target state="final">Veranstaltungsart</target>
+      </trans-unit>
       <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.attendanceMode" approved="yes">
         <source>attendance mode</source>
         <target state="final">Teilnahmemodus</target>
@@ -2955,10 +2939,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.categories" approved="yes">
         <source>categories</source>
         <target state="final">Kategorien</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.speakers" approved="yes">
-        <source>speakers</source>
-        <target state="final">Referent_innen</target>
       </trans-unit>
       <trans-unit id="plugin.myRegistrations.settings.displayOptions.columns.eventUid" approved="yes">
         <source>event UID</source>
@@ -3000,6 +2980,10 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>venue</source>
         <target state="final">Veranstaltungsort</target>
       </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.attendanceMode" approved="yes">
+        <source>attendance mode</source>
+        <target state="final">Teilnahmemodus</target>
+      </trans-unit>
       <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.categories" approved="yes">
         <source>categories</source>
         <target state="final">Kategorien</target>
@@ -3007,6 +2991,14 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.room" approved="yes">
         <source>room</source>
         <target state="final">Raum</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.targetGroups" approved="yes">
+        <source>target groups</source>
+        <target state="final">Zielgruppen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.teaser" approved="yes">
+        <source>teaser</source>
+        <target state="final">Teaser</target>
       </trans-unit>
       <trans-unit id="plugin.myRegistrations.settings.displayOptions.fields.description" approved="yes">
         <source>description</source>
@@ -3040,13 +3032,13 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>You are not registered to any events yet.</source>
         <target state="final">Du bist noch zu keiner Veranstaltung angemeldet.</target>
       </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.toUnregistrationForm" approved="yes">
+        <source>unregistration</source>
+        <target state="final">Abmeldung</target>
+      </trans-unit>
       <trans-unit id="plugin.myRegistrations.index.heading.date" approved="yes">
         <source>Date</source>
         <target state="final">Datum</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.index.heading.eventType" approved="yes">
-        <source>Type</source>
-        <target state="final">Art</target>
       </trans-unit>
       <trans-unit id="plugin.myRegistrations.index.heading.topic" approved="yes">
         <source>Topic</source>
@@ -3064,6 +3056,14 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>Venue</source>
         <target state="final">Ort</target>
       </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.speakers" approved="yes">
+        <source>Speakers</source>
+        <target state="final">Referent_innen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.eventType" approved="yes">
+        <source>Type</source>
+        <target state="final">Art</target>
+      </trans-unit>
       <trans-unit id="plugin.myRegistrations.index.heading.attendanceMode" approved="yes">
         <source>Mode</source>
         <target state="final">Modus</target>
@@ -3071,10 +3071,6 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
       <trans-unit id="plugin.myRegistrations.index.heading.categories" approved="yes">
         <source>Categories</source>
         <target state="final">Kategorien</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.index.heading.speakers" approved="yes">
-        <source>Speakers</source>
-        <target state="final">Referent_innen</target>
       </trans-unit>
       <trans-unit id="plugin.myRegistrations.index.heading.eventUid" approved="yes">
         <source>Event number</source>
@@ -3096,13 +3092,45 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>📄 Display certificate of attendance</source>
         <target state="final">📄 Teilnahmebescheinigung anzeigen</target>
       </trans-unit>
+      <trans-unit id="plugin.myRegistrations.index.heading.unregistration" approved="yes">
+        <source>Unregistration</source>
+        <target state="final">Abmeldung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.toUnregistrationForm" approved="yes">
+        <source>proceed to unregistration</source>
+        <target state="final">zur Abmeldung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.attendanceMode" approved="yes">
+        <source>Attendance mode</source>
+        <target state="final">Teilnahmemodus</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.targetGroups" approved="yes">
+        <source>Target groups</source>
+        <target state="final">Zielgruppen</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.registrationStatus" approved="yes">
+        <source>Registration status</source>
+        <target state="final">Anmeldestatus</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.certificateOfAttendance" approved="yes">
+        <source>Certificate of attendance</source>
+        <target state="final">Teilnahmebescheinigung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.unregistration" approved="yes">
+        <source>Unregistration</source>
+        <target state="final">Abmeldung</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.heading.downloads" approved="yes">
+        <source>Downloads</source>
+        <target state="final">Downloads</target>
+      </trans-unit>
+      <trans-unit id="plugin.myRegistrations.show.displayCertificateOfAttendance" approved="yes">
+        <source>📄 Display certificate of attendance</source>
+        <target state="final">📄 Teilnahmebescheinigung anzeigen</target>
+      </trans-unit>
       <trans-unit id="plugin.myRegistrations.property.eventUid.number" approved="yes">
         <source>#%1$u</source>
         <target state="final">#%1$u</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.property.attendanceMode.1" approved="yes">
-        <source>on-site</source>
-        <target state="final">vor Ort</target>
       </trans-unit>
       <trans-unit id="plugin.myRegistrations.property.attendanceMode.2" approved="yes">
         <source>online</source>
@@ -3124,37 +3152,9 @@ Du kannst die Liste der angezeigten Veranstaltungen filtern. Um wieder alle Vera
         <source>nonbinding reservation</source>
         <target state="final">unverbindliche Reservierung</target>
       </trans-unit>
-      <trans-unit id="plugin.myRegistrations.index.heading.unregistration" approved="yes">
-        <source>Unregistration</source>
-        <target state="final">Abmeldung</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.index.toUnregistrationForm" approved="yes">
-        <source>unregistration</source>
-        <target state="final">Abmeldung</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.show.heading.registrationStatus" approved="yes">
-        <source>Registration status</source>
-        <target state="final">Anmeldestatus</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.show.heading.certificateOfAttendance" approved="yes">
-        <source>Certificate of attendance</source>
-        <target state="final">Teilnahmebescheinigung</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.show.heading.unregistration" approved="yes">
-        <source>Unregistration</source>
-        <target state="final">Abmeldung</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.show.displayCertificateOfAttendance" approved="yes">
-        <source>📄 Display certificate of attendance</source>
-        <target state="final">📄 Teilnahmebescheinigung anzeigen</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.show.toUnregistrationForm" approved="yes">
-        <source>proceed to unregistration</source>
-        <target state="final">zur Abmeldung</target>
-      </trans-unit>
-      <trans-unit id="plugin.myRegistrations.show.heading.downloads" approved="yes">
-        <source>Downloads</source>
-        <target state="final">Downloads</target>
+      <trans-unit id="plugin.myRegistrations.property.attendanceMode.1" approved="yes">
+        <source>on-site</source>
+        <target state="final">vor Ort</target>
       </trans-unit>
     </body>
   </file>

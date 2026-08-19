@@ -497,7 +497,7 @@
       </trans-unit>
       <trans-unit id="list_type" resname="list_type" approved="yes">
         <source>Plugin</source>
-        <target state="final">Plug-In:</target>
+        <target state="final">Plugin</target>
       </trans-unit>
       <trans-unit id="list_type_formlabel" resname="list_type_formlabel" approved="yes">
         <source>Selected Plugin</source>
@@ -869,7 +869,7 @@
       </trans-unit>
       <trans-unit id="tabs.plugin" resname="tabs.plugin" approved="yes">
         <source>Plugin</source>
-        <target state="final">Plug-In:</target>
+        <target state="final">Plugin</target>
       </trans-unit>
       <trans-unit id="sys_language_uid_formlabel" resname="sys_language_uid_formlabel" approved="yes">
         <source>Language</source>
