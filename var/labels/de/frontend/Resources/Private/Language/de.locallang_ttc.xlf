@@ -349,7 +349,7 @@
       </trans-unit>
       <trans-unit id="tabs.plugin" approved="yes">
         <source>Plugin</source>
-        <target state="final">Plug-In:</target>
+        <target state="final">Plugin</target>
       </trans-unit>
       <trans-unit id="starttime_formlabel" approved="yes">
         <source>Publish Date</source>
