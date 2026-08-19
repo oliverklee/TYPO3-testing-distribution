@@ -2098,6 +2098,31 @@ CREATE TABLE `sys_file_metadata` (
   `description` text DEFAULT NULL,
   `alternative` text DEFAULT NULL,
   `categories` int(10) unsigned NOT NULL DEFAULT 0,
+  `content_creation_date` int(11) NOT NULL DEFAULT 0,
+  `content_modification_date` int(11) NOT NULL DEFAULT 0,
+  `visible` int(10) unsigned DEFAULT 1,
+  `status` varchar(24) DEFAULT '',
+  `keywords` text DEFAULT NULL,
+  `caption` text DEFAULT NULL,
+  `creator_tool` varchar(255) DEFAULT '',
+  `download_name` varchar(255) DEFAULT '',
+  `creator` varchar(255) DEFAULT '',
+  `publisher` varchar(45) DEFAULT '',
+  `source` varchar(255) DEFAULT '',
+  `copyright` text DEFAULT NULL,
+  `location_country` varchar(45) DEFAULT '',
+  `location_region` varchar(45) DEFAULT '',
+  `location_city` varchar(45) DEFAULT '',
+  `latitude` decimal(24,14) DEFAULT 0.00000000000000,
+  `longitude` decimal(24,14) DEFAULT 0.00000000000000,
+  `ranking` int(10) unsigned DEFAULT 0,
+  `note` text DEFAULT NULL,
+  `unit` varchar(3) DEFAULT '',
+  `duration` double DEFAULT 0,
+  `color_space` varchar(4) DEFAULT '',
+  `pages` int(10) unsigned DEFAULT 0,
+  `language` varchar(45) DEFAULT '',
+  `fe_groups` tinytext DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `file` (`file`),
   KEY `fal_filelist` (`l10n_parent`,`sys_language_uid`),
@@ -2486,7 +2511,7 @@ INSERT INTO `sys_registry` VALUES
 (40,'installUpdateRows','rowUpdatersDone','a:5:{i:0;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceVersionRecordsMigration\";i:1;s:66:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L18nDiffsourceToJsonMigration\";i:2;s:77:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceMovePlaceholderRemovalMigration\";i:3;s:76:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\WorkspaceNewPlaceholderRemovalMigration\";i:4;s:69:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\SysRedirectRootPageMoveMigration\";}'),
 (41,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserLanguageMigration','i:1;'),
 (42,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SysLogChannel','i:1;'),
-(43,'core','sys_refindex_lastUpdate','i:1784981783;'),
+(43,'core','sys_refindex_lastUpdate','i:1787151401;'),
 (45,'extensionDataImport','typo3/cms-redirects/ext_tables_static+adt.sql','s:0:\"\";'),
 (46,'extensionDataImport','typo3/cms-seo/ext_tables_static+adt.sql','s:0:\"\";'),
 (50,'languagePacks','de-feuserextrafields','i:1699807937;'),
@@ -11709,6 +11734,34 @@ INSERT INTO `tx_seminars_seminars_checkboxes_mm` VALUES
 UNLOCK TABLES;
 
 --
+-- Table structure for table `tx_seminars_seminars_feusers_mm`
+--
+
+DROP TABLE IF EXISTS `tx_seminars_seminars_feusers_mm`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tx_seminars_seminars_feusers_mm` (
+  `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
+  `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  `tablenames` varchar(30) NOT NULL DEFAULT '',
+  `sorting` int(10) unsigned NOT NULL DEFAULT 0,
+  `sorting_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid_local`,`uid_foreign`),
+  KEY `uid_local` (`uid_local`),
+  KEY `uid_foreign` (`uid_foreign`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_seminars_seminars_feusers_mm`
+--
+
+LOCK TABLES `tx_seminars_seminars_feusers_mm` WRITE;
+/*!40000 ALTER TABLE `tx_seminars_seminars_feusers_mm` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_seminars_seminars_feusers_mm` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tx_seminars_seminars_foods_mm`
 --
 
@@ -12328,6 +12381,32 @@ INSERT INTO `tx_seminars_timeslots` VALUES
 UNLOCK TABLES;
 
 --
+-- Table structure for table `tx_seminars_usergroups_categories_mm`
+--
+
+DROP TABLE IF EXISTS `tx_seminars_usergroups_categories_mm`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tx_seminars_usergroups_categories_mm` (
+  `uid_local` int(10) unsigned NOT NULL DEFAULT 0,
+  `uid_foreign` int(10) unsigned NOT NULL DEFAULT 0,
+  `tablenames` varchar(30) NOT NULL DEFAULT '',
+  `sorting` int(10) unsigned NOT NULL DEFAULT 0,
+  KEY `uid_local` (`uid_local`),
+  KEY `uid_foreign` (`uid_foreign`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_seminars_usergroups_categories_mm`
+--
+
+LOCK TABLES `tx_seminars_usergroups_categories_mm` WRITE;
+/*!40000 ALTER TABLE `tx_seminars_usergroups_categories_mm` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_seminars_usergroups_categories_mm` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tx_tea_domain_model_tea`
 --
 
@@ -12387,4 +12466,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-25 14:16:29
+-- Dump completed on 2026-08-19 16:57:06
