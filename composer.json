@@ -27,6 +27,7 @@
 		"typo3/cms-dashboard": "^14.3",
 		"typo3/cms-felogin": "^14.3",
 		"typo3/cms-filelist": "^14.3",
+		"typo3/cms-filemetadata": "^14.3",
 		"typo3/cms-fluid-styled-content": "^14.3",
 		"typo3/cms-form": "^14.3",
 		"typo3/cms-impexp": "^14.3",
