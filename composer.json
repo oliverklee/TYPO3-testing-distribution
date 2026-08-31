@@ -59,6 +59,7 @@
 		"phpstan/phpstan-phpunit": "2.0.18",
 		"phpstan/phpstan-strict-rules": "2.0.12",
 		"phpunit/phpunit": "11.5.52",
+		"rector/rector": "2.6.3",
 		"saschaegerer/phpstan-typo3": "2.1.1",
 		"seld/jsonlint": "1.12.1",
 		"ssch/typo3-rector": "3.14.3",
