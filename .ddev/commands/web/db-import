@@ -1,5 +1,29 @@
 #!/bin/bash
 
+## Description: Imports a local DB dump from the project root.
+## Usage: db-import
+## Example: "ddev db-import"
+
+DB_DUMP="./dump.sql"
+
+# Check if DB dump exists
+if [[ ! -f "$DB_DUMP" ]]; then
+    echo "Error: Database dump '$DB_DUMP' does not exist."
+    exit 1
+fi
+
+# Check if DB dump is empty
+if [[ ! -s "$DB_DUMP" ]]; then
+    echo "Error: Database dump '$DB_DUMP' is empty."
+    exit 1
+fi
+
 vendor/bin/typo3cms database:updateschema
-vendor/bin/typo3cms database:import < dump.sql
+
+# Import DB dump and check if import succeeds
+if ! vendor/bin/typo3cms database:import < "$DB_DUMP"; then
+    echo "Error: Database import from '$DB_DUMP' failed."
+    exit 1
+fi
+
 vendor/bin/typo3cms referenceindex:update
